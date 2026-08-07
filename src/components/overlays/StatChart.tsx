@@ -4,15 +4,17 @@ import type { Overlay } from "../../timeline/schema";
 
 type Props = Extract<Overlay, { type: "stat-chart" }>;
 
-const W = 900;
-const H = 520;
-
 /**
  * Animated area chart with a ticking value counter.
  *
  * Ref 003 reaches for this whenever the VO says "a number went up", which for a
  * business/tech channel is a large share of all claims. The counter matters as much
  * as the line — a number that visibly climbs is what people screenshot.
+ *
+ * The plot box is measured from the canvas rather than fixed. A fixed viewBox
+ * rendered at `width: 100%` scales its HEIGHT with the frame's width, so the
+ * same chart that fits in 9:16 grows a 1028px-tall plot in 16:9 and pushes the
+ * title and counter off the top of the frame.
  */
 export const StatChart: React.FC<Props> = ({
   title,
@@ -20,11 +22,27 @@ export const StatChart: React.FC<Props> = ({
   valueFrom,
   valueTo,
   valueSuffix,
+  valuePrefix,
   drawDuration,
   accent,
 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width: CW, height: CH } = useVideoConfig();
+
+  const wide = CW > CH;
+  const padX = wide ? 120 : 70;
+  const titleSize = wide ? 30 : 34;
+  const valueSize = wide ? 108 : 132;
+  // Keep the plot clear of the caption band rather than letting the line run
+  // behind the words.
+  const headerH = titleSize + 8 + valueSize * 1.05 + 18;
+  const padTop = wide ? 96 : 0;
+  // Measured against a rendered frame, not guessed: the caption block's top edge
+  // sits around 0.66 of the frame height, so the plot floor has to clear that.
+  const padBottom = wide ? CH * 0.36 : 0;
+
+  const W = CW - padX * 2;
+  const H = wide ? CH - headerH - padTop - padBottom : 520;
 
   const p = interpolate(frame, [0, drawDuration * fps], [0, 1], {
     extrapolateLeft: "clamp",
@@ -49,9 +67,9 @@ export const StatChart: React.FC<Props> = ({
     <AbsoluteFill
       style={{
         background: "#E9E9EC",
-        justifyContent: "center",
+        justifyContent: wide ? "flex-start" : "center",
         alignItems: "center",
-        padding: "0 70px",
+        padding: wide ? `${padTop}px ${padX}px 0` : `0 ${padX}px`,
       }}
     >
       <div style={{ width: "100%" }}>
@@ -59,7 +77,7 @@ export const StatChart: React.FC<Props> = ({
           style={{
             fontFamily: "Poppins, sans-serif",
             fontWeight: 500,
-            fontSize: 34,
+            fontSize: titleSize,
             color: "#4B5563",
             marginBottom: 8,
           }}
@@ -70,7 +88,7 @@ export const StatChart: React.FC<Props> = ({
           style={{
             fontFamily: "Poppins, sans-serif",
             fontWeight: 800,
-            fontSize: 132,
+            fontSize: valueSize,
             lineHeight: 1.05,
             color: "#0B0B0F",
             letterSpacing: "-0.04em",
@@ -78,11 +96,17 @@ export const StatChart: React.FC<Props> = ({
             fontVariantNumeric: "tabular-nums",
           }}
         >
+          {valuePrefix}
           {value.toFixed(decimals)}
           {valueSuffix}
         </div>
 
-        <svg viewBox={`0 0 ${W} ${H}`} width="100%" style={{ display: "block", overflow: "visible" }}>
+        <svg
+          viewBox={`0 0 ${W} ${H}`}
+          width={W}
+          height={H}
+          style={{ display: "block", overflow: "visible" }}
+        >
           <defs>
             <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor={accent} stopOpacity={0.55} />

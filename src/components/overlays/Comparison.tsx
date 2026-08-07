@@ -21,7 +21,13 @@ export const Comparison: React.FC<Props> = ({
   tone,
 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width, height } = useVideoConfig();
+
+  // Stacked reads well in 9:16, where vertical space is what there is. In 16:9
+  // the same stack leaves the right half of the frame empty and shrinks both
+  // numbers to fit the height — so landscape puts the two sides side by side
+  // and lets the rule between them do the "versus".
+  const wide = width > height;
 
   const dark = tone === "dark";
   const fg = dark ? "#FFFFFF" : "#0B0B0F";
@@ -51,7 +57,7 @@ export const Comparison: React.FC<Props> = ({
   const label: React.CSSProperties = {
     fontFamily: "Poppins, sans-serif",
     fontWeight: 600,
-    fontSize: 30,
+    fontSize: wide ? 26 : 30,
     letterSpacing: "0.14em",
     textTransform: "uppercase",
     color: muted,
@@ -61,16 +67,34 @@ export const Comparison: React.FC<Props> = ({
   const value: React.CSSProperties = {
     fontFamily: "Poppins, sans-serif",
     fontWeight: 800,
-    fontSize: 138,
+    fontSize: wide ? 112 : 138,
     lineHeight: 1,
     letterSpacing: "-0.045em",
   };
 
+  // Landscape slides in from the left and grows; portrait rises and grows. Same
+  // spring, different axis — the motion should follow the layout.
+  const afterShift = wide
+    ? `translateX(${(1 - enterAfter) * -40}px)`
+    : `translateY(${(1 - enterAfter) * 40}px)`;
+
   return (
     <AbsoluteFill
-      style={{ justifyContent: "center", alignItems: "flex-start", padding: "0 78px" }}
+      style={{
+        flexDirection: wide ? "row" : "column",
+        justifyContent: "center",
+        alignItems: wide ? "center" : "flex-start",
+        padding: wide ? "0 110px" : "0 78px",
+        gap: wide ? 0 : undefined,
+      }}
     >
-      <div style={{ opacity: enterBefore * fade, transform: `translateY(${(1 - enterBefore) * 24}px)` }}>
+      <div
+        style={{
+          flex: wide ? 1 : undefined,
+          opacity: enterBefore * fade,
+          transform: `translateY(${(1 - enterBefore) * 24}px)`,
+        }}
+      >
         <div style={label}>{beforeLabel}</div>
         <div style={{ ...value, color: fg, textDecoration: frame > delayFrames ? "line-through" : "none" }}>
           {beforeValue}
@@ -79,25 +103,27 @@ export const Comparison: React.FC<Props> = ({
 
       <div
         style={{
-          width: 96,
-          height: 8,
+          width: wide ? 8 : 96,
+          height: wide ? 220 : 8,
+          flexShrink: 0,
           background: accent,
           borderRadius: 4,
-          margin: "44px 0",
-          transform: `scaleX(${enterAfter})`,
-          transformOrigin: "0% 50%",
+          margin: wide ? "0 82px" : "44px 0",
+          transform: wide ? `scaleY(${enterAfter})` : `scaleX(${enterAfter})`,
+          transformOrigin: wide ? "50% 0%" : "0% 50%",
         }}
       />
 
       <div
         style={{
+          flex: wide ? 1 : undefined,
           opacity: Math.min(1, enterAfter * 1.4),
-          transform: `translateY(${(1 - enterAfter) * 40}px) scale(${0.86 + enterAfter * 0.14})`,
+          transform: `${afterShift} scale(${0.86 + enterAfter * 0.14})`,
           transformOrigin: "0% 50%",
         }}
       >
         <div style={{ ...label, color: accent }}>{afterLabel}</div>
-        <div style={{ ...value, color: accent, fontSize: 168 }}>{afterValue}</div>
+        <div style={{ ...value, color: accent, fontSize: wide ? 138 : 168 }}>{afterValue}</div>
       </div>
     </AbsoluteFill>
   );

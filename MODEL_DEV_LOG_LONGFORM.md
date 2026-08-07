@@ -161,6 +161,69 @@ boundary is what changes between formats.
 under another name, and the channel does not use music (F20). Percussive,
 mechanical and diegetic sounds are fine; anything that implies a key is not.
 
+### L9 — Cue visuals by phrase, never by timestamp
+
+`plan_longform.py` places every visual by **the words the narration is saying**:
+
+```json
+{ "cue": "the prepaid and customer supplied hardware", "type": "quote-card" }
+```
+
+At 5,400 characters the narration *will* be regenerated — a rewrite, a voice
+change, a pace change. Any of those shifts every timestamp in the file and
+silently slides 150 assets out of sync. Phrases survive all three.
+
+It also makes the job file readable as an edit decision list: you can see what
+the video does without opening the video.
+
+**Cost:** cue text must match the narration exactly. The planner **hard-fails**
+on an unresolved cue rather than dropping the visual, because a silently missing
+visual is exactly the class of bug that ships (cf. F28, where logo pops vanished
+into removed pauses).
+
+---
+
+### L10 — Don't caption over a card that is already text
+
+The first long-form render put a quote card on screen — the narrator reading
+Oracle's own sentence — while the caption track printed *the same sentence*
+underneath in a different font. Two renderings of one sentence is worse than
+either alone.
+
+`plan_longform.py` now drops caption cues that overlap a full-screen text card
+(quote, date, comparison, word, kinetic title). 61 of 490 cues in lf-001.
+
+This is an editorial decision, so it lives in the planner, not in `Captions.tsx`.
+
+---
+
+### L11 — A component that hardcodes canvas dimensions is a portrait component
+
+Making the canvas configurable (`meta.width`/`meta.height`) was necessary but not
+sufficient. Three components still assumed 9:16, and each failed differently:
+
+- **`Annotation`** imported `WIDTH`/`HEIGHT` constants — trivially wrong, easy to
+  spot by grep.
+- **`Comparison`** stacked before-above-after. Correct in portrait, but in
+  landscape it left the entire right half of the frame empty. *Nothing was
+  broken; it was just a bad edit.* Now side-by-side when `width > height`, with
+  the rule between the two doing the "versus".
+- **`StatChart`** sized its SVG `width: 100%` against a fixed viewBox — so plot
+  **height scaled with frame width**. At 1780px wide the plot became 1028px tall
+  and pushed the title and counter off the top of the frame.
+
+**The pattern:** the grep-able failures were the harmless ones. The two that
+mattered were a layout that was merely *unflattering* and an aspect-ratio
+coupling that was invisible in the code and obvious in one still.
+
+Reinforces the shorts habit: `npx remotion still` on every new overlay type, at
+**both** aspect ratios, before wiring it into a render.
+
+Also: `tone` and card background were two independent knobs that had to agree. A
+`tone: "dark"` comparison rendered white text on the profile's light canvas —
+invisible on screen and invisible in review. The planner now derives one from the
+other. **Two settings that must agree are one setting.**
+
 ---
 
 ## Open questions

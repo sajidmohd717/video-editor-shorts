@@ -12,6 +12,13 @@ import { z } from "zod";
  */
 
 export const FPS = 30;
+
+/**
+ * Shorts canvas. These remain the defaults because every shorts timeline written
+ * so far omits width/height — but nothing should IMPORT them to lay out a
+ * component. Use `useVideoConfig()` instead, so a component works at any canvas.
+ * Long-form runs 1920x1080 from the same codebase.
+ */
 export const WIDTH = 1080;
 export const HEIGHT = 1920;
 
@@ -316,6 +323,8 @@ export const overlaySchema = z.discriminatedUnion("type", [
     valueFrom: z.number().default(0),
     valueTo: z.number().default(100),
     valueSuffix: z.string().default("%"),
+    /** Currency marker. "638B" and "$638B" are different claims. */
+    valuePrefix: z.string().default(""),
     drawDuration: z.number().default(1.2),
     accent: z.string().default("#22C55E"),
   }),
@@ -526,6 +535,9 @@ export const timelineSchema = z.object({
     slug: z.string(),
     durationInSeconds: z.number(),
     fps: z.number().default(FPS),
+    /** Canvas. Defaults to 9:16 shorts; long-form sets 1920x1080. */
+    width: z.number().default(WIDTH),
+    height: z.number().default(HEIGHT),
   }),
   pacing: z.array(energySegmentSchema).default([]),
   clips: z.array(clipSchema),

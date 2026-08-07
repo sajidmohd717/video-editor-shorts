@@ -1,7 +1,6 @@
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import type { Overlay } from "../../timeline/schema";
-import { WIDTH, HEIGHT } from "../../timeline/schema";
 
 type Props = Extract<Overlay, { type: "annotation" }>;
 
@@ -23,7 +22,9 @@ export const Annotation: React.FC<Props> = ({
   labelSize,
 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  // Canvas dimensions come from the composition, not a constant — the same
+  // component has to lay out correctly at 1080x1920 and 1920x1080.
+  const { fps, width: WIDTH, height: HEIGHT } = useVideoConfig();
 
   const labelEnter = spring({
     frame,

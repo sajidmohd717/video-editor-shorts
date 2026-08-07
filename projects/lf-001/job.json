@@ -3,11 +3,157 @@
   "profile": "the-next-curve-longform",
   "format": "longform",
   "title": "Who Is Actually Paying for the AI Boom?",
+
+  "_": "Visuals are cued by PHRASE, not timestamp. The narration is 5,400 characters and will be regenerated more than once; phrases survive that, timestamps don't.",
+
   "rights": {
     "clearance": "commentary",
     "speaker": "various",
     "rightsHolder": "various broadcasters and companies",
     "sourceUrl": "see projects/lf-001/sources.md",
-    "note": "Short excerpts as evidence for claims the narration makes. Primary sources preferred over broadcast reports. Bloomberg Originals and Hank Green are RESEARCH ONLY, never footage - see sources.md."
-  }
+    "note": "Short excerpts as evidence for claims the narration makes. Primary sources preferred. Bloomberg Originals and Hank Green are RESEARCH ONLY, never footage."
+  },
+
+  "chapters": [
+    { "cue": "Every few weeks", "title": "The question" },
+    { "cue": "Start with the biggest one", "title": "One deal, read carefully" },
+    { "cue": "Microsoft and NVIDIA both announced", "title": "The same shape, three times" },
+    { "cue": "Which brings us to the number", "title": "What the filings say" },
+    { "cue": "Here's the strongest version", "title": "The other side" }
+  ],
+
+  "sfx": {
+    "ding": "lf-001/sfx/ding.wav",
+    "whoosh": "lf-001/sfx/whoosh.wav",
+    "impact": "lf-001/sfx/impact.wav",
+    "pageturn": "lf-001/sfx/pageturn.wav",
+    "highlight": "lf-001/sfx/highlight.wav",
+    "highlight2": "lf-001/sfx/highlight2.wav",
+    "swipe": "lf-001/sfx/swipe.wav",
+    "click": "lf-001/sfx/click.wav"
+  },
+  "sfxDurations": {
+    "ding": 1.4, "whoosh": 0.58, "impact": 2.4, "pageturn": 0.55,
+    "highlight": 0.55, "highlight2": 0.55, "swipe": 0.72, "click": 0.53
+  },
+
+  "newsClips": {},
+  "broll": {},
+  "fillerBroll": [],
+
+  "sourceAudio": [
+    {
+      "cue": "In June twenty twenty-six",
+      "offset": 2.4,
+      "src": "lf-001/news/orcl-rpo-638.wav",
+      "sourceOffset": 0.0,
+      "seconds": 12,
+      "gainDb": -1,
+      "why": "L5 — an Oracle executive states the 638 billion figure in their own voice, under our document highlight. Hearing them say it IS the evidence."
+    },
+    {
+      "cue": "Then there's this line",
+      "offset": 1.8,
+      "src": "lf-001/news/orcl-prepaid-75.wav",
+      "sourceOffset": 0.0,
+      "seconds": 14,
+      "gainDb": -1,
+      "why": "the prepaid / bring-your-own-hardware figure, said aloud under the quote card"
+    }
+  ],
+
+  "visuals": [
+    {
+      "cue": "Every few weeks",
+      "type": "date-card",
+      "seconds": 3.0,
+      "text": "Who is actually paying?",
+      "sub": "following the money",
+      "sfx": "ding",
+      "z": 60
+    },
+    {
+      "cue": "In September twenty twenty-five",
+      "type": "date-card",
+      "seconds": 3.2,
+      "text": "September 2025",
+      "sub": "the letter of intent",
+      "sfx": "pageturn",
+      "z": 60
+    },
+    {
+      "cue": "Four qualifiers in one sentence",
+      "type": "quote-card",
+      "seconds": 7.5,
+      "text": "NVIDIA intends to invest up to $100 billion, progressively as each gigawatt is deployed.",
+      "attribution": "OpenAI announcement, 22 September 2025",
+      "size": 58,
+      "sfx": "highlight",
+      "z": 60
+    },
+    {
+      "cue": "So Microsoft commits up to five billion",
+      "type": "comparison",
+      "seconds": 8.0,
+      "beforeLabel": "Microsoft invests",
+      "beforeValue": "up to $5B",
+      "afterLabel": "Anthropic commits back",
+      "afterValue": "$30B",
+      "afterDelay": 2.6,
+      "tone": "dark",
+      "sfx": "impact",
+      "z": 60
+    },
+    {
+      "cue": "In June twenty twenty-six",
+      "type": "date-card",
+      "seconds": 3.0,
+      "text": "June 2026",
+      "sub": "Oracle Q4 FY2026",
+      "sfx": "pageturn",
+      "z": 60
+    },
+    {
+      "cue": "Remaining performance obligations is a real accounting term",
+      "type": "stat-chart",
+      "seconds": 9.0,
+      "title": "Oracle remaining performance obligations",
+      "series": [0.08, 0.1, 0.13, 0.18, 0.26, 0.4, 0.62, 0.86, 1.0],
+      "valueFrom": 0,
+      "valueTo": 638,
+      "valuePrefix": "$",
+      "valueSuffix": "B",
+      "drawDuration": 3.0,
+      "accent": "#FF5A3C",
+      "sfx": "click",
+      "z": 60
+    },
+    {
+      "cue": "The prepaid and customer supplied hardware",
+      "type": "quote-card",
+      "seconds": 13.0,
+      "text": "The prepaid and customer supplied hardware portions of our large AI contracts now total $75 billion.",
+      "attribution": "Oracle, Q4 FY2026 release",
+      "size": 62,
+      "sfx": "impact",
+      "z": 60
+    },
+    {
+      "cue": "here's what I'd actually watch",
+      "type": "date-card",
+      "seconds": 3.0,
+      "text": "Three things to watch",
+      "sfx": "whoosh",
+      "z": 60
+    },
+    {
+      "cue": "But now you know which numbers to watch",
+      "type": "quote-card",
+      "seconds": 5.0,
+      "text": "Now you know which numbers to watch.",
+      "size": 70,
+      "typeOn": false,
+      "z": 60
+    }
+  ]
 }

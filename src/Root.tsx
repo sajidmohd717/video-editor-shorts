@@ -37,6 +37,10 @@ const common = {
     return {
       durationInFrames: Math.round(parsed.meta.durationInSeconds * parsed.meta.fps),
       fps: parsed.meta.fps,
+      // Canvas comes from the timeline, so one composition serves both 9:16
+      // shorts and 16:9 long-form.
+      width: parsed.meta.width,
+      height: parsed.meta.height,
       props: parsed,
     };
   },
