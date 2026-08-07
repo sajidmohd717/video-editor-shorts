@@ -31,3 +31,6 @@ models/
 
 *.m4a
 projects/*/vo*.wav
+
+.youtube-client-secret.json
+.youtube-token.json

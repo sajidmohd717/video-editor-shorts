@@ -18,6 +18,14 @@
     "subjectFocusX": 0.44
   },
 
+  "publish": {
+    "title": "Sam Altman: 3 Months of Work → 7 Minutes",
+    "description": "Sam Altman on what AI coding agents have done to the cost of building a startup — and why the interesting question isn't speed.\n\nCommentary and edit: The Next Curve",
+    "tags": ["Sam Altman", "OpenAI", "AI", "startups", "Y Combinator", "coding agents", "tech news"],
+    "categoryId": "28",
+    "madeForKids": false
+  },
+
   "rights": {
     "clearance": "commentary",
     "speaker": "Sam Altman",
