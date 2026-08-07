@@ -114,6 +114,39 @@ it. ~20% cutaway feels right.
 
 **Status:** keep, but only one video of evidence. Worth A/B testing.
 
+### F11 — Camera moves must be continuous across cuts
+
+Giving each shot its own punch-in makes the zoom ramp up, snap back at the cut,
+and ramp again. It reads as pumping and was the most unnatural thing the
+mechanical edit did. Real multicam edits change the crop at a cut while the move
+continues underneath.
+
+**Applied:** one scale curve per passage; each shot's `from` is the previous
+shot's `to`, and only `focusY` changes at the cut. The curve breathes on a slow
+cosine over a gentle creep so it eases back rather than climbing forever.
+**Status:** keep. Caught by the channel owner watching, not by any measurement.
+
+### F12 — 128kbps MP3 puts audible static under synthesised speech
+
+TTS returned as `mp3_44100_128` had clearly audible artifacts during voiced
+content. Switching to `pcm_24000` (uncompressed, available on the cheapest paid
+tier) removed it completely. `mp3_44100_192` and `pcm_44100` need higher tiers.
+
+**Applied:** `outputFormat: pcm_24000` in the profile; PCM comes back headerless
+so it's wrapped before use. **Status:** keep. Never ship MP3-sourced narration.
+
+**How this was misdiagnosed, because the method matters more than the finding:**
+MP3 was the first hypothesis. It was dismissed after testing for *band-limiting*
+— a hard cutoff around 16kHz — and finding none. But 128kbps MP3 on speech
+doesn't fail by band-limiting, it fails by coding artifacts during voiced
+content. The test looked for the wrong signature, so a correct hypothesis was
+ruled out and three wrong ones (room tone, low-frequency rumble, the mastering
+limiter) were chased instead.
+
+The lesson: **isolate before measuring.** Rendering three stems — narration
+alone, clip alone, and the mix — and asking "which one has it?" resolved in one
+listen what twenty minutes of spectral analysis on the mixed file did not.
+
 ---
 
 ## Baseline measurements
