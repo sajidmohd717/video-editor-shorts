@@ -16,7 +16,13 @@
     "engine": "elevenlabs",
     "voice": "XrExE9yKIg1WjnnlVkGX",
     "voiceName": "Matilda - Knowledgable, Professional",
-    "stability": 0.38
+    "model": "eleven_multilingual_v2",
+    "comment": "pcm_24000, never mp3. 128kbps MP3 produces coding artifacts on voiced speech that read as static (F12).",
+    "outputFormat": "pcm_24000",
+    "stability": 0.38,
+    "similarityBoost": 0.8,
+    "style": 0.35,
+    "speakerBoost": true
   },
   "endCard": {
     "title": "THE NEXT CURVE",

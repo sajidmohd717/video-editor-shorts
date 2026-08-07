@@ -105,12 +105,16 @@ def list_voices() -> None:
     print("use_case 'news' or 'narration'. Avoid 'characters' and 'social media'.")
 
 
-def _elevenlabs(paragraphs: list[str], out_dir: Path, voice: str | None) -> list[Path]:
+def _elevenlabs(paragraphs: list[str], out_dir: Path, voice: str | None,
+                settings: dict | None = None) -> list[Path]:
     from elevenlabs.client import ElevenLabs
 
+    cfg = settings or {}
     client = ElevenLabs(api_key=require_env("ELEVENLABS_API_KEY"))
-    voice_id = voice or require_env("ELEVENLABS_VOICE_ID")
-    model = env("ELEVENLABS_MODEL", "eleven_multilingual_v2")
+    voice_id = voice or cfg.get("voice") or require_env("ELEVENLABS_VOICE_ID")
+    model = cfg.get("model") or env("ELEVENLABS_MODEL", "eleven_multilingual_v2")
+    fmt = cfg.get("outputFormat", "pcm_24000")
+    rate = fmt.rsplit("_", 1)[-1] if fmt.startswith("pcm_") else "24000"
 
     parts: list[Path] = []
     for i, text in enumerate(paragraphs):
@@ -119,20 +123,33 @@ def _elevenlabs(paragraphs: list[str], out_dir: Path, voice: str | None) -> list
             voice_id=voice_id,
             model_id=model,
             text=text,
-            output_format="mp3_44100_128",
+            # Uncompressed PCM, never MP3. 128kbps MP3 produces coding artifacts
+            # on voiced speech that are clearly audible as static (F12). 24kHz
+            # caps bandwidth at 12kHz, far above anything that matters for
+            # speech. mp3_44100_192 and pcm_44100 need higher tiers; this doesn't.
+            output_format=fmt,
             voice_settings={
                 # Lower stability = more expressive, which suits commentary.
                 # Above ~0.5 the read flattens out and starts sounding like an IVR.
-                "stability": 0.38,
-                "similarity_boost": 0.80,
-                "style": 0.35,
-                "use_speaker_boost": True,
+                "stability": cfg.get("stability", 0.38),
+                "similarity_boost": cfg.get("similarityBoost", 0.80),
+                "style": cfg.get("style", 0.35),
+                "use_speaker_boost": cfg.get("speakerBoost", True),
             },
         )
-        part = out_dir / f"part_{i:03d}.mp3"
-        with part.open("wb") as fh:
+        # pcm_* returns headerless PCM, so it has to be wrapped before anything
+        # else can read it. s16le mono at the requested rate.
+        raw = out_dir / f"part_{i:03d}.pcm"
+        with raw.open("wb") as fh:
             for chunk in audio:
                 fh.write(chunk)
+
+        part = out_dir / f"part_{i:03d}.wav"
+        subprocess.run(
+            ["ffmpeg", "-v", "error", "-y", "-f", "s16le", "-ar", rate,
+             "-ac", "1", "-i", str(raw), str(part)],
+            check=True,
+        )
         parts.append(part)
     return parts
 
@@ -206,12 +223,33 @@ def main() -> None:
 
     project = Project(args.slug).ensure()
     paragraphs = read_script(project)
-    print(f"{len(paragraphs)} paragraph(s) via {args.engine}")
+
+    # Voice, model and output format are channel decisions, so they come from the
+    # profile when this project has a job. CLI flags still win.
+    tts_cfg: dict = {}
+    if (project.dir / "job.json").exists():
+        try:
+            from .profiles import load_job
+            tts_cfg = load_job(args.slug).get("tts", {}) or {}
+        except SystemExit:
+            tts_cfg = {}
+
+    engine = args.engine if args.engine != ap.get_default("engine") else tts_cfg.get("engine", args.engine)
+    voice = args.voice or tts_cfg.get("voice")
+
+    label = tts_cfg.get("voiceName") or voice or "default voice"
+    print(f"{len(paragraphs)} paragraph(s) via {engine} ({label})")
+    args.engine = engine
 
     if args.engine == "edge":
         print("  NOTE: edge is draft-only — unlicensed for commercial use.")
 
-    engines = {"kokoro": _kokoro, "elevenlabs": _elevenlabs, "edge": _edge}
+    def run(paras: list[str], tmp: Path) -> list[Path]:
+        if args.engine == "elevenlabs":
+            return _elevenlabs(paras, tmp, voice, tts_cfg)
+        if args.engine == "kokoro":
+            return _kokoro(paras, tmp, voice)
+        return _edge(paras, tmp, voice)
 
     # --out lets you audition an engine or voice without clobbering the vo.wav
     # the current timeline was built against.
@@ -219,7 +257,7 @@ def main() -> None:
 
     with tempfile.TemporaryDirectory() as tmp:
         tmp_dir = Path(tmp)
-        parts = engines[args.engine](paragraphs, tmp_dir, args.voice)
+        parts = run(paragraphs, tmp_dir)
         concat(parts, dest)
 
     dur = subprocess.run(

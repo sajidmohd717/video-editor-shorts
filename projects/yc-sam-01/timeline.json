@@ -3,37 +3,37 @@
   "meta": {
     "title": "Three months of work. Now seven minutes.",
     "slug": "yc-sam-01",
-    "durationInSeconds": 45.67,
+    "durationInSeconds": 46.01,
     "fps": 30
   },
   "pacing": [
     {
       "start": 0,
-      "end": 6.55,
+      "end": 6.71,
       "energy": 0.6,
       "label": "hook"
     },
     {
-      "start": 6.55,
-      "end": 19.63,
+      "start": 6.71,
+      "end": 19.79,
       "energy": 1.0,
       "label": "build"
     },
     {
-      "start": 19.63,
-      "end": 24.0,
+      "start": 19.79,
+      "end": 24.22,
       "energy": 0.4,
       "label": "hold"
     },
     {
-      "start": 24.0,
-      "end": 39.02,
+      "start": 24.22,
+      "end": 39.24,
       "energy": 1.2,
       "label": "payoff"
     },
     {
-      "start": 39.02,
-      "end": 45.67,
+      "start": 39.24,
+      "end": 46.01,
       "energy": 0.5,
       "label": "outro"
     }
@@ -42,7 +42,7 @@
     {
       "id": "open0",
       "start": 0.0,
-      "end": 1.712,
+      "end": 1.752,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -70,8 +70,8 @@
     },
     {
       "id": "open1",
-      "start": 1.712,
-      "end": 3.425,
+      "start": 1.752,
+      "end": 3.505,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -99,8 +99,8 @@
     },
     {
       "id": "open2",
-      "start": 3.425,
-      "end": 5.137,
+      "start": 3.505,
+      "end": 5.258,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -128,8 +128,8 @@
     },
     {
       "id": "open3",
-      "start": 5.137,
-      "end": 6.85,
+      "start": 5.258,
+      "end": 7.01,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -157,8 +157,8 @@
     },
     {
       "id": "a0",
-      "start": 6.85,
-      "end": 7.915,
+      "start": 7.01,
+      "end": 8.075,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -186,8 +186,8 @@
     },
     {
       "id": "a1",
-      "start": 7.915,
-      "end": 8.98,
+      "start": 8.075,
+      "end": 9.14,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -215,8 +215,8 @@
     },
     {
       "id": "a2",
-      "start": 8.98,
-      "end": 10.045,
+      "start": 9.14,
+      "end": 10.205,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -244,8 +244,8 @@
     },
     {
       "id": "a3",
-      "start": 10.045,
-      "end": 11.11,
+      "start": 10.205,
+      "end": 11.27,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -273,8 +273,8 @@
     },
     {
       "id": "a4",
-      "start": 11.11,
-      "end": 12.175,
+      "start": 11.27,
+      "end": 12.335,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -302,8 +302,8 @@
     },
     {
       "id": "a5",
-      "start": 12.175,
-      "end": 13.24,
+      "start": 12.335,
+      "end": 13.4,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -331,8 +331,8 @@
     },
     {
       "id": "a6",
-      "start": 13.24,
-      "end": 14.305,
+      "start": 13.4,
+      "end": 14.465,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -360,8 +360,8 @@
     },
     {
       "id": "a7",
-      "start": 14.305,
-      "end": 15.37,
+      "start": 14.465,
+      "end": 15.53,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -389,8 +389,8 @@
     },
     {
       "id": "a8",
-      "start": 15.37,
-      "end": 16.435,
+      "start": 15.53,
+      "end": 16.595,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -418,8 +418,8 @@
     },
     {
       "id": "a9",
-      "start": 16.435,
-      "end": 17.5,
+      "start": 16.595,
+      "end": 17.66,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -447,8 +447,8 @@
     },
     {
       "id": "a10",
-      "start": 17.5,
-      "end": 18.565,
+      "start": 17.66,
+      "end": 18.725,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -476,8 +476,8 @@
     },
     {
       "id": "a11",
-      "start": 18.565,
-      "end": 19.63,
+      "start": 18.725,
+      "end": 19.79,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -505,8 +505,8 @@
     },
     {
       "id": "vo1bg",
-      "start": 19.63,
-      "end": 24.3,
+      "start": 19.79,
+      "end": 24.52,
       "layout": "graphic",
       "background": "#E9E9EC",
       "sources": [],
@@ -523,8 +523,8 @@
     },
     {
       "id": "b0",
-      "start": 24.3,
-      "end": 25.432,
+      "start": 24.52,
+      "end": 25.652,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -552,8 +552,8 @@
     },
     {
       "id": "b1",
-      "start": 25.432,
-      "end": 26.565,
+      "start": 25.652,
+      "end": 26.785,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -581,8 +581,8 @@
     },
     {
       "id": "b2",
-      "start": 26.565,
-      "end": 27.697,
+      "start": 26.785,
+      "end": 27.917,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -610,8 +610,8 @@
     },
     {
       "id": "b3",
-      "start": 27.697,
-      "end": 28.829,
+      "start": 27.917,
+      "end": 29.049,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -639,8 +639,8 @@
     },
     {
       "id": "b4",
-      "start": 28.829,
-      "end": 29.962,
+      "start": 29.049,
+      "end": 30.182,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -668,8 +668,8 @@
     },
     {
       "id": "nb0",
-      "start": 29.97,
-      "end": 31.56,
+      "start": 30.19,
+      "end": 31.78,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -697,8 +697,8 @@
     },
     {
       "id": "b6",
-      "start": 31.094,
-      "end": 32.226,
+      "start": 31.314,
+      "end": 32.446,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -726,8 +726,8 @@
     },
     {
       "id": "b7",
-      "start": 32.226,
-      "end": 33.358,
+      "start": 32.446,
+      "end": 33.578,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -755,8 +755,8 @@
     },
     {
       "id": "nb1",
-      "start": 32.9,
-      "end": 34.12,
+      "start": 33.12,
+      "end": 34.34,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -784,8 +784,8 @@
     },
     {
       "id": "b9",
-      "start": 34.491,
-      "end": 35.623,
+      "start": 34.711,
+      "end": 35.843,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -813,8 +813,8 @@
     },
     {
       "id": "nb2",
-      "start": 35.66,
-      "end": 36.92,
+      "start": 35.88,
+      "end": 37.14,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -842,8 +842,8 @@
     },
     {
       "id": "b11",
-      "start": 36.755,
-      "end": 37.888,
+      "start": 36.975,
+      "end": 38.108,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -871,8 +871,8 @@
     },
     {
       "id": "b12",
-      "start": 37.888,
-      "end": 39.02,
+      "start": 38.108,
+      "end": 39.24,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -900,8 +900,8 @@
     },
     {
       "id": "close0",
-      "start": 39.02,
-      "end": 41.295,
+      "start": 39.24,
+      "end": 41.575,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -929,8 +929,8 @@
     },
     {
       "id": "close1",
-      "start": 41.295,
-      "end": 43.57,
+      "start": 41.575,
+      "end": 43.91,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -958,8 +958,8 @@
     },
     {
       "id": "close_end",
-      "start": 43.57,
-      "end": 45.67,
+      "start": 43.91,
+      "end": 46.01,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1012,8 +1012,8 @@
     {
       "type": "comparison",
       "id": "vo1_ov0",
-      "start": 19.73,
-      "end": 24.3,
+      "start": 19.89,
+      "end": 24.52,
       "z": 55,
       "beforeLabel": "Then",
       "beforeValue": "3 months",
@@ -1027,7 +1027,7 @@
       "type": "chrome",
       "id": "bug",
       "start": 0,
-      "end": 45.67,
+      "end": 46.01,
       "z": 85,
       "bug": "THE NEXT CURVE",
       "tone": "light"
@@ -1036,15 +1036,15 @@
       "type": "progress",
       "id": "prog",
       "start": 0,
-      "end": 45.67,
+      "end": 46.01,
       "z": 95,
       "style": "bar"
     },
     {
       "type": "end-card",
       "id": "end",
-      "start": 44.37,
-      "end": 45.67,
+      "start": 44.71,
+      "end": 46.01,
       "z": 92,
       "title": "THE NEXT CURVE",
       "subtitle": "big ideas, clear direction",
@@ -1066,1207 +1066,1207 @@
     "cues": [
       {
         "start": 0.0,
-        "end": 0.64,
+        "end": 0.7,
         "emphasis": "none",
         "words": [
           {
             "text": "Sam",
             "start": 0.0,
-            "end": 0.3
+            "end": 0.28
           },
           {
             "text": "Altman",
-            "start": 0.3,
-            "end": 0.64
+            "start": 0.28,
+            "end": 0.7
           }
         ]
       },
       {
-        "start": 0.64,
-        "end": 1.28,
+        "start": 0.7,
+        "end": 1.36,
         "emphasis": "none",
         "words": [
           {
             "text": "just",
-            "start": 0.64,
-            "end": 0.84
+            "start": 0.7,
+            "end": 0.92
           },
           {
             "text": "described",
-            "start": 0.84,
-            "end": 1.28
+            "start": 0.92,
+            "end": 1.36
           }
         ]
       },
       {
-        "start": 1.28,
-        "end": 1.84,
+        "start": 1.36,
+        "end": 1.9,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 1.28,
-            "end": 1.46
+            "start": 1.36,
+            "end": 1.56
           },
           {
             "text": "entire",
-            "start": 1.46,
-            "end": 1.84
+            "start": 1.56,
+            "end": 1.9
           }
         ]
       },
       {
-        "start": 1.84,
-        "end": 2.38,
+        "start": 1.9,
+        "end": 2.46,
         "emphasis": "none",
         "words": [
           {
             "text": "premise",
-            "start": 1.84,
-            "end": 2.2
+            "start": 1.9,
+            "end": 2.28
           },
           {
             "text": "of",
-            "start": 2.2,
-            "end": 2.38
+            "start": 2.28,
+            "end": 2.46
           }
         ]
       },
       {
-        "start": 2.38,
-        "end": 2.78,
+        "start": 2.46,
+        "end": 2.92,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 2.38,
-            "end": 2.46
+            "start": 2.46,
+            "end": 2.56
           },
           {
             "text": "startup",
-            "start": 2.46,
-            "end": 2.78
+            "start": 2.56,
+            "end": 2.92
           }
         ]
       },
       {
-        "start": 2.78,
-        "end": 3.6,
+        "start": 2.92,
+        "end": 3.82,
         "emphasis": "none",
         "words": [
           {
             "text": "collapsing",
-            "start": 2.78,
-            "end": 3.22
+            "start": 2.92,
+            "end": 3.5
           },
           {
             "text": "into",
-            "start": 3.22,
-            "end": 3.6
+            "start": 3.5,
+            "end": 3.82
           }
         ]
       },
       {
-        "start": 3.6,
-        "end": 4.69,
+        "start": 3.82,
+        "end": 4.89,
         "emphasis": "none",
         "words": [
           {
             "text": "an",
-            "start": 3.6,
-            "end": 3.74
+            "start": 3.82,
+            "end": 3.98
           },
           {
             "text": "afternoon",
-            "start": 3.74,
-            "end": 4.24
+            "start": 3.98,
+            "end": 4.44
           }
         ]
       },
       {
-        "start": 5.04,
-        "end": 5.5,
+        "start": 5.2,
+        "end": 5.64,
         "emphasis": "none",
         "words": [
           {
             "text": "listen",
-            "start": 5.04,
-            "end": 5.3
+            "start": 5.2,
+            "end": 5.42
           },
           {
             "text": "to",
-            "start": 5.3,
-            "end": 5.5
+            "start": 5.42,
+            "end": 5.64
           }
         ]
       },
       {
-        "start": 5.5,
-        "end": 5.82,
+        "start": 5.64,
+        "end": 5.98,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 5.5,
-            "end": 5.6
+            "start": 5.64,
+            "end": 5.76
           },
           {
             "text": "number",
-            "start": 5.6,
-            "end": 5.82
+            "start": 5.76,
+            "end": 5.98
           }
         ]
       },
       {
-        "start": 5.82,
-        "end": 6.75,
+        "start": 5.98,
+        "end": 6.91,
         "emphasis": "none",
         "words": [
           {
             "text": "he",
-            "start": 5.82,
-            "end": 6.04
+            "start": 5.98,
+            "end": 6.18
           },
           {
             "text": "uses.",
-            "start": 6.04,
-            "end": 6.3
+            "start": 6.18,
+            "end": 6.46
           }
         ]
       },
       {
-        "start": 6.85,
-        "end": 7.45,
+        "start": 7.01,
+        "end": 7.61,
         "emphasis": "none",
         "words": [
           {
             "text": "You",
-            "start": 6.85,
-            "end": 7.05
+            "start": 7.01,
+            "end": 7.21
           },
           {
             "text": "know",
-            "start": 7.05,
-            "end": 7.45
+            "start": 7.21,
+            "end": 7.61
           }
         ]
       },
       {
-        "start": 7.45,
-        "end": 8.01,
+        "start": 7.61,
+        "end": 8.17,
         "emphasis": "none",
         "words": [
           {
             "text": "what",
-            "start": 7.45,
-            "end": 7.73
+            "start": 7.61,
+            "end": 7.89
           },
           {
             "text": "took",
-            "start": 7.73,
-            "end": 8.01
+            "start": 7.89,
+            "end": 8.17
           }
         ]
       },
       {
-        "start": 8.01,
-        "end": 10.22,
+        "start": 8.17,
+        "end": 10.38,
         "emphasis": "color",
         "words": [
           {
             "text": "three",
-            "start": 8.01,
-            "end": 9.61
+            "start": 8.17,
+            "end": 9.77
           },
           {
             "text": "months",
-            "start": 9.61,
-            "end": 10.22
+            "start": 9.77,
+            "end": 10.38
           }
         ]
       },
       {
-        "start": 10.22,
-        "end": 11.33,
+        "start": 10.38,
+        "end": 11.49,
         "emphasis": "none",
         "words": [
           {
             "text": "to",
-            "start": 10.22,
-            "end": 10.53
+            "start": 10.38,
+            "end": 10.69
           },
           {
             "text": "build",
-            "start": 10.53,
-            "end": 11.33
+            "start": 10.69,
+            "end": 11.49
           }
         ]
       },
       {
-        "start": 11.33,
-        "end": 11.85,
+        "start": 11.49,
+        "end": 12.01,
         "emphasis": "none",
         "words": [
           {
             "text": "at",
-            "start": 11.33,
-            "end": 11.47
+            "start": 11.49,
+            "end": 11.63
           },
           {
             "text": "the",
-            "start": 11.47,
-            "end": 11.66
+            "start": 11.63,
+            "end": 11.82
           }
         ]
       },
       {
-        "start": 11.85,
-        "end": 12.53,
+        "start": 12.01,
+        "end": 12.69,
         "emphasis": "none",
         "words": [
           {
             "text": "time\u2014that",
-            "start": 11.85,
-            "end": 12.32
+            "start": 12.01,
+            "end": 12.48
           },
           {
             "text": "each",
-            "start": 12.32,
-            "end": 12.53
+            "start": 12.48,
+            "end": 12.69
           }
         ]
       },
       {
-        "start": 12.53,
-        "end": 13.56,
+        "start": 12.69,
+        "end": 13.72,
         "emphasis": "none",
         "words": [
           {
             "text": "company",
-            "start": 12.53,
-            "end": 13.16
+            "start": 12.69,
+            "end": 13.32
           },
           {
             "text": "built",
-            "start": 13.16,
-            "end": 13.56
+            "start": 13.32,
+            "end": 13.72
           }
         ]
       },
       {
-        "start": 13.56,
-        "end": 14.15,
+        "start": 13.72,
+        "end": 14.31,
         "emphasis": "none",
         "words": [
           {
             "text": "over",
-            "start": 13.56,
-            "end": 13.92
+            "start": 13.72,
+            "end": 14.08
           },
           {
             "text": "the",
-            "start": 13.92,
-            "end": 14.15
+            "start": 14.08,
+            "end": 14.31
           }
         ]
       },
       {
-        "start": 14.15,
-        "end": 15.2,
+        "start": 14.31,
+        "end": 15.36,
         "emphasis": "none",
         "words": [
           {
             "text": "whole",
-            "start": 14.15,
-            "end": 14.59
+            "start": 14.31,
+            "end": 14.75
           },
           {
             "text": "YC",
-            "start": 14.73,
-            "end": 14.75
+            "start": 14.89,
+            "end": 14.91
           }
         ]
       },
       {
-        "start": 15.41,
-        "end": 16.12,
+        "start": 15.57,
+        "end": 16.28,
         "emphasis": "none",
         "words": [
           {
             "text": "startup\u2014could",
-            "start": 15.41,
-            "end": 15.85
+            "start": 15.57,
+            "end": 16.01
           },
           {
             "text": "now",
-            "start": 15.85,
-            "end": 16.12
+            "start": 16.01,
+            "end": 16.28
           }
         ]
       },
       {
-        "start": 16.12,
-        "end": 16.67,
+        "start": 16.28,
+        "end": 16.83,
         "emphasis": "none",
         "words": [
           {
             "text": "be",
-            "start": 16.12,
-            "end": 16.31
+            "start": 16.28,
+            "end": 16.47
           },
           {
             "text": "done",
-            "start": 16.31,
-            "end": 16.67
+            "start": 16.47,
+            "end": 16.83
           }
         ]
       },
       {
-        "start": 16.67,
-        "end": 17.09,
+        "start": 16.83,
+        "end": 17.25,
         "emphasis": "none",
         "words": [
           {
             "text": "in",
-            "start": 16.67,
-            "end": 16.81
+            "start": 16.83,
+            "end": 16.97
           },
           {
             "text": "like",
-            "start": 16.81,
-            "end": 17.09
+            "start": 16.97,
+            "end": 17.25
           }
         ]
       },
       {
-        "start": 17.09,
-        "end": 17.97,
+        "start": 17.25,
+        "end": 18.13,
         "emphasis": "color",
         "words": [
           {
             "text": "seven",
-            "start": 17.09,
-            "end": 17.45
+            "start": 17.25,
+            "end": 17.61
           },
           {
             "text": "minutes",
-            "start": 17.45,
-            "end": 17.97
+            "start": 17.61,
+            "end": 18.13
           }
         ]
       },
       {
-        "start": 17.97,
-        "end": 18.31,
+        "start": 18.13,
+        "end": 18.47,
         "emphasis": "none",
         "words": [
           {
             "text": "by",
-            "start": 17.97,
-            "end": 18.2
+            "start": 18.13,
+            "end": 18.36
           },
           {
             "text": "a",
-            "start": 18.2,
-            "end": 18.31
+            "start": 18.36,
+            "end": 18.47
           }
         ]
       },
       {
-        "start": 18.31,
-        "end": 19.63,
+        "start": 18.47,
+        "end": 19.79,
         "emphasis": "none",
         "words": [
           {
             "text": "coding",
-            "start": 18.31,
-            "end": 19.63
+            "start": 18.47,
+            "end": 19.79
           }
         ]
       },
       {
-        "start": 19.63,
-        "end": 20.29,
+        "start": 19.79,
+        "end": 20.21,
         "emphasis": "color",
         "words": [
           {
             "text": "Three",
-            "start": 19.63,
-            "end": 19.83
+            "start": 19.79,
+            "end": 19.97
           },
           {
             "text": "months,",
-            "start": 19.83,
-            "end": 20.07
+            "start": 19.97,
+            "end": 20.21
           }
         ]
       },
       {
-        "start": 20.29,
-        "end": 20.57,
+        "start": 20.21,
+        "end": 20.65,
         "emphasis": "none",
         "words": [
           {
             "text": "down",
-            "start": 20.29,
-            "end": 20.43
+            "start": 20.21,
+            "end": 20.51
           },
           {
             "text": "to",
-            "start": 20.43,
-            "end": 20.57
+            "start": 20.51,
+            "end": 20.65
           }
         ]
       },
       {
-        "start": 20.57,
-        "end": 21.26,
+        "start": 20.65,
+        "end": 21.36,
         "emphasis": "color",
         "words": [
           {
             "text": "seven.",
-            "start": 20.57,
-            "end": 20.81
+            "start": 20.65,
+            "end": 20.91
           }
         ]
       },
       {
-        "start": 21.37,
-        "end": 21.83,
+        "start": 21.43,
+        "end": 21.89,
         "emphasis": "none",
         "words": [
           {
             "text": "That",
-            "start": 21.37,
-            "end": 21.53
+            "start": 21.43,
+            "end": 21.59
           },
           {
             "text": "isn't",
-            "start": 21.53,
-            "end": 21.83
+            "start": 21.59,
+            "end": 21.89
           }
         ]
       },
       {
-        "start": 21.83,
-        "end": 22.25,
+        "start": 21.89,
+        "end": 22.29,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 21.83,
-            "end": 21.89
+            "start": 21.89,
+            "end": 21.95
           },
           {
             "text": "productivity",
-            "start": 21.89,
-            "end": 22.25
+            "start": 21.95,
+            "end": 22.29
           }
         ]
       },
       {
-        "start": 22.25,
-        "end": 22.99,
+        "start": 22.29,
+        "end": 23.11,
         "emphasis": "none",
         "words": [
           {
             "text": "gain.",
-            "start": 22.25,
-            "end": 22.71
+            "start": 22.29,
+            "end": 22.77
           }
         ]
       },
       {
-        "start": 22.99,
-        "end": 23.31,
+        "start": 23.11,
+        "end": 23.49,
         "emphasis": "none",
         "words": [
           {
             "text": "That's",
-            "start": 22.99,
-            "end": 23.21
+            "start": 23.11,
+            "end": 23.37
           },
           {
             "text": "the",
-            "start": 23.21,
-            "end": 23.31
+            "start": 23.37,
+            "end": 23.49
           }
         ]
       },
       {
-        "start": 23.31,
-        "end": 24.2,
+        "start": 23.49,
+        "end": 24.42,
         "emphasis": "color",
         "words": [
           {
             "text": "floor",
-            "start": 23.31,
-            "end": 23.49
+            "start": 23.49,
+            "end": 23.69
           },
           {
             "text": "moving.",
-            "start": 23.49,
-            "end": 23.75
-          }
-        ]
-      },
-      {
-        "start": 24.3,
-        "end": 24.52,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "I",
-            "start": 24.3,
-            "end": 24.31
-          },
-          {
-            "text": "think",
-            "start": 24.31,
-            "end": 24.52
+            "start": 23.69,
+            "end": 23.97
           }
         ]
       },
       {
         "start": 24.52,
-        "end": 24.87,
+        "end": 24.74,
         "emphasis": "none",
         "words": [
           {
-            "text": "you",
+            "text": "I",
             "start": 24.52,
-            "end": 24.65
+            "end": 24.53
           },
           {
-            "text": "could",
-            "start": 24.65,
-            "end": 24.87
+            "text": "think",
+            "start": 24.53,
+            "end": 24.74
           }
         ]
       },
       {
-        "start": 24.87,
-        "end": 25.23,
+        "start": 24.74,
+        "end": 25.09,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "you",
+            "start": 24.74,
+            "end": 24.87
+          },
+          {
+            "text": "could",
+            "start": 24.87,
+            "end": 25.09
+          }
+        ]
+      },
+      {
+        "start": 25.09,
+        "end": 25.45,
         "emphasis": "none",
         "words": [
           {
             "text": "either",
-            "start": 24.87,
-            "end": 25.14
+            "start": 25.09,
+            "end": 25.36
           },
           {
             "text": "be",
-            "start": 25.14,
-            "end": 25.23
+            "start": 25.36,
+            "end": 25.45
           }
         ]
       },
       {
-        "start": 25.23,
-        "end": 25.68,
+        "start": 25.45,
+        "end": 25.9,
         "emphasis": "none",
         "words": [
           {
             "text": "sad",
-            "start": 25.23,
-            "end": 25.42
+            "start": 25.45,
+            "end": 25.64
           },
           {
             "text": "and",
-            "start": 25.42,
-            "end": 25.68
+            "start": 25.64,
+            "end": 25.9
           }
         ]
       },
       {
-        "start": 25.68,
-        "end": 26.05,
+        "start": 25.9,
+        "end": 26.27,
         "emphasis": "none",
         "words": [
           {
             "text": "be",
-            "start": 25.68,
-            "end": 25.72
+            "start": 25.9,
+            "end": 25.94
           },
           {
             "text": "like,",
-            "start": 25.72,
-            "end": 25.95
+            "start": 25.94,
+            "end": 26.17
           }
         ]
       },
       {
-        "start": 26.05,
-        "end": 26.74,
+        "start": 26.27,
+        "end": 26.96,
         "emphasis": "none",
         "words": [
           {
             "text": "\u2018Oh",
-            "start": 26.05,
-            "end": 26.36
+            "start": 26.27,
+            "end": 26.58
           },
           {
             "text": "man,",
-            "start": 26.36,
-            "end": 26.48
+            "start": 26.58,
+            "end": 26.7
           }
         ]
       },
       {
-        "start": 26.74,
-        "end": 27.17,
+        "start": 26.96,
+        "end": 27.39,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 26.74,
-            "end": 26.81
+            "start": 26.96,
+            "end": 27.03
           },
           {
             "text": "Codex",
-            "start": 26.81,
-            "end": 27.05
+            "start": 27.03,
+            "end": 27.27
           }
         ]
       },
       {
-        "start": 27.17,
-        "end": 27.6,
+        "start": 27.39,
+        "end": 27.82,
         "emphasis": "none",
         "words": [
           {
             "text": "prompt",
-            "start": 27.17,
-            "end": 27.46
+            "start": 27.39,
+            "end": 27.68
           },
           {
             "text": "is",
-            "start": 27.48,
-            "end": 27.6
+            "start": 27.7,
+            "end": 27.82
           }
         ]
       },
       {
-        "start": 27.6,
-        "end": 27.87,
+        "start": 27.82,
+        "end": 28.09,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 27.6,
-            "end": 27.61
+            "start": 27.82,
+            "end": 27.83
           },
           {
             "text": "whole",
-            "start": 27.61,
-            "end": 27.87
+            "start": 27.83,
+            "end": 28.09
           }
         ]
       },
       {
-        "start": 27.87,
-        "end": 28.34,
+        "start": 28.09,
+        "end": 28.56,
         "emphasis": "none",
         "words": [
           {
             "text": "startup,\u2019",
-            "start": 27.87,
-            "end": 28.24
+            "start": 28.09,
+            "end": 28.46
           }
         ]
       },
       {
-        "start": 28.34,
-        "end": 28.6,
+        "start": 28.56,
+        "end": 28.82,
         "emphasis": "none",
         "words": [
           {
             "text": "or",
-            "start": 28.34,
-            "end": 28.44
+            "start": 28.56,
+            "end": 28.66
           },
           {
             "text": "you",
-            "start": 28.44,
-            "end": 28.6
+            "start": 28.66,
+            "end": 28.82
           }
         ]
       },
       {
-        "start": 28.6,
-        "end": 29.18,
+        "start": 28.82,
+        "end": 29.4,
         "emphasis": "none",
         "words": [
           {
             "text": "could",
-            "start": 28.6,
-            "end": 28.96
+            "start": 28.82,
+            "end": 29.18
           },
           {
             "text": "be",
-            "start": 28.96,
-            "end": 29.18
+            "start": 29.18,
+            "end": 29.4
           }
         ]
       },
       {
-        "start": 29.18,
-        "end": 29.22,
+        "start": 29.4,
+        "end": 29.44,
         "emphasis": "none",
         "words": [
           {
             "text": "like,",
-            "start": 29.18,
-            "end": 29.22
+            "start": 29.4,
+            "end": 29.44
           }
         ]
       },
       {
-        "start": 29.22,
-        "end": 29.43,
+        "start": 29.44,
+        "end": 29.65,
         "emphasis": "none",
         "words": [
           {
             "text": "\u2018I",
-            "start": 29.22,
-            "end": 29.27
+            "start": 29.44,
+            "end": 29.49
           },
           {
             "text": "can",
-            "start": 29.27,
-            "end": 29.43
+            "start": 29.49,
+            "end": 29.65
           }
         ]
       },
       {
-        "start": 29.43,
-        "end": 29.81,
+        "start": 29.65,
+        "end": 30.03,
         "emphasis": "none",
         "words": [
           {
             "text": "go",
-            "start": 29.43,
-            "end": 29.54
+            "start": 29.65,
+            "end": 29.76
           },
           {
             "text": "start",
-            "start": 29.54,
-            "end": 29.81
+            "start": 29.76,
+            "end": 30.03
           }
         ]
       },
       {
-        "start": 29.81,
-        "end": 30.35,
+        "start": 30.03,
+        "end": 30.57,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 29.81,
-            "end": 29.97
+            "start": 30.03,
+            "end": 30.19
           },
           {
             "text": "world's",
-            "start": 29.97,
-            "end": 30.33
+            "start": 30.19,
+            "end": 30.55
           }
         ]
       },
       {
-        "start": 30.35,
-        "end": 31.27,
+        "start": 30.57,
+        "end": 31.49,
         "emphasis": "none",
         "words": [
           {
             "text": "most",
-            "start": 30.35,
-            "end": 30.58
+            "start": 30.57,
+            "end": 30.8
           },
           {
             "text": "ambitious,",
-            "start": 30.58,
-            "end": 31.05
+            "start": 30.8,
+            "end": 31.27
           }
         ]
       },
       {
-        "start": 31.27,
-        "end": 31.94,
+        "start": 31.49,
+        "end": 32.16,
         "emphasis": "none",
         "words": [
           {
             "text": "crazy",
-            "start": 31.27,
-            "end": 31.56
+            "start": 31.49,
+            "end": 31.78
           },
           {
             "text": "company.",
-            "start": 31.56,
-            "end": 31.94
+            "start": 31.78,
+            "end": 32.16
           }
         ]
       },
       {
-        "start": 31.94,
-        "end": 32.2,
+        "start": 32.16,
+        "end": 32.42,
         "emphasis": "none",
         "words": [
           {
             "text": "I",
-            "start": 31.94,
-            "end": 32.04
+            "start": 32.16,
+            "end": 32.26
           },
           {
             "text": "can",
-            "start": 32.04,
-            "end": 32.2
+            "start": 32.26,
+            "end": 32.42
           }
         ]
       },
       {
-        "start": 32.2,
-        "end": 32.82,
+        "start": 32.42,
+        "end": 33.04,
         "emphasis": "none",
         "words": [
           {
             "text": "have",
-            "start": 32.2,
-            "end": 32.37
+            "start": 32.42,
+            "end": 32.59
           }
         ]
       },
       {
-        "start": 32.9,
-        "end": 33.07,
+        "start": 33.12,
+        "end": 33.29,
         "emphasis": "none",
         "words": [
           {
             "text": "experts",
-            "start": 32.9,
-            "end": 32.97
+            "start": 33.12,
+            "end": 33.19
           },
           {
             "text": "in",
-            "start": 32.97,
-            "end": 33.07
+            "start": 33.19,
+            "end": 33.29
           }
         ]
       },
       {
-        "start": 33.07,
-        "end": 33.62,
+        "start": 33.29,
+        "end": 33.84,
         "emphasis": "none",
         "words": [
           {
             "text": "every",
-            "start": 33.07,
-            "end": 33.4
+            "start": 33.29,
+            "end": 33.62
           },
           {
             "text": "field",
-            "start": 33.4,
-            "end": 33.62
+            "start": 33.62,
+            "end": 33.84
           }
         ]
       },
       {
-        "start": 33.62,
-        "end": 34.66,
+        "start": 33.84,
+        "end": 34.88,
         "emphasis": "none",
         "words": [
           {
             "text": "working",
-            "start": 33.62,
-            "end": 34.0
+            "start": 33.84,
+            "end": 34.22
           },
           {
             "text": "together.",
-            "start": 34.0,
-            "end": 34.45
+            "start": 34.22,
+            "end": 34.67
           }
         ]
       },
       {
-        "start": 34.66,
-        "end": 34.94,
+        "start": 34.88,
+        "end": 35.16,
         "emphasis": "none",
         "words": [
           {
             "text": "I",
-            "start": 34.66,
-            "end": 34.75
+            "start": 34.88,
+            "end": 34.97
           },
           {
             "text": "can",
-            "start": 34.75,
-            "end": 34.94
+            "start": 34.97,
+            "end": 35.16
           }
         ]
       },
       {
-        "start": 34.94,
-        "end": 35.66,
+        "start": 35.16,
+        "end": 35.88,
         "emphasis": "none",
         "words": [
           {
             "text": "do",
-            "start": 34.94,
-            "end": 35.05
+            "start": 35.16,
+            "end": 35.27
           },
           {
             "text": "these",
-            "start": 35.05,
-            "end": 35.66
+            "start": 35.27,
+            "end": 35.88
           }
         ]
       },
       {
-        "start": 35.66,
-        "end": 35.93,
+        "start": 35.88,
+        "end": 36.15,
         "emphasis": "none",
         "words": [
           {
             "text": "very",
-            "start": 35.66,
-            "end": 35.75
+            "start": 35.88,
+            "end": 35.97
           },
           {
             "text": "hard",
-            "start": 35.75,
-            "end": 35.93
+            "start": 35.97,
+            "end": 36.15
           }
         ]
       },
       {
-        "start": 35.93,
-        "end": 37.1,
+        "start": 36.15,
+        "end": 37.32,
         "emphasis": "none",
         "words": [
           {
             "text": "technological",
-            "start": 35.93,
-            "end": 36.88
+            "start": 36.15,
+            "end": 37.1
           },
           {
             "text": "things",
-            "start": 36.88,
-            "end": 37.1
+            "start": 37.1,
+            "end": 37.32
           }
         ]
       },
       {
-        "start": 37.1,
-        "end": 37.78,
+        "start": 37.32,
+        "end": 38.0,
         "emphasis": "none",
         "words": [
           {
             "text": "that",
-            "start": 37.1,
-            "end": 37.48
+            "start": 37.32,
+            "end": 37.7
           },
           {
             "text": "were",
-            "start": 37.48,
-            "end": 37.78
+            "start": 37.7,
+            "end": 38.0
           }
         ]
       },
       {
-        "start": 37.78,
-        "end": 39.02,
+        "start": 38.0,
+        "end": 39.24,
         "emphasis": "color",
         "words": [
           {
             "text": "just",
-            "start": 37.78,
-            "end": 38.4
+            "start": 38.0,
+            "end": 38.62
           },
           {
             "text": "impossible.\u2019",
-            "start": 38.4,
-            "end": 38.99
+            "start": 38.62,
+            "end": 39.21
           }
         ]
       },
       {
-        "start": 39.02,
-        "end": 39.34,
+        "start": 39.24,
+        "end": 39.52,
         "emphasis": "none",
         "words": [
           {
             "text": "So",
-            "start": 39.02,
-            "end": 39.22
+            "start": 39.24,
+            "end": 39.4
           },
           {
             "text": "the",
-            "start": 39.22,
-            "end": 39.34
+            "start": 39.4,
+            "end": 39.52
           }
         ]
       },
       {
-        "start": 39.34,
-        "end": 39.9,
+        "start": 39.52,
+        "end": 40.1,
         "emphasis": "none",
         "words": [
           {
             "text": "real",
-            "start": 39.34,
-            "end": 39.52
+            "start": 39.52,
+            "end": 39.72
           },
           {
             "text": "question",
-            "start": 39.52,
-            "end": 39.9
+            "start": 39.72,
+            "end": 40.1
           }
         ]
       },
       {
-        "start": 39.9,
-        "end": 40.44,
+        "start": 40.1,
+        "end": 40.64,
         "emphasis": "none",
         "words": [
           {
             "text": "isn't",
-            "start": 39.9,
-            "end": 40.28
+            "start": 40.1,
+            "end": 40.5
           },
           {
             "text": "whether",
-            "start": 40.28,
-            "end": 40.44
+            "start": 40.5,
+            "end": 40.64
           }
         ]
       },
       {
-        "start": 40.44,
-        "end": 40.78,
+        "start": 40.64,
+        "end": 40.96,
         "emphasis": "none",
         "words": [
           {
             "text": "you",
-            "start": 40.44,
-            "end": 40.64
+            "start": 40.64,
+            "end": 40.84
           },
           {
             "text": "can",
-            "start": 40.64,
-            "end": 40.78
+            "start": 40.84,
+            "end": 40.96
           }
         ]
       },
       {
-        "start": 40.78,
-        "end": 41.85,
+        "start": 40.96,
+        "end": 42.05,
         "emphasis": "none",
         "words": [
           {
             "text": "build",
-            "start": 40.78,
-            "end": 40.98
+            "start": 40.96,
+            "end": 41.14
           },
           {
             "text": "faster.",
-            "start": 40.98,
-            "end": 41.4
-          }
-        ]
-      },
-      {
-        "start": 42.02,
-        "end": 42.34,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "It's",
-            "start": 42.02,
-            "end": 42.22
-          },
-          {
-            "text": "what",
-            "start": 42.22,
-            "end": 42.34
+            "start": 41.14,
+            "end": 41.6
           }
         ]
       },
       {
         "start": 42.34,
-        "end": 42.8,
+        "end": 42.62,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "It's",
+            "start": 42.34,
+            "end": 42.48
+          },
+          {
+            "text": "what",
+            "start": 42.48,
+            "end": 42.62
+          }
+        ]
+      },
+      {
+        "start": 42.62,
+        "end": 43.08,
         "emphasis": "none",
         "words": [
           {
             "text": "you'd",
-            "start": 42.34,
-            "end": 42.52
+            "start": 42.62,
+            "end": 42.82
           },
           {
             "text": "attempt",
-            "start": 42.52,
-            "end": 42.8
+            "start": 42.82,
+            "end": 43.08
           }
         ]
       },
       {
-        "start": 42.8,
-        "end": 43.3,
+        "start": 43.08,
+        "end": 43.62,
         "emphasis": "none",
         "words": [
           {
             "text": "if",
-            "start": 42.8,
-            "end": 43.02
+            "start": 43.08,
+            "end": 43.3
           },
           {
             "text": "building",
-            "start": 43.02,
-            "end": 43.3
-          }
-        ]
-      },
-      {
-        "start": 43.3,
-        "end": 43.92,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "stopped",
             "start": 43.3,
             "end": 43.62
-          },
-          {
-            "text": "being",
-            "start": 43.62,
-            "end": 43.92
           }
         ]
       },
       {
-        "start": 43.92,
+        "start": 43.62,
         "end": 44.26,
         "emphasis": "none",
         "words": [
           {
-            "text": "the",
-            "start": 43.92,
-            "end": 44.06
+            "text": "stopped",
+            "start": 43.62,
+            "end": 43.94
           },
           {
-            "text": "hard",
-            "start": 44.06,
+            "text": "being",
+            "start": 43.94,
             "end": 44.26
           }
         ]
       },
       {
         "start": 44.26,
-        "end": 44.87,
+        "end": 44.6,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "the",
+            "start": 44.26,
+            "end": 44.4
+          },
+          {
+            "text": "hard",
+            "start": 44.4,
+            "end": 44.6
+          }
+        ]
+      },
+      {
+        "start": 44.6,
+        "end": 45.21,
         "emphasis": "none",
         "words": [
           {
             "text": "part.",
-            "start": 44.26,
-            "end": 44.52
+            "start": 44.6,
+            "end": 44.86
           }
         ]
       }
@@ -2279,7 +2279,7 @@
       "role": "vo",
       "start": 0.0,
       "offset": 0.0,
-      "duration": 6.55,
+      "duration": 6.71,
       "gainDb": 2,
       "duck": false,
       "fadeIn": 0,
@@ -2289,7 +2289,7 @@
       "id": "clip0",
       "src": "yc-sam-01/aroll.mp4",
       "role": "clip-audio",
-      "start": 6.85,
+      "start": 7.01,
       "offset": 0.0,
       "duration": 12.78,
       "gainDb": 0,
@@ -2301,9 +2301,9 @@
       "id": "vo1",
       "src": "yc-sam-01/vo.wav",
       "role": "vo",
-      "start": 19.63,
-      "offset": 7.2,
-      "duration": 4.37,
+      "start": 19.79,
+      "offset": 7.34,
+      "duration": 4.43,
       "gainDb": 2,
       "duck": false,
       "fadeIn": 0,
@@ -2313,7 +2313,7 @@
       "id": "clip25",
       "src": "yc-sam-01/aroll.mp4",
       "role": "clip-audio",
-      "start": 24.3,
+      "start": 24.52,
       "offset": 25.08,
       "duration": 14.72,
       "gainDb": 0,
@@ -2325,9 +2325,9 @@
       "id": "vo2",
       "src": "yc-sam-01/vo.wav",
       "role": "vo",
-      "start": 39.02,
-      "offset": 12.12,
-      "duration": 5.75,
+      "start": 39.24,
+      "offset": 12.36,
+      "duration": 5.87,
       "gainDb": 2,
       "duck": false,
       "fadeIn": 0,
