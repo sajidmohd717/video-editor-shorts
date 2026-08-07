@@ -42,10 +42,20 @@ def read_script(project: Project) -> list[str]:
     if not project.script.exists():
         raise SystemExit(f"No script at {project.script}")
     raw = project.script.read_text(encoding="utf-8")
-    # Strip markdown headings and comments — they're notes to us, not narration.
-    lines = [
-        ln for ln in raw.splitlines() if not ln.lstrip().startswith(("#", ">", "//"))
-    ]
+    # Strip anything that isn't spoken. Long-form scripts carry editing notes,
+    # chapter headings, checklists and tables inline — a backticked [note] would
+    # otherwise be read aloud, and you'd only find out after paying for it.
+    lines = []
+    for ln in raw.splitlines():
+        s = ln.strip()
+        if s.startswith(("#", ">", "//", "|", "- ", "* ", "---")):
+            continue
+        if s.startswith("`[") or (s.startswith("[") and s.endswith("]")):
+            continue
+        # Drop inline editing notes wherever they appear on a spoken line.
+        s = re.sub(r"`\[.*?\]`", "", s)
+        s = re.sub(r"\*\*(.*?)\*\*", r"\1", s)   # bold markers aren't speech
+        lines.append(s)
     paragraphs = [p.strip() for p in re.split(r"\n\s*\n", "\n".join(lines))]
     return [re.sub(r"\s+", " ", p) for p in paragraphs if p.strip()]
 

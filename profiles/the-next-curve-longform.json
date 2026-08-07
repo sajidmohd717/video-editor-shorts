@@ -1,0 +1,39 @@
+{
+  "id": "the-next-curve-longform",
+  "extends": "the-next-curve",
+  "_": "Long-form overrides. Inherits brand, voice and content standards from the shorts profile; everything below differs because 8 minutes is not 45 seconds. See MODEL_DEV_LOG_LONGFORM.md.",
+
+  "tts": {
+    "comment": "Same voice as the shorts for channel consistency. Pace is SLOWER than the shorts' 1.18: that number was chosen against 0.7 cuts/sec and a second speaker to play off. Over 8 minutes of continuous narration a fast read becomes exhausting rather than urgent. 1.10 is a starting point and must be judged on a finished cut (F31), not on a sample.",
+    "rate": 1.1,
+    "paragraphGapSeconds": 0.45
+  },
+
+  "pacing": {
+    "comment": "Long-form cadence from L001: ~0.36 cuts/sec overall, but 35 percent of gaps are sub-second and 2 percent run past 12s. Bursts and holds, same principle as shorts at a different scale (L2).",
+    "arollShotSeconds": 2.8,
+    "brollShotSeconds": 3.2,
+    "handoffGapSeconds": 0.25,
+    "maxPauseSeconds": 0.5
+  },
+
+  "audio": {
+    "comment": "Long-form convention is quieter than shorts. L001 sits at -18.8 LUFS, which is quiet even for the format; -15 is a better target for YouTube.",
+    "masterLufs": -15,
+    "brollAmbienceDb": -24
+  },
+
+  "overlays": {
+    "comment": "No end card, same reasoning as shorts (F17). Film burns are a shorts device and would be exhausting over 8 minutes — long-form transitions are the date and quote cards instead.",
+    "showEndCard": false,
+    "progress": null,
+    "transitionBurn": false,
+    "transitionWhoosh": null
+  },
+
+  "editorial": {
+    "comment": "Long-form is an argument, not a hook. The narration share floor is higher because in this format the narration IS the product — source clips are evidence for claims it makes.",
+    "narrationShareFloor": 0.55,
+    "sourceAudioRule": "Let a clip speak only when the fact that THEY said it is the evidence (L5). Front-load source audio in the cold open; the final third carries no source audio at all so nothing competes with the conclusion."
+  }
+}
