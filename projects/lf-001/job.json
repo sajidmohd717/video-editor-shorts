@@ -37,7 +37,10 @@
     "highlight": 0.55, "highlight2": 0.55, "swipe": 0.72, "click": 0.53
   },
 
-  "newsClips": {},
+  "newsClips": {
+    "huang-face": "lf-001/news/huang-face.mp4",
+    "huang-justified": "lf-001/news/huang-justified.mp4"
+  },
 
   "_broll": "Reviewed on a contact sheet at 1s AND 4s before selection (F6, F29). 7 of 28 rejected: search drift (a ski gondola from 'fiber optic cable', a quarry from 'data center construction'), an unusable blurred frame, a stock-photo man celebrating at a laptop (wrong register for this argument), a near-duplicate of racks-blue, wind turbines (reads as a renewables story), and an office block with the Citi logo legible — see F38.",
 
@@ -83,6 +86,15 @@
       "seconds": 12,
       "gainDb": -1,
       "why": "L5 — an Oracle executive states the 638 billion figure in their own voice, under our document highlight. Hearing them say it IS the evidence."
+    },
+    {
+      "cue": "That argument is not stupid",
+      "offset": 2.6,
+      "src": "lf-001/news/huang-justified.wav",
+      "sourceOffset": 0.0,
+      "seconds": 16,
+      "gainDb": 0,
+      "why": "L5, and the one source-audio moment in Ch5. The narration concedes the argument, then the person most invested in it says it himself: '...not only substantially less than you thought, and all of it justified.' Cut deliberately to INCLUDE 'justified' — an earlier cut ended on 'and all of it', which drops the word carrying the whole claim."
     },
     {
       "cue": "Then there's this line",
@@ -176,6 +188,21 @@
       "tone": "dark",
       "sfx": "impact",
       "z": 60
+    },
+    {
+      "cue": "That is not fraud",
+      "type": "news",
+      "asset": "huang-face",
+      "seconds": 5.5,
+      "why": "L7 / shot list — being fair to the other side needs a human face, not another document. Silent here; he speaks in Ch5."
+    },
+    {
+      "cue": "That argument is not stupid",
+      "offset": 2.6,
+      "type": "news",
+      "asset": "huang-justified",
+      "seconds": 16,
+      "why": "carries the picture for the Ch5 source-audio moment — we see him say it"
     },
     {
       "cue": "In June twenty twenty-six",
