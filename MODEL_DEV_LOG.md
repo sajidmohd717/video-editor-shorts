@@ -274,9 +274,15 @@ the asset — and it is diegetic rather than musical.
 would otherwise have covered, and a denser vocal master compensates for the
 missing floor.
 
-**Status:** keep. Untested against audience data. Further non-musical options if
-more energy is wanted: transition whooshes, impacts on strobe cuts, UI clicks as
-graphics land — sound effects rather than music.
+**Status:** keep at −26 dB. Confirmed subtle by the channel owner, which is the
+intent — ambience must never compete with the narration or the speaker. If a
+single asset's sound distracts, lower `audio.brollAmbienceDb`; `null` disables it.
+
+**Approved future direction (not yet built):** sound effects are acceptable where
+music is not — transition whooshes, pop-ins as graphics land, impacts on strobe
+cuts. That's the next lever for energy if retention data suggests it's needed.
+Deferred deliberately: the current video ships first so there's a baseline to
+measure against.
 
 ---
 
