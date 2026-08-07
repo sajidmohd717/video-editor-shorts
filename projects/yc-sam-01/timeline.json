@@ -2340,10 +2340,10 @@
       "start": 0.27,
       "offset": 0,
       "duration": 0.75,
-      "gainDb": -8,
+      "gainDb": 2,
       "duck": false,
       "fadeIn": 0,
-      "fadeOut": 0.08
+      "fadeOut": 0.12
     },
     {
       "id": "clip0_00",
@@ -2572,6 +2572,42 @@
       "duck": false,
       "fadeIn": 0.25,
       "fadeOut": 0.35
+    },
+    {
+      "id": "sfx_whoosh_6_75",
+      "src": "yc-sam-01/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 6.75,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_whoosh_21_27",
+      "src": "yc-sam-01/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 21.268,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_ding_0_00",
+      "src": "yc-sam-01/sfx/ding.wav",
+      "role": "sfx",
+      "start": 0.0,
+      "offset": 0,
+      "duration": 1.4,
+      "gainDb": 1,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
     }
   ]
 }

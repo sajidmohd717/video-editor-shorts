@@ -47,8 +47,25 @@
     "note": "Short excerpts used as evidence for original commentary. Narration is the spine. Does not affect Content ID \u2014 the rights holder can still claim."
   },
   "sfx": {
-    "pop": "yc-sam-01/sfx/pop.wav"
+    "pop": "yc-sam-01/sfx/pop.wav",
+    "ding": "yc-sam-01/sfx/ding.wav",
+    "whoosh": "yc-sam-01/sfx/whoosh.wav"
   },
+
+  "sfxDurations": {
+    "ding": 1.4,
+    "whoosh": 0.58,
+    "pop": 0.75
+  },
+
+  "sfxCues": [
+    {
+      "name": "ding",
+      "at": 0.0,
+      "gainDb": 1,
+      "why": "attention cue on frame one, before the narration starts"
+    }
+  ],
 
   "logos": {
     "openai": "yc-sam-01/logos/ChatGPT-Logo.svg"
@@ -84,7 +101,7 @@
     {
       "at": "open",
       "type": "logo-pop",
-      "why": "lands on the word 'Altman' — identifies who is being talked about at the moment he is named",
+      "why": "lands on the word 'Altman' â€” identifies who is being talked about at the moment he is named",
       "start": 0.32,
       "end": 1.85,
       "src": "yc-sam-01/logos/ChatGPT-Logo.svg",

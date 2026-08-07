@@ -47,9 +47,12 @@ def normalise(src: Path, dst: Path, m: dict, target: float, tp: float, lra: floa
         f":measured_I={m['input_i']}:measured_TP={m['input_tp']}"
         f":measured_LRA={m['input_lra']}:measured_thresh={m['input_thresh']}"
         f":offset={m['target_offset']}:linear=true,"
-        # Gentle limiter catches the inter-sample peaks loudnorm's TP ceiling misses
-        # once the file is re-encoded to AAC.
-        "alimiter=level_in=1:level_out=0.97:limit=0.97:attack=5:release=50"
+        # Catch the inter-sample peaks loudnorm's TP ceiling misses once the file
+        # is re-encoded to AAC — but slowly. A 5ms/50ms limiter reacts within
+        # syllables and flattens transients, which kills exactly the short
+        # accents (dings, pops, impacts) that are supposed to punch through.
+        # 15ms/400ms catches peaks without chasing the programme material.
+        "alimiter=level_in=1:level_out=0.97:limit=0.97:attack=15:release=400"
     )
     subprocess.run(
         ["ffmpeg", "-v", "error", "-y", "-i", str(src),

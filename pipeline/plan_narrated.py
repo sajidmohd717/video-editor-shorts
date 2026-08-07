@@ -99,7 +99,9 @@ def build(job: Job) -> dict:
     overlays: list[dict] = []
     audio: list[dict] = []
     words_out: list[dict] = []
-    handoffs: list[float] = []  # moments where the speaking voice changes
+    # (time, direction) — direction matters because a whoosh belongs on the way
+    # INTO the clip ("here he comes"), not on the way back out.
+    handoffs: list[tuple[float, str]] = []
     t = 0.0
 
     def aroll_clip(cid: str, start: float, end: float, f: dict, src_off: float) -> dict:
@@ -151,7 +153,7 @@ def build(job: Job) -> dict:
     def place_vo(index: int) -> tuple[float, float]:
         nonlocal t
         if t > 0:
-            handoffs.append(round(t, 3))
+            handoffs.append((round(t, 3), "to-vo"))
         s, e = vo_paras[index]
         dur = e - s + 0.25
         audio.append({
@@ -203,7 +205,7 @@ def build(job: Job) -> dict:
         """
         nonlocal t
         if t > 0:
-            handoffs.append(round(t, 3))
+            handoffs.append((round(t, 3), "to-clip"))
         start = t
         segments: list[tuple[float, float, float]] = []  # (src_a, src_b, shift)
 
@@ -335,12 +337,15 @@ def build(job: Job) -> dict:
         src = job.raw.get("sfx", {}).get(name)
         if not src:
             raise SystemExit(f"job.sfx has no entry named {name!r}")
+        dur = job.raw.get("sfxDurations", {}).get(
+            name, job.get("audio.sfxDurationSeconds", 0.75))
         audio.append({
-            "id": f"sfx_{name}_{at:.2f}".replace(".", "_"), "src": src, "role": "sfx",
+            "id": f"sfx_{name}_{at:.2f}".replace(".", "_").replace("-", "m"),
+            "src": src, "role": "sfx",
             "start": round(max(0.0, at), 3), "offset": 0,
-            "duration": job.get("audio.sfxDurationSeconds", 0.75),
+            "duration": dur,
             "gainDb": sfx_gain if gain is None else gain,
-            "duck": False, "fadeIn": 0, "fadeOut": 0.08,
+            "duck": False, "fadeIn": 0, "fadeOut": 0.12,
         })
 
     def add_overlay(beat: dict, start: float, end: float, oid: str) -> None:
@@ -422,23 +427,35 @@ def build(job: Job) -> dict:
     # Firing one at every cut would be exhausting at 0.76 cuts/sec — the device
     # works because it marks a change of *voice*, not a change of shot.
     burn = job.get("overlays.transitionBurn")
-    if burn:
+    burn_on = job.get("overlays.transitionBurnOn", "all")   # all | to-clip
+    whoosh = job.get("overlays.transitionWhoosh")
+    whoosh_on = job.get("overlays.transitionWhooshOn", "to-clip")
+
+    if burn or whoosh:
         burn_dur = job.get("overlays.transitionBurnSeconds", 0.55)
-        for n, at in enumerate(handoffs):
-            overlays.append({
-                "type": "film-burn", "id": f"burn{n}",
-                # Envelope peaks at ~28% in, so start early enough that the peak
-                # lands on the cut and the shot changes while blown out.
-                "start": round(max(0.0, at - burn_dur * 0.28), 3),
-                "end": round(at + burn_dur * 0.72, 3),
-                "z": 78,
-                # Alternate the entry side so repeats don't feel mechanical.
-                "originX": 1.02 if n % 2 == 0 else -0.02,
-                "originY": 0.28 + 0.12 * (n % 3),
-                "intensity": job.get("overlays.transitionBurnIntensity", 0.85),
-            })
-            if job.get("overlays.transitionBurnSfx"):
-                place_sfx(job.get("overlays.transitionBurnSfx"), at - 0.05)
+        for n, (at, direction) in enumerate(handoffs):
+            if burn and burn_on in ("all", direction):
+                overlays.append({
+                    "type": "film-burn", "id": f"burn{n}",
+                    # Envelope peaks at ~28% in, so start early enough that the
+                    # peak lands on the cut and the shot changes while blown out.
+                    "start": round(max(0.0, at - burn_dur * 0.28), 3),
+                    "end": round(at + burn_dur * 0.72, 3),
+                    "z": 78,
+                    # Alternate the entry side so repeats don't feel mechanical.
+                    "originX": 1.02 if n % 2 == 0 else -0.02,
+                    "originY": 0.28 + 0.12 * (n % 3),
+                    "intensity": job.get("overlays.transitionBurnIntensity", 0.85),
+                })
+            # A whoosh belongs on the approach INTO the clip — it announces the
+            # speaker arriving. Going the other way there's nothing to announce.
+            if whoosh and whoosh_on in ("all", direction):
+                place_sfx(whoosh, at - job.get("audio.whooshLeadSeconds", 0.22),
+                          gain=job.get("audio.whooshGainDb", -9))
+
+    # --- one-shot cues authored on the job ------------------------------------
+    for cue in job.raw.get("sfxCues", []):
+        place_sfx(cue["name"], cue.get("at", 0.0), gain=cue.get("gainDb"))
 
     duration = round(v2e + 0.9, 3)
     clips.sort(key=lambda c: c["start"])

@@ -37,13 +37,22 @@
     "progress": "bar",
     "comment2": "Film burns only at VO<->clip handoffs, never at every cut. The device marks a change of voice, not a change of shot; at 0.76 cuts/sec firing it on each one would be exhausting.",
     "transitionBurn": true,
+    "transitionBurnOn": "all",
     "transitionBurnSeconds": 0.55,
-    "transitionBurnIntensity": 0.85
+    "transitionBurnIntensity": 0.85,
+    "comment3": "Whoosh only on the way INTO the clip — it announces the speaker arriving. Coming back out there is nothing to announce.",
+    "transitionWhoosh": "whoosh",
+    "transitionWhooshOn": "to-clip"
   },
   "audio": {
     "_": "NO MUSIC BED — a standing channel constraint, not an open task. Do not add one, and do not treat its absence as a gap to close. The energy music would carry comes instead from diegetic b-roll ambience, tight pause cutting, and a denser vocal master.",
     "musicBed": false,
-    "brollAmbienceDb": -26
+    "brollAmbienceDb": -26,
+    "comment2": "An accent must sit AT or above the voice for its brief moment or it is not heard at all. The ding source is -22.9 dB RMS and the narration about -23, so the original -8 buried it entirely. +2 reads as an impact without covering the words.",
+    "sfxGainDb": 2,
+    "sfxLeadSeconds": 0.05,
+    "whooshGainDb": -4,
+    "whooshLeadSeconds": 0.22
   },
 
   "editorial": {
