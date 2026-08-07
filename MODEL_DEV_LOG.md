@@ -352,6 +352,34 @@ The two numbers that moved most: cut density 0.02 → 0.73, loudness −25.3 →
 
 ---
 
+## Platform data
+
+### 2026-08-07 — first narrated short (El5XrIpsOCA)
+
+- **Video:** "Sam Altman: 3 Months of Work → 7 Minutes", 43s, narrated format,
+  40% original narration, 0.76 cuts/s, −14 LUFS
+- **At ~1h20m:** 135 views · 41 engaged · **32% stayed to watch** · 68% swiped ·
+  avg view 0:23 (53% of runtime)
+- **Traffic:** 91.9% Shorts feed, 3% search
+- **Baseline:** previous clip-only shorts (Sam + captions, no narration, no
+  intro/outro) held **~63%**
+
+**Read:** a 31-point hold gap. "Stayed to watch" is decided in the first 1–3
+seconds, and that window changed completely: old videos opened on a human face
+and a human voice, this one opens on abstract b-roll and synthetic narration
+delivering a *setup* rather than a payoff.
+
+Note the second number though — **53% average view duration**. Viewers who get
+past three seconds watch about half. The edit isn't the problem; the front door
+is. With 91.9% of traffic from the Shorts feed, hold rate is also what gates
+further distribution, so it compounds.
+
+**Sample size is small** (135 views). Treat 32% as directional.
+
+**Next test (not yet run):** open on the speaker's face and voice for ~4s, bring
+narration in second. Keeps the hook that earned 63%, keeps ~35% narration for the
+rights position, changes one variable.
+
 ## Experiment template
 
 Change one meaningful variable at a time.
