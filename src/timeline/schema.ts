@@ -71,7 +71,17 @@ export const captionStyleSchema = z.object({
 
 /** Where source video sits in the frame. Ref 001 uses all four of these. */
 export const layoutSchema = z.enum([
-  "full", // single source fills 1080x1920
+  "full", // single source fills 1080x1920, cropped to the subject
+  /**
+   * Landscape preserved: the source is fitted to the width and centred, with a
+   * blurred copy of itself filling the rest of the frame.
+   *
+   * Use this whenever the shot's composition IS the content — a wide two-shot,
+   * a stage, a diagram, anything where cropping to 9:16 would throw away the
+   * thing worth seeing. Force-cropping a two-shot typically frames the table
+   * between the speakers.
+   */
+  "fit",
   "stacked", // two sources, 960px each, hard seam at y=960
   "inset", // one full + one corner box
   "graphic", // no talking head; motion graphic or b-roll owns the frame

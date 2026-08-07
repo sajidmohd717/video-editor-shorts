@@ -76,6 +76,13 @@ add a TTS or asset source without checking its commercial licence.
 **Look at stock before wiring it in.** Half of any search is unusable (F6).
 Build a contact sheet, actually look, then pick.
 
+**Content standards are hard constraints (F29).** The channel does not use music,
+and no asset may show alcohol or revealing clothing. These belong to the channel
+owner — never relitigate them, never trade them against visual impact, never
+treat them as gaps to close. Check every candidate at **several timestamps**: a
+clip can be clean at 1s and not at 5s, and wine glasses are dressed into a huge
+share of dinner and celebration stock. When in doubt, pick a different clip.
+
 ---
 
 ## Verifying your work

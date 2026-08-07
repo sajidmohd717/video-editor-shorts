@@ -1,0 +1,168 @@
+{
+  "slug": "yc-sam-03",
+  "profile": "the-next-curve",
+  "format": "narrated",
+  "title": "The best startup mentor is a flight instructor",
+  "structure": [
+    "clip:0",
+    "clip:1",
+    "vo:0",
+    "clip:2",
+    "vo:1"
+  ],
+  "structureWhy": "Clip-first, per the yc-sam-01 data (32% hold opening on b-roll + narration, vs ~63% for clip-only cuts opening on a face). clip:0 and clip:1 are consecutive so no transition fires between them.",
+  "source": {
+    "aroll": "yc-sam-03/aroll-full.mp4",
+    "speaker": "Sam Altman",
+    "venue": "Y Combinator",
+    "comment": "FULL-FRAME 3840x2160, not pre-cropped. The opening passage is a wide two-shot that must keep its composition, so the crop has to be decided per passage rather than baked into the file.",
+    "passages": [
+      [
+        0.4,
+        2.75
+      ],
+      [
+        6.35,
+        15.45
+      ],
+      [
+        16.75,
+        40.3
+      ]
+    ],
+    "passageLayouts": [
+      "fit",
+      "full",
+      "full"
+    ],
+    "passagesWhy": "0: the interviewer's line that Paul Graham rated Sam a top-five entrepreneur — a hook AND the antecedent for 'Paul', delivered over a wide two-shot that would frame the table if cropped to 9:16. 1: 'energy and ambition, very not directed' — the relatable problem. 2: the whole teacher / lecture / flight-instructor analogy, uncut, because the contrast is the idea.",
+    "subjectFocusX": 0.32,
+    "subjectFocusWhy": "Head sits at ~0.35 of the source frame and he faces screen-right, so the window shifts right to leave looking room in the direction he's facing."
+  },
+  "publish": {
+    "title": "The Best Startup Mentor Is a Flight Instructor",
+    "description": "Sam Altman on Paul Graham's idea that a good investor is a teacher — but not the kind who gives lectures.\n\nCommentary and edit: The Next Curve",
+    "tags": [
+      "Sam Altman",
+      "Paul Graham",
+      "Y Combinator",
+      "startups",
+      "mentorship",
+      "founders",
+      "tech"
+    ],
+    "categoryId": "28",
+    "madeForKids": false
+  },
+  "rights": {
+    "clearance": "commentary",
+    "speaker": "Sam Altman",
+    "rightsHolder": "Y Combinator",
+    "sourceUrl": "https://www.youtube.com/@ycombinator",
+    "note": "Short excerpts as evidence for original commentary. Narration is the spine."
+  },
+  "captionCorrections": {
+    "teachers,": "teacher as",
+    "when": "of"
+  },
+  "captionCorrectionsWhy": "ASR heard 'teacher as someone' as 'teachers, someone'. Clip captions have no script to check against, so mishearings ship as on-screen typos.",
+  "sfx": {
+    "ding": "yc-sam-03/sfx/ding.wav",
+    "pop": "yc-sam-03/sfx/pop.wav",
+    "whoosh": "yc-sam-03/sfx/whoosh.wav"
+  },
+  "sfxDurations": {
+    "ding": 1.4,
+    "whoosh": 0.58,
+    "pop": 0.75
+  },
+  "sfxCues": [
+    {
+      "name": "ding",
+      "at": 0.0,
+      "gainDb": 1,
+      "why": "attention cue on frame one"
+    }
+  ],
+  "broll": {
+    "lecturehall": "yc-sam-03/stock/pexels-video-37451040.mp4",
+    "whiteboard": "yc-sam-03/stock/pexels-video-6324556.mp4",
+    "emptyseats": "yc-sam-03/stock/pexels-video-7985888.mp4",
+    "cockpit": "yc-sam-03/stock/pexels-video-36675429.mp4",
+    "cockpitnight": "yc-sam-03/stock/pexels-video-10419525.mp4",
+    "mentor": "yc-sam-03/stock/pexels-video-7180031.mp4",
+    "deskhelp": "yc-sam-03/stock/pexels-video-8616782.mp4",
+    "thinking": "yc-sam-03/stock/pixabay-video-122389.mp4",
+    "window": "yc-sam-03/stock/pexels-video-31252867.mp4",
+    "books": "yc-sam-03/stock/pexels-video-4864927.mp4"
+  },
+  "voBroll": {
+    "0": [
+      "thinking",
+      "window",
+      "books"
+    ],
+    "1": [
+      "mentor",
+      "deskhelp",
+      "cockpitnight"
+    ]
+  },
+  "logos": {
+    "pg": "yc-sam-03/logos/pg.jpg"
+  },
+  "beats": [
+    {
+      "at": "clip0",
+      "type": "logo-pop",
+      "why": "the interviewer says 'he' meaning Paul Graham — name him immediately or the whole short is about an unidentified person",
+      "sourceStart": 1.1,
+      "sourceEnd": 2.75,
+      "src": "yc-sam-03/logos/pg.jpg",
+      "sfx": "pop",
+      "x": 0.72,
+      "y": 0.3,
+      "size": 240,
+      "tint": "none",
+      "shape": "circle",
+      "caption": "PAUL GRAHAM",
+      "role": "YC CO-FOUNDER",
+      "entrance": "pop",
+      "glow": true,
+      "exit": 0.22,
+      "z": 70
+    },
+    {
+      "at": "clip2",
+      "type": "broll",
+      "sourceStart": 27.4,
+      "sourceEnd": 29.4,
+      "asset": "lecturehall",
+      "why": "'someone who gives a lecture' — show the lecture hall"
+    },
+    {
+      "at": "clip2",
+      "type": "broll",
+      "sourceStart": 31.2,
+      "sourceEnd": 32.3,
+      "asset": "emptyseats",
+      "why": "'a lecture about a startup' — empty seats, the idea failing to land"
+    },
+    {
+      "at": "clip2",
+      "type": "broll",
+      "sourceStart": 33.9,
+      "sourceEnd": 36.2,
+      "asset": "cockpit",
+      "why": "'like a flight instructor' — the image the whole analogy turns on"
+    },
+    {
+      "at": "clip2",
+      "type": "broll",
+      "sourceStart": 37.2,
+      "sourceEnd": 38.9,
+      "asset": "whiteboard",
+      "why": "'do this, don't do this' — corrective, hands-on instruction"
+    }
+  ]
+}

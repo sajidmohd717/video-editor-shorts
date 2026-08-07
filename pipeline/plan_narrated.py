@@ -74,6 +74,20 @@ def build(job: Job) -> dict:
         for w in clip_raw
     ]
 
+    # Clip captions come straight from ASR with no script to check against, so
+    # mishearings ship as on-screen typos (F4 covers the narration side, where the
+    # script is authoritative). Whisper renders "Brownian motion" as "brownie and
+    # motion" and "teacher as someone" as "teachers, someone". Corrections are
+    # authored per job because they're specific to what was actually said.
+    corrections = job.raw.get("captionCorrections", {})
+    if corrections:
+        fixed = 0
+        for w in clip_words:
+            if w["text"] in corrections:
+                w["text"] = corrections[w["text"]]
+                fixed += 1
+        print(f"   {fixed} clip caption(s) corrected")
+
     # --- profile-derived settings -------------------------------------------
     brand = job.get("brand", {})
     accent = brand.get("accent", "#FF5A3C")
@@ -105,10 +119,11 @@ def build(job: Job) -> dict:
     used_broll: set[str] = set()
     t = 0.0
 
-    def aroll_clip(cid: str, start: float, end: float, f: dict, src_off: float) -> dict:
+    def aroll_clip(cid: str, start: float, end: float, f: dict, src_off: float,
+                   layout: str = "full") -> dict:
         return {
             "id": cid, "start": round(start, 3), "end": round(end, 3),
-            "layout": "full", "background": "#000000",
+            "layout": layout, "background": "#000000",
             "sources": [{
                 "src": aroll, "offset": round(src_off, 3),
                 "focusX": f["focusX"], "focusY": f["focusY"],
@@ -267,18 +282,28 @@ def build(job: Job) -> dict:
         breathe = 0.5 - 0.5 * math.cos(2 * math.pi * p * 1.5)
         return 1.03 + 0.07 * breathe + 0.09 * p
 
-    def fill_aroll_segments(segments: list[tuple], tag: str) -> None:
+    def fill_aroll_segments(segments: list[tuple], tag: str, layout: str = "full") -> None:
         """Subdivide each sub-segment into shots, so cuts never span a splice."""
         for si, (s, e, shift) in enumerate(segments):
-            fill_aroll(s + shift, e + shift, shift, f"{tag}{si}_")
+            fill_aroll(s + shift, e + shift, shift, f"{tag}{si}_", layout)
 
-    def fill_aroll(start: float, end: float, shift: float, tag: str) -> None:
-        n = max(1, round((end - start) / aroll_shot))
+    def fill_aroll(start: float, end: float, shift: float, tag: str,
+                   layout: str = "full") -> None:
+        # A letterboxed wide shot doesn't want the usual cut rhythm or punch —
+        # the whole point is that the composition is being preserved, and
+        # chopping it up or zooming into it undoes that.
+        shot = aroll_shot * (2.2 if layout == "fit" else 1.0)
+        n = max(1, round((end - start) / shot))
         step = (end - start) / n
         for i in range(n):
             a, b = start + i * step, start + (i + 1) * step
             f = framings[i % len(framings)]
-            clip = aroll_clip(f"{tag}{i}", a, b, f, a - shift)
+            clip = aroll_clip(f"{tag}{i}", a, b, f, a - shift, layout)
+            if layout == "fit":
+                clip["camera"] = {"kind": "punch-in", "from": 1.0, "to": 1.03,
+                                  "originX": 0.5, "originY": 0.5}
+                clips.append(clip)
+                continue
             # Continuous across the cut: this shot starts exactly where the last
             # one ended. Only the framing changes.
             clip["camera"]["from"] = round(passage_scale(i / n), 4)
@@ -456,7 +481,9 @@ def build(job: Job) -> dict:
                     f"structure references {item} but the job has only "
                     f"{len(passages)} passage(s)")
             s, e, segs = place_clip(passages[idx])
-            fill_aroll_segments(segs, f"c{idx}_")
+            layouts = job.source.get("passageLayouts", [])
+            fill_aroll_segments(segs, f"c{idx}_",
+                                layouts[idx] if idx < len(layouts) else "full")
             clip_segs[item] = segs
             spans[item] = (s, e)
 

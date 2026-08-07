@@ -1,0 +1,947 @@
+[
+ {
+  "text": "you",
+  "startMs": 0,
+  "endMs": 220
+ },
+ {
+  "text": "were",
+  "startMs": 220,
+  "endMs": 340
+ },
+ {
+  "text": "one",
+  "startMs": 340,
+  "endMs": 520
+ },
+ {
+  "text": "of",
+  "startMs": 520,
+  "endMs": 620
+ },
+ {
+  "text": "the",
+  "startMs": 620,
+  "endMs": 700
+ },
+ {
+  "text": "top",
+  "startMs": 700,
+  "endMs": 900
+ },
+ {
+  "text": "five",
+  "startMs": 900,
+  "endMs": 1320
+ },
+ {
+  "text": "entrepreneurs",
+  "startMs": 1320,
+  "endMs": 2040
+ },
+ {
+  "text": "he'd",
+  "startMs": 2040,
+  "endMs": 2340
+ },
+ {
+  "text": "ever",
+  "startMs": 2340,
+  "endMs": 2500
+ },
+ {
+  "text": "met.",
+  "startMs": 2500,
+  "endMs": 2760
+ },
+ {
+  "text": "That's",
+  "startMs": 4230,
+  "endMs": 4590
+ },
+ {
+  "text": "very",
+  "startMs": 4590,
+  "endMs": 4690
+ },
+ {
+  "text": "nice",
+  "startMs": 4690,
+  "endMs": 4870
+ },
+ {
+  "text": "when",
+  "startMs": 4870,
+  "endMs": 4990
+ },
+ {
+  "text": "you",
+  "startMs": 4990,
+  "endMs": 5110
+ },
+ {
+  "text": "say,",
+  "startMs": 5110,
+  "endMs": 5210
+ },
+ {
+  "text": "I",
+  "startMs": 6430,
+  "endMs": 6790
+ },
+ {
+  "text": "think",
+  "startMs": 6790,
+  "endMs": 7150
+ },
+ {
+  "text": "like",
+  "startMs": 7150,
+  "endMs": 7370
+ },
+ {
+  "text": "many",
+  "startMs": 7370,
+  "endMs": 7670
+ },
+ {
+  "text": "20",
+  "startMs": 7670,
+  "endMs": 8210
+ },
+ {
+  "text": "year",
+  "startMs": 8210,
+  "endMs": 8370
+ },
+ {
+  "text": "olds,",
+  "startMs": 8370,
+  "endMs": 8530
+ },
+ {
+  "text": "I",
+  "startMs": 8590,
+  "endMs": 8650
+ },
+ {
+  "text": "had",
+  "startMs": 8650,
+  "endMs": 8770
+ },
+ {
+  "text": "like",
+  "startMs": 8770,
+  "endMs": 8870
+ },
+ {
+  "text": "a",
+  "startMs": 8870,
+  "endMs": 8970
+ },
+ {
+  "text": "lot",
+  "startMs": 8970,
+  "endMs": 9110
+ },
+ {
+  "text": "of",
+  "startMs": 9110,
+  "endMs": 9210
+ },
+ {
+  "text": "energy",
+  "startMs": 9210,
+  "endMs": 9590
+ },
+ {
+  "text": "and",
+  "startMs": 9590,
+  "endMs": 9910
+ },
+ {
+  "text": "a",
+  "startMs": 9910,
+  "endMs": 9970
+ },
+ {
+  "text": "lot",
+  "startMs": 9970,
+  "endMs": 10050
+ },
+ {
+  "text": "of",
+  "startMs": 10050,
+  "endMs": 10130
+ },
+ {
+  "text": "ambition,",
+  "startMs": 10130,
+  "endMs": 10410
+ },
+ {
+  "text": "but",
+  "startMs": 10490,
+  "endMs": 10630
+ },
+ {
+  "text": "it",
+  "startMs": 10630,
+  "endMs": 10710
+ },
+ {
+  "text": "was",
+  "startMs": 10710,
+  "endMs": 10830
+ },
+ {
+  "text": "sort",
+  "startMs": 10830,
+  "endMs": 10950
+ },
+ {
+  "text": "of",
+  "startMs": 10950,
+  "endMs": 11110
+ },
+ {
+  "text": "very",
+  "startMs": 11110,
+  "endMs": 11990
+ },
+ {
+  "text": "not",
+  "startMs": 12240,
+  "endMs": 13780
+ },
+ {
+  "text": "directed",
+  "startMs": 13780,
+  "endMs": 14300
+ },
+ {
+  "text": "and",
+  "startMs": 14300,
+  "endMs": 14520
+ },
+ {
+  "text": "I",
+  "startMs": 14520,
+  "endMs": 14600
+ },
+ {
+  "text": "wasn't",
+  "startMs": 14600,
+  "endMs": 14800
+ },
+ {
+  "text": "sure",
+  "startMs": 14800,
+  "endMs": 15020
+ },
+ {
+  "text": "what",
+  "startMs": 15020,
+  "endMs": 15180
+ },
+ {
+  "text": "to",
+  "startMs": 15180,
+  "endMs": 15360
+ },
+ {
+  "text": "do.",
+  "startMs": 15360,
+  "endMs": 15560
+ },
+ {
+  "text": "Paul",
+  "startMs": 16770,
+  "endMs": 16970
+ },
+ {
+  "text": "had",
+  "startMs": 16970,
+  "endMs": 17130
+ },
+ {
+  "text": "this",
+  "startMs": 17130,
+  "endMs": 17270
+ },
+ {
+  "text": "thing",
+  "startMs": 17270,
+  "endMs": 17430
+ },
+ {
+  "text": "he",
+  "startMs": 17430,
+  "endMs": 17550
+ },
+ {
+  "text": "used",
+  "startMs": 17550,
+  "endMs": 17670
+ },
+ {
+  "text": "to",
+  "startMs": 17670,
+  "endMs": 17770
+ },
+ {
+  "text": "say",
+  "startMs": 17770,
+  "endMs": 17970
+ },
+ {
+  "text": "of",
+  "startMs": 17970,
+  "endMs": 18190
+ },
+ {
+  "text": "like,",
+  "startMs": 18190,
+  "endMs": 18370
+ },
+ {
+  "text": "the",
+  "startMs": 18930,
+  "endMs": 19290
+ },
+ {
+  "text": "job",
+  "startMs": 19290,
+  "endMs": 19650
+ },
+ {
+  "text": "of",
+  "startMs": 19650,
+  "endMs": 19830
+ },
+ {
+  "text": "being",
+  "startMs": 19830,
+  "endMs": 19930
+ },
+ {
+  "text": "a",
+  "startMs": 19930,
+  "endMs": 20050
+ },
+ {
+  "text": "good",
+  "startMs": 20050,
+  "endMs": 20150
+ },
+ {
+  "text": "startup",
+  "startMs": 20150,
+  "endMs": 20350
+ },
+ {
+  "text": "investor",
+  "startMs": 20350,
+  "endMs": 20750
+ },
+ {
+  "text": "is",
+  "startMs": 20750,
+  "endMs": 21850
+ },
+ {
+  "text": "a",
+  "startMs": 22720,
+  "endMs": 22860
+ },
+ {
+  "text": "teacher,",
+  "startMs": 22860,
+  "endMs": 23180
+ },
+ {
+  "text": "but",
+  "startMs": 23260,
+  "endMs": 23400
+ },
+ {
+  "text": "it's",
+  "startMs": 23400,
+  "endMs": 23760
+ },
+ {
+  "text": "a",
+  "startMs": 23760,
+  "endMs": 23820
+ },
+ {
+  "text": "kind",
+  "startMs": 23820,
+  "endMs": 24080
+ },
+ {
+  "text": "of",
+  "startMs": 24080,
+  "endMs": 24200
+ },
+ {
+  "text": "teacher",
+  "startMs": 24200,
+  "endMs": 24420
+ },
+ {
+  "text": "we",
+  "startMs": 24420,
+  "endMs": 24540
+ },
+ {
+  "text": "don't",
+  "startMs": 24540,
+  "endMs": 24660
+ },
+ {
+  "text": "usually",
+  "startMs": 24660,
+  "endMs": 24940
+ },
+ {
+  "text": "use.",
+  "startMs": 24940,
+  "endMs": 25220
+ },
+ {
+  "text": "Like,",
+  "startMs": 25480,
+  "endMs": 25540
+ },
+ {
+  "text": "we",
+  "startMs": 25740,
+  "endMs": 25940
+ },
+ {
+  "text": "usually",
+  "startMs": 25940,
+  "endMs": 26140
+ },
+ {
+  "text": "think",
+  "startMs": 26140,
+  "endMs": 26340
+ },
+ {
+  "text": "of",
+  "startMs": 26340,
+  "endMs": 26440
+ },
+ {
+  "text": "teachers,",
+  "startMs": 26440,
+  "endMs": 26680
+ },
+ {
+  "text": "someone",
+  "startMs": 26820,
+  "endMs": 26940
+ },
+ {
+  "text": "who",
+  "startMs": 26940,
+  "endMs": 27100
+ },
+ {
+  "text": "like",
+  "startMs": 27100,
+  "endMs": 27200
+ },
+ {
+  "text": "gives",
+  "startMs": 27200,
+  "endMs": 27480
+ },
+ {
+  "text": "a",
+  "startMs": 27480,
+  "endMs": 27620
+ },
+ {
+  "text": "lecture",
+  "startMs": 27620,
+  "endMs": 27820
+ },
+ {
+  "text": "and",
+  "startMs": 27820,
+  "endMs": 28260
+ },
+ {
+  "text": "you",
+  "startMs": 28260,
+  "endMs": 28360
+ },
+ {
+  "text": "can't",
+  "startMs": 28360,
+  "endMs": 28800
+ },
+ {
+  "text": "help",
+  "startMs": 28800,
+  "endMs": 29140
+ },
+ {
+  "text": "someone",
+  "startMs": 29140,
+  "endMs": 29620
+ },
+ {
+  "text": "that",
+  "startMs": 29620,
+  "endMs": 30440
+ },
+ {
+  "text": "much",
+  "startMs": 30440,
+  "endMs": 30760
+ },
+ {
+  "text": "by",
+  "startMs": 30760,
+  "endMs": 31120
+ },
+ {
+  "text": "like",
+  "startMs": 31120,
+  "endMs": 31260
+ },
+ {
+  "text": "giving",
+  "startMs": 31260,
+  "endMs": 31440
+ },
+ {
+  "text": "a",
+  "startMs": 31440,
+  "endMs": 31580
+ },
+ {
+  "text": "lecture",
+  "startMs": 31580,
+  "endMs": 31760
+ },
+ {
+  "text": "about",
+  "startMs": 31760,
+  "endMs": 31940
+ },
+ {
+  "text": "a",
+  "startMs": 31940,
+  "endMs": 32020
+ },
+ {
+  "text": "startup.",
+  "startMs": 32020,
+  "endMs": 32240
+ },
+ {
+  "text": "There's",
+  "startMs": 32659,
+  "endMs": 32860
+ },
+ {
+  "text": "another",
+  "startMs": 32860,
+  "endMs": 33140
+ },
+ {
+  "text": "kind",
+  "startMs": 33140,
+  "endMs": 33340
+ },
+ {
+  "text": "of",
+  "startMs": 33340,
+  "endMs": 33440
+ },
+ {
+  "text": "teacher,",
+  "startMs": 33440,
+  "endMs": 33640
+ },
+ {
+  "text": "which",
+  "startMs": 33740,
+  "endMs": 33820
+ },
+ {
+  "text": "is",
+  "startMs": 33820,
+  "endMs": 33920
+ },
+ {
+  "text": "like",
+  "startMs": 33920,
+  "endMs": 34020
+ },
+ {
+  "text": "a",
+  "startMs": 34020,
+  "endMs": 34080
+ },
+ {
+  "text": "flight",
+  "startMs": 34080,
+  "endMs": 34300
+ },
+ {
+  "text": "instructor,",
+  "startMs": 34300,
+  "endMs": 34640
+ },
+ {
+  "text": "the",
+  "startMs": 34860,
+  "endMs": 34900
+ },
+ {
+  "text": "person",
+  "startMs": 34900,
+  "endMs": 35140
+ },
+ {
+  "text": "who",
+  "startMs": 35140,
+  "endMs": 35280
+ },
+ {
+  "text": "like",
+  "startMs": 35280,
+  "endMs": 35380
+ },
+ {
+  "text": "sits",
+  "startMs": 35380,
+  "endMs": 35620
+ },
+ {
+  "text": "next",
+  "startMs": 35620,
+  "endMs": 35860
+ },
+ {
+  "text": "to",
+  "startMs": 35860,
+  "endMs": 36040
+ },
+ {
+  "text": "you",
+  "startMs": 36040,
+  "endMs": 36180
+ },
+ {
+  "text": "saying",
+  "startMs": 36180,
+  "endMs": 36740
+ },
+ {
+  "text": "like,",
+  "startMs": 36740,
+  "endMs": 37060
+ },
+ {
+  "text": "do",
+  "startMs": 37260,
+  "endMs": 37480
+ },
+ {
+  "text": "this,",
+  "startMs": 37480,
+  "endMs": 37700
+ },
+ {
+  "text": "don't",
+  "startMs": 37800,
+  "endMs": 37960
+ },
+ {
+  "text": "do",
+  "startMs": 37960,
+  "endMs": 38080
+ },
+ {
+  "text": "this,",
+  "startMs": 38080,
+  "endMs": 38320
+ },
+ {
+  "text": "that",
+  "startMs": 38380,
+  "endMs": 38540
+ },
+ {
+  "text": "work,",
+  "startMs": 38540,
+  "endMs": 38720
+ },
+ {
+  "text": "this",
+  "startMs": 38900,
+  "endMs": 39040
+ },
+ {
+  "text": "isn't",
+  "startMs": 39040,
+  "endMs": 39300
+ },
+ {
+  "text": "that,",
+  "startMs": 39300,
+  "endMs": 39380
+ },
+ {
+  "text": "you",
+  "startMs": 39420,
+  "endMs": 39480
+ },
+ {
+  "text": "missed",
+  "startMs": 39480,
+  "endMs": 39660
+ },
+ {
+  "text": "that",
+  "startMs": 39660,
+  "endMs": 39840
+ },
+ {
+  "text": "thing",
+  "startMs": 39840,
+  "endMs": 40100
+ },
+ {
+  "text": "or",
+  "startMs": 40100,
+  "endMs": 40260
+ },
+ {
+  "text": "you're",
+  "startMs": 40260,
+  "endMs": 40620
+ },
+ {
+  "text": "making",
+  "startMs": 40620,
+  "endMs": 40780
+ },
+ {
+  "text": "these",
+  "startMs": 40780,
+  "endMs": 41000
+ },
+ {
+  "text": "mistakes",
+  "startMs": 41000,
+  "endMs": 41320
+ },
+ {
+  "text": "and",
+  "startMs": 41320,
+  "endMs": 41500
+ },
+ {
+  "text": "I'm",
+  "startMs": 41500,
+  "endMs": 41580
+ },
+ {
+  "text": "just",
+  "startMs": 41580,
+  "endMs": 41660
+ },
+ {
+  "text": "gonna",
+  "startMs": 41660,
+  "endMs": 41740
+ },
+ {
+  "text": "talk",
+  "startMs": 41740,
+  "endMs": 41940
+ },
+ {
+  "text": "to",
+  "startMs": 41940,
+  "endMs": 42020
+ },
+ {
+  "text": "you",
+  "startMs": 42020,
+  "endMs": 42100
+ },
+ {
+  "text": "about",
+  "startMs": 42100,
+  "endMs": 42200
+ },
+ {
+  "text": "this",
+  "startMs": 42200,
+  "endMs": 42380
+ },
+ {
+  "text": "one.",
+  "startMs": 42380,
+  "endMs": 42600
+ },
+ {
+  "text": "And",
+  "startMs": 42980,
+  "endMs": 43160
+ },
+ {
+  "text": "that",
+  "startMs": 43160,
+  "endMs": 43360
+ },
+ {
+  "text": "very",
+  "startMs": 43360,
+  "endMs": 43800
+ },
+ {
+  "text": "like",
+  "startMs": 43800,
+  "endMs": 44060
+ },
+ {
+  "text": "hands",
+  "startMs": 44060,
+  "endMs": 44500
+ },
+ {
+  "text": "-on",
+  "startMs": 44500,
+  "endMs": 44780
+ },
+ {
+  "text": "kind",
+  "startMs": 44780,
+  "endMs": 45180
+ },
+ {
+  "text": "of,",
+  "startMs": 45180,
+  "endMs": 45760
+ },
+ {
+  "text": "you",
+  "startMs": 47050,
+  "endMs": 47230
+ },
+ {
+  "text": "know,",
+  "startMs": 47230,
+  "endMs": 47410
+ },
+ {
+  "text": "here's",
+  "startMs": 47610,
+  "endMs": 47870
+ },
+ {
+  "text": "where",
+  "startMs": 47870,
+  "endMs": 47990
+ },
+ {
+  "text": "to",
+  "startMs": 47990,
+  "endMs": 48110
+ },
+ {
+  "text": "like",
+  "startMs": 48110,
+  "endMs": 48250
+ },
+ {
+  "text": "direct",
+  "startMs": 48250,
+  "endMs": 48650
+ },
+ {
+  "text": "this",
+  "startMs": 48650,
+  "endMs": 48950
+ },
+ {
+  "text": "sort",
+  "startMs": 48950,
+  "endMs": 49130
+ },
+ {
+  "text": "of",
+  "startMs": 49130,
+  "endMs": 49210
+ },
+ {
+  "text": "like",
+  "startMs": 49210,
+  "endMs": 49330
+ },
+ {
+  "text": "brownie",
+  "startMs": 49330,
+  "endMs": 49750
+ },
+ {
+  "text": "and",
+  "startMs": 49750,
+  "endMs": 49850
+ },
+ {
+  "text": "motion",
+  "startMs": 49850,
+  "endMs": 50050
+ },
+ {
+  "text": "energy.",
+  "startMs": 50050,
+  "endMs": 50470
+ },
+ {
+  "text": "That",
+  "startMs": 51070,
+  "endMs": 51410
+ },
+ {
+  "text": "was",
+  "startMs": 51410,
+  "endMs": 51550
+ },
+ {
+  "text": "very",
+  "startMs": 51550,
+  "endMs": 51730
+ },
+ {
+  "text": "important",
+  "startMs": 51730,
+  "endMs": 51970
+ },
+ {
+  "text": "to",
+  "startMs": 51970,
+  "endMs": 52110
+ },
+ {
+  "text": "me.",
+  "startMs": 52110,
+  "endMs": 52210
+ },
+ {
+  "text": "Yeah.",
+  "startMs": 52610,
+  "endMs": 52730
+ }
+]

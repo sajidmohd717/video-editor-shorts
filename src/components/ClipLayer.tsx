@@ -58,7 +58,9 @@ const SourceView: React.FC<{
   clip: Clip;
   localFrame: number;
   durationInFrames: number;
-}> = ({ source, clip, localFrame, durationInFrames }) => {
+  /** Preserve the source's own aspect instead of cropping to fill. */
+  fit?: boolean;
+}> = ({ source, clip, localFrame, durationInFrames, fit }) => {
   const camera = useCameraTransform(clip, localFrame, durationInFrames);
   const filter = buildFilterChain(clip.filters);
   const src = resolveSrc(source.src);
@@ -67,8 +69,9 @@ const SourceView: React.FC<{
 
   const inner: React.CSSProperties = {
     width: "100%",
-    height: "100%",
-    objectFit: "cover",
+    height: fit ? "auto" : "100%",
+    objectFit: fit ? "contain" : "cover",
+    display: fit ? "block" : undefined,
     // objectPosition decides WHICH part of the source survives the 9:16 crop.
     // Doing it here rather than with a transform means the crop is independent of
     // the camera move, so a punch-in doesn't drag the framing off the subject.
@@ -147,6 +150,37 @@ export const ClipLayer: React.FC<{ clip: Clip; durationInFrames: number }> = ({
         <div style={{ height: "50%", width: "100%" }}>
           <SourceView source={b} clip={clip} localFrame={localFrame} durationInFrames={durationInFrames} />
         </div>
+      </AbsoluteFill>,
+    );
+  }
+
+  if (clip.layout === "fit" && a) {
+    // Landscape preserved. The blurred backdrop is the same frame scaled to
+    // cover — it keeps the colour and light of the shot so the letterbox reads
+    // as a deliberate treatment rather than dead bars, and it moves with the
+    // footage so the frame never feels half-static.
+    return wrap(
+      <AbsoluteFill style={{ backgroundColor: clip.background }}>
+        <AbsoluteFill style={{ filter: "blur(46px) brightness(0.45) saturate(1.15)" }}>
+          <SourceView
+            source={{ ...a, focusX: 0.5, focusY: 0.5 }}
+            clip={{ ...clip, camera: { ...clip.camera, kind: "none" }, filters: [] }}
+            localFrame={localFrame}
+            durationInFrames={durationInFrames}
+          />
+        </AbsoluteFill>
+
+        <AbsoluteFill style={{ justifyContent: "center" }}>
+          <div style={{ width: "100%", position: "relative" }}>
+            <SourceView
+              source={a}
+              clip={clip}
+              localFrame={localFrame}
+              durationInFrames={durationInFrames}
+              fit
+            />
+          </div>
+        </AbsoluteFill>
       </AbsoluteFill>,
     );
   }

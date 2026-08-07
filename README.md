@@ -42,6 +42,10 @@ python -m pipeline.stock --check
 
 ## New video checklist
 
+- [ ] **Read the full long-form transcript first** (F32), not just the clip. The
+      supplied clip boundaries are a suggestion — extend back for the antecedent,
+      forward for the payoff, cut the middle if it drags.
+
 Nineteen findings are already baked into the defaults, so the mechanical parts
 are handled. These are the steps that still need a human, in order:
 
@@ -52,6 +56,10 @@ are handled. These are the steps that still need a human, in order:
 - [ ] **Measure where the subject actually is** (F19). Extract a gridded still and
       look; don't inherit a framing number. Set `source.subjectFocusX`, offset
       *toward* the direction they face so there's looking room.
+- [ ] **Decide the crop per passage** (F33). Wide two-shots, stages and diagrams
+      want `fit`, not a 9:16 crop that frames the table. Set `passageLayouts`.
+- [ ] **Read the clip's ASR output for mishearings** (F34) and add
+      `captionCorrections`. Clip captions have no script to check against.
 - [ ] **Write the script.** Blank lines separate VO segments. Use an em dash, not
       a full stop, where you want a short connective pause.
 - [ ] **Listen to `vo-qc+10dB.m4a`** after TTS — the actual narration, not a test

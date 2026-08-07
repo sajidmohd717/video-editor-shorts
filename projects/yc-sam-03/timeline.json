@@ -1,0 +1,3286 @@
+{
+  "version": 1,
+  "meta": {
+    "title": "The best startup mentor is a flight instructor",
+    "slug": "yc-sam-03",
+    "durationInSeconds": 50.634,
+    "fps": 30
+  },
+  "pacing": [
+    {
+      "start": 0.0,
+      "end": 2.35,
+      "energy": 1.0,
+      "label": "hook"
+    },
+    {
+      "start": 2.35,
+      "end": 10.088,
+      "energy": 1.0,
+      "label": "payoff"
+    },
+    {
+      "start": 10.088,
+      "end": 18.518,
+      "energy": 0.6,
+      "label": "hold"
+    },
+    {
+      "start": 18.638,
+      "end": 40.244,
+      "energy": 1.0,
+      "label": "payoff"
+    },
+    {
+      "start": 40.244,
+      "end": 49.734,
+      "energy": 0.6,
+      "label": "outro"
+    }
+  ],
+  "clips": [
+    {
+      "id": "c0_0_0",
+      "start": 0.0,
+      "end": 2.35,
+      "layout": "fit",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 0.4,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.03,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_0_0",
+      "start": 2.35,
+      "end": 2.52,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 6.35,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_1_0",
+      "start": 2.52,
+      "end": 3.649,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 6.708,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.1122,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_1_1",
+      "start": 3.649,
+      "end": 4.777,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 7.837,
+          "focusX": 0.32,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.1122,
+        "to": 1.11,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_1_2",
+      "start": 4.777,
+      "end": 5.906,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 8.966,
+          "focusX": 0.32,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.1078,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_1_3",
+      "start": 5.906,
+      "end": 7.035,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 10.094,
+          "focusX": 0.32,
+          "focusY": 0.4,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.1078,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_2_0",
+      "start": 7.035,
+      "end": 7.85,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 11.591,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_3_0",
+      "start": 7.85,
+      "end": 8.969,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 13.212,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.11,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_3_1",
+      "start": 8.969,
+      "end": 10.088,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 14.331,
+          "focusX": 0.32,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "vb0_0",
+      "start": 10.088,
+      "end": 12.938,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/stock/pixabay-video-122389.mp4",
+          "offset": 0.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.02,
+        "to": 1.12,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "vb0_1",
+      "start": 12.938,
+      "end": 15.788,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/stock/pexels-video-31252867.mp4",
+          "offset": 0.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.05,
+        "to": 1.1500000000000001,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "vb0_2",
+      "start": 15.788,
+      "end": 18.638,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/stock/pexels-video-4864927.mp4",
+          "offset": 0.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.08,
+        "to": 1.1800000000000002,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_0_0",
+      "start": 18.638,
+      "end": 19.675,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 16.75,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.11,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_0_1",
+      "start": 19.675,
+      "end": 20.713,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 17.787,
+          "focusX": 0.32,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_1_0",
+      "start": 20.713,
+      "end": 21.75,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 18.964,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.11,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_1_1",
+      "start": 21.75,
+      "end": 22.788,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 20.002,
+          "focusX": 0.32,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_2_0",
+      "start": 22.788,
+      "end": 23.862,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 22.416,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.08,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_2_1",
+      "start": 23.862,
+      "end": 24.936,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 23.49,
+          "focusX": 0.32,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.08,
+        "to": 1.13,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_2_2",
+      "start": 24.936,
+      "end": 26.01,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 24.564,
+          "focusX": 0.32,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.13,
+        "to": 1.11,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_2_3",
+      "start": 26.01,
+      "end": 27.084,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 25.638,
+          "focusX": 0.32,
+          "focusY": 0.4,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.09,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_2_4L",
+      "start": 27.084,
+      "end": 27.772,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 26.712,
+          "focusX": 0.32,
+          "focusY": 0.46,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.09,
+        "to": 1.14,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "nb_3_0",
+      "start": 27.772,
+      "end": 29.743,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/stock/pexels-video-37451040.mp4",
+          "offset": 0.6,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.04,
+        "to": 1.12,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_3_0R",
+      "start": 29.743,
+      "end": 30.219,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 29.4,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_4_0L",
+      "start": 30.219,
+      "end": 31.258,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 30.161,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.11,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "nb_3_1",
+      "start": 31.258,
+      "end": 32.358,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/stock/pexels-video-7985888.mp4",
+          "offset": 0.6,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.04,
+        "to": 1.12,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_4_1R",
+      "start": 32.358,
+      "end": 32.55,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 32.3,
+          "focusX": 0.32,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_5_0",
+      "start": 32.55,
+      "end": 33.883,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 32.567,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.13,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "nb_3_2",
+      "start": 33.883,
+      "end": 36.317,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/stock/pexels-video-36675429.mp4",
+          "offset": 0.6,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.04,
+        "to": 1.12,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_6_0L",
+      "start": 36.317,
+      "end": 37.144,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 36.372,
+          "focusX": 0.32,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.1122,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "nb_3_3",
+      "start": 37.144,
+      "end": 38.844,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/stock/pexels-video-6324556.mp4",
+          "offset": 0.6,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.04,
+        "to": 1.12,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_6_2R",
+      "start": 38.844,
+      "end": 39.262,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 38.9,
+          "focusX": 0.32,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.1078,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_6_3",
+      "start": 39.262,
+      "end": 40.244,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/aroll-full.mp4",
+          "offset": 39.318,
+          "focusX": 0.32,
+          "focusY": 0.4,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.1078,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "vb1_0",
+      "start": 40.244,
+      "end": 43.708,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/stock/pexels-video-7180031.mp4",
+          "offset": 0.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.02,
+        "to": 1.12,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "vb1_1",
+      "start": 43.708,
+      "end": 47.171,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/stock/pexels-video-8616782.mp4",
+          "offset": 0.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.05,
+        "to": 1.1500000000000001,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "vb1_2",
+      "start": 47.171,
+      "end": 50.634,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-03/stock/pexels-video-10419525.mp4",
+          "offset": 0.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.08,
+        "to": 1.1800000000000002,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    }
+  ],
+  "overlays": [
+    {
+      "type": "logo-pop",
+      "id": "clip0_ov0",
+      "start": 0.7,
+      "end": 2.35,
+      "z": 70,
+      "src": "yc-sam-03/logos/pg.jpg",
+      "x": 0.72,
+      "y": 0.3,
+      "size": 240,
+      "tint": "none",
+      "shape": "circle",
+      "caption": "PAUL GRAHAM",
+      "role": "YC CO-FOUNDER",
+      "entrance": "pop",
+      "glow": true,
+      "exit": 0.22,
+      "accent": "#FF5A3C",
+      "tone": "light"
+    },
+    {
+      "type": "film-burn",
+      "id": "burn0",
+      "start": 9.934,
+      "end": 10.484,
+      "z": 78,
+      "originX": 1.02,
+      "originY": 0.28,
+      "intensity": 0.85
+    },
+    {
+      "type": "film-burn",
+      "id": "burn1",
+      "start": 18.484,
+      "end": 19.034,
+      "z": 78,
+      "originX": -0.02,
+      "originY": 0.4,
+      "intensity": 0.85
+    },
+    {
+      "type": "film-burn",
+      "id": "burn2",
+      "start": 40.09,
+      "end": 40.64,
+      "z": 78,
+      "originX": 1.02,
+      "originY": 0.52,
+      "intensity": 0.85
+    },
+    {
+      "type": "chrome",
+      "id": "bug",
+      "start": 0,
+      "end": 50.634,
+      "z": 85,
+      "bug": "THE NEXT CURVE",
+      "tone": "light"
+    },
+    {
+      "type": "progress",
+      "id": "prog",
+      "start": 0,
+      "end": 50.634,
+      "z": 95,
+      "style": "bar"
+    }
+  ],
+  "captions": {
+    "style": {
+      "_": "word-pop (heavy sans, thick stroke, no pill) outperformed the pill and broadcast presets across all three reference teardowns. 1-2 words per card; cards break on sentence end, long pause, and speaker change (F5).",
+      "preset": "word-pop",
+      "fontFamily": "Poppins",
+      "fontWeight": 800,
+      "fontSize": 64,
+      "color": "#FFFFFF",
+      "anchorY": 0.7,
+      "pillColor": "rgba(0,0,0,0)",
+      "pillRadius": 0,
+      "strokeWidth": 9
+    },
+    "cues": [
+      {
+        "start": 0.12,
+        "end": 0.3,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "of",
+            "start": 0.12,
+            "end": 0.22
+          },
+          {
+            "text": "the",
+            "start": 0.22,
+            "end": 0.3
+          }
+        ]
+      },
+      {
+        "start": 0.3,
+        "end": 0.92,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "top",
+            "start": 0.3,
+            "end": 0.5
+          },
+          {
+            "text": "five",
+            "start": 0.5,
+            "end": 0.92
+          }
+        ]
+      },
+      {
+        "start": 0.92,
+        "end": 1.94,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "entrepreneurs",
+            "start": 0.92,
+            "end": 1.64
+          },
+          {
+            "text": "he'd",
+            "start": 1.64,
+            "end": 1.94
+          }
+        ]
+      },
+      {
+        "start": 1.94,
+        "end": 2.43,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "ever",
+            "start": 1.94,
+            "end": 2.1
+          },
+          {
+            "text": "met.",
+            "start": 2.1,
+            "end": 2.36
+          }
+        ]
+      },
+      {
+        "start": 2.43,
+        "end": 2.962,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "I",
+            "start": 2.43,
+            "end": 2.79
+          },
+          {
+            "text": "think",
+            "start": 2.602,
+            "end": 2.962
+          }
+        ]
+      },
+      {
+        "start": 2.962,
+        "end": 3.482,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "like",
+            "start": 2.962,
+            "end": 3.182
+          },
+          {
+            "text": "many",
+            "start": 3.182,
+            "end": 3.482
+          }
+        ]
+      },
+      {
+        "start": 3.482,
+        "end": 4.182,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "20",
+            "start": 3.482,
+            "end": 4.022
+          },
+          {
+            "text": "year",
+            "start": 4.022,
+            "end": 4.182
+          }
+        ]
+      },
+      {
+        "start": 4.182,
+        "end": 4.402,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "olds,",
+            "start": 4.182,
+            "end": 4.342
+          }
+        ]
+      },
+      {
+        "start": 4.402,
+        "end": 4.582,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "I",
+            "start": 4.402,
+            "end": 4.462
+          },
+          {
+            "text": "had",
+            "start": 4.462,
+            "end": 4.582
+          }
+        ]
+      },
+      {
+        "start": 4.582,
+        "end": 4.782,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "like",
+            "start": 4.582,
+            "end": 4.682
+          },
+          {
+            "text": "a",
+            "start": 4.682,
+            "end": 4.782
+          }
+        ]
+      },
+      {
+        "start": 4.782,
+        "end": 5.022,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "lot",
+            "start": 4.782,
+            "end": 4.922
+          },
+          {
+            "text": "of",
+            "start": 4.922,
+            "end": 5.022
+          }
+        ]
+      },
+      {
+        "start": 5.022,
+        "end": 5.722,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "energy",
+            "start": 5.022,
+            "end": 5.402
+          },
+          {
+            "text": "and",
+            "start": 5.402,
+            "end": 5.722
+          }
+        ]
+      },
+      {
+        "start": 5.722,
+        "end": 5.862,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "a",
+            "start": 5.722,
+            "end": 5.782
+          },
+          {
+            "text": "lot",
+            "start": 5.782,
+            "end": 5.862
+          }
+        ]
+      },
+      {
+        "start": 5.862,
+        "end": 6.302,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "of",
+            "start": 5.862,
+            "end": 5.942
+          },
+          {
+            "text": "ambition,",
+            "start": 5.942,
+            "end": 6.222
+          }
+        ]
+      },
+      {
+        "start": 6.302,
+        "end": 6.522,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "but",
+            "start": 6.302,
+            "end": 6.442
+          },
+          {
+            "text": "it",
+            "start": 6.442,
+            "end": 6.522
+          }
+        ]
+      },
+      {
+        "start": 6.522,
+        "end": 6.762,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "was",
+            "start": 6.522,
+            "end": 6.642
+          },
+          {
+            "text": "sort",
+            "start": 6.642,
+            "end": 6.762
+          }
+        ]
+      },
+      {
+        "start": 6.762,
+        "end": 7.684,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "of",
+            "start": 6.762,
+            "end": 6.922
+          },
+          {
+            "text": "very",
+            "start": 6.922,
+            "end": 7.802
+          }
+        ]
+      },
+      {
+        "start": 7.684,
+        "end": 8.938,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "not",
+            "start": 7.684,
+            "end": 9.224
+          },
+          {
+            "text": "directed",
+            "start": 8.418,
+            "end": 8.938
+          }
+        ]
+      },
+      {
+        "start": 8.938,
+        "end": 9.238,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "and",
+            "start": 8.938,
+            "end": 9.158
+          },
+          {
+            "text": "I",
+            "start": 9.158,
+            "end": 9.238
+          }
+        ]
+      },
+      {
+        "start": 9.238,
+        "end": 9.658,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "wasn't",
+            "start": 9.238,
+            "end": 9.438
+          },
+          {
+            "text": "sure",
+            "start": 9.438,
+            "end": 9.658
+          }
+        ]
+      },
+      {
+        "start": 9.658,
+        "end": 9.998,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "what",
+            "start": 9.658,
+            "end": 9.818
+          },
+          {
+            "text": "to",
+            "start": 9.818,
+            "end": 9.998
+          }
+        ]
+      },
+      {
+        "start": 9.998,
+        "end": 10.088,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "do.",
+            "start": 9.998,
+            "end": 10.198
+          }
+        ]
+      },
+      {
+        "start": 10.088,
+        "end": 10.408,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Plenty",
+            "start": 10.088,
+            "end": 10.308
+          },
+          {
+            "text": "of",
+            "start": 10.308,
+            "end": 10.408
+          }
+        ]
+      },
+      {
+        "start": 10.408,
+        "end": 10.788,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "people",
+            "start": 10.408,
+            "end": 10.568
+          },
+          {
+            "text": "have",
+            "start": 10.568,
+            "end": 10.788
+          }
+        ]
+      },
+      {
+        "start": 10.788,
+        "end": 11.398,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "that.",
+            "start": 10.788,
+            "end": 10.948
+          }
+        ]
+      },
+      {
+        "start": 11.428,
+        "end": 12.108,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Energy,",
+            "start": 11.428,
+            "end": 11.748
+          }
+        ]
+      },
+      {
+        "start": 12.108,
+        "end": 12.878,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "ambition,",
+            "start": 12.108,
+            "end": 12.428
+          }
+        ]
+      },
+      {
+        "start": 13.208,
+        "end": 13.428,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "and",
+            "start": 13.208,
+            "end": 13.248
+          },
+          {
+            "text": "no",
+            "start": 13.248,
+            "end": 13.428
+          }
+        ]
+      },
+      {
+        "start": 13.428,
+        "end": 13.848,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "idea",
+            "start": 13.428,
+            "end": 13.668
+          },
+          {
+            "text": "where",
+            "start": 13.668,
+            "end": 13.848
+          }
+        ]
+      },
+      {
+        "start": 13.848,
+        "end": 14.188,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "to",
+            "start": 13.848,
+            "end": 13.948
+          },
+          {
+            "text": "point",
+            "start": 13.948,
+            "end": 14.188
+          }
+        ]
+      },
+      {
+        "start": 14.188,
+        "end": 14.628,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "any",
+            "start": 14.188,
+            "end": 14.488
+          },
+          {
+            "text": "of",
+            "start": 14.488,
+            "end": 14.628
+          }
+        ]
+      },
+      {
+        "start": 14.628,
+        "end": 15.218,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "it.",
+            "start": 14.628,
+            "end": 14.768
+          }
+        ]
+      },
+      {
+        "start": 15.548,
+        "end": 15.768,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "And",
+            "start": 15.548,
+            "end": 15.668
+          },
+          {
+            "text": "the",
+            "start": 15.668,
+            "end": 15.768
+          }
+        ]
+      },
+      {
+        "start": 15.768,
+        "end": 16.028,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "thing",
+            "start": 15.768,
+            "end": 15.908
+          },
+          {
+            "text": "that",
+            "start": 15.908,
+            "end": 16.028
+          }
+        ]
+      },
+      {
+        "start": 16.028,
+        "end": 16.528,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "fixes",
+            "start": 16.028,
+            "end": 16.308
+          },
+          {
+            "text": "it",
+            "start": 16.308,
+            "end": 16.528
+          }
+        ]
+      },
+      {
+        "start": 16.528,
+        "end": 17.108,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "almost",
+            "start": 16.528,
+            "end": 16.808
+          },
+          {
+            "text": "never",
+            "start": 16.808,
+            "end": 17.108
+          }
+        ]
+      },
+      {
+        "start": 17.108,
+        "end": 17.648,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "arrives",
+            "start": 17.108,
+            "end": 17.488
+          },
+          {
+            "text": "as",
+            "start": 17.488,
+            "end": 17.648
+          }
+        ]
+      },
+      {
+        "start": 17.648,
+        "end": 18.658,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "more",
+            "start": 17.648,
+            "end": 17.808
+          },
+          {
+            "text": "information.",
+            "start": 17.808,
+            "end": 18.268
+          }
+        ]
+      },
+      {
+        "start": 18.658,
+        "end": 19.018,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Paul",
+            "start": 18.658,
+            "end": 18.858
+          },
+          {
+            "text": "had",
+            "start": 18.858,
+            "end": 19.018
+          }
+        ]
+      },
+      {
+        "start": 19.018,
+        "end": 19.318,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "this",
+            "start": 19.018,
+            "end": 19.158
+          },
+          {
+            "text": "thing",
+            "start": 19.158,
+            "end": 19.318
+          }
+        ]
+      },
+      {
+        "start": 19.318,
+        "end": 19.558,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "he",
+            "start": 19.318,
+            "end": 19.438
+          },
+          {
+            "text": "used",
+            "start": 19.438,
+            "end": 19.558
+          }
+        ]
+      },
+      {
+        "start": 19.558,
+        "end": 19.858,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "to",
+            "start": 19.558,
+            "end": 19.658
+          },
+          {
+            "text": "say",
+            "start": 19.658,
+            "end": 19.858
+          }
+        ]
+      },
+      {
+        "start": 19.858,
+        "end": 20.708,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "of",
+            "start": 19.858,
+            "end": 20.078
+          },
+          {
+            "text": "like,",
+            "start": 20.078,
+            "end": 20.258
+          }
+        ]
+      },
+      {
+        "start": 21.038,
+        "end": 21.578,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "job",
+            "start": 21.038,
+            "end": 21.398
+          },
+          {
+            "text": "of",
+            "start": 21.398,
+            "end": 21.578
+          }
+        ]
+      },
+      {
+        "start": 21.578,
+        "end": 21.798,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "being",
+            "start": 21.578,
+            "end": 21.678
+          },
+          {
+            "text": "a",
+            "start": 21.678,
+            "end": 21.798
+          }
+        ]
+      },
+      {
+        "start": 21.798,
+        "end": 22.098,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "good",
+            "start": 21.798,
+            "end": 21.898
+          },
+          {
+            "text": "startup",
+            "start": 21.898,
+            "end": 22.098
+          }
+        ]
+      },
+      {
+        "start": 22.098,
+        "end": 23.092,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "investor",
+            "start": 22.098,
+            "end": 22.498
+          },
+          {
+            "text": "is",
+            "start": 22.498,
+            "end": 23.598
+          }
+        ]
+      },
+      {
+        "start": 23.092,
+        "end": 23.632,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "a",
+            "start": 23.092,
+            "end": 23.232
+          },
+          {
+            "text": "teacher,",
+            "start": 23.232,
+            "end": 23.552
+          }
+        ]
+      },
+      {
+        "start": 23.632,
+        "end": 24.132,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "but",
+            "start": 23.632,
+            "end": 23.772
+          },
+          {
+            "text": "it's",
+            "start": 23.772,
+            "end": 24.132
+          }
+        ]
+      },
+      {
+        "start": 24.132,
+        "end": 24.452,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "a",
+            "start": 24.132,
+            "end": 24.192
+          },
+          {
+            "text": "kind",
+            "start": 24.192,
+            "end": 24.452
+          }
+        ]
+      },
+      {
+        "start": 24.452,
+        "end": 24.792,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "of",
+            "start": 24.452,
+            "end": 24.572
+          },
+          {
+            "text": "teacher",
+            "start": 24.572,
+            "end": 24.792
+          }
+        ]
+      },
+      {
+        "start": 24.792,
+        "end": 25.032,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "we",
+            "start": 24.792,
+            "end": 24.912
+          },
+          {
+            "text": "don't",
+            "start": 24.912,
+            "end": 25.032
+          }
+        ]
+      },
+      {
+        "start": 25.032,
+        "end": 25.852,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "usually",
+            "start": 25.032,
+            "end": 25.312
+          },
+          {
+            "text": "use.",
+            "start": 25.312,
+            "end": 25.592
+          }
+        ]
+      },
+      {
+        "start": 25.852,
+        "end": 26.112,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Like,",
+            "start": 25.852,
+            "end": 25.912
+          }
+        ]
+      },
+      {
+        "start": 26.112,
+        "end": 26.512,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "we",
+            "start": 26.112,
+            "end": 26.312
+          },
+          {
+            "text": "usually",
+            "start": 26.312,
+            "end": 26.512
+          }
+        ]
+      },
+      {
+        "start": 26.512,
+        "end": 26.812,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "think",
+            "start": 26.512,
+            "end": 26.712
+          },
+          {
+            "text": "of",
+            "start": 26.712,
+            "end": 26.812
+          }
+        ]
+      },
+      {
+        "start": 26.812,
+        "end": 27.312,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "teacher as",
+            "start": 26.812,
+            "end": 27.052
+          },
+          {
+            "text": "someone",
+            "start": 27.192,
+            "end": 27.312
+          }
+        ]
+      },
+      {
+        "start": 27.312,
+        "end": 27.572,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "who",
+            "start": 27.312,
+            "end": 27.472
+          },
+          {
+            "text": "like",
+            "start": 27.472,
+            "end": 27.572
+          }
+        ]
+      },
+      {
+        "start": 27.572,
+        "end": 27.992,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "gives",
+            "start": 27.572,
+            "end": 27.852
+          },
+          {
+            "text": "a",
+            "start": 27.852,
+            "end": 27.992
+          }
+        ]
+      },
+      {
+        "start": 27.992,
+        "end": 28.632,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "lecture",
+            "start": 27.992,
+            "end": 28.192
+          },
+          {
+            "text": "and",
+            "start": 28.192,
+            "end": 28.632
+          }
+        ]
+      },
+      {
+        "start": 28.632,
+        "end": 29.172,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "you",
+            "start": 28.632,
+            "end": 28.732
+          },
+          {
+            "text": "can't",
+            "start": 28.732,
+            "end": 29.172
+          }
+        ]
+      },
+      {
+        "start": 29.172,
+        "end": 29.963,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "help",
+            "start": 29.172,
+            "end": 29.512
+          },
+          {
+            "text": "someone",
+            "start": 29.483,
+            "end": 29.963
+          }
+        ]
+      },
+      {
+        "start": 29.963,
+        "end": 30.818,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "that",
+            "start": 29.963,
+            "end": 30.783
+          },
+          {
+            "text": "much",
+            "start": 30.498,
+            "end": 30.818
+          }
+        ]
+      },
+      {
+        "start": 30.818,
+        "end": 31.318,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "by",
+            "start": 30.818,
+            "end": 31.178
+          },
+          {
+            "text": "like",
+            "start": 31.178,
+            "end": 31.318
+          }
+        ]
+      },
+      {
+        "start": 31.318,
+        "end": 31.638,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "giving",
+            "start": 31.318,
+            "end": 31.498
+          },
+          {
+            "text": "a",
+            "start": 31.498,
+            "end": 31.638
+          }
+        ]
+      },
+      {
+        "start": 31.638,
+        "end": 31.998,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "lecture",
+            "start": 31.638,
+            "end": 31.818
+          },
+          {
+            "text": "about",
+            "start": 31.818,
+            "end": 31.998
+          }
+        ]
+      },
+      {
+        "start": 31.998,
+        "end": 32.642,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "a",
+            "start": 31.998,
+            "end": 32.078
+          },
+          {
+            "text": "startup.",
+            "start": 32.078,
+            "end": 32.298
+          }
+        ]
+      },
+      {
+        "start": 32.642,
+        "end": 33.123,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "There's",
+            "start": 32.642,
+            "end": 32.843
+          },
+          {
+            "text": "another",
+            "start": 32.843,
+            "end": 33.123
+          }
+        ]
+      },
+      {
+        "start": 33.123,
+        "end": 33.423,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "kind",
+            "start": 33.123,
+            "end": 33.323
+          },
+          {
+            "text": "of",
+            "start": 33.323,
+            "end": 33.423
+          }
+        ]
+      },
+      {
+        "start": 33.423,
+        "end": 33.723,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "teacher,",
+            "start": 33.423,
+            "end": 33.623
+          }
+        ]
+      },
+      {
+        "start": 33.723,
+        "end": 33.903,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "which",
+            "start": 33.723,
+            "end": 33.803
+          },
+          {
+            "text": "is",
+            "start": 33.803,
+            "end": 33.903
+          }
+        ]
+      },
+      {
+        "start": 33.903,
+        "end": 34.063,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "like",
+            "start": 33.903,
+            "end": 34.003
+          },
+          {
+            "text": "a",
+            "start": 34.003,
+            "end": 34.063
+          }
+        ]
+      },
+      {
+        "start": 34.063,
+        "end": 34.843,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "flight",
+            "start": 34.063,
+            "end": 34.283
+          },
+          {
+            "text": "instructor,",
+            "start": 34.283,
+            "end": 34.623
+          }
+        ]
+      },
+      {
+        "start": 34.843,
+        "end": 35.123,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "the",
+            "start": 34.843,
+            "end": 34.883
+          },
+          {
+            "text": "person",
+            "start": 34.883,
+            "end": 35.123
+          }
+        ]
+      },
+      {
+        "start": 35.123,
+        "end": 35.363,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "who",
+            "start": 35.123,
+            "end": 35.263
+          },
+          {
+            "text": "like",
+            "start": 35.263,
+            "end": 35.363
+          }
+        ]
+      },
+      {
+        "start": 35.363,
+        "end": 35.843,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "sits",
+            "start": 35.363,
+            "end": 35.603
+          },
+          {
+            "text": "next",
+            "start": 35.603,
+            "end": 35.843
+          }
+        ]
+      },
+      {
+        "start": 35.843,
+        "end": 36.163,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "to",
+            "start": 35.843,
+            "end": 36.023
+          },
+          {
+            "text": "you",
+            "start": 36.023,
+            "end": 36.163
+          }
+        ]
+      },
+      {
+        "start": 36.163,
+        "end": 37.204,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "saying",
+            "start": 36.163,
+            "end": 36.723
+          },
+          {
+            "text": "like,",
+            "start": 36.684,
+            "end": 37.004
+          }
+        ]
+      },
+      {
+        "start": 37.204,
+        "end": 37.744,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "do",
+            "start": 37.204,
+            "end": 37.424
+          },
+          {
+            "text": "this,",
+            "start": 37.424,
+            "end": 37.644
+          }
+        ]
+      },
+      {
+        "start": 37.744,
+        "end": 38.024,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "don't",
+            "start": 37.744,
+            "end": 37.904
+          },
+          {
+            "text": "do",
+            "start": 37.904,
+            "end": 38.024
+          }
+        ]
+      },
+      {
+        "start": 38.024,
+        "end": 38.324,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "this,",
+            "start": 38.024,
+            "end": 38.264
+          }
+        ]
+      },
+      {
+        "start": 38.324,
+        "end": 38.844,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "that",
+            "start": 38.324,
+            "end": 38.484
+          },
+          {
+            "text": "work,",
+            "start": 38.484,
+            "end": 38.664
+          }
+        ]
+      },
+      {
+        "start": 38.844,
+        "end": 39.244,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "this",
+            "start": 38.844,
+            "end": 38.984
+          },
+          {
+            "text": "isn't",
+            "start": 38.984,
+            "end": 39.244
+          }
+        ]
+      },
+      {
+        "start": 39.244,
+        "end": 39.364,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "that,",
+            "start": 39.244,
+            "end": 39.324
+          }
+        ]
+      },
+      {
+        "start": 39.364,
+        "end": 39.604,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "you",
+            "start": 39.364,
+            "end": 39.424
+          },
+          {
+            "text": "missed",
+            "start": 39.424,
+            "end": 39.604
+          }
+        ]
+      },
+      {
+        "start": 39.604,
+        "end": 40.044,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "that",
+            "start": 39.604,
+            "end": 39.784
+          },
+          {
+            "text": "thing",
+            "start": 39.784,
+            "end": 40.044
+          }
+        ]
+      },
+      {
+        "start": 40.044,
+        "end": 40.244,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "or",
+            "start": 40.044,
+            "end": 40.204
+          },
+          {
+            "text": "you're",
+            "start": 40.204,
+            "end": 40.564
+          }
+        ]
+      },
+      {
+        "start": 40.244,
+        "end": 40.404,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "So",
+            "start": 40.244,
+            "end": 40.324
+          },
+          {
+            "text": "the",
+            "start": 40.324,
+            "end": 40.404
+          }
+        ]
+      },
+      {
+        "start": 40.404,
+        "end": 40.844,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "most",
+            "start": 40.404,
+            "end": 40.544
+          },
+          {
+            "text": "valuable",
+            "start": 40.544,
+            "end": 40.844
+          }
+        ]
+      },
+      {
+        "start": 40.844,
+        "end": 41.364,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "person",
+            "start": 40.844,
+            "end": 41.224
+          },
+          {
+            "text": "in",
+            "start": 41.224,
+            "end": 41.364
+          }
+        ]
+      },
+      {
+        "start": 41.364,
+        "end": 41.804,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "your",
+            "start": 41.364,
+            "end": 41.464
+          },
+          {
+            "text": "corner",
+            "start": 41.464,
+            "end": 41.804
+          }
+        ]
+      },
+      {
+        "start": 41.804,
+        "end": 42.384,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "isn't",
+            "start": 41.804,
+            "end": 42.284
+          },
+          {
+            "text": "the",
+            "start": 42.284,
+            "end": 42.384
+          }
+        ]
+      },
+      {
+        "start": 42.384,
+        "end": 42.864,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "one",
+            "start": 42.384,
+            "end": 42.544
+          },
+          {
+            "text": "standing",
+            "start": 42.544,
+            "end": 42.864
+          }
+        ]
+      },
+      {
+        "start": 42.864,
+        "end": 43.084,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "at",
+            "start": 42.864,
+            "end": 43.024
+          },
+          {
+            "text": "the",
+            "start": 43.024,
+            "end": 43.084
+          }
+        ]
+      },
+      {
+        "start": 43.084,
+        "end": 43.344,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "front",
+            "start": 43.084,
+            "end": 43.264
+          },
+          {
+            "text": "of",
+            "start": 43.264,
+            "end": 43.344
+          }
+        ]
+      },
+      {
+        "start": 43.344,
+        "end": 44.074,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "the",
+            "start": 43.344,
+            "end": 43.404
+          },
+          {
+            "text": "room.",
+            "start": 43.404,
+            "end": 43.624
+          }
+        ]
+      },
+      {
+        "start": 44.204,
+        "end": 44.624,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "It's",
+            "start": 44.204,
+            "end": 44.544
+          },
+          {
+            "text": "the",
+            "start": 44.544,
+            "end": 44.624
+          }
+        ]
+      },
+      {
+        "start": 44.624,
+        "end": 45.004,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "one",
+            "start": 44.624,
+            "end": 44.744
+          },
+          {
+            "text": "sitting",
+            "start": 44.744,
+            "end": 45.004
+          }
+        ]
+      },
+      {
+        "start": 45.004,
+        "end": 45.244,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "in",
+            "start": 45.004,
+            "end": 45.144
+          },
+          {
+            "text": "the",
+            "start": 45.144,
+            "end": 45.244
+          }
+        ]
+      },
+      {
+        "start": 45.244,
+        "end": 45.684,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "seat",
+            "start": 45.244,
+            "end": 45.404
+          },
+          {
+            "text": "beside",
+            "start": 45.404,
+            "end": 45.684
+          }
+        ]
+      },
+      {
+        "start": 45.684,
+        "end": 46.384,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "you,",
+            "start": 45.684,
+            "end": 46.004
+          }
+        ]
+      },
+      {
+        "start": 46.384,
+        "end": 46.804,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "telling",
+            "start": 46.384,
+            "end": 46.644
+          },
+          {
+            "text": "you",
+            "start": 46.644,
+            "end": 46.804
+          }
+        ]
+      },
+      {
+        "start": 46.804,
+        "end": 47.044,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "what",
+            "start": 46.804,
+            "end": 46.944
+          },
+          {
+            "text": "you",
+            "start": 46.944,
+            "end": 47.044
+          }
+        ]
+      },
+      {
+        "start": 47.044,
+        "end": 47.384,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "just",
+            "start": 47.044,
+            "end": 47.204
+          },
+          {
+            "text": "got",
+            "start": 47.204,
+            "end": 47.384
+          }
+        ]
+      },
+      {
+        "start": 47.384,
+        "end": 47.664,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "wrong,",
+            "start": 47.384,
+            "end": 47.664
+          }
+        ]
+      },
+      {
+        "start": 47.664,
+        "end": 48.404,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "while",
+            "start": 47.664,
+            "end": 48.284
+          },
+          {
+            "text": "you",
+            "start": 48.284,
+            "end": 48.404
+          }
+        ]
+      },
+      {
+        "start": 48.404,
+        "end": 48.724,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "can",
+            "start": 48.404,
+            "end": 48.524
+          },
+          {
+            "text": "still",
+            "start": 48.524,
+            "end": 48.724
+          }
+        ]
+      },
+      {
+        "start": 48.724,
+        "end": 49.084,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "do",
+            "start": 48.724,
+            "end": 48.844
+          },
+          {
+            "text": "something",
+            "start": 48.844,
+            "end": 49.084
+          }
+        ]
+      },
+      {
+        "start": 49.084,
+        "end": 49.834,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "about",
+            "start": 49.084,
+            "end": 49.344
+          },
+          {
+            "text": "it.",
+            "start": 49.344,
+            "end": 49.484
+          }
+        ]
+      }
+    ]
+  },
+  "audio": [
+    {
+      "id": "clip0_40",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 0.0,
+      "offset": 0.4,
+      "duration": 2.35,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.05,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "sfx_pop_0_65",
+      "src": "yc-sam-03/sfx/pop.wav",
+      "role": "sfx",
+      "start": 0.65,
+      "offset": 0,
+      "duration": 0.75,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "clip6_35",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 2.35,
+      "offset": 6.35,
+      "duration": 0.17,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.05,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip6_71",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 2.52,
+      "offset": 6.708,
+      "duration": 4.515,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip11_59",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 7.035,
+      "offset": 11.591,
+      "duration": 0.815,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip13_21",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 7.85,
+      "offset": 13.212,
+      "duration": 2.238,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "vo0",
+      "src": "yc-sam-03/vo.wav",
+      "role": "vo",
+      "start": 10.088,
+      "offset": 0.0,
+      "duration": 8.43,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.15
+    },
+    {
+      "id": "amb_vb0_0",
+      "src": "yc-sam-03/stock/pixabay-video-122389.mp4",
+      "role": "sfx",
+      "start": 10.088,
+      "offset": 0.4,
+      "duration": 2.85,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_vb0_1",
+      "src": "yc-sam-03/stock/pexels-video-31252867.mp4",
+      "role": "sfx",
+      "start": 12.938,
+      "offset": 0.4,
+      "duration": 2.85,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_vb0_2",
+      "src": "yc-sam-03/stock/pexels-video-4864927.mp4",
+      "role": "sfx",
+      "start": 15.788,
+      "offset": 0.4,
+      "duration": 2.85,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "clip16_75",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 18.638,
+      "offset": 16.75,
+      "duration": 2.075,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.05,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip18_96",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 20.713,
+      "offset": 18.964,
+      "duration": 2.075,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip22_42",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 22.788,
+      "offset": 22.416,
+      "duration": 6.445,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip28_89",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 29.233,
+      "offset": 28.89,
+      "duration": 0.986,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip30_16",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 30.219,
+      "offset": 30.161,
+      "duration": 2.331,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip32_57",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 32.55,
+      "offset": 32.567,
+      "duration": 3.767,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip36_37",
+      "src": "yc-sam-03/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 36.317,
+      "offset": 36.372,
+      "duration": 3.928,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "amb_nb_3_0",
+      "src": "yc-sam-03/stock/pexels-video-37451040.mp4",
+      "role": "sfx",
+      "start": 27.772,
+      "offset": 0.6,
+      "duration": 1.971,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_nb_3_1",
+      "src": "yc-sam-03/stock/pexels-video-7985888.mp4",
+      "role": "sfx",
+      "start": 31.258,
+      "offset": 0.6,
+      "duration": 1.1,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_nb_3_2",
+      "src": "yc-sam-03/stock/pexels-video-36675429.mp4",
+      "role": "sfx",
+      "start": 33.883,
+      "offset": 0.6,
+      "duration": 2.3,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_nb_3_3",
+      "src": "yc-sam-03/stock/pexels-video-6324556.mp4",
+      "role": "sfx",
+      "start": 37.144,
+      "offset": 0.6,
+      "duration": 1.7,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "vo1",
+      "src": "yc-sam-03/vo.wav",
+      "role": "vo",
+      "start": 40.244,
+      "offset": 8.7,
+      "duration": 9.49,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.15
+    },
+    {
+      "id": "amb_vb1_0",
+      "src": "yc-sam-03/stock/pexels-video-7180031.mp4",
+      "role": "sfx",
+      "start": 40.244,
+      "offset": 0.4,
+      "duration": 3.463,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_vb1_1",
+      "src": "yc-sam-03/stock/pexels-video-8616782.mp4",
+      "role": "sfx",
+      "start": 43.708,
+      "offset": 0.4,
+      "duration": 3.463,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_vb1_2",
+      "src": "yc-sam-03/stock/pexels-video-10419525.mp4",
+      "role": "sfx",
+      "start": 47.171,
+      "offset": 0.4,
+      "duration": 3.463,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "sfx_whoosh_9_87",
+      "src": "yc-sam-03/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 9.868,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_whoosh_18_42",
+      "src": "yc-sam-03/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 18.418,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_whoosh_40_02",
+      "src": "yc-sam-03/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 40.024,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_ding_0_00",
+      "src": "yc-sam-03/sfx/ding.wav",
+      "role": "sfx",
+      "start": 0.0,
+      "offset": 0,
+      "duration": 1.4,
+      "gainDb": 1,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    }
+  ]
+}

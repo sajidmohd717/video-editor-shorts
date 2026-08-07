@@ -516,6 +516,52 @@ different. Any pace decision should be made on a finished cut.
 API call each at two settings showed the parameter did nothing — cheaper than
 shipping a video built on the assumption that it did.
 
+### F32 — Read the whole long-form transcript, not just the clip
+
+Standard step now for any clip cut from long-form: pull the full transcript and
+read what surrounds the passage.
+
+On yc-sam-03 it changed the edit three times over. The clip's own boundaries
+started at "Paul had this thing he used to say" — **"Paul" is never identified
+inside the clip**. The transcript showed the interviewer naming Paul Graham
+~25s earlier, which gave both the antecedent and a much stronger opening line
+(Graham had called Sam a top-five entrepreneur). It also revealed that Sam later
+becomes YC president and does the same for others — not used, but it's why the
+closing narration lands.
+
+**Rule:** the clip's supplied boundaries are a starting suggestion, not the edit.
+Extend backwards for the antecedent, forwards for the payoff, and cut the middle
+if it drags.
+
+### F33 — Not every shot should be cropped to 9:16
+
+A wide two-shot cropped to 9:16 frames the table between the speakers. The
+`fit` layout preserves the source aspect, centred, over a blurred copy of itself
+— so the letterbox reads as a treatment rather than dead bars, and the backdrop
+moves with the footage.
+
+**Use `fit` when the composition IS the content:** two-shots, stages, diagrams,
+anything where the crop would discard the point. `passageLayouts` sets it per
+passage, so one video can mix both.
+
+**Also:** don't chop a `fit` shot at the usual cut rhythm or punch into it —
+both undo the reason for using it. Shot length is stretched 2.2× and the camera
+move reduced to a 3% drift.
+
+### F34 — Clip captions need a correction map
+
+Narration captions are protected by the script (F4). **Clip captions have no such
+authority** — they come straight from ASR, so mishearings ship as on-screen
+typos. This transcript rendered "Brownian motion" as "brownie and motion" and
+"teacher as someone" as "teachers, someone".
+
+**Applied:** `captionCorrections` in the job, a word→replacement map applied to
+clip words before chunking. Authored per job because the errors are specific to
+what was said.
+
+**Check for these before rendering** — read the clip's transcript, don't assume
+ASR got proper nouns and idioms right.
+
 ---
 
 ## Platform data
