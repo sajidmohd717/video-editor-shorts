@@ -34,10 +34,20 @@ def normalise(token: str) -> str:
 
 
 def script_paragraphs(text: str) -> list[list[str]]:
-    """Script split into paragraphs, each a word list. Blank lines separate."""
+    """
+    Script split into paragraphs, each a word list. Blank lines separate.
+
+    Standalone punctuation is dropped. A free-floating em dash — the kind used to
+    shorten a TTS pause — is not a word, and letting it through renders a caption
+    card containing nothing but a dash.
+    """
     lines = [ln for ln in text.splitlines() if not ln.lstrip().startswith("#")]
     blocks = re.split(r"\n\s*\n", "\n".join(lines))
-    return [b.split() for b in blocks if b.strip()]
+    return [
+        [tok for tok in b.split() if normalise(tok)]
+        for b in blocks
+        if b.strip()
+    ]
 
 
 def script_words(text: str) -> list[str]:

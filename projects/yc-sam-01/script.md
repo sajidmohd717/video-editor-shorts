@@ -3,7 +3,7 @@
 # are stripped before synthesis; blank lines separate paragraphs, and each
 # paragraph becomes one VO segment with a controlled gap after it.
 
-Sam Altman just described the entire premise of a startup collapsing into an afternoon. Listen to the number he uses.
+Sam Altman just described the entire premise of a startup collapsing into an afternoon — listen to the number he uses.
 
 Three months, down to seven. That isn't a productivity gain. That's the floor moving.
 

@@ -139,13 +139,37 @@ def build(job: Job) -> dict:
         t = e + shift
         return start, t, shift
 
+    def passage_scale(p: float) -> float:
+        """
+        Scale at normalised position `p` through a passage.
+
+        One continuous curve across the WHOLE passage, not per shot. Giving each
+        shot its own punch-in makes the zoom ramp up, snap back at the cut, and
+        ramp again — it reads as pumping, and it's the single most unnatural
+        thing a mechanical edit does (F11).
+
+        Real multicam edits change the crop at a cut while the move continues
+        underneath. So the cut changes `focusY`; the scale just keeps going.
+
+        The curve breathes (a slow cosine) on top of a gentle overall creep, so
+        it pushes in and eases back rather than climbing forever.
+        """
+        import math
+        breathe = 0.5 - 0.5 * math.cos(2 * math.pi * p * 1.5)
+        return 1.03 + 0.07 * breathe + 0.09 * p
+
     def fill_aroll(start: float, end: float, shift: float, tag: str) -> None:
         n = max(1, round((end - start) / aroll_shot))
         step = (end - start) / n
         for i in range(n):
-            f = framings[i % len(framings)]
             a, b = start + i * step, start + (i + 1) * step
-            clips.append(aroll_clip(f"{tag}{i}", a, b, f, a - shift))
+            f = framings[i % len(framings)]
+            clip = aroll_clip(f"{tag}{i}", a, b, f, a - shift)
+            # Continuous across the cut: this shot starts exactly where the last
+            # one ended. Only the framing changes.
+            clip["camera"]["from"] = round(passage_scale(i / n), 4)
+            clip["camera"]["to"] = round(passage_scale((i + 1) / n), 4)
+            clips.append(clip)
 
     def fill_broll(start: float, end: float, assets: list[str], tag: str) -> None:
         """
