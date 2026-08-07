@@ -60,34 +60,27 @@
       "transitionDuration": 0
     },
     {
-      "id": "f0",
+      "id": "f1",
       "start": 3.0,
       "end": 6.11,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-33893602.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f1",
-      "start": 6.11,
-      "end": 9.22,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -97,15 +90,26 @@
     },
     {
       "id": "f2",
-      "start": 9.22,
-      "end": 12.33,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 6.11,
+      "end": 9.22,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-14900.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -115,15 +119,26 @@
     },
     {
       "id": "f3",
-      "start": 12.33,
-      "end": 15.44,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 9.22,
+      "end": 12.33,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7796797.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -133,15 +148,26 @@
     },
     {
       "id": "f4",
-      "start": 15.44,
-      "end": 18.55,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 12.33,
+      "end": 15.44,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-6755170.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -151,15 +177,26 @@
     },
     {
       "id": "f5",
-      "start": 18.55,
-      "end": 21.66,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 15.44,
+      "end": 18.55,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30915329.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -169,15 +206,26 @@
     },
     {
       "id": "f6",
-      "start": 21.66,
-      "end": 24.77,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 18.55,
+      "end": 21.66,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-8817471.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -187,15 +235,26 @@
     },
     {
       "id": "f7",
-      "start": 24.77,
-      "end": 27.88,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 21.66,
+      "end": 24.77,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-220941.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -205,15 +264,26 @@
     },
     {
       "id": "f8",
-      "start": 27.88,
-      "end": 30.99,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 24.77,
+      "end": 27.88,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30243446.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -223,15 +293,26 @@
     },
     {
       "id": "f9",
-      "start": 30.99,
-      "end": 34.1,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 27.88,
+      "end": 30.99,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7140928.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -241,15 +322,26 @@
     },
     {
       "id": "f10",
-      "start": 34.1,
-      "end": 37.21,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 30.99,
+      "end": 34.1,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-15357261.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -259,15 +351,55 @@
     },
     {
       "id": "f11",
+      "start": 34.1,
+      "end": 37.21,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-6754824.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f12",
       "start": 37.21,
       "end": 40.32,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-4404093.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -294,34 +426,27 @@
       "transitionDuration": 0
     },
     {
-      "id": "f12",
+      "id": "f13",
       "start": 43.52,
       "end": 46.556,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30524375.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f13",
-      "start": 46.556,
-      "end": 49.592,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -331,15 +456,26 @@
     },
     {
       "id": "f14",
-      "start": 49.592,
-      "end": 52.628,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 46.556,
+      "end": 49.592,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-33717724.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -349,15 +485,26 @@
     },
     {
       "id": "f15",
-      "start": 52.628,
-      "end": 55.664,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 49.592,
+      "end": 52.628,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-27844418.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -367,15 +514,55 @@
     },
     {
       "id": "f16",
+      "start": 52.628,
+      "end": 55.664,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-38557069.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f17",
       "start": 55.664,
       "end": 58.7,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-5028622.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -474,34 +661,27 @@
       "transitionDuration": 0
     },
     {
-      "id": "f17",
+      "id": "f18",
       "start": 74.68,
       "end": 77.901,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-343932.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f18",
-      "start": 77.901,
-      "end": 81.123,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -511,15 +691,26 @@
     },
     {
       "id": "f19",
-      "start": 81.123,
-      "end": 84.344,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 77.901,
+      "end": 81.123,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-47215.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -529,15 +720,26 @@
     },
     {
       "id": "f20",
-      "start": 84.344,
-      "end": 87.565,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 81.123,
+      "end": 84.344,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7317045.mp4",
+          "offset": 0.5,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -547,15 +749,26 @@
     },
     {
       "id": "f21",
-      "start": 87.565,
-      "end": 90.786,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 84.344,
+      "end": 87.565,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-38440687.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -565,15 +778,26 @@
     },
     {
       "id": "f22",
-      "start": 90.786,
-      "end": 94.008,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 87.565,
+      "end": 90.786,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-33893602.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -583,15 +807,26 @@
     },
     {
       "id": "f23",
-      "start": 94.008,
-      "end": 97.229,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 90.786,
+      "end": 94.008,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-14900.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -601,15 +836,26 @@
     },
     {
       "id": "f24",
-      "start": 97.229,
-      "end": 100.45,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 94.008,
+      "end": 97.229,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7796797.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -619,15 +865,26 @@
     },
     {
       "id": "f25",
-      "start": 100.45,
-      "end": 103.671,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 97.229,
+      "end": 100.45,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-6755170.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -637,15 +894,26 @@
     },
     {
       "id": "f26",
-      "start": 103.671,
-      "end": 106.892,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 100.45,
+      "end": 103.671,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30915329.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -655,15 +923,26 @@
     },
     {
       "id": "f27",
-      "start": 106.892,
-      "end": 110.114,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 103.671,
+      "end": 106.892,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-8817471.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -673,15 +952,26 @@
     },
     {
       "id": "f28",
-      "start": 110.114,
-      "end": 113.335,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 106.892,
+      "end": 110.114,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-220941.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -691,15 +981,26 @@
     },
     {
       "id": "f29",
-      "start": 113.335,
-      "end": 116.556,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 110.114,
+      "end": 113.335,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30243446.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -709,15 +1010,26 @@
     },
     {
       "id": "f30",
-      "start": 116.556,
-      "end": 119.778,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 113.335,
+      "end": 116.556,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7140928.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -727,15 +1039,26 @@
     },
     {
       "id": "f31",
-      "start": 119.778,
-      "end": 122.999,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 116.556,
+      "end": 119.778,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-15357261.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -745,15 +1068,55 @@
     },
     {
       "id": "f32",
+      "start": 119.778,
+      "end": 122.999,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-6754824.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f33",
       "start": 122.999,
       "end": 126.22,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-4404093.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -780,34 +1143,27 @@
       "transitionDuration": 0
     },
     {
-      "id": "f33",
+      "id": "f34",
       "start": 134.22,
       "end": 137.587,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30524375.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f34",
-      "start": 137.587,
-      "end": 140.953,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -817,15 +1173,26 @@
     },
     {
       "id": "f35",
-      "start": 140.953,
-      "end": 144.32,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 137.587,
+      "end": 140.953,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-33717724.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -835,15 +1202,26 @@
     },
     {
       "id": "f36",
-      "start": 144.32,
-      "end": 147.687,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 140.953,
+      "end": 144.32,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-27844418.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -853,15 +1231,26 @@
     },
     {
       "id": "f37",
-      "start": 147.687,
-      "end": 151.053,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 144.32,
+      "end": 147.687,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-38557069.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -871,15 +1260,26 @@
     },
     {
       "id": "f38",
-      "start": 151.053,
-      "end": 154.42,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 147.687,
+      "end": 151.053,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-5028622.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -889,15 +1289,26 @@
     },
     {
       "id": "f39",
-      "start": 154.42,
-      "end": 157.787,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 151.053,
+      "end": 154.42,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-343932.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -907,15 +1318,26 @@
     },
     {
       "id": "f40",
-      "start": 157.787,
-      "end": 161.153,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 154.42,
+      "end": 157.787,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-47215.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -925,15 +1347,55 @@
     },
     {
       "id": "f41",
+      "start": 157.787,
+      "end": 161.153,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7317045.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f42",
       "start": 161.153,
       "end": 164.52,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-38440687.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -960,16 +1422,27 @@
       "transitionDuration": 0
     },
     {
-      "id": "f42",
+      "id": "f43",
       "start": 167.52,
       "end": 171.49,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-33893602.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -978,16 +1451,27 @@
       "transitionDuration": 0
     },
     {
-      "id": "f43",
+      "id": "f44",
       "start": 171.49,
       "end": 175.46,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-14900.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1014,34 +1498,27 @@
       "transitionDuration": 0
     },
     {
-      "id": "f44",
+      "id": "f45",
       "start": 184.46,
       "end": 187.52,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7796797.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f45",
-      "start": 187.52,
-      "end": 190.58,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1051,15 +1528,55 @@
     },
     {
       "id": "f46",
+      "start": 187.52,
+      "end": 190.58,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-6755170.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f47",
       "start": 190.58,
       "end": 193.64,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30915329.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1086,34 +1603,27 @@
       "transitionDuration": 0
     },
     {
-      "id": "f47",
+      "id": "f48",
       "start": 206.64,
       "end": 209.786,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-8817471.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f48",
-      "start": 209.786,
-      "end": 212.933,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1123,15 +1633,26 @@
     },
     {
       "id": "f49",
-      "start": 212.933,
-      "end": 216.079,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 209.786,
+      "end": 212.933,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-220941.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1141,15 +1662,26 @@
     },
     {
       "id": "f50",
-      "start": 216.079,
-      "end": 219.225,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 212.933,
+      "end": 216.079,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30243446.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1159,15 +1691,26 @@
     },
     {
       "id": "f51",
-      "start": 219.225,
-      "end": 222.372,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 216.079,
+      "end": 219.225,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7140928.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1177,15 +1720,26 @@
     },
     {
       "id": "f52",
-      "start": 222.372,
-      "end": 225.518,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 219.225,
+      "end": 222.372,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-15357261.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1195,15 +1749,26 @@
     },
     {
       "id": "f53",
-      "start": 225.518,
-      "end": 228.665,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 222.372,
+      "end": 225.518,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-6754824.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1213,15 +1778,26 @@
     },
     {
       "id": "f54",
-      "start": 228.665,
-      "end": 231.811,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 225.518,
+      "end": 228.665,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-4404093.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1231,15 +1807,26 @@
     },
     {
       "id": "f55",
-      "start": 231.811,
-      "end": 234.957,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 228.665,
+      "end": 231.811,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30524375.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1249,15 +1836,26 @@
     },
     {
       "id": "f56",
-      "start": 234.957,
-      "end": 238.104,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 231.811,
+      "end": 234.957,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-33717724.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1267,15 +1865,26 @@
     },
     {
       "id": "f57",
-      "start": 238.104,
-      "end": 241.25,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 234.957,
+      "end": 238.104,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-27844418.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1285,15 +1894,26 @@
     },
     {
       "id": "f58",
-      "start": 241.25,
-      "end": 244.396,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 238.104,
+      "end": 241.25,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-38557069.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1303,15 +1923,26 @@
     },
     {
       "id": "f59",
-      "start": 244.396,
-      "end": 247.543,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 241.25,
+      "end": 244.396,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-5028622.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1321,15 +1952,26 @@
     },
     {
       "id": "f60",
-      "start": 247.543,
-      "end": 250.689,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 244.396,
+      "end": 247.543,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-343932.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1339,15 +1981,26 @@
     },
     {
       "id": "f61",
-      "start": 250.689,
-      "end": 253.835,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 247.543,
+      "end": 250.689,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-47215.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1357,15 +2010,26 @@
     },
     {
       "id": "f62",
-      "start": 253.835,
-      "end": 256.982,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 250.689,
+      "end": 253.835,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7317045.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1375,15 +2039,26 @@
     },
     {
       "id": "f63",
-      "start": 256.982,
-      "end": 260.128,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 253.835,
+      "end": 256.982,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-38440687.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1393,15 +2068,26 @@
     },
     {
       "id": "f64",
-      "start": 260.128,
-      "end": 263.275,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 256.982,
+      "end": 260.128,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-33893602.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1411,15 +2097,26 @@
     },
     {
       "id": "f65",
-      "start": 263.275,
-      "end": 266.421,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 260.128,
+      "end": 263.275,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-14900.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1429,15 +2126,26 @@
     },
     {
       "id": "f66",
-      "start": 266.421,
-      "end": 269.567,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 263.275,
+      "end": 266.421,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7796797.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1447,15 +2155,26 @@
     },
     {
       "id": "f67",
-      "start": 269.567,
-      "end": 272.714,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 266.421,
+      "end": 269.567,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-6755170.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1465,15 +2184,55 @@
     },
     {
       "id": "f68",
+      "start": 269.567,
+      "end": 272.714,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30915329.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f69",
       "start": 272.714,
       "end": 275.86,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-8817471.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1500,34 +2259,27 @@
       "transitionDuration": 0
     },
     {
-      "id": "f69",
+      "id": "f70",
       "start": 278.86,
       "end": 282.002,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-220941.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f70",
-      "start": 282.002,
-      "end": 285.144,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1537,15 +2289,26 @@
     },
     {
       "id": "f71",
-      "start": 285.144,
-      "end": 288.286,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 282.002,
+      "end": 285.144,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30243446.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1555,15 +2318,26 @@
     },
     {
       "id": "f72",
-      "start": 288.286,
-      "end": 291.428,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 285.144,
+      "end": 288.286,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7140928.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1573,15 +2347,26 @@
     },
     {
       "id": "f73",
-      "start": 291.428,
-      "end": 294.569,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 288.286,
+      "end": 291.428,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-15357261.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1591,15 +2376,26 @@
     },
     {
       "id": "f74",
-      "start": 294.569,
-      "end": 297.711,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 291.428,
+      "end": 294.569,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-6754824.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1609,15 +2405,26 @@
     },
     {
       "id": "f75",
-      "start": 297.711,
-      "end": 300.853,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 294.569,
+      "end": 297.711,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-4404093.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1627,15 +2434,26 @@
     },
     {
       "id": "f76",
-      "start": 300.853,
-      "end": 303.995,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 297.711,
+      "end": 300.853,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30524375.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1645,15 +2463,26 @@
     },
     {
       "id": "f77",
-      "start": 303.995,
-      "end": 307.137,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 300.853,
+      "end": 303.995,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-33717724.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1663,15 +2492,26 @@
     },
     {
       "id": "f78",
-      "start": 307.137,
-      "end": 310.279,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 303.995,
+      "end": 307.137,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-27844418.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1681,15 +2521,26 @@
     },
     {
       "id": "f79",
-      "start": 310.279,
-      "end": 313.421,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 307.137,
+      "end": 310.279,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-38557069.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1699,15 +2550,26 @@
     },
     {
       "id": "f80",
-      "start": 313.421,
-      "end": 316.562,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 310.279,
+      "end": 313.421,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-5028622.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1717,15 +2579,26 @@
     },
     {
       "id": "f81",
-      "start": 316.562,
-      "end": 319.704,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 313.421,
+      "end": 316.562,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-343932.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1735,15 +2608,26 @@
     },
     {
       "id": "f82",
-      "start": 319.704,
-      "end": 322.846,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 316.562,
+      "end": 319.704,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-47215.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1753,15 +2637,26 @@
     },
     {
       "id": "f83",
-      "start": 322.846,
-      "end": 325.988,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "start": 319.704,
+      "end": 322.846,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7317045.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1771,15 +2666,55 @@
     },
     {
       "id": "f84",
+      "start": 322.846,
+      "end": 325.988,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-38440687.mp4",
+          "offset": 5.7,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f85",
       "start": 325.988,
       "end": 329.13,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-33893602.mp4",
+          "offset": 5.7,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
         "originX": 0.5,
         "originY": 0.5
       },

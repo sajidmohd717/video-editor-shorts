@@ -35,17 +35,17 @@ UA = {"User-Agent": "video-editor-shorts/0.1"}
 # Providers                                                                     #
 # --------------------------------------------------------------------------- #
 
-def pexels(query: str, kind: str, count: int) -> list[dict]:
+def pexels(query: str, kind: str, count: int, orientation: str = "portrait") -> list[dict]:
     key = env("PEXELS_API_KEY")
     if not key:
         return []
 
     if kind == "video":
         url = "https://api.pexels.com/videos/search"
-        params = {"query": query, "per_page": count, "orientation": "portrait", "size": "medium"}
+        params = {"query": query, "per_page": count, "orientation": orientation, "size": "medium"}
     else:
         url = "https://api.pexels.com/v1/search"
-        params = {"query": query, "per_page": count, "orientation": "portrait"}
+        params = {"query": query, "per_page": count, "orientation": orientation}
 
     r = requests.get(url, headers={**UA, "Authorization": key}, params=params, timeout=TIMEOUT)
     if r.status_code != 200:
@@ -80,7 +80,7 @@ def pexels(query: str, kind: str, count: int) -> list[dict]:
     return out
 
 
-def pixabay(query: str, kind: str, count: int) -> list[dict]:
+def pixabay(query: str, kind: str, count: int, orientation: str = "portrait") -> list[dict]:
     key = env("PIXABAY_API_KEY")
     if not key:
         return []
@@ -96,7 +96,8 @@ def pixabay(query: str, kind: str, count: int) -> list[dict]:
         url = "https://pixabay.com/api/"
         params = {
             "key": key, "q": query, "per_page": max(3, count),
-            "image_type": "photo", "orientation": "vertical",
+            "image_type": "photo",
+            "orientation": "horizontal" if orientation == "landscape" else "vertical",
         }
 
     r = requests.get(url, headers=UA, params=params, timeout=TIMEOUT)
@@ -208,11 +209,16 @@ def download(item: dict, dest_dir: Path) -> Path | None:
     return dest
 
 
-def fetch(project: Project, query: str, kind: str, count: int) -> list[dict]:
+def fetch(project: Project, query: str, kind: str, count: int,
+          orientation: str = "portrait") -> list[dict]:
     stock_dir = project.assets / "stock"
     stock_dir.mkdir(parents=True, exist_ok=True)
 
-    results = interleave(pexels(query, kind, count), pixabay(query, kind, count), count)
+    results = interleave(
+        pexels(query, kind, count, orientation),
+        pixabay(query, kind, count, orientation),
+        count,
+    )
     if not results:
         print(f"  no results for {query!r} ({kind})")
         return []
@@ -281,6 +287,12 @@ def main() -> None:
     ap.add_argument("--query", action="append", default=[], help="repeatable")
     ap.add_argument("--kind", choices=["video", "photo"], default="video")
     ap.add_argument("--count", type=int, default=3)
+    # Shorts want portrait; long-form wants landscape. The default stays portrait
+    # because that is what the shorts pipeline has always assumed, but getting
+    # this wrong is expensive: a portrait source in a 16:9 frame has to be
+    # cropped so hard that whatever made the shot worth picking is gone.
+    ap.add_argument("--orientation", choices=["portrait", "landscape"],
+                    default="portrait")
     ap.add_argument("--check", action="store_true", help="verify keys and exit")
     args = ap.parse_args()
 
@@ -293,7 +305,7 @@ def main() -> None:
     entries: list[dict] = []
     for q in args.query:
         print(f"{q!r} ({args.kind}):")
-        entries += fetch(project, q, args.kind, args.count)
+        entries += fetch(project, q, args.kind, args.count, args.orientation)
 
     manifest = write_manifest(project, entries)
     print(f"\n{len(entries)} asset(s) -> {manifest}")

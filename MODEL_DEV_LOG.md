@@ -644,6 +644,37 @@ just about accuracy; it's where the good material is.
 
 ---
 
+### F38 — Legible brand marks in stock make a claim you didn't write
+
+A licensed Pexels clip of an office block with the **Citi** logo clearly readable
+came back from "corporate office glass building" and was rejected.
+
+The licence is fine. The problem is editorial: in a video about who is funding
+the AI build-out, putting a named bank on screen tells the viewer Citi is part of
+the story. Nothing in the narration says that, and it isn't true. **B-roll is not
+neutral texture — a legible logo is an assertion**, and it's one the script never
+made and can't defend.
+
+Same reasoning as F3 (match the visual to the shape of the claim), one level
+lower: it's not just that the visual should fit the claim, it's that a visual can
+*add* a claim.
+
+**Rule:** reject stock with a readable third-party brand unless that company is
+actually in the argument. Generic is the point. Check the contact sheet for
+signage, not just for content standards.
+
+Related, from the same review: **search drift is worse for long-form.** "fiber
+optic cable" returned a ski gondola and "data center construction" returned a
+quarry. In shorts the b-roll is 1–2s and half-abstract, so a loose match survives;
+over 8 minutes on a 3.2s cadence the viewer has time to notice the shot is wrong.
+
+**Add to the fetcher when it's worth it:** `--orientation`. It was hardcoded to
+`portrait` because the pipeline began with shorts, so the first long-form pull
+came back two-thirds unusable. A portrait source in a 16:9 frame has to be
+cropped so hard that whatever made the shot worth picking is gone.
+
+---
+
 ## Platform data
 
 ### 2026-08-07 — first narrated short (El5XrIpsOCA)

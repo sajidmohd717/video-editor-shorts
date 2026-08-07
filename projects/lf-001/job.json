@@ -38,8 +38,41 @@
   },
 
   "newsClips": {},
-  "broll": {},
-  "fillerBroll": [],
+
+  "_broll": "Reviewed on a contact sheet at 1s AND 4s before selection (F6, F29). 7 of 28 rejected: search drift (a ski gondola from 'fiber optic cable', a quarry from 'data center construction'), an unusable blurred frame, a stock-photo man celebrating at a laptop (wrong register for this argument), a near-duplicate of racks-blue, wind turbines (reads as a renewables story), and an office block with the Citi logo legible — see F38.",
+
+  "broll": {
+    "racks-blue": "lf-001/stock/pixabay-video-14900.mp4",
+    "racks-dark": "lf-001/stock/pexels-video-7140928.mp4",
+    "racks-lit": "lf-001/stock/pexels-video-5028622.mp4",
+    "circuit-green": "lf-001/stock/pixabay-video-47215.mp4",
+    "circuit-gold": "lf-001/stock/pexels-video-6755170.mp4",
+    "circuit-blue": "lf-001/stock/pexels-video-6754824.mp4",
+    "fiber-burst": "lf-001/stock/pexels-video-8817471.mp4",
+    "fiber-sparks": "lf-001/stock/pexels-video-33717724.mp4",
+    "dc-construction": "lf-001/stock/pexels-video-33893602.mp4",
+    "industrial-aerial": "lf-001/stock/pexels-video-30524375.mp4",
+    "substation-aerial": "lf-001/stock/pexels-video-30915329.mp4",
+    "substation-towers": "lf-001/stock/pexels-video-27844418.mp4",
+    "pylon-a": "lf-001/stock/pixabay-video-343932.mp4",
+    "pylon-clouds": "lf-001/stock/pexels-video-15357261.mp4",
+    "pylon-sunset": "lf-001/stock/pexels-video-7796797.mp4",
+    "pipes-bw": "lf-001/stock/pexels-video-30243446.mp4",
+    "cooling-towers": "lf-001/stock/pexels-video-4404093.mp4",
+    "glass-towers": "lf-001/stock/pixabay-video-220941.mp4",
+    "office-tower": "lf-001/stock/pexels-video-7317045.mp4",
+    "trading-candles": "lf-001/stock/pexels-video-38557069.mp4",
+    "trading-terminals": "lf-001/stock/pexels-video-38440687.mp4"
+  },
+
+  "_fillerOrder": "Ordered so neighbours differ in texture and scale — two circuit-board macros back to back read as one long shot, which wastes a cut.",
+  "fillerBroll": [
+    "dc-construction", "racks-blue", "pylon-sunset", "circuit-gold",
+    "substation-aerial", "fiber-burst", "glass-towers", "pipes-bw",
+    "racks-dark", "pylon-clouds", "circuit-blue", "cooling-towers",
+    "industrial-aerial", "fiber-sparks", "substation-towers", "trading-candles",
+    "racks-lit", "pylon-a", "circuit-green", "office-tower", "trading-terminals"
+  ],
 
   "sourceAudio": [
     {
