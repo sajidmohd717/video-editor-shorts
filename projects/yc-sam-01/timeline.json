@@ -1014,6 +1014,7 @@
   ],
   "captions": {
     "style": {
+      "_": "word-pop (heavy sans, thick stroke, no pill) outperformed the pill and broadcast presets across all three reference teardowns. 1-2 words per card; cards break on sentence end, long pause, and speaker change (F5).",
       "preset": "word-pop",
       "fontFamily": "Poppins",
       "fontWeight": 800,

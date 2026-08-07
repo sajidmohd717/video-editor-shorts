@@ -100,6 +100,23 @@ Always `npx tsc --noEmit` before rendering — it's seconds versus minutes.
 
 ---
 
+## How defects actually get found here
+
+Every real defect in this project so far — camera pumping, audio static, soft
+A-roll, repeated b-roll, black frames, off-centre framing — was found by
+**watching and listening to the output**. None were found by measurement, and on
+one occasion twenty minutes of spectral analysis pointed at three wrong causes
+while the answer was a filter-graph bug (F13).
+
+Two habits follow:
+
+1. **Reproduce the failure in the real artifact before simplifying.** Simplified
+   test cases repeatedly failed to reproduce bugs — a single-sentence TTS sample
+   has no paragraph gaps, so the concat bug never fired.
+2. **Prefer an assertion to careful code.** The clip-coverage check (F18) is four
+   lines and makes an entire bug class unshippable. The planner will keep growing;
+   invariants survive that, care doesn't.
+
 ## Gotchas that already cost time
 
 - **`drawtext` doesn't work** here (no fontconfig). Compose labels another way.
@@ -111,6 +128,14 @@ Always `npx tsc --noEmit` before rendering — it's seconds versus minutes.
   and use `git commit -F`.
 - **Pixabay video has no orientation param** (its image endpoint does). Everything
   comes back landscape (F7).
+- **Never request MP3 from a TTS API.** 128kbps puts audible static under voiced
+  speech. PCM only (F12).
+- **Word timings lie about pauses.** ASR stretches a word's end across a following
+  silence. Use `silencedetect` for anything about audio timing (F16).
+- **Reusing one filter input across branches needs `asplit`.** Without it the
+  output is corrupted, not merely inefficient (F13).
+- **Crop first, scale last** — order of operations, not resolution, is what makes
+  A-roll soft (F14).
 
 ---
 
@@ -135,15 +160,38 @@ switch. Update the doc when you do.
 ## Current state
 
 Working end-to-end: ingest → TTS → transcribe → captions → stock/screenshots →
-plan → render → master. One video shipped (`yc-sam-01`).
+plan → render → master. One video built (`yc-sam-01`), 19 findings logged.
+
+**No platform data yet.** Everything in `MODEL_DEV_LOG.md` is reasoning from
+three reference teardowns plus this build. Cut density, narration share, the
+no-end-card decision and b-roll dosage are all untested against a real audience.
+When numbers arrive, record them against the experiment template — raw views
+alone are not a verdict.
 
 Known gaps, roughly in priority order:
 
 1. **Graphic placement is authored**, not derived. The mechanical parts are
    automated; choosing which graphic fits which sentence isn't.
-2. **No music bed.** Needs a licensed source.
-3. **Stock relevance** — a CLIP re-rank would cut the manual review.
-4. **Screenshot highlight boxes are positioned by hand** — the component can't
-   know where a phrase sits inside an image. OCR would automate it.
+2. **No music bed.** Ref 003's energy is substantially music. Needs a licensed
+   source — that's the largest single quality gap to the best reference.
+3. **Article screenshots are built but unused in a real video.** The highlight
+   box is positioned by hand; OCR would automate it.
+4. **Stock relevance** — half of every search is unusable (F6). A CLIP re-rank
+   would cut the manual review.
 5. `plan_explainer.py` still hardcodes its asset map; only `plan_narrated.py` has
    been moved onto profiles/jobs.
+6. Both planners duplicate helpers; they should share a base.
+
+## Improving from new references
+
+The teardowns in `docs/style-analysis/` are the training data, and adding one is
+the main way this system improves. The method that worked:
+
+1. `yt-dlp` the short, then measure before interpreting — cut timestamps via
+   `select='gt(scene,0.15)'`, loudness via `ebur128`, and a 1fps contact sheet.
+2. **Read the gap distribution, not the average.** Every reference turned out to
+   have discrete cutting regimes rather than one tempo (F1).
+3. Check the numbers against performance. Ref 002 was a major broadcaster with 9k
+   views; its format is the floor, not the target.
+4. Write the teardown with a "what to take / what to fix" section, then compile
+   the takeable parts into the schema, a component, or a profile default.

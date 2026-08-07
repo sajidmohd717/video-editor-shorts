@@ -1,5 +1,7 @@
 {
   "id": "default",
+  "_": "Engine defaults. Every value here encodes a finding from MODEL_DEV_LOG.md — the finding number is cited so you can read why before changing it. Channel identity belongs in a profile that extends this one, not here.",
+
   "brand": {
     "bug": null,
     "bugTone": "light",
@@ -7,7 +9,9 @@
     "accent": "#FF5A3C",
     "canvas": "#E9E9EC"
   },
+
   "captions": {
+    "_": "word-pop (heavy sans, thick stroke, no pill) outperformed the pill and broadcast presets across all three reference teardowns. 1-2 words per card; cards break on sentence end, long pause, and speaker change (F5).",
     "preset": "word-pop",
     "fontFamily": "Poppins",
     "fontWeight": 800,
@@ -20,13 +24,19 @@
     "maxWordsPerCard": 2,
     "emphasisKeywords": []
   },
+
   "pacing": {
+    "_": "handoffGap short so narration answers the clip rather than following a beat later. maxPauseSeconds trims dead air via silence detection, not word gaps (F16). brollShot >= arollShot: b-roll under narration wants fewer, longer shots.",
     "arollShotSeconds": 1.1,
     "brollShotSeconds": 1.9,
-    "handoffGapSeconds": 0.3,
+    "handoffGapSeconds": 0.12,
+    "maxPauseSeconds": 0.34,
+    "silenceThresholdDb": -38,
     "targetBrollShare": 0.2
   },
+
   "camera": {
+    "_": "Only focusY varies between framings. focusX is overridden per-job by source.subjectFocusX, and scale follows one continuous curve per passage — a per-shot punch-in reads as pumping (F11).",
     "framings": [
       { "focusX": 0.5, "focusY": 0.42, "from": 1.0, "to": 1.06 },
       { "focusX": 0.5, "focusY": 0.34, "from": 1.14, "to": 1.2 },
@@ -35,19 +45,29 @@
       { "focusX": 0.5, "focusY": 0.46, "from": 1.0, "to": 1.1 }
     ]
   },
+
   "audio": {
+    "_": "-13 sits between broadcast (-21) and the most aggressive creator reference (-9.2). YouTube normalises to about -14 on playback, so hotter buys perceived density rather than volume; past -11 it just sounds crushed.",
     "masterLufs": -13,
     "voGainDb": 2,
     "clipGainDb": 0
   },
+
   "tts": {
+    "_": "NEVER mp3 — 128kbps puts audible static under voiced speech (F12). Generation is stochastic, so listen to the -qc+10dB.m4a of the ACTUAL narration, not a fresh test sentence (F13).",
     "engine": "kokoro",
     "voice": "am_michael",
-    "stability": 0.38
+    "outputFormat": "pcm_24000",
+    "stability": 0.55,
+    "similarityBoost": 0.75,
+    "style": 0.0,
+    "speakerBoost": false
   },
+
   "overlays": {
+    "_": "No end card by default: a subscribe prompt at the tail costs the loop, and rewatch feeds the algorithm harder than the subscribes it converts (F17).",
     "progress": "bar",
-    "showEndCard": true,
+    "showEndCard": false,
     "midrollCta": null
   }
 }

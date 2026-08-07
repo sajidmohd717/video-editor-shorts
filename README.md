@@ -40,6 +40,34 @@ python -m pipeline.stock --check
 
 ---
 
+## New video checklist
+
+Nineteen findings are already baked into the defaults, so the mechanical parts
+are handled. These are the steps that still need a human, in order:
+
+- [ ] **Extract A-roll by cropping the highest-resolution source — never downscale
+      first** (F14). A 9:16 crop keeps 32% of a 16:9 frame's width, so the source
+      needs ~3.2× the target width. From 2160p that's a downscale; from 1080p it's
+      a 1.78× upscale and visibly soft.
+- [ ] **Measure where the subject actually is** (F19). Extract a gridded still and
+      look; don't inherit a framing number. Set `source.subjectFocusX`, offset
+      *toward* the direction they face so there's looking room.
+- [ ] **Write the script.** Blank lines separate VO segments. Use an em dash, not
+      a full stop, where you want a short connective pause.
+- [ ] **Listen to `vo-qc+10dB.m4a`** after TTS — the actual narration, not a test
+      sentence (F13). Regenerate if there's a noise floor.
+- [ ] **Look at stock before wiring it in** (F6). Roughly half of any search is
+      unusable. Build a contact sheet. Budget ~10 distinct clips per 45s; never
+      reuse one (F15).
+- [ ] **Choose graphics by the shape of the claim, not its topic** (F3). A jump is
+      a `comparison`, a trend is a `stat-chart`, a sourced fact is an
+      `article-clip`.
+- [ ] **Watch the render.** Every real defect so far was found by watching, not by
+      measuring.
+
+The planner hard-fails on uncovered timeline (F18) and warns if narration share
+drops below the profile floor, so those two can't ship silently.
+
 ## Making a video
 
 Each video is a **project** — a slug with its own directory. Assets live under
