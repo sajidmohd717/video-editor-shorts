@@ -350,6 +350,35 @@ Reference teardowns are in [`docs/style-analysis/`](docs/style-analysis/).
 
 The two numbers that moved most: cut density 0.02 → 0.73, loudness −25.3 → −13.9.
 
+### F24 — Cutting for length must never cost the antecedent
+
+An early cut of yc-sam-02 opened on *"He himself would cook us dinner."* A pronoun
+with nothing to attach to. The viewer never learns who is being described, why
+they matter, or what the story is about — the short is 40 seconds of anecdote
+about an unidentified "he".
+
+The fix wasn't to restore length. It was to keep the **naming** line
+("And my kind of Paul Graham memory is…") and cut the **filler** instead
+("I think it was on Tuesdays"). Same runtime, context intact.
+
+**Rule:** before cutting, identify the sentence that establishes *who* and
+*what*. That one is load-bearing and can never go. Filler, asides, restarts and
+hedges are what the budget comes from. When trimming a passage, read the result
+cold and ask whether someone arriving at second zero knows what they're watching.
+
+**Support:** logo-pops now do this job visually too — a portrait badge on the
+person's name, an org mark on the org's. `shape: circle` for people (a photo must
+keep its own colours), plain for logos.
+
+### F25 — Only tint marks that are already monochrome
+
+`brightness(0) invert(1)` whitens any logo, which is right for a single-colour
+mark. Applied to the Y Combinator logo it flattened the orange field to black and
+inverted it to a **solid white square**. Same treatment on a photograph would be
+worse.
+
+**Applied:** `tint: none` for coloured marks and photos. **Status:** keep.
+
 ---
 
 ## Platform data

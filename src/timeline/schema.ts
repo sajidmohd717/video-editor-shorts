@@ -359,6 +359,14 @@ export const overlaySchema = z.discriminatedUnion("type", [
     size: z.number().default(300),
     /** `white` suits dark footage; `none` keeps the file's own colours. */
     tint: z.enum(["white", "none"]).default("white"),
+    /**
+     * `circle` crops to a badge with a ring — the right treatment for a person's
+     * photo, which must keep its own colours and would look like a floating
+     * rectangle otherwise. `none` suits logos.
+     */
+    shape: z.enum(["none", "circle"]).default("none"),
+    /** Small label under the mark, e.g. naming the person. */
+    caption: z.string().optional(),
     entrance: z.enum(["pop", "drop", "spin"]).default("pop"),
     /** Brief bloom behind the mark as it lands. */
     glow: z.boolean().default(true),

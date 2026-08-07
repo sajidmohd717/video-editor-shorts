@@ -152,8 +152,6 @@ def build(job: Job) -> dict:
 
     def place_vo(index: int) -> tuple[float, float]:
         nonlocal t
-        if t > 0:
-            handoffs.append((round(t, 3), "to-vo"))
         s, e = vo_paras[index]
         dur = e - s + 0.25
         audio.append({
@@ -204,8 +202,6 @@ def build(job: Job) -> dict:
         beats authored in SOURCE time can be translated to timeline time.
         """
         nonlocal t
-        if t > 0:
-            handoffs.append((round(t, 3), "to-clip"))
         start = t
         segments: list[tuple[float, float, float]] = []  # (src_a, src_b, shift)
 
@@ -386,11 +382,20 @@ def build(job: Job) -> dict:
     spans: dict[str, tuple[float, float]] = {}
     clip_segs: dict[str, list] = {}
 
+    prev_kind: str | None = None
+
     for pos, item in enumerate(structure):
         kind, idx_s = item.split(":")
         idx = int(idx_s)
         last = pos == len(structure) - 1
         pad = tail if last else gap
+
+        # A transition marks a change of VOICE. Two clip segments in a row are the
+        # same speaker continuing across an internal cut — burning and whooshing
+        # there would announce a handoff that isn't happening.
+        if prev_kind is not None and kind != prev_kind:
+            handoffs.append((round(t, 3), f"to-{kind}"))
+        prev_kind = kind
 
         if kind == "vo":
             if idx >= len(vo_paras):

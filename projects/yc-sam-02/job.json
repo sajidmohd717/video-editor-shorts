@@ -3,31 +3,52 @@
   "profile": "the-next-curve",
   "format": "narrated",
   "title": "Paul Graham willed Y Combinator into existence",
-
-  "structure": ["clip:0", "vo:0", "clip:1", "vo:1"],
+  "structure": [
+    "clip:0",
+    "clip:1",
+    "vo:0",
+    "clip:2",
+    "vo:1"
+  ],
   "structureWhy": "CLIP FIRST. yc-sam-01 opened on b-roll plus synthetic narration and held 32%; clip-only cuts opening on a face held ~63%. This changes that one variable — a human face and a human voice in second one, narration answering rather than introducing.",
-
+  "structureWhy2": "clip:0 and clip:1 run back to back and are the SAME sentence with filler removed, so no transition fires between them. Cutting for length must never cost the antecedent: an earlier version opened on 'He himself would cook us dinner', which is a pronoun with nothing to attach to — the viewer never learns who is being described or why it matters.",
   "source": {
     "aroll": "yc-sam-02/aroll.mp4",
     "speaker": "Sam Altman",
     "venue": "Y Combinator",
     "comment": "Passages are in SOURCE time, relative to the extracted a-roll (which starts at 132.0s of the original talk). Cropped 1620x2160 at x=1552 from the 3840x2160 master — crop first, scale last (F14).",
     "passages": [
-      [8.5, 24.4],
-      [28.3, 35.8]
+      [
+        0.0,
+        5.1
+      ],
+      [
+        7.2,
+        24.4
+      ],
+      [
+        28.3,
+        35.8
+      ]
     ],
-    "passagesWhy": "0: the dinner anecdote — walk in hopeless, go home believing you're the next Google. Self-contained and the strongest hook in the clip. 1: the thesis — creating belief out of nothing.",
+    "passagesWhy": "0: 'And my kind of Paul Graham memory is: we would all, every week, come' — NAMES HIM. Without this the whole short is about an unidentified 'he'. 1: skips the 'I think it was on Tuesdays' aside and runs 'he would cook' through to 'the next Google' — the anecdote. 2: the thesis, creating belief out of nothing. The join between 0 and 1 removes filler, not meaning.",
     "subjectFocusX": 0.44
   },
-
   "publish": {
     "title": "How Paul Graham Manufactured Startup Optimism",
     "description": "Sam Altman on the Tuesday dinners where Paul Graham convinced eight hopeless startups they were about to take over the world — and why that mattered more than advice.\n\nCommentary and edit: The Next Curve",
-    "tags": ["Paul Graham", "Sam Altman", "Y Combinator", "startups", "YC", "founders", "tech"],
+    "tags": [
+      "Paul Graham",
+      "Sam Altman",
+      "Y Combinator",
+      "startups",
+      "YC",
+      "founders",
+      "tech"
+    ],
     "categoryId": "28",
     "madeForKids": false
   },
-
   "rights": {
     "clearance": "commentary",
     "speaker": "Sam Altman",
@@ -35,17 +56,24 @@
     "sourceUrl": "https://www.youtube.com/@ycombinator",
     "note": "Short excerpts as evidence for original commentary. Narration is the spine. Does not affect Content ID."
   },
-
   "sfx": {
     "ding": "yc-sam-02/sfx/ding.wav",
     "pop": "yc-sam-02/sfx/pop.wav",
     "whoosh": "yc-sam-02/sfx/whoosh.wav"
   },
-  "sfxDurations": { "ding": 1.4, "whoosh": 0.58, "pop": 0.75 },
+  "sfxDurations": {
+    "ding": 1.4,
+    "whoosh": 0.58,
+    "pop": 0.75
+  },
   "sfxCues": [
-    { "name": "ding", "at": 0.0, "gainDb": 1, "why": "attention cue on frame one" }
+    {
+      "name": "ding",
+      "at": 0.0,
+      "gainDb": 1,
+      "why": "attention cue on frame one"
+    }
   ],
-
   "broll": {
     "dinner": "yc-sam-02/stock/pexels-video-6555612.mp4",
     "team": "yc-sam-02/stock/pexels-video-6913252.mp4",
@@ -53,20 +81,59 @@
     "skyline": "yc-sam-02/stock/pexels-video-18970501.mp4",
     "talking": "yc-sam-02/stock/pexels-video-8522984.mp4"
   },
-
   "voBroll": {
-    "0": ["team", "talking"],
-    "1": ["dinner", "skyline", "cooking"]
+    "0": [
+      "team",
+      "talking"
+    ],
+    "1": [
+      "dinner",
+      "skyline",
+      "cooking"
+    ]
   },
-
+  "logos": {
+    "pg": "yc-sam-02/logos/pg.jpg",
+    "yc": "yc-sam-02/logos/yc.svg"
+  },
   "beats": [
     {
       "at": "clip0",
-      "type": "broll",
-      "sourceStart": 15.2,
-      "sourceEnd": 16.4,
-      "asset": "team",
-      "why": "'and there were eight companies' — show the room"
+      "type": "logo-pop",
+      "why": "lands on the words 'Paul Graham' — names the subject at the moment he is named, so nobody has to guess who 'he' is",
+      "sourceStart": 0.75,
+      "sourceEnd": 4.2,
+      "src": "yc-sam-02/logos/pg.jpg",
+      "sfx": "pop",
+      "x": 0.27,
+      "y": 0.22,
+      "size": 260,
+      "tint": "none",
+      "shape": "circle",
+      "caption": "PAUL GRAHAM",
+      "entrance": "pop",
+      "glow": true,
+      "exit": 0.25,
+      "z": 70
+    },
+    {
+      "at": "clip1",
+      "type": "logo-pop",
+      "why": "Y Combinator mark on 'eight companies' — the room being described is the first YC batch",
+      "sourceStart": 15.0,
+      "sourceEnd": 17.6,
+      "src": "yc-sam-02/logos/yc.svg",
+      "sfx": "pop",
+      "x": 0.27,
+      "y": 0.22,
+      "size": 200,
+      "tint": "none",
+      "shape": "none",
+      "entrance": "pop",
+      "glow": true,
+      "exit": 0.22,
+      "z": 70,
+      "whyTint": "tint white would flatten the orange field to black then invert it to a solid white square. Only tint marks that are already monochrome."
     }
   ]
 }
