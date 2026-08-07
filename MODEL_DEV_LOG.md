@@ -419,6 +419,12 @@ being asked to do too much.
 **Status:** keep. Use on the first mention of any person or organisation the
 audience can't be assumed to know.
 
+**Place it on the spoken name, not before it.** An early version of yc-sam-03
+introduced Paul Graham during an interviewer's line 15 seconds ahead of Sam
+saying "Paul had this thing he used to say". The badge is an *answer* to a
+question the viewer is forming — firing it before the question exists wastes it,
+and the viewer has forgotten by the time it's needed.
+
 ### F27 — Never leave 20 seconds without a cutaway
 
 The first cut of yc-sam-02 ran ~20s of unbroken talking head before any b-roll.
@@ -543,6 +549,12 @@ moves with the footage.
 **Use `fit` when the composition IS the content:** two-shots, stages, diagrams,
 anything where the crop would discard the point. `passageLayouts` sets it per
 passage, so one video can mix both.
+
+**But a capability is not a reason.** The wide two-shot went into yc-sam-03's
+opening partly because `fit` had just been built and it was a chance to use it.
+It was then cut: two seconds of an interviewer compliment that the video didn't
+need, in front of a much stronger cold open. Ask what the shot does for the
+viewer, not whether the engine can now render it.
 
 **Also:** don't chop a `fit` shot at the usual cut rhythm or punch into it —
 both undo the reason for using it. Shot length is stretched 2.2× and the camera
