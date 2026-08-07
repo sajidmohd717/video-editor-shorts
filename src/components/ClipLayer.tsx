@@ -171,7 +171,7 @@ export const ClipLayer: React.FC<{ clip: Clip; durationInFrames: number }> = ({
   // "full" and "graphic" both render a single source; "graphic" simply expects the
   // overlay stack to own the frame.
   return wrap(
-    <AbsoluteFill style={{ backgroundColor: "#000" }}>
+    <AbsoluteFill style={{ backgroundColor: clip.background }}>
       {a ? (
         <SourceView source={a} clip={clip} localFrame={localFrame} durationInFrames={durationInFrames} />
       ) : null}

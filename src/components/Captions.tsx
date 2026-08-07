@@ -44,6 +44,7 @@ const CueBody: React.FC<{ cue: CaptionCue; style: Style; localFrame: number }> =
 
   const isKaraoke = style.preset === "karaoke";
   const isBroadcast = style.preset === "broadcast";
+  const isWordPop = style.preset === "word-pop";
 
   return (
     <div
@@ -76,11 +77,19 @@ const CueBody: React.FC<{ cue: CaptionCue; style: Style; localFrame: number }> =
               : "transparent",
           boxDecorationBreak: "clone",
           WebkitBoxDecorationBreak: "clone",
-          textShadow:
-            style.preset === "outline" || style.preset === "bold-drop"
+          // word-pop: the thick stroke does the legibility work a pill would, without
+          // boxing off part of the frame. `paintOrder: stroke fill` is what keeps the
+          // stroke outside the glyph instead of eating into it.
+          textShadow: isWordPop
+            ? "0 6px 22px rgba(0,0,0,0.55)"
+            : style.preset === "outline" || style.preset === "bold-drop"
               ? "0 4px 0 rgba(0,0,0,0.85), 0 0 18px rgba(0,0,0,0.6)"
               : "none",
-          WebkitTextStroke: style.preset === "outline" ? "3px rgba(0,0,0,0.9)" : undefined,
+          WebkitTextStroke: isWordPop
+            ? `${style.strokeWidth}px #000`
+            : style.preset === "outline"
+              ? "3px rgba(0,0,0,0.9)"
+              : undefined,
           paintOrder: "stroke fill",
         }}
       >

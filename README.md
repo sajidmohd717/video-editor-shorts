@@ -105,20 +105,50 @@ projects/<slug>/       per-video working dir (assets, timeline.json, render)
 reference/             downloaded reference videos + frame analysis
 ```
 
-## The two formats
+## The three formats
 
-Both are driven by the same renderer; they differ only in the timeline fed to it.
+All driven by the same renderer; they differ only in the timeline fed to it.
 
-| | `Short` (ref 001) | `NewsUpdate` (ref 002 hybrid) |
-|---|---|---|
-| Use when | a usable clip exists | no clip exists, or the story is the story |
-| Cut density | 1.0/s, barrage-and-hold | ~0.35/s |
-| Spine | clips + AI narration | stills + AI narration |
-| Transitions | hard cuts | dissolve between stills, hard cut into graphics |
-| Captions | centre, 2–4 words, pill | lower third, same pill style |
-| Chrome | none | persistent dateline + channel bug |
+| | `Short` (ref 001) | `NewsUpdate` (ref 002 hybrid) | `Explainer` (ref 003) ⭐ |
+|---|---|---|---|
+| Use when | a usable clip exists | no clip exists | compressing long-form into short |
+| Cut density | 1.0/s, barrage-and-hold | ~0.35/s | **1.5/s, three regimes** |
+| Spine | clips + AI narration | stills + AI narration | narration + ~40 assets |
+| Transitions | hard cuts | dissolves between stills | hard cuts + 1-frame strobe bursts |
+| Captions | centre, 2–4 words, pill | lower third, pill | **word-pop: 1–2 words, stroked** |
+| Master | −14 LUFS | −14 LUFS | **−12 LUFS, heavily limited** |
+| Reference perf | 302k views | 9k views | **697k views, 2.2% likes** |
 
-Preview both: `npm run studio`
+`Explainer` is the flagship. It's the highest-performing reference and the one suited to
+turning a long podcast plus a few articles into 50 seconds. Its cost is asset volume:
+~40 distinct visuals per video, which is the real bottleneck (see Asset sourcing).
+
+Preview all three: `npm run studio`
+
+### The three cutting regimes (ref 003)
+
+Not a continuum — three discrete modes the planner selects between:
+
+- **Strobe** — 1-frame inserts fired in runs of 3–6, on a stressed word. Percussive, not
+  editorial; the viewer reads them as impact, not as images. Modelled as 1-frame clips.
+- **Rapid montage** — 4-frame shots, sustained, while the VO delivers a list.
+- **Normal** — 0.4–2.8 s.
+
+## Asset sourcing
+
+The `Explainer` preset needs ~40 visuals per 51 s, and the choice of visual is driven by the
+*kind* of claim being made:
+
+| Claim type | Visual |
+|---|---|
+| A number moved | `stat-chart` |
+| A fact someone reported | `article-clip` with highlight sweep |
+| A company | product/brand footage |
+| A person | their face, punched in |
+| An abstraction | AI-generated literalisation (ref 001's doctor/lawyer gag) |
+| A mechanism | `annotation` on the explainer canvas |
+
+Nothing is generic b-roll. That rule is most of the quality difference.
 
 ## Status
 

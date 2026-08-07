@@ -1,0 +1,327 @@
+﻿{
+  "version": 1,
+  "meta": {
+    "title": "Explainer preset - ref 003 (GrowthX) style",
+    "slug": "explainer-demo",
+    "durationInSeconds": 26,
+    "fps": 30
+  },
+  "pacing": [
+    { "start": 0, "end": 5, "energy": 1.0, "label": "hook" },
+    { "start": 5, "end": 11, "energy": 1.4, "label": "build" },
+    { "start": 11, "end": 13, "energy": 6.0, "label": "accent" },
+    { "start": 13, "end": 21, "energy": 1.5, "label": "build" },
+    { "start": 21, "end": 26, "energy": 0.8, "label": "payoff" }
+  ],
+  "clips": [
+    {
+      "id": "hook-broll",
+      "start": 0,
+      "end": 5,
+      "layout": "full",
+      "sources": [{ "src": "", "offset": 0, "panX": 0, "panY": 0, "scale": 1, "muted": true }],
+      "camera": { "kind": "punch-in", "from": 1.0, "to": 1.12, "originX": 0.5, "originY": 0.4 },
+      "filters": ["darken"],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "talking-head",
+      "start": 5,
+      "end": 7.6,
+      "layout": "full",
+      "sources": [{ "src": "", "offset": 0, "panX": 0, "panY": 0, "scale": 1, "muted": true }],
+      "camera": { "kind": "punch-in", "from": 1.0, "to": 1.08, "originX": 0.5, "originY": 0.35 },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "article-1",
+      "start": 7.6,
+      "end": 11,
+      "layout": "graphic",
+      "sources": [],
+      "camera": { "kind": "none", "from": 1, "to": 1, "originX": 0.5, "originY": 0.5 },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "strobe-a",
+      "start": 11.0,
+      "end": 11.034,
+      "layout": "full",
+      "sources": [{ "src": "", "offset": 0, "panX": 0, "panY": 0, "scale": 1, "muted": true }],
+      "camera": { "kind": "none", "from": 1.2, "to": 1.2, "originX": 0.5, "originY": 0.5 },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "strobe-b",
+      "start": 11.034,
+      "end": 11.067,
+      "layout": "graphic",
+      "sources": [],
+      "camera": { "kind": "none", "from": 1, "to": 1, "originX": 0.5, "originY": 0.5 },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "strobe-c",
+      "start": 11.067,
+      "end": 11.1,
+      "layout": "full",
+      "sources": [{ "src": "", "offset": 0, "panX": 0, "panY": 0, "scale": 1, "muted": true }],
+      "camera": { "kind": "none", "from": 1.3, "to": 1.3, "originX": 0.5, "originY": 0.5 },
+      "filters": ["desaturate"],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "rapid-list",
+      "start": 11.1,
+      "end": 13,
+      "layout": "full",
+      "sources": [{ "src": "", "offset": 0, "panX": 0, "panY": 0, "scale": 1, "muted": true }],
+      "camera": { "kind": "punch-in", "from": 1.0, "to": 1.06, "originX": 0.5, "originY": 0.4 },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "chart",
+      "start": 13,
+      "end": 17,
+      "layout": "graphic",
+      "sources": [],
+      "camera": { "kind": "none", "from": 1, "to": 1, "originX": 0.5, "originY": 0.5 },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "explainer-canvas",
+      "background": "#E9E9EC",
+      "start": 17,
+      "end": 21.5,
+      "layout": "graphic",
+      "sources": [],
+      "camera": { "kind": "none", "from": 1, "to": 1, "originX": 0.5, "originY": 0.5 },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "kicker",
+      "start": 21.5,
+      "end": 26,
+      "layout": "full",
+      "sources": [{ "src": "", "offset": 0, "panX": 0, "panY": 0, "scale": 1, "muted": true }],
+      "camera": { "kind": "punch-in", "from": 1.0, "to": 1.1, "originX": 0.5, "originY": 0.38 },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    }
+  ],
+  "overlays": [
+    {
+      "type": "chrome",
+      "id": "bug",
+      "start": 0,
+      "end": 26,
+      "z": 85,
+      "bug": "THE FEED",
+      "tone": "light"
+    },
+
+    {
+      "type": "word-card",
+      "id": "w1",
+      "start": 0.1,
+      "end": 1.1,
+      "z": 60,
+      "text": "OpenAI",
+      "face": "serif-display",
+      "size": 168,
+      "color": "#FFFFFF"
+    },
+    {
+      "type": "word-card",
+      "id": "w2",
+      "start": 1.1,
+      "end": 2.2,
+      "z": 60,
+      "text": "burned $44B",
+      "face": "sans-heavy",
+      "size": 132,
+      "color": "#FF5A3C"
+    },
+    {
+      "type": "word-card",
+      "id": "w3",
+      "start": 2.2,
+      "end": 3.3,
+      "z": 60,
+      "text": "anyway.",
+      "face": "sans-heavy",
+      "size": 176,
+      "color": "#FFFFFF"
+    },
+    {
+      "type": "word-card",
+      "id": "w4",
+      "start": 3.3,
+      "end": 5,
+      "z": 60,
+      "text": "Let me explain.",
+      "face": "serif-light",
+      "size": 108,
+      "color": "#101014",
+      "background": "#E9E9EC"
+    },
+
+    {
+      "type": "article-clip",
+      "id": "art-1",
+      "start": 7.6,
+      "end": 11,
+      "z": 40,
+      "outlet": "Financial Times",
+      "kicker": "Artificial Intelligence",
+      "headline": "OpenAI may endure massive $44 billion losses before turning a profit in 2029",
+      "byline": "Published 11 October 2025",
+      "highlight": "$44 billion losses",
+      "highlightStart": 0.7,
+      "highlightDuration": 0.5,
+      "highlightColor": "#101014"
+    },
+
+    {
+      "type": "stat-chart",
+      "id": "chart-1",
+      "start": 13.1,
+      "end": 17,
+      "z": 40,
+      "title": "Advanced Micro Devices Inc",
+      "series": [0.08, 0.12, 0.1, 0.22, 0.3, 0.28, 0.46, 0.62, 0.58, 0.79, 0.94],
+      "valueFrom": 0,
+      "valueTo": 23,
+      "valueSuffix": "%",
+      "drawDuration": 1.4,
+      "accent": "#22C55E"
+    },
+
+    {
+      "type": "annotation",
+      "id": "anno-1",
+      "start": 17.2,
+      "end": 21.5,
+      "z": 50,
+      "label": "10% of AMD",
+      "labelX": 0.52,
+      "labelY": 0.21,
+      "targetX": 0.24,
+      "targetY": 0.36,
+      "curve": "left",
+      "color": "#3B9EFF",
+      "labelSize": 92
+    },
+
+    {
+      "type": "cta",
+      "id": "cta-1",
+      "start": 9.4,
+      "end": 11,
+      "z": 88,
+      "text": "SUBSCRIBE",
+      "x": 0.5,
+      "y": 0.86,
+      "color": "#1D4ED8"
+    },
+    {
+      "type": "cta",
+      "id": "cta-2",
+      "start": 23.5,
+      "end": 26,
+      "z": 88,
+      "text": "SUBSCRIBE",
+      "x": 0.5,
+      "y": 0.84,
+      "color": "#1D4ED8"
+    }
+  ],
+  "captions": {
+    "style": {
+      "preset": "word-pop",
+      "fontFamily": "Poppins",
+      "fontWeight": 800,
+      "fontSize": 62,
+      "color": "#FFFFFF",
+      "anchorY": 0.68,
+      "pillColor": "rgba(0,0,0,0)",
+      "pillRadius": 0,
+      "strokeWidth": 8
+    },
+    "cues": [
+      {
+        "start": 5.0,
+        "end": 5.5,
+        "emphasis": "none",
+        "words": [{ "text": "OpenAI", "start": 5.0, "end": 5.5 }]
+      },
+      {
+        "start": 5.5,
+        "end": 6.0,
+        "emphasis": "none",
+        "words": [{ "text": "is", "start": 5.5, "end": 5.7 }, { "text": "losing", "start": 5.7, "end": 6.0 }]
+      },
+      {
+        "start": 6.0,
+        "end": 6.6,
+        "emphasis": "pop",
+        "words": [{ "text": "billions", "start": 6.0, "end": 6.6 }]
+      },
+      {
+        "start": 6.6,
+        "end": 7.4,
+        "emphasis": "none",
+        "words": [{ "text": "every", "start": 6.6, "end": 6.9 }, { "text": "month.", "start": 6.9, "end": 7.4 }]
+      },
+      {
+        "start": 8.4,
+        "end": 9.1,
+        "emphasis": "color",
+        "words": [{ "text": "$44", "start": 8.4, "end": 8.7 }, { "text": "billion.", "start": 8.7, "end": 9.1 }]
+      },
+      {
+        "start": 11.2,
+        "end": 11.8,
+        "emphasis": "shake",
+        "words": [{ "text": "So", "start": 11.2, "end": 11.4 }, { "text": "what", "start": 11.4, "end": 11.8 }]
+      },
+      {
+        "start": 11.8,
+        "end": 12.6,
+        "emphasis": "none",
+        "words": [{ "text": "did", "start": 11.8, "end": 12.0 }, { "text": "he", "start": 12.0, "end": 12.2 }, { "text": "do?", "start": 12.2, "end": 12.6 }]
+      },
+      {
+        "start": 21.7,
+        "end": 22.4,
+        "emphasis": "none",
+        "words": [{ "text": "For", "start": 21.7, "end": 21.9 }, { "text": "free.", "start": 21.9, "end": 22.4 }]
+      },
+      {
+        "start": 22.6,
+        "end": 23.4,
+        "emphasis": "pop",
+        "words": [{ "text": "Basically.", "start": 22.6, "end": 23.4 }]
+      }
+    ]
+  },
+  "audio": []
+}
+

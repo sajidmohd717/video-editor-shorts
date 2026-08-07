@@ -9,6 +9,11 @@ import { Accent } from "./Accent";
 import { Progress } from "./Progress";
 import { EndCard } from "./EndCard";
 import { Chrome } from "./Chrome";
+import { ArticleClip } from "./ArticleClip";
+import { Annotation } from "./Annotation";
+import { StatChart } from "./StatChart";
+import { WordCard } from "./WordCard";
+import { Cta } from "./Cta";
 
 export const OverlayLayer: React.FC<{ overlay: Overlay; durationInFrames: number }> = ({
   overlay,
@@ -31,6 +36,16 @@ export const OverlayLayer: React.FC<{ overlay: Overlay; durationInFrames: number
       return <Progress {...overlay} durationInFrames={durationInFrames} />;
     case "chrome":
       return <Chrome {...overlay} />;
+    case "article-clip":
+      return <ArticleClip {...overlay} />;
+    case "annotation":
+      return <Annotation {...overlay} />;
+    case "stat-chart":
+      return <StatChart {...overlay} />;
+    case "word-card":
+      return <WordCard {...overlay} />;
+    case "cta":
+      return <Cta {...overlay} />;
     case "end-card":
       return <EndCard {...overlay} />;
     default:

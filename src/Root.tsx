@@ -4,6 +4,7 @@ import { Short } from "./Short";
 import { timelineSchema, WIDTH, HEIGHT, FPS, type Timeline } from "./timeline/schema";
 import demo from "./timeline/demo.json";
 import newsDemo from "./timeline/news-update-demo.json";
+import explainerDemo from "./timeline/explainer-demo.json";
 
 /**
  * Two compositions, one component. They differ only in the timeline they're fed —
@@ -39,6 +40,12 @@ export const RemotionRoot: React.FC = () => {
         id="NewsUpdate"
         defaultProps={timelineSchema.parse(newsDemo)}
         durationInFrames={Math.round(newsDemo.meta.durationInSeconds * FPS)}
+      />
+      <Composition
+        {...common}
+        id="Explainer"
+        defaultProps={timelineSchema.parse(explainerDemo)}
+        durationInFrames={Math.round(explainerDemo.meta.durationInSeconds * FPS)}
       />
     </>
   );

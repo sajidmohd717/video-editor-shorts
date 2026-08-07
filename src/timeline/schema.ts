@@ -45,7 +45,16 @@ export const captionStyleSchema = z.object({
    * but `pill` outperforms it for retention and should stay the default even in
    * the news-update format.
    */
-  preset: z.enum(["pill", "karaoke", "outline", "bold-drop", "broadcast"]).default("pill"),
+  /**
+   * `word-pop` is ref 003's style and the best-performing of the three: heavy white
+   * sans with a thick black stroke and no pill, 1-2 words per card. The stroke does
+   * the legibility work the pill does, without boxing off part of the frame.
+   */
+  preset: z
+    .enum(["pill", "karaoke", "outline", "bold-drop", "broadcast", "word-pop"])
+    .default("pill"),
+  /** Stroke width for word-pop/outline. */
+  strokeWidth: z.number().default(8),
   fontFamily: z.string().default("Poppins"),
   fontWeight: z.number().default(600),
   fontSize: z.number().default(52),
@@ -100,6 +109,11 @@ export const clipSchema = z.object({
     }),
   ),
   camera: cameraSchema.default({}),
+  /**
+   * Backdrop when the clip has no video source — i.e. `graphic` layout. Ref 003's
+   * "explainer canvas" is a light grey; the default black suits full-bleed b-roll.
+   */
+  background: z.string().default("#000000"),
   /** Colour/stylistic treatment stacked on top of the clip. */
   filters: z
     .array(
@@ -208,6 +222,83 @@ export const overlaySchema = z.discriminatedUnion("type", [
   baseOverlay.extend({
     type: z.literal("progress"),
     style: z.enum(["bar", "dots", "ring"]).default("bar"),
+  }),
+
+  /**
+   * A news article screenshot with a highlight bar that sweeps across a phrase as
+   * the VO reaches it. Ref 003's most-repeated device and its entire evidence layer:
+   * it turns an assertion into a citation without leaving the vertical frame.
+   */
+  baseOverlay.extend({
+    type: z.literal("article-clip"),
+    src: z.string().optional(),
+    /** Rendered fallback when no screenshot asset exists yet. */
+    outlet: z.string().default(""),
+    kicker: z.string().default(""),
+    headline: z.string().default(""),
+    byline: z.string().default(""),
+    /** Substring of `headline` to sweep-highlight, and when. */
+    highlight: z.string().optional(),
+    highlightStart: z.number().default(0.4),
+    highlightDuration: z.number().default(0.45),
+    highlightColor: z.string().default("#111114"),
+  }),
+
+  /**
+   * Display-serif label + curved hand-drawn arrow pointing at the subject.
+   * Ref 003 uses this on a light "explainer canvas" — it reads as someone marking
+   * up a slide, which is a very different register from a caption.
+   */
+  baseOverlay.extend({
+    type: z.literal("annotation"),
+    label: z.string(),
+    /** Normalised label anchor. */
+    labelX: z.number().default(0.5),
+    labelY: z.number().default(0.2),
+    /** Normalised arrow tip — where it points. */
+    targetX: z.number().default(0.25),
+    targetY: z.number().default(0.35),
+    curve: z.enum(["left", "right"]).default("left"),
+    color: z.string().default("#3B9EFF"),
+    labelSize: z.number().default(84),
+  }),
+
+  /**
+   * Animated area chart with a value counter. Ref 003 uses this for "a number went
+   * up" — which, for a business/tech channel, is a large share of all claims.
+   */
+  baseOverlay.extend({
+    type: z.literal("stat-chart"),
+    title: z.string(),
+    /** Normalised 0-1 series; the chart draws left-to-right over `drawDuration`. */
+    series: z.array(z.number()),
+    valueFrom: z.number().default(0),
+    valueTo: z.number().default(100),
+    valueSuffix: z.string().default("%"),
+    drawDuration: z.number().default(1.2),
+    accent: z.string().default("#22C55E"),
+  }),
+
+  /**
+   * Full-screen typographic word card. Ref 003's cold open fires four of these in
+   * five seconds, each in a deliberately different typeface.
+   */
+  baseOverlay.extend({
+    type: z.literal("word-card"),
+    text: z.string(),
+    face: z.enum(["serif-display", "sans-heavy", "serif-light", "script-accent"]),
+    size: z.number().default(150),
+    color: z.string().default("#FFFFFF"),
+    background: z.string().optional(),
+  }),
+
+  /** Mid-roll subscribe pill. Ref 003 fires this twice, not just at the end. */
+  baseOverlay.extend({
+    type: z.literal("cta"),
+    text: z.string().default("SUBSCRIBE"),
+    x: z.number().default(0.5),
+    y: z.number().default(0.62),
+    color: z.string().default("#1D4ED8"),
   }),
 
   /**
