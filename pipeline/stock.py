@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -86,6 +87,10 @@ def pixabay(query: str, kind: str, count: int) -> list[dict]:
 
     if kind == "video":
         url = "https://pixabay.com/api/videos/"
+        # NB: Pixabay's video endpoint has no orientation parameter — unlike its
+        # image endpoint. Everything here comes back landscape, so these clips
+        # must be reframed to 9:16 rather than used as-is. Fine for texture shots
+        # (racks, hands, machinery); bad for anything with real composition.
         params = {"key": key, "q": query, "per_page": max(3, count), "video_type": "film"}
     else:
         url = "https://pixabay.com/api/"
@@ -136,6 +141,51 @@ def interleave(a: list[dict], b: list[dict], limit: int) -> list[dict]:
 # Download                                                                      #
 # --------------------------------------------------------------------------- #
 
+MAX_EDGE = 1920
+
+
+def probe(path: Path) -> dict:
+    out = subprocess.run(
+        ["ffprobe", "-v", "error", "-select_streams", "v:0",
+         "-show_entries", "stream=width,height", "-show_entries", "format=duration",
+         "-of", "default=nk=1:nw=1", str(path)],
+        capture_output=True, text=True,
+    ).stdout.split()
+    if len(out) < 3:
+        return {}
+    return {"width": int(out[0]), "height": int(out[1]), "duration": round(float(out[2]), 2)}
+
+
+def normalise_video(path: Path) -> None:
+    """
+    Downscale anything above 1920 on the long edge, in place.
+
+    A 4K source for a two-second cutaway costs render time on every frame and
+    buys nothing — the clip is getting cropped to 1080x1920 regardless.
+    """
+    info = probe(path)
+    if not info:
+        return
+    if max(info["width"], info["height"]) <= MAX_EDGE:
+        return
+
+    tmp = path.with_suffix(".tmp.mp4")
+    scale = f"scale='if(gt(iw,ih),{MAX_EDGE},-2)':'if(gt(iw,ih),-2,{MAX_EDGE})'"
+    result = subprocess.run(
+        ["ffmpeg", "-v", "error", "-y", "-i", str(path), "-vf", scale,
+         "-c:v", "libx264", "-crf", "20", "-preset", "veryfast", "-an", str(tmp)],
+        capture_output=True,
+    )
+    if result.returncode == 0 and tmp.exists():
+        before = path.stat().st_size
+        path.unlink()
+        tmp.rename(path)
+        print(f"    downscaled {info['width']}x{info['height']} "
+              f"({before // 1_000_000}MB -> {path.stat().st_size // 1_000_000}MB)")
+    else:
+        tmp.unlink(missing_ok=True)
+
+
 def download(item: dict, dest_dir: Path) -> Path | None:
     ext = ".mp4" if item["kind"] == "video" else ".jpg"
     dest = dest_dir / f"{item['provider']}-{item['kind']}-{item['id']}{ext}"
@@ -152,6 +202,9 @@ def download(item: dict, dest_dir: Path) -> Path | None:
         print(f"  ! {item['provider']}/{item['id']}: {exc}")
         dest.unlink(missing_ok=True)
         return None
+
+    if item["kind"] == "video":
+        normalise_video(dest)
     return dest
 
 
@@ -171,8 +224,18 @@ def fetch(project: Project, query: str, kind: str, count: int) -> list[dict]:
             continue
         item["query"] = query
         item["file"] = project.asset_ref(path)
+
+        # Record the real dimensions from the file, not the API's claim, and flag
+        # orientation so the planner knows which assets need reframing.
+        actual = probe(path) if item["kind"] == "video" else {}
+        if actual:
+            item.update(actual)
+        w, h = item.get("width") or 0, item.get("height") or 0
+        item["orientation"] = "portrait" if h > w else "landscape" if w > h else "square"
+
         saved.append(item)
-        print(f"  + {item['file']}  ({item['provider']}, {item.get('credit') or 'unknown'})")
+        print(f"  + {item['file']}  ({item['provider']}, {item.get('credit') or 'unknown'}, "
+              f"{item['orientation']} {w}x{h})")
     return saved
 
 
