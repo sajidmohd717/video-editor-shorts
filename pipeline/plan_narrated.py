@@ -84,6 +84,7 @@ def build(job: Job) -> dict:
     vo_gain = job.get("audio.voGainDb", 2)
     clip_gain = job.get("audio.clipGainDb", 0)
     max_pause = job.get("pacing.maxPauseSeconds", 0.34)
+    ambience_db = job.get("audio.brollAmbienceDb")
     silences = detect_silences(PUBLIC / aroll)
     print(f"   {len(silences)} silence(s) detected in the source clip")
     focus_x = job.source.get("subjectFocusX", 0.5)
@@ -118,6 +119,21 @@ def build(job: Job) -> dict:
         src = job.broll.get(asset)
         if not src:
             raise SystemExit(f"job.broll has no entry named {asset!r}")
+
+        # Diegetic ambience: let the b-roll's own sound through, well under the
+        # voice. Keyboard clatter, machine noise, room tone and street sound give
+        # a cut somewhere to *be* — which is most of what a music bed was doing.
+        # Where a channel forbids music this is the substitute, and it costs
+        # nothing because the audio is already in the asset.
+        if ambience_db is not None:
+            audio.append({
+                "id": f"amb_{cid}", "src": src, "role": "sfx",
+                "start": round(start, 3), "offset": round(offset, 3),
+                "duration": round(end - start, 3),
+                "gainDb": ambience_db, "duck": False,
+                "fadeIn": 0.25, "fadeOut": 0.35,
+            })
+
         return {
             "id": cid, "start": round(start, 3), "end": round(end, 3),
             "layout": "full", "background": "#000000",

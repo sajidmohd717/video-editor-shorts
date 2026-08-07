@@ -36,6 +36,12 @@
     "showEndCard": false,
     "progress": "bar"
   },
+  "audio": {
+    "_": "NO MUSIC BED — a standing channel constraint, not an open task. Do not add one, and do not treat its absence as a gap to close. The energy music would carry comes instead from diegetic b-roll ambience, tight pause cutting, and a denser vocal master.",
+    "musicBed": false,
+    "brollAmbienceDb": -26
+  },
+
   "editorial": {
     "note": "Distils moments from conversations, lectures and talks across tech, science, AI, startups and business. Every featured speaker and original source is credited.",
     "narrationShareFloor": 0.3

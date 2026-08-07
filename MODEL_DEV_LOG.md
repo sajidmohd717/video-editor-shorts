@@ -255,6 +255,29 @@ crowds the face against the edge it looks toward.
 **Status:** keep. Extract a gridded frame and look before trusting any inherited
 framing number.
 
+### F20 — Diegetic b-roll ambience replaces the music bed
+
+**The Next Curve does not use music.** This is a standing channel constraint, not
+an unfinished task — do not propose a music bed, and do not list its absence as a
+gap.
+
+Music was doing real work in the references: ref 003 runs at −9.2 LUFS with LRA
+1.4, so nothing ever gets quiet and attention has no gap to escape through. Under
+a no-music constraint that job has to be done another way.
+
+**Applied:** b-roll audio, previously muted, now plays at `brollAmbienceDb`
+(−26 dB) under the voice. Keyboard clatter, machinery, room tone and street
+sound give each cut somewhere to *be*. It costs nothing — the audio is already in
+the asset — and it is diegetic rather than musical.
+
+**Also carrying the load:** silence cutting (F16) removes the dead air that a bed
+would otherwise have covered, and a denser vocal master compensates for the
+missing floor.
+
+**Status:** keep. Untested against audience data. Further non-musical options if
+more energy is wanted: transition whooshes, impacts on strobe cuts, UI clicks as
+graphics land — sound effects rather than music.
+
 ---
 
 ## Baseline measurements

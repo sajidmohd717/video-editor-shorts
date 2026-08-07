@@ -50,7 +50,10 @@
     "_": "-13 sits between broadcast (-21) and the most aggressive creator reference (-9.2). YouTube normalises to about -14 on playback, so hotter buys perceived density rather than volume; past -11 it just sounds crushed.",
     "masterLufs": -13,
     "voGainDb": 2,
-    "clipGainDb": 0
+    "clipGainDb": 0,
+    "_music": "musicBed is off by default. Where a channel forbids music, the energy it would carry comes from diegetic b-roll ambience (brollAmbienceDb), tighter pause cutting, and a denser vocal master.",
+    "musicBed": false,
+    "brollAmbienceDb": null
   },
 
   "tts": {

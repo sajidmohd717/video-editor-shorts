@@ -172,8 +172,9 @@ Known gaps, roughly in priority order:
 
 1. **Graphic placement is authored**, not derived. The mechanical parts are
    automated; choosing which graphic fits which sentence isn't.
-2. **No music bed.** Ref 003's energy is substantially music. Needs a licensed
-   source — that's the largest single quality gap to the best reference.
+2. **No music — a channel constraint, not a gap (F20).** Do not propose a music
+   bed or list its absence as unfinished work. The energy music carries comes
+   instead from diegetic b-roll ambience, pause cutting, and a dense vocal master.
 3. **Article screenshots are built but unused in a real video.** The highlight
    box is positioned by hand; OCR would automate it.
 4. **Stock relevance** — half of every search is unusable (F6). A CLIP re-rank

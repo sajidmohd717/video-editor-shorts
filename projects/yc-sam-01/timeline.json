@@ -2231,6 +2231,54 @@
       "fadeOut": 0.15
     },
     {
+      "id": "amb_open0",
+      "src": "yc-sam-01/stock/pexels-video-34337855.mp4",
+      "role": "sfx",
+      "start": 0.0,
+      "offset": 0.4,
+      "duration": 1.742,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_open1",
+      "src": "yc-sam-01/stock/pexels-video-35332006.mp4",
+      "role": "sfx",
+      "start": 1.742,
+      "offset": 0.4,
+      "duration": 1.742,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_open2",
+      "src": "yc-sam-01/stock/pexels-video-12271136.mp4",
+      "role": "sfx",
+      "start": 3.485,
+      "offset": 0.4,
+      "duration": 1.743,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_open3",
+      "src": "yc-sam-01/stock/pexels-video-8632480.mp4",
+      "role": "sfx",
+      "start": 5.228,
+      "offset": 0.4,
+      "duration": 1.742,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
       "id": "clip0_00",
       "src": "yc-sam-01/aroll.mp4",
       "role": "clip-audio",
@@ -2375,6 +2423,42 @@
       "fadeOut": 0.02
     },
     {
+      "id": "amb_nb0",
+      "src": "yc-sam-01/stock/pexels-video-9921286.mp4",
+      "role": "sfx",
+      "start": 26.997,
+      "offset": 0.6,
+      "duration": 1.59,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_nb1",
+      "src": "yc-sam-01/stock/pexels-video-8328143.mp4",
+      "role": "sfx",
+      "start": 29.867,
+      "offset": 0.6,
+      "duration": 1.22,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_nb2",
+      "src": "yc-sam-01/stock/pexels-video-38052461.mp4",
+      "role": "sfx",
+      "start": 32.559,
+      "offset": 0.6,
+      "duration": 1.26,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
       "id": "vo2",
       "src": "yc-sam-01/vo.wav",
       "role": "vo",
@@ -2385,6 +2469,42 @@
       "duck": false,
       "fadeIn": 0,
       "fadeOut": 0.15
+    },
+    {
+      "id": "amb_close0",
+      "src": "yc-sam-01/stock/pexels-video-7065806.mp4",
+      "role": "sfx",
+      "start": 35.717,
+      "offset": 0.4,
+      "duration": 2.21,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_close1",
+      "src": "yc-sam-01/stock/pexels-video-34771082.mp4",
+      "role": "sfx",
+      "start": 37.927,
+      "offset": 0.4,
+      "duration": 2.21,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_close2",
+      "src": "yc-sam-01/stock/pexels-video-6755162.mp4",
+      "role": "sfx",
+      "start": 40.137,
+      "offset": 0.4,
+      "duration": 2.21,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
     }
   ]
 }
