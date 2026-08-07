@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "meta": {
+    "title": "News update preset — hybrid of ref 001 craft + ref 002 structure",
+    "slug": "news-update-demo",
+    "durationInSeconds": 23,
+    "fps": 30
+  },
+  "pacing": [
+    { "start": 0, "end": 1.5, "energy": 0, "label": "cold-open" },
+    { "start": 1.5, "end": 4, "energy": 0.4, "label": "hook" },
+    { "start": 4, "end": 14, "energy": 0.35, "label": "build" },
+    { "start": 14, "end": 19, "energy": 0.3, "label": "hold" },
+    { "start": 19, "end": 23, "energy": 0.2, "label": "outro" }
+  ],
+  "clips": [
+    {
+      "id": "still-1-hook",
+      "start": 0,
+      "end": 4.4,
+      "layout": "full",
+      "sources": [{ "src": "", "offset": 0, "panX": 0, "panY": 0, "scale": 1, "muted": true }],
+      "camera": { "kind": "punch-in", "from": 1.0, "to": 1.09, "originX": 0.5, "originY": 0.35 },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "still-2-headline",
+      "start": 4,
+      "end": 7.4,
+      "layout": "full",
+      "sources": [{ "src": "", "offset": 0, "panX": 0, "panY": 0, "scale": 1, "muted": true }],
+      "camera": { "kind": "punch-in", "from": 1.0, "to": 1.07, "originX": 0.5, "originY": 0.38 },
+      "filters": [],
+      "transitionIn": "dissolve",
+      "transitionDuration": 0.55
+    },
+    {
+      "id": "still-3",
+      "start": 7,
+      "end": 10.4,
+      "layout": "full",
+      "sources": [{ "src": "", "offset": 0, "panX": 0, "panY": 0, "scale": 1, "muted": true }],
+      "camera": { "kind": "punch-in", "from": 1.06, "to": 1.0, "originX": 0.5, "originY": 0.4 },
+      "filters": [],
+      "transitionIn": "dissolve",
+      "transitionDuration": 0.55
+    },
+    {
+      "id": "graphic-quote",
+      "start": 10.4,
+      "end": 14,
+      "layout": "graphic",
+      "sources": [],
+      "camera": { "kind": "none", "from": 1, "to": 1, "originX": 0.5, "originY": 0.5 },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "still-4",
+      "start": 14,
+      "end": 19.4,
+      "layout": "full",
+      "sources": [{ "src": "", "offset": 0, "panX": 0, "panY": 0, "scale": 1, "muted": true }],
+      "camera": { "kind": "drift", "from": 1.08, "to": 1.08, "originX": 0.5, "originY": 0.4 },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "outro-still",
+      "start": 19,
+      "end": 23,
+      "layout": "graphic",
+      "sources": [],
+      "camera": { "kind": "none", "from": 1, "to": 1, "originX": 0.5, "originY": 0.5 },
+      "filters": [],
+      "transitionIn": "dissolve",
+      "transitionDuration": 0.5
+    }
+  ],
+  "overlays": [
+    {
+      "type": "chrome",
+      "id": "chrome-1",
+      "start": 0.3,
+      "end": 19,
+      "z": 80,
+      "dateline": "August 7",
+      "bug": "THE FEED",
+      "tone": "light"
+    },
+    {
+      "type": "headline",
+      "id": "news-card",
+      "start": 4.2,
+      "end": 9.5,
+      "z": 60,
+      "source": "Reuters",
+      "text": "OpenAI says the incident is now an open police investigation",
+      "variant": "article"
+    },
+    {
+      "type": "headline",
+      "id": "quote-1",
+      "start": 10.6,
+      "end": 14,
+      "z": 60,
+      "source": "SFPD statement",
+      "text": "Charges are still pending. Nobody was hurt.",
+      "variant": "breaking"
+    },
+    {
+      "type": "progress",
+      "id": "prog-1",
+      "start": 0,
+      "end": 23,
+      "z": 95,
+      "style": "bar"
+    },
+    {
+      "type": "end-card",
+      "id": "end-1",
+      "start": 19.4,
+      "end": 23,
+      "z": 90,
+      "title": "FOLLOW FOR THE FULL STORY",
+      "subtitle": "tech news, every day",
+      "handle": "@yourchannel"
+    }
+  ],
+  "captions": {
+    "style": {
+      "preset": "pill",
+      "fontFamily": "Poppins",
+      "fontWeight": 600,
+      "fontSize": 50,
+      "color": "#FFFFFF",
+      "anchorY": 0.72,
+      "pillColor": "rgba(0,0,0,0.75)",
+      "pillRadius": 12
+    },
+    "cues": [
+      {
+        "start": 0.3,
+        "end": 1.5,
+        "emphasis": "pop",
+        "words": [
+          { "text": "Someone", "start": 0.3, "end": 0.7 },
+          { "text": "threw", "start": 0.7, "end": 1.0 },
+          { "text": "a", "start": 1.0, "end": 1.1 },
+          { "text": "molotov.", "start": 1.1, "end": 1.5 }
+        ]
+      },
+      {
+        "start": 1.6,
+        "end": 3.2,
+        "emphasis": "color",
+        "words": [
+          { "text": "At", "start": 1.6, "end": 1.8 },
+          { "text": "the", "start": 1.8, "end": 2.0 },
+          { "text": "OpenAI", "start": 2.0, "end": 2.6 },
+          { "text": "CEO's", "start": 2.6, "end": 3.2 }
+        ]
+      },
+      {
+        "start": 3.2,
+        "end": 4.2,
+        "emphasis": "none",
+        "words": [{ "text": "house.", "start": 3.2, "end": 4.2 }]
+      },
+      {
+        "start": 7.6,
+        "end": 9.2,
+        "emphasis": "none",
+        "words": [
+          { "text": "One", "start": 7.6, "end": 7.9 },
+          { "text": "person", "start": 7.9, "end": 8.4 },
+          { "text": "is", "start": 8.4, "end": 8.7 },
+          { "text": "in", "start": 8.7, "end": 8.9 },
+          { "text": "custody.", "start": 8.9, "end": 9.2 }
+        ]
+      },
+      {
+        "start": 14.4,
+        "end": 16.0,
+        "emphasis": "none",
+        "words": [
+          { "text": "Altman", "start": 14.4, "end": 14.9 },
+          { "text": "hasn't", "start": 14.9, "end": 15.4 },
+          { "text": "said", "start": 15.4, "end": 15.7 },
+          { "text": "a", "start": 15.7, "end": 15.8 },
+          { "text": "word.", "start": 15.8, "end": 16.0 }
+        ]
+      },
+      {
+        "start": 16.2,
+        "end": 18.4,
+        "emphasis": "shake",
+        "words": [
+          { "text": "And", "start": 16.2, "end": 16.5 },
+          { "text": "that's", "start": 16.5, "end": 16.9 },
+          { "text": "the", "start": 16.9, "end": 17.1 },
+          { "text": "strange", "start": 17.1, "end": 17.7 },
+          { "text": "part.", "start": 17.7, "end": 18.4 }
+        ]
+      }
+    ]
+  },
+  "audio": []
+}

@@ -1,0 +1,295 @@
+import { z } from "zod";
+
+/**
+ * The Timeline Spec.
+ *
+ * This is the contract between "thinking about the edit" and "rendering the edit".
+ * Everything upstream (transcription, script, LLM planning) produces one of these.
+ * Everything downstream (Remotion) only ever consumes one of these.
+ *
+ * All times are in SECONDS, absolute from the start of the video. The renderer converts
+ * to frames. Keeping the spec in seconds means changing fps never invalidates a timeline.
+ */
+
+export const FPS = 30;
+export const WIDTH = 1080;
+export const HEIGHT = 1920;
+
+/* -------------------------------------------------------------------------- */
+/* Captions                                                                    */
+/* -------------------------------------------------------------------------- */
+
+/** One word with its aligned timing, straight out of WhisperX. */
+export const wordSchema = z.object({
+  text: z.string(),
+  start: z.number(),
+  end: z.number(),
+});
+
+/**
+ * A caption card = 2-4 words shown as a block, swapped on phrase boundaries.
+ * Ref 001 does NOT use per-word karaoke; it replaces the whole card.
+ */
+export const captionCueSchema = z.object({
+  start: z.number(),
+  end: z.number(),
+  words: z.array(wordSchema),
+  /** Optional per-cue emphasis, e.g. the payoff word gets scaled/coloured. */
+  emphasis: z.enum(["none", "pop", "shake", "color"]).default("none"),
+});
+
+export const captionStyleSchema = z.object({
+  /**
+   * `broadcast` reproduces ref 002's accessibility-style subtitles. It is
+   * deliberately the least attention-grabbing option — included for completeness,
+   * but `pill` outperforms it for retention and should stay the default even in
+   * the news-update format.
+   */
+  preset: z.enum(["pill", "karaoke", "outline", "bold-drop", "broadcast"]).default("pill"),
+  fontFamily: z.string().default("Poppins"),
+  fontWeight: z.number().default(600),
+  fontSize: z.number().default(52),
+  color: z.string().default("#FFFFFF"),
+  /** Anchor as a fraction of frame height. 0.5 = optical centre (ref 001 stacked mode). */
+  anchorY: z.number().default(0.5),
+  pillColor: z.string().default("rgba(0,0,0,0.72)"),
+  pillRadius: z.number().default(14),
+});
+
+/* -------------------------------------------------------------------------- */
+/* Visual layers                                                               */
+/* -------------------------------------------------------------------------- */
+
+/** Where source video sits in the frame. Ref 001 uses all four of these. */
+export const layoutSchema = z.enum([
+  "full", // single source fills 1080x1920
+  "stacked", // two sources, 960px each, hard seam at y=960
+  "inset", // one full + one corner box
+  "graphic", // no talking head; motion graphic or b-roll owns the frame
+]);
+
+/**
+ * Camera move applied to a clip. The slow punch-in is the highest
+ * value-per-line-of-code effect in the whole system.
+ */
+export const cameraSchema = z.object({
+  kind: z.enum(["none", "punch-in", "punch-out", "drift", "shake"]).default("punch-in"),
+  from: z.number().default(1.0),
+  to: z.number().default(1.12),
+  /** Normalised focal point to zoom toward; 0.5/0.4 biases to a face. */
+  originX: z.number().default(0.5),
+  originY: z.number().default(0.4),
+});
+
+export const clipSchema = z.object({
+  id: z.string(),
+  start: z.number(),
+  end: z.number(),
+  layout: layoutSchema.default("full"),
+  /** Asset paths, relative to the project dir. Two entries for stacked/inset. */
+  sources: z.array(
+    z.object({
+      src: z.string(),
+      /** Seek offset into the source file at clip start. */
+      offset: z.number().default(0),
+      /** Manual crop nudge, normalised. */
+      panX: z.number().default(0),
+      panY: z.number().default(0),
+      scale: z.number().default(1),
+      muted: z.boolean().default(true),
+    }),
+  ),
+  camera: cameraSchema.default({}),
+  /** Colour/stylistic treatment stacked on top of the clip. */
+  filters: z
+    .array(
+      z.enum([
+        "none",
+        "darken",
+        "blur",
+        "desaturate",
+        "terminal-green",
+        "vhs",
+        "chromatic-aberration",
+        "film-grain",
+      ]),
+    )
+    .default([]),
+  /**
+   * Transition INTO this clip. Ref 001 is ~all hard cuts; ref 002 is ~all
+   * cross-dissolves. In the hybrid news-update preset the *change* in transition
+   * type is itself a signal — dissolve between stills, hard cut into a graphic.
+   *
+   * For a dissolve to have anything to dissolve from, the preceding clip's `end`
+   * must overlap this clip's `start` by at least `transitionDuration`.
+   */
+  transitionIn: z
+    .enum(["cut", "dissolve", "whip-pan", "flash", "zoom-blur", "glitch", "slide"])
+    .default("cut"),
+  transitionDuration: z.number().default(0.5),
+});
+
+/* -------------------------------------------------------------------------- */
+/* Overlays: the stuff that makes it not look like a slideshow                 */
+/* -------------------------------------------------------------------------- */
+
+const baseOverlay = z.object({
+  id: z.string(),
+  start: z.number(),
+  end: z.number(),
+  /** Higher = drawn on top. Captions default to 100. */
+  z: z.number().default(50),
+});
+
+export const overlaySchema = z.discriminatedUnion("type", [
+  /** Word-by-word assembling kinetic title. The ref's 2-7s hook. */
+  baseOverlay.extend({
+    type: z.literal("kinetic-title"),
+    lines: z.array(
+      z.object({
+        text: z.string(),
+        style: z.enum(["serif-italic", "sans-heavy", "sans-light"]),
+        size: z.number(),
+        /** Seconds after overlay start that this line appears. */
+        delay: z.number().default(0),
+      }),
+    ),
+  }),
+
+  /** Sequential chat bubbles, staggered ~200ms. Ref's 35-40s set-piece. */
+  baseOverlay.extend({
+    type: z.literal("chat-bubbles"),
+    theme: z.enum(["imessage", "whatsapp", "x-dm"]).default("imessage"),
+    bubbles: z.array(
+      z.object({
+        text: z.string(),
+        side: z.enum(["left", "right"]).default("left"),
+        delay: z.number(),
+      }),
+    ),
+  }),
+
+  /** Full-bleed image punchline (AI portraits, memes, screenshots). */
+  baseOverlay.extend({
+    type: z.literal("image-card"),
+    src: z.string(),
+    fit: z.enum(["cover", "contain"]).default("cover"),
+    entrance: z.enum(["snap", "slide-up", "scale-in", "tilt-drop"]).default("scale-in"),
+    caption: z.string().optional(),
+  }),
+
+  /** Headline / news-lower-third. Core to a "news commentary" channel. */
+  baseOverlay.extend({
+    type: z.literal("headline"),
+    source: z.string(), // "REUTERS", "@elonmusk", etc.
+    text: z.string(),
+    variant: z.enum(["ticker", "breaking", "tweet", "article"]).default("breaking"),
+  }),
+
+  /** Scrolling code / terminal treatment. */
+  baseOverlay.extend({
+    type: z.literal("code-panel"),
+    code: z.string(),
+    language: z.string().default("python"),
+    scrollSpeed: z.number().default(30),
+  }),
+
+  /** Emoji / sticker / arrow accents that punch in on a beat. */
+  baseOverlay.extend({
+    type: z.literal("accent"),
+    glyph: z.string(),
+    x: z.number(),
+    y: z.number(),
+    size: z.number().default(160),
+    motion: z.enum(["pop", "spin-in", "bounce", "wiggle"]).default("pop"),
+  }),
+
+  /** Progress bar / countdown — a proven retention device on shorts. */
+  baseOverlay.extend({
+    type: z.literal("progress"),
+    style: z.enum(["bar", "dots", "ring"]).default("bar"),
+  }),
+
+  /**
+   * Persistent chrome: dateline + channel bug. Ref 002 keeps both on screen for
+   * the entire runtime. The dateline is the single cheapest "this is current news"
+   * signal available — span this across the whole video.
+   */
+  baseOverlay.extend({
+    type: z.literal("chrome"),
+    dateline: z.string().optional(),
+    bug: z.string().optional(),
+    bugImage: z.string().optional(),
+    tone: z.enum(["light", "dark"]).default("light"),
+  }),
+
+  /** Subscribe / end card. */
+  baseOverlay.extend({
+    type: z.literal("end-card"),
+    title: z.string(),
+    subtitle: z.string().optional(),
+    handle: z.string(),
+  }),
+]);
+
+/* -------------------------------------------------------------------------- */
+/* Audio                                                                       */
+/* -------------------------------------------------------------------------- */
+
+export const audioTrackSchema = z.object({
+  id: z.string(),
+  src: z.string(),
+  role: z.enum(["vo", "music", "sfx", "clip-audio"]),
+  start: z.number(),
+  offset: z.number().default(0),
+  gainDb: z.number().default(0),
+  /** Auto-duck under the VO track. Music should basically always be true. */
+  duck: z.boolean().default(false),
+  fadeIn: z.number().default(0),
+  fadeOut: z.number().default(0),
+});
+
+/* -------------------------------------------------------------------------- */
+/* Pacing                                                                      */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * The barrage/hold model from ref 001. The planner emits these, and the clip
+ * generator uses them to decide cut density. This is what stops the output from
+ * feeling like a uniform 1-cut-per-second machine gun.
+ */
+export const energySegmentSchema = z.object({
+  start: z.number(),
+  end: z.number(),
+  /** cuts per second target. Ref 001: 1.7 on hooks, 0.1 on the key argument. */
+  energy: z.number(),
+  label: z.enum(["cold-open", "hook", "build", "hold", "accent", "payoff", "outro"]),
+});
+
+/* -------------------------------------------------------------------------- */
+/* Root                                                                        */
+/* -------------------------------------------------------------------------- */
+
+export const timelineSchema = z.object({
+  version: z.literal(1),
+  meta: z.object({
+    title: z.string(),
+    slug: z.string(),
+    durationInSeconds: z.number(),
+    fps: z.number().default(FPS),
+  }),
+  pacing: z.array(energySegmentSchema).default([]),
+  clips: z.array(clipSchema),
+  overlays: z.array(overlaySchema).default([]),
+  captions: z.object({
+    style: captionStyleSchema.default({}),
+    cues: z.array(captionCueSchema),
+  }),
+  audio: z.array(audioTrackSchema),
+});
+
+export type Timeline = z.infer<typeof timelineSchema>;
+export type Clip = z.infer<typeof clipSchema>;
+export type Overlay = z.infer<typeof overlaySchema>;
+export type CaptionCue = z.infer<typeof captionCueSchema>;
+export type EnergySegment = z.infer<typeof energySegmentSchema>;

@@ -1,0 +1,31 @@
+{
+  "name": "video-editor-shorts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Automated commentary-short production pipeline: ingest -> transcribe -> timeline -> render",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render Short out/short.mp4 --props=./projects/current/timeline.json",
+    "still": "remotion still Short out/frame.png --props=./projects/current/timeline.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.409",
+    "@remotion/google-fonts": "4.0.409",
+    "@remotion/media-utils": "4.0.409",
+    "@remotion/shapes": "4.0.409",
+    "@remotion/three": "4.0.409",
+    "@remotion/transitions": "4.0.409",
+    "@react-three/fiber": "8.17.10",
+    "three": "0.169.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "remotion": "4.0.409",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "@types/react": "19.0.0",
+    "@types/three": "0.169.0",
+    "typescript": "5.6.3"
+  }
+}
