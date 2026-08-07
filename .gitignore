@@ -28,3 +28,6 @@ public/
 projects/_words.json
 
 models/
+
+*.m4a
+projects/*/vo*.wav

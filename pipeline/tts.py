@@ -173,34 +173,49 @@ def _edge(paragraphs: list[str], out_dir: Path, voice: str | None) -> list[Path]
 
 
 def concat(parts: list[Path], out: Path, gap: float = PARAGRAPH_GAP) -> None:
-    """Concatenate parts with a fixed silence between them, into 48k mono WAV."""
+    """
+    Concatenate parts with a fixed silence between them, into 48k mono WAV.
+
+    Each gap gets its OWN anullsrc input. An earlier version built one silence
+    input and referenced it once per gap, which reuses a single filter input
+    across multiple branches — that needs an explicit asplit, and without one the
+    behaviour is undefined rather than merely wasteful.
+
+    Everything is normalised to 48kHz mono s16 before concat, so the filter never
+    has to reconcile mismatched formats mid-graph.
+    """
     inputs: list[str] = []
     filters: list[str] = []
+    labels: list[str] = []
+    idx = 0
+
     for i, part in enumerate(parts):
         inputs += ["-i", str(part)]
-        filters.append(f"[{i}:a]aresample=48000,aformat=channel_layouts=mono[a{i}]")
+        filters.append(
+            f"[{idx}:a]aresample=48000:resampler=soxr:precision=28,"
+            f"aformat=sample_fmts=s16:channel_layouts=mono[a{idx}]"
+        )
+        labels.append(f"[a{idx}]")
+        idx += 1
 
-    # anullsrc supplies the gap; interleave it between the speech segments.
-    gap_idx = len(parts)
-    inputs += [
-        "-f", "lavfi",
-        "-t", str(gap),
-        "-i", "anullsrc=channel_layout=mono:sample_rate=48000",
-    ]
-
-    chain: list[str] = []
-    for i in range(len(parts)):
-        chain.append(f"[a{i}]")
         if i < len(parts) - 1:
-            chain.append(f"[{gap_idx}:a]")
+            inputs += ["-f", "lavfi", "-t", str(gap),
+                       "-i", "anullsrc=channel_layout=mono:sample_rate=48000"]
+            filters.append(
+                f"[{idx}:a]aformat=sample_fmts=s16:channel_layouts=mono[a{idx}]"
+            )
+            labels.append(f"[a{idx}]")
+            idx += 1
 
-    n = len(chain)
-    filter_complex = ";".join(filters) + ";" + "".join(chain) + f"concat=n={n}:v=0:a=1[out]"
+    filter_complex = (
+        ";".join(filters) + ";" + "".join(labels)
+        + f"concat=n={len(labels)}:v=0:a=1[out]"
+    )
 
     subprocess.run(
         ["ffmpeg", "-v", "error", "-y", *inputs,
          "-filter_complex", filter_complex, "-map", "[out]",
-         "-c:a", "pcm_s16le", str(out)],
+         "-c:a", "pcm_s16le", "-ar", "48000", "-ac", "1", str(out)],
         check=True,
     )
 
@@ -266,7 +281,20 @@ def main() -> None:
         capture_output=True, text=True, check=True,
     ).stdout.strip()
 
+    # QC preview: the same audio at +10dB. TTS generation is stochastic, so a
+    # bad draw with an audible noise floor happens occasionally even with good
+    # settings — and it is inaudible at normal level but obvious once the master
+    # boosts it. Listening to THIS file, not a fresh test sentence, is the check
+    # that matters (F13).
+    qc = dest.with_name(dest.stem + "-qc+10dB.m4a")
+    subprocess.run(
+        ["ffmpeg", "-v", "error", "-y", "-i", str(dest),
+         "-af", "volume=10dB", "-c:a", "aac", "-b:a", "256k", str(qc)],
+        check=True,
+    )
+
     print(f"\n-> {dest}  ({float(dur):.2f}s)")
+    print(f"   QC: {qc.name} — listen for a noise floor; regenerate if present")
     if dest == project.vo:
         print(f"   next: python -m pipeline.transcribe {args.slug}")
 

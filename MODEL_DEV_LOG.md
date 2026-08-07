@@ -147,6 +147,36 @@ The lesson: **isolate before measuring.** Rendering three stems — narration
 alone, clip alone, and the mix — and asking "which one has it?" resolved in one
 listen what twenty minutes of spectral analysis on the mixed file did not.
 
+### F13 — Reusing one filter input across branches corrupts concatenated audio
+
+Audible static under the narration. Root cause: `concat()` built a single
+`anullsrc` silence input and referenced it once per paragraph gap. Reusing one
+filter input across multiple branches needs an explicit `asplit`; without one the
+behaviour is undefined. With three paragraphs it was referenced twice.
+
+**Applied:** every gap gets its own input; formats pinned to 48k/s16/mono before
+concat; soxr resampling. **Status:** keep.
+
+**Six wrong diagnoses before this one, and the reason is the lesson.** Ruled out
+in turn: MP3 coding artifacts (a real problem, fixed, but not this one),
+clipping, resampling aliasing, the mastering limiter, low-frequency rumble, and
+TTS voice settings. Two of those "results" were artifacts my own test files
+created — single-pass `loudnorm` is a *dynamic* normalizer and pumps gain up
+during silent gaps, manufacturing the exact noise being hunted.
+
+The reason every test disagreed with the next: **the simplified cases could not
+reproduce the failure.** Single-sentence samples have no paragraph gaps, so the
+filter graph had one input and one branch, so the bug never fired. Six rounds of
+testing something adjacent to the artifact instead of the artifact itself.
+
+**The rule:** reproduce the failure in the real artifact before simplifying
+anything. The `-qc+10dB.m4a` file `pipeline.tts` now writes on every run exists
+for this — the failure was inaudible at normal level and obvious once mastering
+boosted it, so checking at high gain has to be routine rather than reactive.
+
+Both real defects in this session (this and F11) were found by the channel owner
+watching and listening, not by any measurement taken here.
+
 ---
 
 ## Baseline measurements
