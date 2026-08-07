@@ -326,10 +326,10 @@
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 12.85,
-          "focusX": 0.66,
-          "focusY": 0.4,
+          "src": "yc-sam-01/stock/pexels-video-12271136.mp4",
+          "offset": 0.6,
+          "focusX": 0.5,
+          "focusY": 0.5,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -338,10 +338,10 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.22,
-        "to": 1.28,
+        "from": 1.04,
+        "to": 1.12,
         "originX": 0.5,
-        "originY": 0.38
+        "originY": 0.5
       },
       "filters": [],
       "transitionIn": "cut",
@@ -658,7 +658,7 @@
     {
       "id": "a4_0",
       "start": 28.8,
-      "end": 29.825,
+      "end": 29.7,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -686,14 +686,14 @@
     },
     {
       "id": "a4_1",
-      "start": 29.825,
-      "end": 30.85,
+      "start": 29.7,
+      "end": 30.6,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 29.825,
+          "offset": 29.7,
           "focusX": 0.72,
           "focusY": 0.42,
           "panX": 0,
@@ -714,17 +714,17 @@
       "transitionDuration": 0
     },
     {
-      "id": "a4_2",
-      "start": 30.85,
-      "end": 31.875,
+      "id": "b4",
+      "start": 30.6,
+      "end": 32.4,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 30.85,
-          "focusX": 0.7,
-          "focusY": 0.34,
+          "src": "yc-sam-01/stock/pexels-video-9921286.mp4",
+          "offset": 0.6,
+          "focusX": 0.5,
+          "focusY": 0.5,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -733,213 +733,10 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.14,
-        "to": 1.2,
+        "from": 1.04,
+        "to": 1.12,
         "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "a4_3",
-      "start": 31.875,
-      "end": 32.9,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 31.875,
-          "focusX": 0.74,
-          "focusY": 0.48,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.08,
-        "to": 1.02,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "b4_0",
-      "start": 32.9,
-      "end": 33.225,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 32.9,
-          "focusX": 0.72,
-          "focusY": 0.42,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "none",
-        "from": 1.05,
-        "to": 1.05,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "b4_1",
-      "start": 33.225,
-      "end": 33.55,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 33.225,
-          "focusX": 0.7,
-          "focusY": 0.34,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "none",
-        "from": 1.11,
-        "to": 1.11,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "b4_2",
-      "start": 33.55,
-      "end": 33.875,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 33.55,
-          "focusX": 0.74,
-          "focusY": 0.48,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "none",
-        "from": 1.17,
-        "to": 1.17,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "b4_3",
-      "start": 33.875,
-      "end": 34.2,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 33.875,
-          "focusX": 0.66,
-          "focusY": 0.4,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "none",
-        "from": 1.23,
-        "to": 1.23,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "b4_4",
-      "start": 34.2,
-      "end": 34.525,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 34.2,
-          "focusX": 0.72,
-          "focusY": 0.46,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "none",
-        "from": 1.29,
-        "to": 1.29,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "b4_5",
-      "start": 34.525,
-      "end": 34.85,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 34.525,
-          "focusX": 0.72,
-          "focusY": 0.42,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "none",
-        "from": 1.35,
-        "to": 1.35,
-        "originX": 0.5,
-        "originY": 0.38
+        "originY": 0.5
       },
       "filters": [],
       "transitionIn": "cut",
@@ -947,14 +744,14 @@
     },
     {
       "id": "a5_0",
-      "start": 34.85,
-      "end": 35.85,
+      "start": 32.4,
+      "end": 32.9,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 34.85,
+          "offset": 32.4,
           "focusX": 0.72,
           "focusY": 0.42,
           "panX": 0,
@@ -975,15 +772,44 @@
       "transitionDuration": 0
     },
     {
-      "id": "a5_1",
-      "start": 35.85,
-      "end": 36.85,
+      "id": "b5",
+      "start": 32.9,
+      "end": 34.85,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-01/stock/pexels-video-8328143.mp4",
+          "offset": 0.6,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.04,
+        "to": 1.12,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "a6_0",
+      "start": 34.85,
+      "end": 36.3,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 35.85,
+          "offset": 34.85,
           "focusX": 0.7,
           "focusY": 0.34,
           "panX": 0,
@@ -1004,15 +830,44 @@
       "transitionDuration": 0
     },
     {
-      "id": "a5_2",
-      "start": 36.85,
+      "id": "b6",
+      "start": 36.3,
+      "end": 37.7,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-01/stock/pexels-video-6755162.mp4",
+          "offset": 0.6,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.16,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "a7_0",
+      "start": 37.7,
       "end": 37.85,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 36.85,
+          "offset": 37.7,
           "focusX": 0.74,
           "focusY": 0.48,
           "panX": 0,
@@ -1033,7 +888,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "b5_0",
+      "id": "b7_0",
       "start": 37.85,
       "end": 37.883,
       "layout": "full",
@@ -1062,7 +917,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "b5_1",
+      "id": "b7_1",
       "start": 37.917,
       "end": 37.95,
       "layout": "full",
@@ -1093,7 +948,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "b5_2",
+      "id": "b7_2",
       "start": 37.983,
       "end": 38.017,
       "layout": "full",
@@ -1122,7 +977,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "b5_3",
+      "id": "b7_3",
       "start": 38.05,
       "end": 38.083,
       "layout": "full",
@@ -1153,7 +1008,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "b5_4",
+      "id": "b7_4",
       "start": 38.117,
       "end": 38.15,
       "layout": "full",
@@ -1182,7 +1037,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "b5_tail",
+      "id": "b7_tail",
       "start": 38.183,
       "end": 39.3,
       "layout": "full",
@@ -1211,7 +1066,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "b6",
+      "id": "b8",
       "start": 39.3,
       "end": 40.6,
       "layout": "full",
@@ -1289,7 +1144,7 @@
     },
     {
       "type": "word-card",
-      "id": "word6",
+      "id": "word8",
       "start": 39.3,
       "end": 40.6,
       "z": 65,

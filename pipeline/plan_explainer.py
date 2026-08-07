@@ -39,6 +39,49 @@ FRAMINGS = [
     {"focusX": 0.72, "focusY": 0.46, "from": 1.00, "to": 1.10},  # medium push
 ]
 
+# --- B-roll ------------------------------------------------------------------
+# Portrait Pexels clips only. The Pixabay results are all landscape (their video
+# endpoint has no orientation filter) and would need reframing — fine for texture
+# later, but the native-portrait ones are cleaner.
+#
+# B-roll goes on CONCRETE NOUNS only, never on the reasoning. Altman is making an
+# argument and his face carries it; cutting away mid-point weakens the claim.
+# Total cutaway here is ~7.9s of 40.6s.
+# Every entry here was eyeballed before use. Stock APIs match tags, not meaning:
+# "city skyline aerial" returned trees and a parked car, "server data center"
+# returned a screen of ping output, and "rocket launch" returned a child with a
+# toy rocket. Assume roughly half of any search is unusable and look first.
+BROLL = {
+    "vintage": "yc-sam-01/stock/pexels-video-12271136.mp4",   # vintage tower PCs
+    "skyline": "yc-sam-01/stock/pexels-video-9921286.mp4",    # night skyscrapers
+    "robotics": "yc-sam-01/stock/pexels-video-8328143.mp4",   # robotic arm + lab coats
+    "datacenter": "yc-sam-01/stock/pexels-video-6755162.mp4",  # circuit board macro
+}
+
+
+def broll_clip(cid: str, start: float, end: float, src: str, offset: float = 0.6,
+               scale_from: float = 1.04, scale_to: float = 1.12) -> dict:
+    return {
+        "id": cid,
+        "start": round(start, 3),
+        "end": round(end, 3),
+        "layout": "full",
+        "background": "#000000",
+        "sources": [{
+            "src": src, "offset": offset,
+            "focusX": 0.5, "focusY": 0.5,
+            "panX": 0, "panY": 0, "scale": 1, "muted": True,
+        }],
+        "camera": {
+            "kind": "punch-in", "from": scale_from, "to": scale_to,
+            "originX": 0.5, "originY": 0.5,
+        },
+        "filters": [],
+        "transitionIn": "cut",
+        "transitionDuration": 0,
+    }
+
+
 # --- Authored beats ---------------------------------------------------------
 # (start, end, kind, payload). Times in seconds, from the transcript.
 BEATS: list[tuple[float, float, str, dict]] = [
@@ -53,9 +96,10 @@ BEATS: list[tuple[float, float, str, dict]] = [
         "afterLabel": "Now", "afterValue": "7 minutes",
         "afterDelay": 0.85, "accent": "#FF5A3C", "tone": "light",
     }),
+    # "only 20 years ago" — vintage machine under the card, not his face.
     (12.85, 15.60, "word", {
         "text": "20 years ago.", "face": "serif-display", "size": 132,
-        "color": "#FFFFFF",
+        "color": "#FFFFFF", "broll": "vintage",
     }),
     (26.90, 28.80, "code", {
         "code": "$ codex \"build a marketplace for used telescopes\"\n"
@@ -64,7 +108,12 @@ BEATS: list[tuple[float, float, str, dict]] = [
                 "  > seeding 400 listings...\n"
                 "  > deployed. 6m 41s\n",
     }),
-    (32.90, 34.85, "montage", {"shots": 6}),
+    # "the world's most ambitious, crazy company"
+    (30.60, 32.40, "broll", {"asset": "skyline"}),
+    # "experts in every field working together"
+    (32.90, 34.85, "broll", {"asset": "robotics"}),
+    # "these very hard technological things"
+    (36.30, 37.70, "broll", {"asset": "datacenter", "scale_from": 1.0, "scale_to": 1.16}),
     (37.85, 39.30, "strobe", {"count": 5}),
     (39.30, 40.60, "word", {
         "text": "impossible.", "face": "sans-heavy", "size": 150,
@@ -196,11 +245,22 @@ def build(words: list[dict], duration: float) -> dict:
                 "type": "comparison", "id": f"cmp{bi}", "start": bs, "end": be,
                 "z": 40, **payload,
             })
+        elif kind == "broll":
+            clips.append(broll_clip(
+                f"b{bi}", bs, be, BROLL[payload["asset"]],
+                offset=payload.get("offset", 0.6),
+                scale_from=payload.get("scale_from", 1.04),
+                scale_to=payload.get("scale_to", 1.12),
+            ))
         elif kind == "word":
-            clips.append(aroll_clip(f"b{bi}", bs, be, FRAMINGS[3]))
+            card = {k: v for k, v in payload.items() if k != "broll"}
+            if payload.get("broll"):
+                clips.append(broll_clip(f"b{bi}", bs, be, BROLL[payload["broll"]]))
+            else:
+                clips.append(aroll_clip(f"b{bi}", bs, be, FRAMINGS[3]))
             overlays.append({
                 "type": "word-card", "id": f"word{bi}", "start": bs, "end": be,
-                "z": 65, **payload,
+                "z": 65, **card,
             })
         elif kind == "code":
             clips.append(graphic_clip(f"b{bi}", bs, be, "#04120A"))
