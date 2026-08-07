@@ -26,3 +26,5 @@ out/
 projects/*/render/
 public/
 projects/_words.json
+
+models/

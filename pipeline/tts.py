@@ -1,14 +1,19 @@
 """
 Narration synthesis.
 
-    python -m pipeline.tts <slug> [--engine elevenlabs|edge] [--voice ID]
+    python -m pipeline.tts <slug> [--engine kokoro|elevenlabs|edge] [--voice ID]
 
 Reads projects/<slug>/script.md and writes projects/<slug>/vo.wav.
 
-Two engines:
-  elevenlabs — production. Best prosody; costs credits per character.
-  edge       — free, no API key, decent neural voices. Use it to iterate on
-               timing and pacing, then re-run with ElevenLabs for the final.
+Three engines:
+  kokoro     — DEFAULT. Runs locally, Apache 2.0, no key, no quota. Runs about
+               1x realtime on CPU. Unambiguously fine for monetised content,
+               which is why it's the default rather than a fallback.
+  elevenlabs — best prosody and the only one that takes direction. Costs credits;
+               the free tier is non-commercial, so a paid plan is required here.
+  edge       — free and keyless, but it calls an undocumented Microsoft endpoint
+               that isn't published as a commercial API. DRAFTS ONLY. Don't ship
+               a monetised video narrated with this.
 
 The script is split on blank lines into paragraphs and synthesised per-paragraph,
 then concatenated with explicit silences. Two reasons: a failed request costs one
@@ -43,6 +48,39 @@ def read_script(project: Project) -> list[str]:
     ]
     paragraphs = [p.strip() for p in re.split(r"\n\s*\n", "\n".join(lines))]
     return [re.sub(r"\s+", " ", p) for p in paragraphs if p.strip()]
+
+
+KOKORO_MODEL = "models/kokoro-v1.0.onnx"
+KOKORO_VOICES = "models/voices-v1.0.bin"
+# am_michael reads closest to a news-explainer register. af_heart and bm_george
+# are the other two worth auditioning.
+KOKORO_DEFAULT_VOICE = "am_michael"
+
+
+def _kokoro(paragraphs: list[str], out_dir: Path, voice: str | None) -> list[Path]:
+    import soundfile as sf
+    from kokoro_onnx import Kokoro
+
+    from .config import ROOT
+
+    model, voices = ROOT / KOKORO_MODEL, ROOT / KOKORO_VOICES
+    if not model.exists() or not voices.exists():
+        raise SystemExit(
+            f"Kokoro weights missing. Expected:\n  {model}\n  {voices}\n"
+            "Download them from the kokoro-onnx model-files-v1.0 release."
+        )
+
+    engine = Kokoro(str(model), str(voices))
+    voice_name = voice or KOKORO_DEFAULT_VOICE
+
+    parts: list[Path] = []
+    for i, text in enumerate(paragraphs):
+        print(f"  [{i + 1}/{len(paragraphs)}] {text[:64]}...")
+        audio, sr = engine.create(text, voice=voice_name, speed=1.0, lang="en-us")
+        part = out_dir / f"part_{i:03d}.wav"
+        sf.write(str(part), audio, sr)
+        parts.append(part)
+    return parts
 
 
 def _elevenlabs(paragraphs: list[str], out_dir: Path, voice: str | None) -> list[Path]:
@@ -131,7 +169,7 @@ def concat(parts: list[Path], out: Path, gap: float = PARAGRAPH_GAP) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("slug")
-    ap.add_argument("--engine", choices=["elevenlabs", "edge"], default="elevenlabs")
+    ap.add_argument("--engine", choices=["kokoro", "elevenlabs", "edge"], default="kokoro")
     ap.add_argument("--voice", default=None)
     args = ap.parse_args()
 
@@ -139,10 +177,14 @@ def main() -> None:
     paragraphs = read_script(project)
     print(f"{len(paragraphs)} paragraph(s) via {args.engine}")
 
+    if args.engine == "edge":
+        print("  NOTE: edge is draft-only — unlicensed for commercial use.")
+
+    engines = {"kokoro": _kokoro, "elevenlabs": _elevenlabs, "edge": _edge}
+
     with tempfile.TemporaryDirectory() as tmp:
         tmp_dir = Path(tmp)
-        synth = _elevenlabs if args.engine == "elevenlabs" else _edge
-        parts = synth(paragraphs, tmp_dir, args.voice)
+        parts = engines[args.engine](paragraphs, tmp_dir, args.voice)
         concat(parts, project.vo)
 
     dur = subprocess.run(
