@@ -33,9 +33,15 @@ def normalise(token: str) -> str:
     return WORD_RE.sub("", token.lower())
 
 
+def script_paragraphs(text: str) -> list[list[str]]:
+    """Script split into paragraphs, each a word list. Blank lines separate."""
+    lines = [ln for ln in text.splitlines() if not ln.lstrip().startswith("#")]
+    blocks = re.split(r"\n\s*\n", "\n".join(lines))
+    return [b.split() for b in blocks if b.strip()]
+
+
 def script_words(text: str) -> list[str]:
-    lines = [ln for ln in text.splitlines() if ln.strip() and not ln.lstrip().startswith("#")]
-    return " ".join(lines).split()
+    return [w for para in script_paragraphs(text) for w in para]
 
 
 def align(script: list[str], heard: list[dict]) -> list[dict]:
@@ -131,15 +137,38 @@ def main() -> None:
         raise SystemExit(f"No timings at {project.words}. Run pipeline.transcribe first.")
 
     heard = json.loads(project.words.read_text(encoding="utf-8"))["words"]
-    script = script_words(project.script.read_text(encoding="utf-8"))
+    raw = project.script.read_text(encoding="utf-8")
+    paras = script_paragraphs(raw)
+    script = [w for p in paras for w in p]
 
     words, repaired = align(script, heard)
     cues = chunk(words, args.max_words)
 
+    # Paragraph spans, derived from where each paragraph's words actually landed.
+    # These drive VO placement in the narrated planner — deriving them means a
+    # voice or engine swap re-times the edit instead of needing hand-editing.
+    spans: list[dict] = []
+    i = 0
+    for n, para in enumerate(paras):
+        chunk_words = words[i:i + len(para)]
+        if chunk_words:
+            spans.append({
+                "index": n,
+                "start": chunk_words[0]["start"],
+                "end": chunk_words[-1]["end"],
+                "text": " ".join(para),
+            })
+        i += len(para)
+
     out = project.dir / "captions.json"
-    out.write_text(json.dumps({"words": words, "cues": cues}, indent=2), encoding="utf-8")
+    out.write_text(
+        json.dumps({"words": words, "cues": cues, "paragraphs": spans}, indent=2),
+        encoding="utf-8",
+    )
 
     print(f"script={len(script)} heard={len(heard)} aligned={len(words)}")
+    for s in spans:
+        print(f"  para {s['index']}: {s['start']:6.2f} - {s['end']:6.2f}  {s['text'][:52]}...")
     if repaired:
         print(f"  {repaired} word(s) corrected back to the script's wording")
     print(f"  {len(cues)} caption cards")

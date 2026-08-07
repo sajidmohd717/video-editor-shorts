@@ -30,9 +30,6 @@ FPS = 30
 AROLL = "yc-sam-01/aroll.mp4"
 VO = "yc-sam-01/vo.wav"
 
-# VO paragraph spans, measured from vo.words.json.
-VO_PARAS = [(0.00, 7.84), (8.52, 13.58), (14.10, 21.00)]
-
 # Source-clip passages worth keeping.
 CLIP_A = (0.00, 12.78)    # "...three months to build ... seven minutes by a coding agent"
 CLIP_B = (25.08, 39.80)   # "...you could either be sad ... things that were just impossible"
@@ -54,7 +51,11 @@ def main() -> None:
         raise SystemExit(f"No narration at {project.vo}. Run pipeline.tts first.")
     shutil.copyfile(project.vo, vo_public)
 
-    vo_words = json.loads((project.dir / "captions.json").read_text(encoding="utf-8"))["words"]
+    caps = json.loads((project.dir / "captions.json").read_text(encoding="utf-8"))
+    vo_words = caps["words"]
+    # Derived from the actual audio, so swapping voice or engine re-times the
+    # edit automatically — Matilda's read is 2.4s shorter than Kokoro's.
+    vo_paras = [(p["start"], p["end"]) for p in caps["paragraphs"]]
     clip_raw = json.loads((project.dir / "words.json").read_text(encoding="utf-8"))
     clip_words = [
         {"text": w["text"], "start": w["startMs"] / 1000, "end": w["endMs"] / 1000}
@@ -70,7 +71,7 @@ def main() -> None:
     def place_vo(index: int) -> tuple[float, float]:
         """Lay a narration paragraph at the playhead; return its span."""
         nonlocal t
-        s, e = VO_PARAS[index]
+        s, e = vo_paras[index]
         dur = e - s + 0.25
         audio.append({
             "id": f"vo{index}", "src": VO, "role": "vo",

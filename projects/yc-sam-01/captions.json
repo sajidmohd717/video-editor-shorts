@@ -3,757 +3,777 @@
     {
       "text": "Sam",
       "start": 0.0,
-      "end": 0.32
+      "end": 0.3
     },
     {
       "text": "Altman",
-      "start": 0.32,
-      "end": 0.86
+      "start": 0.3,
+      "end": 0.68
     },
     {
       "text": "just",
-      "start": 0.86,
-      "end": 1.22
+      "start": 0.68,
+      "end": 0.9
     },
     {
       "text": "described",
-      "start": 1.22,
-      "end": 1.82
+      "start": 0.9,
+      "end": 1.4
     },
     {
       "text": "the",
-      "start": 1.82,
-      "end": 2.08
+      "start": 1.4,
+      "end": 1.6
     },
     {
       "text": "entire",
-      "start": 2.08,
-      "end": 2.54
+      "start": 1.6,
+      "end": 1.98
     },
     {
       "text": "premise",
-      "start": 2.54,
-      "end": 3.0
+      "start": 1.98,
+      "end": 2.36
     },
     {
       "text": "of",
-      "start": 3.0,
-      "end": 3.24
+      "start": 2.36,
+      "end": 2.56
     },
     {
       "text": "a",
-      "start": 3.24,
-      "end": 3.34
+      "start": 2.56,
+      "end": 2.64
     },
     {
       "text": "startup",
-      "start": 3.34,
-      "end": 3.78
+      "start": 2.64,
+      "end": 2.94
     },
     {
       "text": "collapsing",
-      "start": 3.78,
-      "end": 4.36
+      "start": 2.94,
+      "end": 3.5
     },
     {
       "text": "into",
-      "start": 4.36,
-      "end": 4.88
+      "start": 3.5,
+      "end": 3.78
     },
     {
       "text": "an",
-      "start": 4.88,
-      "end": 5.06
+      "start": 3.78,
+      "end": 3.94
     },
     {
       "text": "afternoon.",
-      "start": 5.06,
-      "end": 5.68
+      "start": 3.94,
+      "end": 4.4
     },
     {
       "text": "Listen",
-      "start": 6.42,
-      "end": 6.72
+      "start": 5.33,
+      "end": 5.57
     },
     {
       "text": "to",
-      "start": 6.72,
-      "end": 6.94
+      "start": 5.57,
+      "end": 5.77
     },
     {
       "text": "the",
-      "start": 6.94,
-      "end": 7.04
+      "start": 5.77,
+      "end": 5.87
     },
     {
       "text": "number",
-      "start": 7.04,
-      "end": 7.3
+      "start": 5.87,
+      "end": 6.13
     },
     {
       "text": "he",
-      "start": 7.3,
-      "end": 7.5
+      "start": 6.13,
+      "end": 6.33
     },
     {
       "text": "uses.",
-      "start": 7.5,
-      "end": 7.84
+      "start": 6.33,
+      "end": 6.63
     },
     {
       "text": "Three",
-      "start": 8.52,
-      "end": 8.72
+      "start": 7.51,
+      "end": 7.73
     },
     {
       "text": "months,",
-      "start": 8.72,
-      "end": 9.08
+      "start": 7.73,
+      "end": 8.01
     },
     {
       "text": "down",
-      "start": 9.08,
-      "end": 9.44
+      "start": 8.01,
+      "end": 8.33
     },
     {
       "text": "to",
-      "start": 9.44,
-      "end": 9.64
+      "start": 8.33,
+      "end": 8.47
     },
     {
       "text": "seven.",
-      "start": 9.64,
-      "end": 10.0
+      "start": 8.47,
+      "end": 8.73
     },
     {
       "text": "That",
-      "start": 10.5,
-      "end": 10.7
+      "start": 9.15,
+      "end": 9.33
     },
     {
       "text": "isn't",
-      "start": 10.7,
-      "end": 10.98
+      "start": 9.33,
+      "end": 9.61
     },
     {
       "text": "a",
-      "start": 10.98,
-      "end": 11.0
+      "start": 9.61,
+      "end": 9.69
     },
     {
       "text": "productivity",
-      "start": 11.0,
-      "end": 11.48
+      "start": 9.69,
+      "end": 10.05
     },
     {
       "text": "gain.",
-      "start": 11.48,
-      "end": 12.08
+      "start": 10.05,
+      "end": 10.53
     },
     {
       "text": "That's",
-      "start": 12.5,
-      "end": 12.78
+      "start": 10.89,
+      "end": 11.17
     },
     {
       "text": "the",
-      "start": 12.78,
-      "end": 12.9
+      "start": 11.17,
+      "end": 11.29
     },
     {
       "text": "floor",
-      "start": 12.9,
-      "end": 13.2
+      "start": 11.29,
+      "end": 11.49
     },
     {
       "text": "moving.",
-      "start": 13.2,
-      "end": 13.58
+      "start": 11.49,
+      "end": 11.79
     },
     {
       "text": "So",
-      "start": 14.1,
-      "end": 14.38
+      "start": 12.61,
+      "end": 12.79
     },
     {
       "text": "the",
-      "start": 14.38,
-      "end": 14.52
+      "start": 12.79,
+      "end": 12.91
     },
     {
       "text": "real",
-      "start": 14.52,
-      "end": 14.8
+      "start": 12.91,
+      "end": 13.11
     },
     {
       "text": "question",
-      "start": 14.8,
-      "end": 15.3
+      "start": 13.11,
+      "end": 13.49
     },
     {
       "text": "isn't",
-      "start": 15.3,
-      "end": 15.92
+      "start": 13.49,
+      "end": 13.91
     },
     {
       "text": "whether",
-      "start": 15.92,
-      "end": 16.1
+      "start": 13.91,
+      "end": 14.09
     },
     {
       "text": "you",
-      "start": 16.1,
-      "end": 16.38
+      "start": 14.09,
+      "end": 14.31
     },
     {
       "text": "can",
-      "start": 16.38,
-      "end": 16.58
+      "start": 14.31,
+      "end": 14.45
     },
     {
       "text": "build",
-      "start": 16.58,
-      "end": 16.88
+      "start": 14.45,
+      "end": 14.67
     },
     {
       "text": "faster.",
-      "start": 16.88,
-      "end": 17.42
+      "start": 14.67,
+      "end": 15.09
     },
     {
       "text": "It's",
-      "start": 18.06,
-      "end": 18.24
+      "start": 15.67,
+      "end": 15.89
     },
     {
       "text": "what",
-      "start": 18.24,
-      "end": 18.42
+      "start": 15.89,
+      "end": 16.01
     },
     {
       "text": "you'd",
-      "start": 18.42,
-      "end": 18.68
+      "start": 16.01,
+      "end": 16.21
     },
     {
       "text": "attempt",
-      "start": 18.68,
-      "end": 18.98
+      "start": 16.21,
+      "end": 16.49
     },
     {
       "text": "if",
-      "start": 18.98,
-      "end": 19.22
+      "start": 16.49,
+      "end": 16.77
     },
     {
       "text": "building",
-      "start": 19.22,
-      "end": 19.54
+      "start": 16.77,
+      "end": 17.07
     },
     {
       "text": "stopped",
-      "start": 19.54,
-      "end": 19.96
+      "start": 17.07,
+      "end": 17.41
     },
     {
       "text": "being",
-      "start": 19.96,
-      "end": 20.28
+      "start": 17.41,
+      "end": 17.73
     },
     {
       "text": "the",
-      "start": 20.28,
-      "end": 20.44
+      "start": 17.73,
+      "end": 17.89
     },
     {
       "text": "hard",
-      "start": 20.44,
-      "end": 20.72
+      "start": 17.89,
+      "end": 18.09
     },
     {
       "text": "part.",
-      "start": 20.72,
-      "end": 21.0
+      "start": 18.09,
+      "end": 18.35
     }
   ],
   "cues": [
     {
       "start": 0.0,
-      "end": 0.86,
+      "end": 0.68,
       "emphasis": "none",
       "words": [
         {
           "text": "Sam",
           "start": 0.0,
-          "end": 0.32
+          "end": 0.3
         },
         {
           "text": "Altman",
-          "start": 0.32,
-          "end": 0.86
+          "start": 0.3,
+          "end": 0.68
         }
       ]
     },
     {
-      "start": 0.86,
-      "end": 1.82,
+      "start": 0.68,
+      "end": 1.4,
       "emphasis": "none",
       "words": [
         {
           "text": "just",
-          "start": 0.86,
-          "end": 1.22
+          "start": 0.68,
+          "end": 0.9
         },
         {
           "text": "described",
-          "start": 1.22,
-          "end": 1.82
+          "start": 0.9,
+          "end": 1.4
         }
       ]
     },
     {
-      "start": 1.82,
-      "end": 2.54,
+      "start": 1.4,
+      "end": 1.98,
       "emphasis": "none",
       "words": [
         {
           "text": "the",
-          "start": 1.82,
-          "end": 2.08
+          "start": 1.4,
+          "end": 1.6
         },
         {
           "text": "entire",
-          "start": 2.08,
-          "end": 2.54
+          "start": 1.6,
+          "end": 1.98
         }
       ]
     },
     {
-      "start": 2.54,
-      "end": 3.24,
+      "start": 1.98,
+      "end": 2.56,
       "emphasis": "none",
       "words": [
         {
           "text": "premise",
-          "start": 2.54,
-          "end": 3.0
+          "start": 1.98,
+          "end": 2.36
         },
         {
           "text": "of",
-          "start": 3.0,
-          "end": 3.24
+          "start": 2.36,
+          "end": 2.56
         }
       ]
     },
     {
-      "start": 3.24,
-      "end": 3.78,
+      "start": 2.56,
+      "end": 2.94,
       "emphasis": "none",
       "words": [
         {
           "text": "a",
-          "start": 3.24,
-          "end": 3.34
+          "start": 2.56,
+          "end": 2.64
         },
         {
           "text": "startup",
-          "start": 3.34,
+          "start": 2.64,
+          "end": 2.94
+        }
+      ]
+    },
+    {
+      "start": 2.94,
+      "end": 3.78,
+      "emphasis": "none",
+      "words": [
+        {
+          "text": "collapsing",
+          "start": 2.94,
+          "end": 3.5
+        },
+        {
+          "text": "into",
+          "start": 3.5,
           "end": 3.78
         }
       ]
     },
     {
       "start": 3.78,
-      "end": 4.88,
-      "emphasis": "none",
-      "words": [
-        {
-          "text": "collapsing",
-          "start": 3.78,
-          "end": 4.36
-        },
-        {
-          "text": "into",
-          "start": 4.36,
-          "end": 4.88
-        }
-      ]
-    },
-    {
-      "start": 4.88,
-      "end": 6.18,
+      "end": 4.9,
       "emphasis": "none",
       "words": [
         {
           "text": "an",
-          "start": 4.88,
-          "end": 5.06
+          "start": 3.78,
+          "end": 3.94
         },
         {
           "text": "afternoon.",
-          "start": 5.06,
-          "end": 5.68
+          "start": 3.94,
+          "end": 4.4
         }
       ]
     },
     {
-      "start": 6.42,
-      "end": 6.94,
+      "start": 5.33,
+      "end": 5.77,
       "emphasis": "none",
       "words": [
         {
           "text": "Listen",
-          "start": 6.42,
-          "end": 6.72
+          "start": 5.33,
+          "end": 5.57
         },
         {
           "text": "to",
-          "start": 6.72,
-          "end": 6.94
+          "start": 5.57,
+          "end": 5.77
         }
       ]
     },
     {
-      "start": 6.94,
-      "end": 7.3,
+      "start": 5.77,
+      "end": 6.13,
       "emphasis": "none",
       "words": [
         {
           "text": "the",
-          "start": 6.94,
-          "end": 7.04
+          "start": 5.77,
+          "end": 5.87
         },
         {
           "text": "number",
-          "start": 7.04,
-          "end": 7.3
+          "start": 5.87,
+          "end": 6.13
         }
       ]
     },
     {
-      "start": 7.3,
-      "end": 8.34,
+      "start": 6.13,
+      "end": 7.13,
       "emphasis": "none",
       "words": [
         {
           "text": "he",
-          "start": 7.3,
-          "end": 7.5
+          "start": 6.13,
+          "end": 6.33
         },
         {
           "text": "uses.",
-          "start": 7.5,
-          "end": 7.84
+          "start": 6.33,
+          "end": 6.63
         }
       ]
     },
     {
-      "start": 8.52,
-      "end": 9.08,
+      "start": 7.51,
+      "end": 8.01,
       "emphasis": "none",
       "words": [
         {
           "text": "Three",
-          "start": 8.52,
-          "end": 8.72
+          "start": 7.51,
+          "end": 7.73
         },
         {
           "text": "months,",
-          "start": 8.72,
-          "end": 9.08
+          "start": 7.73,
+          "end": 8.01
         }
       ]
     },
     {
-      "start": 9.08,
-      "end": 9.64,
+      "start": 8.01,
+      "end": 8.47,
       "emphasis": "none",
       "words": [
         {
           "text": "down",
-          "start": 9.08,
-          "end": 9.44
+          "start": 8.01,
+          "end": 8.33
         },
         {
           "text": "to",
-          "start": 9.44,
-          "end": 9.64
+          "start": 8.33,
+          "end": 8.47
         }
       ]
     },
     {
-      "start": 9.64,
-      "end": 10.5,
+      "start": 8.47,
+      "end": 9.15,
       "emphasis": "none",
       "words": [
         {
           "text": "seven.",
-          "start": 9.64,
-          "end": 10.0
+          "start": 8.47,
+          "end": 8.73
         }
       ]
     },
     {
-      "start": 10.5,
-      "end": 10.98,
+      "start": 9.15,
+      "end": 9.61,
       "emphasis": "none",
       "words": [
         {
           "text": "That",
-          "start": 10.5,
-          "end": 10.7
+          "start": 9.15,
+          "end": 9.33
         },
         {
           "text": "isn't",
-          "start": 10.7,
-          "end": 10.98
+          "start": 9.33,
+          "end": 9.61
         }
       ]
     },
     {
-      "start": 10.98,
-      "end": 11.48,
+      "start": 9.61,
+      "end": 10.05,
       "emphasis": "none",
       "words": [
         {
           "text": "a",
-          "start": 10.98,
-          "end": 11.0
+          "start": 9.61,
+          "end": 9.69
         },
         {
           "text": "productivity",
-          "start": 11.0,
-          "end": 11.48
+          "start": 9.69,
+          "end": 10.05
         }
       ]
     },
     {
-      "start": 11.48,
-      "end": 12.5,
+      "start": 10.05,
+      "end": 10.89,
       "emphasis": "none",
       "words": [
         {
           "text": "gain.",
-          "start": 11.48,
-          "end": 12.08
+          "start": 10.05,
+          "end": 10.53
         }
       ]
     },
     {
-      "start": 12.5,
-      "end": 12.9,
+      "start": 10.89,
+      "end": 11.29,
       "emphasis": "none",
       "words": [
         {
           "text": "That's",
-          "start": 12.5,
-          "end": 12.78
+          "start": 10.89,
+          "end": 11.17
         },
         {
           "text": "the",
-          "start": 12.78,
-          "end": 12.9
+          "start": 11.17,
+          "end": 11.29
         }
       ]
     },
     {
-      "start": 12.9,
-      "end": 14.08,
+      "start": 11.29,
+      "end": 12.29,
       "emphasis": "none",
       "words": [
         {
           "text": "floor",
-          "start": 12.9,
-          "end": 13.2
+          "start": 11.29,
+          "end": 11.49
         },
         {
           "text": "moving.",
-          "start": 13.2,
-          "end": 13.58
+          "start": 11.49,
+          "end": 11.79
         }
       ]
     },
     {
-      "start": 14.1,
-      "end": 14.52,
+      "start": 12.61,
+      "end": 12.91,
       "emphasis": "none",
       "words": [
         {
           "text": "So",
-          "start": 14.1,
-          "end": 14.38
+          "start": 12.61,
+          "end": 12.79
         },
         {
           "text": "the",
-          "start": 14.38,
-          "end": 14.52
+          "start": 12.79,
+          "end": 12.91
         }
       ]
     },
     {
-      "start": 14.52,
-      "end": 15.3,
+      "start": 12.91,
+      "end": 13.49,
       "emphasis": "none",
       "words": [
         {
           "text": "real",
-          "start": 14.52,
-          "end": 14.8
+          "start": 12.91,
+          "end": 13.11
         },
         {
           "text": "question",
-          "start": 14.8,
-          "end": 15.3
+          "start": 13.11,
+          "end": 13.49
         }
       ]
     },
     {
-      "start": 15.3,
-      "end": 16.1,
+      "start": 13.49,
+      "end": 14.09,
       "emphasis": "none",
       "words": [
         {
           "text": "isn't",
-          "start": 15.3,
-          "end": 15.92
+          "start": 13.49,
+          "end": 13.91
         },
         {
           "text": "whether",
-          "start": 15.92,
-          "end": 16.1
+          "start": 13.91,
+          "end": 14.09
         }
       ]
     },
     {
-      "start": 16.1,
-      "end": 16.58,
+      "start": 14.09,
+      "end": 14.45,
       "emphasis": "none",
       "words": [
         {
           "text": "you",
-          "start": 16.1,
-          "end": 16.38
+          "start": 14.09,
+          "end": 14.31
         },
         {
           "text": "can",
-          "start": 16.38,
-          "end": 16.58
+          "start": 14.31,
+          "end": 14.45
         }
       ]
     },
     {
-      "start": 16.58,
-      "end": 17.92,
+      "start": 14.45,
+      "end": 15.59,
       "emphasis": "none",
       "words": [
         {
           "text": "build",
-          "start": 16.58,
-          "end": 16.88
+          "start": 14.45,
+          "end": 14.67
         },
         {
           "text": "faster.",
-          "start": 16.88,
-          "end": 17.42
+          "start": 14.67,
+          "end": 15.09
         }
       ]
     },
     {
-      "start": 18.06,
-      "end": 18.42,
+      "start": 15.67,
+      "end": 16.01,
       "emphasis": "none",
       "words": [
         {
           "text": "It's",
-          "start": 18.06,
-          "end": 18.24
+          "start": 15.67,
+          "end": 15.89
         },
         {
           "text": "what",
-          "start": 18.24,
-          "end": 18.42
+          "start": 15.89,
+          "end": 16.01
         }
       ]
     },
     {
-      "start": 18.42,
-      "end": 18.98,
+      "start": 16.01,
+      "end": 16.49,
       "emphasis": "none",
       "words": [
         {
           "text": "you'd",
-          "start": 18.42,
-          "end": 18.68
+          "start": 16.01,
+          "end": 16.21
         },
         {
           "text": "attempt",
-          "start": 18.68,
-          "end": 18.98
+          "start": 16.21,
+          "end": 16.49
         }
       ]
     },
     {
-      "start": 18.98,
-      "end": 19.54,
+      "start": 16.49,
+      "end": 17.07,
       "emphasis": "none",
       "words": [
         {
           "text": "if",
-          "start": 18.98,
-          "end": 19.22
+          "start": 16.49,
+          "end": 16.77
         },
         {
           "text": "building",
-          "start": 19.22,
-          "end": 19.54
+          "start": 16.77,
+          "end": 17.07
         }
       ]
     },
     {
-      "start": 19.54,
-      "end": 20.28,
+      "start": 17.07,
+      "end": 17.73,
       "emphasis": "none",
       "words": [
         {
           "text": "stopped",
-          "start": 19.54,
-          "end": 19.96
+          "start": 17.07,
+          "end": 17.41
         },
         {
           "text": "being",
-          "start": 19.96,
-          "end": 20.28
+          "start": 17.41,
+          "end": 17.73
         }
       ]
     },
     {
-      "start": 20.28,
-      "end": 20.72,
+      "start": 17.73,
+      "end": 18.09,
       "emphasis": "none",
       "words": [
         {
           "text": "the",
-          "start": 20.28,
-          "end": 20.44
+          "start": 17.73,
+          "end": 17.89
         },
         {
           "text": "hard",
-          "start": 20.44,
-          "end": 20.72
+          "start": 17.89,
+          "end": 18.09
         }
       ]
     },
     {
-      "start": 20.72,
-      "end": 21.4,
+      "start": 18.09,
+      "end": 18.75,
       "emphasis": "none",
       "words": [
         {
           "text": "part.",
-          "start": 20.72,
-          "end": 21.0
+          "start": 18.09,
+          "end": 18.35
         }
       ]
+    }
+  ],
+  "paragraphs": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 6.63,
+      "text": "Sam Altman just described the entire premise of a startup collapsing into an afternoon. Listen to the number he uses."
+    },
+    {
+      "index": 1,
+      "start": 7.51,
+      "end": 11.79,
+      "text": "Three months, down to seven. That isn't a productivity gain. That's the floor moving."
+    },
+    {
+      "index": 2,
+      "start": 12.61,
+      "end": 18.35,
+      "text": "So the real question isn't whether you can build faster. It's what you'd attempt if building stopped being the hard part."
     }
   ]
 }

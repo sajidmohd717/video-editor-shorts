@@ -1,165 +1,167 @@
 # video-editor-shorts
 
-An automated production pipeline for AI-narrated commentary shorts (1080×1920, 30fps).
+A production pipeline for narrated commentary shorts (1080×1920). Built for
+**The Next Curve**, but nothing channel-specific lives in the engine.
 
-The goal is not "a script that makes a video." It is a **system that gets better every time we
-feed it a reference video** — the style analyses in `docs/style-analysis/` are the training
-data, and the timeline spec in `src/timeline/schema.ts` is the model those analyses compile into.
+The goal isn't "a script that makes a video." It's a system that gets measurably
+better each time we study a reference video or ship a clip. Reference teardowns in
+[`docs/style-analysis/`](docs/style-analysis/) are the training data; the timeline
+spec in [`src/timeline/schema.ts`](src/timeline/schema.ts) is what they compile into.
 
----
-
-## Architecture
-
-```
-  ┌── SOURCE CLIPS ──┐        ┌── SCRIPT ──┐
-  │  yt-dlp          │        │  you / LLM │
-  └────────┬─────────┘        └──────┬─────┘
-           │                         │
-           │                    ElevenLabs TTS
-           │                         │
-           │                    vo.wav (the spine)
-           │                         │
-           ▼                         ▼
-      ┌─────────────────────────────────────┐
-      │  WhisperX  — word-level alignment    │
-      │  · transcribe source clips (search)  │
-      │  · transcribe the VO (caption sync)  │
-      └──────────────────┬───────────────────┘
-                         │
-                         ▼
-      ┌─────────────────────────────────────┐
-      │  PLANNER  →  timeline.json           │
-      │  pacing · clips · overlays · captions│
-      └──────────────────┬───────────────────┘
-                         │
-                         ▼
-      ┌─────────────────────────────────────┐
-      │  RENDER  — Remotion (React+WebGL)    │
-      └──────────────────┬───────────────────┘
-                         │
-                         ▼
-      ffmpeg master → −14 LUFS → short.mp4
-```
-
-### The key trick: caption the VO, not the script
-
-Do **not** try to time captions from the written script. Generate the ElevenLabs audio first,
-then run WhisperX over that generated audio. You get word-level timings that match the actual
-delivered speech to within ~50 ms, including the TTS engine's own pauses and pacing quirks.
-This is the difference between captions that feel machine-made and captions that feel edited.
-
-### The timeline spec is the whole design
-
-Everything upstream produces a `timeline.json`; the renderer only ever consumes one. That
-separation is what makes this improvable:
-
-- Want a new effect? Add an overlay variant to the schema + a React component. Every future
-  video can use it.
-- Want smarter editing? Improve the planner. The renderer doesn't change.
-- Want to hand-fix one video? Edit its JSON directly and re-render.
-- Want to reuse a style? Copy a timeline, swap the assets.
+**New here?** Read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for how it works and
+why, then [`MODEL_DEV_LOG.md`](MODEL_DEV_LOG.md) for what we've learned so far.
+Working as an AI agent? Start with [`CLAUDE.md`](CLAUDE.md).
 
 ---
 
-## Tooling choices, and why
+## Quickstart
 
-| Job | Choice | Why not the alternative |
-|---|---|---|
-| Download | **yt-dlp** | Nothing else is close. |
-| Transcribe | **WhisperX** (faster-whisper + wav2vec2 forced alignment) | Plain Whisper gives segment timings that drift; WhisperX gives word timings that don't. Runs int8 on CPU — this machine's AMD 860M has no CUDA, so GPU Whisper isn't on the table anyway. |
-| TTS | **ElevenLabs** | Best-in-class prosody, and the v3 models take emotional direction. Local fallback (Kokoro/Piper) is worth wiring as a cost escape hatch. |
-| Render | **Remotion** | See below. |
-| Master | **ffmpeg** `loudnorm` | Two-pass to −14 LUFS, sidechain-duck music under VO. |
+```bash
+npm install
+pip install -r pipeline/requirements.txt
+cp .env.example .env      # then fill in your keys
+```
 
-### On Remotion and "I don't want simple edits"
+Kokoro (local TTS) needs its weights:
 
-Remotion renders React in a real browser, frame by frame. That means the ceiling is *the
-browser's* ceiling, not a template engine's:
+```bash
+mkdir -p models && curl -L -o models/kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx
+```
 
-- **WebGL/GLSL** via `@remotion/three` — real 3D, custom shaders, displacement, particles
-- **CSS 3D transforms, filters, masks, blend modes** — free, fast, deterministic
-- **SVG filter chains** — turbulence, morphology, custom glitch
-- **Canvas 2D** for anything procedural
-- Lottie and Rive both drop in if we want designer-authored motion
+```bash
+curl -L -o models/voices-v1.0.bin https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin
+```
 
-The thing Remotion is genuinely bad at is being fast: it's CPU-bound, and heavy shader work on
-a 49 s vertical video will take minutes, not seconds. That's an acceptable trade for a batch
-pipeline. The realistic risk isn't the tool's ceiling, it's us writing boring components — so
-the effects library is where the ongoing work goes.
+Verify everything is wired:
 
-**Licensing:** Remotion is free for individuals and companies of ≤3 people. A solo monetised
-YouTube channel is fine. If this ever becomes a company with 4+ people, it needs a paid licence.
+```bash
+python -m pipeline.stock --check
+```
 
 ---
 
-## Layout
+## Making a video
+
+Each video is a **project** — a slug with its own directory. Assets live under
+`public/<slug>/` because Remotion's `staticFile()` only resolves there.
 
 ```
-docs/style-analysis/   reference video teardowns — the training data
-pipeline/              python: ingest, transcribe, tts, master
-src/
-  timeline/schema.ts   the contract
-  components/          captions, layouts, overlays
-  effects/             shaders + filter treatments
-projects/<slug>/       per-video working dir (assets, timeline.json, render)
-reference/             downloaded reference videos + frame analysis
+projects/<slug>/           script.md, vo.wav, words.json, captions.json, timeline.json, render/
+public/<slug>/             aroll.mp4, stock/, articles/, vo.wav
 ```
+
+### 1. Prepare the source clip
+
+Extract your passage from the long-form source at full resolution. Keep it
+**landscape** — the renderer crops to 9:16 per-shot, which is how one continuous
+take becomes many distinct-looking shots.
+
+```bash
+ffmpeg -ss 71.92 -i source.webm -t 40.64 -vf scale=1920:-2 -c:v libx264 -crf 19 public/<slug>/aroll.mp4
+```
+
+### 2. Write the narration
+
+`projects/<slug>/script.md`. Blank lines separate paragraphs; each paragraph
+becomes one VO segment. Lines starting with `#`, `>` or `//` are notes and are
+stripped before synthesis.
+
+### 3. Generate the voice
+
+```bash
+python -m pipeline.tts <slug> --engine elevenlabs --voice <voice-id>
+```
+
+Engines: `kokoro` (default, local, free, Apache-2.0), `elevenlabs` (best prosody,
+needs a paid plan for commercial use), `edge` (**drafts only** — unlicensed).
+
+```bash
+python -m pipeline.tts --list-voices
+```
+
+Audition without overwriting your current track with `--out vo-test.wav`.
+
+### 4. Transcribe and build captions
+
+```bash
+python -m pipeline.transcribe <slug>
+```
+
+```bash
+python -m pipeline.captions <slug>
+```
+
+Transcription runs over the **generated audio**, not the script — that's what
+gives timings matching actual delivery. Captions then take their *wording* from
+the script and only their *timing* from Whisper. See ARCHITECTURE for why.
+
+### 5. Gather assets
+
+```bash
+python -m pipeline.stock <slug> --kind video --count 3 --query "server room" --query "typing code"
+```
+
+```bash
+python -m pipeline.screenshot <slug> --url "https://..." --name codex-launch
+```
+
+**Look at what comes back before wiring it in.** Roughly half of any stock search
+is unusable — see MODEL_DEV_LOG for how badly.
+
+### 6. Plan, render, master
+
+```bash
+python -m pipeline.plan_narrated <slug>
+```
+
+```bash
+npx remotion render src/index.ts Short "projects/<slug>/render/out.mp4" --props=projects/<slug>/timeline.json
+```
+
+```bash
+python -m pipeline.master <slug> --input render/out.mp4 --target -13
+```
+
+Preview interactively instead of re-rendering:
+
+```bash
+npm run studio
+```
+
+---
 
 ## The three formats
 
-All driven by the same renderer; they differ only in the timeline fed to it.
+All use the same renderer. They differ only in the timeline fed to it.
 
-| | `Short` (ref 001) | `NewsUpdate` (ref 002 hybrid) | `Explainer` (ref 003) ⭐ |
+| | `Explainer` | `Narrated` ⭐ | `NewsUpdate` |
 |---|---|---|---|
-| Use when | a usable clip exists | no clip exists | compressing long-form into short |
-| Cut density | 1.0/s, barrage-and-hold | ~0.35/s | **1.5/s, three regimes** |
-| Spine | clips + AI narration | stills + AI narration | narration + ~40 assets |
-| Transitions | hard cuts | dissolves between stills | hard cuts + 1-frame strobe bursts |
-| Captions | centre, 2–4 words, pill | lower third, pill | **word-pop: 1–2 words, stroked** |
-| Master | −14 LUFS | −14 LUFS | **−12 LUFS, heavily limited** |
-| Reference perf | 302k views | 9k views | **697k views, 2.2% likes** |
+| Use when | you have a clip and want maximum density | **default** — clip + your commentary | no clip exists |
+| Cuts/sec | ~1.5 | ~0.7 | ~0.35 |
+| Spine | clip | **your narration** | stills + narration |
+| Master | −13 LUFS | −13 LUFS | −14 LUFS |
+| Reuse-policy risk | high | **low** | low |
+| Planner | `plan_explainer.py` | `plan_narrated.py` | (timeline by hand) |
 
-`Explainer` is the flagship. It's the highest-performing reference and the one suited to
-turning a long podcast plus a few articles into 50 seconds. Its cost is asset volume:
-~40 distinct visuals per video, which is the real bottleneck (see Asset sourcing).
+`plan_narrated` is the one to use. Original narration as the spine with the clip
+as evidence is what makes the format defensible — see ARCHITECTURE, "Rights".
 
-Preview all three: `npm run studio`
+---
 
-### The three cutting regimes (ref 003)
+## Tuning
 
-Not a continuum — three discrete modes the planner selects between:
+Most of what you'd want to change is one number.
 
-- **Strobe** — 1-frame inserts fired in runs of 3–6, on a stressed word. Percussive, not
-  editorial; the viewer reads them as impact, not as images. Modelled as 1-frame clips.
-- **Rapid montage** — 4-frame shots, sustained, while the VO delivers a list.
-- **Normal** — 0.4–2.8 s.
-
-## Asset sourcing
-
-The `Explainer` preset needs ~40 visuals per 51 s, and the choice of visual is driven by the
-*kind* of claim being made:
-
-| Claim type | Visual |
+| Want | Where |
 |---|---|
-| A number moved | `stat-chart` |
-| A fact someone reported | `article-clip` with highlight sweep |
-| A company | product/brand footage |
-| A person | their face, punched in |
-| An abstraction | AI-generated literalisation (ref 001's doctor/lawyer gag) |
-| A mechanism | `annotation` on the explainer canvas |
+| Faster/slower cutting | `shot=` in `fill_broll`, `/ 1.1` in `fill_aroll` |
+| More/less b-roll | the `for src_a, src_b, asset` loop in `plan_narrated.py` |
+| Different clip passages | `CLIP_A` / `CLIP_B` |
+| Caption size, position, style | `captions.style` in the timeline, or `Captions.tsx` |
+| Words per caption card | `len(buf) >= 2` in the planner |
+| Louder/quieter master | `--target` on `pipeline.master` |
+| Voice liveliness | `stability` in `tts.py` (lower = more expressive) |
+| Brand bug, end card | `chrome` and `end-card` overlays |
 
-Nothing is generic b-roll. That rule is most of the quality difference.
-
-## Status
-
-- [x] Environment verified (node 24, python 3.11, ffmpeg 8.1, yt-dlp)
-- [x] Reference 001 analysed (creator / fast-cut clip commentary)
-- [x] Reference 002 analysed (broadcast / slow stills + narration)
-- [x] Timeline schema v1
-- [x] Renderer: layouts, camera moves, dissolves, captions (5 presets), 9 overlay types
-- [x] Both format presets rendering
-- [ ] WhisperX pipeline
-- [ ] ElevenLabs TTS module (+ local fallback)
-- [ ] Planner (script → timeline.json)
-- [ ] Audio master (−14 LUFS, music ducking)
-- [ ] Asset sourcing (stills, b-roll, generated imagery)
+Or edit `timeline.json` directly and re-render. It's plain JSON and the renderer
+is the only thing that reads it.
