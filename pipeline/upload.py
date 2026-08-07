@@ -38,7 +38,14 @@ from pathlib import Path
 from .config import ROOT, Project
 from .profiles import load_job
 
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
+# upload is what we need; readonly is what lets us NAME the target channel before
+# sending anything. Minimal scope would be youtube.upload alone, but then the
+# tool can't tell you which channel it's about to publish to — and uploading to
+# the wrong channel is the mistake actually worth preventing.
+SCOPES = [
+    "https://www.googleapis.com/auth/youtube.upload",
+    "https://www.googleapis.com/auth/youtube.readonly",
+]
 CLIENT_SECRET = ROOT / ".youtube-client-secret.json"
 TOKEN = ROOT / ".youtube-token.json"
 
@@ -183,6 +190,17 @@ def main() -> None:
         raise SystemExit(f"No file at {path}")
 
     body = build_metadata(job, args.publish_at, args.privacy)
+    service = get_service()
+
+    # Name the destination before sending. Silent uploads to the wrong channel
+    # are easy to make and annoying to undo.
+    try:
+        me = service.channels().list(part="snippet", mine=True).execute()
+        items = me.get("items", [])
+        if items:
+            print(f"channel: {items[0]['snippet']['title']}")
+    except Exception as exc:  # noqa: BLE001 - never block an upload on a nicety
+        print(f"channel: (could not verify — {type(exc).__name__})")
 
     size_mb = path.stat().st_size / (1024 * 1024)
     print(f"file:    {path.name}  ({size_mb:.1f} MB)")
@@ -192,7 +210,7 @@ def main() -> None:
     print(f"  -> publishes {args.publish_at}" if args.publish_at else "")
     print()
 
-    video_id = upload(get_service(), path, body)
+    video_id = upload(service, path, body)
     print(f"\nhttps://youtu.be/{video_id}")
     print(f"edit: https://studio.youtube.com/video/{video_id}/edit")
 
