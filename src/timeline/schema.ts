@@ -247,6 +247,29 @@ export const overlaySchema = z.discriminatedUnion("type", [
     byline: z.string().default(""),
     /** Substring of `headline` to sweep-highlight, and when. */
     highlight: z.string().optional(),
+    /**
+     * Highlight band for SCREENSHOT mode, normalised to the rendered image.
+     * The rendered-card path finds the phrase in the text itself; over a
+     * screenshot we can't know where words are, so the band is positioned by
+     * hand once and reused.
+     */
+    highlightBox: z
+      .object({
+        x: z.number(),
+        y: z.number(),
+        width: z.number(),
+        height: z.number(),
+      })
+      .optional(),
+    /**
+     * How the screenshot highlight reads:
+     *  marker — translucent accent over the text, the familiar highlighter-pen
+     *           metaphor. Predictable on any light page. Default.
+     *  invert — white band in `difference` mode. High impact, but the result is
+     *           the page's complementary colour, so it varies by site (a green
+     *           masthead comes out magenta). Check it before shipping.
+     */
+    highlightMode: z.enum(["marker", "invert"]).default("marker"),
     highlightStart: z.number().default(0.4),
     highlightDuration: z.number().default(0.45),
     highlightColor: z.string().default("#111114"),

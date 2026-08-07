@@ -30,11 +30,19 @@ Before writing code, decide which side of that seam you're on:
 Don't reach across. A planner that renders, or a component that decides editorial
 timing, breaks the thing that makes this improvable.
 
+**And the second rule:** never put a channel fact or an asset path in a planner.
+Channel identity goes in `profiles/`, video specifics go in `job.json`.
+Resolution is `default.json` → profile (via `extends`) → `job.profileOverrides`,
+with arrays replaced rather than merged. A planner that hardcodes a brand colour
+can only ever make one video.
+
 ---
 
 ## Layout
 
 ```
+profiles/                   channel identity: brand, captions, pacing, voice
+projects/<slug>/job.json    one video: source, rights, passages, assets, beats
 src/timeline/schema.ts      THE CONTRACT — read this first, it's commented
 src/Short.tsx               root composition: clips → overlays → captions → audio
 src/components/             ClipLayer (layouts, camera), Captions
@@ -131,12 +139,11 @@ plan → render → master. One video shipped (`yc-sam-01`).
 
 Known gaps, roughly in priority order:
 
-1. **Per-project asset maps are hardcoded** in the planners. Fine for one video,
-   wrong for a channel. The job/profile infrastructure in the sibling
-   `shorts-generator` repo is the intended fix and hasn't been ported.
-2. **Graphic placement is authored**, not derived. The mechanical parts are
+1. **Graphic placement is authored**, not derived. The mechanical parts are
    automated; choosing which graphic fits which sentence isn't.
-3. **No music bed.** Needs a licensed source.
-4. **Stock relevance** — a CLIP re-rank would cut the manual review.
-5. `plan_explainer.py` and `plan_narrated.py` share helpers by import; they
-   should probably share a common base.
+2. **No music bed.** Needs a licensed source.
+3. **Stock relevance** — a CLIP re-rank would cut the manual review.
+4. **Screenshot highlight boxes are positioned by hand** — the component can't
+   know where a phrase sits inside an image. OCR would automate it.
+5. `plan_explainer.py` still hardcodes its asset map; only `plan_narrated.py` has
+   been moved onto profiles/jobs.

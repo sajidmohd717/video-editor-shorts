@@ -1,0 +1,29 @@
+{
+  "id": "the-next-curve",
+  "extends": "default",
+  "brand": {
+    "bug": "THE NEXT CURVE",
+    "handle": "@thenextcurv3",
+    "accent": "#FF5A3C"
+  },
+  "captions": {
+    "emphasisKeywords": [
+      "impossible", "seven", "minutes", "months", "billion", "million",
+      "floor", "never", "first", "only"
+    ]
+  },
+  "tts": {
+    "engine": "elevenlabs",
+    "voice": "XrExE9yKIg1WjnnlVkGX",
+    "voiceName": "Matilda - Knowledgable, Professional",
+    "stability": 0.38
+  },
+  "endCard": {
+    "title": "THE NEXT CURVE",
+    "subtitle": "big ideas, clear direction"
+  },
+  "editorial": {
+    "note": "Distils moments from conversations, lectures and talks across tech, science, AI, startups and business. Every featured speaker and original source is credited.",
+    "narrationShareFloor": 0.3
+  }
+}

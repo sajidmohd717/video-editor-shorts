@@ -194,7 +194,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 1.065,
-          "focusX": 0.7,
+          "focusX": 0.72,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -223,7 +223,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 2.13,
-          "focusX": 0.74,
+          "focusX": 0.72,
           "focusY": 0.48,
           "panX": 0,
           "panY": 0,
@@ -252,7 +252,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 3.195,
-          "focusX": 0.66,
+          "focusX": 0.72,
           "focusY": 0.4,
           "panX": 0,
           "panY": 0,
@@ -339,7 +339,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 6.39,
-          "focusX": 0.7,
+          "focusX": 0.72,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -368,7 +368,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 7.455,
-          "focusX": 0.74,
+          "focusX": 0.72,
           "focusY": 0.48,
           "panX": 0,
           "panY": 0,
@@ -397,7 +397,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 8.52,
-          "focusX": 0.66,
+          "focusX": 0.72,
           "focusY": 0.4,
           "panX": 0,
           "panY": 0,
@@ -484,7 +484,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 11.715,
-          "focusX": 0.7,
+          "focusX": 0.72,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -504,7 +504,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "cmp",
+      "id": "vo1bg",
       "start": 19.96,
       "end": 24.79,
       "layout": "graphic",
@@ -560,7 +560,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 26.212,
-          "focusX": 0.7,
+          "focusX": 0.72,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -589,7 +589,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 27.345,
-          "focusX": 0.74,
+          "focusX": 0.72,
           "focusY": 0.48,
           "panX": 0,
           "panY": 0,
@@ -618,7 +618,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 28.477,
-          "focusX": 0.66,
+          "focusX": 0.72,
           "focusY": 0.4,
           "panX": 0,
           "panY": 0,
@@ -667,7 +667,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "nb31",
+      "id": "nb0",
       "start": 30.46,
       "end": 32.05,
       "layout": "full",
@@ -705,7 +705,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 31.874,
-          "focusX": 0.7,
+          "focusX": 0.72,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -734,7 +734,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 33.006,
-          "focusX": 0.74,
+          "focusX": 0.72,
           "focusY": 0.48,
           "panX": 0,
           "panY": 0,
@@ -754,7 +754,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "nb34",
+      "id": "nb1",
       "start": 33.39,
       "end": 34.61,
       "layout": "full",
@@ -812,7 +812,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "nb36",
+      "id": "nb2",
       "start": 36.15,
       "end": 37.41,
       "layout": "full",
@@ -850,7 +850,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 37.535,
-          "focusX": 0.7,
+          "focusX": 0.72,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -879,7 +879,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 38.668,
-          "focusX": 0.74,
+          "focusX": 0.72,
           "focusY": 0.48,
           "panX": 0,
           "panY": 0,
@@ -1018,10 +1018,10 @@
   "overlays": [
     {
       "type": "word-card",
-      "id": "hook",
+      "id": "open_ov0",
       "start": 0.3,
       "end": 3.0,
-      "z": 65,
+      "z": 55,
       "text": "3 months.",
       "face": "serif-display",
       "size": 150,
@@ -1029,10 +1029,10 @@
     },
     {
       "type": "word-card",
-      "id": "hook2",
+      "id": "open_ov1",
       "start": 3.3,
       "end": 6.2,
-      "z": 65,
+      "z": 55,
       "text": "Now 7 minutes.",
       "face": "sans-heavy",
       "size": 118,
@@ -1040,10 +1040,10 @@
     },
     {
       "type": "comparison",
-      "id": "cmp1",
-      "start": 20.060000000000002,
+      "id": "vo1_ov0",
+      "start": 20.06,
       "end": 24.79,
-      "z": 40,
+      "z": 55,
       "beforeLabel": "Then",
       "beforeValue": "3 months",
       "afterLabel": "Now",
@@ -1051,16 +1051,6 @@
       "afterDelay": 1.4,
       "accent": "#FF5A3C",
       "tone": "light"
-    },
-    {
-      "type": "end-card",
-      "id": "end",
-      "start": 45.1,
-      "end": 46.4,
-      "z": 92,
-      "title": "THE NEXT CURVE",
-      "subtitle": "big ideas, clear direction",
-      "handle": "@thenextcurv3"
     },
     {
       "type": "chrome",
@@ -1078,6 +1068,16 @@
       "end": 46.4,
       "z": 95,
       "style": "bar"
+    },
+    {
+      "type": "end-card",
+      "id": "end",
+      "start": 45.1,
+      "end": 46.4,
+      "z": 92,
+      "title": "THE NEXT CURVE",
+      "subtitle": "big ideas, clear direction",
+      "handle": "@thenextcurv3"
     }
   ],
   "captions": {
@@ -2321,7 +2321,7 @@
       "start": 7.18,
       "offset": 0.0,
       "duration": 12.78,
-      "gainDb": 6,
+      "gainDb": 0,
       "duck": false,
       "fadeIn": 0.05,
       "fadeOut": 0.15
@@ -2345,7 +2345,7 @@
       "start": 24.79,
       "offset": 25.08,
       "duration": 14.72,
-      "gainDb": 6,
+      "gainDb": 0,
       "duck": false,
       "fadeIn": 0.05,
       "fadeOut": 0.15

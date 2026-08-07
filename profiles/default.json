@@ -1,0 +1,53 @@
+{
+  "id": "default",
+  "brand": {
+    "bug": null,
+    "bugTone": "light",
+    "handle": null,
+    "accent": "#FF5A3C",
+    "canvas": "#E9E9EC"
+  },
+  "captions": {
+    "preset": "word-pop",
+    "fontFamily": "Poppins",
+    "fontWeight": 800,
+    "fontSize": 64,
+    "color": "#FFFFFF",
+    "anchorY": 0.7,
+    "pillColor": "rgba(0,0,0,0)",
+    "pillRadius": 0,
+    "strokeWidth": 9,
+    "maxWordsPerCard": 2,
+    "emphasisKeywords": []
+  },
+  "pacing": {
+    "arollShotSeconds": 1.1,
+    "brollShotSeconds": 1.9,
+    "handoffGapSeconds": 0.3,
+    "targetBrollShare": 0.2
+  },
+  "camera": {
+    "framings": [
+      { "focusX": 0.5, "focusY": 0.42, "from": 1.0, "to": 1.06 },
+      { "focusX": 0.5, "focusY": 0.34, "from": 1.14, "to": 1.2 },
+      { "focusX": 0.5, "focusY": 0.48, "from": 1.08, "to": 1.02 },
+      { "focusX": 0.5, "focusY": 0.4, "from": 1.22, "to": 1.28 },
+      { "focusX": 0.5, "focusY": 0.46, "from": 1.0, "to": 1.1 }
+    ]
+  },
+  "audio": {
+    "masterLufs": -13,
+    "voGainDb": 2,
+    "clipGainDb": 0
+  },
+  "tts": {
+    "engine": "kokoro",
+    "voice": "am_michael",
+    "stability": 0.38
+  },
+  "overlays": {
+    "progress": "bar",
+    "showEndCard": true,
+    "midrollCta": null
+  }
+}

@@ -1,19 +1,21 @@
 """
-Narrated Explainer planner.
+Narrated planner — profile + job driven.
 
     python -m pipeline.plan_narrated <slug>
 
-Builds a timeline where original narration is the SPINE and the source clip is
-EVIDENCE — the structure that survives YouTube's reused-content rule. Attribution
-alone doesn't; the test is whether you added something substantial.
+Reads projects/<slug>/job.json (this video) and the profile it names (this
+channel), and writes projects/<slug>/timeline.json.
 
-Narration and clip interleave rather than overlap. Ducking the speaker under a
+Nothing channel-specific or video-specific lives in this file. Brand, caption
+style, pacing and voice come from the profile; source passages, b-roll and beats
+come from the job. If you find yourself adding a colour or an asset path here,
+it belongs in one of those two instead — see pipeline/profiles.py.
+
+Structure: original narration is the SPINE, the source clip is EVIDENCE. That's
+what survives YouTube's reused-content rule; attribution alone does not.
+Narration and clip interleave rather than overlap — ducking a speaker under a
 voiceover means two people talking at once, which is worse to listen to and
-weaker editorially than simply taking turns.
-
-The source clip is also trimmed: 40.6s of Altman plus 21s of narration would run
-past a minute, so only the two strongest passages survive — the claim and the
-payoff. The connective middle goes.
+weaker editorially than taking turns (F9).
 """
 
 from __future__ import annotations
@@ -24,262 +26,321 @@ import shutil
 import sys
 
 from .config import Project
-from .plan_explainer import BROLL, FRAMINGS, aroll_clip, broll_clip, graphic_clip
+from .profiles import Job, load_job
 
 FPS = 30
-AROLL = "yc-sam-01/aroll.mp4"
-VO = "yc-sam-01/vo.wav"
-
-# Source-clip passages worth keeping.
-CLIP_A = (0.00, 12.78)    # "...three months to build ... seven minutes by a coding agent"
-CLIP_B = (25.08, 39.80)   # "...you could either be sad ... things that were just impossible"
-
-GAP = 0.30  # breath between a VO segment and the clip resuming
 
 
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("slug")
-    args = ap.parse_args()
+def build(job: Job) -> dict:
+    project = Project(job.slug).ensure()
 
-    project = Project(args.slug).ensure()
-
-    # Remotion's staticFile() only resolves under public/, so the VO has to live
-    # there. Copying here keeps it a pipeline step rather than a manual one.
-    vo_public = project.assets / "vo.wav"
+    # staticFile() only resolves under public/, so the VO has to live there.
     if not project.vo.exists():
         raise SystemExit(f"No narration at {project.vo}. Run pipeline.tts first.")
-    shutil.copyfile(project.vo, vo_public)
+    shutil.copyfile(project.vo, project.assets / "vo.wav")
+    vo_src = f"{job.slug}/vo.wav"
+    aroll = job.source["aroll"]
 
     caps = json.loads((project.dir / "captions.json").read_text(encoding="utf-8"))
     vo_words = caps["words"]
-    # Derived from the actual audio, so swapping voice or engine re-times the
-    # edit automatically — Matilda's read is 2.4s shorter than Kokoro's.
+    # Derived from the audio, so swapping voice or engine re-times the whole edit.
     vo_paras = [(p["start"], p["end"]) for p in caps["paragraphs"]]
+
     clip_raw = json.loads((project.dir / "words.json").read_text(encoding="utf-8"))
     clip_words = [
         {"text": w["text"], "start": w["startMs"] / 1000, "end": w["endMs"] / 1000}
         for w in clip_raw
     ]
 
+    # --- profile-derived settings -------------------------------------------
+    brand = job.get("brand", {})
+    accent = brand.get("accent", "#FF5A3C")
+    canvas = brand.get("canvas", "#E9E9EC")
+    gap = job.get("pacing.handoffGapSeconds", 0.3)
+    aroll_shot = job.get("pacing.arollShotSeconds", 1.1)
+    broll_shot = job.get("pacing.brollShotSeconds", 1.9)
+    vo_gain = job.get("audio.voGainDb", 2)
+    clip_gain = job.get("audio.clipGainDb", 0)
+    focus_x = job.source.get("subjectFocusX", 0.5)
+
+    # Framings come from the profile but are re-centred on this source's subject.
+    framings = [
+        {**f, "focusX": focus_x} for f in job.get("camera.framings", [])
+    ] or [{"focusX": focus_x, "focusY": 0.42, "from": 1.0, "to": 1.08}]
+
     clips: list[dict] = []
     overlays: list[dict] = []
     audio: list[dict] = []
-    cues_src: list[dict] = []
+    words_out: list[dict] = []
     t = 0.0
 
+    def aroll_clip(cid: str, start: float, end: float, f: dict, src_off: float) -> dict:
+        return {
+            "id": cid, "start": round(start, 3), "end": round(end, 3),
+            "layout": "full", "background": "#000000",
+            "sources": [{
+                "src": aroll, "offset": round(src_off, 3),
+                "focusX": f["focusX"], "focusY": f["focusY"],
+                "panX": 0, "panY": 0, "scale": 1, "muted": True,
+            }],
+            "camera": {"kind": "punch-in", "from": f["from"], "to": f["to"],
+                       "originX": 0.5, "originY": 0.38},
+            "filters": [], "transitionIn": "cut", "transitionDuration": 0,
+        }
+
+    def broll_clip(cid: str, start: float, end: float, asset: str,
+                   offset: float = 0.6, sf: float = 1.04, st: float = 1.12) -> dict:
+        src = job.broll.get(asset)
+        if not src:
+            raise SystemExit(f"job.broll has no entry named {asset!r}")
+        return {
+            "id": cid, "start": round(start, 3), "end": round(end, 3),
+            "layout": "full", "background": "#000000",
+            "sources": [{
+                "src": src, "offset": offset, "focusX": 0.5, "focusY": 0.5,
+                "panX": 0, "panY": 0, "scale": 1, "muted": True,
+            }],
+            "camera": {"kind": "punch-in", "from": sf, "to": st,
+                       "originX": 0.5, "originY": 0.5},
+            "filters": [], "transitionIn": "cut", "transitionDuration": 0,
+        }
+
     def place_vo(index: int) -> tuple[float, float]:
-        """Lay a narration paragraph at the playhead; return its span."""
         nonlocal t
         s, e = vo_paras[index]
         dur = e - s + 0.25
         audio.append({
-            "id": f"vo{index}", "src": VO, "role": "vo",
+            "id": f"vo{index}", "src": vo_src, "role": "vo",
             "start": round(t, 3), "offset": round(s, 3), "duration": round(dur, 3),
-            "gainDb": 2, "duck": False, "fadeIn": 0, "fadeOut": 0.15,
+            "gainDb": vo_gain, "duck": False, "fadeIn": 0, "fadeOut": 0.15,
         })
         for w in vo_words:
             if s <= w["start"] < e:
-                cues_src.append({
-                    "text": w["text"],
-                    "start": w["start"] - s + t,
-                    "end": w["end"] - s + t,
-                    "voice": "vo",
-                })
+                words_out.append({"text": w["text"], "start": w["start"] - s + t,
+                                  "end": w["end"] - s + t, "voice": "vo"})
         start = t
-        t += dur + GAP
-        return start, t - GAP
+        t += dur + gap
+        return start, t - gap
 
-    def place_clip(span: tuple[float, float]) -> tuple[float, float]:
+    def place_clip(span: tuple[float, float]) -> tuple[float, float, float]:
         nonlocal t
         s, e = span
         shift = t - s
         audio.append({
-            "id": f"clip{s:.0f}", "src": AROLL, "role": "clip-audio",
+            "id": f"clip{s:.0f}", "src": aroll, "role": "clip-audio",
             "start": round(t, 3), "offset": round(s, 3), "duration": round(e - s, 3),
-            "gainDb": 6, "duck": False, "fadeIn": 0.05, "fadeOut": 0.15,
+            "gainDb": clip_gain, "duck": False, "fadeIn": 0.05, "fadeOut": 0.15,
         })
         for w in clip_words:
             if s <= w["start"] < e:
-                cues_src.append({
-                    "text": w["text"],
-                    "start": w["start"] + shift,
-                    "end": w["end"] + shift,
-                    "voice": "clip",
-                })
+                words_out.append({"text": w["text"], "start": w["start"] + shift,
+                                  "end": w["end"] + shift, "voice": "clip"})
         start = t
         t = e + shift
-        return start, t
+        return start, t, shift
 
-    def fill_broll(start: float, end: float, assets: list[str], tag: str,
-                   shot: float = 1.9) -> None:
-        """
-        Fill a narration window with several b-roll shots rather than one long
-        hold. A single 8-second shot under a voiceover is the fastest way to make
-        an explainer feel like a slideshow — the ear is engaged but the eye isn't.
-        Each shot also enters the source at a different offset so repeats of the
-        same asset don't read as a loop.
-        """
-        span = end - start
-        n = max(1, round(span / shot))
-        step = span / n
+    def fill_aroll(start: float, end: float, shift: float, tag: str) -> None:
+        n = max(1, round((end - start) / aroll_shot))
+        step = (end - start) / n
         for i in range(n):
-            asset = assets[i % len(assets)]
+            f = framings[i % len(framings)]
+            a, b = start + i * step, start + (i + 1) * step
+            clips.append(aroll_clip(f"{tag}{i}", a, b, f, a - shift))
+
+    def fill_broll(start: float, end: float, assets: list[str], tag: str) -> None:
+        """
+        Several shots, not one long hold. A single 8-second shot under a
+        voiceover is the fastest way to make an explainer feel like a slideshow:
+        the ear is engaged but the eye isn't. Varying the source offset stops
+        repeats of one asset reading as a loop.
+        """
+        if not assets:
+            return
+        n = max(1, round((end - start) / broll_shot))
+        step = (end - start) / n
+        for i in range(n):
             clips.append(broll_clip(
                 f"{tag}{i}", start + i * step, start + (i + 1) * step,
-                BROLL[asset], offset=0.4 + 1.7 * (i // len(assets)),
-                scale_from=1.02 + 0.03 * (i % 3), scale_to=1.12 + 0.03 * (i % 3),
+                assets[i % len(assets)],
+                offset=0.4 + 1.7 * (i // len(assets)),
+                sf=1.02 + 0.03 * (i % 3), st=1.12 + 0.03 * (i % 3),
             ))
 
-    def fill_aroll(start: float, end: float, source_shift: float, tag: str) -> None:
-        """Subdivide a clip passage into shots at ~1.1s, rotating framings."""
-        span = end - start
-        n = max(1, round(span / 1.1))
-        step = span / n
-        for i in range(n):
-            f = FRAMINGS[i % len(FRAMINGS)]
-            c = aroll_clip(f"{tag}{i}", start + i * step, start + (i + 1) * step, f)
-            c["sources"][0]["offset"] = round(start + i * step - source_shift, 3)
-            clips.append(c)
+    def beats_at(where: str) -> list[dict]:
+        return [b for b in job.beats if b.get("at") == where]
 
-    # --- 1. Narration opens. B-roll only; he hasn't spoken yet. ---------------
+    def add_overlay(beat: dict, start: float, end: float, oid: str) -> None:
+        payload = {k: v for k, v in beat.items()
+                   if k not in ("at", "type", "start", "end", "why", "asset",
+                                "sourceStart", "sourceEnd")}
+        overlays.append({"type": beat["type"], "id": oid,
+                         "start": round(start, 3), "end": round(end, 3),
+                         "z": beat.get("z", 55), **payload})
+
+    # --- 1. narration opens ---------------------------------------------------
     v0s, v0e = place_vo(0)
-    fill_broll(v0s, v0e + GAP, ["datacenter", "typing", "vintage", "robotics"], "open", shot=1.7)
-    overlays.append({
-        "type": "word-card", "id": "hook", "start": v0s + 0.3, "end": v0s + 3.0,
-        "z": 65, "text": "3 months.", "face": "serif-display", "size": 150,
-        "color": "#FFFFFF",
-    })
-    overlays.append({
-        "type": "word-card", "id": "hook2", "start": v0s + 3.3, "end": v0s + 6.2,
-        "z": 65, "text": "Now 7 minutes.", "face": "sans-heavy", "size": 118,
-        "color": "#FF5A3C",
-    })
+    fill_broll(v0s, v0e + gap, job.raw.get("openBroll", []), "open")
+    for i, b in enumerate(beats_at("open")):
+        add_overlay(b, v0s + b.get("start", 0), v0s + b.get("end", 3), f"open_ov{i}")
 
-    # --- 2. Altman states the claim ------------------------------------------
-    a_s, a_e = place_clip(CLIP_A)
-    fill_aroll(a_s, a_e, a_s - CLIP_A[0], "a")
+    # --- 2. clip states the claim --------------------------------------------
+    passages = job.passages
+    if not passages:
+        raise SystemExit("job.source.passages is empty — nothing to cut")
+    a_s, a_e, a_shift = place_clip(passages[0])
+    fill_aroll(a_s, a_e, a_shift, "a")
 
-    # --- 3. Narration reframes it. The comparison graphic belongs exactly here,
-    #        because paragraph 2 IS "three months, down to seven". -------------
+    # --- 3. narration reframes it --------------------------------------------
     v1s, v1e = place_vo(1)
-    clips.append(graphic_clip("cmp", v1s, v1e + GAP, "#E9E9EC"))
-    overlays.append({
-        "type": "comparison", "id": "cmp1", "start": v1s + 0.1, "end": v1e + GAP, "z": 40,
-        "beforeLabel": "Then", "beforeValue": "3 months",
-        "afterLabel": "Now", "afterValue": "7 minutes",
-        "afterDelay": 1.4, "accent": "#FF5A3C", "tone": "light",
+    clips.append({
+        "id": "vo1bg", "start": round(v1s, 3), "end": round(v1e + gap, 3),
+        "layout": "graphic", "background": canvas, "sources": [],
+        "camera": {"kind": "none", "from": 1, "to": 1, "originX": 0.5, "originY": 0.5},
+        "filters": [], "transitionIn": "cut", "transitionDuration": 0,
     })
+    for i, b in enumerate(beats_at("vo1")):
+        add_overlay({**b, "accent": b.get("accent", accent), "tone": b.get("tone", "light")},
+                    v1s + 0.1, v1e + gap, f"vo1_ov{i}")
 
-    # --- 4. Altman delivers the payoff ---------------------------------------
-    b_s, b_e = place_clip(CLIP_B)
-    shift = b_s - CLIP_B[0]
-    fill_aroll(b_s, b_e, shift, "b")
+    # --- 4. clip pays it off --------------------------------------------------
+    if len(passages) > 1:
+        b_s, b_e, b_shift = place_clip(passages[1])
+        fill_aroll(b_s, b_e, b_shift, "b")
 
-    # B-roll on the concrete nouns inside passage B, overwriting those shots.
-    for src_a, src_b, asset in (
-        (30.75, 32.34, "skyline"),
-        (33.68, 34.90, "robotics"),
-        (36.44, 37.70, "datacenter"),
-    ):
-        s, e = src_a + shift, src_b + shift
-        clips[:] = [c for c in clips if not (c["start"] >= s - 0.55 and c["end"] <= e + 0.55)]
-        clips.append(broll_clip(f"nb{src_a:.0f}", s, e, BROLL[asset]))
+        for i, beat in enumerate(beats_at("clip")):
+            s = beat["sourceStart"] + b_shift
+            e = beat["sourceEnd"] + b_shift
+            if beat["type"] == "broll":
+                clips[:] = [c for c in clips
+                            if not (c["start"] >= s - 0.55 and c["end"] <= e + 0.55)]
+                clips.append(broll_clip(f"nb{i}", s, e, beat["asset"]))
+            else:
+                add_overlay(beat, s, e, f"clip_ov{i}")
+    else:
+        b_e = a_e
 
-    # --- 5. Narration closes -------------------------------------------------
+    # --- 5. narration closes --------------------------------------------------
     v2s, v2e = place_vo(2)
-    fill_broll(v2s, v2e - 1.2, ["skyline", "typing", "robotics"], "close", shot=1.9)
-    # Hold the last shot through the end card — a cut under a subscribe prompt
-    # pulls the eye away from the thing you're asking them to do.
-    clips.append(broll_clip("close_end", v2e - 1.2, v2e + 0.9, BROLL["skyline"],
-                            offset=4.0, scale_from=1.0, scale_to=1.12))
-    overlays.append({
-        "type": "end-card", "id": "end", "start": v2e - 0.4, "end": v2e + 0.9, "z": 92,
-        "title": "THE NEXT CURVE", "subtitle": "big ideas, clear direction",
-        "handle": "@thenextcurv3",
-    })
+    close = job.raw.get("closeBroll", [])
+    fill_broll(v2s, v2e - 1.2, close, "close")
+    if close:
+        # Hold the last shot under the end card — a cut beneath a subscribe
+        # prompt pulls the eye off the thing you're asking them to do.
+        clips.append(broll_clip("close_end", v2e - 1.2, v2e + 0.9, close[0],
+                                offset=4.0, sf=1.0, st=1.12))
 
     duration = round(v2e + 0.9, 3)
     clips.sort(key=lambda c: c["start"])
 
-    # --- Captions ------------------------------------------------------------
-    cues_src.sort(key=lambda w: w["start"])
+    # --- captions -------------------------------------------------------------
+    words_out.sort(key=lambda w: w["start"])
+    max_words = job.get("captions.maxWordsPerCard", 2)
+    keywords = [k.lower() for k in job.get("captions.emphasisKeywords", [])]
+
     cues: list[dict] = []
     buf: list[dict] = []
-    for i, w in enumerate(cues_src):
+    for i, w in enumerate(words_out):
         buf.append(w)
         ends = w["text"].rstrip("\"'”’").endswith((".", "?", "!", ",", ":", ";"))
-        nxt = cues_src[i + 1] if i + 1 < len(cues_src) else None
-        gap = nxt["start"] - w["end"] if nxt else 0
-        # Never let a card straddle a speaker change — merging the clip's last
-        # word with the narration's first produced "coding Three", which reads
-        # as a glitch rather than as either speaker.
+        nxt = words_out[i + 1] if i + 1 < len(words_out) else None
+        gap_to_next = nxt["start"] - w["end"] if nxt else 0
+        # Never straddle a speaker change (F5) — merging the clip's last word
+        # with the narration's first reads as a glitch, not as either speaker.
         speaker_change = bool(nxt) and nxt["voice"] != w["voice"]
-        if len(buf) >= 2 or ends or gap > 0.45 or speaker_change:
+        if len(buf) >= max_words or ends or gap_to_next > 0.45 or speaker_change:
             cues.append({
                 "start": round(buf[0]["start"], 3), "end": round(buf[-1]["end"], 3),
-                "emphasis": "none", "words": [
-                    {"text": x["text"], "start": round(x["start"], 3), "end": round(x["end"], 3)}
-                    for x in buf
-                ],
+                "emphasis": "none",
+                "words": [{"text": x["text"], "start": round(x["start"], 3),
+                           "end": round(x["end"], 3)} for x in buf],
             })
             buf = []
     if buf:
         cues.append({
             "start": round(buf[0]["start"], 3), "end": round(buf[-1]["end"], 3),
-            "emphasis": "none", "words": [
-                {"text": x["text"], "start": round(x["start"], 3), "end": round(x["end"], 3)}
-                for x in buf
-            ],
+            "emphasis": "none",
+            "words": [{"text": x["text"], "start": round(x["start"], 3),
+                       "end": round(x["end"], 3)} for x in buf],
         })
 
     for i, c in enumerate(cues):
         nxt = cues[i + 1]["start"] if i + 1 < len(cues) else c["end"] + 0.35
         c["end"] = round(min(nxt, c["end"] + 0.45), 3)
         joined = " ".join(w["text"] for w in c["words"]).lower()
-        if any(k in joined for k in ("three months", "seven", "minutes", "impossible", "floor")):
+        if any(k in joined for k in keywords):
             c["emphasis"] = "color"
 
-    overlays.append({
-        "type": "chrome", "id": "bug", "start": 0, "end": duration, "z": 85,
-        "bug": "THE NEXT CURVE", "tone": "light",
-    })
-    overlays.append({
-        "type": "progress", "id": "prog", "start": 0, "end": duration, "z": 95, "style": "bar",
-    })
+    # --- chrome ---------------------------------------------------------------
+    if brand.get("bug"):
+        overlays.append({"type": "chrome", "id": "bug", "start": 0, "end": duration,
+                         "z": 85, "bug": brand["bug"],
+                         "tone": brand.get("bugTone", "light")})
+    if job.get("overlays.progress"):
+        overlays.append({"type": "progress", "id": "prog", "start": 0, "end": duration,
+                         "z": 95, "style": job.get("overlays.progress")})
+    if job.get("overlays.showEndCard") and job.get("endCard"):
+        ec = job.get("endCard")
+        overlays.append({"type": "end-card", "id": "end",
+                         "start": round(v2e - 0.4, 3), "end": duration, "z": 92,
+                         "title": ec.get("title", ""), "subtitle": ec.get("subtitle"),
+                         "handle": brand.get("handle", "")})
 
-    timeline = {
+    caption_style = {k: v for k, v in job.get("captions", {}).items()
+                     if k not in ("maxWordsPerCard", "emphasisKeywords")}
+
+    return {
         "version": 1,
-        "meta": {
-            "title": "Three months of work. Now seven minutes.",
-            "slug": args.slug, "durationInSeconds": duration, "fps": FPS,
-        },
+        "meta": {"title": job.raw.get("title", job.slug), "slug": job.slug,
+                 "durationInSeconds": duration, "fps": FPS},
         "pacing": [
-            {"start": 0, "end": v0e, "energy": 0.6, "label": "hook"},
-            {"start": v0e, "end": a_e, "energy": 1.0, "label": "build"},
-            {"start": a_e, "end": v1e, "energy": 0.4, "label": "hold"},
-            {"start": v1e, "end": b_e, "energy": 1.2, "label": "payoff"},
-            {"start": b_e, "end": duration, "energy": 0.5, "label": "outro"},
+            {"start": 0, "end": round(v0e, 3), "energy": 0.6, "label": "hook"},
+            {"start": round(v0e, 3), "end": round(a_e, 3), "energy": 1.0, "label": "build"},
+            {"start": round(a_e, 3), "end": round(v1e, 3), "energy": 0.4, "label": "hold"},
+            {"start": round(v1e, 3), "end": round(b_e, 3), "energy": 1.2, "label": "payoff"},
+            {"start": round(b_e, 3), "end": duration, "energy": 0.5, "label": "outro"},
         ],
         "clips": clips,
         "overlays": overlays,
-        "captions": {
-            "style": {
-                "preset": "word-pop", "fontFamily": "Poppins", "fontWeight": 800,
-                "fontSize": 64, "color": "#FFFFFF", "anchorY": 0.70,
-                "pillColor": "rgba(0,0,0,0)", "pillRadius": 0, "strokeWidth": 9,
-            },
-            "cues": cues,
-        },
+        "captions": {"style": caption_style, "cues": cues},
         "audio": audio,
     }
 
-    project.timeline.write_text(json.dumps(timeline, indent=2), encoding="utf-8")
 
-    vo_time = sum(a["duration"] for a in audio if a["role"] == "vo")
-    print(f"-> {project.timeline}")
-    print(f"   {duration:.1f}s total | {len(clips)} clips ({len(clips)/duration:.2f}/s)")
-    print(f"   narration {vo_time:.1f}s ({100*vo_time/duration:.0f}%) | {len(cues)} caption cards")
+def main() -> None:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("slug")
+    ap.add_argument("--skip-rights-check", action="store_true")
+    args = ap.parse_args()
+
+    job = load_job(args.slug)
+
+    problems = job.check_rights()
+    if problems:
+        print("RIGHTS WARNINGS:")
+        for p in problems:
+            print(f"  ! {p}")
+        if not args.skip_rights_check:
+            raise SystemExit("\nFix job.json rights, or pass --skip-rights-check.")
+        print()
+
+    timeline = build(job)
+    Project(args.slug).timeline.write_text(
+        json.dumps(timeline, indent=2), encoding="utf-8")
+
+    dur = timeline["meta"]["durationInSeconds"]
+    vo = sum(a["duration"] for a in timeline["audio"] if a["role"] == "vo")
+    floor = job.get("editorial.narrationShareFloor", 0)
+    share = vo / dur
+
+    print(f"-> {Project(args.slug).timeline}")
+    print(f"   profile: {job.profile.get('id')} | {dur:.1f}s")
+    print(f"   {len(timeline['clips'])} clips ({len(timeline['clips'])/dur:.2f}/s)"
+          f" | {len(timeline['captions']['cues'])} cards")
+    print(f"   narration {vo:.1f}s ({share:.0%})", end="")
+    if floor and share < floor:
+        print(f"  ! below profile floor of {floor:.0%} — thin for the reuse policy")
+    else:
+        print()
 
 
 if __name__ == "__main__":

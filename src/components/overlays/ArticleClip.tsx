@@ -23,6 +23,8 @@ export const ArticleClip: React.FC<Props> = ({
   headline,
   byline,
   highlight,
+  highlightBox,
+  highlightMode,
   highlightStart,
   highlightDuration,
   highlightColor,
@@ -62,11 +64,39 @@ export const ArticleClip: React.FC<Props> = ({
       }}
     >
       {src ? (
-        <div style={{ position: "relative", width: "100%", opacity: enter }}>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            opacity: enter,
+            transform: `scale(${0.97 + enter * 0.03})`,
+            // Isolate so the highlight's blend mode acts on the screenshot only,
+            // not on whatever clip is underneath.
+            isolation: "isolate",
+          }}
+        >
           <Img
             src={/^(https?:|data:)/.test(src) ? src : staticFile(src)}
-            style={{ width: "100%", objectFit: "contain", transform: `scale(${0.97 + enter * 0.03})` }}
+            style={{ width: "100%", objectFit: "contain", display: "block" }}
           />
+          {highlightBox ? (
+            // Neither mode covers the words — a flat rectangle would just hide
+            // them, which is the opposite of highlighting. `marker` tints,
+            // `invert` flips the region's luminance.
+            <div
+              style={{
+                position: "absolute",
+                left: `${highlightBox.x * 100}%`,
+                top: `${highlightBox.y * 100}%`,
+                height: `${highlightBox.height * 100}%`,
+                width: `${highlightBox.width * sweep * 100}%`,
+                background: highlightMode === "invert" ? "#FFFFFF" : highlightColor,
+                mixBlendMode: highlightMode === "invert" ? "difference" : "multiply",
+                opacity: highlightMode === "invert" ? 1 : 0.85,
+                pointerEvents: "none",
+              }}
+            />
+          ) : null}
         </div>
       ) : (
         <div

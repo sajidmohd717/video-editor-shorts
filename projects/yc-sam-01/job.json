@@ -1,0 +1,93 @@
+{
+  "slug": "yc-sam-01",
+  "profile": "the-next-curve",
+  "format": "narrated",
+  "title": "Three months of work. Now seven minutes.",
+
+  "source": {
+    "aroll": "yc-sam-01/aroll.mp4",
+    "speaker": "Sam Altman",
+    "venue": "Y Combinator",
+    "comment": "passages are in SOURCE time; everything outside them is dropped",
+    "passages": [
+      [0.0, 12.78],
+      [25.08, 39.8]
+    ],
+    "subjectFocusX": 0.72
+  },
+
+  "rights": {
+    "clearance": "commentary",
+    "speaker": "Sam Altman",
+    "rightsHolder": "Y Combinator",
+    "sourceUrl": "https://www.youtube.com/@ycombinator",
+    "note": "Short excerpts used as evidence for original commentary. Narration is the spine. Does not affect Content ID — the rights holder can still claim."
+  },
+
+  "broll": {
+    "vintage": "yc-sam-01/stock/pexels-video-12271136.mp4",
+    "skyline": "yc-sam-01/stock/pexels-video-9921286.mp4",
+    "robotics": "yc-sam-01/stock/pexels-video-8328143.mp4",
+    "datacenter": "yc-sam-01/stock/pexels-video-6755162.mp4",
+    "typing": "yc-sam-01/stock/pexels-video-12893579.mp4"
+  },
+
+  "openBroll": ["datacenter", "typing", "vintage", "robotics"],
+  "closeBroll": ["skyline", "typing", "robotics"],
+
+  "beats": [
+    {
+      "at": "open",
+      "type": "word-card",
+      "start": 0.3,
+      "end": 3.0,
+      "text": "3 months.",
+      "face": "serif-display",
+      "size": 150,
+      "color": "#FFFFFF"
+    },
+    {
+      "at": "open",
+      "type": "word-card",
+      "start": 3.3,
+      "end": 6.2,
+      "text": "Now 7 minutes.",
+      "face": "sans-heavy",
+      "size": 118,
+      "color": "#FF5A3C"
+    },
+    {
+      "at": "vo1",
+      "type": "comparison",
+      "beforeLabel": "Then",
+      "beforeValue": "3 months",
+      "afterLabel": "Now",
+      "afterValue": "7 minutes",
+      "afterDelay": 1.4
+    },
+    {
+      "at": "clip",
+      "type": "broll",
+      "sourceStart": 30.75,
+      "sourceEnd": 32.34,
+      "asset": "skyline",
+      "why": "the world's most ambitious, crazy company"
+    },
+    {
+      "at": "clip",
+      "type": "broll",
+      "sourceStart": 33.68,
+      "sourceEnd": 34.9,
+      "asset": "robotics",
+      "why": "experts in every field working together"
+    },
+    {
+      "at": "clip",
+      "type": "broll",
+      "sourceStart": 36.44,
+      "sourceEnd": 37.7,
+      "asset": "datacenter",
+      "why": "these very hard technological things"
+    }
+  ]
+}
