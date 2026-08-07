@@ -10,13 +10,13 @@
     "clip:2",
     "vo:1"
   ],
-  "structureWhy": "CLIP FIRST. yc-sam-01 opened on b-roll plus synthetic narration and held 32%; clip-only cuts opening on a face held ~63%. This changes that one variable — a human face and a human voice in second one, narration answering rather than introducing.",
-  "structureWhy2": "clip:0 and clip:1 run back to back and are the SAME sentence with filler removed, so no transition fires between them. Cutting for length must never cost the antecedent: an earlier version opened on 'He himself would cook us dinner', which is a pronoun with nothing to attach to — the viewer never learns who is being described or why it matters.",
+  "structureWhy": "CLIP FIRST. yc-sam-01 opened on b-roll plus synthetic narration and held 32%; clip-only cuts opening on a face held ~63%. This changes that one variable \u2014 a human face and a human voice in second one, narration answering rather than introducing.",
+  "structureWhy2": "clip:0 and clip:1 run back to back and are the SAME sentence with filler removed, so no transition fires between them. Cutting for length must never cost the antecedent: an earlier version opened on 'He himself would cook us dinner', which is a pronoun with nothing to attach to \u2014 the viewer never learns who is being described or why it matters.",
   "source": {
     "aroll": "yc-sam-02/aroll.mp4",
     "speaker": "Sam Altman",
     "venue": "Y Combinator",
-    "comment": "Passages are in SOURCE time, relative to the extracted a-roll (which starts at 132.0s of the original talk). Cropped 1620x2160 at x=1552 from the 3840x2160 master — crop first, scale last (F14).",
+    "comment": "Passages are in SOURCE time, relative to the extracted a-roll (which starts at 132.0s of the original talk). Cropped 1620x2160 at x=1552 from the 3840x2160 master \u2014 crop first, scale last (F14).",
     "passages": [
       [
         0.0,
@@ -31,12 +31,12 @@
         35.8
       ]
     ],
-    "passagesWhy": "0: 'And my kind of Paul Graham memory is: we would all, every week, come' — NAMES HIM. Without this the whole short is about an unidentified 'he'. 1: skips the 'I think it was on Tuesdays' aside and runs 'he would cook' through to 'the next Google' — the anecdote. 2: the thesis, creating belief out of nothing. The join between 0 and 1 removes filler, not meaning.",
+    "passagesWhy": "0: 'And my kind of Paul Graham memory is: we would all, every week, come' \u2014 NAMES HIM. Without this the whole short is about an unidentified 'he'. 1: skips the 'I think it was on Tuesdays' aside and runs 'he would cook' through to 'the next Google' \u2014 the anecdote. 2: the thesis, creating belief out of nothing. The join between 0 and 1 removes filler, not meaning.",
     "subjectFocusX": 0.44
   },
   "publish": {
     "title": "How Paul Graham Manufactured Startup Optimism",
-    "description": "Sam Altman on the Tuesday dinners where Paul Graham convinced eight hopeless startups they were about to take over the world — and why that mattered more than advice.\n\nCommentary and edit: The Next Curve",
+    "description": "Sam Altman on the Tuesday dinners where Paul Graham convinced eight hopeless startups they were about to take over the world \u2014 and why that mattered more than advice.\n\nCommentary and edit: The Next Curve",
     "tags": [
       "Paul Graham",
       "Sam Altman",
@@ -47,7 +47,16 @@
       "tech"
     ],
     "categoryId": "28",
-    "madeForKids": false
+    "madeForKids": false,
+    "uploads": [
+      {
+        "videoId": "At3gX8bvrZ8",
+        "file": "render/final-master.mp4",
+        "privacy": "private",
+        "uploadedAt": "2026-08-07T16:42:13.615728+00:00"
+      }
+    ],
+    "videoId": "At3gX8bvrZ8"
   },
   "rights": {
     "clearance": "commentary",
@@ -107,7 +116,7 @@
     {
       "at": "clip0",
       "type": "logo-pop",
-      "why": "lands on the words 'Paul Graham' — names the subject at the moment he is named, so nobody has to guess who 'he' is",
+      "why": "lands on the words 'Paul Graham' \u2014 names the subject at the moment he is named, so nobody has to guess who 'he' is",
       "sourceStart": 0.75,
       "sourceEnd": 4.6,
       "src": "yc-sam-02/logos/pg.jpg",
@@ -127,7 +136,7 @@
     {
       "at": "clip1",
       "type": "logo-pop",
-      "why": "Y Combinator mark on 'eight companies' — the room being described is the first YC batch",
+      "why": "Y Combinator mark on 'eight companies' \u2014 the room being described is the first YC batch",
       "sourceStart": 15.0,
       "sourceEnd": 18.2,
       "src": "yc-sam-02/logos/yc.svg",
