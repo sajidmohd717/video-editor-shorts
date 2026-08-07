@@ -102,6 +102,7 @@ def build(job: Job) -> dict:
     # (time, direction) — direction matters because a whoosh belongs on the way
     # INTO the clip ("here he comes"), not on the way back out.
     handoffs: list[tuple[float, str]] = []
+    used_broll: set[str] = set()
     t = 0.0
 
     def aroll_clip(cid: str, start: float, end: float, f: dict, src_off: float) -> dict:
@@ -123,6 +124,7 @@ def build(job: Job) -> dict:
         src = job.broll.get(asset)
         if not src:
             raise SystemExit(f"job.broll has no entry named {asset!r}")
+        used_broll.add(asset)
 
         # Diegetic ambience: let the b-roll's own sound through, well under the
         # voice. Keyboard clatter, machine noise, room tone and street sound give
@@ -292,9 +294,18 @@ def build(job: Job) -> dict:
         """
         if not assets:
             return
-        # Never repeat an asset inside one window — a repeat reads as running out
-        # of material even when the placement is right. If that means fewer, longer
-        # shots than the target cadence, take the longer shots.
+
+        # Uniqueness is enforced across the WHOLE video, not just this window.
+        # A clip reappearing four seconds after its first use reads as running out
+        # of material even when both placements are individually right (F15).
+        fresh = [a for a in assets if a not in used_broll]
+        if not fresh:
+            print(f"  ! {tag}: every listed asset is already used elsewhere — "
+                  f"add more to job.broll; falling back to repeats")
+            fresh = assets
+        assets = fresh
+
+        # Fewer, longer shots beat a repeat.
         n = max(1, min(round((end - start) / broll_shot), len(assets)))
         step = (end - start) / n
         for i in range(n):
@@ -538,6 +549,28 @@ def build(job: Job) -> dict:
         raise SystemExit(
             f"Clip track has {len(holes)} uncovered gap(s) — these render as "
             f"black frames: {detail}"
+        )
+
+    # No b-roll asset may appear twice in one video. Enforced as an invariant
+    # rather than a convention because it's invisible in the JSON and obvious on
+    # screen — the same failure mode as the coverage gap (F18).
+    seen: dict[str, float] = {}
+    repeats: list[str] = []
+    for c in clips:
+        if not c["sources"]:
+            continue
+        src = c["sources"][0]["src"]
+        if "/stock/" not in src:
+            continue
+        name = src.split("/")[-1]
+        if name in seen:
+            repeats.append(f"{name} at {seen[name]:.1f}s and {c['start']:.1f}s")
+        else:
+            seen[name] = c["start"]
+    if repeats:
+        raise SystemExit(
+            "B-roll repeated within one video — fetch more assets or reassign:\n  "
+            + "\n  ".join(repeats)
         )
 
     # --- captions -------------------------------------------------------------

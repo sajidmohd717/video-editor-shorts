@@ -767,12 +767,12 @@
     {
       "id": "vb1_0",
       "start": 35.271,
-      "end": 38.921,
+      "end": 37.461,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-02/stock/pexels-video-6555612.mp4",
+          "src": "yc-sam-02/stock/pexels-video-8347239.mp4",
           "offset": 0.4,
           "focusX": 0.5,
           "focusY": 0.5,
@@ -795,8 +795,8 @@
     },
     {
       "id": "vb1_1",
-      "start": 38.921,
-      "end": 42.571,
+      "start": 37.461,
+      "end": 39.651,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -824,13 +824,13 @@
     },
     {
       "id": "vb1_2",
-      "start": 42.571,
-      "end": 46.221,
+      "start": 39.651,
+      "end": 41.841,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-02/stock/pexels-video-37876540.mp4",
+          "src": "yc-sam-02/stock/pexels-video-6930236.mp4",
           "offset": 0.4,
           "focusX": 0.5,
           "focusY": 0.5,
@@ -844,6 +844,64 @@
         "kind": "punch-in",
         "from": 1.08,
         "to": 1.1800000000000002,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "vb1_3",
+      "start": 41.841,
+      "end": 44.031,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-02/stock/pixabay-video-368623.mp4",
+          "offset": 0.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.02,
+        "to": 1.12,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "vb1_4",
+      "start": 44.031,
+      "end": 46.221,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-02/stock/pexels-video-6396009.mp4",
+          "offset": 0.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.05,
+        "to": 1.1500000000000001,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -2431,11 +2489,11 @@
     },
     {
       "id": "amb_vb1_0",
-      "src": "yc-sam-02/stock/pexels-video-6555612.mp4",
+      "src": "yc-sam-02/stock/pexels-video-8347239.mp4",
       "role": "sfx",
       "start": 35.271,
       "offset": 0.4,
-      "duration": 3.65,
+      "duration": 2.19,
       "gainDb": -26,
       "duck": false,
       "fadeIn": 0.25,
@@ -2445,9 +2503,9 @@
       "id": "amb_vb1_1",
       "src": "yc-sam-02/stock/pexels-video-18970501.mp4",
       "role": "sfx",
-      "start": 38.921,
+      "start": 37.461,
       "offset": 0.4,
-      "duration": 3.65,
+      "duration": 2.19,
       "gainDb": -26,
       "duck": false,
       "fadeIn": 0.25,
@@ -2455,11 +2513,35 @@
     },
     {
       "id": "amb_vb1_2",
-      "src": "yc-sam-02/stock/pexels-video-37876540.mp4",
+      "src": "yc-sam-02/stock/pexels-video-6930236.mp4",
       "role": "sfx",
-      "start": 42.571,
+      "start": 39.651,
       "offset": 0.4,
-      "duration": 3.65,
+      "duration": 2.19,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_vb1_3",
+      "src": "yc-sam-02/stock/pixabay-video-368623.mp4",
+      "role": "sfx",
+      "start": 41.841,
+      "offset": 0.4,
+      "duration": 2.19,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_vb1_4",
+      "src": "yc-sam-02/stock/pexels-video-6396009.mp4",
+      "role": "sfx",
+      "start": 44.031,
+      "offset": 0.4,
+      "duration": 2.19,
       "gainDb": -26,
       "duck": false,
       "fadeIn": 0.25,

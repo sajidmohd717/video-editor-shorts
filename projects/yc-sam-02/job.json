@@ -79,7 +79,12 @@
     "team": "yc-sam-02/stock/pexels-video-6913252.mp4",
     "cooking": "yc-sam-02/stock/pexels-video-37876540.mp4",
     "skyline": "yc-sam-02/stock/pexels-video-18970501.mp4",
-    "talking": "yc-sam-02/stock/pexels-video-8522984.mp4"
+    "talking": "yc-sam-02/stock/pexels-video-8522984.mp4",
+    "notebook": "yc-sam-02/stock/pexels-video-6930236.mp4",
+    "deskwork": "yc-sam-02/stock/pixabay-video-368623.mp4",
+    "corridor": "yc-sam-02/stock/pexels-video-7652109.mp4",
+    "toast": "yc-sam-02/stock/pexels-video-6396009.mp4",
+    "emptyoffice": "yc-sam-02/stock/pexels-video-8347239.mp4"
   },
   "voBroll": {
     "0": [
@@ -87,9 +92,11 @@
       "talking"
     ],
     "1": [
-      "dinner",
+      "emptyoffice",
       "skyline",
-      "cooking"
+      "notebook",
+      "deskwork",
+      "toast"
     ]
   },
   "logos": {
@@ -154,5 +161,6 @@
       "asset": "dinner",
       "why": "we would all walk in feeling very hopeless - the dinner table itself, so the room is seen not just described"
     }
-  ]
+  ],
+  "voBrollWhy": "vo1 order tracks the narration: empty desks on 'most never became Google', skyline on 'Y Combinator did', notebook and deskwork on 'one person decided to act as if it would work', a toast on the 'every Tuesday, over dinner' callback. Strict uniqueness means the dinner shot from the opening cannot return for that callback - the toast carries it instead."
 }

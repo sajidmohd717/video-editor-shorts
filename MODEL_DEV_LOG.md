@@ -195,12 +195,29 @@ of the width, so the source needs ~3.2× the target width to avoid upscaling.
 ### F15 — Never repeat a b-roll asset within one short
 
 Reusing clips reads as running out of material even when each placement is
-right. Repeats crept in two ways: more shots than assets in a window, and a
-"hold the last shot" clip that reused `closeBroll[0]`.
+right. Repeats crept in three ways: more shots than assets in a window, a
+"hold the last shot" clip that reused `closeBroll[0]`, and — the one that took
+two attempts to kill — **an asset used in a beat and again in a narration
+window**.
 
-**Applied:** shot count in a window is capped at the number of available assets —
-fewer, longer shots beat a repeat. **Status:** keep. Budget ~10 distinct clips
-per 45s.
+That last one is the lesson: the first fix enforced uniqueness *within a window*,
+which is not the same thing as within the video. `cooking` and `dinner` were
+placed on clip beats and reappeared four seconds later under the closing
+narration, and nothing complained.
+
+**Applied:** a single `used_broll` set spanning the whole build, plus a **hard
+failure** if any stock file appears on two clips. Like the coverage check (F18),
+this is an invariant rather than a convention — it's invisible in the JSON and
+obvious on screen.
+
+**Consequence worth accepting:** strict uniqueness costs deliberate callbacks.
+The dinner shot from the opening couldn't return for the "every Tuesday, over
+dinner" line; a different warm shot carries it. That trade is right — an
+unintentional repeat looks like a shortage far more often than an intentional one
+reads as a callback.
+
+**Budget ~10 distinct clips per 45s.** If a window falls back to repeats, the
+planner says so; fetch more rather than accepting it.
 
 ### F16 — Detect silence in the audio, not gaps in word timings
 
