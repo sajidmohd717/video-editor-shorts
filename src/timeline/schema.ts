@@ -365,8 +365,16 @@ export const overlaySchema = z.discriminatedUnion("type", [
      * rectangle otherwise. `none` suits logos.
      */
     shape: z.enum(["none", "circle"]).default("none"),
-    /** Small label under the mark, e.g. naming the person. */
+    /** Name label under the mark. */
     caption: z.string().optional(),
+    /**
+     * Role line under the name — "Y COMBINATOR CO-FOUNDER". The broadcast
+     * lower-third convention, and it earns its space: a name alone assumes the
+     * viewer already knows why this person matters, which on a feed is the wrong
+     * assumption. Keep it short enough to read in under a second.
+     */
+    role: z.string().optional(),
+    roleColor: z.string().default("#FF5A3C"),
     entrance: z.enum(["pop", "drop", "spin"]).default("pop"),
     /** Brief bloom behind the mark as it lands. */
     glow: z.boolean().default(true),

@@ -102,10 +102,10 @@
       "type": "logo-pop",
       "why": "lands on the words 'Paul Graham' — names the subject at the moment he is named, so nobody has to guess who 'he' is",
       "sourceStart": 0.75,
-      "sourceEnd": 4.2,
+      "sourceEnd": 4.6,
       "src": "yc-sam-02/logos/pg.jpg",
       "sfx": "pop",
-      "x": 0.27,
+      "x": 0.24,
       "y": 0.22,
       "size": 260,
       "tint": "none",
@@ -114,17 +114,18 @@
       "entrance": "pop",
       "glow": true,
       "exit": 0.25,
-      "z": 70
+      "z": 70,
+      "role": "YC CO-FOUNDER"
     },
     {
       "at": "clip1",
       "type": "logo-pop",
       "why": "Y Combinator mark on 'eight companies' — the room being described is the first YC batch",
       "sourceStart": 15.0,
-      "sourceEnd": 17.6,
+      "sourceEnd": 18.2,
       "src": "yc-sam-02/logos/yc.svg",
       "sfx": "pop",
-      "x": 0.27,
+      "x": 0.24,
       "y": 0.22,
       "size": 200,
       "tint": "none",
@@ -133,7 +134,25 @@
       "glow": true,
       "exit": 0.22,
       "z": 70,
-      "whyTint": "tint white would flatten the orange field to black then invert it to a solid white square. Only tint marks that are already monochrome."
+      "whyTint": "tint white would flatten the orange field to black then invert it to a solid white square. Only tint marks that are already monochrome.",
+      "caption": "Y COMBINATOR",
+      "role": "THE FIRST BATCH"
+    },
+    {
+      "at": "clip1",
+      "type": "broll",
+      "sourceStart": 8.2,
+      "sourceEnd": 10.45,
+      "asset": "cooking",
+      "why": "he would cook / He himself would cook us dinner - literal, and it is the setup of the whole anecdote"
+    },
+    {
+      "at": "clip1",
+      "type": "broll",
+      "sourceStart": 10.6,
+      "sourceEnd": 13.6,
+      "asset": "dinner",
+      "why": "we would all walk in feeling very hopeless - the dinner table itself, so the room is seen not just described"
     }
   ]
 }

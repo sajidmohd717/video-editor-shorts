@@ -62,6 +62,14 @@ are handled. These are the steps that still need a human, in order:
 - [ ] **Choose graphics by the shape of the claim, not its topic** (F3). A jump is
       a `comparison`, a trend is a `stat-chart`, a sourced fact is an
       `article-clip`.
+- [ ] **Check the cut still makes sense cold** (F24). Find the sentence that
+      establishes *who* and *what* — it's load-bearing and can never be cut. Take
+      the runtime out of filler, asides and restarts instead. Read the opening as
+      if you know nothing: does a pronoun appear before its antecedent?
+- [ ] **Introduce anyone the audience may not know** (F26) — portrait badge, name,
+      and a short role line in the accent colour.
+- [ ] **No more than ~8–10s of unbroken talking head** (F27). An unbroken face is
+      a static frame, and a static frame is a swipe.
 - [ ] **Watch the render.** Every real defect so far was found by watching, not by
       measuring.
 

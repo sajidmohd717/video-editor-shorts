@@ -379,6 +379,55 @@ worse.
 
 **Applied:** `tint: none` for coloured marks and photos. **Status:** keep.
 
+### F26 — Introduce people the way a news channel does
+
+A name alone assumes the viewer already knows why the person matters. On a feed
+that's the wrong assumption. The broadcast lower-third convention answers it in
+one line:
+
+```
+   (portrait)
+  PAUL GRAHAM          ← name, white, larger
+  YC CO-FOUNDER        ← role, accent colour, smaller, wider tracking
+```
+
+The role lands a few frames after the name so the eye takes them in order.
+
+**Sizing, learned the hard way:** the role started at ~23px, which is perfectly
+legible in a desktop preview and invisible on a phone. Now floors at 26px.
+**Keep both strings short** — "Y COMBINATOR CO-FOUNDER" ran into the speaker's
+head; "YC CO-FOUNDER" doesn't. Anything that needs more than ~15 characters is
+being asked to do too much.
+
+**Status:** keep. Use on the first mention of any person or organisation the
+audience can't be assumed to know.
+
+### F27 — Never leave 20 seconds without a cutaway
+
+The first cut of yc-sam-02 ran ~20s of unbroken talking head before any b-roll.
+Whatever the content, that's a long time on one face in a feed.
+
+**Applied:** ~5s of b-roll inside the opening block, split into two shots
+(cooking on "he would cook us dinner", the dinner table on "we would all walk in
+feeling very hopeless"). Both literal, both on concrete nouns (F10).
+
+**Rule of thumb:** no more than ~8–10s of continuous talking head without a
+cutaway, a graphic, or a logo pop. Not for decoration — an unbroken face is a
+static frame, and a static frame is a swipe.
+
+### F28 — Beats must snap, not vanish, when a pause is removed
+
+Pause compression removes spans of source time. An authored beat whose start or
+end lands inside a removed span was silently dropped — two logo pops disappeared
+because their end times drifted a tenth of a second into a trimmed silence.
+
+Losing a deliberate editorial decision to a boundary drift is the wrong
+behaviour. `src_to_timeline` now snaps to the nearest surviving edge.
+
+**Rule:** when a transform can invalidate authored input, snap or clamp — don't
+discard. A silently dropped element is worse than a slightly misplaced one,
+because nothing tells you it happened.
+
 ---
 
 ## Platform data

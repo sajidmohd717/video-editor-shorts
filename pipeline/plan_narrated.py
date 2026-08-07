@@ -224,10 +224,27 @@ def build(job: Job) -> dict:
         return start, t, segments
 
     def src_to_timeline(src_t: float, segments: list[tuple]) -> float | None:
+        """
+        Map a SOURCE time onto the timeline, snapping to the nearest kept moment.
+
+        Pause compression removes spans of source time, so an authored beat can
+        land inside a hole. Dropping the whole beat for that is wrong — it loses a
+        deliberate editorial decision because a boundary drifted by a tenth of a
+        second. Snapping to the nearest surviving edge keeps the intent.
+        """
+        if not segments:
+            return None
         for s, e, shift in segments:
             if s <= src_t <= e:
                 return src_t + shift
-        return None
+
+        best, best_gap = None, None
+        for s, e, shift in segments:
+            edge = s if src_t < s else e
+            gap = abs(src_t - edge)
+            if best_gap is None or gap < best_gap:
+                best, best_gap = edge + shift, gap
+        return best
 
     def passage_scale(p: float) -> float:
         """

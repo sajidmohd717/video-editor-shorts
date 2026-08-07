@@ -20,6 +20,8 @@ export const LogoPop: React.FC<Props> = ({
   tint,
   shape,
   caption,
+  role,
+  roleColor,
   entrance,
   glow,
   exit,
@@ -111,7 +113,7 @@ export const LogoPop: React.FC<Props> = ({
           }}
         />
 
-        {caption ? (
+        {caption || role ? (
           <div
             style={{
               position: "absolute",
@@ -119,16 +121,49 @@ export const LogoPop: React.FC<Props> = ({
               left: "50%",
               transform: "translateX(-50%)",
               whiteSpace: "nowrap",
+              textAlign: "center",
               fontFamily: "Poppins, sans-serif",
-              fontWeight: 700,
-              fontSize: Math.max(26, size * 0.13),
-              letterSpacing: "0.02em",
-              color: "#fff",
-              textShadow: "0 4px 18px rgba(0,0,0,0.8)",
+              textShadow: "0 4px 18px rgba(0,0,0,0.85)",
               opacity: Math.min(1, enter * 1.2) * out,
             }}
           >
-            {caption}
+            {caption ? (
+              <div
+                style={{
+                  fontWeight: 700,
+                  fontSize: Math.max(26, size * 0.13),
+                  letterSpacing: "0.02em",
+                  color: "#fff",
+                  lineHeight: 1.1,
+                }}
+              >
+                {caption}
+              </div>
+            ) : null}
+            {role ? (
+              // Smaller and wider-tracked than the name — reads as a subtitle
+              // rather than competing with it. Lands a beat later so the eye
+              // takes the name first.
+              <div
+                style={{
+                  marginTop: 5,
+                  fontWeight: 700,
+                  // Big enough to read on a phone at arm's length. The earlier
+                  // 0.088 factor produced ~23px, which is legible on a desktop
+                  // preview and invisible on the device this is watched on.
+                  fontSize: Math.max(26, size * 0.115),
+                  letterSpacing: "0.06em",
+                  color: roleColor,
+                  lineHeight: 1.1,
+                  opacity: interpolate(frame, [4, 11], [0, 1], {
+                    extrapolateLeft: "clamp",
+                    extrapolateRight: "clamp",
+                  }),
+                }}
+              >
+                {role}
+              </div>
+            ) : null}
           </div>
         ) : null}
       </div>

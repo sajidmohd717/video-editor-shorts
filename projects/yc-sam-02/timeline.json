@@ -185,9 +185,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "c1_0_0",
+      "id": "c1_0_0L",
       "start": 4.41,
-      "end": 5.77,
+      "end": 5.41,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -214,17 +214,17 @@
       "transitionDuration": 0
     },
     {
-      "id": "c1_0_1",
-      "start": 5.77,
-      "end": 7.13,
+      "id": "nb_1_1",
+      "start": 5.41,
+      "end": 7.61,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-02/aroll.mp4",
-          "offset": 8.56,
-          "focusX": 0.44,
-          "focusY": 0.34,
+          "src": "yc-sam-02/stock/pexels-video-37876540.mp4",
+          "offset": 0.6,
+          "focusX": 0.5,
+          "focusY": 0.5,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -233,85 +233,27 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.11,
-        "to": 1.19,
+        "from": 1.04,
+        "to": 1.12,
         "originX": 0.5,
-        "originY": 0.38
+        "originY": 0.5
       },
       "filters": [],
       "transitionIn": "cut",
       "transitionDuration": 0
     },
     {
-      "id": "c1_1_0",
-      "start": 7.13,
-      "end": 8.32,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-02/aroll.mp4",
-          "offset": 10.121,
-          "focusX": 0.44,
-          "focusY": 0.42,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.03,
-        "to": 1.13,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "c1_1_1",
-      "start": 8.32,
-      "end": 9.51,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-02/aroll.mp4",
-          "offset": 11.31,
-          "focusX": 0.44,
-          "focusY": 0.34,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.13,
-        "to": 1.09,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "c1_1_2",
-      "start": 9.51,
+      "id": "nb_1_2",
+      "start": 7.61,
       "end": 10.699,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-02/aroll.mp4",
-          "offset": 12.5,
-          "focusX": 0.44,
-          "focusY": 0.48,
+          "src": "yc-sam-02/stock/pexels-video-6555612.mp4",
+          "offset": 0.6,
+          "focusX": 0.5,
+          "focusY": 0.5,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -320,10 +262,10 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.09,
-        "to": 1.19,
+        "from": 1.04,
+        "to": 1.12,
         "originX": 0.5,
-        "originY": 0.38
+        "originY": 0.5
       },
       "filters": [],
       "transitionIn": "cut",
@@ -915,10 +857,10 @@
       "type": "logo-pop",
       "id": "clip0_ov0",
       "start": 0.75,
-      "end": 3.698,
+      "end": 3.948,
       "z": 70,
       "src": "yc-sam-02/logos/pg.jpg",
-      "x": 0.27,
+      "x": 0.24,
       "y": 0.22,
       "size": 260,
       "tint": "none",
@@ -927,6 +869,7 @@
       "entrance": "pop",
       "glow": true,
       "exit": 0.25,
+      "role": "YC CO-FOUNDER",
       "accent": "#FF5A3C",
       "tone": "light"
     },
@@ -934,10 +877,10 @@
       "type": "logo-pop",
       "id": "clip1_ov0",
       "start": 11.51,
-      "end": 14.11,
+      "end": 14.551,
       "z": 70,
       "src": "yc-sam-02/logos/yc.svg",
-      "x": 0.27,
+      "x": 0.24,
       "y": 0.22,
       "size": 200,
       "tint": "none",
@@ -946,6 +889,8 @@
       "glow": true,
       "exit": 0.22,
       "whyTint": "tint white would flatten the orange field to black then invert it to a solid white square. Only tint marks that are already monochrome.",
+      "caption": "Y COMBINATOR",
+      "role": "THE FIRST BATCH",
       "accent": "#FF5A3C",
       "tone": "light"
     },
@@ -2363,6 +2308,30 @@
       "duck": false,
       "fadeIn": 0,
       "fadeOut": 0.12
+    },
+    {
+      "id": "amb_nb_1_1",
+      "src": "yc-sam-02/stock/pexels-video-37876540.mp4",
+      "role": "sfx",
+      "start": 5.41,
+      "offset": 0.6,
+      "duration": 2.05,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
+    },
+    {
+      "id": "amb_nb_1_2",
+      "src": "yc-sam-02/stock/pexels-video-6555612.mp4",
+      "role": "sfx",
+      "start": 7.61,
+      "offset": 0.6,
+      "duration": 3.0,
+      "gainDb": -26,
+      "duck": false,
+      "fadeIn": 0.25,
+      "fadeOut": 0.35
     },
     {
       "id": "vo0",
