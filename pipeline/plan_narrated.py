@@ -22,13 +22,35 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
+import subprocess
 import sys
 
-from .config import Project
+from .config import PUBLIC, Project
 from .profiles import Job, load_job
 
 FPS = 30
+
+
+def detect_silences(path, noise_db: float = -38, min_dur: float = 0.30) -> list[tuple[float, float]]:
+    """
+    Real silences in the audio, via ffmpeg silencedetect.
+
+    Word-gap detection is not enough: ASR frequently stretches a word's end time
+    across a following pause. In this clip "three" is timed as spanning
+    1.16-2.76s, hiding a 1.77s silence that is plainly audible. Only the waveform
+    knows where the dead air actually is.
+    """
+    out = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-i", str(path),
+         "-af", f"silencedetect=noise={noise_db}dB:d={min_dur}", "-f", "null", "-"],
+        capture_output=True, text=True,
+    ).stderr
+
+    starts = [float(m) for m in re.findall(r"silence_start:\s*([\d.]+)", out)]
+    ends = [float(m) for m in re.findall(r"silence_end:\s*([\d.]+)", out)]
+    return list(zip(starts, ends))
 
 
 def build(job: Job) -> dict:
@@ -61,6 +83,9 @@ def build(job: Job) -> dict:
     broll_shot = job.get("pacing.brollShotSeconds", 1.9)
     vo_gain = job.get("audio.voGainDb", 2)
     clip_gain = job.get("audio.clipGainDb", 0)
+    max_pause = job.get("pacing.maxPauseSeconds", 0.34)
+    silences = detect_silences(PUBLIC / aroll)
+    print(f"   {len(silences)} silence(s) detected in the source clip")
     focus_x = job.source.get("subjectFocusX", 0.5)
 
     # Framings come from the profile but are re-centred on this source's subject.
@@ -122,22 +147,67 @@ def build(job: Job) -> dict:
         t += dur + gap
         return start, t - gap
 
-    def place_clip(span: tuple[float, float]) -> tuple[float, float, float]:
-        nonlocal t
+    def compress_pauses(span: tuple[float, float]) -> list[tuple[float, float]]:
+        """
+        Split a passage at over-long silences, keeping only `max_pause` of each.
+
+        Speakers leave dead air that reads as hesitation on a short — this clip
+        has a 1.77s silence in the middle of "what took ... three months". A human
+        editor cuts those and nobody notices. Keeping a fraction rather than all
+        of it means the result still breathes instead of sounding clipped.
+        """
         s, e = span
-        shift = t - s
-        audio.append({
-            "id": f"clip{s:.0f}", "src": aroll, "role": "clip-audio",
-            "start": round(t, 3), "offset": round(s, 3), "duration": round(e - s, 3),
-            "gainDb": clip_gain, "duck": False, "fadeIn": 0.05, "fadeOut": 0.15,
-        })
-        for w in clip_words:
-            if s <= w["start"] < e:
-                words_out.append({"text": w["text"], "start": w["start"] + shift,
-                                  "end": w["end"] + shift, "voice": "clip"})
+        segs: list[tuple[float, float]] = []
+        cur = s
+        keep = max_pause / 2
+
+        for ss, se in silences:
+            if se <= s or ss >= e:
+                continue
+            ss, se = max(ss, s), min(se, e)
+            if se - ss <= max_pause:
+                continue
+            cut_from, cut_to = ss + keep, se - keep
+            if cut_to <= cur:
+                continue
+            segs.append((cur, cut_from))
+            cur = cut_to
+
+        segs.append((cur, e))
+        return [(a, b) for a, b in segs if b - a > 0.08]
+
+    def place_clip(span: tuple[float, float]) -> tuple[float, float, list[tuple]]:
+        """
+        Lay a passage down, minus its long pauses. Returns the sub-segment map so
+        beats authored in SOURCE time can be translated to timeline time.
+        """
+        nonlocal t
         start = t
-        t = e + shift
-        return start, t, shift
+        segments: list[tuple[float, float, float]] = []  # (src_a, src_b, shift)
+
+        for si, (s, e) in enumerate(compress_pauses(span)):
+            shift = t - s
+            audio.append({
+                "id": f"clip{s:.2f}".replace(".", "_"), "src": aroll, "role": "clip-audio",
+                "start": round(t, 3), "offset": round(s, 3), "duration": round(e - s, 3),
+                "gainDb": clip_gain, "duck": False,
+                # Short fades at each internal join so the splice isn't a click.
+                "fadeIn": 0.02 if si else 0.05, "fadeOut": 0.02,
+            })
+            for w in clip_words:
+                if s <= w["start"] < e:
+                    words_out.append({"text": w["text"], "start": w["start"] + shift,
+                                      "end": w["end"] + shift, "voice": "clip"})
+            segments.append((s, e, shift))
+            t = e + shift
+
+        return start, t, segments
+
+    def src_to_timeline(src_t: float, segments: list[tuple]) -> float | None:
+        for s, e, shift in segments:
+            if s <= src_t <= e:
+                return src_t + shift
+        return None
 
     def passage_scale(p: float) -> float:
         """
@@ -157,6 +227,11 @@ def build(job: Job) -> dict:
         import math
         breathe = 0.5 - 0.5 * math.cos(2 * math.pi * p * 1.5)
         return 1.03 + 0.07 * breathe + 0.09 * p
+
+    def fill_aroll_segments(segments: list[tuple], tag: str) -> None:
+        """Subdivide each sub-segment into shots, so cuts never span a splice."""
+        for si, (s, e, shift) in enumerate(segments):
+            fill_aroll(s + shift, e + shift, shift, f"{tag}{si}_")
 
     def fill_aroll(start: float, end: float, shift: float, tag: str) -> None:
         n = max(1, round((end - start) / aroll_shot))
@@ -180,7 +255,10 @@ def build(job: Job) -> dict:
         """
         if not assets:
             return
-        n = max(1, round((end - start) / broll_shot))
+        # Never repeat an asset inside one window — a repeat reads as running out
+        # of material even when the placement is right. If that means fewer, longer
+        # shots than the target cadence, take the longer shots.
+        n = max(1, min(round((end - start) / broll_shot), len(assets)))
         step = (end - start) / n
         for i in range(n):
             clips.append(broll_clip(
@@ -211,8 +289,8 @@ def build(job: Job) -> dict:
     passages = job.passages
     if not passages:
         raise SystemExit("job.source.passages is empty — nothing to cut")
-    a_s, a_e, a_shift = place_clip(passages[0])
-    fill_aroll(a_s, a_e, a_shift, "a")
+    a_s, a_e, a_segs = place_clip(passages[0])
+    fill_aroll_segments(a_segs, "a")
 
     # --- 3. narration reframes it --------------------------------------------
     v1s, v1e = place_vo(1)
@@ -228,12 +306,16 @@ def build(job: Job) -> dict:
 
     # --- 4. clip pays it off --------------------------------------------------
     if len(passages) > 1:
-        b_s, b_e, b_shift = place_clip(passages[1])
-        fill_aroll(b_s, b_e, b_shift, "b")
+        b_s, b_e, b_segs = place_clip(passages[1])
+        fill_aroll_segments(b_segs, "b")
 
         for i, beat in enumerate(beats_at("clip")):
-            s = beat["sourceStart"] + b_shift
-            e = beat["sourceEnd"] + b_shift
+            s = src_to_timeline(beat["sourceStart"], b_segs)
+            e = src_to_timeline(beat["sourceEnd"], b_segs)
+            if s is None or e is None:
+                print(f"  ! beat {i} ({beat.get('why', beat['type'])}) falls inside a "
+                      f"removed pause — skipped")
+                continue
             if beat["type"] == "broll":
                 clips[:] = [c for c in clips
                             if not (c["start"] >= s - 0.55 and c["end"] <= e + 0.55)]
@@ -246,12 +328,17 @@ def build(job: Job) -> dict:
     # --- 5. narration closes --------------------------------------------------
     v2s, v2e = place_vo(2)
     close = job.raw.get("closeBroll", [])
-    fill_broll(v2s, v2e - 1.2, close, "close")
-    if close:
-        # Hold the last shot under the end card — a cut beneath a subscribe
-        # prompt pulls the eye off the thing you're asking them to do.
-        clips.append(broll_clip("close_end", v2e - 1.2, v2e + 0.9, close[0],
+    has_end_card = bool(job.get("overlays.showEndCard") and job.get("endCard"))
+
+    if has_end_card and close:
+        # Hold one shot under the end card — a cut beneath a subscribe prompt
+        # pulls the eye off the thing you're asking them to do.
+        fill_broll(v2s, v2e - 1.2, close[:-1], "close")
+        clips.append(broll_clip("close_end", v2e - 1.2, v2e + 0.9, close[-1],
                                 offset=4.0, sf=1.0, st=1.12))
+    else:
+        # No end card, so nothing to hold for — b-roll runs to the last frame.
+        fill_broll(v2s, v2e + 0.9, close, "close")
 
     duration = round(v2e + 0.9, 3)
     clips.sort(key=lambda c: c["start"])

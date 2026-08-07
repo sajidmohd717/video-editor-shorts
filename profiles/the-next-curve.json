@@ -25,9 +25,16 @@
     "style": 0.0,
     "speakerBoost": false
   },
-  "endCard": {
-    "title": "THE NEXT CURVE",
-    "subtitle": "big ideas, clear direction"
+  "pacing": {
+    "comment": "handoffGap is deliberately short — narration answering the clip immediately reads as a reply rather than a scene change. maxPauseSeconds trims dead air inside the clip the way a human editor would.",
+    "handoffGapSeconds": 0.12,
+    "maxPauseSeconds": 0.34
+  },
+
+  "overlays": {
+    "comment": "No end card. A subscribe prompt at the tail costs the loop — a short that ends and restarts cleanly gets rewatches, and rewatch is worth more than the handful of subscribes an end card earns.",
+    "showEndCard": false,
+    "progress": "bar"
   },
   "editorial": {
     "note": "Distils moments from conversations, lectures and talks across tech, science, AI, startups and business. Every featured speaker and original source is credited.",

@@ -177,6 +177,54 @@ boosted it, so checking at high gain has to be routine rather than reactive.
 Both real defects in this session (this and F11) were found by the channel owner
 watching and listening, not by any measurement taken here.
 
+### F14 — Crop from the full-resolution source, never downscale first
+
+A-roll was extracted by scaling the 3840×2160 source to 1920×1080 and then
+cropping 9:16. That crop is only **607px wide** and has to be upscaled 1.78× to
+fill 1080 — visibly soft, and worse under a punch-in. Cropping from 2160p gives
+**1215px**, a slight downscale.
+
+**Applied:** extract `crop=1620:2160` around the subject from the 4K source, no
+prior scaling; `subjectFocusX` remaps to the cropped frame. **Status:** keep.
+Order of operations, not resolution, was the bug — the 4K source was there all
+along.
+
+**Rule:** crop first, scale last. Any 9:16 crop of a 16:9 source keeps only 32%
+of the width, so the source needs ~3.2× the target width to avoid upscaling.
+
+### F15 — Never repeat a b-roll asset within one short
+
+Reusing clips reads as running out of material even when each placement is
+right. Repeats crept in two ways: more shots than assets in a window, and a
+"hold the last shot" clip that reused `closeBroll[0]`.
+
+**Applied:** shot count in a window is capped at the number of available assets —
+fewer, longer shots beat a repeat. **Status:** keep. Budget ~10 distinct clips
+per 45s.
+
+### F16 — Detect silence in the audio, not gaps in word timings
+
+Pause compression built on word gaps found only 1.45s of dead air. The real
+figure was ~6.2s. ASR stretches a word's end time across a following pause — here
+"three" is timed as spanning 1.16–2.76s, hiding a **1.77s silence** that is
+plainly audible.
+
+**Applied:** `ffmpeg silencedetect`; passages split at silences over
+`maxPauseSeconds`, keeping half of it so the result breathes. Removed 3.6s and
+lifted narration share from 37% to 40%. **Status:** keep.
+
+**Rule:** word timings are for captions. For anything about the *audio*, measure
+the audio.
+
+### F17 — No end card
+
+A subscribe prompt at the tail costs the loop. A short that ends and restarts
+cleanly earns rewatches, and rewatch feeds the algorithm harder than the handful
+of subscribes an end card converts.
+
+**Applied:** `overlays.showEndCard: false`; b-roll now runs to the last frame.
+**Status:** untested against platform data — worth an A/B once there are numbers.
+
 ---
 
 ## Baseline measurements

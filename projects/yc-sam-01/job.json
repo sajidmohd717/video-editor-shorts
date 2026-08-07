@@ -13,7 +13,8 @@
       [0.0, 12.78],
       [25.08, 39.8]
     ],
-    "subjectFocusX": 0.72
+    "comment2": "aroll is cropped from the 3840x2160 source to 1620x2160 around the subject, NOT downscaled to 1080p first. A 9:16 crop from 1080p is only 607px wide and has to be upscaled 1.78x, which is visibly soft. From 2160p it is 1215px and downscales.",
+    "subjectFocusX": 0.5
   },
 
   "rights": {
@@ -24,16 +25,23 @@
     "note": "Short excerpts used as evidence for original commentary. Narration is the spine. Does not affect Content ID — the rights holder can still claim."
   },
 
+  "comment3": "Eleven distinct clips so no asset appears twice in the video. Repeats read as a shortage of material even when the placement is right.",
   "broll": {
     "vintage": "yc-sam-01/stock/pexels-video-12271136.mp4",
     "skyline": "yc-sam-01/stock/pexels-video-9921286.mp4",
     "robotics": "yc-sam-01/stock/pexels-video-8328143.mp4",
-    "datacenter": "yc-sam-01/stock/pexels-video-6755162.mp4",
-    "typing": "yc-sam-01/stock/pexels-video-12893579.mp4"
+    "circuit": "yc-sam-01/stock/pexels-video-6755162.mp4",
+    "typing": "yc-sam-01/stock/pexels-video-12893579.mp4",
+    "coder": "yc-sam-01/stock/pexels-video-35332006.mp4",
+    "team": "yc-sam-01/stock/pexels-video-8632480.mp4",
+    "dataflow": "yc-sam-01/stock/pexels-video-34337855.mp4",
+    "factory": "yc-sam-01/stock/pexels-video-38052461.mp4",
+    "towers": "yc-sam-01/stock/pexels-video-7065806.mp4",
+    "laptop": "yc-sam-01/stock/pexels-video-34771082.mp4"
   },
 
-  "openBroll": ["datacenter", "typing", "vintage", "robotics"],
-  "closeBroll": ["skyline", "typing", "robotics"],
+  "openBroll": ["dataflow", "coder", "vintage", "team"],
+  "closeBroll": ["towers", "laptop", "circuit", "typing"],
 
   "beats": [
     {
@@ -86,7 +94,7 @@
       "type": "broll",
       "sourceStart": 36.44,
       "sourceEnd": 37.7,
-      "asset": "datacenter",
+      "asset": "factory",
       "why": "these very hard technological things"
     }
   ]

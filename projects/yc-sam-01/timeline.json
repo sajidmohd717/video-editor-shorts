@@ -3,7 +3,7 @@
   "meta": {
     "title": "Three months of work. Now seven minutes.",
     "slug": "yc-sam-01",
-    "durationInSeconds": 45.89,
+    "durationInSeconds": 42.347,
     "fps": 30
   },
   "pacing": [
@@ -15,25 +15,25 @@
     },
     {
       "start": 6.85,
-      "end": 19.93,
+      "end": 17.058,
       "energy": 1.0,
       "label": "build"
     },
     {
-      "start": 19.93,
-      "end": 24.24,
+      "start": 17.058,
+      "end": 21.368,
       "energy": 0.4,
       "label": "hold"
     },
     {
-      "start": 24.24,
-      "end": 39.26,
+      "start": 21.368,
+      "end": 35.717,
       "energy": 1.2,
       "label": "payoff"
     },
     {
-      "start": 39.26,
-      "end": 45.89,
+      "start": 35.717,
+      "end": 42.347,
       "energy": 0.5,
       "label": "outro"
     }
@@ -42,12 +42,12 @@
     {
       "id": "open0",
       "start": 0.0,
-      "end": 1.787,
+      "end": 1.742,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-01/stock/pexels-video-6755162.mp4",
+          "src": "yc-sam-01/stock/pexels-video-34337855.mp4",
           "offset": 0.4,
           "focusX": 0.5,
           "focusY": 0.5,
@@ -70,13 +70,13 @@
     },
     {
       "id": "open1",
-      "start": 1.787,
-      "end": 3.575,
+      "start": 1.742,
+      "end": 3.485,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-01/stock/pexels-video-12893579.mp4",
+          "src": "yc-sam-01/stock/pexels-video-35332006.mp4",
           "offset": 0.4,
           "focusX": 0.5,
           "focusY": 0.5,
@@ -99,8 +99,8 @@
     },
     {
       "id": "open2",
-      "start": 3.575,
-      "end": 5.362,
+      "start": 3.485,
+      "end": 5.228,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -128,13 +128,13 @@
     },
     {
       "id": "open3",
-      "start": 5.362,
-      "end": 7.15,
+      "start": 5.228,
+      "end": 6.97,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-01/stock/pexels-video-8328143.mp4",
+          "src": "yc-sam-01/stock/pexels-video-8632480.mp4",
           "offset": 0.4,
           "focusX": 0.5,
           "focusY": 0.5,
@@ -156,16 +156,16 @@
       "transitionDuration": 0
     },
     {
-      "id": "a0",
-      "start": 7.15,
-      "end": 8.215,
+      "id": "a0_0",
+      "start": 6.97,
+      "end": 8.091,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 0.0,
-          "focusX": 0.72,
+          "focusX": 0.5,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,
@@ -176,7 +176,7 @@
       "camera": {
         "kind": "punch-in",
         "from": 1.03,
-        "to": 1.0478,
+        "to": 1.19,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -185,17 +185,17 @@
       "transitionDuration": 0
     },
     {
-      "id": "a1",
-      "start": 8.215,
-      "end": 9.28,
+      "id": "a1_0",
+      "start": 8.091,
+      "end": 9.448,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 1.065,
-          "focusX": 0.72,
-          "focusY": 0.34,
+          "offset": 2.554,
+          "focusX": 0.5,
+          "focusY": 0.42,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -204,8 +204,8 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.0478,
-        "to": 1.08,
+        "from": 1.03,
+        "to": 1.19,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -214,17 +214,17 @@
       "transitionDuration": 0
     },
     {
-      "id": "a2",
-      "start": 9.28,
-      "end": 10.345,
+      "id": "a2_0",
+      "start": 9.448,
+      "end": 10.439,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 2.13,
-          "focusX": 0.72,
-          "focusY": 0.48,
+          "offset": 4.291,
+          "focusX": 0.5,
+          "focusY": 0.42,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -233,7 +233,7 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.08,
+        "from": 1.03,
         "to": 1.1122,
         "originX": 0.5,
         "originY": 0.38
@@ -243,17 +243,17 @@
       "transitionDuration": 0
     },
     {
-      "id": "a3",
-      "start": 10.345,
-      "end": 11.41,
+      "id": "a2_1",
+      "start": 10.439,
+      "end": 11.431,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 3.195,
-          "focusX": 0.72,
-          "focusY": 0.4,
+          "offset": 5.283,
+          "focusX": 0.5,
+          "focusY": 0.34,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -263,64 +263,6 @@
       "camera": {
         "kind": "punch-in",
         "from": 1.1122,
-        "to": 1.13,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "a4",
-      "start": 11.41,
-      "end": 12.475,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 4.26,
-          "focusX": 0.72,
-          "focusY": 0.46,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.13,
-        "to": 1.1272,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "a5",
-      "start": 12.475,
-      "end": 13.54,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 5.325,
-          "focusX": 0.72,
-          "focusY": 0.42,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.1272,
         "to": 1.11,
         "originX": 0.5,
         "originY": 0.38
@@ -330,45 +272,16 @@
       "transitionDuration": 0
     },
     {
-      "id": "a6",
-      "start": 13.54,
-      "end": 14.605,
+      "id": "a2_2",
+      "start": 11.431,
+      "end": 12.423,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 6.39,
-          "focusX": 0.72,
-          "focusY": 0.34,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.11,
-        "to": 1.0928,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "a7",
-      "start": 14.605,
-      "end": 15.67,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 7.455,
-          "focusX": 0.72,
+          "offset": 6.274,
+          "focusX": 0.5,
           "focusY": 0.48,
           "panX": 0,
           "panY": 0,
@@ -378,36 +291,7 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.0928,
-        "to": 1.09,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "a8",
-      "start": 15.67,
-      "end": 16.735,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 8.52,
-          "focusX": 0.72,
-          "focusY": 0.4,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.09,
+        "from": 1.11,
         "to": 1.1078,
         "originX": 0.5,
         "originY": 0.38
@@ -417,17 +301,17 @@
       "transitionDuration": 0
     },
     {
-      "id": "a9",
-      "start": 16.735,
-      "end": 17.8,
+      "id": "a2_3",
+      "start": 12.423,
+      "end": 13.415,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 9.585,
-          "focusX": 0.72,
-          "focusY": 0.46,
+          "offset": 7.266,
+          "focusX": 0.5,
+          "focusY": 0.4,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -437,7 +321,7 @@
       "camera": {
         "kind": "punch-in",
         "from": 1.1078,
-        "to": 1.14,
+        "to": 1.19,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -446,16 +330,16 @@
       "transitionDuration": 0
     },
     {
-      "id": "a10",
-      "start": 17.8,
-      "end": 18.865,
+      "id": "a3_0",
+      "start": 13.415,
+      "end": 14.572,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 10.65,
-          "focusX": 0.72,
+          "offset": 8.387,
+          "focusX": 0.5,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,
@@ -465,8 +349,8 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.14,
-        "to": 1.1722,
+        "from": 1.03,
+        "to": 1.13,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -475,16 +359,16 @@
       "transitionDuration": 0
     },
     {
-      "id": "a11",
-      "start": 18.865,
-      "end": 19.93,
+      "id": "a3_1",
+      "start": 14.572,
+      "end": 15.73,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 11.715,
-          "focusX": 0.72,
+          "offset": 9.545,
+          "focusX": 0.5,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -494,7 +378,65 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.1722,
+        "from": 1.13,
+        "to": 1.09,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "a3_2",
+      "start": 15.73,
+      "end": 16.888,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-01/aroll.mp4",
+          "offset": 10.702,
+          "focusX": 0.5,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.09,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "a4_0",
+      "start": 16.888,
+      "end": 17.058,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-01/aroll.mp4",
+          "offset": 12.61,
+          "focusX": 0.5,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
         "to": 1.19,
         "originX": 0.5,
         "originY": 0.38
@@ -505,8 +447,8 @@
     },
     {
       "id": "vo1bg",
-      "start": 19.93,
-      "end": 24.54,
+      "start": 17.058,
+      "end": 21.488,
       "layout": "graphic",
       "background": "#E9E9EC",
       "sources": [],
@@ -522,16 +464,16 @@
       "transitionDuration": 0
     },
     {
-      "id": "b0",
-      "start": 24.54,
-      "end": 25.672,
+      "id": "b0_0",
+      "start": 21.488,
+      "end": 22.451,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 25.08,
-          "focusX": 0.72,
+          "focusX": 0.5,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,
@@ -542,7 +484,7 @@
       "camera": {
         "kind": "punch-in",
         "from": 1.03,
-        "to": 1.0457,
+        "to": 1.11,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -551,16 +493,16 @@
       "transitionDuration": 0
     },
     {
-      "id": "b1",
-      "start": 25.672,
-      "end": 26.805,
+      "id": "b0_1",
+      "start": 22.451,
+      "end": 23.413,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 26.212,
-          "focusX": 0.72,
+          "offset": 26.043,
+          "focusX": 0.5,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -570,8 +512,8 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.0457,
-        "to": 1.0746,
+        "from": 1.11,
+        "to": 1.19,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -580,17 +522,17 @@
       "transitionDuration": 0
     },
     {
-      "id": "b2",
-      "start": 26.805,
-      "end": 27.937,
+      "id": "b1_0",
+      "start": 23.413,
+      "end": 24.729,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 27.345,
-          "focusX": 0.72,
-          "focusY": 0.48,
+          "offset": 27.093,
+          "focusX": 0.5,
+          "focusY": 0.42,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -599,8 +541,8 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.0746,
-        "to": 1.1057,
+        "from": 1.03,
+        "to": 1.11,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -609,17 +551,17 @@
       "transitionDuration": 0
     },
     {
-      "id": "b3",
-      "start": 27.937,
-      "end": 29.069,
+      "id": "b1_1",
+      "start": 24.729,
+      "end": 26.044,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 28.477,
-          "focusX": 0.72,
-          "focusY": 0.4,
+          "offset": 28.408,
+          "focusX": 0.5,
+          "focusY": 0.34,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -628,8 +570,8 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.1057,
-        "to": 1.1267,
+        "from": 1.11,
+        "to": 1.19,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -638,17 +580,17 @@
       "transitionDuration": 0
     },
     {
-      "id": "b4",
-      "start": 29.069,
-      "end": 30.202,
+      "id": "b2_0",
+      "start": 26.044,
+      "end": 27.264,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 29.609,
-          "focusX": 0.72,
-          "focusY": 0.46,
+          "offset": 29.797,
+          "focusX": 0.5,
+          "focusY": 0.42,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -657,8 +599,8 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.1267,
-        "to": 1.1306,
+        "from": 1.03,
+        "to": 1.13,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -668,8 +610,8 @@
     },
     {
       "id": "nb0",
-      "start": 30.21,
-      "end": 31.8,
+      "start": 26.997,
+      "end": 28.587,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -696,45 +638,16 @@
       "transitionDuration": 0
     },
     {
-      "id": "b6",
-      "start": 31.334,
-      "end": 32.466,
+      "id": "b2_2",
+      "start": 28.484,
+      "end": 29.704,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 31.874,
-          "focusX": 0.72,
-          "focusY": 0.34,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.1189,
-        "to": 1.1011,
-        "originX": 0.5,
-        "originY": 0.38
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "b7",
-      "start": 32.466,
-      "end": 33.598,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "yc-sam-01/aroll.mp4",
-          "offset": 33.006,
-          "focusX": 0.72,
+          "offset": 32.237,
+          "focusX": 0.5,
           "focusY": 0.48,
           "panX": 0,
           "panY": 0,
@@ -744,8 +657,8 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.1011,
-        "to": 1.0894,
+        "from": 1.09,
+        "to": 1.19,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -755,8 +668,8 @@
     },
     {
       "id": "nb1",
-      "start": 33.14,
-      "end": 34.36,
+      "start": 29.867,
+      "end": 31.087,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -783,17 +696,17 @@
       "transitionDuration": 0
     },
     {
-      "id": "b9",
-      "start": 34.731,
-      "end": 35.863,
+      "id": "b3_2",
+      "start": 31.555,
+      "end": 32.481,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 35.271,
-          "focusX": 0.72,
-          "focusY": 0.46,
+          "offset": 35.368,
+          "focusX": 0.5,
+          "focusY": 0.48,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -802,8 +715,8 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.0933,
-        "to": 1.1143,
+        "from": 1.09,
+        "to": 1.19,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -813,13 +726,13 @@
     },
     {
       "id": "nb2",
-      "start": 35.9,
-      "end": 37.16,
+      "start": 32.559,
+      "end": 33.819,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-01/stock/pexels-video-6755162.mp4",
+          "src": "yc-sam-01/stock/pexels-video-38052461.mp4",
           "offset": 0.6,
           "focusX": 0.5,
           "focusY": 0.5,
@@ -841,16 +754,16 @@
       "transitionDuration": 0
     },
     {
-      "id": "b11",
-      "start": 36.995,
-      "end": 38.128,
+      "id": "b4_1",
+      "start": 33.699,
+      "end": 34.917,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 37.535,
-          "focusX": 0.72,
+          "offset": 37.58,
+          "focusX": 0.5,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -860,8 +773,8 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.1454,
-        "to": 1.1743,
+        "from": 1.11,
+        "to": 1.19,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -870,17 +783,17 @@
       "transitionDuration": 0
     },
     {
-      "id": "b12",
-      "start": 38.128,
-      "end": 39.26,
+      "id": "b5_0",
+      "start": 34.917,
+      "end": 35.717,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 38.668,
-          "focusX": 0.72,
-          "focusY": 0.48,
+          "offset": 39.001,
+          "focusX": 0.5,
+          "focusY": 0.42,
           "panX": 0,
           "panY": 0,
           "scale": 1,
@@ -889,7 +802,7 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.1743,
+        "from": 1.03,
         "to": 1.19,
         "originX": 0.5,
         "originY": 0.38
@@ -900,13 +813,13 @@
     },
     {
       "id": "close0",
-      "start": 39.26,
-      "end": 41.525,
+      "start": 35.717,
+      "end": 37.927,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-01/stock/pexels-video-9921286.mp4",
+          "src": "yc-sam-01/stock/pexels-video-7065806.mp4",
           "offset": 0.4,
           "focusX": 0.5,
           "focusY": 0.5,
@@ -929,13 +842,13 @@
     },
     {
       "id": "close1",
-      "start": 41.525,
-      "end": 43.79,
+      "start": 37.927,
+      "end": 40.137,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-01/stock/pexels-video-12893579.mp4",
+          "src": "yc-sam-01/stock/pexels-video-34771082.mp4",
           "offset": 0.4,
           "focusX": 0.5,
           "focusY": 0.5,
@@ -957,15 +870,15 @@
       "transitionDuration": 0
     },
     {
-      "id": "close_end",
-      "start": 43.79,
-      "end": 45.89,
+      "id": "close2",
+      "start": 40.137,
+      "end": 42.347,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
-          "src": "yc-sam-01/stock/pexels-video-9921286.mp4",
-          "offset": 4.0,
+          "src": "yc-sam-01/stock/pexels-video-6755162.mp4",
+          "offset": 0.4,
           "focusX": 0.5,
           "focusY": 0.5,
           "panX": 0,
@@ -976,8 +889,8 @@
       ],
       "camera": {
         "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.12,
+        "from": 1.08,
+        "to": 1.1800000000000002,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -1012,8 +925,8 @@
     {
       "type": "comparison",
       "id": "vo1_ov0",
-      "start": 20.03,
-      "end": 24.54,
+      "start": 17.158,
+      "end": 21.488,
       "z": 55,
       "beforeLabel": "Then",
       "beforeValue": "3 months",
@@ -1027,7 +940,7 @@
       "type": "chrome",
       "id": "bug",
       "start": 0,
-      "end": 45.89,
+      "end": 42.347,
       "z": 85,
       "bug": "THE NEXT CURVE",
       "tone": "light"
@@ -1036,19 +949,9 @@
       "type": "progress",
       "id": "prog",
       "start": 0,
-      "end": 45.89,
+      "end": 42.347,
       "z": 95,
       "style": "bar"
-    },
-    {
-      "type": "end-card",
-      "id": "end",
-      "start": 44.59,
-      "end": 45.89,
-      "z": 92,
-      "title": "THE NEXT CURVE",
-      "subtitle": "big ideas, clear direction",
-      "handle": "@thenextcurv3"
     }
   ],
   "captions": {
@@ -1219,7 +1122,7 @@
       },
       {
         "start": 6.1,
-        "end": 7.05,
+        "end": 6.97,
         "emphasis": "none",
         "words": [
           {
@@ -1235,1038 +1138,1021 @@
         ]
       },
       {
-        "start": 7.15,
-        "end": 7.75,
+        "start": 6.97,
+        "end": 7.57,
         "emphasis": "none",
         "words": [
           {
             "text": "You",
-            "start": 7.15,
-            "end": 7.35
+            "start": 6.97,
+            "end": 7.17
           },
           {
             "text": "know",
-            "start": 7.35,
-            "end": 7.75
+            "start": 7.17,
+            "end": 7.57
           }
         ]
       },
       {
-        "start": 7.75,
-        "end": 8.31,
+        "start": 7.57,
+        "end": 8.297,
         "emphasis": "none",
         "words": [
           {
             "text": "what",
-            "start": 7.75,
-            "end": 8.03
+            "start": 7.57,
+            "end": 7.85
           },
           {
             "text": "took",
-            "start": 8.03,
-            "end": 8.31
+            "start": 7.85,
+            "end": 8.13
           }
         ]
       },
       {
-        "start": 8.31,
-        "end": 10.52,
+        "start": 8.297,
+        "end": 9.217,
         "emphasis": "color",
         "words": [
           {
-            "text": "three",
-            "start": 8.31,
-            "end": 9.91
-          },
-          {
             "text": "months",
-            "start": 9.91,
-            "end": 10.52
-          }
-        ]
-      },
-      {
-        "start": 10.52,
-        "end": 11.63,
-        "emphasis": "none",
-        "words": [
+            "start": 8.297,
+            "end": 8.907
+          },
           {
             "text": "to",
-            "start": 10.52,
-            "end": 10.83
-          },
+            "start": 8.907,
+            "end": 9.217
+          }
+        ]
+      },
+      {
+        "start": 9.217,
+        "end": 9.777,
+        "emphasis": "none",
+        "words": [
           {
             "text": "build",
-            "start": 10.83,
-            "end": 11.63
-          }
-        ]
-      },
-      {
-        "start": 11.63,
-        "end": 12.15,
-        "emphasis": "none",
-        "words": [
+            "start": 9.217,
+            "end": 10.017
+          },
           {
             "text": "at",
-            "start": 11.63,
-            "end": 11.77
-          },
-          {
-            "text": "the",
-            "start": 11.77,
-            "end": 11.96
+            "start": 9.637,
+            "end": 9.777
           }
         ]
       },
       {
-        "start": 12.15,
-        "end": 12.83,
+        "start": 9.777,
+        "end": 10.627,
         "emphasis": "none",
         "words": [
+          {
+            "text": "the",
+            "start": 9.777,
+            "end": 9.967
+          },
           {
             "text": "time\u2014that",
-            "start": 12.15,
-            "end": 12.62
-          },
+            "start": 10.157,
+            "end": 10.627
+          }
+        ]
+      },
+      {
+        "start": 10.627,
+        "end": 11.467,
+        "emphasis": "none",
+        "words": [
           {
             "text": "each",
-            "start": 12.62,
-            "end": 12.83
-          }
-        ]
-      },
-      {
-        "start": 12.83,
-        "end": 13.86,
-        "emphasis": "none",
-        "words": [
+            "start": 10.627,
+            "end": 10.837
+          },
           {
             "text": "company",
-            "start": 12.83,
-            "end": 13.46
-          },
+            "start": 10.837,
+            "end": 11.467
+          }
+        ]
+      },
+      {
+        "start": 11.467,
+        "end": 12.227,
+        "emphasis": "none",
+        "words": [
           {
             "text": "built",
-            "start": 13.46,
-            "end": 13.86
-          }
-        ]
-      },
-      {
-        "start": 13.86,
-        "end": 14.45,
-        "emphasis": "none",
-        "words": [
+            "start": 11.467,
+            "end": 11.867
+          },
           {
             "text": "over",
-            "start": 13.86,
-            "end": 14.22
-          },
-          {
-            "text": "the",
-            "start": 14.22,
-            "end": 14.45
+            "start": 11.867,
+            "end": 12.227
           }
         ]
       },
       {
-        "start": 14.45,
-        "end": 15.5,
+        "start": 12.227,
+        "end": 13.037,
         "emphasis": "none",
         "words": [
           {
-            "text": "whole",
-            "start": 14.45,
-            "end": 14.89
+            "text": "the",
+            "start": 12.227,
+            "end": 12.457
           },
           {
-            "text": "YC",
-            "start": 15.03,
-            "end": 15.05
+            "text": "whole",
+            "start": 12.457,
+            "end": 12.897
           }
         ]
       },
       {
-        "start": 15.71,
-        "end": 16.42,
+        "start": 13.037,
+        "end": 13.507,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "YC",
+            "start": 13.037,
+            "end": 13.057
+          }
+        ]
+      },
+      {
+        "start": 13.588,
+        "end": 14.298,
         "emphasis": "none",
         "words": [
           {
             "text": "startup\u2014could",
-            "start": 15.71,
-            "end": 16.15
+            "start": 13.588,
+            "end": 14.028
           },
           {
             "text": "now",
-            "start": 16.15,
-            "end": 16.42
+            "start": 14.028,
+            "end": 14.298
           }
         ]
       },
       {
-        "start": 16.42,
-        "end": 16.97,
+        "start": 14.298,
+        "end": 14.848,
         "emphasis": "none",
         "words": [
           {
             "text": "be",
-            "start": 16.42,
-            "end": 16.61
+            "start": 14.298,
+            "end": 14.488
           },
           {
             "text": "done",
-            "start": 16.61,
-            "end": 16.97
+            "start": 14.488,
+            "end": 14.848
           }
         ]
       },
       {
-        "start": 16.97,
-        "end": 17.39,
+        "start": 14.848,
+        "end": 15.268,
         "emphasis": "none",
         "words": [
           {
             "text": "in",
-            "start": 16.97,
-            "end": 17.11
+            "start": 14.848,
+            "end": 14.988
           },
           {
             "text": "like",
-            "start": 17.11,
-            "end": 17.39
+            "start": 14.988,
+            "end": 15.268
           }
         ]
       },
       {
-        "start": 17.39,
-        "end": 18.27,
+        "start": 15.268,
+        "end": 16.148,
         "emphasis": "color",
         "words": [
           {
             "text": "seven",
-            "start": 17.39,
-            "end": 17.75
+            "start": 15.268,
+            "end": 15.628
           },
           {
             "text": "minutes",
-            "start": 17.75,
-            "end": 18.27
+            "start": 15.628,
+            "end": 16.148
           }
         ]
       },
       {
-        "start": 18.27,
-        "end": 18.61,
+        "start": 16.148,
+        "end": 16.488,
         "emphasis": "none",
         "words": [
           {
             "text": "by",
-            "start": 18.27,
-            "end": 18.5
+            "start": 16.148,
+            "end": 16.378
           },
           {
             "text": "a",
-            "start": 18.5,
-            "end": 18.61
+            "start": 16.378,
+            "end": 16.488
           }
         ]
       },
       {
-        "start": 18.61,
-        "end": 19.93,
+        "start": 16.488,
+        "end": 17.058,
         "emphasis": "none",
         "words": [
           {
             "text": "coding",
-            "start": 18.61,
-            "end": 19.93
+            "start": 16.488,
+            "end": 17.808
           }
         ]
       },
       {
-        "start": 19.93,
-        "end": 20.37,
+        "start": 17.058,
+        "end": 17.498,
         "emphasis": "color",
         "words": [
           {
             "text": "Three",
-            "start": 19.93,
-            "end": 20.13
+            "start": 17.058,
+            "end": 17.258
           },
           {
             "text": "months,",
-            "start": 20.13,
-            "end": 20.37
+            "start": 17.258,
+            "end": 17.498
           }
         ]
       },
       {
-        "start": 20.37,
-        "end": 20.85,
+        "start": 17.498,
+        "end": 17.978,
         "emphasis": "none",
         "words": [
           {
             "text": "down",
-            "start": 20.37,
-            "end": 20.71
+            "start": 17.498,
+            "end": 17.838
           },
           {
             "text": "to",
-            "start": 20.71,
-            "end": 20.85
+            "start": 17.838,
+            "end": 17.978
           }
         ]
       },
       {
-        "start": 20.85,
-        "end": 21.54,
+        "start": 17.978,
+        "end": 18.668,
         "emphasis": "color",
         "words": [
           {
             "text": "seven.",
-            "start": 20.85,
-            "end": 21.09
+            "start": 17.978,
+            "end": 18.218
           }
         ]
       },
       {
-        "start": 21.61,
-        "end": 22.01,
+        "start": 18.738,
+        "end": 19.138,
         "emphasis": "none",
         "words": [
           {
             "text": "That",
-            "start": 21.61,
-            "end": 21.75
+            "start": 18.738,
+            "end": 18.878
           },
           {
             "text": "isn't",
-            "start": 21.75,
-            "end": 22.01
+            "start": 18.878,
+            "end": 19.138
           }
         ]
       },
       {
-        "start": 22.01,
-        "end": 22.43,
+        "start": 19.138,
+        "end": 19.558,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 22.01,
-            "end": 22.07
+            "start": 19.138,
+            "end": 19.198
           },
           {
             "text": "productivity",
-            "start": 22.07,
-            "end": 22.43
+            "start": 19.198,
+            "end": 19.558
           }
         ]
       },
       {
-        "start": 22.43,
-        "end": 23.27,
+        "start": 19.558,
+        "end": 20.398,
         "emphasis": "none",
         "words": [
           {
             "text": "gain.",
-            "start": 22.43,
-            "end": 22.89
+            "start": 19.558,
+            "end": 20.018
           }
         ]
       },
       {
-        "start": 23.27,
-        "end": 23.51,
+        "start": 20.398,
+        "end": 20.638,
         "emphasis": "none",
         "words": [
           {
             "text": "That's",
-            "start": 23.27,
-            "end": 23.41
+            "start": 20.398,
+            "end": 20.538
           },
           {
             "text": "the",
-            "start": 23.41,
-            "end": 23.51
+            "start": 20.538,
+            "end": 20.638
           }
         ]
       },
       {
-        "start": 23.51,
-        "end": 24.44,
+        "start": 20.638,
+        "end": 21.488,
         "emphasis": "color",
         "words": [
           {
             "text": "floor",
-            "start": 23.51,
-            "end": 23.71
+            "start": 20.638,
+            "end": 20.838
           },
           {
             "text": "moving.",
-            "start": 23.71,
-            "end": 23.99
+            "start": 20.838,
+            "end": 21.118
           }
         ]
       },
       {
-        "start": 24.54,
-        "end": 24.76,
+        "start": 21.488,
+        "end": 21.708,
         "emphasis": "none",
         "words": [
           {
             "text": "I",
-            "start": 24.54,
-            "end": 24.55
+            "start": 21.488,
+            "end": 21.498
           },
           {
             "text": "think",
-            "start": 24.55,
-            "end": 24.76
+            "start": 21.498,
+            "end": 21.708
           }
         ]
       },
       {
-        "start": 24.76,
-        "end": 25.11,
+        "start": 21.708,
+        "end": 22.058,
         "emphasis": "none",
         "words": [
           {
             "text": "you",
-            "start": 24.76,
-            "end": 24.89
+            "start": 21.708,
+            "end": 21.838
           },
           {
             "text": "could",
-            "start": 24.89,
-            "end": 25.11
+            "start": 21.838,
+            "end": 22.058
           }
         ]
       },
       {
-        "start": 25.11,
-        "end": 25.47,
+        "start": 22.058,
+        "end": 22.418,
         "emphasis": "none",
         "words": [
           {
             "text": "either",
-            "start": 25.11,
-            "end": 25.38
+            "start": 22.058,
+            "end": 22.328
           },
           {
             "text": "be",
-            "start": 25.38,
-            "end": 25.47
+            "start": 22.328,
+            "end": 22.418
           }
         ]
       },
       {
-        "start": 25.47,
-        "end": 25.92,
+        "start": 22.418,
+        "end": 22.868,
         "emphasis": "none",
         "words": [
           {
             "text": "sad",
-            "start": 25.47,
-            "end": 25.66
+            "start": 22.418,
+            "end": 22.608
           },
           {
             "text": "and",
-            "start": 25.66,
-            "end": 25.92
+            "start": 22.608,
+            "end": 22.868
           }
         ]
       },
       {
-        "start": 25.92,
-        "end": 26.29,
+        "start": 22.868,
+        "end": 23.238,
         "emphasis": "none",
         "words": [
           {
             "text": "be",
-            "start": 25.92,
-            "end": 25.96
+            "start": 22.868,
+            "end": 22.908
           },
           {
             "text": "like,",
-            "start": 25.96,
-            "end": 26.19
+            "start": 22.908,
+            "end": 23.138
           }
         ]
       },
       {
-        "start": 26.29,
-        "end": 26.98,
+        "start": 23.238,
+        "end": 23.841,
         "emphasis": "none",
         "words": [
           {
             "text": "\u2018Oh",
-            "start": 26.29,
-            "end": 26.6
+            "start": 23.238,
+            "end": 23.548
           },
           {
             "text": "man,",
-            "start": 26.6,
-            "end": 26.72
+            "start": 23.461,
+            "end": 23.581
           }
         ]
       },
       {
-        "start": 26.98,
-        "end": 27.41,
+        "start": 23.841,
+        "end": 24.271,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 26.98,
-            "end": 27.05
+            "start": 23.841,
+            "end": 23.911
           },
           {
             "text": "Codex",
-            "start": 27.05,
-            "end": 27.29
+            "start": 23.911,
+            "end": 24.151
           }
         ]
       },
       {
-        "start": 27.41,
-        "end": 27.84,
+        "start": 24.271,
+        "end": 24.701,
         "emphasis": "none",
         "words": [
           {
             "text": "prompt",
-            "start": 27.41,
-            "end": 27.7
+            "start": 24.271,
+            "end": 24.561
           },
           {
             "text": "is",
-            "start": 27.72,
-            "end": 27.84
+            "start": 24.581,
+            "end": 24.701
           }
         ]
       },
       {
-        "start": 27.84,
-        "end": 28.11,
+        "start": 24.701,
+        "end": 24.971,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 27.84,
-            "end": 27.85
+            "start": 24.701,
+            "end": 24.711
           },
           {
             "text": "whole",
-            "start": 27.85,
-            "end": 28.11
+            "start": 24.711,
+            "end": 24.971
           }
         ]
       },
       {
-        "start": 28.11,
-        "end": 28.58,
+        "start": 24.971,
+        "end": 25.441,
         "emphasis": "none",
         "words": [
           {
             "text": "startup,\u2019",
-            "start": 28.11,
-            "end": 28.48
+            "start": 24.971,
+            "end": 25.341
           }
         ]
       },
       {
-        "start": 28.58,
-        "end": 28.84,
+        "start": 25.441,
+        "end": 25.701,
         "emphasis": "none",
         "words": [
           {
             "text": "or",
-            "start": 28.58,
-            "end": 28.68
+            "start": 25.441,
+            "end": 25.541
           },
           {
             "text": "you",
-            "start": 28.68,
-            "end": 28.84
+            "start": 25.541,
+            "end": 25.701
           }
         ]
       },
       {
-        "start": 28.84,
-        "end": 29.42,
+        "start": 25.701,
+        "end": 26.247,
         "emphasis": "none",
         "words": [
           {
             "text": "could",
-            "start": 28.84,
-            "end": 29.2
+            "start": 25.701,
+            "end": 26.061
           },
           {
-            "text": "be",
-            "start": 29.2,
-            "end": 29.42
-          }
-        ]
-      },
-      {
-        "start": 29.42,
-        "end": 29.46,
-        "emphasis": "none",
-        "words": [
-          {
             "text": "like,",
-            "start": 29.42,
-            "end": 29.46
+            "start": 26.207,
+            "end": 26.247
           }
         ]
       },
       {
-        "start": 29.46,
-        "end": 29.67,
+        "start": 26.247,
+        "end": 26.457,
         "emphasis": "none",
         "words": [
           {
             "text": "\u2018I",
-            "start": 29.46,
-            "end": 29.51
+            "start": 26.247,
+            "end": 26.297
           },
           {
             "text": "can",
-            "start": 29.51,
-            "end": 29.67
+            "start": 26.297,
+            "end": 26.457
           }
         ]
       },
       {
-        "start": 29.67,
-        "end": 30.05,
+        "start": 26.457,
+        "end": 26.837,
         "emphasis": "none",
         "words": [
           {
             "text": "go",
-            "start": 29.67,
-            "end": 29.78
+            "start": 26.457,
+            "end": 26.567
           },
           {
             "text": "start",
-            "start": 29.78,
-            "end": 30.05
+            "start": 26.567,
+            "end": 26.837
           }
         ]
       },
       {
-        "start": 30.05,
-        "end": 30.59,
+        "start": 26.837,
+        "end": 27.377,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 30.05,
-            "end": 30.21
+            "start": 26.837,
+            "end": 26.997
           },
           {
             "text": "world's",
-            "start": 30.21,
-            "end": 30.57
+            "start": 26.997,
+            "end": 27.357
           }
         ]
       },
       {
-        "start": 30.59,
-        "end": 31.51,
+        "start": 27.377,
+        "end": 28.297,
         "emphasis": "none",
         "words": [
           {
             "text": "most",
-            "start": 30.59,
-            "end": 30.82
+            "start": 27.377,
+            "end": 27.607
           },
           {
             "text": "ambitious,",
-            "start": 30.82,
-            "end": 31.29
+            "start": 27.607,
+            "end": 28.077
           }
         ]
       },
       {
-        "start": 31.51,
-        "end": 32.18,
+        "start": 28.297,
+        "end": 28.967,
         "emphasis": "none",
         "words": [
           {
             "text": "crazy",
-            "start": 31.51,
-            "end": 31.8
+            "start": 28.297,
+            "end": 28.587
           },
           {
             "text": "company.",
-            "start": 31.8,
-            "end": 32.18
+            "start": 28.587,
+            "end": 28.967
           }
         ]
       },
       {
-        "start": 32.18,
-        "end": 32.44,
+        "start": 28.967,
+        "end": 29.227,
         "emphasis": "none",
         "words": [
           {
             "text": "I",
-            "start": 32.18,
-            "end": 32.28
+            "start": 28.967,
+            "end": 29.067
           },
           {
             "text": "can",
-            "start": 32.28,
-            "end": 32.44
+            "start": 29.067,
+            "end": 29.227
           }
         ]
       },
       {
-        "start": 32.44,
-        "end": 33.06,
+        "start": 29.227,
+        "end": 29.847,
         "emphasis": "none",
         "words": [
           {
             "text": "have",
-            "start": 32.44,
-            "end": 32.61
+            "start": 29.227,
+            "end": 29.397
           }
         ]
       },
       {
-        "start": 33.14,
-        "end": 33.31,
+        "start": 29.867,
+        "end": 30.037,
         "emphasis": "none",
         "words": [
           {
             "text": "experts",
-            "start": 33.14,
-            "end": 33.21
+            "start": 29.867,
+            "end": 29.937
           },
           {
             "text": "in",
-            "start": 33.21,
-            "end": 33.31
+            "start": 29.937,
+            "end": 30.037
           }
         ]
       },
       {
-        "start": 33.31,
-        "end": 33.86,
+        "start": 30.037,
+        "end": 30.587,
         "emphasis": "none",
         "words": [
           {
             "text": "every",
-            "start": 33.31,
-            "end": 33.64
+            "start": 30.037,
+            "end": 30.367
           },
           {
             "text": "field",
-            "start": 33.64,
-            "end": 33.86
+            "start": 30.367,
+            "end": 30.587
           }
         ]
       },
       {
-        "start": 33.86,
-        "end": 34.9,
+        "start": 30.587,
+        "end": 31.627,
         "emphasis": "none",
         "words": [
           {
             "text": "working",
-            "start": 33.86,
-            "end": 34.24
+            "start": 30.587,
+            "end": 30.967
           },
           {
             "text": "together.",
-            "start": 34.24,
-            "end": 34.69
+            "start": 30.967,
+            "end": 31.417
           }
         ]
       },
       {
-        "start": 34.9,
-        "end": 35.18,
+        "start": 31.627,
+        "end": 31.907,
         "emphasis": "none",
         "words": [
           {
             "text": "I",
-            "start": 34.9,
-            "end": 34.99
+            "start": 31.627,
+            "end": 31.717
           },
           {
             "text": "can",
-            "start": 34.99,
-            "end": 35.18
+            "start": 31.717,
+            "end": 31.907
           }
         ]
       },
       {
-        "start": 35.18,
-        "end": 35.9,
+        "start": 31.907,
+        "end": 32.559,
         "emphasis": "none",
         "words": [
           {
             "text": "do",
-            "start": 35.18,
-            "end": 35.29
+            "start": 31.907,
+            "end": 32.017
           },
           {
             "text": "these",
-            "start": 35.29,
-            "end": 35.9
+            "start": 32.017,
+            "end": 32.627
           }
         ]
       },
       {
-        "start": 35.9,
-        "end": 36.17,
+        "start": 32.559,
+        "end": 32.829,
         "emphasis": "none",
         "words": [
           {
             "text": "very",
-            "start": 35.9,
-            "end": 35.99
+            "start": 32.559,
+            "end": 32.649
           },
           {
             "text": "hard",
-            "start": 35.99,
-            "end": 36.17
+            "start": 32.649,
+            "end": 32.829
           }
         ]
       },
       {
-        "start": 36.17,
-        "end": 37.34,
+        "start": 32.829,
+        "end": 33.999,
         "emphasis": "none",
         "words": [
           {
             "text": "technological",
-            "start": 36.17,
-            "end": 37.12
+            "start": 32.829,
+            "end": 33.779
           },
           {
             "text": "things",
-            "start": 37.12,
-            "end": 37.34
+            "start": 33.779,
+            "end": 33.999
           }
         ]
       },
       {
-        "start": 37.34,
-        "end": 38.02,
+        "start": 33.999,
+        "end": 34.679,
         "emphasis": "none",
         "words": [
           {
             "text": "that",
-            "start": 37.34,
-            "end": 37.72
+            "start": 33.999,
+            "end": 34.379
           },
           {
             "text": "were",
-            "start": 37.72,
-            "end": 38.02
+            "start": 34.379,
+            "end": 34.679
           }
         ]
       },
       {
-        "start": 38.02,
-        "end": 39.26,
+        "start": 34.679,
+        "end": 35.717,
         "emphasis": "color",
         "words": [
           {
             "text": "just",
-            "start": 38.02,
-            "end": 38.64
+            "start": 34.679,
+            "end": 35.299
           },
           {
             "text": "impossible.\u2019",
-            "start": 38.64,
-            "end": 39.23
+            "start": 35.097,
+            "end": 35.687
           }
         ]
       },
       {
-        "start": 39.26,
-        "end": 39.58,
+        "start": 35.717,
+        "end": 36.037,
         "emphasis": "none",
         "words": [
           {
             "text": "So",
-            "start": 39.26,
-            "end": 39.46
+            "start": 35.717,
+            "end": 35.917
           },
           {
             "text": "the",
-            "start": 39.46,
-            "end": 39.58
+            "start": 35.917,
+            "end": 36.037
           }
         ]
       },
       {
-        "start": 39.58,
-        "end": 40.14,
+        "start": 36.037,
+        "end": 36.597,
         "emphasis": "none",
         "words": [
           {
             "text": "real",
-            "start": 39.58,
-            "end": 39.78
+            "start": 36.037,
+            "end": 36.237
           },
           {
             "text": "question",
-            "start": 39.78,
-            "end": 40.14
+            "start": 36.237,
+            "end": 36.597
           }
         ]
       },
       {
-        "start": 40.14,
-        "end": 40.72,
+        "start": 36.597,
+        "end": 37.177,
         "emphasis": "none",
         "words": [
           {
             "text": "isn't",
-            "start": 40.14,
-            "end": 40.52
+            "start": 36.597,
+            "end": 36.977
           },
           {
             "text": "whether",
-            "start": 40.52,
-            "end": 40.72
+            "start": 36.977,
+            "end": 37.177
           }
         ]
       },
       {
-        "start": 40.72,
-        "end": 41.1,
+        "start": 37.177,
+        "end": 37.557,
         "emphasis": "none",
         "words": [
           {
             "text": "you",
-            "start": 40.72,
-            "end": 40.94
+            "start": 37.177,
+            "end": 37.397
           },
           {
             "text": "can",
-            "start": 40.94,
-            "end": 41.1
+            "start": 37.397,
+            "end": 37.557
           }
         ]
       },
       {
-        "start": 41.1,
-        "end": 42.17,
+        "start": 37.557,
+        "end": 38.627,
         "emphasis": "none",
         "words": [
           {
             "text": "build",
-            "start": 41.1,
-            "end": 41.3
+            "start": 37.557,
+            "end": 37.757
           },
           {
             "text": "faster.",
-            "start": 41.3,
-            "end": 41.72
+            "start": 37.757,
+            "end": 38.177
           }
         ]
       },
       {
-        "start": 42.24,
-        "end": 42.54,
+        "start": 38.697,
+        "end": 38.997,
         "emphasis": "none",
         "words": [
           {
             "text": "It's",
-            "start": 42.24,
-            "end": 42.4
+            "start": 38.697,
+            "end": 38.857
           },
           {
             "text": "what",
-            "start": 42.4,
-            "end": 42.54
+            "start": 38.857,
+            "end": 38.997
           }
         ]
       },
       {
-        "start": 42.54,
-        "end": 43.0,
+        "start": 38.997,
+        "end": 39.457,
         "emphasis": "none",
         "words": [
           {
             "text": "you'd",
-            "start": 42.54,
-            "end": 42.74
+            "start": 38.997,
+            "end": 39.197
           },
           {
             "text": "attempt",
-            "start": 42.74,
-            "end": 43.0
+            "start": 39.197,
+            "end": 39.457
           }
         ]
       },
       {
-        "start": 43.0,
-        "end": 43.52,
+        "start": 39.457,
+        "end": 39.977,
         "emphasis": "none",
         "words": [
           {
             "text": "if",
-            "start": 43.0,
-            "end": 43.24
+            "start": 39.457,
+            "end": 39.697
           },
           {
             "text": "building",
-            "start": 43.24,
-            "end": 43.52
+            "start": 39.697,
+            "end": 39.977
           }
         ]
       },
       {
-        "start": 43.52,
-        "end": 44.14,
+        "start": 39.977,
+        "end": 40.597,
         "emphasis": "none",
         "words": [
           {
             "text": "stopped",
-            "start": 43.52,
-            "end": 43.82
+            "start": 39.977,
+            "end": 40.277
           },
           {
             "text": "being",
-            "start": 43.82,
-            "end": 44.14
+            "start": 40.277,
+            "end": 40.597
           }
         ]
       },
       {
-        "start": 44.14,
-        "end": 44.48,
+        "start": 40.597,
+        "end": 40.937,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 44.14,
-            "end": 44.28
+            "start": 40.597,
+            "end": 40.737
           },
           {
             "text": "hard",
-            "start": 44.28,
-            "end": 44.48
+            "start": 40.737,
+            "end": 40.937
           }
         ]
       },
       {
-        "start": 44.48,
-        "end": 45.09,
+        "start": 40.937,
+        "end": 41.547,
         "emphasis": "none",
         "words": [
           {
             "text": "part.",
-            "start": 44.48,
-            "end": 44.74
+            "start": 40.937,
+            "end": 41.197
           }
         ]
       }
@@ -2286,22 +2172,70 @@
       "fadeOut": 0.15
     },
     {
-      "id": "clip0",
+      "id": "clip0_00",
       "src": "yc-sam-01/aroll.mp4",
       "role": "clip-audio",
-      "start": 7.15,
+      "start": 6.97,
       "offset": 0.0,
-      "duration": 12.78,
+      "duration": 1.121,
       "gainDb": 0,
       "duck": false,
       "fadeIn": 0.05,
-      "fadeOut": 0.15
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip2_55",
+      "src": "yc-sam-01/aroll.mp4",
+      "role": "clip-audio",
+      "start": 8.091,
+      "offset": 2.554,
+      "duration": 1.357,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip4_29",
+      "src": "yc-sam-01/aroll.mp4",
+      "role": "clip-audio",
+      "start": 9.448,
+      "offset": 4.291,
+      "duration": 3.967,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip8_39",
+      "src": "yc-sam-01/aroll.mp4",
+      "role": "clip-audio",
+      "start": 13.415,
+      "offset": 8.387,
+      "duration": 3.473,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip12_61",
+      "src": "yc-sam-01/aroll.mp4",
+      "role": "clip-audio",
+      "start": 16.888,
+      "offset": 12.61,
+      "duration": 0.17,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
     },
     {
       "id": "vo1",
       "src": "yc-sam-01/vo.wav",
       "role": "vo",
-      "start": 19.93,
+      "start": 17.058,
       "offset": 7.52,
       "duration": 4.31,
       "gainDb": 2,
@@ -2310,22 +2244,82 @@
       "fadeOut": 0.15
     },
     {
-      "id": "clip25",
+      "id": "clip25_08",
       "src": "yc-sam-01/aroll.mp4",
       "role": "clip-audio",
-      "start": 24.54,
+      "start": 21.488,
       "offset": 25.08,
-      "duration": 14.72,
+      "duration": 1.926,
       "gainDb": 0,
       "duck": false,
       "fadeIn": 0.05,
-      "fadeOut": 0.15
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip27_09",
+      "src": "yc-sam-01/aroll.mp4",
+      "role": "clip-audio",
+      "start": 23.413,
+      "offset": 27.093,
+      "duration": 2.63,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip29_80",
+      "src": "yc-sam-01/aroll.mp4",
+      "role": "clip-audio",
+      "start": 26.044,
+      "offset": 29.797,
+      "duration": 3.66,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip33_52",
+      "src": "yc-sam-01/aroll.mp4",
+      "role": "clip-audio",
+      "start": 29.704,
+      "offset": 33.517,
+      "duration": 2.778,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip36_36",
+      "src": "yc-sam-01/aroll.mp4",
+      "role": "clip-audio",
+      "start": 32.481,
+      "offset": 36.362,
+      "duration": 2.436,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip39_00",
+      "src": "yc-sam-01/aroll.mp4",
+      "role": "clip-audio",
+      "start": 34.917,
+      "offset": 39.001,
+      "duration": 0.799,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
     },
     {
       "id": "vo2",
       "src": "yc-sam-01/vo.wav",
       "role": "vo",
-      "start": 39.26,
+      "start": 35.717,
       "offset": 12.34,
       "duration": 5.73,
       "gainDb": 2,
