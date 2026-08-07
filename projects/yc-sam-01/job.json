@@ -13,8 +13,9 @@
       [0.0, 12.78],
       [25.08, 39.8]
     ],
-    "comment2": "aroll is cropped from the 3840x2160 source to 1620x2160 around the subject, NOT downscaled to 1080p first. A 9:16 crop from 1080p is only 607px wide and has to be upscaled 1.78x, which is visibly soft. From 2160p it is 1215px and downscales.",
-    "subjectFocusX": 0.5
+    "comment2": "aroll is cropped from the 3840x2160 source to 1620x2160 around the subject, NOT downscaled to 1080p first. A 9:16 crop from 1080p is only 607px wide and has to be upscaled 1.78x, which is visibly soft. From 2160p it is 1215px and downscales. Crop x=1571 puts the subject at 0.5 of the cropped frame.",
+    "comment3": "0.44 rather than 0.5: he faces screen-left, so shifting the window left leaves looking room in the direction he is facing. Dead-centring a profile shot crowds the face against the edge it is looking at.",
+    "subjectFocusX": 0.44
   },
 
   "rights": {

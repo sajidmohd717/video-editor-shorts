@@ -165,7 +165,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 0.0,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,
@@ -194,7 +194,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 2.554,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,
@@ -223,7 +223,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 4.291,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,
@@ -252,7 +252,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 5.283,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -281,7 +281,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 6.274,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.48,
           "panX": 0,
           "panY": 0,
@@ -310,7 +310,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 7.266,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.4,
           "panX": 0,
           "panY": 0,
@@ -339,7 +339,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 8.387,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,
@@ -368,7 +368,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 9.545,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -397,7 +397,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 10.702,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.48,
           "panX": 0,
           "panY": 0,
@@ -426,7 +426,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 12.61,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,
@@ -473,7 +473,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 25.08,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,
@@ -502,7 +502,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 26.043,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -531,7 +531,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 27.093,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,
@@ -560,7 +560,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 28.408,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -580,16 +580,16 @@
       "transitionDuration": 0
     },
     {
-      "id": "b2_0",
+      "id": "b2_0L",
       "start": 26.044,
-      "end": 27.264,
+      "end": 26.997,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 29.797,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,
@@ -638,16 +638,16 @@
       "transitionDuration": 0
     },
     {
-      "id": "b2_2",
-      "start": 28.484,
+      "id": "b2_2R",
+      "start": 28.587,
       "end": 29.704,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 32.237,
-          "focusX": 0.5,
+          "offset": 32.34,
+          "focusX": 0.44,
           "focusY": 0.48,
           "panX": 0,
           "panY": 0,
@@ -659,6 +659,35 @@
         "kind": "punch-in",
         "from": 1.09,
         "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "b3_0L",
+      "start": 29.704,
+      "end": 29.867,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-01/aroll.mp4",
+          "offset": 33.517,
+          "focusX": 0.44,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.13,
         "originX": 0.5,
         "originY": 0.38
       },
@@ -696,16 +725,45 @@
       "transitionDuration": 0
     },
     {
+      "id": "b3_1R",
+      "start": 31.087,
+      "end": 31.555,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "yc-sam-01/aroll.mp4",
+          "offset": 34.9,
+          "focusX": 0.44,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.13,
+        "to": 1.09,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "b3_2",
       "start": 31.555,
-      "end": 32.481,
+      "end": 32.559,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 35.368,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.48,
           "panX": 0,
           "panY": 0,
@@ -754,16 +812,16 @@
       "transitionDuration": 0
     },
     {
-      "id": "b4_1",
-      "start": 33.699,
+      "id": "b4_1R",
+      "start": 33.819,
       "end": 34.917,
       "layout": "full",
       "background": "#000000",
       "sources": [
         {
           "src": "yc-sam-01/aroll.mp4",
-          "offset": 37.58,
-          "focusX": 0.5,
+          "offset": 37.7,
+          "focusX": 0.44,
           "focusY": 0.34,
           "panX": 0,
           "panY": 0,
@@ -792,7 +850,7 @@
         {
           "src": "yc-sam-01/aroll.mp4",
           "offset": 39.001,
-          "focusX": 0.5,
+          "focusX": 0.44,
           "focusY": 0.42,
           "panX": 0,
           "panY": 0,

@@ -225,6 +225,36 @@ of subscribes an end card converts.
 **Applied:** `overlays.showEndCard: false`; b-roll now runs to the last frame.
 **Status:** untested against platform data — worth an A/B once there are numbers.
 
+### F18 — Carve, don't delete; and assert full clip coverage
+
+Inserting b-roll over a-roll deleted every clip *overlapping* a padded window
+while filling only the unpadded window, leaving the frame uncovered at the edges.
+That renders as **black frames** — three of them, up to 0.47s.
+
+**Applied:** overlapping clips are split and their source offsets recomputed, so
+footage stays in sync; slivers below the minimum shot length are sealed by
+extending the previous clip; and the planner now **hard-fails** if any moment of
+the timeline is uncovered.
+
+**Status:** keep. The assertion matters more than the fix — a coverage gap is
+invisible in code, trivial to reintroduce, and glaring to a viewer. Cheap
+invariants on the timeline are worth more than careful code, because the planner
+will keep growing.
+
+### F19 — Verify the subject's actual position; don't inherit it
+
+`subjectFocusX` was carried over from the old job data as 0.72. Measured against
+a gridded frame, the subject sat at **0.62** of the source. The crop was ~380px
+off and he was noticeably off-centre.
+
+**Applied:** measured from a gridded still, crop recentred, `subjectFocusX` set
+to 0.44 rather than 0.5 — he faces screen-left, so the window shifts left to
+leave looking room in the direction he's facing. Dead-centring a profile shot
+crowds the face against the edge it looks toward.
+
+**Status:** keep. Extract a gridded frame and look before trusting any inherited
+framing number.
+
 ---
 
 ## Baseline measurements

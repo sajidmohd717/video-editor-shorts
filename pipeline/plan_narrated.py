@@ -268,6 +268,37 @@ def build(job: Job) -> dict:
                 sf=1.02 + 0.03 * (i % 3), st=1.12 + 0.03 * (i % 3),
             ))
 
+    MIN_SHOT = 0.16
+
+    def carve(s: float, e: float) -> None:
+        """
+        Clear the window [s, e] in the clip track, trimming rather than deleting.
+
+        Deleting every clip that *overlaps* a padded window leaves the frame
+        uncovered at the edges — which renders as black. Overlapping clips are
+        split and their source offsets recomputed so the footage stays in sync.
+        Fragments shorter than MIN_SHOT are dropped rather than left to flicker.
+        """
+        out: list[dict] = []
+        for c in clips:
+            if c["end"] <= s + 1e-6 or c["start"] >= e - 1e-6:
+                out.append(c)
+                continue
+
+            for a, b, tag in ((c["start"], s, "L"), (e, c["end"], "R")):
+                if b - a < MIN_SHOT:
+                    continue
+                piece = json.loads(json.dumps(c))
+                piece["id"] = f"{c['id']}{tag}"
+                piece["start"], piece["end"] = round(a, 3), round(b, 3)
+                for src in piece["sources"]:
+                    # offset tracks timeline position, so shifting start shifts it.
+                    shift = c["start"] - src["offset"]
+                    src["offset"] = round(a - shift, 3)
+                out.append(piece)
+
+        clips[:] = out
+
     def beats_at(where: str) -> list[dict]:
         return [b for b in job.beats if b.get("at") == where]
 
@@ -317,8 +348,7 @@ def build(job: Job) -> dict:
                       f"removed pause — skipped")
                 continue
             if beat["type"] == "broll":
-                clips[:] = [c for c in clips
-                            if not (c["start"] >= s - 0.55 and c["end"] <= e + 0.55)]
+                carve(s, e)
                 clips.append(broll_clip(f"nb{i}", s, e, beat["asset"]))
             else:
                 add_overlay(beat, s, e, f"clip_ov{i}")
@@ -342,6 +372,31 @@ def build(job: Job) -> dict:
 
     duration = round(v2e + 0.9, 3)
     clips.sort(key=lambda c: c["start"])
+
+    # Seal slivers left behind when a carved fragment was too short to keep as its
+    # own shot. Extending the previous clip is right rather than merely expedient:
+    # the alternative is a sub-frame cut nobody can perceive as an edit.
+    for prev, nxt in zip(clips, clips[1:]):
+        hole = nxt["start"] - prev["end"]
+        if 0 < hole < MIN_SHOT:
+            prev["end"] = nxt["start"]
+
+    # Any uncovered moment renders as black. Cheap to check, invisible in code,
+    # and obvious to a viewer — so it's a hard failure rather than a warning.
+    covered = 0.0
+    holes: list[tuple[float, float]] = []
+    for c in clips:
+        if c["start"] > covered + 0.001:
+            holes.append((covered, c["start"]))
+        covered = max(covered, c["end"])
+    if covered < duration - 0.001:
+        holes.append((covered, duration))
+    if holes:
+        detail = ", ".join(f"{a:.2f}-{b:.2f}s" for a, b in holes)
+        raise SystemExit(
+            f"Clip track has {len(holes)} uncovered gap(s) — these render as "
+            f"black frames: {detail}"
+        )
 
     # --- captions -------------------------------------------------------------
     words_out.sort(key=lambda w: w["start"])
