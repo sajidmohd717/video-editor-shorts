@@ -59,6 +59,9 @@ are handled. These are the steps that still need a human, in order:
 - [ ] **Look at stock before wiring it in** (F6). Roughly half of any search is
       unusable. Build a contact sheet. Budget ~10 distinct clips per 45s; never
       reuse one (F15).
+- [ ] **Check every candidate against the content standards** (F29) — no alcohol,
+      no revealing clothing. Sample **several timestamps per clip**, not one
+      thumbnail; both assets that slipped through passed a single-frame glance.
 - [ ] **Choose graphics by the shape of the claim, not its topic** (F3). A jump is
       a `comparison`, a trend is a `stat-chart`, a sourced fact is an
       `article-clip`.

@@ -445,6 +445,53 @@ behaviour. `src_to_timeline` now snaps to the nearest surviving edge.
 discard. A silently dropped element is worse than a slightly misplaced one,
 because nothing tells you it happened.
 
+### F29 — Content standards are constraints, and reviewing one frame isn't reviewing
+
+The channel has standing content constraints: **no music, no alcohol, no
+revealing clothing**. They belong to the channel owner, apply to every asset in
+every video, and are not to be relitigated or traded against visual impact.
+
+Two clips shipped past them into a cut: a champagne toast (alcohol *and* a
+low-cut dress) and a candlelit dinner scene with wine glasses. Both had been
+"reviewed" — against a single frame each. The dinner clip's wine glasses sit at
+the edge of the frame and are easy to miss; the toast clip's first second shows
+only raised hands.
+
+**Applied:** `contentStandards` block in the profile, and the review rule
+changed: **sample every candidate at several timestamps, not one thumbnail.**
+
+**Note for asset search:** wine glasses are dressed into an enormous share of
+restaurant, dinner-party and celebration stock. Queries like "friends dinner" or
+"toast" will surface them constantly. "family eating dinner table home" and
+"serving food plates table" returned six clean clips out of six.
+
+**Status:** keep. When in doubt, pick a different clip — there is always another
+clip.
+
+### F30 — Revert the workaround once you fix the cause
+
+Chasing the "static" I raised `stability` to 0.55 and zeroed `style`. The static
+turned out to be a **filter-graph bug in `concat()`** (F13), nothing to do with
+the voice. The bug got fixed; the flattened voice settings never got reverted.
+
+Every video after that shipped with a deliberately de-expressive read
+compensating for a problem that no longer existed — and "robotic" was the
+result. High stability suppresses variation between phrases and `style: 0`
+removes emphasis entirely, which is a fair description of robotic.
+
+**Rule:** when a fix lands, go back and undo every workaround introduced while
+hunting it. Workarounds outlive their reason silently, and nothing in the code
+records that a value was defensive rather than chosen.
+
+**Also settled:** `eleven_v3` is available and is a better synthesiser than
+`multilingual_v2` — more natural prosody. It is also more variable run to run,
+so the `-qc+10dB.m4a` check matters more, not less.
+
+**Cost to know about:** voices differ in pace by a lot. Eric/v3 reads ~22% slower
+than Matilda, which took this video from 46.2s to 50.8s with no other change.
+The edit re-times itself (F4), but total runtime moves — check it after a voice
+swap.
+
 ---
 
 ## Platform data

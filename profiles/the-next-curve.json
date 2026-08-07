@@ -14,16 +14,28 @@
   },
   "tts": {
     "engine": "elevenlabs",
-    "voice": "XrExE9yKIg1WjnnlVkGX",
-    "voiceName": "Matilda - Knowledgable, Professional",
-    "model": "eleven_multilingual_v2",
-    "comment": "pcm_24000, never mp3. 128kbps MP3 produces coding artifacts on voiced speech that read as static (F12).",
+    "voice": "cjVigY5qzO86Huf0OWal",
+    "voiceName": "Eric - Smooth, Trustworthy (male, american)",
+    "model": "eleven_v3",
+    "comment": "pcm_24000, NEVER mp3. 128kbps MP3 produces coding artifacts on voiced speech that read as static (F12).",
     "outputFormat": "pcm_24000",
-    "comment2": "stability 0.38 + style 0.35 gave lively reads but high run-to-run variance, and some draws came out with an audible noise floor (F13). 0.55/0 trades a little expressiveness for takes that are consistently clean.",
-    "stability": 0.55,
-    "similarityBoost": 0.75,
+    "comment2": "stability was raised to 0.55 and style zeroed while chasing the static, which turned out to be a concat bug (F13) and not the voice at all. The flattened settings were never reverted, and that — not the synthesiser — is why the read went robotic (F30). 0.5 on v3 is its 'natural' preset.",
+    "stability": 0.5,
+    "similarityBoost": 0.8,
     "style": 0.0,
-    "speakerBoost": false
+    "speakerBoost": true,
+    "alternates": [
+      {
+        "voice": "XrExE9yKIg1WjnnlVkGX",
+        "name": "Matilda - Knowledgable, Professional (female, american)",
+        "use": "when a female narrator suits the story; auditioned well on both v2 and v3"
+      },
+      {
+        "voice": "onwK4e9ZLuTAKqWW03F9",
+        "name": "Daniel - Steady Broadcaster (male, british)",
+        "use": "most authoritative register; reads ~24% slower, which lengthens the edit"
+      }
+    ]
   },
   "pacing": {
     "comment": "handoffGap is deliberately short — narration answering the clip immediately reads as a reply rather than a scene change. maxPauseSeconds trims dead air inside the clip the way a human editor would.",
@@ -53,6 +65,20 @@
     "sfxLeadSeconds": 0.05,
     "whooshGainDb": -4,
     "whooshLeadSeconds": 0.22
+  },
+
+  "contentStandards": {
+    "_": "STANDING CONSTRAINTS, not preferences. These are the channel owner's, and they apply to every asset in every video — stock footage, screenshots, generated imagery, thumbnails. They are not open questions and should never be relitigated or 'balanced' against visual impact.",
+    "noMusic": true,
+    "noAlcohol": true,
+    "noRevealingClothing": true,
+    "notes": [
+      "No music of any kind. Energy comes from diegetic ambience, pause cutting and a dense vocal master (F20).",
+      "No alcohol: no bottles, glasses of wine or champagne, bars, or toasting with drinks. Watch for wine glasses dressed into restaurant and dinner-party footage — they are extremely common and easy to miss on a single thumbnail.",
+      "No revealing clothing: no low-cut tops, cleavage, or swimwear. Modest dress throughout.",
+      "When in doubt, pick a different clip. There is always another clip."
+    ],
+    "reviewRule": "Check EVERY candidate at several timestamps, not one thumbnail. A clip can be clean at 1s and not at 5s — both rejected assets here passed a single-frame glance."
   },
 
   "editorial": {

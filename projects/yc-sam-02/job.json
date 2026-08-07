@@ -75,7 +75,7 @@
     }
   ],
   "broll": {
-    "dinner": "yc-sam-02/stock/pexels-video-6555612.mp4",
+    "dinner": "yc-sam-02/stock/pexels-video-8051342.mp4",
     "team": "yc-sam-02/stock/pexels-video-6913252.mp4",
     "cooking": "yc-sam-02/stock/pexels-video-37876540.mp4",
     "skyline": "yc-sam-02/stock/pexels-video-18970501.mp4",
@@ -83,8 +83,8 @@
     "notebook": "yc-sam-02/stock/pexels-video-6930236.mp4",
     "deskwork": "yc-sam-02/stock/pixabay-video-368623.mp4",
     "corridor": "yc-sam-02/stock/pexels-video-7652109.mp4",
-    "toast": "yc-sam-02/stock/pexels-video-6396009.mp4",
-    "emptyoffice": "yc-sam-02/stock/pexels-video-8347239.mp4"
+    "emptyoffice": "yc-sam-02/stock/pexels-video-8347239.mp4",
+    "table": "yc-sam-02/stock/pexels-video-36070872.mp4"
   },
   "voBroll": {
     "0": [
@@ -96,7 +96,7 @@
       "skyline",
       "notebook",
       "deskwork",
-      "toast"
+      "table"
     ]
   },
   "logos": {
