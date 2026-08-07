@@ -60,6 +60,39 @@ other people's explainers.
 
 ---
 
+## Search results — shortlist (2026-08-08)
+
+Searched via `pipeline.newsclip`. Best finds:
+
+| ID | What | Why it's good |
+|---|---|---|
+| `lQHK61IDFH4` | **NVIDIA's own channel** — GTC Washington DC keynote, Jensen Huang | Primary source, posted by the company itself. Best rights position available. |
+| `jIviHI7fqyc` | GTC 2026 full keynote (Yahoo Finance) | Full keynote, useful for finding the exact moment |
+| `cP8pfCJTw4Q` | CNBC — Jensen Huang interview, Oct 2025 | Broadcast, short excerpt only |
+
+### What the search got wrong, and it's instructive
+
+Searching **"Oracle earnings call"** returned almost entirely retail-investor
+commentary channels — "ORCL Epic Comeback", "Oracle Stock Tanking Fire Sale" and
+similar. Not one was the actual earnings call.
+
+**Those are the same trap as Bloomberg and Hank Green**: third-party commentary
+dressed as a source. Worse here, because the channels are low-quality and their
+numbers are frequently wrong — and we'd be inheriting their errors into a video
+whose entire thesis is that numbers get repeated carelessly.
+
+**Lesson:** YouTube search is good for *keynotes and press events* (companies post
+those themselves) and bad for *earnings calls* (which surface as commentary).
+For earnings material, go to the company's investor-relations page directly —
+Oracle's own webcast — rather than searching video platforms.
+
+## Still needed
+
+- Oracle Q4 FY2026 earnings **webcast**, from `investor.oracle.com`, not YouTube
+- An executive making the capital-intensive-industry argument, for Ch5. This must
+  be the strongest available version or the chapter is a strawman.
+- Congressional hearing footage via C-SPAN (best rights position)
+
 ## Next actions
 
 - [ ] Watch Bloomberg + Hank Green **for their sourcing**, list the primary

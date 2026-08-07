@@ -412,6 +412,38 @@ export const overlaySchema = z.discriminatedUnion("type", [
     edge: z.string().default("#B3300A"),
   }),
 
+  /**
+   * Chronology marker — a date or short label, serif, on black.
+   *
+   * Long-form device (L7). It does two jobs at once: tells the viewer this is a
+   * sequence of events rather than a list of claims, and resets attention
+   * between segments. Cheap to render, disproportionately useful.
+   */
+  baseOverlay.extend({
+    type: z.literal("date-card"),
+    text: z.string(),
+    sub: z.string().optional(),
+    color: z.string().default("#E5484D"),
+    size: z.number().default(96),
+    align: z.enum(["center", "left"]).default("center"),
+  }),
+
+  /**
+   * Full-screen pull quote — one sentence, serif, held.
+   *
+   * The change of register is the whole effect: no footage, no motion, just
+   * words. It makes the video feel like it has stopped to underline something,
+   * which is why it must be reserved for load-bearing claims only.
+   */
+  baseOverlay.extend({
+    type: z.literal("quote-card"),
+    text: z.string(),
+    attribution: z.string().optional(),
+    size: z.number().default(64),
+    /** Reveal word-by-word rather than all at once. */
+    typeOn: z.boolean().default(true),
+  }),
+
   /** Mid-roll subscribe pill. Ref 003 fires this twice, not just at the end. */
   baseOverlay.extend({
     type: z.literal("cta"),

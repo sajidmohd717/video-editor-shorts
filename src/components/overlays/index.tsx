@@ -17,6 +17,8 @@ import { Cta } from "./Cta";
 import { Comparison } from "./Comparison";
 import { LogoPop } from "./LogoPop";
 import { FilmBurn } from "./FilmBurn";
+import { DateCard } from "./DateCard";
+import { QuoteCard } from "./QuoteCard";
 
 export const OverlayLayer: React.FC<{ overlay: Overlay; durationInFrames: number }> = ({
   overlay,
@@ -55,6 +57,10 @@ export const OverlayLayer: React.FC<{ overlay: Overlay; durationInFrames: number
       return <LogoPop {...overlay} durationInFrames={durationInFrames} />;
     case "film-burn":
       return <FilmBurn {...overlay} durationInFrames={durationInFrames} />;
+    case "date-card":
+      return <DateCard {...overlay} />;
+    case "quote-card":
+      return <QuoteCard {...overlay} durationInFrames={durationInFrames} />;
     case "end-card":
       return <EndCard {...overlay} />;
     default:
