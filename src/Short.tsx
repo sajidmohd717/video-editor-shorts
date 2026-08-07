@@ -56,10 +56,18 @@ export const Short: React.FC<Timeline> = ({ meta, clips, overlays, captions, aud
       <Captions cues={captions.cues} style={captions.style} />
 
       {audio.map((track) => (
-        <Sequence key={track.id} from={toFrames(track.start)} name={`audio:${track.role}`}>
+        <Sequence
+          key={track.id}
+          from={toFrames(track.start)}
+          durationInFrames={track.duration ? toFrames(track.duration) : undefined}
+          name={`audio:${track.role}`}
+        >
           <Audio
             src={resolveSrc(track.src)}
             trimBefore={toFrames(track.offset)}
+            trimAfter={
+              track.duration ? toFrames(track.offset + track.duration) : undefined
+            }
             volume={Math.pow(10, track.gainDb / 20)}
           />
         </Sequence>

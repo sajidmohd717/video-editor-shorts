@@ -56,6 +56,7 @@ BROLL = {
     "skyline": "yc-sam-01/stock/pexels-video-9921286.mp4",    # night skyscrapers
     "robotics": "yc-sam-01/stock/pexels-video-8328143.mp4",   # robotic arm + lab coats
     "datacenter": "yc-sam-01/stock/pexels-video-6755162.mp4",  # circuit board macro
+    "typing": "yc-sam-01/stock/pexels-video-12893579.mp4",    # hands typing code
 }
 
 

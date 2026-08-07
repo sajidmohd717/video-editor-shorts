@@ -361,6 +361,12 @@ export const audioTrackSchema = z.object({
   role: z.enum(["vo", "music", "sfx", "clip-audio"]),
   start: z.number(),
   offset: z.number().default(0),
+  /**
+   * How much of the source to play from `offset`. Needed to interleave segments
+   * of one clip's audio around narration — without it the clip keeps talking
+   * underneath the VO.
+   */
+  duration: z.number().optional(),
   gainDb: z.number().default(0),
   /** Auto-duck under the VO track. Music should basically always be true. */
   duck: z.boolean().default(false),
