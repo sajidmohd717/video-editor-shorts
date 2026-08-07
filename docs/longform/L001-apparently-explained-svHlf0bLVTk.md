@@ -56,6 +56,59 @@ distract from it.
 **Same principle as shorts, different scale:** alternate barrage and hold. The
 average tells you nothing.
 
+## Asset inventory — what's actually on screen
+
+Sampled ~110 frames at 8s intervals across the full 877s and classified. Shares
+are approximate but the ordering is solid.
+
+| # | Category | ~Share | What it looks like |
+|---|---|---|---|
+| 1 | **Broadcast news, chyron intact** | ~30% | CNBC, CBS, CNN, Fox Business, Bloomberg, Yahoo Finance, C-SPAN2, News18 |
+| 2 | **Conference / interview footage** | ~25% | YC talks, Davos/WEF, NYT DealBook, Senate testimony, Berkshire meeting, Daily Journal |
+| 3 | **Documents with highlighting** | ~12% | OpenAI charter, board statement, bylaws §4.2, investor letters, employee letter |
+| 4 | **Charts / data visualisations** | ~8% | valuation bars, adoption-speed bars, investor-equity diagram, stock ticker, counters |
+| 5 | **Date and pull-quote cards** | ~8% | serif on black |
+| 6 | **Stylised portraits** | ~6% | halftone/engraved treatments, board-member grids |
+| 7 | **Stock / atmospheric b-roll** | ~7% | falling cash, hands exchanging money, circuit boards, neon signage, datacentre construction, book pages |
+| 8 | **Tweet / X screenshots** | ~3% | with the relevant line highlighted |
+| 9 | **Logo animations** | ~2% | OpenAI, Microsoft, OpenAI-with-an-X |
+
+**The headline number: ~55% is footage of the actual people involved.** News
+clips plus conference footage. Not stock, not graphics — the people, saying the
+things, on camera, with a broadcaster's name attached.
+
+Stock b-roll is only ~7%, and it's used almost entirely for abstractions that
+have no footage: money, compute, scale.
+
+### Who appears
+
+Altman (dominant — YC, Davos, DealBook, Senate, press scrums, podcasts), Munger
+(Daily Journal, Berkshire, archival b/w with Buffett, the recurring halftone
+motif), Musk (Tucker Carlson, early-OpenAI footage with Altman), Nadella,
+Mira Murati, the OpenAI board as a named portrait grid, senators at the hearing,
+news anchors.
+
+### The document layer, specifically
+
+This is the most repeatable device in the video, and the most transferable:
+
+- OpenAI's mission statement with **"benefit of humanity"** highlighted
+- The board's dismissal statement with **"not consistently candid"** highlighted
+- Corporate bylaws, §4.2 Removal of Officers
+- A 1995 speech text with the operative passage marked
+- The 500+ employee letter
+- NYT reporting on the post-conversion equity structure
+
+Each one is a **claim in the narration made checkable on screen**. This is
+exactly the shorts `article-clip` sweep (F3), scaled up and used constantly.
+
+### Charts, specifically
+
+All are **comparisons or growth curves**, never decoration:
+valuation over time; adoption speed vs other apps; who owns equity in the
+commercial entity; a share price on the day; a rising counter. Each one visualises
+a number the narration just said.
+
 ## Structural devices worth stealing
 
 ### 1. Chapters as an argument outline

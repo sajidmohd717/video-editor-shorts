@@ -75,7 +75,53 @@ stay, and chapters make drop-off measurable per section.
 **Applied:** long-form jobs should define chapters as part of the argument, and
 the analytics review should read retention per chapter.
 
-### L5 — Devices that carry an argument
+### L5 — Source audio is front-loaded; the last third is pure narration
+
+Measured from YouTube's auto-captions, which mark speaker changes with `>>`.
+**21 speaker changes in L001, every one of them before 600s. Zero in the final
+277s.**
+
+| Block | Source-audio moments |
+|---|---|
+| 0–100s | 5 — the cold-open montage |
+| 100–200s | 3 |
+| 200–300s | **6 — peak** |
+| 300–400s | 1 |
+| 400–500s | 4 |
+| 500–600s | 2 |
+| 600–877s | **0** |
+
+The shape is deliberate and worth copying:
+
+- **Opening**: a montage of broadcasters delivering the news *in their own
+  voices*. It establishes the event as real and externally reported before the
+  narrator makes a single claim. Borrowed credibility, spent early.
+- **Middle**: source audio punctuates — a clip speaks when hearing the person say
+  it matters more than being told they said it.
+- **Final third**: **not one** source clip speaks. The argument is being made and
+  the conclusion drawn, and nothing is allowed to compete with the narrator.
+
+**Rule:** let a clip speak when the fact that *they said it* is the evidence. Once
+you're reasoning rather than establishing, the footage goes silent and the
+narration carries it alone.
+
+### L6 — The reference uses a music bed; we can't
+
+20 `[music]` tags across the runtime, spread evenly (3s, 52s, 154s, 361s, 602s,
+859s…). It's a continuous bed, not stingers.
+
+This matters more than it did for shorts. In the final 277s there is **no source
+audio at all** — just narration and music. Strip the music and that stretch is a
+voice over silent pictures for nearly five minutes, which is exactly where a
+viewer notices the silence.
+
+**Open question, and the main one for long-form:** what fills that. Candidates:
+diegetic ambience from the footage itself (F20's answer for shorts, but there's
+far more to fill here), tighter cutting through the conclusion, or accepting a
+drier documentary register and leaning on the writing. Needs testing, not
+guessing.
+
+### L7 — Devices that carry an argument
 
 From L001, worth building:
 
