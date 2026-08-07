@@ -134,6 +134,33 @@ From L001, worth building:
 - **Stylised portrait motif** — one treatment (halftone/engraved) reserved for
   the thesis figure, separating "the idea" from "the news".
 
+### L8 — Sound design carries over; scope it to chapters, not transitions
+
+The shorts SFX kit (ding, pop, whoosh, film burn) transfers to long-form. An
+earlier version of the long-form profile disabled burns and whooshes, reasoning
+they'd be exhausting over 8 minutes.
+
+**That reasoning confused transition frequency with the device.** In shorts a burn
+fires on every voice handoff — four in 45 seconds. In long-form the natural unit
+is the **chapter**, so the same device fires 4–5 times across 8 minutes. At that
+spacing it stops being decoration and becomes a structural signal: *that section
+is over*. Which is precisely what a viewer 6 minutes into an argument needs.
+
+**Rule:** when porting a device between formats, port its *purpose*, not its
+trigger. The burn's job is "mark a structural boundary". What counts as a
+boundary is what changes between formats.
+
+**Long-form additions worth having**, given the asset mix is document-heavy:
+
+- **paper** — document/filing reveals. ~35 uses in lf-001; the highest-value
+  addition by far.
+- **impact** — deep low thud for the big number cards.
+- **tick** — soft UI click for highlight sweeps and list items.
+
+**Avoid** risers, drones, swells and anything with pitch content. Those are music
+under another name, and the channel does not use music (F20). Percussive,
+mechanical and diegetic sounds are fine; anything that implies a key is not.
+
 ---
 
 ## Open questions

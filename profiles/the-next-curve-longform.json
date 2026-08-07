@@ -24,11 +24,30 @@
   },
 
   "overlays": {
-    "comment": "No end card, same reasoning as shorts (F17). Film burns are a shorts device and would be exhausting over 8 minutes — long-form transitions are the date and quote cards instead.",
+    "comment": "No end card, same reasoning as shorts (F17). No progress bar — over 8 minutes it reads as a countdown to leave rather than a promise it's nearly over.",
     "showEndCard": false,
     "progress": null,
-    "transitionBurn": false,
-    "transitionWhoosh": null
+
+    "comment2": "Burns and whooshes DO carry over, but scoped to CHAPTER boundaries only — 4-5 across 8 minutes, not one per voice handoff. An earlier version of this profile disabled them entirely on the reasoning they'd be exhausting; that confused transition frequency with the device itself. At chapter scale they're a structural signal that a section has ended, which is exactly what a long-form viewer needs (L8).",
+    "transitionBurn": true,
+    "transitionBurnOn": "chapter",
+    "transitionBurnSeconds": 0.7,
+    "transitionBurnIntensity": 0.75,
+    "transitionWhoosh": "whoosh",
+    "transitionWhooshOn": "chapter"
+  },
+
+  "sfxPlan": {
+    "comment": "Carried from shorts, plus devices this format needs. Documents are ~35 of ~170 assets here, so they earn a sound of their own.",
+    "ding": "opening attention cue, frame one — as per shorts",
+    "pop": "logo and portrait badges landing on a named entity",
+    "whoosh": "chapter transitions, with the burn",
+    "wanted": {
+      "paper": "document / filing reveals — the single highest-value addition, ~35 uses",
+      "impact": "deep low thud for the big number cards ($638B, $100B)",
+      "tick": "soft UI click for highlight sweeps and list items appearing"
+    },
+    "avoid": "risers, drones, swells and stingers with pitch content — those are music under another name and the channel does not use music (F20)."
   },
 
   "editorial": {
