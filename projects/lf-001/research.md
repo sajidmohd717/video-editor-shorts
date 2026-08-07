@@ -62,6 +62,59 @@ its record backlog was funded by the customer up front.
 
 ---
 
+## VERIFIED against primary sources (2026-08-08)
+
+### Oracle — confirmed, use freely
+From Oracle's own Q4 FY2026 release (10 June 2026):
+
+- RPO **$638B**, up **363%** YoY
+- Sequentially **+$85B** from Q3's **$553B**
+- **"The prepaid and customer supplied hardware portions of our large AI
+  contracts now total $75 billion."** — Oracle's own words
+- Q4 cloud revenue **$9.9B** (+47%); FY2026 cloud revenue **$34.0B** (+39%)
+
+Note: the release attributes none of this to a named executive, so **do not put
+words in a CEO's mouth on screen.** Attribute to "Oracle's Q4 release".
+
+### Anthropic / Microsoft / NVIDIA — secondary reporting was WRONG
+
+Secondary coverage said *"Microsoft and Nvidia invested roughly $15 billion at a
+$350 billion valuation."* [Anthropic's own announcement](https://www.anthropic.com/news/microsoft-nvidia-anthropic-announce-strategic-partnerships)
+says something materially different:
+
+- NVIDIA committing to invest **up to $10B**; Microsoft **up to $5B** — separate
+  commitments, and **"up to"**, not money already invested
+- Anthropic committing to purchase **$30B of Azure compute**, plus contracting
+  additional capacity up to **1 gigawatt**
+
+"Up to $15B committed" and "$15B invested" are not the same claim. **This is
+exactly the error the video is about** — and making it ourselves would be fatal.
+
+### Anthropic valuation — confirmed
+- Series H: **$65B raised at $965B post-money** ([Anthropic](https://www.anthropic.com/news/series-h))
+- Earlier Series G: **$30B at $380B post-money** ([Anthropic](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation))
+
+That's a **$585B valuation increase between two rounds** — worth a beat of its own.
+
+### Anthropic / Amazon — confirmed direction
+[Anthropic's announcement](https://www.anthropic.com/news/anthropic-amazon-compute)
+covers expanded collaboration for **up to 5 GW** of new compute. Confirm the
+dollar figures against the same page before use.
+
+### Still unverified — do not script yet
+- All Nvidia/OpenAI figures (#4–#7). Several are **reported talks**, not announced
+  deals. Anything that survives must be worded "reportedly".
+- OpenAI valuation and revenue (#10) — current source is weak.
+- **Claim #12 is dropped** unless a primary source appears.
+
+### Method note
+Two of the first four things checked were wrong or overstated in secondary
+reporting. **Every figure gets a primary source or it doesn't go on screen.**
+For a video whose subject is misleading numbers, this isn't diligence — it's the
+whole credibility of the piece.
+
+---
+
 ## The counter-argument, stated fairly
 
 The industry's defence is not stupid and the video must give it properly:
