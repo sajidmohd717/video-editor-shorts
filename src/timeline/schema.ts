@@ -343,6 +343,49 @@ export const overlaySchema = z.discriminatedUnion("type", [
     background: z.string().optional(),
   }),
 
+  /**
+   * A logo or mark that springs into frame on a beat, usually paired with a
+   * sound effect. Used to identify the company or product being named at the
+   * exact moment it's named — the visual equivalent of a pointing finger.
+   *
+   * Keep these rare. The device works because it's an accent; firing it on every
+   * proper noun turns it into wallpaper.
+   */
+  baseOverlay.extend({
+    type: z.literal("logo-pop"),
+    src: z.string(),
+    x: z.number().default(0.5),
+    y: z.number().default(0.34),
+    size: z.number().default(300),
+    /** `white` suits dark footage; `none` keeps the file's own colours. */
+    tint: z.enum(["white", "none"]).default("white"),
+    entrance: z.enum(["pop", "drop", "spin"]).default("pop"),
+    /** Brief bloom behind the mark as it lands. */
+    glow: z.boolean().default(true),
+    /** Seconds of scale-down before `end`. 0 keeps it up until the cut. */
+    exit: z.number().default(0.25),
+  }),
+
+  /**
+   * Film-burn / light-leak transition: an amber bloom that washes across the
+   * frame and recedes, hiding a cut inside it.
+   *
+   * Generated rather than a stock overlay, so it's deterministic, recolourable,
+   * and free of licensing. Place it ON the cut — the burn should peak within a
+   * few frames of the edit so the change of shot happens while the frame is
+   * blown out.
+   */
+  baseOverlay.extend({
+    type: z.literal("film-burn"),
+    /** Where the leak enters from. */
+    originX: z.number().default(1.0),
+    originY: z.number().default(0.32),
+    intensity: z.number().default(1.0),
+    hot: z.string().default("#FFF2C4"),
+    mid: z.string().default("#FF8A2B"),
+    edge: z.string().default("#B3300A"),
+  }),
+
   /** Mid-roll subscribe pill. Ref 003 fires this twice, not just at the end. */
   baseOverlay.extend({
     type: z.literal("cta"),

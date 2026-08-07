@@ -3,35 +3,55 @@
   "profile": "the-next-curve",
   "format": "narrated",
   "title": "Three months of work. Now seven minutes.",
-
   "source": {
     "aroll": "yc-sam-01/aroll.mp4",
     "speaker": "Sam Altman",
     "venue": "Y Combinator",
     "comment": "passages are in SOURCE time; everything outside them is dropped",
     "passages": [
-      [0.0, 12.78],
-      [25.08, 39.8]
+      [
+        0.0,
+        12.78
+      ],
+      [
+        25.08,
+        39.8
+      ]
     ],
     "comment2": "aroll is cropped from the 3840x2160 source to 1620x2160 around the subject, NOT downscaled to 1080p first. A 9:16 crop from 1080p is only 607px wide and has to be upscaled 1.78x, which is visibly soft. From 2160p it is 1215px and downscales. Crop x=1571 puts the subject at 0.5 of the cropped frame.",
     "comment3": "0.44 rather than 0.5: he faces screen-left, so shifting the window left leaves looking room in the direction he is facing. Dead-centring a profile shot crowds the face against the edge it is looking at.",
     "subjectFocusX": 0.44
   },
-
   "publish": {
-    "title": "Sam Altman: 3 Months of Work → 7 Minutes",
-    "description": "Sam Altman on what AI coding agents have done to the cost of building a startup — and why the interesting question isn't speed.\n\nCommentary and edit: The Next Curve",
-    "tags": ["Sam Altman", "OpenAI", "AI", "startups", "Y Combinator", "coding agents", "tech news"],
+    "title": "Sam Altman: 3 Months of Work \u2192 7 Minutes",
+    "description": "Sam Altman on what AI coding agents have done to the cost of building a startup \u2014 and why the interesting question isn't speed.\n\nCommentary and edit: The Next Curve",
+    "tags": [
+      "Sam Altman",
+      "OpenAI",
+      "AI",
+      "startups",
+      "Y Combinator",
+      "coding agents",
+      "tech news"
+    ],
     "categoryId": "28",
-    "madeForKids": false
+    "madeForKids": false,
+    "videoId": "El5XrIpsOCA",
+    "uploadedAt": "2026-08-07T13:07:46.450858+00:00"
   },
-
   "rights": {
     "clearance": "commentary",
     "speaker": "Sam Altman",
     "rightsHolder": "Y Combinator",
     "sourceUrl": "https://www.youtube.com/@ycombinator",
-    "note": "Short excerpts used as evidence for original commentary. Narration is the spine. Does not affect Content ID — the rights holder can still claim."
+    "note": "Short excerpts used as evidence for original commentary. Narration is the spine. Does not affect Content ID \u2014 the rights holder can still claim."
+  },
+  "sfx": {
+    "pop": "yc-sam-01/sfx/pop.wav"
+  },
+
+  "logos": {
+    "openai": "yc-sam-01/logos/ChatGPT-Logo.svg"
   },
 
   "comment3": "Eleven distinct clips so no asset appears twice in the video. Repeats read as a shortage of material even when the placement is right.",
@@ -48,16 +68,41 @@
     "towers": "yc-sam-01/stock/pexels-video-7065806.mp4",
     "laptop": "yc-sam-01/stock/pexels-video-34771082.mp4"
   },
-
-  "openBroll": ["dataflow", "coder", "vintage", "team"],
-  "closeBroll": ["towers", "laptop", "circuit", "typing"],
-
+  "openBroll": [
+    "dataflow",
+    "coder",
+    "vintage",
+    "team"
+  ],
+  "closeBroll": [
+    "towers",
+    "laptop",
+    "circuit",
+    "typing"
+  ],
   "beats": [
     {
       "at": "open",
+      "type": "logo-pop",
+      "why": "lands on the word 'Altman' — identifies who is being talked about at the moment he is named",
+      "start": 0.32,
+      "end": 1.85,
+      "src": "yc-sam-01/logos/ChatGPT-Logo.svg",
+      "sfx": "pop",
+      "x": 0.5,
+      "y": 0.33,
+      "size": 300,
+      "tint": "white",
+      "entrance": "pop",
+      "glow": true,
+      "exit": 0.22,
+      "z": 70
+    },
+    {
+      "at": "open",
       "type": "word-card",
-      "start": 0.3,
-      "end": 3.0,
+      "start": 2.15,
+      "end": 3.95,
       "text": "3 months.",
       "face": "serif-display",
       "size": 150,
@@ -66,8 +111,8 @@
     {
       "at": "open",
       "type": "word-card",
-      "start": 3.3,
-      "end": 6.2,
+      "start": 4.25,
+      "end": 6.35,
       "text": "Now 7 minutes.",
       "face": "sans-heavy",
       "size": 118,

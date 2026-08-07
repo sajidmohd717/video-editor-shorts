@@ -959,10 +959,25 @@
   ],
   "overlays": [
     {
-      "type": "word-card",
+      "type": "logo-pop",
       "id": "open_ov0",
-      "start": 0.3,
-      "end": 3.0,
+      "start": 0.32,
+      "end": 1.85,
+      "z": 70,
+      "src": "yc-sam-01/logos/ChatGPT-Logo.svg",
+      "x": 0.5,
+      "y": 0.33,
+      "size": 300,
+      "tint": "white",
+      "entrance": "pop",
+      "glow": true,
+      "exit": 0.22
+    },
+    {
+      "type": "word-card",
+      "id": "open_ov1",
+      "start": 2.15,
+      "end": 3.95,
       "z": 55,
       "text": "3 months.",
       "face": "serif-display",
@@ -971,9 +986,9 @@
     },
     {
       "type": "word-card",
-      "id": "open_ov1",
-      "start": 3.3,
-      "end": 6.2,
+      "id": "open_ov2",
+      "start": 4.25,
+      "end": 6.35,
       "z": 55,
       "text": "Now 7 minutes.",
       "face": "sans-heavy",
@@ -993,6 +1008,46 @@
       "afterDelay": 1.4,
       "accent": "#FF5A3C",
       "tone": "light"
+    },
+    {
+      "type": "film-burn",
+      "id": "burn0",
+      "start": 6.816,
+      "end": 7.366,
+      "z": 78,
+      "originX": 1.02,
+      "originY": 0.28,
+      "intensity": 0.85
+    },
+    {
+      "type": "film-burn",
+      "id": "burn1",
+      "start": 16.904,
+      "end": 17.454,
+      "z": 78,
+      "originX": -0.02,
+      "originY": 0.4,
+      "intensity": 0.85
+    },
+    {
+      "type": "film-burn",
+      "id": "burn2",
+      "start": 21.334,
+      "end": 21.884,
+      "z": 78,
+      "originX": 1.02,
+      "originY": 0.52,
+      "intensity": 0.85
+    },
+    {
+      "type": "film-burn",
+      "id": "burn3",
+      "start": 35.563,
+      "end": 36.113,
+      "z": 78,
+      "originX": -0.02,
+      "originY": 0.28,
+      "intensity": 0.85
     },
     {
       "type": "chrome",
@@ -2277,6 +2332,18 @@
       "duck": false,
       "fadeIn": 0.25,
       "fadeOut": 0.35
+    },
+    {
+      "id": "sfx_pop_0_27",
+      "src": "yc-sam-01/sfx/pop.wav",
+      "role": "sfx",
+      "start": 0.27,
+      "offset": 0,
+      "duration": 0.75,
+      "gainDb": -8,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.08
     },
     {
       "id": "clip0_00",

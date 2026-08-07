@@ -20,10 +20,26 @@ const common = {
   width: WIDTH,
   height: HEIGHT,
   fps: FPS,
-  calculateMetadata: ({ props }: { props: Timeline }) => ({
-    durationInFrames: Math.round(props.meta.durationInSeconds * props.meta.fps),
-    fps: props.meta.fps,
-  }),
+  /**
+   * Parse props through the schema here, and return the PARSED object.
+   *
+   * Props arriving via `--props` are raw JSON — zod's `.default()` values are
+   * never applied to them, so any field a planner omits reaches the component as
+   * `undefined`. That fails silently and weirdly: a gradient built from
+   * undefined colours is invalid CSS, so the browser drops the whole
+   * declaration and the element renders as nothing at all.
+   *
+   * Parsing here means defaults apply however props arrive, so planners can omit
+   * anything that has a sensible default.
+   */
+  calculateMetadata: ({ props }: { props: Timeline }) => {
+    const parsed = timelineSchema.parse(props);
+    return {
+      durationInFrames: Math.round(parsed.meta.durationInSeconds * parsed.meta.fps),
+      fps: parsed.meta.fps,
+      props: parsed,
+    };
+  },
 } as const;
 
 export const RemotionRoot: React.FC = () => {

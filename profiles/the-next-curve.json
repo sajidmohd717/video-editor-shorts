@@ -34,7 +34,11 @@
   "overlays": {
     "comment": "No end card. A subscribe prompt at the tail costs the loop — a short that ends and restarts cleanly gets rewatches, and rewatch is worth more than the handful of subscribes an end card earns.",
     "showEndCard": false,
-    "progress": "bar"
+    "progress": "bar",
+    "comment2": "Film burns only at VO<->clip handoffs, never at every cut. The device marks a change of voice, not a change of shot; at 0.76 cuts/sec firing it on each one would be exhausting.",
+    "transitionBurn": true,
+    "transitionBurnSeconds": 0.55,
+    "transitionBurnIntensity": 0.85
   },
   "audio": {
     "_": "NO MUSIC BED — a standing channel constraint, not an open task. Do not add one, and do not treat its absence as a gap to close. The energy music would carry comes instead from diegetic b-roll ambience, tight pause cutting, and a denser vocal master.",

@@ -85,6 +85,7 @@ def build(job: Job) -> dict:
     clip_gain = job.get("audio.clipGainDb", 0)
     max_pause = job.get("pacing.maxPauseSeconds", 0.34)
     ambience_db = job.get("audio.brollAmbienceDb")
+    sfx_gain = job.get("audio.sfxGainDb", -8)
     silences = detect_silences(PUBLIC / aroll)
     print(f"   {len(silences)} silence(s) detected in the source clip")
     focus_x = job.source.get("subjectFocusX", 0.5)
@@ -98,6 +99,7 @@ def build(job: Job) -> dict:
     overlays: list[dict] = []
     audio: list[dict] = []
     words_out: list[dict] = []
+    handoffs: list[float] = []  # moments where the speaking voice changes
     t = 0.0
 
     def aroll_clip(cid: str, start: float, end: float, f: dict, src_off: float) -> dict:
@@ -148,6 +150,8 @@ def build(job: Job) -> dict:
 
     def place_vo(index: int) -> tuple[float, float]:
         nonlocal t
+        if t > 0:
+            handoffs.append(round(t, 3))
         s, e = vo_paras[index]
         dur = e - s + 0.25
         audio.append({
@@ -198,6 +202,8 @@ def build(job: Job) -> dict:
         beats authored in SOURCE time can be translated to timeline time.
         """
         nonlocal t
+        if t > 0:
+            handoffs.append(round(t, 3))
         start = t
         segments: list[tuple[float, float, float]] = []  # (src_a, src_b, shift)
 
@@ -318,10 +324,29 @@ def build(job: Job) -> dict:
     def beats_at(where: str) -> list[dict]:
         return [b for b in job.beats if b.get("at") == where]
 
+    def place_sfx(name: str, at: float, gain: float | None = None) -> None:
+        """
+        Fire a one-shot sound effect at an absolute timeline moment.
+
+        Level defaults well under the voice: an accent should punctuate the
+        narration, not interrupt it. If you can hear it as a separate event
+        competing for attention, it's too loud.
+        """
+        src = job.raw.get("sfx", {}).get(name)
+        if not src:
+            raise SystemExit(f"job.sfx has no entry named {name!r}")
+        audio.append({
+            "id": f"sfx_{name}_{at:.2f}".replace(".", "_"), "src": src, "role": "sfx",
+            "start": round(max(0.0, at), 3), "offset": 0,
+            "duration": job.get("audio.sfxDurationSeconds", 0.75),
+            "gainDb": sfx_gain if gain is None else gain,
+            "duck": False, "fadeIn": 0, "fadeOut": 0.08,
+        })
+
     def add_overlay(beat: dict, start: float, end: float, oid: str) -> None:
         payload = {k: v for k, v in beat.items()
                    if k not in ("at", "type", "start", "end", "why", "asset",
-                                "sourceStart", "sourceEnd")}
+                                "sourceStart", "sourceEnd", "sfx")}
         overlays.append({"type": beat["type"], "id": oid,
                          "start": round(start, 3), "end": round(end, 3),
                          "z": beat.get("z", 55), **payload})
@@ -330,7 +355,13 @@ def build(job: Job) -> dict:
     v0s, v0e = place_vo(0)
     fill_broll(v0s, v0e + gap, job.raw.get("openBroll", []), "open")
     for i, b in enumerate(beats_at("open")):
-        add_overlay(b, v0s + b.get("start", 0), v0s + b.get("end", 3), f"open_ov{i}")
+        at = v0s + b.get("start", 0)
+        add_overlay(b, at, v0s + b.get("end", 3), f"open_ov{i}")
+        if b.get("sfx"):
+            # Land the effect a hair before the visual. The eye registers a pop
+            # slightly after the ear, so exact alignment reads as the sound being
+            # late — a couple of frames early feels simultaneous.
+            place_sfx(b["sfx"], at - job.get("audio.sfxLeadSeconds", 0.05))
 
     # --- 2. clip states the claim --------------------------------------------
     passages = job.passages
@@ -385,6 +416,29 @@ def build(job: Job) -> dict:
     else:
         # No end card, so nothing to hold for — b-roll runs to the last frame.
         fill_broll(v2s, v2e + 0.9, close, "close")
+
+    # --- transition burns -----------------------------------------------------
+    # Only at VO<->clip handoffs, which are the structural seams of the piece.
+    # Firing one at every cut would be exhausting at 0.76 cuts/sec — the device
+    # works because it marks a change of *voice*, not a change of shot.
+    burn = job.get("overlays.transitionBurn")
+    if burn:
+        burn_dur = job.get("overlays.transitionBurnSeconds", 0.55)
+        for n, at in enumerate(handoffs):
+            overlays.append({
+                "type": "film-burn", "id": f"burn{n}",
+                # Envelope peaks at ~28% in, so start early enough that the peak
+                # lands on the cut and the shot changes while blown out.
+                "start": round(max(0.0, at - burn_dur * 0.28), 3),
+                "end": round(at + burn_dur * 0.72, 3),
+                "z": 78,
+                # Alternate the entry side so repeats don't feel mechanical.
+                "originX": 1.02 if n % 2 == 0 else -0.02,
+                "originY": 0.28 + 0.12 * (n % 3),
+                "intensity": job.get("overlays.transitionBurnIntensity", 0.85),
+            })
+            if job.get("overlays.transitionBurnSfx"):
+                place_sfx(job.get("overlays.transitionBurnSfx"), at - 0.05)
 
     duration = round(v2e + 0.9, 3)
     clips.sort(key=lambda c: c["start"])

@@ -284,6 +284,56 @@ cuts. That's the next lever for energy if retention data suggests it's needed.
 Deferred deliberately: the current video ships first so there's a baseline to
 measure against.
 
+### F21 — zod `.default()` does NOT apply to props passed via `--props`
+
+The first overlay to rely on schema defaults instead of emitting every field
+rendered as **nothing at all**. Props from `--props` are raw JSON; defaults are
+only applied when something calls `.parse()`. Omitted fields arrive as
+`undefined`, and a CSS gradient built from undefined colours is invalid, so the
+browser drops the whole declaration silently.
+
+**Applied:** `calculateMetadata` in `Root.tsx` now parses props through
+`timelineSchema` and returns the parsed object, so defaults apply however props
+arrive. **Status:** keep. This was a whole class of latent bug — every existing
+overlay only worked because the planner happened to emit every field.
+
+**Rule:** invalid CSS fails silently. When a component renders nothing, suspect a
+malformed style string before suspecting the wiring.
+
+### F22 — Sound effect + logo pop
+
+A mark that springs in on a named entity, paired with a short sound effect. Two
+details do the work:
+
+- **Under-damped spring.** The overshoot is what reads as an *impact*; a
+  critically-damped entrance on the same frame feels late.
+- **Sound leads the visual by ~0.05s.** The eye registers a pop slightly after
+  the ear, so exact alignment sounds late.
+
+Logos are tinted with `brightness(0) invert(1)`, which whitens any source file
+without editing the asset.
+
+**Status:** keep, and keep rare. It works as an accent; firing it on every proper
+noun turns it into wallpaper.
+
+### F23 — Film burn, generated not stock
+
+An amber light-leak that peaks across a cut. Generated procedurally, so it's
+deterministic, recolourable, and licence-free. What makes it read as film rather
+than a flash:
+
+- asymmetric envelope — fast attack, slow decay (symmetric reads as a dissolve)
+- three colour zones — near-white core, amber body, scorched red edge
+- the bloom *spreads* as it decays rather than shrinking back
+- grain confined to the burn, so clean frames stay clean
+
+Note `radial-gradient(ellipse X% Y%)`, not `circle X%` — percentage sizes are
+invalid for `circle` and the declaration is dropped without error.
+
+**Placement:** only at VO↔clip handoffs. The device marks a change of *voice*,
+not a change of shot; at 0.76 cuts/sec firing it on every cut would be
+exhausting. **Status:** keep, untested against audience data.
+
 ---
 
 ## Baseline measurements

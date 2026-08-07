@@ -15,6 +15,8 @@ import { StatChart } from "./StatChart";
 import { WordCard } from "./WordCard";
 import { Cta } from "./Cta";
 import { Comparison } from "./Comparison";
+import { LogoPop } from "./LogoPop";
+import { FilmBurn } from "./FilmBurn";
 
 export const OverlayLayer: React.FC<{ overlay: Overlay; durationInFrames: number }> = ({
   overlay,
@@ -49,6 +51,10 @@ export const OverlayLayer: React.FC<{ overlay: Overlay; durationInFrames: number
       return <WordCard {...overlay} />;
     case "cta":
       return <Cta {...overlay} />;
+    case "logo-pop":
+      return <LogoPop {...overlay} durationInFrames={durationInFrames} />;
+    case "film-burn":
+      return <FilmBurn {...overlay} durationInFrames={durationInFrames} />;
     case "end-card":
       return <EndCard {...overlay} />;
     default:
