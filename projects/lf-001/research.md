@@ -101,11 +101,49 @@ That's a **$585B valuation increase between two rounds** — worth a beat of its
 covers expanded collaboration for **up to 5 GW** of new compute. Confirm the
 dollar figures against the same page before use.
 
+### NVIDIA / OpenAI — confirmed, and it completes the pattern
+From [OpenAI's own announcement](https://openai.com/index/openai-nvidia-systems-partnership/)
+and [NVIDIA's newsroom](https://nvidianews.nvidia.com/news/openai-and-nvidia-announce-strategic-partnership-to-deploy-10gw-of-nvidia-systems),
+22 September 2025:
+
+- A **letter of intent** — not a signed, binding deal
+- At least **10 gigawatts** of NVIDIA systems
+- NVIDIA **"intends to invest up to $100 billion"**, released **progressively as
+  each gigawatt is deployed**
+- First gigawatt in **H2 2026** on the Vera Rubin platform
+
+Read the qualifiers: *letter of intent*, *intends to*, *up to*, *progressively as
+deployed*. It was reported, and priced, as a $100B investment.
+
 ### Still unverified — do not script yet
-- All Nvidia/OpenAI figures (#4–#7). Several are **reported talks**, not announced
-  deals. Anything that survives must be worded "reportedly".
-- OpenAI valuation and revenue (#10) — current source is weak.
-- **Claim #12 is dropped** unless a primary source appears.
+- The Feb 2026 collapse of the $100B commitment and the $30B equity stake that
+  replaced it (#5). **If true this is the single best fact in the video** — the
+  headline number never arrived. Needs a primary source.
+- Nvidia's reported $250B backstop and $350B chip financing (#6, #7). **Reported
+  talks.** Either word them "reportedly" or cut them.
+- OpenAI valuation and revenue (#10) — weak source.
+- **Claim #12 is dropped.**
+
+---
+
+## THE THESIS, now that three primary sources agree
+
+The video does not need to allege anything. It only needs to read the
+announcements carefully, because they say it themselves:
+
+| Deal | Headline | What the announcement actually says |
+|---|---|---|
+| NVIDIA → OpenAI | "$100B investment" | *Letter of intent.* "Intends to invest **up to** $100B", released progressively per gigawatt deployed |
+| NVIDIA + Microsoft → Anthropic | "$15B invested" | **Up to** $10B and **up to** $5B — separate commitments, against a $30B Azure purchase |
+| Oracle | "$638B backlog" | RPO — contracted future obligations, **not revenue**; $75B of it prepaid or customer-supplied hardware |
+
+**The answer to "who is actually paying" is: in many cases, less money has moved
+than the headlines imply — and where it has moved, it frequently moved in a
+circle.**
+
+That's a defensible, checkable claim built entirely from companies' own words. It
+requires no accusation, no prediction, and no insider knowledge — which is
+exactly what makes it strong.
 
 ### Method note
 Two of the first four things checked were wrong or overstated in secondary
