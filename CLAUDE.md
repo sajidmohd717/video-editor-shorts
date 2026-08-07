@@ -167,13 +167,32 @@ switch. Update the doc when you do.
 ## Current state
 
 Working end-to-end: ingest → TTS → transcribe → captions → stock/screenshots →
-plan → render → master. One video built (`yc-sam-01`), 19 findings logged.
+plan → render → master → upload. Three videos built, 36 findings logged.
 
-**No platform data yet.** Everything in `MODEL_DEV_LOG.md` is reasoning from
-three reference teardowns plus this build. Cut density, narration share, the
-no-end-card decision and b-roll dosage are all untested against a real audience.
-When numbers arrive, record them against the experiment template — raw views
-alone are not a verdict.
+**One data point so far.** `yc-sam-01` held **32%** stayed-to-watch against ~63%
+for the channel's earlier clip-only cuts. Average view duration was 53%, so the
+edit isn't the problem — the opening is. `yc-sam-02` and `yc-sam-03` both open
+clip-first to test that, and neither has published numbers yet.
+
+Everything else in `MODEL_DEV_LOG.md` is still reasoning from three reference
+teardowns. Cut density, narration share, the no-end-card decision and b-roll
+dosage remain untested against an audience. When numbers arrive, record them
+against the experiment template — raw views alone are not a verdict.
+
+## The editorial rules that matter most
+
+Mechanics are handled by the engine and its invariants. These are the judgement
+calls that decide whether a short works, and all of them came from review:
+
+1. **Read the whole long-form transcript** before cutting (F32). Clip boundaries
+   are a suggestion — extend back for the antecedent, forward for the payoff.
+2. **Never cut away the sentence that establishes who and what** (F24). Take the
+   runtime out of filler instead.
+3. **Place a device where the viewer needs it**, a beat after the question forms,
+   never before (F35).
+4. **Match the visual to the shape of the claim** (F3) and put b-roll on concrete
+   nouns, never on reasoning (F10).
+5. **A capability is not a reason to use it** (F33).
 
 Known gaps, roughly in priority order:
 

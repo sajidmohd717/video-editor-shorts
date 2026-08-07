@@ -78,7 +78,10 @@ are handled. These are the steps that still need a human, in order:
       the runtime out of filler, asides and restarts instead. Read the opening as
       if you know nothing: does a pronoun appear before its antecedent?
 - [ ] **Introduce anyone the audience may not know** (F26) — portrait badge, name,
-      and a short role line in the accent colour.
+      and a short role line in the accent colour. Fire it **on the spoken name**,
+      not before: a badge answers a question the viewer is forming (F35).
+- [ ] **For every overlay, ask what question it answers** (F35) and whether the
+      viewer is asking it yet. A capability is not a reason to use it.
 - [ ] **No more than ~8–10s of unbroken talking head** (F27). An unbroken face is
       a static frame, and a static frame is a swipe.
 - [ ] **Watch the render.** Every real defect so far was found by watching, not by

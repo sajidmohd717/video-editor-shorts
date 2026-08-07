@@ -574,6 +574,38 @@ what was said.
 **Check for these before rendering** — read the clip's transcript, don't assume
 ASR got proper nouns and idioms right.
 
+### F35 — Where a device fires matters as much as whether it fires
+
+Three separate corrections this session were all the same underlying mistake:
+the right element in the wrong place.
+
+- The Paul Graham badge fired 15s **before** Sam said his name. It's an answer to
+  a question the viewer is forming; spent early, it's wasted, and forgotten by
+  the time it's needed.
+- The wide two-shot opened the video because the `fit` layout had just been
+  built, not because the video wanted it.
+- An earlier cut opened on a pronoun with no antecedent (F24).
+
+None were bugs. Each was a defensible element placed without asking *what is the
+viewer thinking at this exact second?*
+
+**Rule:** for every overlay, ask what question it answers and whether the viewer
+is asking it yet. Devices land when they arrive a beat *after* the need, never
+before.
+
+### F36 — The narration-share floor is doing real work
+
+`editorial.narrationShareFloor` caught yc-sam-03 at **28%**, under the 30% floor.
+The right response was to lengthen the script, not to lower the floor — the
+number exists because narration share is the reused-content posture (F9), and a
+threshold you move when it's inconvenient isn't a threshold.
+
+Lengthening also improved the writing: the extra clause on each paragraph gave
+the close somewhere to land ("...telling you what you just got wrong, while you
+can still do something about it") instead of stopping short.
+
+**Status:** keep at 0.30. Aim for 35–40%.
+
 ---
 
 ## Platform data

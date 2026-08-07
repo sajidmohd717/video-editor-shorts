@@ -35,7 +35,7 @@
   },
   "publish": {
     "title": "The Best Startup Mentor Is a Flight Instructor",
-    "description": "Sam Altman on Paul Graham's idea that a good investor is a teacher — but not the kind who gives lectures.\n\nCommentary and edit: The Next Curve",
+    "description": "Sam Altman on Paul Graham's idea that a good investor is a teacher \u2014 but not the kind who gives lectures.\n\nCommentary and edit: The Next Curve",
     "tags": [
       "Sam Altman",
       "Paul Graham",
@@ -46,7 +46,16 @@
       "tech"
     ],
     "categoryId": "28",
-    "madeForKids": false
+    "madeForKids": false,
+    "uploads": [
+      {
+        "videoId": "GV-Z89KL-gY",
+        "file": "render/v3-master.mp4",
+        "privacy": "private",
+        "uploadedAt": "2026-08-07T18:04:08.317702+00:00"
+      }
+    ],
+    "videoId": "GV-Z89KL-gY"
   },
   "rights": {
     "clearance": "commentary",
@@ -132,7 +141,7 @@
       "sourceStart": 27.4,
       "sourceEnd": 29.4,
       "asset": "lecturehall",
-      "why": "'someone who gives a lecture' — show the lecture hall"
+      "why": "'someone who gives a lecture' \u2014 show the lecture hall"
     },
     {
       "at": "clip2",
@@ -140,7 +149,7 @@
       "sourceStart": 31.2,
       "sourceEnd": 32.3,
       "asset": "emptyseats",
-      "why": "'a lecture about a startup' — empty seats, the idea failing to land"
+      "why": "'a lecture about a startup' \u2014 empty seats, the idea failing to land"
     },
     {
       "at": "clip2",
@@ -148,7 +157,7 @@
       "sourceStart": 33.9,
       "sourceEnd": 36.2,
       "asset": "cockpit",
-      "why": "'like a flight instructor' — the image the whole analogy turns on"
+      "why": "'like a flight instructor' \u2014 the image the whole analogy turns on"
     },
     {
       "at": "clip2",
@@ -156,7 +165,7 @@
       "sourceStart": 37.2,
       "sourceEnd": 38.9,
       "asset": "whiteboard",
-      "why": "'do this, don't do this' — corrective, hands-on instruction"
+      "why": "'do this, don't do this' \u2014 corrective, hands-on instruction"
     }
   ]
 }
