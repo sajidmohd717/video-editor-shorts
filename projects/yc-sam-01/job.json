@@ -36,8 +36,22 @@
     ],
     "categoryId": "28",
     "madeForKids": false,
-    "videoId": "El5XrIpsOCA",
-    "uploadedAt": "2026-08-07T13:07:46.450858+00:00"
+    "videoId": "WBNrDexfRKs",
+    "uploadedAt": "2026-08-07T13:07:46.450858+00:00",
+    "uploads": [
+      {
+        "videoId": "El5XrIpsOCA",
+        "file": "render/v6-master.mp4",
+        "privacy": "private",
+        "uploadedAt": "2026-08-07T13:07:46.450858+00:00"
+      },
+      {
+        "videoId": "WBNrDexfRKs",
+        "file": "render/v10-master.mp4",
+        "privacy": "private",
+        "uploadedAt": "2026-08-07T14:40:55.648227+00:00"
+      }
+    ]
   },
   "rights": {
     "clearance": "commentary",
@@ -51,13 +65,11 @@
     "ding": "yc-sam-01/sfx/ding.wav",
     "whoosh": "yc-sam-01/sfx/whoosh.wav"
   },
-
   "sfxDurations": {
     "ding": 1.4,
     "whoosh": 0.58,
     "pop": 0.75
   },
-
   "sfxCues": [
     {
       "name": "ding",
@@ -66,11 +78,9 @@
       "why": "attention cue on frame one, before the narration starts"
     }
   ],
-
   "logos": {
     "openai": "yc-sam-01/logos/ChatGPT-Logo.svg"
   },
-
   "comment3": "Eleven distinct clips so no asset appears twice in the video. Repeats read as a shortage of material even when the placement is right.",
   "broll": {
     "vintage": "yc-sam-01/stock/pexels-video-12271136.mp4",
@@ -101,7 +111,7 @@
     {
       "at": "open",
       "type": "logo-pop",
-      "why": "lands on the word 'Altman' â€” identifies who is being talked about at the moment he is named",
+      "why": "lands on the word 'Altman' \u00e2\u20ac\u201d identifies who is being talked about at the moment he is named",
       "start": 0.32,
       "end": 1.85,
       "src": "yc-sam-01/logos/ChatGPT-Logo.svg",

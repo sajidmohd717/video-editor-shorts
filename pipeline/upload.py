@@ -214,9 +214,17 @@ def main() -> None:
     print(f"\nhttps://youtu.be/{video_id}")
     print(f"edit: https://studio.youtube.com/video/{video_id}/edit")
 
-    # Record it on the job so the video is traceable back to the timeline.
-    job.raw.setdefault("publish", {})["videoId"] = video_id
-    job.raw["publish"]["uploadedAt"] = datetime.now(timezone.utc).isoformat()
+    # Append rather than overwrite. Once a job is uploaded more than once — a
+    # recut, an A/B — the previous video IDs are the only way to tie performance
+    # data back to the version that produced it.
+    pub = job.raw.setdefault("publish", {})
+    pub.setdefault("uploads", []).append({
+        "videoId": video_id,
+        "file": args.file,
+        "privacy": body["status"]["privacyStatus"],
+        "uploadedAt": datetime.now(timezone.utc).isoformat(),
+    })
+    pub["videoId"] = video_id  # latest, for convenience
     (Project(args.slug).dir / "job.json").write_text(
         json.dumps(job.raw, indent=2), encoding="utf-8")
 
