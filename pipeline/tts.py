@@ -83,6 +83,28 @@ def _kokoro(paragraphs: list[str], out_dir: Path, voice: str | None) -> list[Pat
     return parts
 
 
+def list_voices() -> None:
+    """Print the account's available voices with their IDs."""
+    from elevenlabs.client import ElevenLabs
+
+    client = ElevenLabs(api_key=require_env("ELEVENLABS_API_KEY"))
+    voices = client.voices.get_all().voices
+
+    print(f"{len(voices)} voice(s) available:\n")
+    for v in voices:
+        labels = getattr(v, "labels", None) or {}
+        traits = ", ".join(
+            str(labels[k]) for k in ("gender", "age", "accent", "use_case", "description")
+            if labels.get(k)
+        )
+        print(f"  {v.voice_id}  {v.name}")
+        if traits:
+            print(f"  {' ' * len(v.voice_id)}  {traits}")
+    print("\nPut the ID you want in .env as ELEVENLABS_VOICE_ID.")
+    print("For a news explainer, look for: male/female, american or british,")
+    print("use_case 'news' or 'narration'. Avoid 'characters' and 'social media'.")
+
+
 def _elevenlabs(paragraphs: list[str], out_dir: Path, voice: str | None) -> list[Path]:
     from elevenlabs.client import ElevenLabs
 
@@ -168,10 +190,19 @@ def concat(parts: list[Path], out: Path, gap: float = PARAGRAPH_GAP) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("slug")
+    ap.add_argument("slug", nargs="?")
     ap.add_argument("--engine", choices=["kokoro", "elevenlabs", "edge"], default="kokoro")
     ap.add_argument("--voice", default=None)
+    ap.add_argument("--list-voices", action="store_true",
+                    help="list ElevenLabs voices and IDs, then exit")
+    ap.add_argument("--out", default=None, help="write to this filename instead of vo.wav")
     args = ap.parse_args()
+
+    if args.list_voices:
+        list_voices()
+        return
+    if not args.slug:
+        raise SystemExit("need <slug> (or use --list-voices)")
 
     project = Project(args.slug).ensure()
     paragraphs = read_script(project)
@@ -182,19 +213,24 @@ def main() -> None:
 
     engines = {"kokoro": _kokoro, "elevenlabs": _elevenlabs, "edge": _edge}
 
+    # --out lets you audition an engine or voice without clobbering the vo.wav
+    # the current timeline was built against.
+    dest = project.dir / args.out if args.out else project.vo
+
     with tempfile.TemporaryDirectory() as tmp:
         tmp_dir = Path(tmp)
         parts = engines[args.engine](paragraphs, tmp_dir, args.voice)
-        concat(parts, project.vo)
+        concat(parts, dest)
 
     dur = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration",
-         "-of", "default=nk=1:nw=1", str(project.vo)],
+         "-of", "default=nk=1:nw=1", str(dest)],
         capture_output=True, text=True, check=True,
     ).stdout.strip()
 
-    print(f"\n-> {project.vo}  ({float(dur):.2f}s)")
-    print(f"   next: python -m pipeline.transcribe {args.slug}")
+    print(f"\n-> {dest}  ({float(dur):.2f}s)")
+    if dest == project.vo:
+        print(f"   next: python -m pipeline.transcribe {args.slug}")
 
 
 if __name__ == "__main__":
