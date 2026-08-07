@@ -82,6 +82,46 @@
       "z": 60
     },
     {
+      "cue": "a letter of intent",
+      "type": "article-clip",
+      "seconds": 4.2,
+      "article": "nvidia-qualifiers",
+      "highlight": "letter of intent",
+      "highlightMode": "marker",
+      "sfx": "highlight",
+      "z": 55
+    },
+    {
+      "cue": "intends to",
+      "type": "article-clip",
+      "seconds": 3.6,
+      "article": "nvidia-qualifiers",
+      "highlight": "intends to invest",
+      "highlightMode": "marker",
+      "sfx": "highlight2",
+      "z": 55
+    },
+    {
+      "cue": "up to",
+      "type": "article-clip",
+      "seconds": 3.6,
+      "article": "nvidia-qualifiers",
+      "highlight": "up to $100 billion",
+      "highlightMode": "marker",
+      "sfx": "highlight",
+      "z": 55
+    },
+    {
+      "cue": "progressively",
+      "type": "article-clip",
+      "seconds": 4.4,
+      "article": "nvidia-qualifiers",
+      "highlight": "progressively as each gigawatt is deployed",
+      "highlightMode": "marker",
+      "sfx": "highlight2",
+      "z": 55
+    },
+    {
       "cue": "Four qualifiers in one sentence",
       "type": "quote-card",
       "seconds": 7.5,

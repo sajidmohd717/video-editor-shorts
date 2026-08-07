@@ -216,8 +216,9 @@ Known gaps, roughly in priority order:
 2. **No music — a channel constraint, not a gap (F20).** Do not propose a music
    bed or list its absence as unfinished work. The energy music carries comes
    instead from diegetic b-roll ambience, pause cutting, and a dense vocal master.
-3. **Article screenshots are built but unused in a real video.** The highlight
-   box is positioned by hand; OCR would automate it.
+3. **Article screenshots are built but unused in a real *short*.** The highlight
+   box is no longer hand-placed — `pipeline.screenshot --find "<phrase>"` gets
+   it from DOM range geometry (F37). First real use is lf-001.
 4. **Stock relevance** — half of every search is unusable (F6). A CLIP re-rank
    would cut the manual review.
 5. `plan_explainer.py` still hardcodes its asset map; only `plan_narrated.py` has

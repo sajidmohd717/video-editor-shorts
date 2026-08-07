@@ -266,9 +266,12 @@ export const overlaySchema = z.discriminatedUnion("type", [
     highlight: z.string().optional(),
     /**
      * Highlight band for SCREENSHOT mode, normalised to the rendered image.
-     * The rendered-card path finds the phrase in the text itself; over a
-     * screenshot we can't know where words are, so the band is positioned by
-     * hand once and reused.
+     *
+     * These are DERIVED, not authored: `pipeline.screenshot --find "<phrase>"`
+     * locates the phrase via DOM range geometry and writes the box into the
+     * article manifest. We own the browser, so the page already knows to the
+     * pixel where every word was painted — OCR would be guessing at something
+     * we can simply ask for.
      */
     highlightBox: z
       .object({
@@ -277,6 +280,20 @@ export const overlaySchema = z.discriminatedUnion("type", [
         width: z.number(),
         height: z.number(),
       })
+      .optional(),
+    /**
+     * Per-line boxes for a phrase that wraps. One box around a two-line phrase
+     * also paints the empty gutter to the right of the first line and the
+     * indent to the left of the second, which reads as a block, not a sweep.
+     * When present these replace `highlightBox` for drawing.
+     */
+    highlightLines: z
+      .array(z.object({
+        x: z.number(),
+        y: z.number(),
+        width: z.number(),
+        height: z.number(),
+      }))
       .optional(),
     /**
      * How the screenshot highlight reads:
@@ -289,7 +306,13 @@ export const overlaySchema = z.discriminatedUnion("type", [
     highlightMode: z.enum(["marker", "invert"]).default("marker"),
     highlightStart: z.number().default(0.4),
     highlightDuration: z.number().default(0.45),
-    highlightColor: z.string().default("#111114"),
+    /**
+     * Marker ink. Drawn with `mix-blend-mode: multiply`, so this must be LIGHT:
+     * multiply darkens toward the ink colour, and a near-black default (the
+     * previous one) paints a black bar over the words instead of highlighting
+     * them. Rule of thumb: if you wouldn't write on paper with it, it's wrong.
+     */
+    highlightColor: z.string().default("#FFE24A"),
   }),
 
   /**

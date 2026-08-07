@@ -608,6 +608,42 @@ can still do something about it") instead of stopping short.
 
 ---
 
+### F37 — Ask the page where the words are; don't OCR your own screenshot
+
+Highlight boxes over article screenshots were positioned by hand, and the
+standing plan was to automate it with OCR. That was the wrong tool. **We own the
+browser.** The DOM already knows, to the pixel, where every word was painted —
+OCR would be a recognition step guessing at something we can simply ask for.
+
+`pipeline.screenshot --find "<phrase>"` walks the text nodes, builds a
+whitespace-collapsed index with node offsets kept alongside (so a phrase
+straddling a `<b>` or a line break still resolves), makes a `Range`, and takes
+`getClientRects()`. The boxes go into the article manifest and
+`plan_longform.py` reads them, so the job file names a phrase and never a
+coordinate.
+
+Two details that matter:
+
+- **`getClientRects()`, not `getBoundingClientRect()`.** A phrase that wraps is
+  two rects. One box around both also paints the empty gutter right of line one
+  and the indent left of line two — it reads as a block, not a sweep. Hence
+  `highlightLines` in the schema.
+- **`--crop-pad` is what makes it usable.** Oracle's Q4 release renders 39,524px
+  tall. That is not an asset. The 900px around the sentence that matters is.
+
+Same run also fixed a real bug: `highlightColor` defaulted to `#111114` under
+`mix-blend-mode: multiply`, which paints a **black bar over the words** — the
+exact opposite of highlighting. Marker ink must be light. If you wouldn't write
+on paper with it, it's wrong.
+
+**Bonus, and the reason to prefer primary sources:** locating the phrase meant
+rendering the whole Oracle release, which surfaced a line no secondary coverage
+mentioned — free cash flow was **negative $23.7 billion** for FY2026, in the
+same document as the $638B of obligations. Reading the primary source is not
+just about accuracy; it's where the good material is.
+
+---
+
 ## Platform data
 
 ### 2026-08-07 — first narrated short (El5XrIpsOCA)

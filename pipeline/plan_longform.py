@@ -32,6 +32,7 @@ import json
 import re
 import shutil
 import sys
+from pathlib import Path
 
 from .config import Project
 from .profiles import Job, load_job
@@ -60,6 +61,38 @@ def build(job: Job) -> dict:
 
     canvas = job.get("brand.canvas", "#0A0A0C")
     accent = job.get("brand.accent", "#FF5A3C")
+
+    # Article screenshots and their located phrase boxes. The job names a
+    # document and a phrase; where that phrase sits on the page is a fact about
+    # the page, so it's looked up here rather than authored (see
+    # `pipeline.screenshot --find`).
+    art_manifest = project.assets / "articles" / "manifest.json"
+    articles: dict[str, dict] = {}
+    if art_manifest.exists():
+        for a in json.loads(art_manifest.read_text(encoding="utf-8")).get("articles", []):
+            articles[Path(a["file"]).stem] = a
+
+    def article_box(name: str, phrase: str) -> tuple[dict | None, list[dict]]:
+        entry = articles.get(name)
+        if not entry:
+            raise SystemExit(
+                f"no captured article named {name!r} — run pipeline.screenshot first")
+        for h in entry.get("find", []):
+            if h.get("found") and norm(h["phrase"]) == norm(phrase):
+                r = h.get("rel")
+                if not r:
+                    raise SystemExit(
+                        f"article {name!r} was captured without --crop-pad, so "
+                        f"phrase boxes have no image-relative coordinates")
+                box = {"x": r["x"], "y": r["y"], "width": r["w"], "height": r["h"]}
+                lines = [{"x": l["x"], "y": l["y"], "width": l["w"], "height": l["h"]}
+                         for l in h.get("relLines", [])]
+                return box, (lines if len(lines) > 1 else [])
+        have = [h["phrase"] for h in entry.get("find", []) if h.get("found")]
+        raise SystemExit(
+            f"article {name!r} has no located phrase {phrase!r}.\n"
+            f"  located: {have}\n"
+            f"  re-run pipeline.screenshot with --find {phrase!r}")
 
     clips: list[dict] = []
     overlays: list[dict] = []
@@ -194,7 +227,23 @@ def build(job: Job) -> dict:
             payload = {k: val for k, val in v.items()
                        if k not in ("cue", "occurrence", "at", "offset", "seconds",
                                     "type", "asset", "why", "sfx", "background",
-                                    "layout", "focusX", "focusY", "sourceOffset")}
+                                    "layout", "focusX", "focusY", "sourceOffset",
+                                    "article")}
+            if kind == "article-clip":
+                entry = articles.get(v["article"]) if "article" in v else None
+                if entry is None:
+                    raise SystemExit("article-clip visual needs an 'article' name")
+                payload["src"] = entry["file"]
+                payload.setdefault("outlet", entry.get("outlet", ""))
+                if v.get("highlight"):
+                    box, lines = article_box(v["article"], v["highlight"])
+                    payload["highlightBox"] = box
+                    if lines:
+                        payload["highlightLines"] = lines
+                    # `highlight` on this overlay means "substring of the rendered
+                    # headline"; over a screenshot the box does the work and the
+                    # string would make the component look for text that isn't there.
+                    payload.pop("highlight", None)
             overlays.append({"type": kind, "id": f"ov{i}",
                              "start": round(s, 3), "end": round(e, 3),
                              "z": v.get("z", 55),

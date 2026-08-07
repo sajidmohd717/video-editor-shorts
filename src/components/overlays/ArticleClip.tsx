@@ -24,13 +24,15 @@ export const ArticleClip: React.FC<Props> = ({
   byline,
   highlight,
   highlightBox,
+  highlightLines,
   highlightMode,
   highlightStart,
   highlightDuration,
   highlightColor,
 }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width, height } = useVideoConfig();
+  const wide = width > height;
 
   const enter = spring({
     frame,
@@ -58,9 +60,12 @@ export const ArticleClip: React.FC<Props> = ({
     <AbsoluteFill
       style={{
         background: "#EDEDEF",
-        justifyContent: "center",
+        // In landscape the document letterboxes anyway, so bias it upward and
+        // hand the leftover band to the captions rather than letting the two
+        // fight over the middle of the frame.
+        justifyContent: wide ? "flex-start" : "center",
         alignItems: "center",
-        padding: "0 56px",
+        padding: wide ? `${height * 0.07}px 56px 0` : "0 56px",
       }}
     >
       {src ? (
@@ -79,7 +84,35 @@ export const ArticleClip: React.FC<Props> = ({
             src={/^(https?:|data:)/.test(src) ? src : staticFile(src)}
             style={{ width: "100%", objectFit: "contain", display: "block" }}
           />
-          {highlightBox ? (
+          {highlightLines && highlightLines.length > 0
+            ? (() => {
+                // Sweep runs across the lines in reading order, so the pen
+                // finishes one line before starting the next.
+                const total = highlightLines.reduce((s, l) => s + l.width, 0) || 1;
+                let consumed = sweep * total;
+                return highlightLines.map((l, i) => {
+                  const drawn = Math.max(0, Math.min(l.width, consumed));
+                  consumed -= l.width;
+                  if (drawn <= 0) return null;
+                  return (
+                    <div
+                      key={i}
+                      style={{
+                        position: "absolute",
+                        left: `${l.x * 100}%`,
+                        top: `${l.y * 100}%`,
+                        height: `${l.height * 100}%`,
+                        width: `${drawn * 100}%`,
+                        background: highlightMode === "invert" ? "#FFFFFF" : highlightColor,
+                        mixBlendMode: highlightMode === "invert" ? "difference" : "multiply",
+                        opacity: highlightMode === "invert" ? 1 : 0.85,
+                        pointerEvents: "none",
+                      }}
+                    />
+                  );
+                });
+              })()
+            : highlightBox ? (
             // Neither mode covers the words — a flat rectangle would just hide
             // them, which is the opposite of highlighting. `marker` tints,
             // `invert` flips the region's luminance.

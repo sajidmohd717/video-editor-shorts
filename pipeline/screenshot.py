@@ -54,7 +54,73 @@ def slugify(url: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", stem.lower()).strip("-")[:80] or "article"
 
 
-def capture(url: str, dest: Path, selector: str | None, full: bool) -> dict:
+# Locate a phrase in the rendered page and hand back its box in page coordinates.
+#
+# This is how the highlight box gets positioned. The alternative was OCR, which is
+# the wrong tool when we own the browser: the DOM already knows exactly where every
+# word was painted, to the pixel, with no recognition step to be wrong about.
+#
+# Matching is on whitespace-collapsed, case-folded text with the node offsets kept
+# alongside, so a phrase that straddles a <b> or a line break still resolves.
+FIND_JS = """
+(phrases) => {
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const nodes = [];
+  let flat = "";
+  for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+    const p = n.parentElement;
+    if (!p) continue;
+    const st = getComputedStyle(p);
+    if (st.display === "none" || st.visibility === "hidden") continue;
+    const t = n.nodeValue.replace(/\\s+/g, " ");
+    if (!t.trim()) continue;
+    nodes.push({ node: n, start: flat.length, text: t });
+    flat += t;
+  }
+  const hay = flat.toLowerCase();
+
+  const locate = (offset) => {
+    for (const e of nodes) {
+      if (offset >= e.start && offset <= e.start + e.text.length) {
+        return { node: e.node, offset: Math.min(offset - e.start, e.node.nodeValue.length) };
+      }
+    }
+    return null;
+  };
+
+  return phrases.map((phrase) => {
+    const needle = phrase.replace(/\\s+/g, " ").trim().toLowerCase();
+    const i = hay.indexOf(needle);
+    if (i < 0) return { phrase, found: false };
+    const a = locate(i), b = locate(i + needle.length);
+    if (!a || !b) return { phrase, found: false };
+    const r = document.createRange();
+    try { r.setStart(a.node, a.offset); r.setEnd(b.node, b.offset); }
+    catch (e) { return { phrase, found: false }; }
+    const box = r.getBoundingClientRect();
+    // Per-line rects: a phrase wrapping across two lines is two boxes, and one
+    // box around both would highlight the empty gutter between them.
+    const lines = Array.from(r.getClientRects()).map((c) => ({
+      x: c.x + scrollX, y: c.y + scrollY, w: c.width, h: c.height,
+    }));
+    return {
+      phrase, found: true,
+      x: box.x + scrollX, y: box.y + scrollY, w: box.width, h: box.height,
+      lines,
+    };
+  });
+}
+"""
+
+
+def capture(
+    url: str,
+    dest: Path,
+    selector: str | None,
+    full: bool,
+    find: list[str] | None = None,
+    crop_pad: int | None = None,
+) -> dict:
     from playwright.sync_api import sync_playwright
 
     meta: dict = {"url": url}
@@ -88,7 +154,47 @@ def capture(url: str, dest: Path, selector: str | None, full: bool) -> dict:
 
         meta["title"] = page.title()
 
-        if full:
+        hits: list[dict] = []
+        if find:
+            page.evaluate("() => window.scrollTo(0, 0)")
+            hits = page.evaluate(FIND_JS, find)
+            meta["find"] = hits
+            for h in hits:
+                if not h.get("found"):
+                    print(f"   ! phrase not found: {h['phrase'][:60]!r}")
+
+        # Cropping to a located phrase is the point of --find: a 39,000px-tall
+        # press release is not an asset, but the 900px around the sentence that
+        # matters is.
+        found = [h for h in hits if h.get("found")]
+        if crop_pad is not None and found:
+            top = min(h["y"] for h in found) - crop_pad
+            bottom = max(h["y"] + h["h"] for h in found) + crop_pad
+            full_h = page.evaluate("() => document.documentElement.scrollHeight")
+            clip = {
+                "x": 0, "y": max(0, top),
+                "width": VIEWPORT["width"],
+                "height": min(bottom, full_h) - max(0, top),
+            }
+            page.screenshot(path=str(dest), clip=clip, full_page=True)
+            meta["mode"] = "phrase-crop"
+            meta["clip"] = clip
+            # Re-express every hit relative to the CROP, normalised — that's the
+            # coordinate space the overlay actually draws in.
+            for h in found:
+                h["rel"] = {
+                    "x": h["x"] / clip["width"],
+                    "y": (h["y"] - clip["y"]) / clip["height"],
+                    "w": h["w"] / clip["width"],
+                    "h": h["h"] / clip["height"],
+                }
+                h["relLines"] = [{
+                    "x": l["x"] / clip["width"],
+                    "y": (l["y"] - clip["y"]) / clip["height"],
+                    "w": l["w"] / clip["width"],
+                    "h": l["h"] / clip["height"],
+                } for l in h.get("lines", [])]
+        elif full:
             page.screenshot(path=str(dest), full_page=True)
             meta["mode"] = "full"
         else:
@@ -138,14 +244,25 @@ def main() -> None:
     ap.add_argument("--selector", default=None, help="CSS selector to crop to")
     ap.add_argument("--full", action="store_true", help="capture the whole page")
     ap.add_argument("--name", default=None)
+    ap.add_argument("--find", action="append", default=None,
+                    help="locate a phrase and record its box; repeatable")
+    ap.add_argument("--width", type=int, default=None,
+                    help="viewport width; narrow it to reflow sidebars away and "
+                         "let the article column fill the frame")
+    ap.add_argument("--crop-pad", type=int, default=None,
+                    help="with --find, crop to the phrases plus N px of context")
     args = ap.parse_args()
+
+    if args.width:
+        VIEWPORT["width"] = args.width
 
     project = Project(args.slug).ensure()
     shots = project.assets / "articles"
     shots.mkdir(parents=True, exist_ok=True)
 
     dest = shots / f"{args.name or slugify(args.url)}.png"
-    meta = capture(args.url, dest, args.selector, args.full)
+    meta = capture(args.url, dest, args.selector, args.full,
+                   find=args.find, crop_pad=args.crop_pad)
     meta["file"] = project.asset_ref(dest)
     meta["outlet"] = urlparse(args.url).netloc.replace("www.", "")
 
@@ -160,6 +277,12 @@ def main() -> None:
     print(f"-> {dest}  ({size} KB, mode={meta.get('mode')})")
     if meta.get("headline"):
         print(f"   headline: {meta['headline'][:90]}")
+    for h in meta.get("find", []):
+        if h.get("found"):
+            r = h.get("rel")
+            where = (f"rel x={r['x']:.3f} y={r['y']:.3f} w={r['w']:.3f} h={r['h']:.3f}"
+                     if r else f"page y={h['y']:.0f}")
+            print(f"   found {h['phrase'][:44]!r} -> {where}")
     print(f"   manifest: {manifest}")
 
 
