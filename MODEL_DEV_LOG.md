@@ -492,6 +492,24 @@ than Matilda, which took this video from 46.2s to 50.8s with no other change.
 The edit re-times itself (F4), but total runtime moves — check it after a voice
 swap.
 
+### F31 — Control pace in post, not through the TTS API
+
+Eric on v3 read as "someone about to fall asleep on a beach" — the words were
+right, the tempo wasn't. ElevenLabs' own `speed` voice setting proved useless
+here: asking v3 for `speed: 1.15` returned a **longer** take than `1.0`, because
+run-to-run variance swamps the parameter entirely.
+
+**Applied:** `tts.rate` in the profile, applied with ffmpeg `atempo` after
+concat. Deterministic, pitch-preserving, and transparent on speech up to ~1.25.
+Pace becomes a dial rather than a hope.
+
+**Settled at 1.26** for this channel — a news-anchor clip. That took the VO from
+22.6s to 16.3s and the video from 50.8s to 44.6s, with no script change.
+
+**Rule:** when a provider's parameter can't be verified to work, measure it. One
+API call each at two settings showed the parameter did nothing — cheaper than
+shipping a video built on the assumption that it did.
+
 ---
 
 ## Platform data

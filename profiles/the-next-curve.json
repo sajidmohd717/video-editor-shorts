@@ -24,6 +24,8 @@
     "similarityBoost": 0.8,
     "style": 0.0,
     "speakerBoost": true,
+    "comment3": "rate is applied in post with atempo, NOT via ElevenLabs' speed setting — asking v3 for speed 1.15 returned a longer take than 1.0, because run-to-run variance swamps the parameter. atempo is deterministic and pitch-preserving, so pace is a dial rather than a hope. 1.26 reads as a news anchor; the unadjusted v3 read was described as 'someone about to fall asleep on a beach'.",
+    "rate": 1.26,
     "alternates": [
       {
         "voice": "XrExE9yKIg1WjnnlVkGX",

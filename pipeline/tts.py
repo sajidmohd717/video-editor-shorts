@@ -172,7 +172,8 @@ def _edge(paragraphs: list[str], out_dir: Path, voice: str | None) -> list[Path]
     return asyncio.run(run())
 
 
-def concat(parts: list[Path], out: Path, gap: float = PARAGRAPH_GAP) -> None:
+def concat(parts: list[Path], out: Path, gap: float = PARAGRAPH_GAP,
+           rate: float = 1.0) -> None:
     """
     Concatenate parts with a fixed silence between them, into 48k mono WAV.
 
@@ -207,9 +208,15 @@ def concat(parts: list[Path], out: Path, gap: float = PARAGRAPH_GAP) -> None:
             labels.append(f"[a{idx}]")
             idx += 1
 
+    # Pace. ElevenLabs' own `speed` setting proved unreliable on v3 — asking for
+    # 1.15 returned a LONGER take than 1.0, i.e. run-to-run variance swamped it.
+    # atempo is deterministic and pitch-preserving, so pace becomes a dial rather
+    # than a hope. Values up to ~1.25 are transparent on speech.
+    pace = "" if abs(rate - 1.0) < 1e-3 else f",atempo={rate:.3f}"
+
     filter_complex = (
         ";".join(filters) + ";" + "".join(labels)
-        + f"concat=n={len(labels)}:v=0:a=1[out]"
+        + f"concat=n={len(labels)}:v=0:a=1{pace}[out]"
     )
 
     subprocess.run(
@@ -228,6 +235,8 @@ def main() -> None:
     ap.add_argument("--list-voices", action="store_true",
                     help="list ElevenLabs voices and IDs, then exit")
     ap.add_argument("--out", default=None, help="write to this filename instead of vo.wav")
+    ap.add_argument("--rate", type=float, default=None,
+                    help="pace multiplier, e.g. 1.15 for a brisker read")
     args = ap.parse_args()
 
     if args.list_voices:
@@ -273,7 +282,9 @@ def main() -> None:
     with tempfile.TemporaryDirectory() as tmp:
         tmp_dir = Path(tmp)
         parts = run(paragraphs, tmp_dir)
-        concat(parts, dest)
+        concat(parts, dest,
+               gap=tts_cfg.get("paragraphGapSeconds", PARAGRAPH_GAP),
+               rate=args.rate or tts_cfg.get("rate", 1.0))
 
     dur = subprocess.run(
         ["ffprobe", "-v", "error", "-show_entries", "format=duration",
