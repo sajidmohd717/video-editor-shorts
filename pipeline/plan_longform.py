@@ -57,7 +57,21 @@ def build(job: Job) -> dict:
     words = caps["words"]
     if not words:
         raise SystemExit("captions.json has no words — run pipeline.captions first")
-    duration = round(words[-1]["end"] + job.get("pacing.tailSeconds", 2.0), 3)
+
+    # --- cold open ------------------------------------------------------------
+    # The one place source audio leads (L5). Everything derived from the
+    # narration — cues, captions, chapter boundaries — shifts by this much, so
+    # it is applied once, here, and never thought about again.
+    #
+    # This is an EDIT decision, not a script change: the narration is untouched,
+    # it just starts later. Worth having because the channel's one retention
+    # data point says the opening is what failed — yc-sam-01 opened on abstract
+    # b-roll under a synthetic voice and held 32% against ~63% for clip-first
+    # cuts. Real broadcast voices first is the direct test of that.
+    cold = job.raw.get("coldOpen", [])
+    lead = round(sum(c["seconds"] for c in cold), 3)
+
+    duration = round(lead + words[-1]["end"] + job.get("pacing.tailSeconds", 2.0), 3)
 
     canvas = job.get("brand.canvas", "#0A0A0C")
     accent = job.get("brand.accent", "#FF5A3C")
@@ -100,7 +114,7 @@ def build(job: Job) -> dict:
 
     # --- narration spine ------------------------------------------------------
     audio.append({
-        "id": "vo", "src": vo_src, "role": "vo", "start": 0, "offset": 0,
+        "id": "vo", "src": vo_src, "role": "vo", "start": lead, "offset": 0,
         "duration": round(words[-1]["end"] + 0.4, 3),
         "gainDb": job.get("audio.voGainDb", 0), "duck": False,
         "fadeIn": 0.1, "fadeOut": 0.6,
@@ -119,7 +133,7 @@ def build(job: Job) -> dict:
             if flat[i:i + len(target)] == target:
                 seen += 1
                 if seen == occurrence:
-                    return words[i]["start"]
+                    return words[i]["start"] + lead
         return None
 
     # --- chapters -------------------------------------------------------------
@@ -158,6 +172,41 @@ def build(job: Job) -> dict:
                 "gainDb": job.get("audio.whooshGainDb", -6), "duck": False,
                 "fadeIn": 0, "fadeOut": 0.12,
             })
+
+    # --- cold-open clips ------------------------------------------------------
+    t = 0.0
+    for i, c in enumerate(cold):
+        src = job.raw.get("newsClips", {}).get(c["asset"])
+        if not src:
+            raise SystemExit(f"coldOpen references unknown newsClip {c['asset']!r}")
+        clips.append({
+            "id": f"co{i}", "start": round(t, 3), "end": round(t + c["seconds"], 3),
+            "layout": "full", "background": "#000000",
+            "sources": [{"src": src, "offset": 0.0,
+                         "focusX": c.get("focusX", 0.5), "focusY": c.get("focusY", 0.5),
+                         "panX": 0, "panY": 0, "scale": 1, "muted": True}],
+            "camera": {"kind": "punch-in", "from": 1.0, "to": 1.03,
+                       "originX": 0.5, "originY": 0.5},
+            "filters": [], "transitionIn": "cut", "transitionDuration": 0,
+        })
+        # Source audio leads here — full level, not ducked under anything.
+        audio.append({
+            "id": f"coa{i}", "src": src, "role": "clip-audio",
+            "start": round(t, 3), "offset": 0.0, "duration": c["seconds"],
+            "gainDb": c.get("gainDb", 0), "duck": False,
+            "fadeIn": 0.05 if i else 0.25, "fadeOut": 0.05,
+        })
+        t += c["seconds"]
+
+    if cold and burn:
+        # Mark the handover from broadcast voices to ours.
+        overlays.append({
+            "type": "film-burn", "id": "coburn",
+            "start": round(lead - burn_dur * 0.6, 3),
+            "end": round(lead + burn_dur * 0.4, 3), "z": 78,
+            "originX": -0.02, "originY": 0.45,
+            "intensity": job.get("overlays.transitionBurnIntensity", 0.75),
+        })
 
     # --- visuals --------------------------------------------------------------
     placed: list[tuple[float, float, dict]] = []
@@ -346,7 +395,15 @@ def build(job: Job) -> dict:
     # font, lower down. Two renderings of one sentence is worse than either.
     TEXT_CARDS = {"quote-card", "date-card", "comparison", "word-card", "kinetic-title"}
     mute = [(o["start"], o["end"]) for o in overlays if o["type"] in TEXT_CARDS]
-    cues = [c for c in caps.get("cues", [])
+    # Caption cues are in NARRATION time; everything else on the timeline is in
+    # video time. Shift before comparing, or the mute test silently uses two
+    # different clocks and the whole track fires `lead` seconds early.
+    shifted = [{**c, "start": round(c["start"] + lead, 3), "end": round(c["end"] + lead, 3),
+                **({"words": [{**w, "start": round(w["start"] + lead, 3),
+                               "end": round(w["end"] + lead, 3)} for w in c["words"]]}
+                   if c.get("words") else {})}
+               for c in caps.get("cues", [])]
+    cues = [c for c in shifted
             if not any(c["start"] < e and c["end"] > s for s, e in mute)]
     if mute:
         print(f"   captions suppressed under {len(mute)} text cards "

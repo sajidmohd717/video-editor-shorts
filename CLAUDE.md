@@ -158,6 +158,15 @@ Two habits follow:
   output is corrupted, not merely inefficient (F13).
 - **Crop first, scale last** — order of operations, not resolution, is what makes
   A-roll soft (F14).
+- **Transcribe every clip you cut**, from the cut file, and read the last line.
+  Two of four cuts this session ended one word early; one of them dropped the
+  word carrying the whole quote (F39).
+- **Read the chyron as if the narration said it aloud.** It's the biggest text on
+  screen and it asserts what the story is about (L13).
+- **SEC EDGAR blocks undeclared automated clients.** Use the company's own IR
+  page — equally primary, no identity to send.
+- **Two clocks in one file is a standing hazard.** Caption cues are in narration
+  time; timelines are in video time. Convert once, at the boundary (L12).
 
 ---
 

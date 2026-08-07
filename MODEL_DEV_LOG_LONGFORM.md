@@ -226,6 +226,62 @@ other. **Two settings that must agree are one setting.**
 
 ---
 
+### L12 — The cold open is an edit decision, so it belongs in the planner
+
+The shot list wanted the video to open on broadcast voices before our narration
+starts. That is impossible to express by editing the script, and it shouldn't be:
+the narration text doesn't change at all, it just **starts later**.
+
+`job.coldOpen` is a list of clips; the planner sums their durations into `lead`
+and shifts the VO, every phrase cue, every chapter boundary and the whole caption
+track by that amount. Authoring stays in narration time; the timeline is in video
+time; one variable converts between them.
+
+Worth doing because of the channel's only retention data point: yc-sam-01 opened
+on abstract b-roll under a synthetic voice and held **32%** against ~63% for
+clip-first cuts. Real human voices in the first second is the direct test.
+
+**The bug this shape invites, and it's a quiet one.** Caption cues come out of
+`captions.json` in *narration* time while everything else on the timeline is in
+*video* time. Forget the shift on one of them and nothing errors — the captions
+just run `lead` seconds early for the entire video. Two clocks in one file is a
+standing hazard; convert at the boundary, once, and never carry both.
+
+---
+
+### L13 — A chyron is a headline, and it says what the story is about
+
+The cold-open montage called for broadcast clips "with chyrons visible", the idea
+being that a chyron proves the story was externally reported.
+
+Rendering it showed the cost. A CNA clip whose *audio* fit perfectly ("raising
+nearly $10 billion in its IPO") carried the lower third **"CHINA'S AI IPO WAVE"**.
+Our video never discusses China. For three seconds the largest text on screen
+told the viewer they were watching a different story.
+
+**A chyron is not texture, it's a headline** — the strongest claim on screen,
+usually larger than our own captions. Extends F38 (a legible logo is an
+assertion) one level up: *legible headline text is an assertion about the
+subject itself.*
+
+**Rule:** read every chyron in a candidate clip as though the narration said it
+out loud. If you wouldn't write that sentence into the script, don't put it on
+screen.
+
+Second cost, specific to a monetised channel: broadcaster clips carry heavy
+idents — a full red BBC News lower third plus corner logo occupied roughly a
+fifth of frame. Stacking three broadcaster idents in the opening ten seconds
+makes the most claim-prone stretch of the video also the first thing anyone
+sees. **Unresolved — flagged to the channel owner rather than decided here**,
+because it trades retention against monetisation and that trade belongs to them.
+
+Worth noting the alternative that keeps most of the benefit: the retention
+argument is about hearing a *real human voice* early, not about seeing a
+broadcaster's brand. A primary-source clip (an earnings call, a company keynote)
+delivers the voice without the ident or the headline.
+
+---
+
 ## Open questions
 
 1. **What carries pacing without music?** The channel doesn't use music (F20).

@@ -675,6 +675,35 @@ cropped so hard that whatever made the shot worth picking is gone.
 
 ---
 
+### F39 — Transcribe every clip you cut, before you use it
+
+Four clips were cut from source video this session. **Two of them ended one word
+too early**, and both were caught only by running ASR over the finished cut:
+
+| Cut | Ended on | Should end on |
+|---|---|---|
+| Huang, Ch5 | "...and all of it" | "...and all of it **justified**" |
+| BBC, cold open | "...a trillion dollars **of**" | "...a trillion dollars" |
+
+The Huang one is the serious one. "Not only substantially less than you thought,
+and all of it" reverses into an admission; the word *justified* is the entire
+claim. Shipping that would have misrepresented him — in the one chapter whose
+whole job is being fair to the other side.
+
+Neither was visible in the waveform, in the plan, or in the job file. Both took
+about four seconds of ASR to find.
+
+**Rule:** after cutting any clip, transcribe the cut file — not the source — and
+read the last line. A quote that ends mid-clause is a misquote, and the risk is
+highest exactly where you're being careful, because that's where you're cutting
+to a precise phrase.
+
+This generalises the project's central habit (defects are found in the real
+artifact, never in the plan) to a place it hadn't been applied: **the artifact
+for a clip is the cut file, and ASR is how you "watch" audio.**
+
+---
+
 ## Platform data
 
 ### 2026-08-07 — first narrated short (El5XrIpsOCA)
