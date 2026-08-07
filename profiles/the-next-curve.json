@@ -40,9 +40,9 @@
     "transitionBurnOn": "all",
     "transitionBurnSeconds": 0.55,
     "transitionBurnIntensity": 0.85,
-    "comment3": "Whoosh only on the way INTO the clip — it announces the speaker arriving. Coming back out there is nothing to announce.",
+    "comment3": "Whoosh on every voice change, both directions. The alternative — only on the way into the clip — was tried and rejected: marking every handoff is more consistent, and the burn already fires on all four, so a whoosh on only half of them made the sound and the picture disagree.",
     "transitionWhoosh": "whoosh",
-    "transitionWhooshOn": "to-clip"
+    "transitionWhooshOn": "all"
   },
   "audio": {
     "_": "NO MUSIC BED — a standing channel constraint, not an open task. Do not add one, and do not treat its absence as a gap to close. The energy music would carry comes instead from diegetic b-roll ambience, tight pause cutting, and a denser vocal master.",

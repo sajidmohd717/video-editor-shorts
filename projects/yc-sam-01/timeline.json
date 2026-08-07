@@ -2586,10 +2586,34 @@
       "fadeOut": 0.12
     },
     {
+      "id": "sfx_whoosh_16_84",
+      "src": "yc-sam-01/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 16.838,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
       "id": "sfx_whoosh_21_27",
       "src": "yc-sam-01/sfx/whoosh.wav",
       "role": "sfx",
       "start": 21.268,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_whoosh_35_50",
+      "src": "yc-sam-01/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 35.497,
       "offset": 0,
       "duration": 0.58,
       "gainDb": -4,
