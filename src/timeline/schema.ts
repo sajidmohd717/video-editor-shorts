@@ -101,7 +101,15 @@ export const clipSchema = z.object({
       src: z.string(),
       /** Seek offset into the source file at clip start. */
       offset: z.number().default(0),
-      /** Manual crop nudge, normalised. */
+      /**
+       * Which point of the SOURCE frame to keep centred when cropping to 9:16,
+       * normalised 0-1. This is how one landscape interview yields many distinct
+       * "shots": vary focus + scale per clip and each crop reads as a new setup.
+       * 0.72/0.5 keeps a subject sitting right-of-centre in frame.
+       */
+      focusX: z.number().default(0.5),
+      focusY: z.number().default(0.5),
+      /** Fine translate nudge on top of the crop, normalised to frame size. */
       panX: z.number().default(0),
       panY: z.number().default(0),
       scale: z.number().default(1),
@@ -277,6 +285,26 @@ export const overlaySchema = z.discriminatedUnion("type", [
     valueSuffix: z.string().default("%"),
     drawDuration: z.number().default(1.2),
     accent: z.string().default("#22C55E"),
+  }),
+
+  /**
+   * Before/after comparison — two values, the second slamming in after a beat.
+   *
+   * Distinct from `stat-chart` on purpose: a line chart asserts a TREND, a
+   * comparison asserts a JUMP. Using the wrong one misrepresents the sentence,
+   * and a chart counting "3 months" down to "0.2 months" reads as nonsense when
+   * the actual claim is "three months became seven minutes".
+   */
+  baseOverlay.extend({
+    type: z.literal("comparison"),
+    beforeLabel: z.string(),
+    beforeValue: z.string(),
+    afterLabel: z.string(),
+    afterValue: z.string(),
+    /** Seconds after start that the "after" side lands. */
+    afterDelay: z.number().default(0.9),
+    accent: z.string().default("#FF5A3C"),
+    tone: z.enum(["light", "dark"]).default("light"),
   }),
 
   /**

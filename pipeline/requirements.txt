@@ -1,0 +1,18 @@
+# Transcription — faster-whisper is CTranslate2, runs int8 on CPU.
+# Deliberately NOT WhisperX: it pulls ~2.5GB of torch for wav2vec2 forced
+# alignment, and this machine has no CUDA so it'd run on CPU anyway. Our VO is
+# clean synthetic speech, where faster-whisper's word timestamps are already
+# tight. Revisit if we start captioning noisy source audio.
+faster-whisper==1.1.1
+
+# TTS
+elevenlabs==1.13.0
+edge-tts==6.1.19          # free draft-quality fallback, no API key needed
+
+# Stock footage / photos
+requests==2.32.3
+
+# Article screenshots
+playwright==1.49.0
+
+python-dotenv==1.0.1

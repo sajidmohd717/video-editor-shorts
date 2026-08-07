@@ -14,6 +14,7 @@ import { Annotation } from "./Annotation";
 import { StatChart } from "./StatChart";
 import { WordCard } from "./WordCard";
 import { Cta } from "./Cta";
+import { Comparison } from "./Comparison";
 
 export const OverlayLayer: React.FC<{ overlay: Overlay; durationInFrames: number }> = ({
   overlay,
@@ -42,6 +43,8 @@ export const OverlayLayer: React.FC<{ overlay: Overlay; durationInFrames: number
       return <Annotation {...overlay} />;
     case "stat-chart":
       return <StatChart {...overlay} />;
+    case "comparison":
+      return <Comparison {...overlay} />;
     case "word-card":
       return <WordCard {...overlay} />;
     case "cta":

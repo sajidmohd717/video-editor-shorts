@@ -22,3 +22,7 @@ Thumbs.db
 # Reference material is third-party copyrighted footage — analysis only, never committed.
 reference/
 out/
+
+projects/*/render/
+public/
+projects/_words.json

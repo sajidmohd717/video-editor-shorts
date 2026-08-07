@@ -63,13 +63,19 @@ const SourceView: React.FC<{
   const filter = buildFilterChain(clip.filters);
   const src = resolveSrc(source.src);
 
+  const nudged = source.panX !== 0 || source.panY !== 0 || source.scale !== 1;
+
   const inner: React.CSSProperties = {
     width: "100%",
     height: "100%",
     objectFit: "cover",
+    // objectPosition decides WHICH part of the source survives the 9:16 crop.
+    // Doing it here rather than with a transform means the crop is independent of
+    // the camera move, so a punch-in doesn't drag the framing off the subject.
+    objectPosition: `${source.focusX * 100}% ${source.focusY * 100}%`,
     ...camera,
     // Per-source manual nudge composes on top of the camera move.
-    ...(source.panX || source.panY || source.scale !== 1
+    ...(nudged
       ? {
           transform: `${camera.transform === "none" ? "" : camera.transform} translate(${
             source.panX * 100
