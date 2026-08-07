@@ -356,71 +356,104 @@ def build(job: Job) -> dict:
                          "start": round(start, 3), "end": round(end, 3),
                          "z": beat.get("z", 55), **payload})
 
-    # --- 1. narration opens ---------------------------------------------------
-    v0s, v0e = place_vo(0)
-    fill_broll(v0s, v0e + gap, job.raw.get("openBroll", []), "open")
-    for i, b in enumerate(beats_at("open")):
-        at = v0s + b.get("start", 0)
-        add_overlay(b, at, v0s + b.get("end", 3), f"open_ov{i}")
-        if b.get("sfx"):
-            # Land the effect a hair before the visual. The eye registers a pop
-            # slightly after the ear, so exact alignment reads as the sound being
-            # late — a couple of frames early feels simultaneous.
-            place_sfx(b["sfx"], at - job.get("audio.sfxLeadSeconds", 0.05))
-
-    # --- 2. clip states the claim --------------------------------------------
+    # --- running order --------------------------------------------------------
+    # `structure` makes the order explicit — ["clip:0","vo:0","clip:1","vo:1"]
+    # opens on the speaker, ["vo:0","clip:0",...] opens on narration. This is the
+    # highest-leverage variable in the format: the first short opened on b-roll
+    # plus synthetic voice and held 32%, against ~63% for clip-only cuts that
+    # opened on a face. Making it a job field rather than a hardcoded sequence is
+    # what lets that be tested rather than argued about.
     passages = job.passages
     if not passages:
         raise SystemExit("job.source.passages is empty — nothing to cut")
-    a_s, a_e, a_segs = place_clip(passages[0])
-    fill_aroll_segments(a_segs, "a")
 
-    # --- 3. narration reframes it --------------------------------------------
-    v1s, v1e = place_vo(1)
-    clips.append({
-        "id": "vo1bg", "start": round(v1s, 3), "end": round(v1e + gap, 3),
-        "layout": "graphic", "background": canvas, "sources": [],
-        "camera": {"kind": "none", "from": 1, "to": 1, "originX": 0.5, "originY": 0.5},
-        "filters": [], "transitionIn": "cut", "transitionDuration": 0,
-    })
-    for i, b in enumerate(beats_at("vo1")):
-        add_overlay({**b, "accent": b.get("accent", accent), "tone": b.get("tone", "light")},
-                    v1s + 0.1, v1e + gap, f"vo1_ov{i}")
+    structure = job.raw.get("structure")
+    if not structure:
+        # Legacy default: narration first, alternating.
+        structure = []
+        for i in range(max(len(vo_paras), len(passages))):
+            if i < len(vo_paras):
+                structure.append(f"vo:{i}")
+            if i < len(passages):
+                structure.append(f"clip:{i}")
 
-    # --- 4. clip pays it off --------------------------------------------------
-    if len(passages) > 1:
-        b_s, b_e, b_segs = place_clip(passages[1])
-        fill_aroll_segments(b_segs, "b")
+    vo_broll = job.raw.get("voBroll", {})
+    legacy_open = job.raw.get("openBroll", [])
+    legacy_close = job.raw.get("closeBroll", [])
+    vo_items = [s for s in structure if s.startswith("vo:")]
+    tail = round(0.9, 3)  # extra hold on the final segment
 
-        for i, beat in enumerate(beats_at("clip")):
-            s = src_to_timeline(beat["sourceStart"], b_segs)
-            e = src_to_timeline(beat["sourceEnd"], b_segs)
-            if s is None or e is None:
-                print(f"  ! beat {i} ({beat.get('why', beat['type'])}) falls inside a "
-                      f"removed pause — skipped")
-                continue
-            if beat["type"] == "broll":
-                carve(s, e)
-                clips.append(broll_clip(f"nb{i}", s, e, beat["asset"]))
+    spans: dict[str, tuple[float, float]] = {}
+    clip_segs: dict[str, list] = {}
+
+    for pos, item in enumerate(structure):
+        kind, idx_s = item.split(":")
+        idx = int(idx_s)
+        last = pos == len(structure) - 1
+        pad = tail if last else gap
+
+        if kind == "vo":
+            if idx >= len(vo_paras):
+                raise SystemExit(
+                    f"structure references {item} but the script has only "
+                    f"{len(vo_paras)} paragraph(s)")
+            s, e = place_vo(idx)
+            spans[item] = (s, e)
+
+            assets = vo_broll.get(idx_s)
+            if assets is None:
+                if item == vo_items[0]:
+                    assets = legacy_open
+                elif item == vo_items[-1]:
+                    assets = legacy_close
+            if assets:
+                fill_broll(s, e + pad, assets, f"vb{idx}_")
             else:
-                add_overlay(beat, s, e, f"clip_ov{i}")
-    else:
-        b_e = a_e
+                # No footage for this segment — the canvas, so a graphic can own it.
+                clips.append({
+                    "id": f"vo{idx}bg", "start": round(s, 3), "end": round(e + pad, 3),
+                    "layout": "graphic", "background": canvas, "sources": [],
+                    "camera": {"kind": "none", "from": 1, "to": 1,
+                               "originX": 0.5, "originY": 0.5},
+                    "filters": [], "transitionIn": "cut", "transitionDuration": 0,
+                })
+        else:
+            if idx >= len(passages):
+                raise SystemExit(
+                    f"structure references {item} but the job has only "
+                    f"{len(passages)} passage(s)")
+            s, e, segs = place_clip(passages[idx])
+            fill_aroll_segments(segs, f"c{idx}_")
+            clip_segs[item] = segs
+            spans[item] = (s, e)
 
-    # --- 5. narration closes --------------------------------------------------
-    v2s, v2e = place_vo(2)
-    close = job.raw.get("closeBroll", [])
-    has_end_card = bool(job.get("overlays.showEndCard") and job.get("endCard"))
+        # Beats keyed to this segment. "open" means whichever segment is first.
+        keys = [f"{kind}{idx}"] + (["open"] if pos == 0 else [])
+        for i, b in enumerate([x for x in job.beats if x.get("at") in keys]):
+            if "sourceStart" in b and kind == "clip":
+                bs = src_to_timeline(b["sourceStart"], clip_segs[item])
+                be = src_to_timeline(b["sourceEnd"], clip_segs[item])
+                if bs is None or be is None:
+                    print(f"  ! beat ({b.get('why', b['type'])}) falls inside a "
+                          f"removed pause — skipped")
+                    continue
+            else:
+                bs = s + b.get("start", 0.1)
+                be = s + b.get("end", (e + pad) - s)
 
-    if has_end_card and close:
-        # Hold one shot under the end card — a cut beneath a subscribe prompt
-        # pulls the eye off the thing you're asking them to do.
-        fill_broll(v2s, v2e - 1.2, close[:-1], "close")
-        clips.append(broll_clip("close_end", v2e - 1.2, v2e + 0.9, close[-1],
-                                offset=4.0, sf=1.0, st=1.12))
-    else:
-        # No end card, so nothing to hold for — b-roll runs to the last frame.
-        fill_broll(v2s, v2e + 0.9, close, "close")
+            if b["type"] == "broll":
+                carve(bs, be)
+                clips.append(broll_clip(f"nb_{pos}_{i}", bs, be, b["asset"]))
+                continue
+
+            add_overlay({**b, "accent": b.get("accent", accent),
+                         "tone": b.get("tone", "light")}, bs, be, f"{kind}{idx}_ov{i}")
+            if b.get("sfx"):
+                # Land the effect a hair before the visual. The eye registers a
+                # pop slightly after the ear, so exact alignment reads as late.
+                place_sfx(b["sfx"], bs - job.get("audio.sfxLeadSeconds", 0.05))
+
+    v2e = t - gap + tail
 
     # --- transition burns -----------------------------------------------------
     # Only at VO<->clip handoffs, which are the structural seams of the piece.
@@ -457,7 +490,7 @@ def build(job: Job) -> dict:
     for cue in job.raw.get("sfxCues", []):
         place_sfx(cue["name"], cue.get("at", 0.0), gain=cue.get("gainDb"))
 
-    duration = round(v2e + 0.9, 3)
+    duration = round(v2e, 3)
     clips.sort(key=lambda c: c["start"])
 
     # Seal slivers left behind when a carved fragment was too short to keep as its
@@ -545,12 +578,19 @@ def build(job: Job) -> dict:
         "version": 1,
         "meta": {"title": job.raw.get("title", job.slug), "slug": job.slug,
                  "durationInSeconds": duration, "fps": FPS},
+        # One pacing segment per structural segment, labelled by position so the
+        # spec stays readable whatever running order the job chose.
         "pacing": [
-            {"start": 0, "end": round(v0e, 3), "energy": 0.6, "label": "hook"},
-            {"start": round(v0e, 3), "end": round(a_e, 3), "energy": 1.0, "label": "build"},
-            {"start": round(a_e, 3), "end": round(v1e, 3), "energy": 0.4, "label": "hold"},
-            {"start": round(v1e, 3), "end": round(b_e, 3), "energy": 1.2, "label": "payoff"},
-            {"start": round(b_e, 3), "end": duration, "energy": 0.5, "label": "outro"},
+            {
+                "start": round(spans[item][0], 3),
+                "end": round(spans[item][1], 3),
+                "energy": 1.0 if item.startswith("clip") else 0.6,
+                "label": ("hook" if i == 0
+                          else "outro" if i == len(structure) - 1
+                          else "payoff" if item.startswith("clip")
+                          else "hold"),
+            }
+            for i, item in enumerate(structure)
         ],
         "clips": clips,
         "overlays": overlays,

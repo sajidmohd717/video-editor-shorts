@@ -1,0 +1,72 @@
+{
+  "slug": "yc-sam-02",
+  "profile": "the-next-curve",
+  "format": "narrated",
+  "title": "Paul Graham willed Y Combinator into existence",
+
+  "structure": ["clip:0", "vo:0", "clip:1", "vo:1"],
+  "structureWhy": "CLIP FIRST. yc-sam-01 opened on b-roll plus synthetic narration and held 32%; clip-only cuts opening on a face held ~63%. This changes that one variable — a human face and a human voice in second one, narration answering rather than introducing.",
+
+  "source": {
+    "aroll": "yc-sam-02/aroll.mp4",
+    "speaker": "Sam Altman",
+    "venue": "Y Combinator",
+    "comment": "Passages are in SOURCE time, relative to the extracted a-roll (which starts at 132.0s of the original talk). Cropped 1620x2160 at x=1552 from the 3840x2160 master — crop first, scale last (F14).",
+    "passages": [
+      [8.5, 24.4],
+      [28.3, 35.8]
+    ],
+    "passagesWhy": "0: the dinner anecdote — walk in hopeless, go home believing you're the next Google. Self-contained and the strongest hook in the clip. 1: the thesis — creating belief out of nothing.",
+    "subjectFocusX": 0.44
+  },
+
+  "publish": {
+    "title": "How Paul Graham Manufactured Startup Optimism",
+    "description": "Sam Altman on the Tuesday dinners where Paul Graham convinced eight hopeless startups they were about to take over the world — and why that mattered more than advice.\n\nCommentary and edit: The Next Curve",
+    "tags": ["Paul Graham", "Sam Altman", "Y Combinator", "startups", "YC", "founders", "tech"],
+    "categoryId": "28",
+    "madeForKids": false
+  },
+
+  "rights": {
+    "clearance": "commentary",
+    "speaker": "Sam Altman",
+    "rightsHolder": "Y Combinator",
+    "sourceUrl": "https://www.youtube.com/@ycombinator",
+    "note": "Short excerpts as evidence for original commentary. Narration is the spine. Does not affect Content ID."
+  },
+
+  "sfx": {
+    "ding": "yc-sam-02/sfx/ding.wav",
+    "pop": "yc-sam-02/sfx/pop.wav",
+    "whoosh": "yc-sam-02/sfx/whoosh.wav"
+  },
+  "sfxDurations": { "ding": 1.4, "whoosh": 0.58, "pop": 0.75 },
+  "sfxCues": [
+    { "name": "ding", "at": 0.0, "gainDb": 1, "why": "attention cue on frame one" }
+  ],
+
+  "broll": {
+    "dinner": "yc-sam-02/stock/pexels-video-6555612.mp4",
+    "team": "yc-sam-02/stock/pexels-video-6913252.mp4",
+    "cooking": "yc-sam-02/stock/pexels-video-37876540.mp4",
+    "skyline": "yc-sam-02/stock/pexels-video-18970501.mp4",
+    "talking": "yc-sam-02/stock/pexels-video-8522984.mp4"
+  },
+
+  "voBroll": {
+    "0": ["team", "talking"],
+    "1": ["dinner", "skyline", "cooking"]
+  },
+
+  "beats": [
+    {
+      "at": "clip0",
+      "type": "broll",
+      "sourceStart": 15.2,
+      "sourceEnd": 16.4,
+      "asset": "team",
+      "why": "'and there were eight companies' — show the room"
+    }
+  ]
+}

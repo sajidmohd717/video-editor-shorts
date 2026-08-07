@@ -1,0 +1,1024 @@
+[
+ {
+  "text": "And",
+  "startMs": 0,
+  "endMs": 240,
+  "timestampMs": 0,
+  "confidence": 0.840015
+ },
+ {
+  "text": "my",
+  "startMs": 240,
+  "endMs": 330,
+  "timestampMs": 240,
+  "confidence": 0.962028
+ },
+ {
+  "text": "kind",
+  "startMs": 330,
+  "endMs": 600,
+  "timestampMs": 330,
+  "confidence": 0.817491
+ },
+ {
+  "text": "of",
+  "startMs": 600,
+  "endMs": 750,
+  "timestampMs": 600,
+  "confidence": 0.998761
+ },
+ {
+  "text": "Paul",
+  "startMs": 750,
+  "endMs": 1050,
+  "timestampMs": 750,
+  "confidence": 0.694148
+ },
+ {
+  "text": "Graham",
+  "startMs": 1050,
+  "endMs": 1410,
+  "timestampMs": 1050,
+  "confidence": 0.981951
+ },
+ {
+  "text": "memory",
+  "startMs": 1410,
+  "endMs": 1890,
+  "timestampMs": 1410,
+  "confidence": 0.997449
+ },
+ {
+  "text": "is:",
+  "startMs": 1890,
+  "endMs": 2140,
+  "timestampMs": 1890,
+  "confidence": 0.747629
+ },
+ {
+  "text": "we",
+  "startMs": 2140,
+  "endMs": 2280,
+  "timestampMs": 2140,
+  "confidence": 0.832217
+ },
+ {
+  "text": "would",
+  "startMs": 2280,
+  "endMs": 2440,
+  "timestampMs": 2280,
+  "confidence": 0.951966
+ },
+ {
+  "text": "all,",
+  "startMs": 2440,
+  "endMs": 3780,
+  "timestampMs": 2440,
+  "confidence": 0.970756
+ },
+ {
+  "text": "every",
+  "startMs": 3780,
+  "endMs": 4270,
+  "timestampMs": 3780,
+  "confidence": 0.999169
+ },
+ {
+  "text": "week,",
+  "startMs": 4270,
+  "endMs": 4800,
+  "timestampMs": 4270,
+  "confidence": 0.99923
+ },
+ {
+  "text": "come—I",
+  "startMs": 4890,
+  "endMs": 5040,
+  "timestampMs": 4890,
+  "confidence": 0.866538
+ },
+ {
+  "text": "think",
+  "startMs": 5220,
+  "endMs": 5640,
+  "timestampMs": 5220,
+  "confidence": 0.999539
+ },
+ {
+  "text": "it",
+  "startMs": 5640,
+  "endMs": 5800,
+  "timestampMs": 5640,
+  "confidence": 0.991518
+ },
+ {
+  "text": "was",
+  "startMs": 5800,
+  "endMs": 6050,
+  "timestampMs": 5800,
+  "confidence": 0.999661
+ },
+ {
+  "text": "on",
+  "startMs": 6050,
+  "endMs": 6210,
+  "timestampMs": 6050,
+  "confidence": 0.997217
+ },
+ {
+  "text": "Tuesdays—and",
+  "startMs": 6900,
+  "endMs": 6920,
+  "timestampMs": 6900,
+  "confidence": 0.999539
+ },
+ {
+  "text": "he",
+  "startMs": 7210,
+  "endMs": 7400,
+  "timestampMs": 7210,
+  "confidence": 0.996117
+ },
+ {
+  "text": "would",
+  "startMs": 7400,
+  "endMs": 7920,
+  "timestampMs": 7400,
+  "confidence": 0.953161
+ },
+ {
+  "text": "cook.",
+  "startMs": 7920,
+  "endMs": 8280,
+  "timestampMs": 7920,
+  "confidence": 0.589922
+ },
+ {
+  "text": "He",
+  "startMs": 8540,
+  "endMs": 8640,
+  "timestampMs": 8540,
+  "confidence": 0.847914
+ },
+ {
+  "text": "himself",
+  "startMs": 8640,
+  "endMs": 9110,
+  "timestampMs": 8640,
+  "confidence": 0.971421
+ },
+ {
+  "text": "would",
+  "startMs": 9110,
+  "endMs": 9530,
+  "timestampMs": 9110,
+  "confidence": 0.978383
+ },
+ {
+  "text": "cook",
+  "startMs": 9530,
+  "endMs": 9740,
+  "timestampMs": 9530,
+  "confidence": 0.999123
+ },
+ {
+  "text": "us",
+  "startMs": 9740,
+  "endMs": 10290,
+  "timestampMs": 9740,
+  "confidence": 0.998917
+ },
+ {
+  "text": "dinner.",
+  "startMs": 10290,
+  "endMs": 10320,
+  "timestampMs": 10290,
+  "confidence": 0.999556
+ },
+ {
+  "text": "We",
+  "startMs": 10470,
+  "endMs": 10570,
+  "timestampMs": 10470,
+  "confidence": 0.996413
+ },
+ {
+  "text": "would",
+  "startMs": 10570,
+  "endMs": 10830,
+  "timestampMs": 10570,
+  "confidence": 0.996729
+ },
+ {
+  "text": "all",
+  "startMs": 10830,
+  "endMs": 11040,
+  "timestampMs": 10830,
+  "confidence": 0.995809
+ },
+ {
+  "text": "walk",
+  "startMs": 11040,
+  "endMs": 11190,
+  "timestampMs": 11040,
+  "confidence": 0.998513
+ },
+ {
+  "text": "in",
+  "startMs": 11190,
+  "endMs": 11390,
+  "timestampMs": 11190,
+  "confidence": 0.996105
+ },
+ {
+  "text": "feeling",
+  "startMs": 11390,
+  "endMs": 11860,
+  "timestampMs": 11390,
+  "confidence": 0.882945
+ },
+ {
+  "text": "very",
+  "startMs": 11860,
+  "endMs": 12100,
+  "timestampMs": 11860,
+  "confidence": 0.7104
+ },
+ {
+  "text": "hopeless",
+  "startMs": 12100,
+  "endMs": 12660,
+  "timestampMs": 12100,
+  "confidence": 0.987441
+ },
+ {
+  "text": "and",
+  "startMs": 12660,
+  "endMs": 12920,
+  "timestampMs": 12660,
+  "confidence": 0.999939
+ },
+ {
+  "text": "very",
+  "startMs": 12920,
+  "endMs": 13300,
+  "timestampMs": 12920,
+  "confidence": 0.999062
+ },
+ {
+  "text": "dejected,",
+  "startMs": 13440,
+  "endMs": 14150,
+  "timestampMs": 13440,
+  "confidence": 0.999156
+ },
+ {
+  "text": "and",
+  "startMs": 14160,
+  "endMs": 14420,
+  "timestampMs": 14160,
+  "confidence": 0.901509
+ },
+ {
+  "text": "there",
+  "startMs": 14420,
+  "endMs": 15150,
+  "timestampMs": 14420,
+  "confidence": 0.549393
+ },
+ {
+  "text": "were",
+  "startMs": 15150,
+  "endMs": 15210,
+  "timestampMs": 15150,
+  "confidence": 0.994541
+ },
+ {
+  "text": "eight",
+  "startMs": 15210,
+  "endMs": 15650,
+  "timestampMs": 15210,
+  "confidence": 0.994843
+ },
+ {
+  "text": "companies.",
+  "startMs": 15650,
+  "endMs": 16460,
+  "timestampMs": 15650,
+  "confidence": 0.999314
+ },
+ {
+  "text": "Then",
+  "startMs": 16620,
+  "endMs": 16840,
+  "timestampMs": 16620,
+  "confidence": 0.970184
+ },
+ {
+  "text": "we",
+  "startMs": 16840,
+  "endMs": 16950,
+  "timestampMs": 16840,
+  "confidence": 0.990777
+ },
+ {
+  "text": "would",
+  "startMs": 16950,
+  "endMs": 17230,
+  "timestampMs": 16950,
+  "confidence": 0.992029
+ },
+ {
+  "text": "all",
+  "startMs": 17230,
+  "endMs": 17400,
+  "timestampMs": 17230,
+  "confidence": 0.995334
+ },
+ {
+  "text": "go",
+  "startMs": 17400,
+  "endMs": 17510,
+  "timestampMs": 17400,
+  "confidence": 0.997896
+ },
+ {
+  "text": "home",
+  "startMs": 17510,
+  "endMs": 17730,
+  "timestampMs": 17510,
+  "confidence": 0.99854
+ },
+ {
+  "text": "at",
+  "startMs": 17730,
+  "endMs": 17830,
+  "timestampMs": 17730,
+  "confidence": 0.95678
+ },
+ {
+  "text": "the",
+  "startMs": 17830,
+  "endMs": 18030,
+  "timestampMs": 17830,
+  "confidence": 0.999355
+ },
+ {
+  "text": "end",
+  "startMs": 18030,
+  "endMs": 18140,
+  "timestampMs": 18030,
+  "confidence": 0.999809
+ },
+ {
+  "text": "of",
+  "startMs": 18140,
+  "endMs": 18410,
+  "timestampMs": 18140,
+  "confidence": 0.99671
+ },
+ {
+  "text": "it,",
+  "startMs": 18410,
+  "endMs": 18440,
+  "timestampMs": 18410,
+  "confidence": 0.999603
+ },
+ {
+  "text": "and",
+  "startMs": 18440,
+  "endMs": 18690,
+  "timestampMs": 18440,
+  "confidence": 0.999687
+ },
+ {
+  "text": "he",
+  "startMs": 18690,
+  "endMs": 18770,
+  "timestampMs": 18690,
+  "confidence": 0.996953
+ },
+ {
+  "text": "had",
+  "startMs": 18770,
+  "endMs": 19000,
+  "timestampMs": 18770,
+  "confidence": 0.955301
+ },
+ {
+  "text": "convinced",
+  "startMs": 19000,
+  "endMs": 19580,
+  "timestampMs": 19000,
+  "confidence": 0.998877
+ },
+ {
+  "text": "each",
+  "startMs": 19580,
+  "endMs": 19850,
+  "timestampMs": 19580,
+  "confidence": 0.969725
+ },
+ {
+  "text": "of",
+  "startMs": 19850,
+  "endMs": 19980,
+  "timestampMs": 19850,
+  "confidence": 0.997908
+ },
+ {
+  "text": "us",
+  "startMs": 19980,
+  "endMs": 20160,
+  "timestampMs": 19980,
+  "confidence": 0.998757
+ },
+ {
+  "text": "that",
+  "startMs": 20160,
+  "endMs": 20370,
+  "timestampMs": 20160,
+  "confidence": 0.99987
+ },
+ {
+  "text": "our",
+  "startMs": 20370,
+  "endMs": 20530,
+  "timestampMs": 20370,
+  "confidence": 0.998727
+ },
+ {
+  "text": "startups",
+  "startMs": 20530,
+  "endMs": 20960,
+  "timestampMs": 20530,
+  "confidence": 0.722352
+ },
+ {
+  "text": "were",
+  "startMs": 20960,
+  "endMs": 21220,
+  "timestampMs": 20960,
+  "confidence": 0.938312
+ },
+ {
+  "text": "about",
+  "startMs": 21220,
+  "endMs": 21440,
+  "timestampMs": 21220,
+  "confidence": 0.985904
+ },
+ {
+  "text": "to",
+  "startMs": 21440,
+  "endMs": 21540,
+  "timestampMs": 21440,
+  "confidence": 0.986299
+ },
+ {
+  "text": "take",
+  "startMs": 21540,
+  "endMs": 21750,
+  "timestampMs": 21540,
+  "confidence": 0.954003
+ },
+ {
+  "text": "over",
+  "startMs": 21750,
+  "endMs": 22120,
+  "timestampMs": 21750,
+  "confidence": 0.999438
+ },
+ {
+  "text": "the",
+  "startMs": 22120,
+  "endMs": 22410,
+  "timestampMs": 22120,
+  "confidence": 0.997379
+ },
+ {
+  "text": "world",
+  "startMs": 22410,
+  "endMs": 22440,
+  "timestampMs": 22410,
+  "confidence": 0.998251
+ },
+ {
+  "text": "and",
+  "startMs": 22440,
+  "endMs": 22650,
+  "timestampMs": 22440,
+  "confidence": 0.999748
+ },
+ {
+  "text": "we",
+  "startMs": 22650,
+  "endMs": 22790,
+  "timestampMs": 22650,
+  "confidence": 0.942942
+ },
+ {
+  "text": "were",
+  "startMs": 22790,
+  "endMs": 23000,
+  "timestampMs": 22790,
+  "confidence": 0.972133
+ },
+ {
+  "text": "going",
+  "startMs": 23000,
+  "endMs": 23350,
+  "timestampMs": 23000,
+  "confidence": 0.875469
+ },
+ {
+  "text": "to",
+  "startMs": 23350,
+  "endMs": 23351,
+  "timestampMs": 23350,
+  "confidence": null
+ },
+ {
+  "text": "be",
+  "startMs": 23350,
+  "endMs": 23490,
+  "timestampMs": 23350,
+  "confidence": 0.995308
+ },
+ {
+  "text": "the",
+  "startMs": 23490,
+  "endMs": 23730,
+  "timestampMs": 23490,
+  "confidence": 0.501775
+ },
+ {
+  "text": "next",
+  "startMs": 23730,
+  "endMs": 24060,
+  "timestampMs": 23730,
+  "confidence": 0.999535
+ },
+ {
+  "text": "Google,",
+  "startMs": 24060,
+  "endMs": 24420,
+  "timestampMs": 24060,
+  "confidence": 0.996542
+ },
+ {
+  "text": "or",
+  "startMs": 24420,
+  "endMs": 24580,
+  "timestampMs": 24420,
+  "confidence": 0.634103
+ },
+ {
+  "text": "whatever—Facebook,",
+  "startMs": 25480,
+  "endMs": 26020,
+  "timestampMs": 25480,
+  "confidence": 0.847387
+ },
+ {
+  "text": "maybe,",
+  "startMs": 26020,
+  "endMs": 26360,
+  "timestampMs": 26020,
+  "confidence": 0.903938
+ },
+ {
+  "text": "at",
+  "startMs": 26360,
+  "endMs": 26490,
+  "timestampMs": 26360,
+  "confidence": 0.907058
+ },
+ {
+  "text": "the",
+  "startMs": 26490,
+  "endMs": 26540,
+  "timestampMs": 26490,
+  "confidence": 0.996744
+ },
+ {
+  "text": "time.",
+  "startMs": 26540,
+  "endMs": 27110,
+  "timestampMs": 26540,
+  "confidence": 0.999779
+ },
+ {
+  "text": "That",
+  "startMs": 28280,
+  "endMs": 28420,
+  "timestampMs": 28280,
+  "confidence": 0.997828
+ },
+ {
+  "text": "ability",
+  "startMs": 28420,
+  "endMs": 29680,
+  "timestampMs": 28420,
+  "confidence": 0.999363
+ },
+ {
+  "text": "to",
+  "startMs": 29680,
+  "endMs": 30050,
+  "timestampMs": 29680,
+  "confidence": 0.996949
+ },
+ {
+  "text": "create",
+  "startMs": 31300,
+  "endMs": 31760,
+  "timestampMs": 31300,
+  "confidence": 0.477553
+ },
+ {
+  "text": "optimism",
+  "startMs": 31760,
+  "endMs": 32120,
+  "timestampMs": 31760,
+  "confidence": 0.961566
+ },
+ {
+  "text": "and",
+  "startMs": 32120,
+  "endMs": 32340,
+  "timestampMs": 32120,
+  "confidence": 0.999756
+ },
+ {
+  "text": "momentum",
+  "startMs": 32340,
+  "endMs": 32930,
+  "timestampMs": 32340,
+  "confidence": 0.996181
+ },
+ {
+  "text": "and",
+  "startMs": 32930,
+  "endMs": 33150,
+  "timestampMs": 32930,
+  "confidence": 0.990626
+ },
+ {
+  "text": "belief",
+  "startMs": 33150,
+  "endMs": 33590,
+  "timestampMs": 33150,
+  "confidence": 0.993225
+ },
+ {
+  "text": "out",
+  "startMs": 33590,
+  "endMs": 33810,
+  "timestampMs": 33590,
+  "confidence": 0.996242
+ },
+ {
+  "text": "of",
+  "startMs": 33810,
+  "endMs": 33960,
+  "timestampMs": 33810,
+  "confidence": 0.999032
+ },
+ {
+  "text": "nothing",
+  "startMs": 33960,
+  "endMs": 34520,
+  "timestampMs": 33960,
+  "confidence": 0.995777
+ },
+ {
+  "text": "was",
+  "startMs": 34520,
+  "endMs": 34790,
+  "timestampMs": 34520,
+  "confidence": 0.999645
+ },
+ {
+  "text": "a",
+  "startMs": 35150,
+  "endMs": 35380,
+  "timestampMs": 35150,
+  "confidence": 0.996713
+ },
+ {
+  "text": "real",
+  "startMs": 35380,
+  "endMs": 35600,
+  "timestampMs": 35380,
+  "confidence": 0.996983
+ },
+ {
+  "text": "PG",
+  "startMs": 35600,
+  "endMs": 35780,
+  "timestampMs": 35600,
+  "confidence": 0.971881
+ },
+ {
+  "text": "special.",
+  "startMs": 35780,
+  "endMs": 36630,
+  "timestampMs": 35780,
+  "confidence": 0.920695
+ },
+ {
+  "text": "In",
+  "startMs": 36800,
+  "endMs": 36910,
+  "timestampMs": 36800,
+  "confidence": 0.991249
+ },
+ {
+  "text": "the",
+  "startMs": 36910,
+  "endMs": 37070,
+  "timestampMs": 36910,
+  "confidence": 0.99934
+ },
+ {
+  "text": "early",
+  "startMs": 37070,
+  "endMs": 37350,
+  "timestampMs": 37070,
+  "confidence": 0.999161
+ },
+ {
+  "text": "days,",
+  "startMs": 37350,
+  "endMs": 37600,
+  "timestampMs": 37350,
+  "confidence": 0.998913
+ },
+ {
+  "text": "when",
+  "startMs": 37600,
+  "endMs": 38090,
+  "timestampMs": 37600,
+  "confidence": 0.461707
+ },
+ {
+  "text": "YC",
+  "startMs": 38150,
+  "endMs": 38240,
+  "timestampMs": 38150,
+  "confidence": 0.906227
+ },
+ {
+  "text": "seemed",
+  "startMs": 38240,
+  "endMs": 38680,
+  "timestampMs": 38240,
+  "confidence": 0.969847
+ },
+ {
+  "text": "like",
+  "startMs": 38680,
+  "endMs": 38840,
+  "timestampMs": 38680,
+  "confidence": 0.970073
+ },
+ {
+  "text": "a",
+  "startMs": 38840,
+  "endMs": 38930,
+  "timestampMs": 38840,
+  "confidence": 0.981467
+ },
+ {
+  "text": "terrible",
+  "startMs": 38930,
+  "endMs": 40030,
+  "timestampMs": 38930,
+  "confidence": 0.99971
+ },
+ {
+  "text": "idea,",
+  "startMs": 40030,
+  "endMs": 40040,
+  "timestampMs": 40030,
+  "confidence": 0.99907
+ },
+ {
+  "text": "startups",
+  "startMs": 40190,
+  "endMs": 40590,
+  "timestampMs": 40190,
+  "confidence": 0.905856
+ },
+ {
+  "text": "seemed",
+  "startMs": 40590,
+  "endMs": 40890,
+  "timestampMs": 40590,
+  "confidence": 0.991263
+ },
+ {
+  "text": "like",
+  "startMs": 40890,
+  "endMs": 41090,
+  "timestampMs": 40890,
+  "confidence": 0.997931
+ },
+ {
+  "text": "a",
+  "startMs": 41090,
+  "endMs": 41140,
+  "timestampMs": 41090,
+  "confidence": 0.997668
+ },
+ {
+  "text": "bad",
+  "startMs": 41140,
+  "endMs": 41290,
+  "timestampMs": 41140,
+  "confidence": 0.99942
+ },
+ {
+  "text": "idea,",
+  "startMs": 41290,
+  "endMs": 41510,
+  "timestampMs": 41290,
+  "confidence": 0.999584
+ },
+ {
+  "text": "and",
+  "startMs": 41520,
+  "endMs": 41660,
+  "timestampMs": 41520,
+  "confidence": 0.976377
+ },
+ {
+  "text": "certainly",
+  "startMs": 41660,
+  "endMs": 42160,
+  "timestampMs": 41660,
+  "confidence": 0.989583
+ },
+ {
+  "text": "startups",
+  "startMs": 42160,
+  "endMs": 42560,
+  "timestampMs": 42160,
+  "confidence": 0.985616
+ },
+ {
+  "text": "that",
+  "startMs": 42560,
+  "endMs": 42780,
+  "timestampMs": 42560,
+  "confidence": 0.975794
+ },
+ {
+  "text": "were",
+  "startMs": 42780,
+  "endMs": 43210,
+  "timestampMs": 42780,
+  "confidence": 0.997626
+ },
+ {
+  "text": "young",
+  "startMs": 43220,
+  "endMs": 43450,
+  "timestampMs": 43220,
+  "confidence": 0.999531
+ },
+ {
+  "text": "technical",
+  "startMs": 43450,
+  "endMs": 43940,
+  "timestampMs": 43450,
+  "confidence": 0.867479
+ },
+ {
+  "text": "founders",
+  "startMs": 43940,
+  "endMs": 44310,
+  "timestampMs": 43940,
+  "confidence": 0.99644
+ },
+ {
+  "text": "with",
+  "startMs": 44310,
+  "endMs": 44440,
+  "timestampMs": 44310,
+  "confidence": 0.956275
+ },
+ {
+  "text": "no",
+  "startMs": 44440,
+  "endMs": 44520,
+  "timestampMs": 44440,
+  "confidence": 0.995761
+ },
+ {
+  "text": "business",
+  "startMs": 44520,
+  "endMs": 44840,
+  "timestampMs": 44520,
+  "confidence": 0.986233
+ },
+ {
+  "text": "people",
+  "startMs": 44840,
+  "endMs": 45080,
+  "timestampMs": 44840,
+  "confidence": 0.925079
+ },
+ {
+  "text": "seemed",
+  "startMs": 45080,
+  "endMs": 45520,
+  "timestampMs": 45080,
+  "confidence": 0.989583
+ },
+ {
+  "text": "like",
+  "startMs": 45520,
+  "endMs": 45710,
+  "timestampMs": 45520,
+  "confidence": 0.996972
+ },
+ {
+  "text": "a",
+  "startMs": 45710,
+  "endMs": 45770,
+  "timestampMs": 45710,
+  "confidence": 0.991688
+ },
+ {
+  "text": "terrible",
+  "startMs": 45770,
+  "endMs": 46270,
+  "timestampMs": 45770,
+  "confidence": 0.999691
+ },
+ {
+  "text": "idea,",
+  "startMs": 46270,
+  "endMs": 46680,
+  "timestampMs": 46270,
+  "confidence": 0.999767
+ },
+ {
+  "text": "PG",
+  "startMs": 46680,
+  "endMs": 46790,
+  "timestampMs": 46680,
+  "confidence": 0.995366
+ },
+ {
+  "text": "just",
+  "startMs": 46790,
+  "endMs": 47010,
+  "timestampMs": 46790,
+  "confidence": 0.955496
+ },
+ {
+  "text": "sort",
+  "startMs": 47010,
+  "endMs": 47220,
+  "timestampMs": 47010,
+  "confidence": 0.975623
+ },
+ {
+  "text": "of",
+  "startMs": 47220,
+  "endMs": 47340,
+  "timestampMs": 47220,
+  "confidence": 0.996976
+ },
+ {
+  "text": "willed",
+  "startMs": 47560,
+  "endMs": 47770,
+  "timestampMs": 47560,
+  "confidence": 0.547182
+ },
+ {
+  "text": "it",
+  "startMs": 47880,
+  "endMs": 48000,
+  "timestampMs": 47880,
+  "confidence": 0.870643
+ },
+ {
+  "text": "into",
+  "startMs": 48000,
+  "endMs": 48210,
+  "timestampMs": 48000,
+  "confidence": 0.997147
+ },
+ {
+  "text": "existence.",
+  "startMs": 48210,
+  "endMs": 48630,
+  "timestampMs": 48210,
+  "confidence": 0.998742
+ }
+]
