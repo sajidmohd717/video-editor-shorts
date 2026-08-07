@@ -1,258 +1,263 @@
 {
   "audio": "vo.wav",
   "language": "en",
-  "duration": 16.261,
-  "text": "That's an advice that's manufacturing belief before any evidence exists for it, which is the rarest thing a mentor can actually do. Most of those eight companies never became Google. Why Combinator did? It exists because one person decided to act as if it would work every Tuesday over dinner.",
+  "duration": 17.356,
+  "text": "That is an advice that's manufacturing belief before any evidence exists for it, which is the rarest thing a mentor can actually do. Most of those A companies never became Google. Why Combinator did? It exists because one person decided to act as if it would work every Tuesday over dinner.",
   "words": [
     {
-      "text": "That's",
+      "text": "That",
       "start": 0.0,
-      "end": 0.28
-    },
-    {
-      "text": "an",
-      "start": 0.28,
-      "end": 0.34
-    },
-    {
-      "text": "advice",
-      "start": 0.34,
-      "end": 0.62
-    },
-    {
-      "text": "that's",
-      "start": 0.62,
-      "end": 0.88
-    },
-    {
-      "text": "manufacturing",
-      "start": 0.88,
-      "end": 1.38
-    },
-    {
-      "text": "belief",
-      "start": 1.38,
-      "end": 1.74
-    },
-    {
-      "text": "before",
-      "start": 1.74,
-      "end": 2.3
-    },
-    {
-      "text": "any",
-      "start": 2.3,
-      "end": 2.7
-    },
-    {
-      "text": "evidence",
-      "start": 2.7,
-      "end": 3.08
-    },
-    {
-      "text": "exists",
-      "start": 3.08,
-      "end": 3.36
-    },
-    {
-      "text": "for",
-      "start": 3.36,
-      "end": 3.68
-    },
-    {
-      "text": "it,",
-      "start": 3.68,
-      "end": 3.84
-    },
-    {
-      "text": "which",
-      "start": 4.28,
-      "end": 4.5
+      "end": 0.18
     },
     {
       "text": "is",
-      "start": 4.5,
-      "end": 4.58
+      "start": 0.18,
+      "end": 0.3
     },
     {
-      "text": "the",
-      "start": 4.58,
-      "end": 4.66
+      "text": "an",
+      "start": 0.3,
+      "end": 0.38
     },
     {
-      "text": "rarest",
-      "start": 4.66,
-      "end": 5.0
+      "text": "advice",
+      "start": 0.38,
+      "end": 0.68
     },
     {
-      "text": "thing",
-      "start": 5.0,
-      "end": 5.14
+      "text": "that's",
+      "start": 0.68,
+      "end": 0.94
     },
     {
-      "text": "a",
-      "start": 5.14,
-      "end": 5.24
+      "text": "manufacturing",
+      "start": 0.94,
+      "end": 1.46
     },
     {
-      "text": "mentor",
-      "start": 5.24,
-      "end": 5.54
+      "text": "belief",
+      "start": 1.46,
+      "end": 1.86
     },
     {
-      "text": "can",
-      "start": 5.54,
-      "end": 5.82
+      "text": "before",
+      "start": 1.86,
+      "end": 2.44
     },
     {
-      "text": "actually",
-      "start": 5.82,
-      "end": 6.16
+      "text": "any",
+      "start": 2.44,
+      "end": 2.88
     },
     {
-      "text": "do.",
-      "start": 6.16,
-      "end": 6.44
-    },
-    {
-      "text": "Most",
-      "start": 6.9,
-      "end": 7.1
-    },
-    {
-      "text": "of",
-      "start": 7.1,
-      "end": 7.22
-    },
-    {
-      "text": "those",
-      "start": 7.22,
-      "end": 7.36
-    },
-    {
-      "text": "eight",
-      "start": 7.36,
-      "end": 7.48
-    },
-    {
-      "text": "companies",
-      "start": 7.48,
-      "end": 7.8
-    },
-    {
-      "text": "never",
-      "start": 7.8,
-      "end": 8.34
-    },
-    {
-      "text": "became",
-      "start": 8.34,
-      "end": 8.68
-    },
-    {
-      "text": "Google.",
-      "start": 8.68,
-      "end": 8.98
-    },
-    {
-      "text": "Why",
-      "start": 9.78,
-      "end": 10.0
-    },
-    {
-      "text": "Combinator",
-      "start": 10.0,
-      "end": 10.46
-    },
-    {
-      "text": "did?",
-      "start": 10.46,
-      "end": 10.62
-    },
-    {
-      "text": "It",
-      "start": 11.14,
-      "end": 11.24
+      "text": "evidence",
+      "start": 2.88,
+      "end": 3.28
     },
     {
       "text": "exists",
-      "start": 11.24,
-      "end": 11.58
+      "start": 3.28,
+      "end": 3.58
+    },
+    {
+      "text": "for",
+      "start": 3.58,
+      "end": 3.92
+    },
+    {
+      "text": "it,",
+      "start": 3.92,
+      "end": 4.08
+    },
+    {
+      "text": "which",
+      "start": 4.48,
+      "end": 4.78
+    },
+    {
+      "text": "is",
+      "start": 4.78,
+      "end": 4.88
+    },
+    {
+      "text": "the",
+      "start": 4.88,
+      "end": 4.98
+    },
+    {
+      "text": "rarest",
+      "start": 4.98,
+      "end": 5.32
+    },
+    {
+      "text": "thing",
+      "start": 5.32,
+      "end": 5.48
+    },
+    {
+      "text": "a",
+      "start": 5.48,
+      "end": 5.6
+    },
+    {
+      "text": "mentor",
+      "start": 5.6,
+      "end": 5.92
+    },
+    {
+      "text": "can",
+      "start": 5.92,
+      "end": 6.2
+    },
+    {
+      "text": "actually",
+      "start": 6.2,
+      "end": 6.54
+    },
+    {
+      "text": "do.",
+      "start": 6.54,
+      "end": 6.84
+    },
+    {
+      "text": "Most",
+      "start": 7.36,
+      "end": 7.56
+    },
+    {
+      "text": "of",
+      "start": 7.56,
+      "end": 7.72
+    },
+    {
+      "text": "those",
+      "start": 7.72,
+      "end": 7.84
+    },
+    {
+      "text": "A",
+      "start": 7.84,
+      "end": 7.96
+    },
+    {
+      "text": "companies",
+      "start": 7.96,
+      "end": 8.28
+    },
+    {
+      "text": "never",
+      "start": 8.28,
+      "end": 8.9
+    },
+    {
+      "text": "became",
+      "start": 8.9,
+      "end": 9.26
+    },
+    {
+      "text": "Google.",
+      "start": 9.26,
+      "end": 9.58
+    },
+    {
+      "text": "Why",
+      "start": 10.44,
+      "end": 10.68
+    },
+    {
+      "text": "Combinator",
+      "start": 10.68,
+      "end": 11.14
+    },
+    {
+      "text": "did?",
+      "start": 11.14,
+      "end": 11.34
+    },
+    {
+      "text": "It",
+      "start": 11.86,
+      "end": 12.0
+    },
+    {
+      "text": "exists",
+      "start": 12.0,
+      "end": 12.36
     },
     {
       "text": "because",
-      "start": 11.58,
-      "end": 11.9
+      "start": 12.36,
+      "end": 12.7
     },
     {
       "text": "one",
-      "start": 11.9,
-      "end": 12.14
-    },
-    {
-      "text": "person",
-      "start": 12.14,
-      "end": 12.48
-    },
-    {
-      "text": "decided",
-      "start": 12.48,
-      "end": 12.84
-    },
-    {
-      "text": "to",
-      "start": 12.84,
+      "start": 12.7,
       "end": 12.98
     },
     {
-      "text": "act",
+      "text": "person",
       "start": 12.98,
-      "end": 13.28
+      "end": 13.32
+    },
+    {
+      "text": "decided",
+      "start": 13.32,
+      "end": 13.66
+    },
+    {
+      "text": "to",
+      "start": 13.66,
+      "end": 13.84
+    },
+    {
+      "text": "act",
+      "start": 13.84,
+      "end": 14.16
     },
     {
       "text": "as",
-      "start": 13.28,
-      "end": 13.5
+      "start": 14.16,
+      "end": 14.4
     },
     {
       "text": "if",
-      "start": 13.5,
-      "end": 13.76
+      "start": 14.4,
+      "end": 14.7
     },
     {
       "text": "it",
-      "start": 13.76,
-      "end": 13.92
+      "start": 14.7,
+      "end": 14.84
     },
     {
       "text": "would",
-      "start": 13.92,
-      "end": 14.02
+      "start": 14.84,
+      "end": 14.98
     },
     {
       "text": "work",
-      "start": 14.02,
-      "end": 14.36
+      "start": 14.98,
+      "end": 15.34
     },
     {
       "text": "every",
-      "start": 14.36,
-      "end": 14.96
+      "start": 15.34,
+      "end": 15.98
     },
     {
       "text": "Tuesday",
-      "start": 14.96,
-      "end": 15.32
+      "start": 15.98,
+      "end": 16.3
     },
     {
       "text": "over",
-      "start": 15.32,
-      "end": 15.82
+      "start": 16.3,
+      "end": 16.88
     },
     {
       "text": "dinner.",
-      "start": 15.82,
-      "end": 16.06
+      "start": 16.88,
+      "end": 17.14
     }
   ]
 }

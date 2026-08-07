@@ -3,7 +3,7 @@
   "meta": {
     "title": "Paul Graham willed Y Combinator into existence",
     "slug": "yc-sam-02",
-    "durationInSeconds": 44.581,
+    "durationInSeconds": 45.601,
     "fps": 30
   },
   "pacing": [
@@ -21,19 +21,19 @@
     },
     {
       "start": 20.554,
-      "end": 27.244,
+      "end": 27.644,
       "energy": 0.6,
       "label": "hold"
     },
     {
-      "start": 27.364,
-      "end": 34.271,
+      "start": 27.764,
+      "end": 34.671,
       "energy": 1.0,
       "label": "payoff"
     },
     {
-      "start": 34.271,
-      "end": 43.681,
+      "start": 34.671,
+      "end": 44.701,
       "energy": 0.6,
       "label": "outro"
     }
@@ -535,7 +535,7 @@
     {
       "id": "vb0_0",
       "start": 20.554,
-      "end": 23.959,
+      "end": 24.159,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -563,8 +563,8 @@
     },
     {
       "id": "vb0_1",
-      "start": 23.959,
-      "end": 27.364,
+      "start": 24.159,
+      "end": 27.764,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -592,8 +592,8 @@
     },
     {
       "id": "c2_0_0",
-      "start": 27.364,
-      "end": 27.892,
+      "start": 27.764,
+      "end": 28.292,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -621,8 +621,8 @@
     },
     {
       "id": "c2_1_0",
-      "start": 27.892,
-      "end": 29.535,
+      "start": 28.292,
+      "end": 29.935,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -650,8 +650,8 @@
     },
     {
       "id": "c2_2_0",
-      "start": 29.535,
-      "end": 30.632,
+      "start": 29.935,
+      "end": 31.032,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -679,8 +679,8 @@
     },
     {
       "id": "c2_2_1",
-      "start": 30.632,
-      "end": 31.728,
+      "start": 31.032,
+      "end": 32.128,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -708,8 +708,8 @@
     },
     {
       "id": "c2_2_2",
-      "start": 31.728,
-      "end": 32.825,
+      "start": 32.128,
+      "end": 33.225,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -737,8 +737,8 @@
     },
     {
       "id": "c2_3_0",
-      "start": 32.825,
-      "end": 34.271,
+      "start": 33.225,
+      "end": 34.671,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -766,8 +766,8 @@
     },
     {
       "id": "vb1_0",
-      "start": 34.271,
-      "end": 36.333,
+      "start": 34.671,
+      "end": 36.857,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -795,8 +795,8 @@
     },
     {
       "id": "vb1_1",
-      "start": 36.333,
-      "end": 38.395,
+      "start": 36.857,
+      "end": 39.043,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -824,8 +824,8 @@
     },
     {
       "id": "vb1_2",
-      "start": 38.395,
-      "end": 40.457,
+      "start": 39.043,
+      "end": 41.229,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -853,8 +853,8 @@
     },
     {
       "id": "vb1_3",
-      "start": 40.457,
-      "end": 42.519,
+      "start": 41.229,
+      "end": 43.415,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -882,8 +882,8 @@
     },
     {
       "id": "vb1_4",
-      "start": 42.519,
-      "end": 44.581,
+      "start": 43.415,
+      "end": 45.601,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -965,8 +965,8 @@
     {
       "type": "film-burn",
       "id": "burn1",
-      "start": 27.21,
-      "end": 27.76,
+      "start": 27.61,
+      "end": 28.16,
       "z": 78,
       "originX": -0.02,
       "originY": 0.4,
@@ -975,8 +975,8 @@
     {
       "type": "film-burn",
       "id": "burn2",
-      "start": 34.117,
-      "end": 34.667,
+      "start": 34.517,
+      "end": 35.067,
       "z": 78,
       "originX": 1.02,
       "originY": 0.52,
@@ -986,7 +986,7 @@
       "type": "chrome",
       "id": "bug",
       "start": 0,
-      "end": 44.581,
+      "end": 45.601,
       "z": 85,
       "bug": "THE NEXT CURVE",
       "tone": "light"
@@ -995,7 +995,7 @@
       "type": "progress",
       "id": "prog",
       "start": 0,
-      "end": 44.581,
+      "end": 45.601,
       "z": 95,
       "style": "bar"
     }
@@ -1659,576 +1659,576 @@
       },
       {
         "start": 20.554,
-        "end": 20.894,
+        "end": 20.934,
         "emphasis": "none",
         "words": [
           {
             "text": "That",
             "start": 20.554,
-            "end": 20.724
+            "end": 20.734
           },
           {
             "text": "isn't",
-            "start": 20.724,
-            "end": 20.894
+            "start": 20.734,
+            "end": 20.934
           }
         ]
       },
       {
-        "start": 20.894,
-        "end": 21.174,
+        "start": 20.934,
+        "end": 21.234,
         "emphasis": "none",
         "words": [
           {
             "text": "advice.",
-            "start": 20.894,
-            "end": 21.174
+            "start": 20.934,
+            "end": 21.234
           }
         ]
       },
       {
-        "start": 21.174,
-        "end": 21.934,
+        "start": 21.234,
+        "end": 22.014,
         "emphasis": "none",
         "words": [
           {
             "text": "That's",
-            "start": 21.174,
-            "end": 21.434
+            "start": 21.234,
+            "end": 21.494
           },
           {
             "text": "manufacturing",
-            "start": 21.434,
-            "end": 21.934
+            "start": 21.494,
+            "end": 22.014
           }
         ]
       },
       {
-        "start": 21.934,
-        "end": 22.854,
+        "start": 22.014,
+        "end": 22.994,
         "emphasis": "none",
         "words": [
           {
             "text": "belief",
-            "start": 21.934,
-            "end": 22.294
+            "start": 22.014,
+            "end": 22.414
           },
           {
             "text": "before",
-            "start": 22.294,
-            "end": 22.854
+            "start": 22.414,
+            "end": 22.994
           }
         ]
       },
       {
-        "start": 22.854,
-        "end": 23.634,
+        "start": 22.994,
+        "end": 23.834,
         "emphasis": "none",
         "words": [
           {
             "text": "any",
-            "start": 22.854,
-            "end": 23.254
+            "start": 22.994,
+            "end": 23.434
           },
           {
             "text": "evidence",
-            "start": 23.254,
-            "end": 23.634
+            "start": 23.434,
+            "end": 23.834
           }
         ]
       },
       {
-        "start": 23.634,
-        "end": 24.234,
+        "start": 23.834,
+        "end": 24.474,
         "emphasis": "none",
         "words": [
           {
             "text": "exists",
-            "start": 23.634,
-            "end": 23.914
+            "start": 23.834,
+            "end": 24.134
           },
           {
             "text": "for",
-            "start": 23.914,
-            "end": 24.234
+            "start": 24.134,
+            "end": 24.474
           }
         ]
       },
       {
-        "start": 24.234,
-        "end": 24.834,
+        "start": 24.474,
+        "end": 25.034,
         "emphasis": "none",
         "words": [
           {
             "text": "it,",
-            "start": 24.234,
-            "end": 24.394
+            "start": 24.474,
+            "end": 24.634
           }
         ]
       },
       {
-        "start": 24.834,
-        "end": 25.134,
+        "start": 25.034,
+        "end": 25.434,
         "emphasis": "none",
         "words": [
           {
             "text": "which",
-            "start": 24.834,
-            "end": 25.054
+            "start": 25.034,
+            "end": 25.334
           },
           {
             "text": "is",
-            "start": 25.054,
-            "end": 25.134
+            "start": 25.334,
+            "end": 25.434
           }
         ]
       },
       {
-        "start": 25.134,
-        "end": 25.554,
+        "start": 25.434,
+        "end": 25.874,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 25.134,
-            "end": 25.214
+            "start": 25.434,
+            "end": 25.534
           },
           {
             "text": "rarest",
-            "start": 25.214,
-            "end": 25.554
+            "start": 25.534,
+            "end": 25.874
           }
         ]
       },
       {
-        "start": 25.554,
-        "end": 25.794,
+        "start": 25.874,
+        "end": 26.154,
         "emphasis": "none",
         "words": [
           {
             "text": "thing",
-            "start": 25.554,
-            "end": 25.694
+            "start": 25.874,
+            "end": 26.034
           },
           {
             "text": "a",
-            "start": 25.694,
-            "end": 25.794
+            "start": 26.034,
+            "end": 26.154
           }
         ]
       },
       {
-        "start": 25.794,
-        "end": 26.374,
+        "start": 26.154,
+        "end": 26.754,
         "emphasis": "none",
         "words": [
           {
             "text": "mentor",
-            "start": 25.794,
-            "end": 26.094
+            "start": 26.154,
+            "end": 26.474
           },
           {
             "text": "can",
-            "start": 26.094,
-            "end": 26.374
+            "start": 26.474,
+            "end": 26.754
           }
         ]
       },
       {
-        "start": 26.374,
-        "end": 27.444,
+        "start": 26.754,
+        "end": 27.844,
         "emphasis": "none",
         "words": [
           {
             "text": "actually",
-            "start": 26.374,
-            "end": 26.714
+            "start": 26.754,
+            "end": 27.094
           },
           {
             "text": "do.",
-            "start": 26.714,
-            "end": 26.994
+            "start": 27.094,
+            "end": 27.394
           }
         ]
       },
       {
-        "start": 27.484,
-        "end": 29.157,
+        "start": 27.884,
+        "end": 29.557,
         "emphasis": "none",
         "words": [
           {
             "text": "ability",
-            "start": 27.484,
-            "end": 28.744
+            "start": 27.884,
+            "end": 29.144
           },
           {
             "text": "to",
-            "start": 28.337,
-            "end": 28.707
+            "start": 28.737,
+            "end": 29.107
           }
         ]
       },
       {
-        "start": 29.88,
-        "end": 30.7,
+        "start": 30.28,
+        "end": 31.1,
         "emphasis": "none",
         "words": [
           {
             "text": "create",
-            "start": 29.88,
-            "end": 30.34
+            "start": 30.28,
+            "end": 30.74
           },
           {
             "text": "optimism",
-            "start": 30.34,
-            "end": 30.7
+            "start": 30.74,
+            "end": 31.1
           }
         ]
       },
       {
-        "start": 30.7,
-        "end": 31.51,
+        "start": 31.1,
+        "end": 31.91,
         "emphasis": "none",
         "words": [
           {
             "text": "and",
-            "start": 30.7,
-            "end": 30.92
+            "start": 31.1,
+            "end": 31.32
           },
           {
             "text": "momentum",
-            "start": 30.92,
-            "end": 31.51
+            "start": 31.32,
+            "end": 31.91
           }
         ]
       },
       {
-        "start": 31.51,
-        "end": 32.17,
+        "start": 31.91,
+        "end": 32.57,
         "emphasis": "none",
         "words": [
           {
             "text": "and",
-            "start": 31.51,
-            "end": 31.73
+            "start": 31.91,
+            "end": 32.13
           },
           {
             "text": "belief",
-            "start": 31.73,
-            "end": 32.17
+            "start": 32.13,
+            "end": 32.57
           }
         ]
       },
       {
-        "start": 32.17,
-        "end": 32.54,
+        "start": 32.57,
+        "end": 32.94,
         "emphasis": "none",
         "words": [
           {
             "text": "out",
-            "start": 32.17,
-            "end": 32.39
+            "start": 32.57,
+            "end": 32.79
           },
           {
             "text": "of",
-            "start": 32.39,
-            "end": 32.54
+            "start": 32.79,
+            "end": 32.94
           }
         ]
       },
       {
-        "start": 32.54,
-        "end": 33.621,
+        "start": 32.94,
+        "end": 34.021,
         "emphasis": "none",
         "words": [
           {
             "text": "nothing",
-            "start": 32.54,
-            "end": 33.1
+            "start": 32.94,
+            "end": 33.5
           },
           {
             "text": "was",
-            "start": 32.991,
-            "end": 33.261
+            "start": 33.391,
+            "end": 33.661
           }
         ]
       },
       {
-        "start": 33.621,
-        "end": 34.071,
+        "start": 34.021,
+        "end": 34.471,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 33.621,
-            "end": 33.851
+            "start": 34.021,
+            "end": 34.251
           },
           {
             "text": "real",
-            "start": 33.851,
-            "end": 34.071
+            "start": 34.251,
+            "end": 34.471
           }
         ]
       },
       {
-        "start": 34.071,
-        "end": 34.271,
+        "start": 34.471,
+        "end": 34.671,
         "emphasis": "none",
         "words": [
           {
             "text": "PG",
-            "start": 34.071,
-            "end": 34.251
+            "start": 34.471,
+            "end": 34.651
           },
           {
             "text": "special.",
-            "start": 34.251,
-            "end": 35.101
+            "start": 34.651,
+            "end": 35.501
           }
         ]
       },
       {
-        "start": 34.271,
-        "end": 34.591,
+        "start": 34.671,
+        "end": 35.031,
         "emphasis": "none",
         "words": [
           {
             "text": "Most",
-            "start": 34.271,
-            "end": 34.471
+            "start": 34.671,
+            "end": 34.871
           },
           {
             "text": "of",
-            "start": 34.471,
-            "end": 34.591
+            "start": 34.871,
+            "end": 35.031
           }
         ]
       },
       {
-        "start": 34.591,
-        "end": 34.851,
+        "start": 35.031,
+        "end": 35.271,
         "emphasis": "none",
         "words": [
           {
             "text": "those",
-            "start": 34.591,
-            "end": 34.731
+            "start": 35.031,
+            "end": 35.151
           },
           {
             "text": "eight",
-            "start": 34.731,
-            "end": 34.851
+            "start": 35.151,
+            "end": 35.271
           }
         ]
       },
       {
-        "start": 34.851,
-        "end": 35.711,
+        "start": 35.271,
+        "end": 36.211,
         "emphasis": "color",
         "words": [
           {
             "text": "companies",
-            "start": 34.851,
-            "end": 35.171
+            "start": 35.271,
+            "end": 35.591
           },
           {
             "text": "never",
-            "start": 35.171,
-            "end": 35.711
+            "start": 35.591,
+            "end": 36.211
           }
         ]
       },
       {
-        "start": 35.711,
-        "end": 36.801,
+        "start": 36.211,
+        "end": 37.341,
         "emphasis": "none",
         "words": [
           {
             "text": "became",
-            "start": 35.711,
-            "end": 36.051
+            "start": 36.211,
+            "end": 36.571
           },
           {
             "text": "Google.",
-            "start": 36.051,
-            "end": 36.351
+            "start": 36.571,
+            "end": 36.891
           }
         ]
       },
       {
-        "start": 37.151,
-        "end": 37.831,
+        "start": 37.751,
+        "end": 38.451,
         "emphasis": "none",
         "words": [
           {
             "text": "Y",
-            "start": 37.151,
-            "end": 37.371
+            "start": 37.751,
+            "end": 37.991
           },
           {
             "text": "Combinator",
-            "start": 37.371,
-            "end": 37.831
+            "start": 37.991,
+            "end": 38.451
           }
         ]
       },
       {
-        "start": 37.831,
-        "end": 38.441,
+        "start": 38.451,
+        "end": 39.101,
         "emphasis": "none",
         "words": [
           {
             "text": "did.",
-            "start": 37.831,
-            "end": 37.991
+            "start": 38.451,
+            "end": 38.651
           }
         ]
       },
       {
-        "start": 38.511,
-        "end": 38.951,
+        "start": 39.171,
+        "end": 39.671,
         "emphasis": "none",
         "words": [
           {
             "text": "It",
-            "start": 38.511,
-            "end": 38.611
+            "start": 39.171,
+            "end": 39.311
           },
           {
             "text": "exists",
-            "start": 38.611,
-            "end": 38.951
+            "start": 39.311,
+            "end": 39.671
           }
         ]
       },
       {
-        "start": 38.951,
-        "end": 39.511,
+        "start": 39.671,
+        "end": 40.291,
         "emphasis": "none",
         "words": [
           {
             "text": "because",
-            "start": 38.951,
-            "end": 39.271
+            "start": 39.671,
+            "end": 40.011
           },
           {
             "text": "one",
-            "start": 39.271,
-            "end": 39.511
+            "start": 40.011,
+            "end": 40.291
           }
         ]
       },
       {
-        "start": 39.511,
-        "end": 40.211,
+        "start": 40.291,
+        "end": 40.971,
         "emphasis": "none",
         "words": [
           {
             "text": "person",
-            "start": 39.511,
-            "end": 39.851
+            "start": 40.291,
+            "end": 40.631
           },
           {
             "text": "decided",
-            "start": 39.851,
-            "end": 40.211
+            "start": 40.631,
+            "end": 40.971
           }
         ]
       },
       {
-        "start": 40.211,
-        "end": 40.651,
+        "start": 40.971,
+        "end": 41.471,
         "emphasis": "none",
         "words": [
           {
             "text": "to",
-            "start": 40.211,
-            "end": 40.351
+            "start": 40.971,
+            "end": 41.151
           },
           {
             "text": "act",
-            "start": 40.351,
-            "end": 40.651
+            "start": 41.151,
+            "end": 41.471
           }
         ]
       },
       {
-        "start": 40.651,
-        "end": 41.131,
+        "start": 41.471,
+        "end": 42.011,
         "emphasis": "none",
         "words": [
           {
             "text": "as",
-            "start": 40.651,
-            "end": 40.871
+            "start": 41.471,
+            "end": 41.711
           },
           {
             "text": "if",
-            "start": 40.871,
-            "end": 41.131
+            "start": 41.711,
+            "end": 42.011
           }
         ]
       },
       {
-        "start": 41.131,
-        "end": 41.391,
+        "start": 42.011,
+        "end": 42.291,
         "emphasis": "none",
         "words": [
           {
             "text": "it",
-            "start": 41.131,
-            "end": 41.291
+            "start": 42.011,
+            "end": 42.151
           },
           {
             "text": "would",
-            "start": 41.291,
-            "end": 41.391
+            "start": 42.151,
+            "end": 42.291
           }
         ]
       },
       {
-        "start": 41.391,
-        "end": 42.331,
+        "start": 42.291,
+        "end": 43.291,
         "emphasis": "none",
         "words": [
           {
             "text": "work",
-            "start": 41.391,
-            "end": 41.731
+            "start": 42.291,
+            "end": 42.651
           },
           {
             "text": "every",
-            "start": 41.731,
-            "end": 42.331
+            "start": 42.651,
+            "end": 43.291
           }
         ]
       },
       {
-        "start": 42.331,
-        "end": 42.691,
+        "start": 43.291,
+        "end": 43.611,
         "emphasis": "none",
         "words": [
           {
             "text": "Tuesday,",
-            "start": 42.331,
-            "end": 42.691
+            "start": 43.291,
+            "end": 43.611
           }
         ]
       },
       {
-        "start": 42.691,
-        "end": 43.781,
+        "start": 43.611,
+        "end": 44.801,
         "emphasis": "none",
         "words": [
           {
             "text": "over",
-            "start": 42.691,
-            "end": 43.191
+            "start": 43.611,
+            "end": 44.191
           },
           {
             "text": "dinner.",
-            "start": 43.191,
-            "end": 43.431
+            "start": 44.191,
+            "end": 44.451
           }
         ]
       }
@@ -2397,7 +2397,7 @@
       "role": "vo",
       "start": 20.554,
       "offset": 0.0,
-      "duration": 6.69,
+      "duration": 7.09,
       "gainDb": 2,
       "duck": false,
       "fadeIn": 0,
@@ -2409,7 +2409,7 @@
       "role": "sfx",
       "start": 20.554,
       "offset": 0.4,
-      "duration": 3.405,
+      "duration": 3.605,
       "gainDb": -26,
       "duck": false,
       "fadeIn": 0.25,
@@ -2419,9 +2419,9 @@
       "id": "amb_vb0_1",
       "src": "yc-sam-02/stock/pexels-video-8522984.mp4",
       "role": "sfx",
-      "start": 23.959,
+      "start": 24.159,
       "offset": 0.4,
-      "duration": 3.405,
+      "duration": 3.605,
       "gainDb": -26,
       "duck": false,
       "fadeIn": 0.25,
@@ -2431,7 +2431,7 @@
       "id": "clip28_30",
       "src": "yc-sam-02/aroll.mp4",
       "role": "clip-audio",
-      "start": 27.364,
+      "start": 27.764,
       "offset": 28.3,
       "duration": 0.527,
       "gainDb": 0,
@@ -2443,7 +2443,7 @@
       "id": "clip29_23",
       "src": "yc-sam-02/aroll.mp4",
       "role": "clip-audio",
-      "start": 27.892,
+      "start": 28.292,
       "offset": 29.235,
       "duration": 1.643,
       "gainDb": 0,
@@ -2455,7 +2455,7 @@
       "id": "clip30_96",
       "src": "yc-sam-02/aroll.mp4",
       "role": "clip-audio",
-      "start": 29.535,
+      "start": 29.935,
       "offset": 30.955,
       "duration": 3.29,
       "gainDb": 0,
@@ -2467,7 +2467,7 @@
       "id": "clip34_35",
       "src": "yc-sam-02/aroll.mp4",
       "role": "clip-audio",
-      "start": 32.825,
+      "start": 33.225,
       "offset": 34.354,
       "duration": 1.446,
       "gainDb": 0,
@@ -2479,9 +2479,9 @@
       "id": "vo1",
       "src": "yc-sam-02/vo.wav",
       "role": "vo",
-      "start": 34.271,
-      "offset": 6.9,
-      "duration": 9.41,
+      "start": 34.671,
+      "offset": 7.36,
+      "duration": 10.03,
       "gainDb": 2,
       "duck": false,
       "fadeIn": 0,
@@ -2491,9 +2491,9 @@
       "id": "amb_vb1_0",
       "src": "yc-sam-02/stock/pexels-video-8347239.mp4",
       "role": "sfx",
-      "start": 34.271,
+      "start": 34.671,
       "offset": 0.4,
-      "duration": 2.062,
+      "duration": 2.186,
       "gainDb": -26,
       "duck": false,
       "fadeIn": 0.25,
@@ -2503,9 +2503,9 @@
       "id": "amb_vb1_1",
       "src": "yc-sam-02/stock/pexels-video-18970501.mp4",
       "role": "sfx",
-      "start": 36.333,
+      "start": 36.857,
       "offset": 0.4,
-      "duration": 2.062,
+      "duration": 2.186,
       "gainDb": -26,
       "duck": false,
       "fadeIn": 0.25,
@@ -2515,9 +2515,9 @@
       "id": "amb_vb1_2",
       "src": "yc-sam-02/stock/pexels-video-6930236.mp4",
       "role": "sfx",
-      "start": 38.395,
+      "start": 39.043,
       "offset": 0.4,
-      "duration": 2.062,
+      "duration": 2.186,
       "gainDb": -26,
       "duck": false,
       "fadeIn": 0.25,
@@ -2527,9 +2527,9 @@
       "id": "amb_vb1_3",
       "src": "yc-sam-02/stock/pixabay-video-368623.mp4",
       "role": "sfx",
-      "start": 40.457,
+      "start": 41.229,
       "offset": 0.4,
-      "duration": 2.062,
+      "duration": 2.186,
       "gainDb": -26,
       "duck": false,
       "fadeIn": 0.25,
@@ -2539,9 +2539,9 @@
       "id": "amb_vb1_4",
       "src": "yc-sam-02/stock/pexels-video-36070872.mp4",
       "role": "sfx",
-      "start": 42.519,
+      "start": 43.415,
       "offset": 0.4,
-      "duration": 2.062,
+      "duration": 2.186,
       "gainDb": -26,
       "duck": false,
       "fadeIn": 0.25,
@@ -2560,10 +2560,10 @@
       "fadeOut": 0.12
     },
     {
-      "id": "sfx_whoosh_27_14",
+      "id": "sfx_whoosh_27_54",
       "src": "yc-sam-02/sfx/whoosh.wav",
       "role": "sfx",
-      "start": 27.144,
+      "start": 27.544,
       "offset": 0,
       "duration": 0.58,
       "gainDb": -4,
@@ -2572,10 +2572,10 @@
       "fadeOut": 0.12
     },
     {
-      "id": "sfx_whoosh_34_05",
+      "id": "sfx_whoosh_34_45",
       "src": "yc-sam-02/sfx/whoosh.wav",
       "role": "sfx",
-      "start": 34.051,
+      "start": 34.451,
       "offset": 0,
       "duration": 0.58,
       "gainDb": -4,

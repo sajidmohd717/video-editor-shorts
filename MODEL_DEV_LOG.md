@@ -503,8 +503,14 @@ run-to-run variance swamps the parameter entirely.
 concat. Deterministic, pitch-preserving, and transparent on speech up to ~1.25.
 Pace becomes a dial rather than a hope.
 
-**Settled at 1.26** for this channel — a news-anchor clip. That took the VO from
-22.6s to 16.3s and the video from 50.8s to 44.6s, with no script change.
+**Settled at 1.18** for this channel. The unadjusted v3 read as "someone about to
+fall asleep on a beach"; 1.26 sounded right on an isolated sample and was **too
+fast once cut against the clip**. 1.18 is the sweet spot: VO 22.6s → 17.4s,
+video 50.8s → 45.6s.
+
+**Judge pace in context, not in isolation.** A bare VO sample has nothing to sit
+against; the same read against a human speaker and cut b-roll feels quite
+different. Any pace decision should be made on a finished cut.
 
 **Rule:** when a provider's parameter can't be verified to work, measure it. One
 API call each at two settings showed the parameter did nothing — cheaper than
