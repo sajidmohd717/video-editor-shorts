@@ -15,6 +15,21 @@ Two deliverables from every session: the video, **and a better generator**. If y
 learn something that generalises, add a finding to `MODEL_DEV_LOG.md`. Findings
 are numbered `F1`, `F2`… and cited from code comments.
 
+## Two products, two logs — do not mix them
+
+| | Shorts | Long-form |
+|---|---|---|
+| Log | `MODEL_DEV_LOG.md` (`F1`…) | `MODEL_DEV_LOG_LONGFORM.md` (`L1`…) |
+| Teardowns | `docs/style-analysis/` | `docs/longform/` |
+| Decision point | first 1–3s (swipe) | title/thumbnail, then ~30s |
+| Cut rate | 0.7–1.5/s | ~0.36/s |
+| Loudness | −13 to −14 LUFS | −15 to −16 |
+| Assets per video | ~10 | **~300** |
+
+A rule that holds at 45 seconds is often false at 15 minutes. **A short is a
+hook; a long-form video is an argument.** Never file a long-form finding as an
+`F` number or apply a shorts default to a long-form job without checking it.
+
 ---
 
 ## The rule that matters most
