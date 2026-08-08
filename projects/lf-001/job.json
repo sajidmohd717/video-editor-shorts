@@ -38,18 +38,10 @@
   },
 
   "newsClips": {
-    "huang-face": "lf-001/news/huang-face.mp4",
-    "co1-cna-10b": "lf-001/news/co1-cna-10b.mp4",
-    "co2-bbc-90b": "lf-001/news/co2-bbc-90b.mp4",
-    "co3-bbc-trillion": "lf-001/news/co3-bbc-trillion.mp4"
+    "huang-face": "lf-001/news/huang-face.mp4"
   },
 
-  "_coldOpen": "The numbers ESCALATE — $10B, $90B, a trillion — and then the narration lands on 'Every few weeks, another number.' The montage sets the line up rather than repeating it. Source audio leads here and only here (L5). Every clip ends on a complete phrase: an earlier cut of co3 ended on '...a trillion dollars OF', which is the same defect that nearly truncated the Huang quote.",
-  "coldOpen": [
-    { "asset": "co1-cna-10b", "seconds": 3.0 },
-    { "asset": "co2-bbc-90b", "seconds": 3.4 },
-    { "asset": "co3-bbc-trillion", "seconds": 3.25 }
-  ],
+  "_coldOpenDropped": "A 3-clip broadcaster montage ($10B/$90B/a trillion) was built and cut. Dropped on the channel owner's call: the CNA chyron read 'CHINA'S AI IPO WAVE' which is off-thesis (L13), and the BBC ident is roughly a fifth of frame on a monetised video. Rebuilding it from primary sources stalls because the only primary voice available is Oracle's $638B line, which is Ch4's payoff and would be spent in the first ten seconds. The retention question it was meant to test is still open.",
 
   "_broll": "Reviewed on a contact sheet at 1s AND 4s before selection (F6, F29). 7 of 28 rejected: search drift (a ski gondola from 'fiber optic cable', a quarry from 'data center construction'), an unusable blurred frame, a stock-photo man celebrating at a laptop (wrong register for this argument), a near-duplicate of racks-blue, wind turbines (reads as a renewables story), and an office block with the Citi logo legible — see F38.",
 
