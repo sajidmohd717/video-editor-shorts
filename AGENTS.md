@@ -4,6 +4,14 @@ Orientation for AI agents (and anyone new). Read this first, then
 [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for reasoning and
 [`MODEL_DEV_LOG.md`](MODEL_DEV_LOG.md) for what's already been learned.
 
+> **This file is the only copy. Edit it here.** `CLAUDE.md` is one line —
+> `@AGENTS.md` — so Claude Code imports this rather than holding a second copy.
+> The two files were separately maintained once and drifted 15 lines apart
+> without anyone noticing, including a gotcha list that was missing five entries
+> and a "known gap" describing work already finished. If another tool needs its
+> own filename (`.github/copilot-instructions.md`, `GEMINI.md`), point it here
+> too — never fork the content.
+
 ---
 
 ## What this is
@@ -158,6 +166,20 @@ Two habits follow:
   output is corrupted, not merely inefficient (F13).
 - **Crop first, scale last** — order of operations, not resolution, is what makes
   A-roll soft (F14).
+- **Gain-match source clips to the narration** (F40). They arrive at whatever
+  level the room left them at — one sat 15 dB low and still passed
+  `blackdetect`, `silencedetect` and a contact sheet. Measure with `loudnorm`
+  in print mode, apply a **static** `volume`; never single-pass loudnorm as a
+  filter (F13).
+- **Transcribe every clip you cut**, from the cut file, and read the last line.
+  Two of four cuts this session ended one word early; one of them dropped the
+  word carrying the whole quote (F39).
+- **Read the chyron as if the narration said it aloud.** It's the biggest text on
+  screen and it asserts what the story is about (L13).
+- **SEC EDGAR blocks undeclared automated clients.** Use the company's own IR
+  page — equally primary, no identity to send.
+- **Two clocks in one file is a standing hazard.** Caption cues are in narration
+  time; timelines are in video time. Convert once, at the boundary (L12).
 
 ---
 
@@ -216,8 +238,9 @@ Known gaps, roughly in priority order:
 2. **No music — a channel constraint, not a gap (F20).** Do not propose a music
    bed or list its absence as unfinished work. The energy music carries comes
    instead from diegetic b-roll ambience, pause cutting, and a dense vocal master.
-3. **Article screenshots are built but unused in a real video.** The highlight
-   box is positioned by hand; OCR would automate it.
+3. **Article screenshots are built but unused in a real *short*.** The highlight
+   box is no longer hand-placed — `pipeline.screenshot --find "<phrase>"` gets
+   it from DOM range geometry (F37). First real use is lf-001.
 4. **Stock relevance** — half of every search is unusable (F6). A CLIP re-rank
    would cut the manual review.
 5. `plan_explainer.py` still hardcodes its asset map; only `plan_narrated.py` has

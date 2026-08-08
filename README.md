@@ -10,7 +10,9 @@ spec in [`src/timeline/schema.ts`](src/timeline/schema.ts) is what they compile 
 
 **New here?** Read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for how it works and
 why, then [`MODEL_DEV_LOG.md`](MODEL_DEV_LOG.md) for what we've learned so far.
-Working as an AI agent? Start with [`CLAUDE.md`](CLAUDE.md).
+Working as an AI agent? Start with [`AGENTS.md`](AGENTS.md) — the portable
+convention other agents read too. `CLAUDE.md` just imports it, so there is
+one source of truth and nothing to keep in sync.
 
 ---
 
