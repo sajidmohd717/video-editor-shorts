@@ -471,7 +471,7 @@
     {
       "id": "f11",
       "start": 48.02,
-      "end": 51.593,
+      "end": 50.34,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -498,9 +498,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v6",
+      "start": 50.34,
+      "end": 52.94,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f12",
-      "start": 51.593,
-      "end": 55.167,
+      "start": 52.94,
+      "end": 55.84,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -528,7 +546,7 @@
     },
     {
       "id": "f13",
-      "start": 55.167,
+      "start": 55.84,
       "end": 58.74,
       "layout": "full",
       "background": "#000000",
@@ -556,7 +574,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v6",
+      "id": "v7",
       "start": 58.74,
       "end": 63.2,
       "layout": "full",
@@ -585,7 +603,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v7",
+      "id": "v8",
       "start": 63.2,
       "end": 64.92,
       "layout": "graphic",
@@ -603,7 +621,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v8",
+      "id": "v9",
       "start": 64.92,
       "end": 65.78,
       "layout": "graphic",
@@ -621,7 +639,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v9",
+      "id": "v10",
       "start": 65.78,
       "end": 68.76,
       "layout": "graphic",
@@ -639,7 +657,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v10",
+      "id": "v11",
       "start": 68.76,
       "end": 71.68,
       "layout": "graphic",
@@ -657,7 +675,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v11",
+      "id": "v12",
       "start": 71.68,
       "end": 79.18,
       "layout": "graphic",
@@ -907,7 +925,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v12",
+      "id": "v13",
       "start": 104.06,
       "end": 109.06,
       "layout": "full",
@@ -994,7 +1012,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v13",
+      "id": "v14",
       "start": 114.4,
       "end": 116.28,
       "layout": "graphic",
@@ -1012,7 +1030,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v14",
+      "id": "v15",
       "start": 116.28,
       "end": 119.88,
       "layout": "graphic",
@@ -1088,7 +1106,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v15",
+      "id": "v16",
       "start": 125.18,
       "end": 126.4,
       "layout": "full",
@@ -1117,7 +1135,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v16",
+      "id": "v17",
       "start": 126.4,
       "end": 130.72,
       "layout": "graphic",
@@ -1135,7 +1153,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v17",
+      "id": "v18",
       "start": 130.72,
       "end": 138.72,
       "layout": "graphic",
@@ -1182,7 +1200,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v18",
+      "id": "v19",
       "start": 142.8,
       "end": 148.3,
       "layout": "full",
@@ -1385,7 +1403,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v19",
+      "id": "v20",
       "start": 169.02,
       "end": 172.02,
       "layout": "graphic",
@@ -1577,7 +1595,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v20",
+      "id": "v21",
       "start": 192.41,
       "end": 201.41,
       "layout": "graphic",
@@ -1740,9 +1758,27 @@
       "transitionDuration": 0
     },
     {
-      "id": "v21",
+      "id": "v22",
       "start": 217.04,
-      "end": 230.04,
+      "end": 221.72,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "v23",
+      "start": 221.72,
+      "end": 224.52,
       "layout": "graphic",
       "background": "#E9E9EC",
       "sources": [],
@@ -1759,8 +1795,8 @@
     },
     {
       "id": "f44",
-      "start": 230.04,
-      "end": 233.14,
+      "start": 224.52,
+      "end": 227.45,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1788,8 +1824,8 @@
     },
     {
       "id": "f45",
-      "start": 233.14,
-      "end": 236.24,
+      "start": 227.45,
+      "end": 230.38,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1816,7 +1852,65 @@
       "transitionDuration": 0
     },
     {
-      "id": "v22",
+      "id": "f46",
+      "start": 230.38,
+      "end": 233.31,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-6755170.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f47",
+      "start": 233.31,
+      "end": 236.24,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30915329.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "v24",
       "start": 236.24,
       "end": 239.44,
       "layout": "full",
@@ -1845,67 +1939,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "f46",
+      "id": "f48",
       "start": 239.44,
       "end": 242.773,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-6755170.mp4",
-          "offset": 3.1,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f47",
-      "start": 242.773,
-      "end": 246.107,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-30915329.mp4",
-          "offset": 3.1,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f48",
-      "start": 246.107,
-      "end": 249.44,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1932,27 +1968,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "v23",
-      "start": 249.44,
-      "end": 254.44,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
       "id": "f49",
-      "start": 254.44,
-      "end": 257.62,
+      "start": 242.773,
+      "end": 246.107,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1980,8 +1998,8 @@
     },
     {
       "id": "f50",
-      "start": 257.62,
-      "end": 260.8,
+      "start": 246.107,
+      "end": 249.44,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2008,9 +2026,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v25",
+      "start": 249.44,
+      "end": 254.44,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f51",
-      "start": 260.8,
-      "end": 263.98,
+      "start": 254.44,
+      "end": 257.62,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2038,8 +2074,8 @@
     },
     {
       "id": "f52",
-      "start": 263.98,
-      "end": 267.16,
+      "start": 257.62,
+      "end": 260.8,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2067,8 +2103,8 @@
     },
     {
       "id": "f53",
-      "start": 267.16,
-      "end": 270.34,
+      "start": 260.8,
+      "end": 263.98,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2096,8 +2132,8 @@
     },
     {
       "id": "f54",
-      "start": 270.34,
-      "end": 273.52,
+      "start": 263.98,
+      "end": 267.16,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2125,8 +2161,8 @@
     },
     {
       "id": "f55",
-      "start": 273.52,
-      "end": 276.7,
+      "start": 267.16,
+      "end": 270.34,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2154,8 +2190,8 @@
     },
     {
       "id": "f56",
-      "start": 276.7,
-      "end": 279.88,
+      "start": 270.34,
+      "end": 273.52,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2182,7 +2218,65 @@
       "transitionDuration": 0
     },
     {
-      "id": "v24",
+      "id": "f57",
+      "start": 273.52,
+      "end": 276.7,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-27844418.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f58",
+      "start": 276.7,
+      "end": 279.88,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-38557069.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "v26",
       "start": 279.88,
       "end": 295.48,
       "layout": "full",
@@ -2211,67 +2305,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "f57",
+      "id": "f59",
       "start": 295.48,
       "end": 298.71,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-27844418.mp4",
-          "offset": 3.1,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f58",
-      "start": 298.71,
-      "end": 301.94,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-38557069.mp4",
-          "offset": 3.1,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f59",
-      "start": 301.94,
-      "end": 305.17,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2299,8 +2335,8 @@
     },
     {
       "id": "f60",
-      "start": 305.17,
-      "end": 308.4,
+      "start": 298.71,
+      "end": 301.94,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2328,8 +2364,8 @@
     },
     {
       "id": "f61",
-      "start": 308.4,
-      "end": 311.63,
+      "start": 301.94,
+      "end": 305.17,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2357,8 +2393,8 @@
     },
     {
       "id": "f62",
-      "start": 311.63,
-      "end": 314.86,
+      "start": 305.17,
+      "end": 308.4,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2385,27 +2421,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "v25",
-      "start": 314.86,
-      "end": 317.86,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
       "id": "f63",
-      "start": 317.86,
-      "end": 321.041,
+      "start": 308.4,
+      "end": 311.63,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2433,8 +2451,8 @@
     },
     {
       "id": "f64",
-      "start": 321.041,
-      "end": 324.222,
+      "start": 311.63,
+      "end": 314.86,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2461,9 +2479,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v27",
+      "start": 314.86,
+      "end": 342.36,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f65",
-      "start": 324.222,
-      "end": 327.403,
+      "start": 342.36,
+      "end": 346.49,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2490,9 +2526,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v28",
+      "start": 346.49,
+      "end": 360.49,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f66",
-      "start": 327.403,
-      "end": 330.584,
+      "start": 360.49,
+      "end": 364.31,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2520,8 +2574,8 @@
     },
     {
       "id": "f67",
-      "start": 330.584,
-      "end": 333.766,
+      "start": 364.31,
+      "end": 368.13,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2548,199 +2602,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "f68",
-      "start": 333.766,
-      "end": 336.947,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-30915329.mp4",
-          "offset": 4.4,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f69",
-      "start": 336.947,
-      "end": 340.128,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-8817471.mp4",
-          "offset": 4.4,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f70",
-      "start": 340.128,
-      "end": 343.309,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pixabay-video-220941.mp4",
-          "offset": 4.4,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f71",
-      "start": 343.309,
-      "end": 346.49,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-30243446.mp4",
-          "offset": 4.4,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "v26",
-      "start": 346.49,
-      "end": 360.49,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f72",
-      "start": 360.49,
-      "end": 364.31,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-7140928.mp4",
-          "offset": 4.4,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f73",
-      "start": 364.31,
-      "end": 368.13,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-15357261.mp4",
-          "offset": 4.4,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "v27",
+      "id": "v29",
       "start": 368.13,
       "end": 373.13,
       "layout": "graphic",
@@ -2896,8 +2758,20 @@
       "sub": "the letter of intent"
     },
     {
+      "type": "big-number",
+      "id": "ov6",
+      "start": 50.34,
+      "end": 52.94,
+      "z": 60,
+      "value": 10,
+      "prefix": "",
+      "suffix": " GW",
+      "label": "the deployment",
+      "countSeconds": 0.7
+    },
+    {
       "type": "article-clip",
-      "id": "ov7",
+      "id": "ov8",
       "start": 63.2,
       "end": 64.92,
       "z": 55,
@@ -2914,7 +2788,7 @@
     },
     {
       "type": "article-clip",
-      "id": "ov8",
+      "id": "ov9",
       "start": 64.92,
       "end": 65.78,
       "z": 55,
@@ -2931,7 +2805,7 @@
     },
     {
       "type": "article-clip",
-      "id": "ov9",
+      "id": "ov10",
       "start": 65.78,
       "end": 68.76,
       "z": 55,
@@ -2948,7 +2822,7 @@
     },
     {
       "type": "article-clip",
-      "id": "ov10",
+      "id": "ov11",
       "start": 68.76,
       "end": 71.68,
       "z": 55,
@@ -2979,7 +2853,7 @@
     },
     {
       "type": "quote-card",
-      "id": "ov11",
+      "id": "ov12",
       "start": 71.68,
       "end": 79.18,
       "z": 60,
@@ -2989,7 +2863,7 @@
     },
     {
       "type": "article-clip",
-      "id": "ov13",
+      "id": "ov14",
       "start": 114.4,
       "end": 116.28,
       "z": 55,
@@ -3020,7 +2894,7 @@
     },
     {
       "type": "article-clip",
-      "id": "ov14",
+      "id": "ov15",
       "start": 116.28,
       "end": 119.88,
       "z": 55,
@@ -3037,7 +2911,7 @@
     },
     {
       "type": "article-clip",
-      "id": "ov16",
+      "id": "ov17",
       "start": 126.4,
       "end": 130.6,
       "z": 55,
@@ -3054,7 +2928,7 @@
     },
     {
       "type": "comparison",
-      "id": "ov17",
+      "id": "ov18",
       "start": 130.72,
       "end": 138.72,
       "z": 60,
@@ -3068,7 +2942,7 @@
     },
     {
       "type": "date-card",
-      "id": "ov19",
+      "id": "ov20",
       "start": 169.02,
       "end": 172.02,
       "z": 60,
@@ -3077,7 +2951,7 @@
     },
     {
       "type": "stat-chart",
-      "id": "ov20",
+      "id": "ov21",
       "start": 192.41,
       "end": 201.41,
       "z": 60,
@@ -3102,17 +2976,28 @@
     },
     {
       "type": "quote-card",
-      "id": "ov21",
+      "id": "ov22",
       "start": 217.04,
-      "end": 230.04,
+      "end": 221.72,
       "z": 60,
       "text": "The prepaid and customer supplied hardware portions of our large AI contracts now total $75 billion.",
       "attribution": "Oracle, Q4 FY2026 release",
       "size": 62
     },
     {
-      "type": "article-clip",
+      "type": "big-number",
       "id": "ov23",
+      "start": 221.72,
+      "end": 224.52,
+      "z": 60,
+      "value": 75,
+      "label": "prepaid, or hardware the customer bought",
+      "sub": "already paid for",
+      "countSeconds": 0.8
+    },
+    {
+      "type": "article-clip",
+      "id": "ov25",
       "start": 249.44,
       "end": 254.44,
       "z": 55,
@@ -3128,16 +3013,30 @@
       }
     },
     {
-      "type": "date-card",
-      "id": "ov25",
+      "type": "list-card",
+      "id": "ov27",
       "start": 314.86,
-      "end": 317.86,
+      "end": 342.36,
       "z": 60,
-      "text": "Three things to watch"
+      "title": "What to watch",
+      "items": [
+        {
+          "text": "Do the \u201cup to\u201d numbers become real money?",
+          "at": 1.92
+        },
+        {
+          "text": "Does backlog become revenue, on schedule?",
+          "at": 10.24
+        },
+        {
+          "text": "Does anyone pay with cash from outside the loop?",
+          "at": 18.29
+        }
+      ]
     },
     {
       "type": "entity-graph",
-      "id": "ov26",
+      "id": "ov28",
       "start": 346.49,
       "end": 360.49,
       "z": 60,
@@ -3218,7 +3117,7 @@
     },
     {
       "type": "quote-card",
-      "id": "ov27",
+      "id": "ov29",
       "start": 368.13,
       "end": 373.13,
       "z": 60,
@@ -4128,52 +4027,6 @@
             "text": "least",
             "start": 50.1,
             "end": 50.34
-          }
-        ]
-      },
-      {
-        "start": 50.34,
-        "end": 51.58,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "ten",
-            "start": 50.34,
-            "end": 50.84
-          },
-          {
-            "text": "gigawatts",
-            "start": 50.84,
-            "end": 51.58
-          }
-        ]
-      },
-      {
-        "start": 51.58,
-        "end": 52.18,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "of",
-            "start": 51.58,
-            "end": 51.8
-          },
-          {
-            "text": "NVIDIA",
-            "start": 51.8,
-            "end": 52.18
-          }
-        ]
-      },
-      {
-        "start": 52.18,
-        "end": 53.0,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "systems.",
-            "start": 52.18,
-            "end": 52.5
           }
         ]
       },
@@ -7374,6 +7227,132 @@
         ]
       },
       {
+        "start": 224.54,
+        "end": 225.3,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "again.",
+            "start": 224.54,
+            "end": 224.8
+          }
+        ]
+      },
+      {
+        "start": 225.58,
+        "end": 225.98,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Of",
+            "start": 225.58,
+            "end": 225.76
+          },
+          {
+            "text": "that",
+            "start": 225.76,
+            "end": 225.98
+          }
+        ]
+      },
+      {
+        "start": 225.98,
+        "end": 226.94,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "backlog,",
+            "start": 225.98,
+            "end": 226.44
+          }
+        ]
+      },
+      {
+        "start": 227.16,
+        "end": 228.56,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "seventy-five",
+            "start": 227.16,
+            "end": 227.94
+          },
+          {
+            "text": "billion",
+            "start": 227.94,
+            "end": 228.56
+          }
+        ]
+      },
+      {
+        "start": 228.56,
+        "end": 229.18,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "dollars",
+            "start": 228.56,
+            "end": 228.68
+          },
+          {
+            "text": "was",
+            "start": 228.56,
+            "end": 229.18
+          }
+        ]
+      },
+      {
+        "start": 229.18,
+        "end": 229.64,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "either",
+            "start": 229.18,
+            "end": 229.38
+          },
+          {
+            "text": "paid",
+            "start": 229.38,
+            "end": 229.64
+          }
+        ]
+      },
+      {
+        "start": 229.64,
+        "end": 229.98,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "up",
+            "start": 229.64,
+            "end": 229.81
+          },
+          {
+            "text": "front",
+            "start": 229.81,
+            "end": 229.98
+          }
+        ]
+      },
+      {
+        "start": 229.98,
+        "end": 231.18,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "by",
+            "start": 229.98,
+            "end": 230.28
+          },
+          {
+            "text": "customers,",
+            "start": 230.28,
+            "end": 230.68
+          }
+        ]
+      },
+      {
         "start": 231.22,
         "end": 232.06,
         "emphasis": "none",
@@ -9365,563 +9344,6 @@
         ]
       },
       {
-        "start": 318.18,
-        "end": 318.42,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "up",
-            "start": 318.18,
-            "end": 318.32
-          },
-          {
-            "text": "to",
-            "start": 318.32,
-            "end": 318.42
-          }
-        ]
-      },
-      {
-        "start": 318.42,
-        "end": 319.08,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "numbers",
-            "start": 318.42,
-            "end": 318.74
-          },
-          {
-            "text": "convert",
-            "start": 318.74,
-            "end": 319.08
-          }
-        ]
-      },
-      {
-        "start": 319.08,
-        "end": 319.6,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "into",
-            "start": 319.08,
-            "end": 319.32
-          },
-          {
-            "text": "money",
-            "start": 319.32,
-            "end": 319.6
-          }
-        ]
-      },
-      {
-        "start": 319.6,
-        "end": 320.2,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "that",
-            "start": 319.6,
-            "end": 319.8
-          },
-          {
-            "text": "actually",
-            "start": 319.8,
-            "end": 320.2
-          }
-        ]
-      },
-      {
-        "start": 320.2,
-        "end": 321.0,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "moves.",
-            "start": 320.2,
-            "end": 320.58
-          }
-        ]
-      },
-      {
-        "start": 321.0,
-        "end": 321.68,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Commitments",
-            "start": 321.0,
-            "end": 321.5
-          },
-          {
-            "text": "can",
-            "start": 321.5,
-            "end": 321.68
-          }
-        ]
-      },
-      {
-        "start": 321.68,
-        "end": 322.18,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "be",
-            "start": 321.68,
-            "end": 321.8
-          },
-          {
-            "text": "quietly",
-            "start": 321.8,
-            "end": 322.18
-          }
-        ]
-      },
-      {
-        "start": 322.18,
-        "end": 323.0,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "restructured,",
-            "start": 322.18,
-            "end": 322.76
-          }
-        ]
-      },
-      {
-        "start": 323.0,
-        "end": 323.64,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "and",
-            "start": 323.0,
-            "end": 323.48
-          },
-          {
-            "text": "they",
-            "start": 323.48,
-            "end": 323.64
-          }
-        ]
-      },
-      {
-        "start": 323.64,
-        "end": 324.02,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "have",
-            "start": 323.64,
-            "end": 323.86
-          },
-          {
-            "text": "been",
-            "start": 323.86,
-            "end": 324.02
-          }
-        ]
-      },
-      {
-        "start": 324.02,
-        "end": 324.82,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "before.",
-            "start": 324.02,
-            "end": 324.32
-          }
-        ]
-      },
-      {
-        "start": 325.1,
-        "end": 325.84,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Two.",
-            "start": 325.1,
-            "end": 325.34
-          }
-        ]
-      },
-      {
-        "start": 326.18,
-        "end": 326.6,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Whether",
-            "start": 326.18,
-            "end": 326.28
-          },
-          {
-            "text": "backlog",
-            "start": 326.28,
-            "end": 326.6
-          }
-        ]
-      },
-      {
-        "start": 326.6,
-        "end": 327.42,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "becomes",
-            "start": 326.6,
-            "end": 327.06
-          },
-          {
-            "text": "delivered",
-            "start": 327.06,
-            "end": 327.42
-          }
-        ]
-      },
-      {
-        "start": 327.42,
-        "end": 328.3,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "revenue",
-            "start": 327.42,
-            "end": 327.9
-          },
-          {
-            "text": "on",
-            "start": 327.9,
-            "end": 328.3
-          }
-        ]
-      },
-      {
-        "start": 328.3,
-        "end": 329.1,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "schedule.",
-            "start": 328.3,
-            "end": 328.6
-          }
-        ]
-      },
-      {
-        "start": 330.07,
-        "end": 330.47,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "A",
-            "start": 330.07,
-            "end": 330.21
-          },
-          {
-            "text": "backlog",
-            "start": 330.21,
-            "end": 330.47
-          }
-        ]
-      },
-      {
-        "start": 330.47,
-        "end": 330.85,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "is",
-            "start": 330.47,
-            "end": 330.75
-          },
-          {
-            "text": "a",
-            "start": 330.75,
-            "end": 330.85
-          }
-        ]
-      },
-      {
-        "start": 330.85,
-        "end": 331.63,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "promise.",
-            "start": 330.85,
-            "end": 331.17
-          }
-        ]
-      },
-      {
-        "start": 331.63,
-        "end": 332.29,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Promises",
-            "start": 331.63,
-            "end": 331.99
-          },
-          {
-            "text": "have",
-            "start": 331.99,
-            "end": 332.29
-          }
-        ]
-      },
-      {
-        "start": 332.29,
-        "end": 333.05,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "dates.",
-            "start": 332.29,
-            "end": 332.55
-          }
-        ]
-      },
-      {
-        "start": 333.15,
-        "end": 334.21,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Three.",
-            "start": 333.15,
-            "end": 333.71
-          }
-        ]
-      },
-      {
-        "start": 334.67,
-        "end": 335.25,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Whether",
-            "start": 334.67,
-            "end": 334.91
-          },
-          {
-            "text": "anyone",
-            "start": 334.91,
-            "end": 335.25
-          }
-        ]
-      },
-      {
-        "start": 335.25,
-        "end": 335.61,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "in",
-            "start": 335.25,
-            "end": 335.47
-          },
-          {
-            "text": "this",
-            "start": 335.47,
-            "end": 335.61
-          }
-        ]
-      },
-      {
-        "start": 335.61,
-        "end": 336.05,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "loop",
-            "start": 335.61,
-            "end": 335.79
-          },
-          {
-            "text": "starts",
-            "start": 335.79,
-            "end": 336.05
-          }
-        ]
-      },
-      {
-        "start": 336.05,
-        "end": 336.73,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "buying",
-            "start": 336.05,
-            "end": 336.41
-          },
-          {
-            "text": "compute",
-            "start": 336.41,
-            "end": 336.73
-          }
-        ]
-      },
-      {
-        "start": 336.73,
-        "end": 337.39,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "with",
-            "start": 336.73,
-            "end": 337.05
-          },
-          {
-            "text": "cash",
-            "start": 337.05,
-            "end": 337.39
-          }
-        ]
-      },
-      {
-        "start": 337.39,
-        "end": 337.81,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "they",
-            "start": 337.39,
-            "end": 337.59
-          },
-          {
-            "text": "earned",
-            "start": 337.59,
-            "end": 337.81
-          }
-        ]
-      },
-      {
-        "start": 337.81,
-        "end": 338.41,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "from",
-            "start": 337.81,
-            "end": 337.99
-          },
-          {
-            "text": "customers",
-            "start": 337.99,
-            "end": 338.41
-          }
-        ]
-      },
-      {
-        "start": 338.41,
-        "end": 339.15,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "outside",
-            "start": 338.41,
-            "end": 338.97
-          },
-          {
-            "text": "the",
-            "start": 338.97,
-            "end": 339.15
-          }
-        ]
-      },
-      {
-        "start": 339.15,
-        "end": 339.85,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "loop.",
-            "start": 339.15,
-            "end": 339.35
-          }
-        ]
-      },
-      {
-        "start": 339.91,
-        "end": 340.25,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "That",
-            "start": 339.91,
-            "end": 340.03
-          },
-          {
-            "text": "third",
-            "start": 340.03,
-            "end": 340.25
-          }
-        ]
-      },
-      {
-        "start": 340.25,
-        "end": 341.01,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "one",
-            "start": 340.25,
-            "end": 340.49
-          },
-          {
-            "text": "is",
-            "start": 340.49,
-            "end": 341.01
-          }
-        ]
-      },
-      {
-        "start": 341.01,
-        "end": 341.35,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "the",
-            "start": 341.01,
-            "end": 341.11
-          },
-          {
-            "text": "whole",
-            "start": 341.11,
-            "end": 341.35
-          }
-        ]
-      },
-      {
-        "start": 341.35,
-        "end": 341.79,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "question,",
-            "start": 341.35,
-            "end": 341.79
-          }
-        ]
-      },
-      {
-        "start": 341.79,
-        "end": 342.61,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "really.",
-            "start": 341.79,
-            "end": 342.11
-          }
-        ]
-      },
-      {
         "start": 342.85,
         "end": 343.23,
         "emphasis": "none",
@@ -10362,7 +9784,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v7",
+      "id": "sfx_v8",
       "src": "lf-001/sfx/highlight.wav",
       "role": "sfx",
       "start": 63.15,
@@ -10374,7 +9796,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v8",
+      "id": "sfx_v9",
       "src": "lf-001/sfx/highlight2.wav",
       "role": "sfx",
       "start": 64.87,
@@ -10386,7 +9808,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v9",
+      "id": "sfx_v10",
       "src": "lf-001/sfx/highlight.wav",
       "role": "sfx",
       "start": 65.73,
@@ -10398,7 +9820,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v10",
+      "id": "sfx_v11",
       "src": "lf-001/sfx/highlight2.wav",
       "role": "sfx",
       "start": 68.71,
@@ -10410,7 +9832,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v11",
+      "id": "sfx_v12",
       "src": "lf-001/sfx/highlight.wav",
       "role": "sfx",
       "start": 71.63,
@@ -10422,7 +9844,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v13",
+      "id": "sfx_v14",
       "src": "lf-001/sfx/highlight.wav",
       "role": "sfx",
       "start": 114.35,
@@ -10434,7 +9856,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v14",
+      "id": "sfx_v15",
       "src": "lf-001/sfx/highlight2.wav",
       "role": "sfx",
       "start": 116.23,
@@ -10446,7 +9868,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v16",
+      "id": "sfx_v17",
       "src": "lf-001/sfx/highlight.wav",
       "role": "sfx",
       "start": 126.35,
@@ -10458,7 +9880,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v17",
+      "id": "sfx_v18",
       "src": "lf-001/sfx/impact.wav",
       "role": "sfx",
       "start": 130.67,
@@ -10470,7 +9892,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v19",
+      "id": "sfx_v20",
       "src": "lf-001/sfx/pageturn.wav",
       "role": "sfx",
       "start": 168.97,
@@ -10482,7 +9904,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v20",
+      "id": "sfx_v21",
       "src": "lf-001/sfx/click.wav",
       "role": "sfx",
       "start": 192.36,
@@ -10494,7 +9916,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v21",
+      "id": "sfx_v22",
       "src": "lf-001/sfx/impact.wav",
       "role": "sfx",
       "start": 216.99,
@@ -10507,6 +9929,18 @@
     },
     {
       "id": "sfx_v23",
+      "src": "lf-001/sfx/impact.wav",
+      "role": "sfx",
+      "start": 221.67,
+      "offset": 0,
+      "duration": 2.4,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.1
+    },
+    {
+      "id": "sfx_v25",
       "src": "lf-001/sfx/highlight2.wav",
       "role": "sfx",
       "start": 249.39,
@@ -10518,7 +9952,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v25",
+      "id": "sfx_v27",
       "src": "lf-001/sfx/whoosh.wav",
       "role": "sfx",
       "start": 314.81,

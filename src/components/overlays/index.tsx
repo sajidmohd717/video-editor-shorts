@@ -21,6 +21,7 @@ import { DateCard } from "./DateCard";
 import { QuoteCard } from "./QuoteCard";
 import { EntityGraph } from "./EntityGraph";
 import { BigNumber } from "./BigNumber";
+import { ListCard } from "./ListCard";
 import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 
 /**
@@ -33,7 +34,7 @@ import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
 const DRIFTS = new Set([
   "date-card", "quote-card", "comparison", "stat-chart",
   "article-clip", "entity-graph", "word-card", "headline", "image-card",
-  "big-number",
+  "big-number", "list-card",
 ]);
 
 /**
@@ -124,6 +125,8 @@ const renderOverlay = (overlay: Overlay, durationInFrames: number) => {
       return <EntityGraph {...overlay} />;
     case "big-number":
       return <BigNumber {...overlay} />;
+    case "list-card":
+      return <ListCard {...overlay} />;
     case "word-card":
       return <WordCard {...overlay} />;
     case "cta":

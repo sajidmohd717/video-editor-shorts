@@ -427,6 +427,23 @@ export const overlaySchema = z.discriminatedUnion("type", [
   }),
 
   /**
+   * Numbered list that builds in step with the narration. Three parallel items
+   * are a structure the viewer can hold if they can see them at once; spoken
+   * alone they arrive and vanish (L19).
+   */
+  baseOverlay.extend({
+    type: z.literal("list-card"),
+    title: z.string().default(""),
+    items: z.array(z.object({
+      text: z.string(),
+      /** Seconds after the overlay starts that this item lands. */
+      at: z.number().default(0),
+    })),
+    accent: z.string().default("#FF5A3C"),
+    background: z.string().default("#0B0B0F"),
+  }),
+
+  /**
    * One enormous figure that counts up to itself. For openings where the
    * narration fires several numbers in quick succession and a held b-roll shot
    * would waste them (L19).

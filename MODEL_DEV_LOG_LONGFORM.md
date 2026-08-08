@@ -470,6 +470,54 @@ other until a still showed one missing.
 
 ---
 
+### L19 — Energy is visual density, not cut rate
+
+The channel owner watched the render and reported it precisely: fully engaged
+for twenty seconds, then it slows down. The obvious reading is "cut faster."
+Measuring says otherwise.
+
+| section | cuts/s | purpose-built visuals |
+|---|---|---|
+| **0–20s (works)** | 0.40 | **62%** |
+| 20–60s | 0.35 | **7%** |
+| 60–180s | 0.30 | 28% |
+| 180–300s | 0.24 | **10%** |
+
+**The cut rate barely moves. The graphic share moves by a factor of nine.** The
+opening felt alive because five of its eight shots were built for it — a market
+board, a title, three counting numbers — not because it was cut faster. Speeding
+up stock b-roll would have produced a faster boring video.
+
+**So the lever is: how much of each minute is a thing you made?** Stock is what
+plays between those things (L16).
+
+**Devices that filled the gaps here**, each earning its place by the shape of
+what's being said:
+
+- `big-number` — a figure counts up to itself. The open fires three numbers in
+  four seconds; each gets a card rather than one held b-roll shot.
+- `list-card` — items build as spoken, earlier ones dim rather than leave, so
+  the whole structure is visible while the last lands. Three parallel items are
+  a structure; spoken alone they arrive and vanish.
+- a continuous slow camera on **every** static overlay. A card held for eight
+  seconds is a still rectangle; a talking head is not. One transform, applied to
+  every graphic, deterministic from a hash of the overlay id.
+
+**And the durable part:** the planner now prints purpose-built share per
+40-second window and flags anything under 20%. Coverage, uniqueness, cadence,
+loudness and lip-sync all had checks; *dullness* had none, so a video could pass
+everything and still lose the viewer at 0:21. Assertions catch defects — this is
+the first measure of whether the thing is any good.
+
+**Not yet solved.** Overall is 33%, but two stretches sit at 12–14%: the setup
+after the open, and the Oracle detail before the close. Those are stretches
+where the narration is *reasoning* rather than naming a company, citing a
+figure, or listing — so there is nothing obvious to show. That is a writing and
+sourcing problem, not a planner one, and worth naming rather than papering over
+with more b-roll.
+
+---
+
 ## Open questions
 
 1. **What carries pacing without music?** The channel doesn't use music (F20).

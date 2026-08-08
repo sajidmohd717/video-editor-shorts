@@ -555,6 +555,27 @@ def build(job: Job) -> dict:
             "Clip track has uncovered gaps — these render as black:\n  "
             + "\n  ".join(f"{a:.2f}-{b:.2f}s" for a, b in holes))
 
+    # --- visual-density report -------------------------------------------------
+    # The one thing no invariant caught: a video can satisfy coverage,
+    # uniqueness, cadence and loudness and still be boring. Assertions catch
+    # defects, not dullness — so measure the thing that actually correlates
+    # (L19) and print it, per window, every run.
+    win = 40.0
+    weak = []
+    n_win = int(duration // win) + 1
+    for k in range(n_win):
+        a, b = k * win, min((k + 1) * win, duration)
+        if b - a < 10:
+            continue
+        g = sum(min(c["end"], b) - max(c["start"], a)
+                for c in clips if not c["sources"] and c["start"] < b and c["end"] > a)
+        if g / (b - a) < 0.20:
+            weak.append((a, b, g / (b - a)))
+    if weak:
+        print(f"   ! {len(weak)} window(s) under 20% purpose-built visuals:")
+        for a, b, f in weak:
+            print(f"       {a:6.0f}-{b:6.0f}s  {f*100:3.0f}%")
+
     lcache_path.write_text(json.dumps(lcache, indent=2), encoding="utf-8")
 
     caption_style = {k: v for k, v in job.get("captions", {}).items()
@@ -600,7 +621,7 @@ def build(job: Job) -> dict:
     # caption track then prints the same sentence a second time, in a different
     # font, lower down. Two renderings of one sentence is worse than either.
     TEXT_CARDS = {"quote-card", "date-card", "comparison", "word-card", "kinetic-title",
-                  "entity-graph", "big-number"}
+                  "entity-graph", "big-number", "list-card"}
     mute = [(o["start"], o["end"]) for o in overlays if o["type"] in TEXT_CARDS]
     # Caption cues are in NARRATION time; everything else on the timeline is in
     # video time. Shift before comparing, or the mute test silently uses two

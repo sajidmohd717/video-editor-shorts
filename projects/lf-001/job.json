@@ -288,14 +288,6 @@
       "z": 60
     },
     {
-      "cue": "here's what I'd actually watch",
-      "type": "date-card",
-      "seconds": 3.0,
-      "text": "Three things to watch",
-      "sfx": "whoosh",
-      "z": 60
-    },
-    {
       "cue": "a meaningful share of the money",
       "type": "entity-graph",
       "seconds": 14.0,
@@ -493,6 +485,52 @@
       "sfx": "pageturn",
       "z": 55,
       "why": "the narration says the numbers are in filings — so show the filing, drifting, rather than describing it"
+    },
+    {
+      "cue": "here's what I'd actually watch",
+      "type": "list-card",
+      "seconds": 27.5,
+      "z": 60,
+      "title": "What to watch",
+      "sfx": "whoosh",
+      "why": "L19 — measured, 180-300s was 10% graphics against 62% in the working opening, and this 26-second stretch is the part telling the viewer what to actually look for. Three parallel items are a structure; spoken alone they arrive and vanish. Item text is condensed, not verbatim — a card the viewer reads while the narrator elaborates.",
+      "items": [
+        {
+          "text": "Do the “up to” numbers become real money?",
+          "at": 1.92
+        },
+        {
+          "text": "Does backlog become revenue, on schedule?",
+          "at": 10.24
+        },
+        {
+          "text": "Does anyone pay with cash from outside the loop?",
+          "at": 18.29
+        }
+      ]
+    },
+    {
+      "cue": "ten gigawatts",
+      "type": "big-number",
+      "seconds": 2.6,
+      "value": 10,
+      "prefix": "",
+      "suffix": " GW",
+      "label": "the deployment",
+      "countSeconds": 0.7,
+      "z": 60,
+      "why": "L19 — a figure with no visual in the 20-60s stretch, which measured 7% graphics"
+    },
+    {
+      "cue": "seventy-five billion",
+      "type": "big-number",
+      "seconds": 2.8,
+      "value": 75,
+      "label": "prepaid, or hardware the customer bought",
+      "sub": "already paid for",
+      "countSeconds": 0.8,
+      "sfx": "impact",
+      "z": 60
     }
   ],
   "_coldOpen": "Hook first. A market board with NASDAQ +2.26% and S&P +1.15% in green shows what 'AI spending' looks like before a single word of narration. The first 10 seconds decide whether anyone stays (L19).",
