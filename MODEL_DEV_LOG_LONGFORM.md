@@ -385,9 +385,34 @@ dozens of free, obvious visual cues that were being spent on circuit boards.
 Fits our machinery exactly: visuals are already placed by phrase, so "when the
 narration says NVIDIA, show NVIDIA" is a job entry rather than a feature.
 
-Sourcing rules that follow from L13/L15: company HQ signage is on stock; CEO
-footage must come from a **primary** stream (company channel, event host), never
-a broadcaster re-upload; and check the frame for people the script never mentions.
+**Sourcing is the hard part, and it costs more than it looks.** Measured on
+lf-001, whose narration carries 22 proper-noun mentions in 5.5 minutes
+(Microsoft 7, NVIDIA 6, Oracle 3, OpenAI 2, Anthropic 2, Azure 2):
+
+- **Royalty-free stock has no branded HQ footage.** Searching "Nvidia
+  headquarters", "Microsoft office building sign" and "Oracle headquarters"
+  returned generic office blocks and — search drift again — a beach. Trademarked
+  footage isn't licensable this way, which is why the reference channel shoots
+  its own. *Checked by looking, not assumed.*
+- **Official highlight reels are contaminated with partner branding.** Oracle's
+  own CloudWorld highlights carry Fujitsu, Uber and MGM lower thirds throughout.
+  Using it would put Uber on screen in a video that never mentions Uber — L13,
+  from the company's own channel.
+- **A clean CEO-alone shot usually means downloading the full keynote.** The
+  2-minute official recap cuts every 2–3 seconds and is mostly product renders.
+- **Sample densely before cutting.** Frames 10s apart missed every shot boundary;
+  three first-attempt cuts landed on a glitch graphic, a slide, and an unrelated
+  MGM customer story.
+
+**What actually worked**, and the pattern to repeat: a company's own keynote
+where it names a *partner* puts both brands on screen at once, cleanly. Microsoft
+Build gave a sustained 5s split of Nadella and Huang — the exact two companies
+our sentence names, primary source, no ident, nobody on screen the script
+doesn't. **Look for the moment two subjects share a frame legitimately** rather
+than sourcing each name separately.
+
+Remaining rules from L13/L15: primary streams only, never a broadcaster
+re-upload; and check the frame for people the script never mentions.
 
 ---
 
