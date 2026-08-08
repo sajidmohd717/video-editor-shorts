@@ -55,6 +55,14 @@
       0.64,
       0.64
     ],
+    "focusRanges": [
+      {
+        "start": 4.76,
+        "end": 5.3,
+        "focusX": 0.64,
+        "why": "The question begins over Dario's reaction shot before cutting to Emily. Center him for those opening frames without splitting her sentence or its audio."
+      }
+    ],
     "passagesWhy": "0 asks the question cleanly. 1 keeps Dario's concession that safety disagreements existed and his explicit statement that they were not sufficient to leave. 2 names trust and stated values. 3 lands the consequence: he could no longer continue to work with or trust the company. 4 gives Dario the final word: market and public opinion speak louder than drama.",
     "subjectFocusX": 0.55,
     "subjectFocusWhy": "The interviewer sits left of centre and Dario sits right of centre. A modest centre-right crop keeps both solo angles readable while preserving looking room."
@@ -143,6 +151,24 @@
       "afterDelay": 1.25,
       "tone": "light",
       "why": "The final narration describes a choice between two actions; a side-by-side comparison matches that structure."
+    },
+    {
+      "at": "vo2",
+      "type": "logo-pop",
+      "start": 1.44,
+      "end": 3.05,
+      "src": "dario-openai-01/logos/anthropic.png",
+      "sfx": "pop",
+      "x": 0.76,
+      "y": 0.43,
+      "size": 210,
+      "tint": "none",
+      "shape": "none",
+      "entrance": "pop",
+      "glow": true,
+      "exit": 0.22,
+      "z": 70,
+      "why": "Lands on the spoken word 'Anthropic' as a single branded engagement accent, matching the successful ChatGPT logo-pop treatment from the first short."
     }
   ],
   "profileOverrides": {

@@ -3,7 +3,7 @@
  "meta": {
   "title": "thumb",
   "slug": "lf-001",
-  "durationInSeconds": 9,
+  "durationInSeconds": 4,
   "fps": 30,
   "width": 1280,
   "height": 720
@@ -11,7 +11,7 @@
  "pacing": [
   {
    "start": 0,
-   "end": 9,
+   "end": 4,
    "energy": 0.4,
    "label": "build"
   }
@@ -20,7 +20,7 @@
   {
    "id": "c0",
    "start": 0,
-   "end": 9,
+   "end": 4,
    "layout": "graphic",
    "background": "#0B0B0F",
    "sources": [],
@@ -43,20 +43,57 @@
  "audio": [],
  "overlays": [
   {
-   "type": "big-number",
-   "id": "a",
+   "type": "entity-graph",
+   "id": "g",
    "start": 0,
-   "end": 9,
+   "end": 4,
    "z": 50,
-   "value": 638,
-   "prefix": "$",
-   "suffix": "B",
-   "label": "",
-   "sub": "WHO ACTUALLY PAID?",
-   "countSeconds": 0.3,
+   "title": "",
    "accent": "#FF5A3C",
    "background": "#0B0B0F",
-   "scale": 1.7
+   "labelScale": 2.6,
+   "nodes": [
+    {
+     "id": "m",
+     "label": "Microsoft",
+     "x": 0.22,
+     "y": 0.7,
+     "r": 0.155,
+     "at": 0,
+     "tone": "dark",
+     "logo": "lf-001/logos/microsoft.png",
+     "color": "#00A4EF"
+    },
+    {
+     "id": "a",
+     "label": "Anthropic",
+     "x": 0.78,
+     "y": 0.7,
+     "r": 0.16,
+     "at": 0,
+     "tone": "dark",
+     "logo": "lf-001/logos/anthropic.png",
+     "color": "#D97757"
+    }
+   ],
+   "edges": [
+    {
+     "from": "m",
+     "to": "a",
+     "label": "$5B IN",
+     "at": 0,
+     "curve": "right",
+     "tone": "out"
+    },
+    {
+     "from": "a",
+     "to": "m",
+     "label": "$30B BACK",
+     "at": 0,
+     "curve": "right",
+     "tone": "back"
+    }
+   ]
   }
  ]
 }

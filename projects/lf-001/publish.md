@@ -67,21 +67,41 @@ Corrections go in the pinned comment.
 
 ## Thumbnail
 
-**Concept: the number, and the question.** `$638B` as large as the frame
-allows, `WHO ACTUALLY PAID?` beneath it in accent, nothing else.
+**`projects/lf-001/art/thumbnail.png`** — 1280x720.
 
-Rejected, with reasons — these are the notes to reuse next time:
+Two logos, two arrows, one headline:
 
-- **The entity graph.** The best idea in the video and the worst thumbnail: four
-  nodes and four labelled edges cannot be read at 320px. A thumbnail holds one
-  idea, not a diagram.
-- **The $5B → $30B comparison.** Right shape, but the struck-through side is
-  dark grey on near-black — invisible before it's even scaled down.
+    WHO IS ACTUALLY
+    PAYING FOR AI?
+    [Microsoft] --$5B IN--> [Anthropic]
+                <--$30B BACK--
 
-**The general rule this taught:** video components are not thumbnail components.
-They're built to be read full-screen over seconds; a thumbnail is read at ~5%
-of that size in a fraction of a second. Type that's comfortable in the video is
-illegible in the thumbnail, and every secondary line has to go.
+**Why this and not the four-node graph.** The full graph is the video's best
+device and a bad thumbnail — four nodes and four labelled edges cannot be read
+at 320px. Cutting to the single round trip keeps the entire argument (money out,
+more money back) and loses nothing a viewer could have read anyway. **A thumbnail
+holds one idea.**
+
+Checked the only way that matters: downscaled to 320px wide and looked at it.
+Headline, both logos and both figures survive.
+
+### How it was made, so it can be redone
+
+1. `projects/lf-001/thumb.json` — a 1280x720 timeline with one `entity-graph`
+   overlay, two nodes, `labelScale: 2.6`, nodes pushed to `y: 0.70` so the
+   headline owns the top third.
+2. `npx remotion still src/index.ts Short out/thumb-graph.png --frame=90 --props=projects/lf-001/thumb.json`
+3. Headline composited in PIL (Segoe UI Black, sized to 80% of frame width, dark
+   halo). **Not** a `date-card` — that is a full-screen card with its own
+   background and it painted over the graph.
+
+### The rule this taught
+
+**Video components are not thumbnail components.** Type tuned for full-screen
+playback over seconds is illegible at 5% scale in a fraction of a second. Both
+`big-number` and `entity-graph` gained a size multiplier (`scale`,
+`labelScale`) purely so the same component can serve both, defaulting to 1 so
+the video is untouched.
 
 ## Publishing
 

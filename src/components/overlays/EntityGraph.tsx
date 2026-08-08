@@ -20,6 +20,7 @@ export const EntityGraph: React.FC<Props> = ({
   edges,
   accent,
   background,
+  labelScale,
 }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
@@ -122,24 +123,24 @@ export const EntityGraph: React.FC<Props> = ({
               {e.label && labelIn > 0 ? (
                 <g opacity={labelIn}>
                   <rect
-                    x={mx - e.label.length * 5.6 - 10}
-                    y={my - 17}
-                    width={e.label.length * 11.2 + 20}
-                    height={34}
-                    rx={17}
+                    x={mx - (e.label.length * 5.6 + 10) * labelScale}
+                    y={my - 17 * labelScale}
+                    width={(e.label.length * 11.2 + 20) * labelScale}
+                    height={34 * labelScale}
+                    rx={17 * labelScale}
                     fill={background}
                     stroke={stroke}
                     strokeWidth={1.5}
                   />
                   <text
                     x={mx}
-                    y={my + 6}
+                    y={my + 6 * labelScale}
                     textAnchor="middle"
                     fill={stroke}
                     style={{
                       fontFamily: "Poppins, sans-serif",
                       fontWeight: 700,
-                      fontSize: 19,
+                      fontSize: 19 * labelScale,
                       letterSpacing: "0.02em",
                     }}
                   >

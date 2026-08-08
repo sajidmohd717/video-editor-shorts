@@ -436,6 +436,13 @@ export const overlaySchema = z.discriminatedUnion("type", [
     })),
     accent: z.string().default("#FF5A3C"),
     background: z.string().default("#0B0B0F"),
+    /**
+     * Edge-label size multiplier. 1 is tuned for full-screen video; a thumbnail
+     * needs ~2.5x, because a label that is comfortable across 14 seconds of
+     * screen time is unreadable in the fraction of a second a thumbnail gets
+     * (L20).
+     */
+    labelScale: z.number().default(1),
   }),
 
   /**

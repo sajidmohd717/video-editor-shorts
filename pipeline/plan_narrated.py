@@ -134,6 +134,7 @@ def build(job: Job) -> dict:
         {**f, "focusX": focus_x} for f in job.get("camera.framings", [])
     ] or [{"focusX": focus_x, "focusY": 0.42, "from": 1.0, "to": 1.08}]
     passage_focus_x = job.source.get("passageFocusX", [])
+    focus_ranges = job.source.get("focusRanges", [])
 
     clips: list[dict] = []
     overlays: list[dict] = []
@@ -311,12 +312,35 @@ def build(job: Job) -> dict:
     def fill_aroll_segments(segments: list[tuple], tag: str, layout: str = "full",
                             passage_focus: float | None = None) -> None:
         """Subdivide each sub-segment into shots, so cuts never span a splice."""
+        full_start = min(s for s, _, _ in segments)
+        full_end = max(e for _, e, _ in segments)
+        full_duration = max(0.001, full_end - full_start)
         for si, (s, e, shift) in enumerate(segments):
-            fill_aroll(s + shift, e + shift, shift, f"{tag}{si}_", layout,
-                       passage_focus)
+            # A source camera cut can change the subject inside one continuous
+            # spoken passage. Split only the visual layer at authored focus
+            # ranges, keeping the audio segment intact across the cut (F43).
+            boundaries = {s, e}
+            for r in focus_ranges:
+                rs, re = r.get("start", 0), r.get("end", 0)
+                if re > s and rs < e:
+                    boundaries.add(max(s, rs))
+                    boundaries.add(min(e, re))
+            points = sorted(boundaries)
+            for vi, (a, b) in enumerate(zip(points, points[1:])):
+                mid = (a + b) / 2
+                visual_focus = passage_focus
+                for r in focus_ranges:
+                    if r.get("start", 0) <= mid < r.get("end", 0):
+                        visual_focus = r["focusX"]
+                        break
+                progress = ((a - full_start) / full_duration,
+                            (b - full_start) / full_duration)
+                fill_aroll(a + shift, b + shift, shift, f"{tag}{si}_{vi}_",
+                           layout, visual_focus, progress)
 
     def fill_aroll(start: float, end: float, shift: float, tag: str,
-                   layout: str = "full", passage_focus: float | None = None) -> None:
+                   layout: str = "full", passage_focus: float | None = None,
+                   progress: tuple[float, float] = (0.0, 1.0)) -> None:
         # A letterboxed wide shot doesn't want the usual cut rhythm or punch —
         # the whole point is that the composition is being preserved, and
         # chopping it up or zooming into it undoes that.
@@ -336,8 +360,11 @@ def build(job: Job) -> dict:
                 continue
             # Continuous across the cut: this shot starts exactly where the last
             # one ended. Only the framing changes.
-            clip["camera"]["from"] = round(passage_scale(i / n), 4)
-            clip["camera"]["to"] = round(passage_scale((i + 1) / n), 4)
+            p0, p1 = progress
+            clip["camera"]["from"] = round(
+                passage_scale(p0 + (p1 - p0) * i / n), 4)
+            clip["camera"]["to"] = round(
+                passage_scale(p0 + (p1 - p0) * (i + 1) / n), 4)
             clips.append(clip)
 
     def fill_broll(start: float, end: float, assets: list[str], tag: str) -> None:

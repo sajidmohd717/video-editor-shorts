@@ -824,16 +824,18 @@ written down.
 
 ---
 
-### F43 — Dialogue framing belongs to the passage, not the source
+### F43 — Dialogue framing belongs to the shot, not the source
 
 The Dario interview alternates between two tight singles in one 16:9 master.
 One `subjectFocusX` could center Dario or Emily Chang, but not both. The first
 test centered Dario and visibly cut into Emily's face during the hook — exactly
 where an awkward crop costs the swipe.
 
-**Applied:** narrated jobs can now provide `source.passageFocusX`, parallel to
-`passageLayouts`. The planner falls back to the source-level focus, so existing
-jobs are unchanged.
+**Applied:** narrated jobs can provide `source.passageFocusX`, parallel to
+`passageLayouts`. If a source camera cut changes the subject inside one
+continuous spoken passage, `source.focusRanges` splits only the visual layer at
+the cut and keeps its audio intact. The planner falls back to the passage or
+source-level focus, so existing jobs are unchanged.
 
 **Rule:** framing is a property of the shot being used. If passages can change
 speaker or composition, their focus must be authorable independently.
