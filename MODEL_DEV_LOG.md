@@ -704,6 +704,49 @@ for a clip is the cut file, and ASR is how you "watch" audio.**
 
 ---
 
+### F40 — Gain-match every source clip to the narration, and let the planner do it
+
+The first full render of lf-001 played, had no black frames and no audio holes.
+It was also wrong, and only measurement showed it:
+
+| | integrated |
+|---|---|
+| narration | −18.5 LUFS |
+| Oracle RPO | −22.9 LUFS |
+| Oracle prepaid | −23.9 LUFS |
+| **Huang, Ch5** | **−33.9 LUFS** |
+
+The most important sentence in the video's fairest chapter was **15 dB below**
+everything around it. Not inaudible — worse than that. Quiet enough that a viewer
+turns it up, then gets hit by the narration coming back at full level.
+
+Source clips arrive at whatever the room, the mic and the platform left them at.
+There is no reason to expect two of them to match, and no reason to expect either
+to match a studio TTS voice.
+
+**`plan_longform.py` now measures and matches automatically.** An explicit
+`gainDb` in the job still wins; otherwise the planner measures the clip, measures
+the narration once, and sets the difference. Measurements cache in
+`projects/<slug>/loudness.json`.
+
+Two details that are the whole finding:
+
+- **Static gain, never single-pass loudnorm.** Measure with
+  `loudnorm=print_format=json`, apply with `volume`. Single-pass loudnorm *as a
+  filter* is a dynamic normalizer that lifts gain during quiet passages — that is
+  precisely what manufactured the phantom "static" that cost most of a session
+  (F13). The tool is right; using it as a filter is not.
+- **Cap the boost at the true peak.** +15.4 dB was the match; +15.07 is what
+  keeps 1 dB of headroom. Matching loudness into clipping trades one defect for a
+  worse one.
+
+**The habit this reinforces:** "it rendered and it plays" is not verification.
+`blackdetect` and `silencedetect` both came back clean on a render whose key
+moment was unusable. Levels are not visible in a contact sheet and not audible
+in a still — measure them, every time, before calling a render good.
+
+---
+
 ## Platform data
 
 ### 2026-08-07 — first narrated short (El5XrIpsOCA)

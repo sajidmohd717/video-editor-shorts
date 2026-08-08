@@ -158,6 +158,11 @@ Two habits follow:
   output is corrupted, not merely inefficient (F13).
 - **Crop first, scale last** — order of operations, not resolution, is what makes
   A-roll soft (F14).
+- **Gain-match source clips to the narration** (F40). They arrive at whatever
+  level the room left them at — one sat 15 dB low and still passed
+  `blackdetect`, `silencedetect` and a contact sheet. Measure with `loudnorm`
+  in print mode, apply a **static** `volume`; never single-pass loudnorm as a
+  filter (F13).
 - **Transcribe every clip you cut**, from the cut file, and read the last line.
   Two of four cuts this session ended one word early; one of them dropped the
   word carrying the whole quote (F39).

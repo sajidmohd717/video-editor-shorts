@@ -31,6 +31,7 @@ import argparse
 import json
 import re
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -43,6 +44,43 @@ WIDTH, HEIGHT = 1920, 1080
 
 def norm(s: str) -> str:
     return re.sub(r"[^a-z0-9 ]", "", s.lower()).strip()
+
+
+def measure_lufs(path: Path) -> tuple[float, float]:
+    """Integrated loudness and true peak, via loudnorm in MEASURE mode."""
+    r = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-nostats", "-i", str(path),
+         "-af", "loudnorm=I=-18:TP=-1.5:LRA=11:print_format=json", "-f", "null", "-"],
+        capture_output=True, text=True)
+    m = re.search(r'\{[^{}]*"input_i"[\s\S]*?\}', r.stderr)
+    if not m:
+        raise SystemExit(f"could not measure loudness of {path}")
+    d = json.loads(m.group(0))
+    return float(d["input_i"]), float(d["input_tp"])
+
+
+def match_gain(clip: Path, target_i: float, cache: dict) -> float:
+    """
+    Static dB gain that brings `clip` to the narration's loudness.
+
+    Source clips arrive at whatever level the room, the mic and the platform
+    left them at — measured here, a conference-floor recording sat 15.4 dB under
+    our narration, which on the render was the single most important sentence in
+    Ch5 being the quietest thing in the video.
+
+    Deliberately a STATIC gain: measure with loudnorm, apply with `volume`.
+    Single-pass loudnorm as a filter is a DYNAMIC normalizer that pumps gain up
+    during quiet passages — that is what manufactured the phantom "static" that
+    cost most of a session to chase (F13).
+    """
+    key = clip.name
+    if key not in cache:
+        i, tp = measure_lufs(clip)
+        cache[key] = {"i": i, "tp": tp}
+    i, tp = cache[key]["i"], cache[key]["tp"]
+    gain = target_i - i
+    # Never let the boost clip: leave 1 dB of true-peak headroom.
+    return round(min(gain, -1.0 - tp), 2)
 
 
 def build(job: Job) -> dict:
@@ -108,6 +146,16 @@ def build(job: Job) -> dict:
             f"article {name!r} has no located phrase {phrase!r}.\n"
             f"  located: {have}\n"
             f"  re-run pipeline.screenshot with --find {phrase!r}")
+
+    # Loudness reference: everything that speaks is matched to the narration.
+    lcache_path = project.dir / "loudness.json"
+    lcache = (json.loads(lcache_path.read_text(encoding="utf-8"))
+              if lcache_path.exists() else {})
+    vo_i = lcache.get("_vo", {}).get("i")
+    if vo_i is None:
+        vo_i, vo_tp = measure_lufs(project.vo)
+        lcache["_vo"] = {"i": vo_i, "tp": vo_tp}
+    print(f"   narration {vo_i:.1f} LUFS")
 
     clips: list[dict] = []
     overlays: list[dict] = []
@@ -419,12 +467,19 @@ def build(job: Job) -> dict:
         if "_at" not in sa:
             continue
         pad = sa.get("padSeconds", job.get("pacing.sourceAudioPadSeconds", 0.45))
+        # An explicit gainDb in the job wins; otherwise match the narration.
+        if "gainDb" in sa:
+            gain = sa["gainDb"]
+        else:
+            gain = match_gain(project.assets / Path(sa["src"]).relative_to(job.slug),
+                              vo_i, lcache)
+            print(f"   {Path(sa['src']).name:22} gain {gain:+.2f} dB")
         # Lands in the hole opened for it: a beat of air, then the clip.
         audio.append({
             "id": f"src{i}", "src": sa["src"], "role": "clip-audio",
             "start": round(shift_before(sa["_at"]) + pad * 0.6, 3),
             "offset": sa.get("sourceOffset", 0.0), "duration": sa["seconds"],
-            "gainDb": sa.get("gainDb", 0), "duck": False,
+            "gainDb": gain, "duck": False,
             "fadeIn": 0.1, "fadeOut": 0.3,
         })
 
@@ -462,6 +517,8 @@ def build(job: Job) -> dict:
         raise SystemExit(
             "Clip track has uncovered gaps — these render as black:\n  "
             + "\n  ".join(f"{a:.2f}-{b:.2f}s" for a, b in holes))
+
+    lcache_path.write_text(json.dumps(lcache, indent=2), encoding="utf-8")
 
     caption_style = {k: v for k, v in job.get("captions", {}).items()
                      if k not in ("maxWordsPerCard", "emphasisKeywords")}

@@ -85,7 +85,6 @@
       "src": "lf-001/news/orcl-rpo-638.wav",
       "sourceOffset": 0.0,
       "seconds": 12,
-      "gainDb": -1,
       "why": "L5 — an Oracle executive states the 638 billion figure in their own voice, under our document highlight. Hearing them say it IS the evidence."
     },
     {
@@ -94,7 +93,6 @@
       "src": "lf-001/news/huang-justified.wav",
       "sourceOffset": 0.0,
       "seconds": 15.6,
-      "gainDb": 0,
       "why": "L5, and the one source-audio moment in Ch5. The narration concedes the argument, then the person most invested in it says it himself: '...not only substantially less than you thought, and all of it justified.' Cut deliberately to INCLUDE 'justified' — an earlier cut ended on 'and all of it', which drops the word carrying the whole claim."
     },
     {
@@ -103,7 +101,6 @@
       "src": "lf-001/news/orcl-prepaid-75.wav",
       "sourceOffset": 0.0,
       "seconds": 6.0,
-      "gainDb": -1,
       "why": "the prepaid / bring-your-own-hardware figure, said aloud under the quote card"
     }
   ],

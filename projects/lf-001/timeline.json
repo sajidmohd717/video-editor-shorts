@@ -10328,7 +10328,7 @@
       "start": 167.19,
       "offset": 0.0,
       "duration": 12,
-      "gainDb": -1,
+      "gainDb": 4.38,
       "duck": false,
       "fadeIn": 0.1,
       "fadeOut": 0.3
@@ -10340,7 +10340,7 @@
       "start": 275.65,
       "offset": 0.0,
       "duration": 15.6,
-      "gainDb": 0,
+      "gainDb": 15.07,
       "duck": false,
       "fadeIn": 0.1,
       "fadeOut": 0.3
@@ -10352,7 +10352,7 @@
       "start": 204.26,
       "offset": 0.0,
       "duration": 6.0,
-      "gainDb": -1,
+      "gainDb": 5.37,
       "duck": false,
       "fadeIn": 0.1,
       "fadeOut": 0.3
