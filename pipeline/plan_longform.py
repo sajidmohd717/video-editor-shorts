@@ -560,6 +560,41 @@ def build(job: Job) -> dict:
     caption_style = {k: v for k, v in job.get("captions", {}).items()
                      if k not in ("maxWordsPerCard", "emphasisKeywords")}
 
+    # --- caption the source audio too -----------------------------------------
+    # A clip that speaks should be readable. The words come from ASR of the cut
+    # file with the wording hand-corrected against the primary document (F4:
+    # trust ASR's timing, never its wording — it heard "$638,000" for "$638
+    # billion", which is a different claim, not a typo).
+    src_caps_path = project.dir / "source_captions.json"
+    src_cues: list[dict] = []
+    if src_caps_path.exists():
+        src_caps = json.loads(src_caps_path.read_text(encoding="utf-8"))
+        for a in audio:
+            if a["role"] != "clip-audio":
+                continue
+            ws = src_caps.get(Path(a["src"]).stem)
+            if not ws:
+                continue
+            base = a["start"] - a.get("offset", 0.0)
+            group: list[dict] = []
+            for w in ws:
+                if w["start"] > a.get("offset", 0.0) + a["duration"]:
+                    break
+                group.append({"text": w["text"],
+                              "start": round(base + w["start"], 3),
+                              "end": round(base + w["end"], 3)})
+                # Break on punctuation or every third word, matching the
+                # narration cards so the two tracks read as one system.
+                if len(group) >= 3 or w["text"].endswith((".", ",", "?", "!")):
+                    src_cues.append({"start": group[0]["start"], "end": group[-1]["end"],
+                                     "words": group, "emphasis": "none"})
+                    group = []
+            if group:
+                src_cues.append({"start": group[0]["start"], "end": group[-1]["end"],
+                                 "words": group, "emphasis": "none"})
+        if src_cues:
+            print(f"   {len(src_cues)} caption cards over source audio")
+
     # --- don't caption over a card that is already text ------------------------
     # A quote card holds the words on screen while the narrator reads them; the
     # caption track then prints the same sentence a second time, in a different
@@ -583,6 +618,9 @@ def build(job: Job) -> dict:
                    for a in audio if a["role"] == "clip-audio"]
     cues = [c for c in shifted
             if not any(c["start"] < e and c["end"] > s for s, e in mute)]
+    # Source-audio cards are added AFTER the mute filter — they belong inside
+    # exactly the spans that filter removes.
+    cues = sorted(cues + src_cues, key=lambda c: c["start"])
     if mute:
         print(f"   captions suppressed under {len(mute)} text cards "
               f"({len(caps.get('cues', [])) - len(cues)} cues dropped)")
