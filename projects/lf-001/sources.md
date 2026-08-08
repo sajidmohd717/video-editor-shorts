@@ -86,6 +86,32 @@ those themselves) and bad for *earnings calls* (which surface as commentary).
 For earnings material, go to the company's investor-relations page directly —
 Oracle's own webcast — rather than searching video platforms.
 
+## Chasing a clip back to its primary source — worked example
+
+The Ch5 executive clip arrived as a **Global News** upload titled "AI bubble?
+Nvidia CEO says 3 things are happening". Usable, but the frames told a different
+story than the title did:
+
+- a **"Global NEWS"** bug in the corner of every frame — a broadcaster ident on a
+  monetised video (L13)
+- the backdrop read **"U.S.–SAUDI INVESTMENT FORUM 2025"**, so this was not an
+  NVIDIA event at all, and a primary stream had to exist
+- **Elon Musk was in shot** for the first six seconds. The script never mentions
+  him; putting him on screen asserts he is part of this story and would take all
+  the attention (F38 / L13)
+
+Searching the *event* rather than the *quote* found the host's own channel —
+**MCIT** (Saudi Ministry of Communications and Information Technology),
+`I9TxUsibexQ` — with the same passage at **25:17**, no broadcaster ident.
+
+**The method, which generalises:** a re-upload's title tells you what the
+broadcaster thought was interesting. The *backdrop* tells you where you actually
+are, and that is what you search to find the primary source. Look at the frames
+before trusting the metadata.
+
+Note `--download-sections` stalled here as it has before; full download then cut
+locally is the reliable path.
+
 ## Still needed
 
 - Oracle Q4 FY2026 earnings **webcast**, from `investor.oracle.com`, not YouTube

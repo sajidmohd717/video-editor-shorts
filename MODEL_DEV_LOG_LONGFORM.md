@@ -282,6 +282,67 @@ delivers the voice without the ident or the headline.
 
 ---
 
+### L14 — Source audio needs a hole cut in the narration, not a duck
+
+L5 ("let the clip speak") came from shorts, where narration and clip **alternate**
+— a hole always exists. Long-form narration is continuous by design, so there is
+never one. Measured at the Ch5 cue: **the largest gap anywhere in the surrounding
+40 words is 0.68 seconds.** The clip that goes there is 15.6.
+
+Playing it anyway stacks two voices. Ducking the VO doesn't fix it either — a
+quiet second voice under a loud one is not "letting the clip speak", it's mud.
+
+So the planner **cuts the narration and inserts the gap**, generalising the
+cold-open shift (L12) from "shift everything at the top" to "shift everything
+after each insertion point". The VO becomes several segments of one file; the
+script is still never touched.
+
+    coldOpen  → lead
+    sourceAudio cue + duration → an insertion
+    shift(t) = lead + t + Σ(gaps opened at or before t)
+
+**The bug this produced, which is the real lesson.** The first version was
+`shift(t) = lead + Σ(gaps)` — it dropped `t`. Every cue in the video collapsed
+onto 9.65s. Nothing raised: cards came out with `start == end`, VO segments
+overlapped each other by minutes, and the planner printed a cheerful summary
+line. The only visible symptom was caption suppression quietly falling from 61
+cues to 2, which is the kind of number you skim past.
+
+**Two assertions now make the whole class unshippable**, in the spirit of F18:
+
+- no two `vo`/`clip-audio` entries may overlap — *one voice at a time*
+- no overlay may have a duration under 0.15s — *a card that never shows is the
+  same failure as a clip that never plays*
+
+Both are four lines. The planner will keep growing; invariants survive that,
+care doesn't.
+
+---
+
+### L15 — Chase the clip back to the room it was filmed in
+
+The Ch5 clip arrived as a Global News upload. Three problems, none in the
+metadata and all in the frames: a broadcaster bug in every frame, a backdrop
+reading **U.S.–SAUDI INVESTMENT FORUM 2025** (so it wasn't an NVIDIA event at
+all), and **Elon Musk sitting in shot** — someone the script never mentions.
+
+Searching the *event* rather than the *quote* found the host's own channel
+(Saudi MCIT) with the same passage, no ident, at higher integrity.
+
+**The method:** a re-upload's title tells you what a broadcaster found
+interesting. The *backdrop* tells you where you actually are — and that is the
+search term that finds the primary source.
+
+It doesn't always resolve cleanly. Here the primary stream holds a **wide
+three-shot for the entire quote**, with Musk in frame throughout, and the clean
+single of Huang is 80 seconds earlier — so using it under this audio would put
+visibly mismatched lips on screen. Neither "show Musk" nor "show wrong lips" is
+acceptable, so the picture became a **pull quote with attribution** over his
+voice. When no honest angle exists, stop looking for one and let the engine
+carry it.
+
+---
+
 ## Open questions
 
 1. **What carries pacing without music?** The channel doesn't use music (F20).

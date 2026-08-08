@@ -71,6 +71,7 @@ def build(job: Job) -> dict:
     cold = job.raw.get("coldOpen", [])
     lead = round(sum(c["seconds"] for c in cold), 3)
 
+    # NB: total inserted gap time is added after `inserts` is built, below.
     duration = round(lead + words[-1]["end"] + job.get("pacing.tailSeconds", 2.0), 3)
 
     canvas = job.get("brand.canvas", "#0A0A0C")
@@ -112,19 +113,11 @@ def build(job: Job) -> dict:
     overlays: list[dict] = []
     audio: list[dict] = []
 
-    # --- narration spine ------------------------------------------------------
-    audio.append({
-        "id": "vo", "src": vo_src, "role": "vo", "start": lead, "offset": 0,
-        "duration": round(words[-1]["end"] + 0.4, 3),
-        "gainDb": job.get("audio.voGainDb", 0), "duck": False,
-        "fadeIn": 0.1, "fadeOut": 0.6,
-    })
-
     # --- phrase cueing --------------------------------------------------------
     flat = [norm(w["text"]) for w in words]
 
-    def find_cue(phrase: str, occurrence: int = 1) -> float | None:
-        """Time of the first word of the nth occurrence of `phrase`."""
+    def raw_cue(phrase: str, occurrence: int = 1) -> float | None:
+        """Time of the first word of the nth occurrence, in NARRATION time."""
         target = norm(phrase).split()
         if not target:
             return None
@@ -133,8 +126,71 @@ def build(job: Job) -> dict:
             if flat[i:i + len(target)] == target:
                 seen += 1
                 if seen == occurrence:
-                    return words[i]["start"] + lead
+                    return words[i]["start"]
         return None
+
+    # --- making room for source audio ----------------------------------------
+    # L5 says let the clip speak. That rule came from shorts, where narration and
+    # clip ALTERNATE, so a hole always exists. Long-form narration is continuous
+    # by design — measured here, the largest gap anywhere near the Ch5 cue is
+    # 0.68s — so there is nowhere to put a 16-second clip. Playing it anyway
+    # stacks two voices, which is not "letting the clip speak", it's mud.
+    #
+    # So the planner CUTS THE NARRATION and inserts the gap, exactly as the cold
+    # open shifts it at the top. The script is still untouched; the VO becomes
+    # several segments with silence between them.
+    inserts: list[tuple[float, float]] = []
+    for sa in job.raw.get("sourceAudio", []):
+        ct = raw_cue(sa["cue"], sa.get("occurrence", 1)) if "cue" in sa else sa.get("at")
+        if ct is None:
+            print(f"  ! sourceAudio cue not found: {sa.get('cue')!r}")
+            continue
+        ct = max(0.0, ct + sa.get("offset", 0.0))
+        pad = sa.get("padSeconds", job.get("pacing.sourceAudioPadSeconds", 0.45))
+        inserts.append((ct, sa["seconds"] + pad))
+        sa["_at"] = ct
+    inserts.sort()
+
+    # Every inserted gap lengthens the video.
+    duration = round(duration + sum(d for _, d in inserts), 3)
+
+    def shift(t: float) -> float:
+        """
+        Narration time -> video time.
+
+        `t` itself has to be carried through, not just the offsets: video time is
+        the narration clock PLUS the cold open PLUS every gap opened before this
+        point. Dropping the `t` collapses the entire timeline onto `lead`, which
+        renders as zero-length cards and overlapping VO segments rather than as
+        an error.
+        """
+        return round(lead + t + sum(d for ct, d in inserts if ct <= t), 3)
+
+    def shift_before(t: float) -> float:
+        """As `shift`, but excluding a gap opened exactly at `t` — this is where
+        the source-audio clip itself goes."""
+        return round(lead + t + sum(d for ct, d in inserts if ct < t), 3)
+
+    # --- narration spine ------------------------------------------------------
+    # One VO file, played as segments with the source-audio gaps between them.
+    vo_end = round(words[-1]["end"] + 0.4, 3)
+    bounds = [0.0] + [ct for ct, _ in inserts] + [vo_end]
+    for n in range(len(bounds) - 1):
+        a, b = bounds[n], bounds[n + 1]
+        if b - a < 0.05:
+            continue
+        audio.append({
+            "id": f"vo{n}", "src": vo_src, "role": "vo",
+            "start": shift(a), "offset": round(a, 3), "duration": round(b - a, 3),
+            "gainDb": job.get("audio.voGainDb", 0), "duck": False,
+            "fadeIn": 0.1 if n == 0 else 0.12,
+            "fadeOut": 0.6 if n == len(bounds) - 2 else 0.12,
+        })
+
+
+    def find_cue(phrase: str, occurrence: int = 1) -> float | None:
+        r = raw_cue(phrase, occurrence)
+        return None if r is None else shift(r)
 
     # --- chapters -------------------------------------------------------------
     # Chapter starts are themselves cued by phrase, so a rewrite doesn't
@@ -360,17 +416,38 @@ def build(job: Job) -> dict:
     # --- source-audio moments -------------------------------------------------
     # L5: a clip speaks only where the fact that THEY said it is the evidence.
     for i, sa in enumerate(job.raw.get("sourceAudio", [])):
-        t = find_cue(sa["cue"], sa.get("occurrence", 1)) if "cue" in sa else sa.get("at")
-        if t is None:
-            print(f"  ! sourceAudio cue not found: {sa.get('cue')!r}")
+        if "_at" not in sa:
             continue
+        pad = sa.get("padSeconds", job.get("pacing.sourceAudioPadSeconds", 0.45))
+        # Lands in the hole opened for it: a beat of air, then the clip.
         audio.append({
             "id": f"src{i}", "src": sa["src"], "role": "clip-audio",
-            "start": round(t + sa.get("offset", 0.0), 3),
+            "start": round(shift_before(sa["_at"]) + pad * 0.6, 3),
             "offset": sa.get("sourceOffset", 0.0), "duration": sa["seconds"],
             "gainDb": sa.get("gainDb", 0), "duck": False,
             "fadeIn": 0.1, "fadeOut": 0.3,
         })
+
+    # --- one-voice invariant --------------------------------------------------
+    # Narration and source audio must never overlap. This is four lines and it
+    # makes a whole bug class unshippable (F18's lesson): the `shift()` bug that
+    # dropped narration time produced overlapping VO segments and zero-length
+    # cards, and NOTHING errored — it just silently rendered wrong. An assertion
+    # would have caught it the first time it ran.
+    speech = sorted(
+        [(a["start"], a["start"] + a["duration"], a["id"])
+         for a in audio if a["role"] in ("vo", "clip-audio")])
+    for (s1, e1, i1), (s2, e2, i2) in zip(speech, speech[1:]):
+        if s2 < e1 - 0.02:
+            raise SystemExit(
+                f"two voices overlap: {i1} runs to {e1:.2f}s but {i2} starts at "
+                f"{s2:.2f}s. Source audio needs a gap cut into the narration.")
+
+    # Nothing should be left with no duration — a card that never shows is the
+    # same failure as a clip that never plays, and just as quiet.
+    for o in overlays:
+        if o["end"] - o["start"] < 0.15:
+            raise SystemExit(f"overlay {o['id']} ({o['type']}) has no duration")
 
     # --- coverage invariant (F18) --------------------------------------------
     holes: list[tuple[float, float]] = []
@@ -398,9 +475,9 @@ def build(job: Job) -> dict:
     # Caption cues are in NARRATION time; everything else on the timeline is in
     # video time. Shift before comparing, or the mute test silently uses two
     # different clocks and the whole track fires `lead` seconds early.
-    shifted = [{**c, "start": round(c["start"] + lead, 3), "end": round(c["end"] + lead, 3),
-                **({"words": [{**w, "start": round(w["start"] + lead, 3),
-                               "end": round(w["end"] + lead, 3)} for w in c["words"]]}
+    shifted = [{**c, "start": shift(c["start"]), "end": shift(c["end"]),
+                **({"words": [{**w, "start": shift(w["start"]), "end": shift(w["end"])}
+                              for w in c["words"]]}
                    if c.get("words") else {})}
                for c in caps.get("cues", [])]
     cues = [c for c in shifted

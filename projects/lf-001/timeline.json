@@ -3,7 +3,7 @@
   "meta": {
     "title": "Who Is Actually Paying for the AI Boom?",
     "slug": "lf-001",
-    "durationInSeconds": 342.88,
+    "durationInSeconds": 377.83,
     "fps": 30,
     "width": 1920,
     "height": 1080
@@ -29,13 +29,13 @@
     },
     {
       "start": 170.35,
-      "end": 238.79,
+      "end": 257.69,
       "energy": 0.4,
       "label": "build"
     },
     {
-      "start": 238.79,
-      "end": 342.88,
+      "start": 257.69,
+      "end": 377.83,
       "energy": 0.4,
       "label": "build"
     }
@@ -1482,7 +1482,7 @@
     {
       "id": "f41",
       "start": 177.17,
-      "end": 181.14,
+      "end": 180.568,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1510,8 +1510,8 @@
     },
     {
       "id": "f42",
-      "start": 181.14,
-      "end": 185.11,
+      "start": 180.568,
+      "end": 183.967,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1538,27 +1538,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "v10",
-      "start": 185.11,
-      "end": 194.11,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
       "id": "f43",
-      "start": 194.11,
-      "end": 197.17,
+      "start": 183.967,
+      "end": 187.365,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1586,8 +1568,8 @@
     },
     {
       "id": "f44",
-      "start": 197.17,
-      "end": 200.23,
+      "start": 187.365,
+      "end": 190.763,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1615,8 +1597,8 @@
     },
     {
       "id": "f45",
-      "start": 200.23,
-      "end": 203.29,
+      "start": 190.763,
+      "end": 194.162,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1643,27 +1625,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "v11",
-      "start": 203.29,
-      "end": 216.29,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
       "id": "f46",
-      "start": 216.29,
-      "end": 219.405,
+      "start": 194.162,
+      "end": 197.56,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1690,9 +1654,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v10",
+      "start": 197.56,
+      "end": 206.56,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f47",
-      "start": 219.405,
-      "end": 222.52,
+      "start": 206.56,
+      "end": 209.686,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1720,8 +1702,8 @@
     },
     {
       "id": "f48",
-      "start": 222.52,
-      "end": 225.635,
+      "start": 209.686,
+      "end": 212.812,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1749,8 +1731,8 @@
     },
     {
       "id": "f49",
-      "start": 225.635,
-      "end": 228.75,
+      "start": 212.812,
+      "end": 215.938,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1778,8 +1760,8 @@
     },
     {
       "id": "f50",
-      "start": 228.75,
-      "end": 231.865,
+      "start": 215.938,
+      "end": 219.064,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1807,8 +1789,8 @@
     },
     {
       "id": "f51",
-      "start": 231.865,
-      "end": 234.98,
+      "start": 219.064,
+      "end": 222.19,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1835,9 +1817,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v11",
+      "start": 222.19,
+      "end": 235.19,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f52",
-      "start": 234.98,
-      "end": 238.095,
+      "start": 235.19,
+      "end": 238.305,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1865,8 +1865,8 @@
     },
     {
       "id": "f53",
-      "start": 238.095,
-      "end": 241.21,
+      "start": 238.305,
+      "end": 241.42,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1894,8 +1894,8 @@
     },
     {
       "id": "f54",
-      "start": 241.21,
-      "end": 244.325,
+      "start": 241.42,
+      "end": 244.535,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1923,8 +1923,8 @@
     },
     {
       "id": "f55",
-      "start": 244.325,
-      "end": 247.44,
+      "start": 244.535,
+      "end": 247.65,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1952,8 +1952,8 @@
     },
     {
       "id": "f56",
-      "start": 247.44,
-      "end": 250.555,
+      "start": 247.65,
+      "end": 250.765,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1981,8 +1981,8 @@
     },
     {
       "id": "f57",
-      "start": 250.555,
-      "end": 253.67,
+      "start": 250.765,
+      "end": 253.88,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2010,8 +2010,8 @@
     },
     {
       "id": "f58",
-      "start": 253.67,
-      "end": 256.785,
+      "start": 253.88,
+      "end": 256.995,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2039,8 +2039,8 @@
     },
     {
       "id": "f59",
-      "start": 256.785,
-      "end": 259.9,
+      "start": 256.995,
+      "end": 260.11,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2068,8 +2068,8 @@
     },
     {
       "id": "f60",
-      "start": 259.9,
-      "end": 263.015,
+      "start": 260.11,
+      "end": 263.225,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2097,8 +2097,8 @@
     },
     {
       "id": "f61",
-      "start": 263.015,
-      "end": 266.13,
+      "start": 263.225,
+      "end": 266.34,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2125,38 +2125,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "v12",
-      "start": 266.13,
-      "end": 282.13,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/news/huang-justified.mp4",
-          "offset": 0.0,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.05,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
       "id": "f62",
-      "start": 282.13,
-      "end": 285.51,
+      "start": 266.34,
+      "end": 269.455,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2183,27 +2154,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "v13",
-      "start": 285.51,
-      "end": 288.51,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
       "id": "f63",
-      "start": 288.51,
-      "end": 291.652,
+      "start": 269.455,
+      "end": 272.57,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2231,8 +2184,8 @@
     },
     {
       "id": "f64",
-      "start": 291.652,
-      "end": 294.794,
+      "start": 272.57,
+      "end": 275.685,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2260,8 +2213,8 @@
     },
     {
       "id": "f65",
-      "start": 294.794,
-      "end": 297.936,
+      "start": 275.685,
+      "end": 278.8,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2289,8 +2242,8 @@
     },
     {
       "id": "f66",
-      "start": 297.936,
-      "end": 301.077,
+      "start": 278.8,
+      "end": 281.915,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2318,8 +2271,8 @@
     },
     {
       "id": "f67",
-      "start": 301.077,
-      "end": 304.219,
+      "start": 281.915,
+      "end": 285.03,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2346,9 +2299,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v12",
+      "start": 285.03,
+      "end": 300.63,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f68",
-      "start": 304.219,
-      "end": 307.361,
+      "start": 300.63,
+      "end": 303.935,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2376,8 +2347,8 @@
     },
     {
       "id": "f69",
-      "start": 307.361,
-      "end": 310.503,
+      "start": 303.935,
+      "end": 307.24,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2405,8 +2376,8 @@
     },
     {
       "id": "f70",
-      "start": 310.503,
-      "end": 313.645,
+      "start": 307.24,
+      "end": 310.545,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2434,8 +2405,8 @@
     },
     {
       "id": "f71",
-      "start": 313.645,
-      "end": 316.787,
+      "start": 310.545,
+      "end": 313.85,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2463,8 +2434,8 @@
     },
     {
       "id": "f72",
-      "start": 316.787,
-      "end": 319.929,
+      "start": 313.85,
+      "end": 317.155,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2492,8 +2463,8 @@
     },
     {
       "id": "f73",
-      "start": 319.929,
-      "end": 323.071,
+      "start": 317.155,
+      "end": 320.46,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2520,9 +2491,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v13",
+      "start": 320.46,
+      "end": 323.46,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f74",
-      "start": 323.071,
-      "end": 326.212,
+      "start": 323.46,
+      "end": 326.602,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2550,8 +2539,8 @@
     },
     {
       "id": "f75",
-      "start": 326.212,
-      "end": 329.354,
+      "start": 326.602,
+      "end": 329.744,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2579,8 +2568,8 @@
     },
     {
       "id": "f76",
-      "start": 329.354,
-      "end": 332.496,
+      "start": 329.744,
+      "end": 332.886,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2608,8 +2597,8 @@
     },
     {
       "id": "f77",
-      "start": 332.496,
-      "end": 335.638,
+      "start": 332.886,
+      "end": 336.027,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2637,8 +2626,8 @@
     },
     {
       "id": "f78",
-      "start": 335.638,
-      "end": 338.78,
+      "start": 336.027,
+      "end": 339.169,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2665,9 +2654,328 @@
       "transitionDuration": 0
     },
     {
+      "id": "f79",
+      "start": 339.169,
+      "end": 342.311,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-38557069.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f80",
+      "start": 342.311,
+      "end": 345.453,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-5028622.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f81",
+      "start": 345.453,
+      "end": 348.595,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-343932.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f82",
+      "start": 348.595,
+      "end": 351.737,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-47215.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f83",
+      "start": 351.737,
+      "end": 354.879,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7317045.mp4",
+          "offset": 4.4,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f84",
+      "start": 354.879,
+      "end": 358.021,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-38440687.mp4",
+          "offset": 5.7,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f85",
+      "start": 358.021,
+      "end": 361.163,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-33893602.mp4",
+          "offset": 5.7,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f86",
+      "start": 361.163,
+      "end": 364.304,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pixabay-video-14900.mp4",
+          "offset": 5.7,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f87",
+      "start": 364.304,
+      "end": 367.446,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-7796797.mp4",
+          "offset": 5.7,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f88",
+      "start": 367.446,
+      "end": 370.588,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-6755170.mp4",
+          "offset": 5.7,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f89",
+      "start": 370.588,
+      "end": 373.73,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30915329.mp4",
+          "offset": 5.7,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "v14",
-      "start": 338.78,
-      "end": 343.78,
+      "start": 373.73,
+      "end": 378.73,
       "layout": "graphic",
       "background": "#E9E9EC",
       "sources": [],
@@ -2717,8 +3025,8 @@
     {
       "type": "film-burn",
       "id": "chburn4",
-      "start": 238.405,
-      "end": 239.105,
+      "start": 257.305,
+      "end": 258.005,
       "z": 78,
       "originX": 1.02,
       "originY": 0.4,
@@ -2866,8 +3174,8 @@
     {
       "type": "stat-chart",
       "id": "ov10",
-      "start": 185.11,
-      "end": 194.11,
+      "start": 197.56,
+      "end": 206.56,
       "z": 60,
       "title": "Oracle remaining performance obligations",
       "series": [
@@ -2891,26 +3199,36 @@
     {
       "type": "quote-card",
       "id": "ov11",
-      "start": 203.29,
-      "end": 216.29,
+      "start": 222.19,
+      "end": 235.19,
       "z": 60,
       "text": "The prepaid and customer supplied hardware portions of our large AI contracts now total $75 billion.",
       "attribution": "Oracle, Q4 FY2026 release",
       "size": 62
     },
     {
+      "type": "quote-card",
+      "id": "ov12",
+      "start": 285.03,
+      "end": 300.63,
+      "z": 60,
+      "text": "What is left over to fuel that revolutionary agentic AI is not only substantially less than you thought, and all of it justified.",
+      "attribution": "Jensen Huang, NVIDIA \u2014 U.S.\u2013Saudi Investment Forum, November 2025",
+      "size": 54
+    },
+    {
       "type": "date-card",
       "id": "ov13",
-      "start": 285.51,
-      "end": 288.51,
+      "start": 320.46,
+      "end": 323.46,
       "z": 60,
       "text": "Three things to watch"
     },
     {
       "type": "quote-card",
       "id": "ov14",
-      "start": 338.78,
-      "end": 343.78,
+      "start": 373.73,
+      "end": 378.73,
       "z": 60,
       "text": "Now you know which numbers to watch.",
       "size": 70,
@@ -6398,3474 +6716,3462 @@
         ]
       },
       {
-        "start": 177.19,
-        "end": 178.51,
+        "start": 189.64,
+        "end": 190.96,
         "emphasis": "none",
         "words": [
           {
             "text": "obligations",
-            "start": 177.19,
-            "end": 177.75
+            "start": 189.64,
+            "end": 190.2
           },
           {
             "text": "of",
-            "start": 177.75,
-            "end": 178.51
+            "start": 190.2,
+            "end": 190.96
           }
         ]
       },
       {
-        "start": 178.51,
-        "end": 179.22,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "six",
-            "start": 178.51,
-            "end": 178.865
-          },
-          {
-            "text": "hundred",
-            "start": 178.865,
-            "end": 179.22
-          }
-        ]
-      },
-      {
-        "start": 179.22,
-        "end": 179.93,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "and",
-            "start": 179.22,
-            "end": 179.575
-          },
-          {
-            "text": "thirty-eight",
-            "start": 179.575,
-            "end": 179.93
-          }
-        ]
-      },
-      {
-        "start": 179.93,
-        "end": 182.05,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "billion",
-            "start": 179.93,
-            "end": 180.75
-          },
-          {
-            "text": "dollars.",
-            "start": 180.75,
-            "end": 182.05
-          }
-        ]
-      },
-      {
-        "start": 182.05,
-        "end": 182.914,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Up",
-            "start": 182.05,
-            "end": 182.71
-          },
-          {
-            "text": "three",
-            "start": 182.71,
-            "end": 182.914
-          }
-        ]
-      },
-      {
-        "start": 182.914,
-        "end": 183.322,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "hundred",
-            "start": 182.914,
-            "end": 183.118
-          },
-          {
-            "text": "and",
-            "start": 183.118,
-            "end": 183.322
-          }
-        ]
-      },
-      {
-        "start": 183.322,
-        "end": 183.73,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "sixty-three",
-            "start": 183.322,
-            "end": 183.526
-          },
-          {
-            "text": "percent",
-            "start": 183.526,
-            "end": 183.73
-          }
-        ]
-      },
-      {
-        "start": 183.73,
-        "end": 184.25,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "in",
-            "start": 183.73,
-            "end": 184.15
-          },
-          {
-            "text": "a",
-            "start": 184.15,
-            "end": 184.25
-          }
-        ]
-      },
-      {
-        "start": 184.25,
-        "end": 185.01,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "year.",
-            "start": 184.25,
-            "end": 184.51
-          }
-        ]
-      },
-      {
-        "start": 185.11,
-        "end": 185.95,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Remaining",
-            "start": 185.11,
-            "end": 185.53
-          },
-          {
-            "text": "performance",
-            "start": 185.53,
-            "end": 185.95
-          }
-        ]
-      },
-      {
-        "start": 185.95,
-        "end": 186.91,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "obligations",
-            "start": 185.95,
-            "end": 186.55
-          },
-          {
-            "text": "is",
-            "start": 186.55,
-            "end": 186.91
-          }
-        ]
-      },
-      {
-        "start": 186.91,
-        "end": 187.31,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "a",
-            "start": 186.91,
-            "end": 187.01
-          },
-          {
-            "text": "real",
-            "start": 187.01,
-            "end": 187.31
-          }
-        ]
-      },
-      {
-        "start": 187.31,
-        "end": 188.45,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "accounting",
-            "start": 187.31,
-            "end": 187.67
-          },
-          {
-            "text": "term.",
-            "start": 187.67,
-            "end": 187.97
-          }
-        ]
-      },
-      {
-        "start": 188.45,
-        "end": 188.79,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "It",
-            "start": 188.45,
-            "end": 188.61
-          },
-          {
-            "text": "means",
-            "start": 188.61,
-            "end": 188.79
-          }
-        ]
-      },
-      {
-        "start": 188.79,
-        "end": 189.69,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "contracted",
-            "start": 188.79,
-            "end": 189.27
-          },
-          {
-            "text": "work",
-            "start": 189.27,
-            "end": 189.69
-          }
-        ]
-      },
-      {
-        "start": 189.69,
-        "end": 190.27,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "not",
-            "start": 189.69,
-            "end": 190.07
-          },
-          {
-            "text": "yet",
-            "start": 190.07,
-            "end": 190.27
-          }
-        ]
-      },
-      {
-        "start": 190.27,
-        "end": 191.11,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "delivered.",
-            "start": 190.27,
-            "end": 190.61
-          }
-        ]
-      },
-      {
-        "start": 191.15,
+        "start": 190.96,
         "end": 191.67,
         "emphasis": "none",
         "words": [
           {
-            "text": "It",
-            "start": 191.15,
-            "end": 191.33
+            "text": "six",
+            "start": 190.96,
+            "end": 191.315
           },
           {
-            "text": "is",
-            "start": 191.33,
+            "text": "hundred",
+            "start": 191.315,
             "end": 191.67
           }
         ]
       },
       {
         "start": 191.67,
-        "end": 192.87,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "a",
-            "start": 191.67,
-            "end": 192.05
-          },
-          {
-            "text": "backlog.",
-            "start": 192.05,
-            "end": 192.37
-          }
-        ]
-      },
-      {
-        "start": 192.97,
-        "end": 193.91,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Not",
-            "start": 192.97,
-            "end": 193.19
-          },
-          {
-            "text": "revenue,",
-            "start": 193.19,
-            "end": 193.49
-          }
-        ]
-      },
-      {
-        "start": 193.91,
-        "end": 194.87,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "not",
-            "start": 193.91,
-            "end": 194.01
-          },
-          {
-            "text": "cash.",
-            "start": 194.01,
-            "end": 194.37
-          }
-        ]
-      },
-      {
-        "start": 194.91,
-        "end": 195.33,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "It's",
-            "start": 194.91,
-            "end": 195.27
-          },
-          {
-            "text": "a",
-            "start": 195.27,
-            "end": 195.33
-          }
-        ]
-      },
-      {
-        "start": 195.33,
-        "end": 195.81,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "promise",
-            "start": 195.33,
-            "end": 195.57
-          },
-          {
-            "text": "to",
-            "start": 195.57,
-            "end": 195.81
-          }
-        ]
-      },
-      {
-        "start": 195.81,
-        "end": 196.17,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "pay,",
-            "start": 195.81,
-            "end": 196.17
-          }
-        ]
-      },
-      {
-        "start": 196.17,
-        "end": 196.65,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "in",
-            "start": 196.17,
-            "end": 196.57
-          },
-          {
-            "text": "the",
-            "start": 196.57,
-            "end": 196.65
-          }
-        ]
-      },
-      {
-        "start": 196.65,
-        "end": 196.99,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "future,",
-            "start": 196.65,
-            "end": 196.99
-          }
-        ]
-      },
-      {
-        "start": 196.99,
-        "end": 197.97,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "for",
-            "start": 196.99,
-            "end": 197.61
-          },
-          {
-            "text": "something",
-            "start": 197.61,
-            "end": 197.97
-          }
-        ]
-      },
-      {
-        "start": 197.97,
-        "end": 198.53,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "not",
-            "start": 197.97,
-            "end": 198.35
-          },
-          {
-            "text": "yet",
-            "start": 198.35,
-            "end": 198.53
-          }
-        ]
-      },
-      {
-        "start": 198.53,
-        "end": 199.31,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "built.",
-            "start": 198.53,
-            "end": 198.81
-          }
-        ]
-      },
-      {
-        "start": 199.39,
-        "end": 200.07,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Then",
-            "start": 199.39,
-            "end": 199.75
-          },
-          {
-            "text": "there's",
-            "start": 199.75,
-            "end": 200.07
-          }
-        ]
-      },
-      {
-        "start": 200.07,
-        "end": 200.55,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "this",
-            "start": 200.07,
-            "end": 200.25
-          },
-          {
-            "text": "line,",
-            "start": 200.25,
-            "end": 200.55
-          }
-        ]
-      },
-      {
-        "start": 200.55,
-        "end": 201.65,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "in",
-            "start": 200.55,
-            "end": 201.03
-          },
-          {
-            "text": "Oracle's",
-            "start": 201.03,
-            "end": 201.65
-          }
-        ]
-      },
-      {
-        "start": 201.65,
-        "end": 203.03,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "own",
-            "start": 201.65,
-            "end": 201.99
-          },
-          {
-            "text": "release.",
-            "start": 201.99,
-            "end": 202.53
-          }
-        ]
-      },
-      {
-        "start": 217.47,
-        "end": 218.31,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "or",
-            "start": 217.47,
-            "end": 218.03
-          },
-          {
-            "text": "was",
-            "start": 218.03,
-            "end": 218.31
-          }
-        ]
-      },
-      {
-        "start": 218.31,
-        "end": 218.89,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "hardware",
-            "start": 218.31,
-            "end": 218.69
-          },
-          {
-            "text": "the",
-            "start": 218.69,
-            "end": 218.89
-          }
-        ]
-      },
-      {
-        "start": 218.89,
-        "end": 219.51,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "customers",
-            "start": 218.89,
-            "end": 219.17
-          },
-          {
-            "text": "bought",
-            "start": 219.17,
-            "end": 219.51
-          }
-        ]
-      },
-      {
-        "start": 219.51,
-        "end": 220.31,
+        "end": 192.38,
         "emphasis": "none",
         "words": [
           {
             "text": "and",
-            "start": 219.51,
-            "end": 219.99
+            "start": 191.67,
+            "end": 192.025
           },
           {
-            "text": "handed",
-            "start": 219.99,
-            "end": 220.31
+            "text": "thirty-eight",
+            "start": 192.025,
+            "end": 192.38
           }
         ]
       },
       {
-        "start": 220.31,
-        "end": 220.75,
+        "start": 192.38,
+        "end": 194.5,
         "emphasis": "none",
         "words": [
           {
-            "text": "to",
-            "start": 220.31,
-            "end": 220.49
+            "text": "billion",
+            "start": 192.38,
+            "end": 193.2
           },
           {
-            "text": "Oracle",
-            "start": 220.49,
-            "end": 220.75
+            "text": "dollars.",
+            "start": 193.2,
+            "end": 194.5
           }
         ]
       },
       {
-        "start": 220.75,
-        "end": 221.75,
+        "start": 194.5,
+        "end": 195.364,
         "emphasis": "none",
         "words": [
           {
-            "text": "themselves.",
-            "start": 220.75,
-            "end": 221.25
+            "text": "Up",
+            "start": 194.5,
+            "end": 195.16
+          },
+          {
+            "text": "three",
+            "start": 195.16,
+            "end": 195.364
           }
         ]
       },
       {
-        "start": 222.01,
-        "end": 222.73,
+        "start": 195.364,
+        "end": 195.772,
         "emphasis": "none",
         "words": [
           {
-            "text": "That's",
-            "start": 222.01,
-            "end": 222.49
+            "text": "hundred",
+            "start": 195.364,
+            "end": 195.568
           },
           {
-            "text": "Oracle",
-            "start": 222.49,
-            "end": 222.73
+            "text": "and",
+            "start": 195.568,
+            "end": 195.772
           }
         ]
       },
       {
-        "start": 222.73,
-        "end": 223.37,
+        "start": 195.772,
+        "end": 196.18,
         "emphasis": "none",
         "words": [
           {
-            "text": "telling",
-            "start": 222.73,
-            "end": 223.11
+            "text": "sixty-three",
+            "start": 195.772,
+            "end": 195.976
           },
           {
-            "text": "you,",
-            "start": 223.11,
-            "end": 223.37
+            "text": "percent",
+            "start": 195.976,
+            "end": 196.18
           }
         ]
       },
       {
-        "start": 223.37,
-        "end": 223.73,
+        "start": 196.18,
+        "end": 196.7,
         "emphasis": "none",
         "words": [
           {
             "text": "in",
-            "start": 223.37,
-            "end": 223.61
-          },
-          {
-            "text": "its",
-            "start": 223.61,
-            "end": 223.73
-          }
-        ]
-      },
-      {
-        "start": 223.73,
-        "end": 224.27,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "own",
-            "start": 223.73,
-            "end": 223.99
-          },
-          {
-            "text": "earnings",
-            "start": 223.99,
-            "end": 224.27
-          }
-        ]
-      },
-      {
-        "start": 224.27,
-        "end": 224.63,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "release,",
-            "start": 224.27,
-            "end": 224.63
-          }
-        ]
-      },
-      {
-        "start": 224.63,
-        "end": 225.29,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "that",
-            "start": 224.63,
-            "end": 225.19
+            "start": 196.18,
+            "end": 196.6
           },
           {
             "text": "a",
-            "start": 225.19,
-            "end": 225.29
+            "start": 196.6,
+            "end": 196.7
           }
         ]
       },
       {
-        "start": 225.29,
-        "end": 225.75,
+        "start": 196.7,
+        "end": 197.46,
         "emphasis": "none",
         "words": [
           {
-            "text": "large",
-            "start": 225.29,
-            "end": 225.51
+            "text": "year.",
+            "start": 196.7,
+            "end": 196.96
+          }
+        ]
+      },
+      {
+        "start": 197.56,
+        "end": 198.4,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Remaining",
+            "start": 197.56,
+            "end": 197.98
           },
           {
-            "text": "part",
-            "start": 225.51,
-            "end": 225.75
+            "text": "performance",
+            "start": 197.98,
+            "end": 198.4
           }
         ]
       },
       {
-        "start": 225.75,
-        "end": 225.97,
+        "start": 198.4,
+        "end": 199.36,
         "emphasis": "none",
         "words": [
           {
-            "text": "of",
-            "start": 225.75,
-            "end": 225.85
+            "text": "obligations",
+            "start": 198.4,
+            "end": 199.0
           },
           {
-            "text": "its",
-            "start": 225.85,
-            "end": 225.97
+            "text": "is",
+            "start": 199.0,
+            "end": 199.36
           }
         ]
       },
       {
-        "start": 225.97,
-        "end": 226.69,
+        "start": 199.36,
+        "end": 199.76,
         "emphasis": "none",
         "words": [
           {
-            "text": "record",
-            "start": 225.97,
-            "end": 226.23
+            "text": "a",
+            "start": 199.36,
+            "end": 199.46
           },
           {
-            "text": "backlog",
-            "start": 226.23,
-            "end": 226.69
+            "text": "real",
+            "start": 199.46,
+            "end": 199.76
           }
         ]
       },
       {
-        "start": 226.69,
-        "end": 227.33,
+        "start": 199.76,
+        "end": 200.9,
         "emphasis": "none",
         "words": [
           {
-            "text": "was",
-            "start": 226.69,
-            "end": 226.93
+            "text": "accounting",
+            "start": 199.76,
+            "end": 200.12
           },
           {
-            "text": "funded",
-            "start": 226.93,
-            "end": 227.33
+            "text": "term.",
+            "start": 200.12,
+            "end": 200.42
           }
         ]
       },
       {
-        "start": 227.33,
-        "end": 227.97,
+        "start": 200.9,
+        "end": 201.24,
         "emphasis": "none",
         "words": [
           {
-            "text": "by",
-            "start": 227.33,
-            "end": 227.77
+            "text": "It",
+            "start": 200.9,
+            "end": 201.06
+          },
+          {
+            "text": "means",
+            "start": 201.06,
+            "end": 201.24
+          }
+        ]
+      },
+      {
+        "start": 201.24,
+        "end": 202.14,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "contracted",
+            "start": 201.24,
+            "end": 201.72
+          },
+          {
+            "text": "work",
+            "start": 201.72,
+            "end": 202.14
+          }
+        ]
+      },
+      {
+        "start": 202.14,
+        "end": 202.72,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "not",
+            "start": 202.14,
+            "end": 202.52
+          },
+          {
+            "text": "yet",
+            "start": 202.52,
+            "end": 202.72
+          }
+        ]
+      },
+      {
+        "start": 202.72,
+        "end": 203.56,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "delivered.",
+            "start": 202.72,
+            "end": 203.06
+          }
+        ]
+      },
+      {
+        "start": 203.6,
+        "end": 204.12,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "It",
+            "start": 203.6,
+            "end": 203.78
+          },
+          {
+            "text": "is",
+            "start": 203.78,
+            "end": 204.12
+          }
+        ]
+      },
+      {
+        "start": 204.12,
+        "end": 205.32,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "a",
+            "start": 204.12,
+            "end": 204.5
+          },
+          {
+            "text": "backlog.",
+            "start": 204.5,
+            "end": 204.82
+          }
+        ]
+      },
+      {
+        "start": 205.42,
+        "end": 206.36,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Not",
+            "start": 205.42,
+            "end": 205.64
+          },
+          {
+            "text": "revenue,",
+            "start": 205.64,
+            "end": 205.94
+          }
+        ]
+      },
+      {
+        "start": 206.36,
+        "end": 207.32,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "not",
+            "start": 206.36,
+            "end": 206.46
+          },
+          {
+            "text": "cash.",
+            "start": 206.46,
+            "end": 206.82
+          }
+        ]
+      },
+      {
+        "start": 207.36,
+        "end": 207.78,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "It's",
+            "start": 207.36,
+            "end": 207.72
+          },
+          {
+            "text": "a",
+            "start": 207.72,
+            "end": 207.78
+          }
+        ]
+      },
+      {
+        "start": 207.78,
+        "end": 208.26,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "promise",
+            "start": 207.78,
+            "end": 208.02
+          },
+          {
+            "text": "to",
+            "start": 208.02,
+            "end": 208.26
+          }
+        ]
+      },
+      {
+        "start": 208.26,
+        "end": 208.62,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "pay,",
+            "start": 208.26,
+            "end": 208.62
+          }
+        ]
+      },
+      {
+        "start": 208.62,
+        "end": 209.1,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "in",
+            "start": 208.62,
+            "end": 209.02
           },
           {
             "text": "the",
-            "start": 227.77,
-            "end": 227.97
+            "start": 209.02,
+            "end": 209.1
           }
         ]
       },
       {
-        "start": 227.97,
-        "end": 228.69,
+        "start": 209.1,
+        "end": 209.44,
         "emphasis": "none",
         "words": [
           {
-            "text": "buyer.",
-            "start": 227.97,
-            "end": 228.19
+            "text": "future,",
+            "start": 209.1,
+            "end": 209.44
           }
         ]
       },
       {
-        "start": 228.95,
-        "end": 229.19,
+        "start": 209.44,
+        "end": 210.42,
         "emphasis": "none",
         "words": [
           {
-            "text": "I",
-            "start": 228.95,
-            "end": 229.11
+            "text": "for",
+            "start": 209.44,
+            "end": 210.06
           },
           {
-            "text": "don't",
-            "start": 229.11,
-            "end": 229.19
+            "text": "something",
+            "start": 210.06,
+            "end": 210.42
           }
         ]
       },
       {
-        "start": 229.19,
-        "end": 229.61,
+        "start": 210.42,
+        "end": 210.98,
         "emphasis": "none",
         "words": [
           {
-            "text": "think",
-            "start": 229.19,
-            "end": 229.35
+            "text": "not",
+            "start": 210.42,
+            "end": 210.8
           },
           {
-            "text": "that's",
-            "start": 229.35,
-            "end": 229.61
+            "text": "yet",
+            "start": 210.8,
+            "end": 210.98
           }
         ]
       },
       {
-        "start": 229.61,
-        "end": 230.43,
+        "start": 210.98,
+        "end": 211.76,
         "emphasis": "none",
         "words": [
           {
-            "text": "scandalous.",
-            "start": 229.61,
-            "end": 230.01
+            "text": "built.",
+            "start": 210.98,
+            "end": 211.26
           }
         ]
       },
       {
-        "start": 230.43,
-        "end": 230.73,
+        "start": 211.84,
+        "end": 212.52,
         "emphasis": "none",
         "words": [
           {
-            "text": "I",
-            "start": 230.43,
-            "end": 230.61
+            "text": "Then",
+            "start": 211.84,
+            "end": 212.2
           },
           {
-            "text": "think",
-            "start": 230.61,
-            "end": 230.73
+            "text": "there's",
+            "start": 212.2,
+            "end": 212.52
           }
         ]
       },
       {
-        "start": 230.73,
-        "end": 230.99,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "it's",
-            "start": 230.73,
-            "end": 230.87
-          },
-          {
-            "text": "the",
-            "start": 230.87,
-            "end": 230.99
-          }
-        ]
-      },
-      {
-        "start": 230.99,
-        "end": 231.71,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "clearest",
-            "start": 230.99,
-            "end": 231.35
-          },
-          {
-            "text": "window",
-            "start": 231.35,
-            "end": 231.71
-          }
-        ]
-      },
-      {
-        "start": 231.71,
-        "end": 232.23,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "anyone",
-            "start": 231.71,
-            "end": 231.97
-          },
-          {
-            "text": "has",
-            "start": 231.97,
-            "end": 232.23
-          }
-        ]
-      },
-      {
-        "start": 232.23,
-        "end": 232.63,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "given",
-            "start": 232.23,
-            "end": 232.45
-          },
-          {
-            "text": "us",
-            "start": 232.45,
-            "end": 232.63
-          }
-        ]
-      },
-      {
-        "start": 232.63,
-        "end": 233.07,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "into",
-            "start": 232.63,
-            "end": 232.83
-          },
-          {
-            "text": "how",
-            "start": 232.83,
-            "end": 233.07
-          }
-        ]
-      },
-      {
-        "start": 233.07,
-        "end": 233.39,
+        "start": 212.52,
+        "end": 213.0,
         "emphasis": "none",
         "words": [
           {
             "text": "this",
-            "start": 233.07,
-            "end": 233.27
+            "start": 212.52,
+            "end": 212.7
           },
           {
-            "text": "is",
-            "start": 233.27,
-            "end": 233.39
+            "text": "line,",
+            "start": 212.7,
+            "end": 213.0
           }
         ]
       },
       {
-        "start": 233.39,
-        "end": 233.93,
+        "start": 213.0,
+        "end": 220.55,
         "emphasis": "none",
         "words": [
-          {
-            "text": "actually",
-            "start": 233.39,
-            "end": 233.69
-          },
-          {
-            "text": "being",
-            "start": 233.69,
-            "end": 233.93
-          }
-        ]
-      },
-      {
-        "start": 233.93,
-        "end": 235.07,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "financed.",
-            "start": 233.93,
-            "end": 234.57
-          }
-        ]
-      },
-      {
-        "start": 235.27,
-        "end": 235.69,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "And",
-            "start": 235.27,
-            "end": 235.55
-          },
-          {
-            "text": "it's",
-            "start": 235.55,
-            "end": 235.69
-          }
-        ]
-      },
-      {
-        "start": 235.69,
-        "end": 235.99,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "sitting",
-            "start": 235.69,
-            "end": 235.87
-          },
           {
             "text": "in",
-            "start": 235.87,
-            "end": 235.99
-          }
-        ]
-      },
-      {
-        "start": 235.99,
-        "end": 236.27,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "a",
-            "start": 235.99,
-            "end": 236.05
+            "start": 213.0,
+            "end": 213.48
           },
           {
-            "text": "public",
-            "start": 236.05,
-            "end": 236.27
+            "text": "Oracle's",
+            "start": 213.48,
+            "end": 220.55
           }
         ]
       },
       {
-        "start": 236.27,
-        "end": 236.99,
+        "start": 220.55,
+        "end": 221.93,
         "emphasis": "none",
         "words": [
           {
-            "text": "document",
-            "start": 236.27,
-            "end": 236.73
+            "text": "own",
+            "start": 220.55,
+            "end": 220.89
           },
           {
-            "text": "that",
-            "start": 236.73,
-            "end": 236.99
+            "text": "release.",
+            "start": 220.89,
+            "end": 221.43
           }
         ]
       },
       {
-        "start": 236.99,
-        "end": 237.77,
+        "start": 236.37,
+        "end": 237.21,
         "emphasis": "none",
         "words": [
           {
-            "text": "almost",
-            "start": 236.99,
-            "end": 237.39
+            "text": "or",
+            "start": 236.37,
+            "end": 236.93
           },
           {
-            "text": "nobody",
-            "start": 237.39,
-            "end": 237.77
+            "text": "was",
+            "start": 236.93,
+            "end": 237.21
           }
         ]
       },
       {
-        "start": 237.77,
-        "end": 238.61,
+        "start": 237.21,
+        "end": 237.79,
         "emphasis": "none",
         "words": [
           {
-            "text": "read.",
-            "start": 237.77,
-            "end": 238.11
-          }
-        ]
-      },
-      {
-        "start": 238.79,
-        "end": 239.19,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Here's",
-            "start": 238.79,
-            "end": 239.09
+            "text": "hardware",
+            "start": 237.21,
+            "end": 237.59
           },
           {
             "text": "the",
-            "start": 239.09,
-            "end": 239.19
+            "start": 237.59,
+            "end": 237.79
           }
         ]
       },
       {
-        "start": 239.19,
-        "end": 239.89,
+        "start": 237.79,
+        "end": 238.41,
         "emphasis": "none",
         "words": [
           {
-            "text": "strongest",
-            "start": 239.19,
-            "end": 239.49
+            "text": "customers",
+            "start": 237.79,
+            "end": 238.07
           },
           {
-            "text": "version",
-            "start": 239.49,
-            "end": 239.89
+            "text": "bought",
+            "start": 238.07,
+            "end": 238.41
           }
         ]
       },
       {
-        "start": 239.89,
-        "end": 240.15,
+        "start": 238.41,
+        "end": 239.21,
         "emphasis": "none",
         "words": [
           {
-            "text": "of",
-            "start": 239.89,
-            "end": 240.05
+            "text": "and",
+            "start": 238.41,
+            "end": 238.89
           },
           {
-            "text": "the",
-            "start": 240.05,
+            "text": "handed",
+            "start": 238.89,
+            "end": 239.21
+          }
+        ]
+      },
+      {
+        "start": 239.21,
+        "end": 239.65,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "to",
+            "start": 239.21,
+            "end": 239.39
+          },
+          {
+            "text": "Oracle",
+            "start": 239.39,
+            "end": 239.65
+          }
+        ]
+      },
+      {
+        "start": 239.65,
+        "end": 240.65,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "themselves.",
+            "start": 239.65,
             "end": 240.15
           }
         ]
       },
       {
-        "start": 240.15,
-        "end": 241.13,
+        "start": 240.91,
+        "end": 241.63,
         "emphasis": "none",
         "words": [
           {
-            "text": "other",
-            "start": 240.15,
-            "end": 240.29
+            "text": "That's",
+            "start": 240.91,
+            "end": 241.39
           },
           {
-            "text": "side,",
-            "start": 240.29,
-            "end": 240.67
+            "text": "Oracle",
+            "start": 241.39,
+            "end": 241.63
           }
         ]
       },
       {
-        "start": 241.13,
-        "end": 241.43,
+        "start": 241.63,
+        "end": 242.27,
         "emphasis": "none",
         "words": [
           {
-            "text": "and",
-            "start": 241.13,
-            "end": 241.33
+            "text": "telling",
+            "start": 241.63,
+            "end": 242.01
           },
           {
-            "text": "it",
-            "start": 241.33,
-            "end": 241.43
+            "text": "you,",
+            "start": 242.01,
+            "end": 242.27
           }
         ]
       },
       {
-        "start": 241.43,
-        "end": 242.25,
+        "start": 242.27,
+        "end": 242.63,
         "emphasis": "none",
         "words": [
           {
-            "text": "deserves",
-            "start": 241.43,
-            "end": 241.79
+            "text": "in",
+            "start": 242.27,
+            "end": 242.51
           },
           {
-            "text": "saying",
-            "start": 241.79,
-            "end": 242.25
+            "text": "its",
+            "start": 242.51,
+            "end": 242.63
           }
         ]
       },
       {
-        "start": 242.25,
-        "end": 243.15,
+        "start": 242.63,
+        "end": 243.17,
         "emphasis": "none",
         "words": [
           {
-            "text": "properly.",
-            "start": 242.25,
-            "end": 242.65
-          }
-        ]
-      },
-      {
-        "start": 243.27,
-        "end": 243.75,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "One",
-            "start": 243.27,
-            "end": 243.51
+            "text": "own",
+            "start": 242.63,
+            "end": 242.89
           },
           {
-            "text": "side",
-            "start": 243.51,
-            "end": 243.75
+            "text": "earnings",
+            "start": 242.89,
+            "end": 243.17
           }
         ]
       },
       {
-        "start": 243.75,
-        "end": 244.17,
+        "start": 243.17,
+        "end": 243.53,
         "emphasis": "none",
         "words": [
           {
-            "text": "has",
-            "start": 243.75,
-            "end": 243.91
-          },
-          {
-            "text": "enormous",
-            "start": 243.91,
-            "end": 244.17
+            "text": "release,",
+            "start": 243.17,
+            "end": 243.53
           }
         ]
       },
       {
-        "start": 244.17,
+        "start": 243.53,
+        "end": 244.19,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "that",
+            "start": 243.53,
+            "end": 244.09
+          },
+          {
+            "text": "a",
+            "start": 244.09,
+            "end": 244.19
+          }
+        ]
+      },
+      {
+        "start": 244.19,
+        "end": 244.65,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "large",
+            "start": 244.19,
+            "end": 244.41
+          },
+          {
+            "text": "part",
+            "start": 244.41,
+            "end": 244.65
+          }
+        ]
+      },
+      {
+        "start": 244.65,
         "end": 244.87,
         "emphasis": "none",
         "words": [
           {
-            "text": "capital",
-            "start": 244.17,
-            "end": 244.63
+            "text": "of",
+            "start": 244.65,
+            "end": 244.75
           },
           {
-            "text": "and",
-            "start": 244.63,
+            "text": "its",
+            "start": 244.75,
             "end": 244.87
           }
         ]
       },
       {
         "start": 244.87,
-        "end": 245.19,
+        "end": 245.59,
         "emphasis": "none",
         "words": [
           {
-            "text": "wants",
+            "text": "record",
             "start": 244.87,
-            "end": 245.03
+            "end": 245.13
           },
           {
-            "text": "to",
-            "start": 245.03,
-            "end": 245.19
+            "text": "backlog",
+            "start": 245.13,
+            "end": 245.59
           }
         ]
       },
       {
-        "start": 245.19,
+        "start": 245.59,
         "end": 246.23,
         "emphasis": "none",
         "words": [
           {
-            "text": "sell",
-            "start": 245.19,
-            "end": 245.35
+            "text": "was",
+            "start": 245.59,
+            "end": 245.83
           },
           {
-            "text": "compute.",
-            "start": 245.35,
-            "end": 245.73
+            "text": "funded",
+            "start": 245.83,
+            "end": 246.23
           }
         ]
       },
       {
-        "start": 246.39,
-        "end": 246.73,
+        "start": 246.23,
+        "end": 246.87,
         "emphasis": "none",
         "words": [
           {
-            "text": "The",
-            "start": 246.39,
-            "end": 246.61
+            "text": "by",
+            "start": 246.23,
+            "end": 246.67
           },
           {
-            "text": "other",
-            "start": 246.61,
-            "end": 246.73
+            "text": "the",
+            "start": 246.67,
+            "end": 246.87
           }
         ]
       },
       {
-        "start": 246.73,
-        "end": 247.07,
+        "start": 246.87,
+        "end": 247.59,
         "emphasis": "none",
         "words": [
           {
-            "text": "side",
-            "start": 246.73,
-            "end": 246.97
-          },
-          {
-            "text": "is",
-            "start": 246.97,
-            "end": 247.07
+            "text": "buyer.",
+            "start": 246.87,
+            "end": 247.09
           }
         ]
       },
       {
-        "start": 247.07,
-        "end": 247.67,
+        "start": 247.85,
+        "end": 248.09,
         "emphasis": "none",
         "words": [
           {
-            "text": "confident",
-            "start": 247.07,
-            "end": 247.43
+            "text": "I",
+            "start": 247.85,
+            "end": 248.01
           },
           {
-            "text": "about",
-            "start": 247.43,
-            "end": 247.67
+            "text": "don't",
+            "start": 248.01,
+            "end": 248.09
           }
         ]
       },
       {
-        "start": 247.67,
-        "end": 248.79,
+        "start": 248.09,
+        "end": 248.51,
         "emphasis": "none",
         "words": [
           {
-            "text": "future",
-            "start": 247.67,
-            "end": 247.95
+            "text": "think",
+            "start": 248.09,
+            "end": 248.25
           },
           {
-            "text": "revenue",
-            "start": 247.95,
-            "end": 248.47
+            "text": "that's",
+            "start": 248.25,
+            "end": 248.51
           }
         ]
       },
       {
-        "start": 248.79,
-        "end": 249.37,
+        "start": 248.51,
+        "end": 249.33,
         "emphasis": "none",
         "words": [
           {
-            "text": "but",
-            "start": 248.79,
-            "end": 249.07
-          },
-          {
-            "text": "doesn't",
-            "start": 249.07,
-            "end": 249.37
+            "text": "scandalous.",
+            "start": 248.51,
+            "end": 248.91
           }
         ]
       },
       {
-        "start": 249.37,
-        "end": 249.75,
+        "start": 249.33,
+        "end": 249.63,
         "emphasis": "none",
         "words": [
           {
-            "text": "have",
-            "start": 249.37,
-            "end": 249.47
+            "text": "I",
+            "start": 249.33,
+            "end": 249.51
           },
           {
-            "text": "billions",
-            "start": 249.47,
-            "end": 249.75
+            "text": "think",
+            "start": 249.51,
+            "end": 249.63
           }
         ]
       },
       {
-        "start": 249.75,
-        "end": 250.27,
+        "start": 249.63,
+        "end": 249.89,
         "emphasis": "none",
         "words": [
           {
-            "text": "in",
-            "start": 249.75,
-            "end": 249.97
+            "text": "it's",
+            "start": 249.63,
+            "end": 249.77
           },
           {
-            "text": "cash",
-            "start": 249.97,
-            "end": 250.27
+            "text": "the",
+            "start": 249.77,
+            "end": 249.89
           }
         ]
       },
       {
-        "start": 250.27,
+        "start": 249.89,
+        "end": 250.61,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "clearest",
+            "start": 249.89,
+            "end": 250.25
+          },
+          {
+            "text": "window",
+            "start": 250.25,
+            "end": 250.61
+          }
+        ]
+      },
+      {
+        "start": 250.61,
         "end": 251.13,
         "emphasis": "none",
         "words": [
           {
-            "text": "today.",
-            "start": 250.27,
-            "end": 250.63
-          }
-        ]
-      },
-      {
-        "start": 251.51,
-        "end": 252.09,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Financing",
-            "start": 251.51,
-            "end": 251.91
+            "text": "anyone",
+            "start": 250.61,
+            "end": 250.87
           },
           {
-            "text": "your",
-            "start": 251.91,
-            "end": 252.09
+            "text": "has",
+            "start": 250.87,
+            "end": 251.13
           }
         ]
       },
       {
-        "start": 252.09,
-        "end": 252.73,
+        "start": 251.13,
+        "end": 251.53,
         "emphasis": "none",
         "words": [
           {
-            "text": "customer",
-            "start": 252.09,
-            "end": 252.43
+            "text": "given",
+            "start": 251.13,
+            "end": 251.35
+          },
+          {
+            "text": "us",
+            "start": 251.35,
+            "end": 251.53
+          }
+        ]
+      },
+      {
+        "start": 251.53,
+        "end": 251.97,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "into",
+            "start": 251.53,
+            "end": 251.73
+          },
+          {
+            "text": "how",
+            "start": 251.73,
+            "end": 251.97
+          }
+        ]
+      },
+      {
+        "start": 251.97,
+        "end": 252.29,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "this",
+            "start": 251.97,
+            "end": 252.17
           },
           {
             "text": "is",
-            "start": 252.43,
-            "end": 252.73
+            "start": 252.17,
+            "end": 252.29
           }
         ]
       },
       {
-        "start": 252.73,
-        "end": 253.61,
+        "start": 252.29,
+        "end": 252.83,
         "emphasis": "none",
         "words": [
           {
-            "text": "how",
-            "start": 252.73,
-            "end": 252.89
+            "text": "actually",
+            "start": 252.29,
+            "end": 252.59
           },
           {
-            "text": "capital-intensive",
-            "start": 252.89,
-            "end": 253.61
+            "text": "being",
+            "start": 252.59,
+            "end": 252.83
           }
         ]
       },
       {
-        "start": 253.61,
-        "end": 254.81,
+        "start": 252.83,
+        "end": 253.97,
         "emphasis": "none",
         "words": [
           {
-            "text": "industries",
-            "start": 253.61,
-            "end": 254.21
+            "text": "financed.",
+            "start": 252.83,
+            "end": 253.47
+          }
+        ]
+      },
+      {
+        "start": 254.17,
+        "end": 254.59,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "And",
+            "start": 254.17,
+            "end": 254.45
           },
           {
-            "text": "have",
-            "start": 254.21,
-            "end": 254.81
+            "text": "it's",
+            "start": 254.45,
+            "end": 254.59
           }
         ]
       },
       {
-        "start": 254.81,
-        "end": 255.41,
+        "start": 254.59,
+        "end": 254.89,
         "emphasis": "none",
         "words": [
           {
-            "text": "always",
-            "start": 254.81,
-            "end": 255.21
+            "text": "sitting",
+            "start": 254.59,
+            "end": 254.77
           },
           {
-            "text": "been",
-            "start": 255.21,
-            "end": 255.41
+            "text": "in",
+            "start": 254.77,
+            "end": 254.89
           }
         ]
       },
       {
-        "start": 255.41,
-        "end": 256.17,
+        "start": 254.89,
+        "end": 255.17,
         "emphasis": "none",
         "words": [
           {
-            "text": "built.",
-            "start": 255.41,
-            "end": 255.67
+            "text": "a",
+            "start": 254.89,
+            "end": 254.95
+          },
+          {
+            "text": "public",
+            "start": 254.95,
+            "end": 255.17
           }
         ]
       },
       {
-        "start": 256.95,
+        "start": 255.17,
+        "end": 255.89,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "document",
+            "start": 255.17,
+            "end": 255.63
+          },
+          {
+            "text": "that",
+            "start": 255.63,
+            "end": 255.89
+          }
+        ]
+      },
+      {
+        "start": 255.89,
+        "end": 256.67,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "almost",
+            "start": 255.89,
+            "end": 256.29
+          },
+          {
+            "text": "nobody",
+            "start": 256.29,
+            "end": 256.67
+          }
+        ]
+      },
+      {
+        "start": 256.67,
         "end": 257.51,
         "emphasis": "none",
         "words": [
           {
-            "text": "Railways,",
-            "start": 256.95,
-            "end": 257.51
+            "text": "read.",
+            "start": 256.67,
+            "end": 257.01
           }
         ]
       },
       {
-        "start": 257.51,
-        "end": 258.33,
+        "start": 257.69,
+        "end": 258.09,
         "emphasis": "none",
         "words": [
           {
-            "text": "telecoms,",
-            "start": 257.51,
-            "end": 258.07
-          }
-        ]
-      },
-      {
-        "start": 258.33,
-        "end": 259.55,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "aircraft",
-            "start": 258.33,
-            "end": 258.67
+            "text": "Here's",
+            "start": 257.69,
+            "end": 257.99
           },
           {
-            "text": "leasing.",
-            "start": 258.67,
+            "text": "the",
+            "start": 257.99,
+            "end": 258.09
+          }
+        ]
+      },
+      {
+        "start": 258.09,
+        "end": 258.79,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "strongest",
+            "start": 258.09,
+            "end": 258.39
+          },
+          {
+            "text": "version",
+            "start": 258.39,
+            "end": 258.79
+          }
+        ]
+      },
+      {
+        "start": 258.79,
+        "end": 259.05,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "of",
+            "start": 258.79,
+            "end": 258.95
+          },
+          {
+            "text": "the",
+            "start": 258.95,
             "end": 259.05
           }
         ]
       },
       {
-        "start": 259.89,
-        "end": 260.11,
+        "start": 259.05,
+        "end": 260.03,
         "emphasis": "none",
         "words": [
           {
-            "text": "If",
-            "start": 259.89,
-            "end": 260.01
+            "text": "other",
+            "start": 259.05,
+            "end": 259.19
           },
           {
-            "text": "the",
-            "start": 260.01,
-            "end": 260.11
+            "text": "side,",
+            "start": 259.19,
+            "end": 259.57
           }
         ]
       },
       {
-        "start": 260.11,
-        "end": 260.53,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "demand",
-            "start": 260.11,
-            "end": 260.33
-          },
-          {
-            "text": "is",
-            "start": 260.33,
-            "end": 260.53
-          }
-        ]
-      },
-      {
-        "start": 260.53,
-        "end": 261.23,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "real,",
-            "start": 260.53,
-            "end": 260.79
-          }
-        ]
-      },
-      {
-        "start": 261.23,
-        "end": 261.53,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "this",
-            "start": 261.23,
-            "end": 261.39
-          },
-          {
-            "text": "is",
-            "start": 261.39,
-            "end": 261.53
-          }
-        ]
-      },
-      {
-        "start": 261.53,
-        "end": 261.91,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "simply",
-            "start": 261.53,
-            "end": 261.77
-          },
-          {
-            "text": "the",
-            "start": 261.77,
-            "end": 261.91
-          }
-        ]
-      },
-      {
-        "start": 261.91,
-        "end": 262.45,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "fastest",
-            "start": 261.91,
-            "end": 262.21
-          },
-          {
-            "text": "way",
-            "start": 262.21,
-            "end": 262.45
-          }
-        ]
-      },
-      {
-        "start": 262.45,
-        "end": 262.71,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "to",
-            "start": 262.45,
-            "end": 262.53
-          },
-          {
-            "text": "build",
-            "start": 262.53,
-            "end": 262.71
-          }
-        ]
-      },
-      {
-        "start": 262.71,
-        "end": 263.53,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "for",
-            "start": 262.71,
-            "end": 262.93
-          },
-          {
-            "text": "it.",
-            "start": 262.93,
-            "end": 263.09
-          }
-        ]
-      },
-      {
-        "start": 263.53,
-        "end": 263.97,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "That",
-            "start": 263.53,
-            "end": 263.75
-          },
-          {
-            "text": "argument",
-            "start": 263.75,
-            "end": 263.97
-          }
-        ]
-      },
-      {
-        "start": 263.97,
-        "end": 264.35,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "is",
-            "start": 263.97,
-            "end": 264.17
-          },
-          {
-            "text": "not",
-            "start": 264.17,
-            "end": 264.35
-          }
-        ]
-      },
-      {
-        "start": 264.35,
-        "end": 265.17,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "stupid.",
-            "start": 264.35,
-            "end": 264.71
-          }
-        ]
-      },
-      {
-        "start": 265.17,
-        "end": 265.45,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "It",
-            "start": 265.17,
-            "end": 265.25
-          },
-          {
-            "text": "might",
-            "start": 265.25,
-            "end": 265.45
-          }
-        ]
-      },
-      {
-        "start": 265.45,
-        "end": 265.77,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "well",
-            "start": 265.45,
-            "end": 265.63
-          },
-          {
-            "text": "be",
-            "start": 265.63,
-            "end": 265.77
-          }
-        ]
-      },
-      {
-        "start": 265.77,
-        "end": 266.55,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "right.",
-            "start": 265.77,
-            "end": 266.05
-          }
-        ]
-      },
-      {
-        "start": 266.65,
-        "end": 267.05,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "But",
-            "start": 266.65,
-            "end": 266.79
-          },
-          {
-            "text": "vendor",
-            "start": 266.79,
-            "end": 267.05
-          }
-        ]
-      },
-      {
-        "start": 267.05,
-        "end": 267.97,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "financing",
-            "start": 267.05,
-            "end": 267.51
-          },
-          {
-            "text": "has",
-            "start": 267.51,
-            "end": 267.97
-          }
-        ]
-      },
-      {
-        "start": 267.97,
-        "end": 268.41,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "a",
-            "start": 267.97,
-            "end": 268.07
-          },
-          {
-            "text": "known",
-            "start": 268.07,
-            "end": 268.41
-          }
-        ]
-      },
-      {
-        "start": 268.41,
-        "end": 269.65,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "failure",
-            "start": 268.41,
-            "end": 268.75
-          },
-          {
-            "text": "mode,",
-            "start": 268.75,
-            "end": 269.15
-          }
-        ]
-      },
-      {
-        "start": 269.81,
-        "end": 270.19,
+        "start": 260.03,
+        "end": 260.33,
         "emphasis": "none",
         "words": [
           {
             "text": "and",
-            "start": 269.81,
-            "end": 270.09
+            "start": 260.03,
+            "end": 260.23
           },
           {
             "text": "it",
-            "start": 270.09,
-            "end": 270.19
+            "start": 260.23,
+            "end": 260.33
           }
         ]
       },
       {
-        "start": 270.19,
-        "end": 271.21,
+        "start": 260.33,
+        "end": 261.15,
         "emphasis": "none",
         "words": [
           {
-            "text": "isn't",
-            "start": 270.19,
-            "end": 270.43
+            "text": "deserves",
+            "start": 260.33,
+            "end": 260.69
           },
           {
-            "text": "subtle.",
-            "start": 270.43,
-            "end": 270.71
+            "text": "saying",
+            "start": 260.69,
+            "end": 261.15
           }
         ]
       },
       {
-        "start": 271.39,
-        "end": 271.77,
+        "start": 261.15,
+        "end": 262.05,
         "emphasis": "none",
         "words": [
           {
-            "text": "It",
-            "start": 271.39,
-            "end": 271.59
-          },
-          {
-            "text": "works",
-            "start": 271.59,
-            "end": 271.77
+            "text": "properly.",
+            "start": 261.15,
+            "end": 261.55
           }
         ]
       },
       {
-        "start": 271.77,
-        "end": 272.53,
+        "start": 262.17,
+        "end": 262.65,
         "emphasis": "none",
         "words": [
           {
-            "text": "beautifully",
-            "start": 271.77,
-            "end": 272.19
+            "text": "One",
+            "start": 262.17,
+            "end": 262.41
           },
           {
-            "text": "while",
-            "start": 272.19,
-            "end": 272.53
+            "text": "side",
+            "start": 262.41,
+            "end": 262.65
           }
         ]
       },
       {
-        "start": 272.53,
-        "end": 273.61,
+        "start": 262.65,
+        "end": 263.07,
         "emphasis": "none",
         "words": [
           {
-            "text": "demand",
-            "start": 272.53,
-            "end": 272.75
+            "text": "has",
+            "start": 262.65,
+            "end": 262.81
           },
           {
-            "text": "grows.",
-            "start": 272.75,
-            "end": 273.27
+            "text": "enormous",
+            "start": 262.81,
+            "end": 263.07
           }
         ]
       },
       {
-        "start": 273.61,
-        "end": 273.97,
+        "start": 263.07,
+        "end": 263.77,
         "emphasis": "none",
         "words": [
           {
-            "text": "And",
-            "start": 273.61,
-            "end": 273.83
+            "text": "capital",
+            "start": 263.07,
+            "end": 263.53
           },
           {
-            "text": "when",
-            "start": 273.83,
-            "end": 273.97
+            "text": "and",
+            "start": 263.53,
+            "end": 263.77
           }
         ]
       },
       {
-        "start": 273.97,
-        "end": 275.41,
+        "start": 263.77,
+        "end": 264.09,
         "emphasis": "none",
         "words": [
           {
-            "text": "demand",
-            "start": 273.97,
-            "end": 274.25
+            "text": "wants",
+            "start": 263.77,
+            "end": 263.93
           },
           {
-            "text": "disappoints,",
-            "start": 274.25,
-            "end": 275.41
+            "text": "to",
+            "start": 263.93,
+            "end": 264.09
           }
         ]
       },
       {
-        "start": 275.41,
-        "end": 275.87,
+        "start": 264.09,
+        "end": 265.13,
         "emphasis": "none",
         "words": [
           {
-            "text": "the",
-            "start": 275.41,
-            "end": 275.67
+            "text": "sell",
+            "start": 264.09,
+            "end": 264.25
           },
           {
-            "text": "vendor",
-            "start": 275.67,
-            "end": 275.87
+            "text": "compute.",
+            "start": 264.25,
+            "end": 264.63
           }
         ]
       },
       {
-        "start": 275.87,
-        "end": 277.05,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "loses",
-            "start": 275.87,
-            "end": 276.19
-          },
-          {
-            "text": "twice.",
-            "start": 276.19,
-            "end": 276.59
-          }
-        ]
-      },
-      {
-        "start": 277.05,
-        "end": 277.65,
+        "start": 265.29,
+        "end": 265.63,
         "emphasis": "none",
         "words": [
           {
             "text": "The",
-            "start": 277.05,
-            "end": 277.33
+            "start": 265.29,
+            "end": 265.51
           },
           {
-            "text": "sale,",
-            "start": 277.33,
-            "end": 277.65
+            "text": "other",
+            "start": 265.51,
+            "end": 265.63
           }
         ]
       },
       {
-        "start": 277.65,
-        "end": 278.55,
+        "start": 265.63,
+        "end": 265.97,
         "emphasis": "none",
         "words": [
           {
-            "text": "and",
-            "start": 277.65,
-            "end": 278.43
+            "text": "side",
+            "start": 265.63,
+            "end": 265.87
+          },
+          {
+            "text": "is",
+            "start": 265.87,
+            "end": 265.97
+          }
+        ]
+      },
+      {
+        "start": 265.97,
+        "end": 266.57,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "confident",
+            "start": 265.97,
+            "end": 266.33
+          },
+          {
+            "text": "about",
+            "start": 266.33,
+            "end": 266.57
+          }
+        ]
+      },
+      {
+        "start": 266.57,
+        "end": 267.69,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "future",
+            "start": 266.57,
+            "end": 266.85
+          },
+          {
+            "text": "revenue",
+            "start": 266.85,
+            "end": 267.37
+          }
+        ]
+      },
+      {
+        "start": 267.69,
+        "end": 268.27,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "but",
+            "start": 267.69,
+            "end": 267.97
+          },
+          {
+            "text": "doesn't",
+            "start": 267.97,
+            "end": 268.27
+          }
+        ]
+      },
+      {
+        "start": 268.27,
+        "end": 268.65,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "have",
+            "start": 268.27,
+            "end": 268.37
+          },
+          {
+            "text": "billions",
+            "start": 268.37,
+            "end": 268.65
+          }
+        ]
+      },
+      {
+        "start": 268.65,
+        "end": 269.17,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "in",
+            "start": 268.65,
+            "end": 268.87
+          },
+          {
+            "text": "cash",
+            "start": 268.87,
+            "end": 269.17
+          }
+        ]
+      },
+      {
+        "start": 269.17,
+        "end": 270.03,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "today.",
+            "start": 269.17,
+            "end": 269.53
+          }
+        ]
+      },
+      {
+        "start": 270.41,
+        "end": 270.99,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Financing",
+            "start": 270.41,
+            "end": 270.81
+          },
+          {
+            "text": "your",
+            "start": 270.81,
+            "end": 270.99
+          }
+        ]
+      },
+      {
+        "start": 270.99,
+        "end": 271.63,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "customer",
+            "start": 270.99,
+            "end": 271.33
+          },
+          {
+            "text": "is",
+            "start": 271.33,
+            "end": 271.63
+          }
+        ]
+      },
+      {
+        "start": 271.63,
+        "end": 272.51,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "how",
+            "start": 271.63,
+            "end": 271.79
+          },
+          {
+            "text": "capital-intensive",
+            "start": 271.79,
+            "end": 272.51
+          }
+        ]
+      },
+      {
+        "start": 272.51,
+        "end": 273.71,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "industries",
+            "start": 272.51,
+            "end": 273.11
+          },
+          {
+            "text": "have",
+            "start": 273.11,
+            "end": 273.71
+          }
+        ]
+      },
+      {
+        "start": 273.71,
+        "end": 274.31,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "always",
+            "start": 273.71,
+            "end": 274.11
+          },
+          {
+            "text": "been",
+            "start": 274.11,
+            "end": 274.31
+          }
+        ]
+      },
+      {
+        "start": 274.31,
+        "end": 275.07,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "built.",
+            "start": 274.31,
+            "end": 274.57
+          }
+        ]
+      },
+      {
+        "start": 275.85,
+        "end": 276.41,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Railways,",
+            "start": 275.85,
+            "end": 276.41
+          }
+        ]
+      },
+      {
+        "start": 276.41,
+        "end": 277.23,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "telecoms,",
+            "start": 276.41,
+            "end": 276.97
+          }
+        ]
+      },
+      {
+        "start": 277.23,
+        "end": 278.45,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "aircraft",
+            "start": 277.23,
+            "end": 277.57
+          },
+          {
+            "text": "leasing.",
+            "start": 277.57,
+            "end": 277.95
+          }
+        ]
+      },
+      {
+        "start": 278.79,
+        "end": 279.01,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "If",
+            "start": 278.79,
+            "end": 278.91
           },
           {
             "text": "the",
-            "start": 278.43,
-            "end": 278.55
+            "start": 278.91,
+            "end": 279.01
           }
         ]
       },
       {
-        "start": 278.55,
-        "end": 279.07,
+        "start": 279.01,
+        "end": 279.43,
         "emphasis": "none",
         "words": [
           {
-            "text": "investment",
-            "start": 278.55,
-            "end": 278.89
+            "text": "demand",
+            "start": 279.01,
+            "end": 279.23
           },
           {
-            "text": "they",
-            "start": 278.89,
-            "end": 279.07
+            "text": "is",
+            "start": 279.23,
+            "end": 279.43
           }
         ]
       },
       {
-        "start": 279.07,
-        "end": 279.39,
+        "start": 279.43,
+        "end": 280.13,
         "emphasis": "none",
         "words": [
           {
-            "text": "made",
-            "start": 279.07,
-            "end": 279.25
-          },
-          {
-            "text": "to",
-            "start": 279.25,
-            "end": 279.39
-          }
-        ]
-      },
-      {
-        "start": 279.39,
-        "end": 280.35,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "create",
-            "start": 279.39,
+            "text": "real,",
+            "start": 279.43,
             "end": 279.69
-          },
-          {
-            "text": "it.",
-            "start": 279.69,
-            "end": 279.85
           }
         ]
       },
       {
-        "start": 280.45,
-        "end": 280.79,
+        "start": 280.13,
+        "end": 280.43,
         "emphasis": "none",
         "words": [
           {
-            "text": "So",
-            "start": 280.45,
-            "end": 280.55
+            "text": "this",
+            "start": 280.13,
+            "end": 280.29
           },
           {
-            "text": "rather",
-            "start": 280.55,
-            "end": 280.79
+            "text": "is",
+            "start": 280.29,
+            "end": 280.43
           }
         ]
       },
       {
-        "start": 280.79,
+        "start": 280.43,
+        "end": 280.81,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "simply",
+            "start": 280.43,
+            "end": 280.67
+          },
+          {
+            "text": "the",
+            "start": 280.67,
+            "end": 280.81
+          }
+        ]
+      },
+      {
+        "start": 280.81,
         "end": 281.35,
         "emphasis": "none",
         "words": [
           {
-            "text": "than",
-            "start": 280.79,
-            "end": 280.97
+            "text": "fastest",
+            "start": 280.81,
+            "end": 281.11
           },
           {
-            "text": "predicting",
-            "start": 280.97,
+            "text": "way",
+            "start": 281.11,
             "end": 281.35
           }
         ]
       },
       {
         "start": 281.35,
-        "end": 282.09,
+        "end": 281.61,
         "emphasis": "none",
         "words": [
-          {
-            "text": "a",
-            "start": 281.35,
-            "end": 281.55
-          },
-          {
-            "text": "crash,",
-            "start": 281.55,
-            "end": 281.91
-          }
-        ]
-      },
-      {
-        "start": 282.09,
-        "end": 282.63,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "which",
-            "start": 282.09,
-            "end": 282.21
-          },
-          {
-            "text": "I",
-            "start": 282.21,
-            "end": 282.63
-          }
-        ]
-      },
-      {
-        "start": 282.63,
-        "end": 283.05,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "can't",
-            "start": 282.63,
-            "end": 282.91
-          },
-          {
-            "text": "do",
-            "start": 282.91,
-            "end": 283.05
-          }
-        ]
-      },
-      {
-        "start": 283.05,
-        "end": 283.65,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "and",
-            "start": 283.05,
-            "end": 283.25
-          },
-          {
-            "text": "neither",
-            "start": 283.25,
-            "end": 283.65
-          }
-        ]
-      },
-      {
-        "start": 283.65,
-        "end": 284.05,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "can",
-            "start": 283.65,
-            "end": 283.81
-          },
-          {
-            "text": "anyone",
-            "start": 283.81,
-            "end": 284.05
-          }
-        ]
-      },
-      {
-        "start": 284.05,
-        "end": 284.59,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "selling",
-            "start": 284.05,
-            "end": 284.41
-          },
-          {
-            "text": "you",
-            "start": 284.41,
-            "end": 284.59
-          }
-        ]
-      },
-      {
-        "start": 284.59,
-        "end": 285.31,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "one,",
-            "start": 284.59,
-            "end": 284.81
-          }
-        ]
-      },
-      {
-        "start": 288.83,
-        "end": 289.07,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "up",
-            "start": 288.83,
-            "end": 288.97
-          },
           {
             "text": "to",
-            "start": 288.97,
-            "end": 289.07
-          }
-        ]
-      },
-      {
-        "start": 289.07,
-        "end": 289.73,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "numbers",
-            "start": 289.07,
-            "end": 289.39
+            "start": 281.35,
+            "end": 281.43
           },
           {
-            "text": "convert",
-            "start": 289.39,
-            "end": 289.73
+            "text": "build",
+            "start": 281.43,
+            "end": 281.61
           }
         ]
       },
       {
-        "start": 289.73,
-        "end": 290.25,
+        "start": 281.61,
+        "end": 282.43,
         "emphasis": "none",
         "words": [
           {
-            "text": "into",
-            "start": 289.73,
-            "end": 289.97
+            "text": "for",
+            "start": 281.61,
+            "end": 281.83
           },
           {
-            "text": "money",
-            "start": 289.97,
-            "end": 290.25
+            "text": "it.",
+            "start": 281.83,
+            "end": 281.99
           }
         ]
       },
       {
-        "start": 290.25,
-        "end": 290.85,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "that",
-            "start": 290.25,
-            "end": 290.45
-          },
-          {
-            "text": "actually",
-            "start": 290.45,
-            "end": 290.85
-          }
-        ]
-      },
-      {
-        "start": 290.85,
-        "end": 291.65,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "moves.",
-            "start": 290.85,
-            "end": 291.23
-          }
-        ]
-      },
-      {
-        "start": 291.65,
-        "end": 292.33,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Commitments",
-            "start": 291.65,
-            "end": 292.15
-          },
-          {
-            "text": "can",
-            "start": 292.15,
-            "end": 292.33
-          }
-        ]
-      },
-      {
-        "start": 292.33,
-        "end": 292.83,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "be",
-            "start": 292.33,
-            "end": 292.45
-          },
-          {
-            "text": "quietly",
-            "start": 292.45,
-            "end": 292.83
-          }
-        ]
-      },
-      {
-        "start": 292.83,
-        "end": 293.65,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "restructured,",
-            "start": 292.83,
-            "end": 293.41
-          }
-        ]
-      },
-      {
-        "start": 293.65,
-        "end": 294.29,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "and",
-            "start": 293.65,
-            "end": 294.13
-          },
-          {
-            "text": "they",
-            "start": 294.13,
-            "end": 294.29
-          }
-        ]
-      },
-      {
-        "start": 294.29,
-        "end": 294.67,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "have",
-            "start": 294.29,
-            "end": 294.51
-          },
-          {
-            "text": "been",
-            "start": 294.51,
-            "end": 294.67
-          }
-        ]
-      },
-      {
-        "start": 294.67,
-        "end": 295.47,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "before.",
-            "start": 294.67,
-            "end": 294.97
-          }
-        ]
-      },
-      {
-        "start": 295.75,
-        "end": 296.49,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Two.",
-            "start": 295.75,
-            "end": 295.99
-          }
-        ]
-      },
-      {
-        "start": 296.83,
-        "end": 297.25,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Whether",
-            "start": 296.83,
-            "end": 296.93
-          },
-          {
-            "text": "backlog",
-            "start": 296.93,
-            "end": 297.25
-          }
-        ]
-      },
-      {
-        "start": 297.25,
-        "end": 298.07,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "becomes",
-            "start": 297.25,
-            "end": 297.71
-          },
-          {
-            "text": "delivered",
-            "start": 297.71,
-            "end": 298.07
-          }
-        ]
-      },
-      {
-        "start": 298.07,
-        "end": 298.95,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "revenue",
-            "start": 298.07,
-            "end": 298.55
-          },
-          {
-            "text": "on",
-            "start": 298.55,
-            "end": 298.95
-          }
-        ]
-      },
-      {
-        "start": 298.95,
-        "end": 299.75,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "schedule.",
-            "start": 298.95,
-            "end": 299.25
-          }
-        ]
-      },
-      {
-        "start": 300.72,
-        "end": 301.12,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "A",
-            "start": 300.72,
-            "end": 300.86
-          },
-          {
-            "text": "backlog",
-            "start": 300.86,
-            "end": 301.12
-          }
-        ]
-      },
-      {
-        "start": 301.12,
-        "end": 301.5,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "is",
-            "start": 301.12,
-            "end": 301.4
-          },
-          {
-            "text": "a",
-            "start": 301.4,
-            "end": 301.5
-          }
-        ]
-      },
-      {
-        "start": 301.5,
-        "end": 302.28,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "promise.",
-            "start": 301.5,
-            "end": 301.82
-          }
-        ]
-      },
-      {
-        "start": 302.28,
-        "end": 302.94,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Promises",
-            "start": 302.28,
-            "end": 302.64
-          },
-          {
-            "text": "have",
-            "start": 302.64,
-            "end": 302.94
-          }
-        ]
-      },
-      {
-        "start": 302.94,
-        "end": 303.7,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "dates.",
-            "start": 302.94,
-            "end": 303.2
-          }
-        ]
-      },
-      {
-        "start": 303.8,
-        "end": 304.86,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Three.",
-            "start": 303.8,
-            "end": 304.36
-          }
-        ]
-      },
-      {
-        "start": 305.32,
-        "end": 305.9,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "Whether",
-            "start": 305.32,
-            "end": 305.56
-          },
-          {
-            "text": "anyone",
-            "start": 305.56,
-            "end": 305.9
-          }
-        ]
-      },
-      {
-        "start": 305.9,
-        "end": 306.26,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "in",
-            "start": 305.9,
-            "end": 306.12
-          },
-          {
-            "text": "this",
-            "start": 306.12,
-            "end": 306.26
-          }
-        ]
-      },
-      {
-        "start": 306.26,
-        "end": 306.7,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "loop",
-            "start": 306.26,
-            "end": 306.44
-          },
-          {
-            "text": "starts",
-            "start": 306.44,
-            "end": 306.7
-          }
-        ]
-      },
-      {
-        "start": 306.7,
-        "end": 307.38,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "buying",
-            "start": 306.7,
-            "end": 307.06
-          },
-          {
-            "text": "compute",
-            "start": 307.06,
-            "end": 307.38
-          }
-        ]
-      },
-      {
-        "start": 307.38,
-        "end": 308.04,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "with",
-            "start": 307.38,
-            "end": 307.7
-          },
-          {
-            "text": "cash",
-            "start": 307.7,
-            "end": 308.04
-          }
-        ]
-      },
-      {
-        "start": 308.04,
-        "end": 308.46,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "they",
-            "start": 308.04,
-            "end": 308.24
-          },
-          {
-            "text": "earned",
-            "start": 308.24,
-            "end": 308.46
-          }
-        ]
-      },
-      {
-        "start": 308.46,
-        "end": 309.06,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "from",
-            "start": 308.46,
-            "end": 308.64
-          },
-          {
-            "text": "customers",
-            "start": 308.64,
-            "end": 309.06
-          }
-        ]
-      },
-      {
-        "start": 309.06,
-        "end": 309.8,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "outside",
-            "start": 309.06,
-            "end": 309.62
-          },
-          {
-            "text": "the",
-            "start": 309.62,
-            "end": 309.8
-          }
-        ]
-      },
-      {
-        "start": 309.8,
-        "end": 310.5,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "loop.",
-            "start": 309.8,
-            "end": 310.0
-          }
-        ]
-      },
-      {
-        "start": 310.56,
-        "end": 310.9,
+        "start": 282.43,
+        "end": 282.87,
         "emphasis": "none",
         "words": [
           {
             "text": "That",
-            "start": 310.56,
-            "end": 310.68
+            "start": 282.43,
+            "end": 282.65
           },
           {
-            "text": "third",
-            "start": 310.68,
-            "end": 310.9
+            "text": "argument",
+            "start": 282.65,
+            "end": 282.87
           }
         ]
       },
       {
-        "start": 310.9,
-        "end": 311.66,
+        "start": 282.87,
+        "end": 283.25,
         "emphasis": "none",
         "words": [
           {
-            "text": "one",
-            "start": 310.9,
-            "end": 311.14
+            "text": "is",
+            "start": 282.87,
+            "end": 283.07
           },
           {
-            "text": "is",
-            "start": 311.14,
-            "end": 311.66
+            "text": "not",
+            "start": 283.07,
+            "end": 283.25
           }
         ]
       },
       {
-        "start": 311.66,
-        "end": 312.0,
+        "start": 283.25,
+        "end": 284.07,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "stupid.",
+            "start": 283.25,
+            "end": 283.61
+          }
+        ]
+      },
+      {
+        "start": 284.07,
+        "end": 284.35,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "It",
+            "start": 284.07,
+            "end": 284.15
+          },
+          {
+            "text": "might",
+            "start": 284.15,
+            "end": 284.35
+          }
+        ]
+      },
+      {
+        "start": 284.35,
+        "end": 284.67,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "well",
+            "start": 284.35,
+            "end": 284.53
+          },
+          {
+            "text": "be",
+            "start": 284.53,
+            "end": 284.67
+          }
+        ]
+      },
+      {
+        "start": 301.6,
+        "end": 302.0,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "But",
+            "start": 301.6,
+            "end": 301.74
+          },
+          {
+            "text": "vendor",
+            "start": 301.74,
+            "end": 302.0
+          }
+        ]
+      },
+      {
+        "start": 302.0,
+        "end": 302.92,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "financing",
+            "start": 302.0,
+            "end": 302.46
+          },
+          {
+            "text": "has",
+            "start": 302.46,
+            "end": 302.92
+          }
+        ]
+      },
+      {
+        "start": 302.92,
+        "end": 303.36,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "a",
+            "start": 302.92,
+            "end": 303.02
+          },
+          {
+            "text": "known",
+            "start": 303.02,
+            "end": 303.36
+          }
+        ]
+      },
+      {
+        "start": 303.36,
+        "end": 304.6,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "failure",
+            "start": 303.36,
+            "end": 303.7
+          },
+          {
+            "text": "mode,",
+            "start": 303.7,
+            "end": 304.1
+          }
+        ]
+      },
+      {
+        "start": 304.76,
+        "end": 305.14,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "and",
+            "start": 304.76,
+            "end": 305.04
+          },
+          {
+            "text": "it",
+            "start": 305.04,
+            "end": 305.14
+          }
+        ]
+      },
+      {
+        "start": 305.14,
+        "end": 306.16,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "isn't",
+            "start": 305.14,
+            "end": 305.38
+          },
+          {
+            "text": "subtle.",
+            "start": 305.38,
+            "end": 305.66
+          }
+        ]
+      },
+      {
+        "start": 306.34,
+        "end": 306.72,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "It",
+            "start": 306.34,
+            "end": 306.54
+          },
+          {
+            "text": "works",
+            "start": 306.54,
+            "end": 306.72
+          }
+        ]
+      },
+      {
+        "start": 306.72,
+        "end": 307.48,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "beautifully",
+            "start": 306.72,
+            "end": 307.14
+          },
+          {
+            "text": "while",
+            "start": 307.14,
+            "end": 307.48
+          }
+        ]
+      },
+      {
+        "start": 307.48,
+        "end": 308.56,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "demand",
+            "start": 307.48,
+            "end": 307.7
+          },
+          {
+            "text": "grows.",
+            "start": 307.7,
+            "end": 308.22
+          }
+        ]
+      },
+      {
+        "start": 308.56,
+        "end": 308.92,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "And",
+            "start": 308.56,
+            "end": 308.78
+          },
+          {
+            "text": "when",
+            "start": 308.78,
+            "end": 308.92
+          }
+        ]
+      },
+      {
+        "start": 308.92,
+        "end": 310.36,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "demand",
+            "start": 308.92,
+            "end": 309.2
+          },
+          {
+            "text": "disappoints,",
+            "start": 309.2,
+            "end": 310.36
+          }
+        ]
+      },
+      {
+        "start": 310.36,
+        "end": 310.82,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 311.66,
-            "end": 311.76
+            "start": 310.36,
+            "end": 310.62
           },
           {
-            "text": "whole",
-            "start": 311.76,
-            "end": 312.0
+            "text": "vendor",
+            "start": 310.62,
+            "end": 310.82
+          }
+        ]
+      },
+      {
+        "start": 310.82,
+        "end": 312.0,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "loses",
+            "start": 310.82,
+            "end": 311.14
+          },
+          {
+            "text": "twice.",
+            "start": 311.14,
+            "end": 311.54
           }
         ]
       },
       {
         "start": 312.0,
-        "end": 312.44,
+        "end": 312.6,
         "emphasis": "none",
         "words": [
           {
-            "text": "question,",
+            "text": "The",
             "start": 312.0,
-            "end": 312.44
+            "end": 312.28
+          },
+          {
+            "text": "sale,",
+            "start": 312.28,
+            "end": 312.6
           }
         ]
       },
       {
-        "start": 312.44,
-        "end": 313.26,
+        "start": 312.6,
+        "end": 313.5,
         "emphasis": "none",
         "words": [
           {
-            "text": "really.",
-            "start": 312.44,
-            "end": 312.76
+            "text": "and",
+            "start": 312.6,
+            "end": 313.38
+          },
+          {
+            "text": "the",
+            "start": 313.38,
+            "end": 313.5
           }
         ]
       },
       {
         "start": 313.5,
-        "end": 313.88,
+        "end": 314.02,
         "emphasis": "none",
         "words": [
           {
-            "text": "The",
+            "text": "investment",
             "start": 313.5,
-            "end": 313.64
+            "end": 313.84
           },
           {
-            "text": "AI",
-            "start": 313.64,
-            "end": 313.88
+            "text": "they",
+            "start": 313.84,
+            "end": 314.02
           }
         ]
       },
       {
-        "start": 313.88,
-        "end": 314.44,
+        "start": 314.02,
+        "end": 314.34,
         "emphasis": "none",
         "words": [
           {
-            "text": "boom",
-            "start": 313.88,
-            "end": 314.16
+            "text": "made",
+            "start": 314.02,
+            "end": 314.2
           },
           {
-            "text": "is",
-            "start": 314.16,
-            "end": 314.44
+            "text": "to",
+            "start": 314.2,
+            "end": 314.34
           }
         ]
       },
       {
-        "start": 314.44,
-        "end": 315.16,
+        "start": 314.34,
+        "end": 315.3,
         "emphasis": "none",
         "words": [
           {
-            "text": "real.",
-            "start": 314.44,
-            "end": 314.74
+            "text": "create",
+            "start": 314.34,
+            "end": 314.64
+          },
+          {
+            "text": "it.",
+            "start": 314.64,
+            "end": 314.8
           }
         ]
       },
       {
-        "start": 315.16,
+        "start": 315.4,
         "end": 315.74,
         "emphasis": "none",
         "words": [
           {
-            "text": "The",
-            "start": 315.16,
-            "end": 315.28
+            "text": "So",
+            "start": 315.4,
+            "end": 315.5
           },
           {
-            "text": "technology",
-            "start": 315.28,
+            "text": "rather",
+            "start": 315.5,
             "end": 315.74
           }
         ]
       },
       {
         "start": 315.74,
-        "end": 316.6,
+        "end": 316.3,
         "emphasis": "none",
         "words": [
           {
-            "text": "works.",
+            "text": "than",
             "start": 315.74,
-            "end": 316.1
+            "end": 315.92
+          },
+          {
+            "text": "predicting",
+            "start": 315.92,
+            "end": 316.3
           }
         ]
       },
       {
-        "start": 316.92,
-        "end": 317.24,
+        "start": 316.3,
+        "end": 317.04,
         "emphasis": "none",
         "words": [
-          {
-            "text": "But",
-            "start": 316.92,
-            "end": 317.14
-          },
           {
             "text": "a",
-            "start": 317.14,
-            "end": 317.24
-          }
-        ]
-      },
-      {
-        "start": 317.24,
-        "end": 317.9,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "meaningful",
-            "start": 317.24,
-            "end": 317.5
+            "start": 316.3,
+            "end": 316.5
           },
           {
-            "text": "share",
-            "start": 317.5,
-            "end": 317.9
+            "text": "crash,",
+            "start": 316.5,
+            "end": 316.86
           }
         ]
       },
       {
-        "start": 317.9,
-        "end": 318.12,
+        "start": 317.04,
+        "end": 317.58,
         "emphasis": "none",
         "words": [
           {
-            "text": "of",
-            "start": 317.9,
-            "end": 318.02
+            "text": "which",
+            "start": 317.04,
+            "end": 317.16
           },
           {
-            "text": "the",
-            "start": 318.02,
-            "end": 318.12
+            "text": "I",
+            "start": 317.16,
+            "end": 317.58
           }
         ]
       },
       {
-        "start": 318.12,
-        "end": 318.58,
+        "start": 317.58,
+        "end": 318.0,
         "emphasis": "none",
         "words": [
           {
-            "text": "money",
-            "start": 318.12,
-            "end": 318.28
+            "text": "can't",
+            "start": 317.58,
+            "end": 317.86
           },
           {
-            "text": "announced",
-            "start": 318.28,
-            "end": 318.58
+            "text": "do",
+            "start": 317.86,
+            "end": 318.0
           }
         ]
       },
       {
-        "start": 318.58,
-        "end": 319.16,
+        "start": 318.0,
+        "end": 318.6,
         "emphasis": "none",
         "words": [
           {
-            "text": "so",
-            "start": 318.58,
-            "end": 318.84
+            "text": "and",
+            "start": 318.0,
+            "end": 318.2
           },
           {
-            "text": "far",
-            "start": 318.84,
-            "end": 319.16
+            "text": "neither",
+            "start": 318.2,
+            "end": 318.6
           }
         ]
       },
       {
-        "start": 319.16,
-        "end": 319.52,
+        "start": 318.6,
+        "end": 319.0,
         "emphasis": "none",
         "words": [
           {
-            "text": "has",
-            "start": 319.16,
+            "text": "can",
+            "start": 318.6,
+            "end": 318.76
+          },
+          {
+            "text": "anyone",
+            "start": 318.76,
+            "end": 319.0
+          }
+        ]
+      },
+      {
+        "start": 319.0,
+        "end": 319.54,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "selling",
+            "start": 319.0,
             "end": 319.36
           },
           {
-            "text": "been",
+            "text": "you",
             "start": 319.36,
-            "end": 319.52
+            "end": 319.54
           }
         ]
       },
       {
-        "start": 319.52,
-        "end": 320.02,
+        "start": 319.54,
+        "end": 320.26,
         "emphasis": "none",
         "words": [
           {
-            "text": "moving",
-            "start": 319.52,
-            "end": 319.72
+            "text": "one,",
+            "start": 319.54,
+            "end": 319.76
+          }
+        ]
+      },
+      {
+        "start": 323.78,
+        "end": 324.02,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "up",
+            "start": 323.78,
+            "end": 323.92
           },
           {
-            "text": "between",
-            "start": 319.72,
-            "end": 320.02
+            "text": "to",
+            "start": 323.92,
+            "end": 324.02
           }
         ]
       },
       {
-        "start": 320.02,
-        "end": 320.6,
+        "start": 324.02,
+        "end": 324.68,
         "emphasis": "none",
         "words": [
           {
-            "text": "a",
-            "start": 320.02,
-            "end": 320.3
+            "text": "numbers",
+            "start": 324.02,
+            "end": 324.34
           },
           {
-            "text": "small",
-            "start": 320.3,
-            "end": 320.6
+            "text": "convert",
+            "start": 324.34,
+            "end": 324.68
           }
         ]
       },
       {
-        "start": 320.6,
-        "end": 320.98,
+        "start": 324.68,
+        "end": 325.2,
         "emphasis": "none",
         "words": [
           {
-            "text": "number",
-            "start": 320.6,
-            "end": 320.86
-          },
-          {
-            "text": "of",
-            "start": 320.86,
-            "end": 320.98
-          }
-        ]
-      },
-      {
-        "start": 320.98,
-        "end": 321.8,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "companies",
-            "start": 320.98,
-            "end": 321.34
-          }
-        ]
-      },
-      {
-        "start": 321.8,
-        "end": 322.24,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "who",
-            "start": 321.8,
-            "end": 322.08
-          },
-          {
-            "text": "are",
-            "start": 322.08,
-            "end": 322.24
-          }
-        ]
-      },
-      {
-        "start": 322.24,
-        "end": 322.84,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "each",
-            "start": 322.24,
-            "end": 322.54
-          },
-          {
-            "text": "other's",
-            "start": 322.54,
-            "end": 322.84
-          }
-        ]
-      },
-      {
-        "start": 322.84,
-        "end": 323.7,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "investors,",
-            "start": 322.84,
-            "end": 323.24
-          }
-        ]
-      },
-      {
-        "start": 323.7,
-        "end": 324.64,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "customers",
-            "start": 323.7,
-            "end": 324.06
-          },
-          {
-            "text": "and",
-            "start": 324.5,
-            "end": 324.64
-          }
-        ]
-      },
-      {
-        "start": 324.64,
-        "end": 325.56,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "suppliers.",
-            "start": 324.64,
-            "end": 325.06
-          }
-        ]
-      },
-      {
-        "start": 326.06,
-        "end": 326.28,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "And",
-            "start": 326.06,
-            "end": 326.2
-          },
-          {
-            "text": "the",
-            "start": 326.2,
-            "end": 326.28
-          }
-        ]
-      },
-      {
-        "start": 326.28,
-        "end": 326.86,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "headline",
-            "start": 326.28,
-            "end": 326.48
-          },
-          {
-            "text": "figures",
-            "start": 326.48,
-            "end": 326.86
-          }
-        ]
-      },
-      {
-        "start": 326.86,
-        "end": 327.74,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "are",
-            "start": 326.86,
-            "end": 327.16
-          },
-          {
-            "text": "consistently",
-            "start": 327.16,
-            "end": 327.74
-          }
-        ]
-      },
-      {
-        "start": 327.74,
-        "end": 328.98,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "larger",
-            "start": 327.74,
-            "end": 328.3
-          },
-          {
-            "text": "than",
-            "start": 328.7,
-            "end": 328.98
-          }
-        ]
-      },
-      {
-        "start": 328.98,
-        "end": 329.28,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "the",
-            "start": 328.98,
-            "end": 329.08
+            "text": "into",
+            "start": 324.68,
+            "end": 324.92
           },
           {
             "text": "money",
-            "start": 329.08,
-            "end": 329.28
+            "start": 324.92,
+            "end": 325.2
           }
         ]
       },
       {
-        "start": 329.28,
-        "end": 329.56,
+        "start": 325.2,
+        "end": 325.8,
         "emphasis": "none",
         "words": [
           {
             "text": "that",
-            "start": 329.28,
-            "end": 329.44
+            "start": 325.2,
+            "end": 325.4
           },
-          {
-            "text": "has",
-            "start": 329.44,
-            "end": 329.56
-          }
-        ]
-      },
-      {
-        "start": 329.56,
-        "end": 330.38,
-        "emphasis": "none",
-        "words": [
           {
             "text": "actually",
-            "start": 329.56,
-            "end": 329.96
-          },
-          {
-            "text": "changed",
-            "start": 329.96,
-            "end": 330.38
+            "start": 325.4,
+            "end": 325.8
           }
         ]
       },
       {
-        "start": 330.38,
-        "end": 331.24,
+        "start": 325.8,
+        "end": 326.6,
         "emphasis": "none",
         "words": [
           {
-            "text": "hands.",
-            "start": 330.38,
-            "end": 330.74
+            "text": "moves.",
+            "start": 325.8,
+            "end": 326.18
           }
         ]
       },
       {
-        "start": 331.44,
-        "end": 332.0,
+        "start": 326.6,
+        "end": 327.28,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Commitments",
+            "start": 326.6,
+            "end": 327.1
+          },
+          {
+            "text": "can",
+            "start": 327.1,
+            "end": 327.28
+          }
+        ]
+      },
+      {
+        "start": 327.28,
+        "end": 327.78,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "be",
+            "start": 327.28,
+            "end": 327.4
+          },
+          {
+            "text": "quietly",
+            "start": 327.4,
+            "end": 327.78
+          }
+        ]
+      },
+      {
+        "start": 327.78,
+        "end": 328.6,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "restructured,",
+            "start": 327.78,
+            "end": 328.36
+          }
+        ]
+      },
+      {
+        "start": 328.6,
+        "end": 329.24,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "and",
+            "start": 328.6,
+            "end": 329.08
+          },
+          {
+            "text": "they",
+            "start": 329.08,
+            "end": 329.24
+          }
+        ]
+      },
+      {
+        "start": 329.24,
+        "end": 329.62,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "have",
+            "start": 329.24,
+            "end": 329.46
+          },
+          {
+            "text": "been",
+            "start": 329.46,
+            "end": 329.62
+          }
+        ]
+      },
+      {
+        "start": 329.62,
+        "end": 330.42,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "before.",
+            "start": 329.62,
+            "end": 329.92
+          }
+        ]
+      },
+      {
+        "start": 330.7,
+        "end": 331.44,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Two.",
+            "start": 330.7,
+            "end": 330.94
+          }
+        ]
+      },
+      {
+        "start": 331.78,
+        "end": 332.2,
         "emphasis": "none",
         "words": [
           {
             "text": "Whether",
-            "start": 331.44,
-            "end": 331.72
+            "start": 331.78,
+            "end": 331.88
           },
           {
-            "text": "that's",
-            "start": 331.72,
-            "end": 332.0
+            "text": "backlog",
+            "start": 331.88,
+            "end": 332.2
           }
         ]
       },
       {
-        "start": 332.0,
-        "end": 332.3,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "the",
-            "start": 332.0,
-            "end": 332.12
-          },
-          {
-            "text": "start",
-            "start": 332.12,
-            "end": 332.3
-          }
-        ]
-      },
-      {
-        "start": 332.3,
-        "end": 332.64,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "of",
-            "start": 332.3,
-            "end": 332.42
-          },
-          {
-            "text": "something",
-            "start": 332.42,
-            "end": 332.64
-          }
-        ]
-      },
-      {
-        "start": 332.64,
+        "start": 332.2,
         "end": 333.02,
         "emphasis": "none",
         "words": [
           {
-            "text": "enormous,",
-            "start": 332.64,
+            "text": "becomes",
+            "start": 332.2,
+            "end": 332.66
+          },
+          {
+            "text": "delivered",
+            "start": 332.66,
             "end": 333.02
           }
         ]
       },
       {
         "start": 333.02,
-        "end": 333.76,
+        "end": 333.9,
         "emphasis": "none",
         "words": [
           {
-            "text": "or",
+            "text": "revenue",
             "start": 333.02,
-            "end": 333.56
+            "end": 333.5
+          },
+          {
+            "text": "on",
+            "start": 333.5,
+            "end": 333.9
+          }
+        ]
+      },
+      {
+        "start": 333.9,
+        "end": 334.7,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "schedule.",
+            "start": 333.9,
+            "end": 334.2
+          }
+        ]
+      },
+      {
+        "start": 335.67,
+        "end": 336.07,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "A",
+            "start": 335.67,
+            "end": 335.81
+          },
+          {
+            "text": "backlog",
+            "start": 335.81,
+            "end": 336.07
+          }
+        ]
+      },
+      {
+        "start": 336.07,
+        "end": 336.45,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "is",
+            "start": 336.07,
+            "end": 336.35
+          },
+          {
+            "text": "a",
+            "start": 336.35,
+            "end": 336.45
+          }
+        ]
+      },
+      {
+        "start": 336.45,
+        "end": 337.23,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "promise.",
+            "start": 336.45,
+            "end": 336.77
+          }
+        ]
+      },
+      {
+        "start": 337.23,
+        "end": 337.89,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Promises",
+            "start": 337.23,
+            "end": 337.59
+          },
+          {
+            "text": "have",
+            "start": 337.59,
+            "end": 337.89
+          }
+        ]
+      },
+      {
+        "start": 337.89,
+        "end": 338.65,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "dates.",
+            "start": 337.89,
+            "end": 338.15
+          }
+        ]
+      },
+      {
+        "start": 338.75,
+        "end": 339.81,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Three.",
+            "start": 338.75,
+            "end": 339.31
+          }
+        ]
+      },
+      {
+        "start": 340.27,
+        "end": 340.85,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Whether",
+            "start": 340.27,
+            "end": 340.51
+          },
+          {
+            "text": "anyone",
+            "start": 340.51,
+            "end": 340.85
+          }
+        ]
+      },
+      {
+        "start": 340.85,
+        "end": 341.21,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "in",
+            "start": 340.85,
+            "end": 341.07
+          },
+          {
+            "text": "this",
+            "start": 341.07,
+            "end": 341.21
+          }
+        ]
+      },
+      {
+        "start": 341.21,
+        "end": 341.65,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "loop",
+            "start": 341.21,
+            "end": 341.39
+          },
+          {
+            "text": "starts",
+            "start": 341.39,
+            "end": 341.65
+          }
+        ]
+      },
+      {
+        "start": 341.65,
+        "end": 342.33,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "buying",
+            "start": 341.65,
+            "end": 342.01
+          },
+          {
+            "text": "compute",
+            "start": 342.01,
+            "end": 342.33
+          }
+        ]
+      },
+      {
+        "start": 342.33,
+        "end": 342.99,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "with",
+            "start": 342.33,
+            "end": 342.65
+          },
+          {
+            "text": "cash",
+            "start": 342.65,
+            "end": 342.99
+          }
+        ]
+      },
+      {
+        "start": 342.99,
+        "end": 343.41,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "they",
+            "start": 342.99,
+            "end": 343.19
+          },
+          {
+            "text": "earned",
+            "start": 343.19,
+            "end": 343.41
+          }
+        ]
+      },
+      {
+        "start": 343.41,
+        "end": 344.01,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "from",
+            "start": 343.41,
+            "end": 343.59
+          },
+          {
+            "text": "customers",
+            "start": 343.59,
+            "end": 344.01
+          }
+        ]
+      },
+      {
+        "start": 344.01,
+        "end": 344.75,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "outside",
+            "start": 344.01,
+            "end": 344.57
           },
           {
             "text": "the",
-            "start": 333.56,
-            "end": 333.76
+            "start": 344.57,
+            "end": 344.75
           }
         ]
       },
       {
-        "start": 333.76,
-        "end": 334.14,
+        "start": 344.75,
+        "end": 345.45,
         "emphasis": "none",
         "words": [
           {
-            "text": "sound",
-            "start": 333.76,
-            "end": 334.04
-          },
-          {
-            "text": "of",
-            "start": 334.04,
-            "end": 334.14
+            "text": "loop.",
+            "start": 344.75,
+            "end": 344.95
           }
         ]
       },
       {
-        "start": 334.14,
-        "end": 334.48,
+        "start": 345.51,
+        "end": 345.85,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "That",
+            "start": 345.51,
+            "end": 345.63
+          },
+          {
+            "text": "third",
+            "start": 345.63,
+            "end": 345.85
+          }
+        ]
+      },
+      {
+        "start": 345.85,
+        "end": 346.61,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "one",
+            "start": 345.85,
+            "end": 346.09
+          },
+          {
+            "text": "is",
+            "start": 346.09,
+            "end": 346.61
+          }
+        ]
+      },
+      {
+        "start": 346.61,
+        "end": 346.95,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "the",
+            "start": 346.61,
+            "end": 346.71
+          },
+          {
+            "text": "whole",
+            "start": 346.71,
+            "end": 346.95
+          }
+        ]
+      },
+      {
+        "start": 346.95,
+        "end": 347.39,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "question,",
+            "start": 346.95,
+            "end": 347.39
+          }
+        ]
+      },
+      {
+        "start": 347.39,
+        "end": 348.21,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "really.",
+            "start": 347.39,
+            "end": 347.71
+          }
+        ]
+      },
+      {
+        "start": 348.45,
+        "end": 348.83,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "The",
+            "start": 348.45,
+            "end": 348.59
+          },
+          {
+            "text": "AI",
+            "start": 348.59,
+            "end": 348.83
+          }
+        ]
+      },
+      {
+        "start": 348.83,
+        "end": 349.39,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "boom",
+            "start": 348.83,
+            "end": 349.11
+          },
+          {
+            "text": "is",
+            "start": 349.11,
+            "end": 349.39
+          }
+        ]
+      },
+      {
+        "start": 349.39,
+        "end": 350.11,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "real.",
+            "start": 349.39,
+            "end": 349.69
+          }
+        ]
+      },
+      {
+        "start": 350.11,
+        "end": 350.69,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "The",
+            "start": 350.11,
+            "end": 350.23
+          },
+          {
+            "text": "technology",
+            "start": 350.23,
+            "end": 350.69
+          }
+        ]
+      },
+      {
+        "start": 350.69,
+        "end": 351.55,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "works.",
+            "start": 350.69,
+            "end": 351.05
+          }
+        ]
+      },
+      {
+        "start": 351.87,
+        "end": 352.19,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "But",
+            "start": 351.87,
+            "end": 352.09
+          },
+          {
+            "text": "a",
+            "start": 352.09,
+            "end": 352.19
+          }
+        ]
+      },
+      {
+        "start": 352.19,
+        "end": 352.85,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "meaningful",
+            "start": 352.19,
+            "end": 352.45
+          },
+          {
+            "text": "share",
+            "start": 352.45,
+            "end": 352.85
+          }
+        ]
+      },
+      {
+        "start": 352.85,
+        "end": 353.07,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "of",
+            "start": 352.85,
+            "end": 352.97
+          },
+          {
+            "text": "the",
+            "start": 352.97,
+            "end": 353.07
+          }
+        ]
+      },
+      {
+        "start": 353.07,
+        "end": 353.53,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "money",
+            "start": 353.07,
+            "end": 353.23
+          },
+          {
+            "text": "announced",
+            "start": 353.23,
+            "end": 353.53
+          }
+        ]
+      },
+      {
+        "start": 353.53,
+        "end": 354.11,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "so",
+            "start": 353.53,
+            "end": 353.79
+          },
+          {
+            "text": "far",
+            "start": 353.79,
+            "end": 354.11
+          }
+        ]
+      },
+      {
+        "start": 354.11,
+        "end": 354.47,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "has",
+            "start": 354.11,
+            "end": 354.31
+          },
+          {
+            "text": "been",
+            "start": 354.31,
+            "end": 354.47
+          }
+        ]
+      },
+      {
+        "start": 354.47,
+        "end": 354.97,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "moving",
+            "start": 354.47,
+            "end": 354.67
+          },
+          {
+            "text": "between",
+            "start": 354.67,
+            "end": 354.97
+          }
+        ]
+      },
+      {
+        "start": 354.97,
+        "end": 355.55,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 334.14,
-            "end": 334.24
+            "start": 354.97,
+            "end": 355.25
           },
           {
-            "text": "circle",
-            "start": 334.24,
-            "end": 334.48
+            "text": "small",
+            "start": 355.25,
+            "end": 355.55
           }
         ]
       },
       {
-        "start": 334.48,
-        "end": 334.98,
+        "start": 355.55,
+        "end": 355.93,
         "emphasis": "none",
         "words": [
           {
-            "text": "closing,",
-            "start": 334.48,
-            "end": 334.98
+            "text": "number",
+            "start": 355.55,
+            "end": 355.81
+          },
+          {
+            "text": "of",
+            "start": 355.81,
+            "end": 355.93
           }
         ]
       },
       {
-        "start": 334.98,
-        "end": 336.0,
+        "start": 355.93,
+        "end": 356.75,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "companies",
+            "start": 355.93,
+            "end": 356.29
+          }
+        ]
+      },
+      {
+        "start": 356.75,
+        "end": 357.19,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "who",
+            "start": 356.75,
+            "end": 357.03
+          },
+          {
+            "text": "are",
+            "start": 357.03,
+            "end": 357.19
+          }
+        ]
+      },
+      {
+        "start": 357.19,
+        "end": 357.79,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "each",
+            "start": 357.19,
+            "end": 357.49
+          },
+          {
+            "text": "other's",
+            "start": 357.49,
+            "end": 357.79
+          }
+        ]
+      },
+      {
+        "start": 357.79,
+        "end": 358.65,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "investors,",
+            "start": 357.79,
+            "end": 358.19
+          }
+        ]
+      },
+      {
+        "start": 358.65,
+        "end": 359.59,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "customers",
+            "start": 358.65,
+            "end": 359.01
+          },
+          {
+            "text": "and",
+            "start": 359.45,
+            "end": 359.59
+          }
+        ]
+      },
+      {
+        "start": 359.59,
+        "end": 360.51,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "suppliers.",
+            "start": 359.59,
+            "end": 360.01
+          }
+        ]
+      },
+      {
+        "start": 361.01,
+        "end": 361.23,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "And",
+            "start": 361.01,
+            "end": 361.15
+          },
+          {
+            "text": "the",
+            "start": 361.15,
+            "end": 361.23
+          }
+        ]
+      },
+      {
+        "start": 361.23,
+        "end": 361.81,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "headline",
+            "start": 361.23,
+            "end": 361.43
+          },
+          {
+            "text": "figures",
+            "start": 361.43,
+            "end": 361.81
+          }
+        ]
+      },
+      {
+        "start": 361.81,
+        "end": 362.69,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "are",
+            "start": 361.81,
+            "end": 362.11
+          },
+          {
+            "text": "consistently",
+            "start": 362.11,
+            "end": 362.69
+          }
+        ]
+      },
+      {
+        "start": 362.69,
+        "end": 363.93,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "larger",
+            "start": 362.69,
+            "end": 363.25
+          },
+          {
+            "text": "than",
+            "start": 363.65,
+            "end": 363.93
+          }
+        ]
+      },
+      {
+        "start": 363.93,
+        "end": 364.23,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 334.98,
-            "end": 335.48
+            "start": 363.93,
+            "end": 364.03
           },
           {
-            "text": "honest",
-            "start": 335.48,
-            "end": 336.0
+            "text": "money",
+            "start": 364.03,
+            "end": 364.23
           }
         ]
       },
       {
-        "start": 336.0,
-        "end": 336.6,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "answer",
-            "start": 336.0,
-            "end": 336.38
-          },
-          {
-            "text": "is",
-            "start": 336.38,
-            "end": 336.6
-          }
-        ]
-      },
-      {
-        "start": 336.6,
-        "end": 337.28,
+        "start": 364.23,
+        "end": 364.51,
         "emphasis": "none",
         "words": [
           {
             "text": "that",
-            "start": 336.6,
-            "end": 336.8
+            "start": 364.23,
+            "end": 364.39
           },
           {
-            "text": "we",
-            "start": 336.8,
-            "end": 337.28
+            "text": "has",
+            "start": 364.39,
+            "end": 364.51
           }
         ]
       },
       {
-        "start": 337.28,
-        "end": 337.56,
+        "start": 364.51,
+        "end": 365.33,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "actually",
+            "start": 364.51,
+            "end": 364.91
+          },
+          {
+            "text": "changed",
+            "start": 364.91,
+            "end": 365.33
+          }
+        ]
+      },
+      {
+        "start": 365.33,
+        "end": 366.19,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "hands.",
+            "start": 365.33,
+            "end": 365.69
+          }
+        ]
+      },
+      {
+        "start": 366.39,
+        "end": 366.95,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Whether",
+            "start": 366.39,
+            "end": 366.67
+          },
+          {
+            "text": "that's",
+            "start": 366.67,
+            "end": 366.95
+          }
+        ]
+      },
+      {
+        "start": 366.95,
+        "end": 367.25,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "the",
+            "start": 366.95,
+            "end": 367.07
+          },
+          {
+            "text": "start",
+            "start": 367.07,
+            "end": 367.25
+          }
+        ]
+      },
+      {
+        "start": 367.25,
+        "end": 367.59,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "of",
+            "start": 367.25,
+            "end": 367.37
+          },
+          {
+            "text": "something",
+            "start": 367.37,
+            "end": 367.59
+          }
+        ]
+      },
+      {
+        "start": 367.59,
+        "end": 367.97,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "enormous,",
+            "start": 367.59,
+            "end": 367.97
+          }
+        ]
+      },
+      {
+        "start": 367.97,
+        "end": 368.71,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "or",
+            "start": 367.97,
+            "end": 368.51
+          },
+          {
+            "text": "the",
+            "start": 368.51,
+            "end": 368.71
+          }
+        ]
+      },
+      {
+        "start": 368.71,
+        "end": 369.09,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "sound",
+            "start": 368.71,
+            "end": 368.99
+          },
+          {
+            "text": "of",
+            "start": 368.99,
+            "end": 369.09
+          }
+        ]
+      },
+      {
+        "start": 369.09,
+        "end": 369.43,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "a",
+            "start": 369.09,
+            "end": 369.19
+          },
+          {
+            "text": "circle",
+            "start": 369.19,
+            "end": 369.43
+          }
+        ]
+      },
+      {
+        "start": 369.43,
+        "end": 369.93,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "closing,",
+            "start": 369.43,
+            "end": 369.93
+          }
+        ]
+      },
+      {
+        "start": 369.93,
+        "end": 370.95,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "the",
+            "start": 369.93,
+            "end": 370.43
+          },
+          {
+            "text": "honest",
+            "start": 370.43,
+            "end": 370.95
+          }
+        ]
+      },
+      {
+        "start": 370.95,
+        "end": 371.55,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "answer",
+            "start": 370.95,
+            "end": 371.33
+          },
+          {
+            "text": "is",
+            "start": 371.33,
+            "end": 371.55
+          }
+        ]
+      },
+      {
+        "start": 371.55,
+        "end": 372.23,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "that",
+            "start": 371.55,
+            "end": 371.75
+          },
+          {
+            "text": "we",
+            "start": 371.75,
+            "end": 372.23
+          }
+        ]
+      },
+      {
+        "start": 372.23,
+        "end": 372.51,
         "emphasis": "none",
         "words": [
           {
             "text": "don't",
-            "start": 337.28,
-            "end": 337.46
+            "start": 372.23,
+            "end": 372.41
           },
           {
             "text": "know",
-            "start": 337.46,
-            "end": 337.56
+            "start": 372.41,
+            "end": 372.51
           }
         ]
       },
       {
-        "start": 337.56,
-        "end": 338.3,
+        "start": 372.51,
+        "end": 373.25,
         "emphasis": "none",
         "words": [
           {
             "text": "yet.",
-            "start": 337.56,
-            "end": 337.8
+            "start": 372.51,
+            "end": 372.75
           }
         ]
       }
@@ -9873,15 +10179,51 @@
   },
   "audio": [
     {
-      "id": "vo",
+      "id": "vo0",
       "src": "lf-001/vo.wav",
       "role": "vo",
       "start": 9.65,
-      "offset": 0,
-      "duration": 331.63,
+      "offset": 0.0,
+      "duration": 166.92,
       "gainDb": 2,
       "duck": false,
       "fadeIn": 0.1,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "vo1",
+      "src": "lf-001/vo.wav",
+      "role": "vo",
+      "start": 189.02,
+      "offset": 166.92,
+      "duration": 24.62,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0.12,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "vo2",
+      "src": "lf-001/vo.wav",
+      "role": "vo",
+      "start": 220.09,
+      "offset": 191.54,
+      "duration": 64.94,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0.12,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "vo3",
+      "src": "lf-001/vo.wav",
+      "role": "vo",
+      "start": 301.08,
+      "offset": 256.48,
+      "duration": 75.15,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0.12,
       "fadeOut": 0.6
     },
     {
@@ -9924,7 +10266,7 @@
       "id": "sfx_ch4",
       "src": "lf-001/sfx/whoosh.wav",
       "role": "sfx",
-      "start": 238.49,
+      "start": 257.39,
       "offset": 0,
       "duration": 0.6,
       "gainDb": -4,
@@ -10080,7 +10422,7 @@
       "id": "sfx_v10",
       "src": "lf-001/sfx/click.wav",
       "role": "sfx",
-      "start": 185.06,
+      "start": 197.51,
       "offset": 0,
       "duration": 0.53,
       "gainDb": 2,
@@ -10092,7 +10434,7 @@
       "id": "sfx_v11",
       "src": "lf-001/sfx/impact.wav",
       "role": "sfx",
-      "start": 203.24,
+      "start": 222.14,
       "offset": 0,
       "duration": 2.4,
       "gainDb": 2,
@@ -10104,7 +10446,7 @@
       "id": "sfx_v13",
       "src": "lf-001/sfx/whoosh.wav",
       "role": "sfx",
-      "start": 285.46,
+      "start": 320.41,
       "offset": 0,
       "duration": 0.58,
       "gainDb": 2,
@@ -10116,7 +10458,7 @@
       "id": "src0",
       "src": "lf-001/news/orcl-rpo-638.wav",
       "role": "clip-audio",
-      "start": 176.57,
+      "start": 176.84,
       "offset": 0.0,
       "duration": 12,
       "gainDb": -1,
@@ -10128,9 +10470,9 @@
       "id": "src1",
       "src": "lf-001/news/huang-justified.wav",
       "role": "clip-audio",
-      "start": 266.13,
+      "start": 285.3,
       "offset": 0.0,
-      "duration": 16,
+      "duration": 15.6,
       "gainDb": 0,
       "duck": false,
       "fadeIn": 0.1,
@@ -10140,9 +10482,9 @@
       "id": "src2",
       "src": "lf-001/news/orcl-prepaid-75.wav",
       "role": "clip-audio",
-      "start": 201.19,
+      "start": 213.91,
       "offset": 0.0,
-      "duration": 14,
+      "duration": 6.0,
       "gainDb": -1,
       "duck": false,
       "fadeIn": 0.1,
