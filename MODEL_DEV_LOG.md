@@ -630,6 +630,19 @@ Two details that matter:
   `highlightLines` in the schema.
 - **`--crop-pad` is what makes it usable.** Oracle's Q4 release renders 39,524px
   tall. That is not an asset. The 900px around the sentence that matters is.
+- **Crop per PHRASE, not per document.** A single crop spanning three phrases in
+  one announcement came out 1800x2280 — taller than wide, so fitting it into a
+  16:9 frame shrank it to a third of the screen and the text was unreadable. Two
+  tight crops (4.15:1 and 4.71:1) fill the frame instead. Capture the same page
+  as many times as you have sweeps; the images are tiny and the legibility is
+  the whole point.
+- **Pass the image aspect to the component.** Sized at `width: 100%`, a tall
+  screenshot overflows the frame vertically and takes its own highlight
+  off-screen — silently, since the sweep is still "drawn", just outside the
+  visible area. The planner now writes `aspect` from the PNG and the wrapper
+  fits whichever axis runs out first. The wrapper must BE the image box: the
+  highlight boxes are positioned inside it, so letterboxing within a larger
+  element drifts every sweep.
 
 Same run also fixed a real bug: `highlightColor` defaulted to `#111114` under
 `mix-blend-mode: multiply`, which paints a **black bar over the words** — the

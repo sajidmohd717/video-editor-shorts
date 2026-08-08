@@ -924,7 +924,7 @@
     {
       "id": "f25",
       "start": 104.56,
-      "end": 107.784,
+      "end": 107.23,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -952,8 +952,8 @@
     },
     {
       "id": "f26",
-      "start": 107.784,
-      "end": 111.008,
+      "start": 107.23,
+      "end": 109.9,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -980,9 +980,45 @@
       "transitionDuration": 0
     },
     {
+      "id": "v9",
+      "start": 109.9,
+      "end": 111.78,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "v10",
+      "start": 111.78,
+      "end": 115.38,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f27",
-      "start": 111.008,
-      "end": 114.232,
+      "start": 115.38,
+      "end": 118.03,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1010,8 +1046,8 @@
     },
     {
       "id": "f28",
-      "start": 114.232,
-      "end": 117.456,
+      "start": 118.03,
+      "end": 120.68,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1038,38 +1074,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "f29",
-      "start": 117.456,
-      "end": 120.68,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-30243446.mp4",
-          "offset": 1.8,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "v9",
+      "id": "v11",
       "start": 120.68,
-      "end": 125.18,
+      "end": 121.9,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1096,9 +1103,74 @@
       "transitionDuration": 0
     },
     {
-      "id": "f30",
-      "start": 125.18,
+      "id": "v12",
+      "start": 121.9,
+      "end": 126.1,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f29",
+      "start": 126.1,
       "end": 126.22,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30243446.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "v13",
+      "start": 126.22,
+      "end": 134.22,
+      "layout": "graphic",
+      "background": "#0B0B0F",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f30",
+      "start": 134.22,
+      "end": 138.3,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1125,54 +1197,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "v10",
-      "start": 126.22,
-      "end": 134.22,
-      "layout": "graphic",
-      "background": "#0B0B0F",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f31",
-      "start": 134.22,
-      "end": 138.3,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-15357261.mp4",
-          "offset": 1.8,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "v11",
+      "id": "v14",
       "start": 138.3,
       "end": 143.8,
       "layout": "full",
@@ -1201,9 +1226,38 @@
       "transitionDuration": 0
     },
     {
-      "id": "f32",
+      "id": "f31",
       "start": 143.8,
       "end": 147.253,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-15357261.mp4",
+          "offset": 1.8,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f32",
+      "start": 147.253,
+      "end": 150.707,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1231,8 +1285,8 @@
     },
     {
       "id": "f33",
-      "start": 147.253,
-      "end": 150.707,
+      "start": 150.707,
+      "end": 154.16,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1260,8 +1314,8 @@
     },
     {
       "id": "f34",
-      "start": 150.707,
-      "end": 154.16,
+      "start": 154.16,
+      "end": 157.613,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1289,8 +1343,8 @@
     },
     {
       "id": "f35",
-      "start": 154.16,
-      "end": 157.613,
+      "start": 157.613,
+      "end": 161.067,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1318,8 +1372,8 @@
     },
     {
       "id": "f36",
-      "start": 157.613,
-      "end": 161.067,
+      "start": 161.067,
+      "end": 164.52,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1346,9 +1400,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v15",
+      "start": 164.52,
+      "end": 167.52,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f37",
-      "start": 161.067,
-      "end": 164.52,
+      "start": 167.52,
+      "end": 170.918,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1375,27 +1447,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "v12",
-      "start": 164.52,
-      "end": 167.52,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
       "id": "f38",
-      "start": 167.52,
-      "end": 170.918,
+      "start": 170.918,
+      "end": 174.317,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1423,8 +1477,8 @@
     },
     {
       "id": "f39",
-      "start": 170.918,
-      "end": 174.317,
+      "start": 174.317,
+      "end": 177.715,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1452,8 +1506,8 @@
     },
     {
       "id": "f40",
-      "start": 174.317,
-      "end": 177.715,
+      "start": 177.715,
+      "end": 181.113,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1481,8 +1535,8 @@
     },
     {
       "id": "f41",
-      "start": 177.715,
-      "end": 181.113,
+      "start": 181.113,
+      "end": 184.512,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1510,8 +1564,8 @@
     },
     {
       "id": "f42",
-      "start": 181.113,
-      "end": 184.512,
+      "start": 184.512,
+      "end": 187.91,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1538,9 +1592,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v16",
+      "start": 187.91,
+      "end": 196.91,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f43",
-      "start": 184.512,
-      "end": 187.91,
+      "start": 196.91,
+      "end": 200.036,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1567,27 +1639,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "v13",
-      "start": 187.91,
-      "end": 196.91,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
       "id": "f44",
-      "start": 196.91,
-      "end": 200.036,
+      "start": 200.036,
+      "end": 203.162,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1615,8 +1669,8 @@
     },
     {
       "id": "f45",
-      "start": 200.036,
-      "end": 203.162,
+      "start": 203.162,
+      "end": 206.288,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1644,8 +1698,8 @@
     },
     {
       "id": "f46",
-      "start": 203.162,
-      "end": 206.288,
+      "start": 206.288,
+      "end": 209.414,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1673,8 +1727,8 @@
     },
     {
       "id": "f47",
-      "start": 206.288,
-      "end": 209.414,
+      "start": 209.414,
+      "end": 212.54,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1701,9 +1755,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v17",
+      "start": 212.54,
+      "end": 225.54,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f48",
-      "start": 209.414,
-      "end": 212.54,
+      "start": 225.54,
+      "end": 228.64,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1730,27 +1802,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "v14",
-      "start": 212.54,
-      "end": 225.54,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
       "id": "f49",
-      "start": 225.54,
-      "end": 228.64,
+      "start": 228.64,
+      "end": 231.74,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1777,36 +1831,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "f50",
-      "start": 228.64,
-      "end": 231.74,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-30243446.mp4",
-          "offset": 3.1,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "v15",
+      "id": "v18",
       "start": 231.74,
       "end": 234.94,
       "layout": "full",
@@ -1835,9 +1860,38 @@
       "transitionDuration": 0
     },
     {
-      "id": "f51",
+      "id": "f50",
       "start": 234.94,
-      "end": 238.051,
+      "end": 238.273,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/stock/pexels-video-30243446.mp4",
+          "offset": 3.1,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.06,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "f51",
+      "start": 238.273,
+      "end": 241.607,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1865,8 +1919,8 @@
     },
     {
       "id": "f52",
-      "start": 238.051,
-      "end": 241.162,
+      "start": 241.607,
+      "end": 244.94,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1893,9 +1947,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v19",
+      "start": 244.94,
+      "end": 249.94,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f53",
-      "start": 241.162,
-      "end": 244.272,
+      "start": 249.94,
+      "end": 253.12,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1923,8 +1995,8 @@
     },
     {
       "id": "f54",
-      "start": 244.272,
-      "end": 247.383,
+      "start": 253.12,
+      "end": 256.3,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1952,8 +2024,8 @@
     },
     {
       "id": "f55",
-      "start": 247.383,
-      "end": 250.494,
+      "start": 256.3,
+      "end": 259.48,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -1981,8 +2053,8 @@
     },
     {
       "id": "f56",
-      "start": 250.494,
-      "end": 253.605,
+      "start": 259.48,
+      "end": 262.66,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2010,8 +2082,8 @@
     },
     {
       "id": "f57",
-      "start": 253.605,
-      "end": 256.715,
+      "start": 262.66,
+      "end": 265.84,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2039,8 +2111,8 @@
     },
     {
       "id": "f58",
-      "start": 256.715,
-      "end": 259.826,
+      "start": 265.84,
+      "end": 269.02,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2068,8 +2140,8 @@
     },
     {
       "id": "f59",
-      "start": 259.826,
-      "end": 262.937,
+      "start": 269.02,
+      "end": 272.2,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2097,8 +2169,8 @@
     },
     {
       "id": "f60",
-      "start": 262.937,
-      "end": 266.048,
+      "start": 272.2,
+      "end": 275.38,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2125,9 +2197,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v20",
+      "start": 275.38,
+      "end": 290.98,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f61",
-      "start": 266.048,
-      "end": 269.158,
+      "start": 290.98,
+      "end": 294.285,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2155,8 +2245,8 @@
     },
     {
       "id": "f62",
-      "start": 269.158,
-      "end": 272.269,
+      "start": 294.285,
+      "end": 297.59,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2184,8 +2274,8 @@
     },
     {
       "id": "f63",
-      "start": 272.269,
-      "end": 275.38,
+      "start": 297.59,
+      "end": 300.895,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2212,27 +2302,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "v16",
-      "start": 275.38,
-      "end": 290.98,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
       "id": "f64",
-      "start": 290.98,
-      "end": 294.285,
+      "start": 300.895,
+      "end": 304.2,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2260,8 +2332,8 @@
     },
     {
       "id": "f65",
-      "start": 294.285,
-      "end": 297.59,
+      "start": 304.2,
+      "end": 307.505,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2289,8 +2361,8 @@
     },
     {
       "id": "f66",
-      "start": 297.59,
-      "end": 300.895,
+      "start": 307.505,
+      "end": 310.81,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2317,9 +2389,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v21",
+      "start": 310.81,
+      "end": 313.81,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f67",
-      "start": 300.895,
-      "end": 304.2,
+      "start": 313.81,
+      "end": 316.991,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2347,8 +2437,8 @@
     },
     {
       "id": "f68",
-      "start": 304.2,
-      "end": 307.505,
+      "start": 316.991,
+      "end": 320.172,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2376,8 +2466,8 @@
     },
     {
       "id": "f69",
-      "start": 307.505,
-      "end": 310.81,
+      "start": 320.172,
+      "end": 323.353,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2404,27 +2494,9 @@
       "transitionDuration": 0
     },
     {
-      "id": "v17",
-      "start": 310.81,
-      "end": 313.81,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
       "id": "f70",
-      "start": 313.81,
-      "end": 316.991,
+      "start": 323.353,
+      "end": 326.534,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2452,8 +2524,8 @@
     },
     {
       "id": "f71",
-      "start": 316.991,
-      "end": 320.172,
+      "start": 326.534,
+      "end": 329.716,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2481,8 +2553,8 @@
     },
     {
       "id": "f72",
-      "start": 320.172,
-      "end": 323.353,
+      "start": 329.716,
+      "end": 332.897,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2510,8 +2582,8 @@
     },
     {
       "id": "f73",
-      "start": 323.353,
-      "end": 326.534,
+      "start": 332.897,
+      "end": 336.078,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2539,8 +2611,8 @@
     },
     {
       "id": "f74",
-      "start": 326.534,
-      "end": 329.716,
+      "start": 336.078,
+      "end": 339.259,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2568,8 +2640,8 @@
     },
     {
       "id": "f75",
-      "start": 329.716,
-      "end": 332.897,
+      "start": 339.259,
+      "end": 342.44,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2596,9 +2668,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v22",
+      "start": 342.44,
+      "end": 356.44,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f76",
-      "start": 332.897,
-      "end": 336.078,
+      "start": 356.44,
+      "end": 360.26,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2626,8 +2716,8 @@
     },
     {
       "id": "f77",
-      "start": 336.078,
-      "end": 339.259,
+      "start": 360.26,
+      "end": 364.08,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2654,112 +2744,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "f78",
-      "start": 339.259,
-      "end": 342.44,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-27844418.mp4",
-          "offset": 4.4,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "v18",
-      "start": 342.44,
-      "end": 356.44,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
-      "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f79",
-      "start": 356.44,
-      "end": 360.26,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-38557069.mp4",
-          "offset": 4.4,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f80",
-      "start": 360.26,
-      "end": 364.08,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-5028622.mp4",
-          "offset": 4.4,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "v19",
+      "id": "v23",
       "start": 364.08,
       "end": 369.08,
       "layout": "graphic",
@@ -2844,6 +2829,7 @@
       "z": 55,
       "highlightMode": "marker",
       "src": "lf-001/articles/nvidia-qualifiers.png",
+      "aspect": 2.5788,
       "outlet": "nvidianews.nvidia.com",
       "highlightBox": {
         "x": 0.3236111111111111,
@@ -2860,6 +2846,7 @@
       "z": 55,
       "highlightMode": "marker",
       "src": "lf-001/articles/nvidia-qualifiers.png",
+      "aspect": 2.5788,
       "outlet": "nvidianews.nvidia.com",
       "highlightBox": {
         "x": 0.32722222222222225,
@@ -2876,6 +2863,7 @@
       "z": 55,
       "highlightMode": "marker",
       "src": "lf-001/articles/nvidia-qualifiers.png",
+      "aspect": 2.5788,
       "outlet": "nvidianews.nvidia.com",
       "highlightBox": {
         "x": 0.461875,
@@ -2892,6 +2880,7 @@
       "z": 55,
       "highlightMode": "marker",
       "src": "lf-001/articles/nvidia-qualifiers.png",
+      "aspect": 2.5788,
       "outlet": "nvidianews.nvidia.com",
       "highlightBox": {
         "x": 0.05,
@@ -2925,8 +2914,73 @@
       "size": 58
     },
     {
-      "type": "comparison",
+      "type": "article-clip",
+      "id": "ov9",
+      "start": 109.9,
+      "end": 111.78,
+      "z": 55,
+      "highlightMode": "marker",
+      "src": "lf-001/articles/anthropic-invest.png",
+      "aspect": 4.1475,
+      "outlet": "anthropic.com",
+      "highlightBox": {
+        "x": 0.14444444444444443,
+        "y": 0.39108554996405465,
+        "width": 0.7016493055555556,
+        "height": 0.21782890007189074
+      },
+      "highlightLines": [
+        {
+          "x": 0.8013715277777778,
+          "y": 0.39108554996405465,
+          "width": 0.04472222222222222,
+          "height": 0.09662113587347232
+        },
+        {
+          "x": 0.14444444444444443,
+          "y": 0.512293314162473,
+          "width": 0.09173611111111112,
+          "height": 0.09662113587347232
+        }
+      ]
+    },
+    {
+      "type": "article-clip",
       "id": "ov10",
+      "start": 111.78,
+      "end": 115.38,
+      "z": 55,
+      "highlightMode": "marker",
+      "src": "lf-001/articles/anthropic-invest.png",
+      "aspect": 4.1475,
+      "outlet": "anthropic.com",
+      "highlightBox": {
+        "x": 0.2771875,
+        "y": 0.512293314162473,
+        "width": 0.13034722222222223,
+        "height": 0.09662113587347232
+      }
+    },
+    {
+      "type": "article-clip",
+      "id": "ov12",
+      "start": 121.9,
+      "end": 126.1,
+      "z": 55,
+      "highlightMode": "marker",
+      "src": "lf-001/articles/anthropic-azure.png",
+      "aspect": 4.712,
+      "outlet": "anthropic.com",
+      "highlightBox": {
+        "x": 0.4812326388888889,
+        "y": 0.44502617801047123,
+        "width": 0.3312673611111111,
+        "height": 0.1099476439790576
+      }
+    },
+    {
+      "type": "comparison",
+      "id": "ov13",
       "start": 126.22,
       "end": 134.22,
       "z": 60,
@@ -2940,7 +2994,7 @@
     },
     {
       "type": "date-card",
-      "id": "ov12",
+      "id": "ov15",
       "start": 164.52,
       "end": 167.52,
       "z": 60,
@@ -2949,7 +3003,7 @@
     },
     {
       "type": "stat-chart",
-      "id": "ov13",
+      "id": "ov16",
       "start": 187.91,
       "end": 196.91,
       "z": 60,
@@ -2974,7 +3028,7 @@
     },
     {
       "type": "quote-card",
-      "id": "ov14",
+      "id": "ov17",
       "start": 212.54,
       "end": 225.54,
       "z": 60,
@@ -2983,8 +3037,25 @@
       "size": 62
     },
     {
+      "type": "article-clip",
+      "id": "ov19",
+      "start": 244.94,
+      "end": 249.94,
+      "z": 55,
+      "highlightMode": "marker",
+      "src": "lf-001/articles/oracle-rpo.png",
+      "aspect": 2.148,
+      "outlet": "investor.oracle.com",
+      "highlightBox": {
+        "x": 0.13552083333333334,
+        "y": 0.630071599045346,
+        "width": 0.47522569444444446,
+        "height": 0.059665871121718374
+      }
+    },
+    {
       "type": "quote-card",
-      "id": "ov16",
+      "id": "ov20",
       "start": 275.38,
       "end": 290.98,
       "z": 60,
@@ -2994,7 +3065,7 @@
     },
     {
       "type": "date-card",
-      "id": "ov17",
+      "id": "ov21",
       "start": 310.81,
       "end": 313.81,
       "z": 60,
@@ -3002,7 +3073,7 @@
     },
     {
       "type": "entity-graph",
-      "id": "ov18",
+      "id": "ov22",
       "start": 342.44,
       "end": 356.44,
       "z": 60,
@@ -3083,7 +3154,7 @@
     },
     {
       "type": "quote-card",
-      "id": "ov19",
+      "id": "ov23",
       "start": 364.08,
       "end": 369.08,
       "z": 60,
@@ -9845,7 +9916,43 @@
       "fadeOut": 0.1
     },
     {
+      "id": "sfx_v9",
+      "src": "lf-001/sfx/highlight.wav",
+      "role": "sfx",
+      "start": 109.85,
+      "offset": 0,
+      "duration": 0.55,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.1
+    },
+    {
       "id": "sfx_v10",
+      "src": "lf-001/sfx/highlight2.wav",
+      "role": "sfx",
+      "start": 111.73,
+      "offset": 0,
+      "duration": 0.55,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.1
+    },
+    {
+      "id": "sfx_v12",
+      "src": "lf-001/sfx/highlight.wav",
+      "role": "sfx",
+      "start": 121.85,
+      "offset": 0,
+      "duration": 0.55,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.1
+    },
+    {
+      "id": "sfx_v13",
       "src": "lf-001/sfx/impact.wav",
       "role": "sfx",
       "start": 126.17,
@@ -9857,7 +9964,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v12",
+      "id": "sfx_v15",
       "src": "lf-001/sfx/pageturn.wav",
       "role": "sfx",
       "start": 164.47,
@@ -9869,7 +9976,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v13",
+      "id": "sfx_v16",
       "src": "lf-001/sfx/click.wav",
       "role": "sfx",
       "start": 187.86,
@@ -9881,7 +9988,7 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v14",
+      "id": "sfx_v17",
       "src": "lf-001/sfx/impact.wav",
       "role": "sfx",
       "start": 212.49,
@@ -9893,7 +10000,19 @@
       "fadeOut": 0.1
     },
     {
-      "id": "sfx_v17",
+      "id": "sfx_v19",
+      "src": "lf-001/sfx/highlight2.wav",
+      "role": "sfx",
+      "start": 244.89,
+      "offset": 0,
+      "duration": 0.55,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.1
+    },
+    {
+      "id": "sfx_v21",
       "src": "lf-001/sfx/whoosh.wav",
       "role": "sfx",
       "start": 310.76,

@@ -387,6 +387,11 @@ def build(job: Job) -> dict:
                 if entry is None:
                     raise SystemExit("article-clip visual needs an 'article' name")
                 payload["src"] = entry["file"]
+                png = project.assets / Path(entry["file"]).relative_to(job.slug)
+                if png.exists():
+                    from PIL import Image
+                    with Image.open(png) as im:
+                        payload["aspect"] = round(im.width / im.height, 4)
                 payload.setdefault("outlet", entry.get("outlet", ""))
                 if v.get("highlight"):
                     box, lines = article_box(v["article"], v["highlight"])

@@ -282,6 +282,16 @@ export const overlaySchema = z.discriminatedUnion("type", [
       })
       .optional(),
     /**
+     * Screenshot aspect (w/h), written by the planner from the PNG itself.
+     *
+     * Without it the image is sized `width: 100%` and a TALL document overflows
+     * the frame vertically — taking its own highlight off-screen, silently. The
+     * highlight boxes are positioned against this element, so it has to match
+     * the rendered image exactly; letterboxing inside a larger box would drift
+     * every sweep.
+     */
+    aspect: z.number().optional(),
+    /**
      * Per-line boxes for a phrase that wraps. One box around a two-line phrase
      * also paints the empty gutter to the right of the first line and the
      * indent to the left of the second, which reads as a block, not a sweep.

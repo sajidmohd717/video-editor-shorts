@@ -25,6 +25,7 @@ export const ArticleClip: React.FC<Props> = ({
   highlight,
   highlightBox,
   highlightLines,
+  aspect,
   highlightMode,
   highlightStart,
   highlightDuration,
@@ -72,7 +73,16 @@ export const ArticleClip: React.FC<Props> = ({
         <div
           style={{
             position: "relative",
-            width: "100%",
+            // Fit the document to whichever axis runs out first. The wrapper must
+            // BE the image box — highlights are positioned inside it.
+            ...(aspect
+              ? (() => {
+                  const availW = width - 112;
+                  const availH = wide ? height * 0.60 : height;
+                  const w = Math.min(availW, availH * aspect);
+                  return { width: w, height: w / aspect };
+                })()
+              : { width: "100%" }),
             opacity: enter,
             transform: `scale(${0.97 + enter * 0.03})`,
             // Isolate so the highlight's blend mode acts on the screenshot only,

@@ -407,6 +407,49 @@
       "asset": "oracle-cloudworld",
       "seconds": 3.2,
       "why": "L17 — narration names Oracle; Oracle's own CloudWorld title card. Clean brand, no partner logos, unlike the highlights reel."
+    },
+    {
+      "cue": "committing up to ten billion",
+      "type": "article-clip",
+      "seconds": 4.0,
+      "article": "anthropic-invest",
+      "highlight": "up to $10 billion",
+      "highlightMode": "marker",
+      "sfx": "highlight",
+      "z": 55,
+      "why": "shot list, Ch3 — Anthropic's own announcement, highlighted as the narration reads the qualifier"
+    },
+    {
+      "cue": "and Microsoft up to five billion",
+      "type": "article-clip",
+      "seconds": 3.6,
+      "article": "anthropic-invest",
+      "highlight": "up to $5 billion",
+      "highlightMode": "marker",
+      "sfx": "highlight2",
+      "z": 55
+    },
+    {
+      "cue": "thirty billion dollars of Microsoft Azure",
+      "type": "article-clip",
+      "seconds": 4.2,
+      "article": "anthropic-azure",
+      "highlight": "$30 billion of Azure compute capacity",
+      "highlightMode": "marker",
+      "sfx": "highlight",
+      "z": 55,
+      "why": "same page — the money going BACK, on the document that announced it"
+    },
+    {
+      "cue": "sitting in a public document",
+      "type": "article-clip",
+      "seconds": 5.0,
+      "article": "oracle-rpo",
+      "highlight": "prepaid and customer supplied hardware portions",
+      "highlightMode": "marker",
+      "sfx": "highlight2",
+      "z": 55,
+      "why": "shot list, Ch4 — 'return to the document'. The narration says almost nobody read it; showing it is the point."
     }
   ]
 }
