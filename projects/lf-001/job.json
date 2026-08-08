@@ -59,7 +59,8 @@
     "sam-altman": "lf-001/news/sam-altman.mp4",
     "dario-amodei": "lf-001/news/dario-amodei.mp4",
     "oracle-cloudworld": "lf-001/news/oracle-cloudworld.mp4",
-    "huang-justified": "lf-001/news/huang-justified.mp4"
+    "huang-justified": "lf-001/news/huang-justified.mp4",
+    "bbg-market": "lf-001/news/bbg-market.mp4"
   },
   "_coldOpenDropped": "A 3-clip broadcaster montage ($10B/$90B/a trillion) was built and cut. Dropped on the channel owner's call: the CNA chyron read 'CHINA'S AI IPO WAVE' which is off-thesis (L13), and the BBC ident is roughly a fifth of frame on a monetised video. Rebuilding it from primary sources stalls because the only primary voice available is Oracle's $638B line, which is Ch4's payoff and would be spent in the first ten seconds. The retention question it was meant to test is still open.",
   "_broll": "Reviewed on a contact sheet at 1s AND 4s before selection (F6, F29). 7 of 28 rejected: search drift (a ski gondola from 'fiber optic cable', a quarry from 'data center construction'), an unusable blurred frame, a stock-photo man celebrating at a laptop (wrong register for this argument), a near-duplicate of racks-blue, wind turbines (reads as a renewables story), and an office block with the Citi logo legible — see F38.",
@@ -142,7 +143,7 @@
     {
       "cue": "Every few weeks",
       "type": "date-card",
-      "seconds": 3.0,
+      "seconds": 1.8,
       "text": "Who is actually paying?",
       "sub": "following the money",
       "sfx": "ding",
@@ -450,6 +451,55 @@
       "sfx": "highlight2",
       "z": 55,
       "why": "shot list, Ch4 — 'return to the document'. The narration says almost nobody read it; showing it is the point."
+    },
+    {
+      "cue": "A hundred billion dollars",
+      "type": "big-number",
+      "seconds": 1.45,
+      "value": 100,
+      "label": "NVIDIA into OpenAI",
+      "countSeconds": 0.75,
+      "z": 60,
+      "why": "L19 — three figures land in four seconds; each gets its own card rather than one held b-roll shot."
+    },
+    {
+      "cue": "Three hundred billion",
+      "type": "big-number",
+      "seconds": 1.25,
+      "value": 300,
+      "label": "OpenAI to Oracle",
+      "countSeconds": 0.7,
+      "z": 60
+    },
+    {
+      "cue": "Six hundred and",
+      "type": "big-number",
+      "seconds": 2.9,
+      "value": 638,
+      "label": "Oracle remaining performance obligations",
+      "sub": "announced — not transferred",
+      "countSeconds": 1.0,
+      "sfx": "impact",
+      "z": 60,
+      "why": "the biggest number gets the longest hold and the qualifier, because it is the video's thesis in one figure"
+    },
+    {
+      "cue": "press releases and regulatory filings",
+      "type": "article-clip",
+      "seconds": 3.4,
+      "article": "oracle-rpo",
+      "highlight": "Remaining Performance Obligations, or RPO, ended the quarter at",
+      "highlightMode": "marker",
+      "sfx": "pageturn",
+      "z": 55,
+      "why": "the narration says the numbers are in filings — so show the filing, drifting, rather than describing it"
+    }
+  ],
+  "_coldOpen": "Hook first. A market board with NASDAQ +2.26% and S&P +1.15% in green shows what 'AI spending' looks like before a single word of narration. The first 10 seconds decide whether anyone stays (L19).",
+  "coldOpen": [
+    {
+      "asset": "bbg-market",
+      "seconds": 4.5
     }
   ]
 }

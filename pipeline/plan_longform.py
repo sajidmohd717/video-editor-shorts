@@ -427,7 +427,10 @@ def build(job: Job) -> dict:
     cursor = 0.0
     gaps: list[tuple[float, float]] = []
     for s, e in covered:
-        if s > cursor + 0.05:
+        # Anything under ~0.2s is not a shot, it's a flash. Filling a 60ms hole
+        # between two cards puts two frames of unrelated b-roll on screen; those
+        # holes are closed later by extending the previous clip instead.
+        if s > cursor + 0.45:
             gaps.append((cursor, s))
         cursor = max(cursor, e)
     if cursor < duration - 0.05:
@@ -465,6 +468,18 @@ def build(job: Job) -> dict:
                 fi += 1
 
     clips.sort(key=lambda c: c["start"])
+
+    # Close short gaps by extending the previous clip.
+    #
+    # Adjacent visuals placed from cue times land a few milliseconds apart after
+    # rounding. The gap filler ignores anything under 0.05s while the coverage
+    # assertion checks at 0.001s, so a 40ms hole fell between the two and failed
+    # the plan. Extending is better than emitting a 1-frame filler clip, which
+    # would flash a different image for a single frame.
+    for n in range(len(clips) - 1):
+        gap = clips[n + 1]["start"] - clips[n]["end"]
+        if 0 < gap <= 0.5:
+            clips[n]["end"] = clips[n + 1]["start"]
 
     # --- source-audio moments -------------------------------------------------
     # L5: a clip speaks only where the fact that THEY said it is the evidence.
@@ -550,7 +565,7 @@ def build(job: Job) -> dict:
     # caption track then prints the same sentence a second time, in a different
     # font, lower down. Two renderings of one sentence is worse than either.
     TEXT_CARDS = {"quote-card", "date-card", "comparison", "word-card", "kinetic-title",
-                  "entity-graph"}
+                  "entity-graph", "big-number"}
     mute = [(o["start"], o["end"]) for o in overlays if o["type"] in TEXT_CARDS]
     # Caption cues are in NARRATION time; everything else on the timeline is in
     # video time. Shift before comparing, or the mute test silently uses two

@@ -427,6 +427,25 @@ export const overlaySchema = z.discriminatedUnion("type", [
   }),
 
   /**
+   * One enormous figure that counts up to itself. For openings where the
+   * narration fires several numbers in quick succession and a held b-roll shot
+   * would waste them (L19).
+   */
+  baseOverlay.extend({
+    type: z.literal("big-number"),
+    value: z.number(),
+    prefix: z.string().default("$"),
+    suffix: z.string().default("B"),
+    /** Small caps line above, e.g. "NVIDIA into OpenAI". */
+    label: z.string().default(""),
+    /** Qualifier below, revealed late — e.g. "announced, not transferred". */
+    sub: z.string().default(""),
+    accent: z.string().default("#FF5A3C"),
+    background: z.string().default("#0B0B0F"),
+    countSeconds: z.number().default(1.1),
+  }),
+
+  /**
    * Full-screen typographic word card. Ref 003's cold open fires four of these in
    * five seconds, each in a deliberately different typeface.
    */
