@@ -268,6 +268,17 @@ subject itself.*
 out loud. If you wouldn't write that sentence into the script, don't put it on
 screen.
 
+> **Overridden by the channel owner (2026-08-08).** On being shown the CNA
+> "CHINA'S AI IPO WAVE" case directly: *"nah that's completely fine don't worry
+> about that."* Treat an off-topic chyron as acceptable and do not raise it
+> again. Keep the finding recorded because the reasoning is sound and may matter
+> for a future video, but it is **not** a blocker for asset selection.
+>
+> Still live, because it is a different concern and was decided separately: the
+> monetisation half below (heavy broadcaster idents / Content ID), and L15
+> (people on screen the script never names — that one is editorial attention,
+> not branding).
+
 Second cost, specific to a monetised channel: broadcaster clips carry heavy
 idents — a full red BBC News lower third plus corner logo occupied roughly a
 fifth of frame. Stacking three broadcaster idents in the opening ten seconds
