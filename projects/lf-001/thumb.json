@@ -1,0 +1,62 @@
+{
+ "version": 1,
+ "meta": {
+  "title": "thumb",
+  "slug": "lf-001",
+  "durationInSeconds": 9,
+  "fps": 30,
+  "width": 1280,
+  "height": 720
+ },
+ "pacing": [
+  {
+   "start": 0,
+   "end": 9,
+   "energy": 0.4,
+   "label": "build"
+  }
+ ],
+ "clips": [
+  {
+   "id": "c0",
+   "start": 0,
+   "end": 9,
+   "layout": "graphic",
+   "background": "#0B0B0F",
+   "sources": [],
+   "camera": {
+    "kind": "none",
+    "from": 1,
+    "to": 1,
+    "originX": 0.5,
+    "originY": 0.5
+   },
+   "filters": [],
+   "transitionIn": "cut",
+   "transitionDuration": 0
+  }
+ ],
+ "captions": {
+  "style": {},
+  "cues": []
+ },
+ "audio": [],
+ "overlays": [
+  {
+   "type": "big-number",
+   "id": "a",
+   "start": 0,
+   "end": 9,
+   "z": 50,
+   "value": 638,
+   "prefix": "$",
+   "suffix": "B",
+   "label": "",
+   "sub": "WHO ACTUALLY PAID?",
+   "countSeconds": 0.3,
+   "accent": "#FF5A3C",
+   "background": "#0B0B0F",
+   "scale": 1.7
+  }
+ ]
+}

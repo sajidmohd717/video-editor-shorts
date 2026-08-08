@@ -1,5 +1,5 @@
 import React from "react";
-import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import type { Overlay } from "../../timeline/schema";
 
 type Props = Extract<Overlay, { type: "entity-graph" }>;
@@ -168,6 +168,28 @@ export const EntityGraph: React.FC<Props> = ({
           return (
             <g key={n.id} opacity={Math.min(1, enter * 1.5)}>
               <circle cx={n.x * width} cy={n.y * height} r={r} fill={fill} />
+              {/* Brand ring: recognisable at a glance without needing a
+                  trademark image, and it survives being scaled down. */}
+              {n.color ? (
+                <circle
+                  cx={n.x * width}
+                  cy={n.y * height}
+                  r={r + Math.max(3, unit * 0.006)}
+                  fill="none"
+                  stroke={n.color}
+                  strokeWidth={Math.max(4, unit * 0.008)}
+                />
+              ) : null}
+              {n.logo ? (
+                <image
+                  href={/^(https?:|data:)/.test(n.logo) ? n.logo : staticFile(n.logo)}
+                  x={n.x * width - r * 0.62}
+                  y={n.y * height - r * 0.62}
+                  width={r * 1.24}
+                  height={r * 1.24}
+                  preserveAspectRatio="xMidYMid meet"
+                />
+              ) : (
               <text
                 x={n.x * width}
                 y={n.y * height + size * 0.35}
@@ -182,6 +204,7 @@ export const EntityGraph: React.FC<Props> = ({
               >
                 {n.label}
               </text>
+              )}
             </g>
           );
         })}

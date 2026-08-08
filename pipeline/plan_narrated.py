@@ -105,9 +105,12 @@ def build(job: Job) -> dict:
     focus_x = job.source.get("subjectFocusX", 0.5)
 
     # Framings come from the profile but are re-centred on this source's subject.
+    # A dialogue source can override that centre per passage: one global crop
+    # cannot frame speakers who occupy opposite sides of a landscape master.
     framings = [
         {**f, "focusX": focus_x} for f in job.get("camera.framings", [])
     ] or [{"focusX": focus_x, "focusY": 0.42, "from": 1.0, "to": 1.08}]
+    passage_focus_x = job.source.get("passageFocusX", [])
 
     clips: list[dict] = []
     overlays: list[dict] = []
@@ -282,13 +285,15 @@ def build(job: Job) -> dict:
         breathe = 0.5 - 0.5 * math.cos(2 * math.pi * p * 1.5)
         return 1.03 + 0.07 * breathe + 0.09 * p
 
-    def fill_aroll_segments(segments: list[tuple], tag: str, layout: str = "full") -> None:
+    def fill_aroll_segments(segments: list[tuple], tag: str, layout: str = "full",
+                            passage_focus: float | None = None) -> None:
         """Subdivide each sub-segment into shots, so cuts never span a splice."""
         for si, (s, e, shift) in enumerate(segments):
-            fill_aroll(s + shift, e + shift, shift, f"{tag}{si}_", layout)
+            fill_aroll(s + shift, e + shift, shift, f"{tag}{si}_", layout,
+                       passage_focus)
 
     def fill_aroll(start: float, end: float, shift: float, tag: str,
-                   layout: str = "full") -> None:
+                   layout: str = "full", passage_focus: float | None = None) -> None:
         # A letterboxed wide shot doesn't want the usual cut rhythm or punch —
         # the whole point is that the composition is being preserved, and
         # chopping it up or zooming into it undoes that.
@@ -297,7 +302,9 @@ def build(job: Job) -> dict:
         step = (end - start) / n
         for i in range(n):
             a, b = start + i * step, start + (i + 1) * step
-            f = framings[i % len(framings)]
+            f = {**framings[i % len(framings)]}
+            if passage_focus is not None:
+                f["focusX"] = passage_focus
             clip = aroll_clip(f"{tag}{i}", a, b, f, a - shift, layout)
             if layout == "fit":
                 clip["camera"] = {"kind": "punch-in", "from": 1.0, "to": 1.03,
@@ -482,8 +489,11 @@ def build(job: Job) -> dict:
                     f"{len(passages)} passage(s)")
             s, e, segs = place_clip(passages[idx])
             layouts = job.source.get("passageLayouts", [])
+            focus = (passage_focus_x[idx]
+                     if idx < len(passage_focus_x) else focus_x)
             fill_aroll_segments(segs, f"c{idx}_",
-                                layouts[idx] if idx < len(layouts) else "full")
+                                layouts[idx] if idx < len(layouts) else "full",
+                                focus)
             clip_segs[item] = segs
             spans[item] = (s, e)
 
@@ -513,7 +523,15 @@ def build(job: Job) -> dict:
                 # pop slightly after the ear, so exact alignment reads as late.
                 place_sfx(b["sfx"], bs - job.get("audio.sfxLeadSeconds", 0.05))
 
-    v2e = t - gap + tail
+    # `place_vo()` advances `t` by the inter-segment gap, while `place_clip()`
+    # stops exactly at its last source frame. Deriving the duration from `t`
+    # therefore made a clip-ended structure inherit most of the VO-only tail,
+    # leaving an uncovered strip of black frames. The authored span is the one
+    # clock shared by both segment types; only narration gets the deliberate
+    # final visual hold.
+    last_item = structure[-1]
+    last_end = spans[last_item][1]
+    v2e = last_end + (tail if last_item.startswith("vo:") else 0)
 
     # --- transition burns -----------------------------------------------------
     # Only at VO<->clip handoffs, which are the structural seams of the piece.

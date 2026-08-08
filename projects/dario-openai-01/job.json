@@ -1,0 +1,151 @@
+{
+  "slug": "dario-openai-01",
+  "profile": "the-next-curve",
+  "format": "narrated",
+  "title": "Why Dario Amodei Left OpenAI",
+  "structure": [
+    "clip:0",
+    "vo:0",
+    "clip:1",
+    "vo:1",
+    "clip:2",
+    "clip:3",
+    "vo:2",
+    "clip:4"
+  ],
+  "structureWhy": "Open on the interviewer asking the question viewers already have. The answer then unfolds as expectation, correction, evidence, and consequence. Consecutive clip:2 and clip:3 keep Dario's trust argument intact without announcing a false speaker handoff.",
+  "source": {
+    "aroll": "dario-openai-01/aroll-full.mp4",
+    "speaker": "Dario Amodei",
+    "venue": "Bloomberg Originals",
+    "comment": "4K landscape extraction from the publisher upload. Passage boundaries are refined from a transcription of this exact working file before render.",
+    "passages": [
+      [
+        4.76,
+        11.57
+      ],
+      [
+        33.75,
+        43.55
+      ],
+      [
+        48.57,
+        55.25
+      ],
+      [
+        68.79,
+        75.41
+      ],
+      [
+        96.46,
+        104.8
+      ]
+    ],
+    "passageLayouts": [
+      "full",
+      "full",
+      "full",
+      "full",
+      "full"
+    ],
+    "passageFocusX": [
+      0.4,
+      0.64,
+      0.64,
+      0.64,
+      0.64
+    ],
+    "passagesWhy": "0 asks the question cleanly. 1 keeps Dario's concession that safety disagreements existed and his explicit statement that they were not sufficient to leave. 2 names trust and stated values. 3 lands the consequence: he could no longer continue to work with or trust the company. 4 gives Dario the final word: market and public opinion speak louder than drama.",
+    "subjectFocusX": 0.55,
+    "subjectFocusWhy": "The interviewer sits left of centre and Dario sits right of centre. A modest centre-right crop keeps both solo angles readable while preserving looking room."
+  },
+  "publish": {
+    "title": "Why Dario Amodei Left OpenAI",
+    "description": "Dario Amodei says safety disagreements alone were not why he left OpenAI. The breaking point, in his account, was trust.\n\nSource: Bloomberg Originals — The Circuit with Emily Chang\nCommentary and edit: The Next Curve",
+    "tags": [
+      "Dario Amodei",
+      "OpenAI",
+      "Anthropic",
+      "AI safety",
+      "Claude",
+      "artificial intelligence",
+      "tech"
+    ],
+    "categoryId": "28",
+    "madeForKids": false
+  },
+  "rights": {
+    "clearance": "commentary",
+    "speaker": "Dario Amodei",
+    "rightsHolder": "Bloomberg Originals",
+    "sourceUrl": "https://www.youtube.com/watch?v=x2VHFgyawPE",
+    "note": "Short excerpts are evidence for an original, attributed commentary. Narration supplies the editorial spine; source is credited in the description."
+  },
+  "sfx": {
+    "ding": "dario-openai-01/sfx/ding.wav",
+    "pop": "dario-openai-01/sfx/pop.wav",
+    "whoosh": "dario-openai-01/sfx/whoosh.wav"
+  },
+  "sfxDurations": {
+    "ding": 1.4,
+    "whoosh": 0.58,
+    "pop": 0.75
+  },
+  "sfxCues": [
+    {
+      "name": "ding",
+      "at": 0.0,
+      "gainDb": 0,
+      "why": "A restrained frame-one attention cue under the interviewer's question."
+    }
+  ],
+  "beats": [
+    {
+      "at": "vo0",
+      "type": "comparison",
+      "beforeLabel": "EXPECTED",
+      "beforeValue": "SAFETY",
+      "afterLabel": "DARIO'S ANSWER",
+      "afterValue": "NOT ENOUGH",
+      "afterDelay": 1.35,
+      "tone": "light",
+      "why": "The narration makes a clean reversal, so a comparison shows the change in claim rather than inventing a trend."
+    },
+    {
+      "at": "vo1",
+      "type": "word-card",
+      "text": "TRUST.",
+      "face": "serif-display",
+      "size": 188,
+      "color": "#FF5A3C",
+      "why": "Trust is the hinge of Dario's explanation and needs one held visual, not a montage."
+    },
+    {
+      "at": "vo2",
+      "type": "comparison",
+      "beforeLabel": "STAY",
+      "beforeValue": "ARGUE",
+      "afterLabel": "LEAVE",
+      "afterValue": "BUILD",
+      "afterDelay": 1.25,
+      "tone": "light",
+      "why": "The final narration describes a choice between two actions; a side-by-side comparison matches that structure."
+    }
+  ],
+  "profileOverrides": {
+    "captions": {
+      "emphasisKeywords": [
+        "Dario",
+        "OpenAI",
+        "Anthropic",
+        "safety",
+        "trust",
+        "values",
+        "honest",
+        "leave",
+        "market",
+        "wins"
+      ]
+    }
+  }
+}

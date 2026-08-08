@@ -219,6 +219,11 @@ coupling that was invisible in the code and obvious in one still.
 Reinforces the shorts habit: `npx remotion still` on every new overlay type, at
 **both** aspect ratios, before wiring it into a render.
 
+**Update:** the same failure turned up again on a different axis — `ClipLayer`
+hardcoded 30fps while `meta.fps` was configurable (F41). Treat this as a class,
+not an incident: whenever a value moves into `meta`, grep for the literal it
+replaced the same day.
+
 Also: `tone` and card background were two independent knobs that had to agree. A
 `tone: "dark"` comparison rendered white text on the profile's light canvas —
 invisible on screen and invisible in review. The planner now derives one from the

@@ -180,6 +180,11 @@ Two habits follow:
   page — equally primary, no identity to send.
 - **Two clocks in one file is a standing hazard.** Caption cues are in narration
   time; timelines are in video time. Convert once, at the boundary (L12).
+- **Never convert seconds→frames with a literal.** Use `useVideoConfig()`; fps is
+  a timeline property because one composition serves shorts *and* long-form
+  (F41). When any value moves into `meta`, grep for its old literal the same day.
+- **CRF isn't the only quality knob.** Frames are JPEG-encoded before x264 sees
+  them, and the default quality is 80 regardless of CRF (F42).
 
 ---
 
@@ -204,7 +209,7 @@ switch. Update the doc when you do.
 ## Current state
 
 Working end-to-end: ingest → TTS → transcribe → captions → stock/screenshots →
-plan → render → master → upload. Three videos built, 36 findings logged.
+plan → render → master → upload. Three videos built, 42 findings logged.
 
 **One data point so far.** `yc-sam-01` held **32%** stayed-to-watch against ~63%
 for the channel's earlier clip-only cuts. Average view duration was 53%, so the
@@ -246,6 +251,11 @@ Known gaps, roughly in priority order:
 5. `plan_explainer.py` still hardcodes its asset map; only `plan_narrated.py` has
    been moved onto profiles/jobs.
 6. Both planners duplicate helpers; they should share a base.
+7. **Six Remotion packages are installed and imported nowhere** (three, r3f,
+   transitions, media-utils, shapes). Two are worth adopting rather than
+   deleting — see ARCHITECTURE, "Known weak points". `getVideoMetadata` as a
+   clip-bounds assertion is the highest-value item on this list: it turns F39's
+   class of defect from "found by watching" into "cannot ship".
 
 ## Improving from new references
 

@@ -1,5 +1,12 @@
 import React from "react";
-import { AbsoluteFill, OffthreadVideo, interpolate, useCurrentFrame, staticFile } from "remotion";
+import {
+  AbsoluteFill,
+  OffthreadVideo,
+  interpolate,
+  useCurrentFrame,
+  useVideoConfig,
+  staticFile,
+} from "remotion";
 import type { Clip } from "../timeline/schema";
 import { buildFilterChain, needsGrainOverlay } from "../effects/filters";
 import { Grain } from "../effects/Grain";
@@ -61,6 +68,7 @@ const SourceView: React.FC<{
   /** Preserve the source's own aspect instead of cropping to fill. */
   fit?: boolean;
 }> = ({ source, clip, localFrame, durationInFrames, fit }) => {
+  const { fps } = useVideoConfig();
   const camera = useCameraTransform(clip, localFrame, durationInFrames);
   const filter = buildFilterChain(clip.filters);
   const src = resolveSrc(source.src);
@@ -92,7 +100,9 @@ const SourceView: React.FC<{
       {src ? (
         <OffthreadVideo
           src={src}
-          startFrom={Math.round(source.offset * 30)}
+          // Seconds -> frames at the timeline's own fps, never a literal. The
+          // composition serves both 30fps shorts and long-form off `meta.fps`.
+          trimBefore={Math.round(source.offset * fps)}
           muted={source.muted}
           style={inner}
         />
@@ -123,11 +133,12 @@ export const ClipLayer: React.FC<{ clip: Clip; durationInFrames: number }> = ({
   durationInFrames,
 }) => {
   const localFrame = useCurrentFrame();
+  const { fps } = useVideoConfig();
   const [a, b] = clip.sources;
 
   // Cross-dissolve is just an opacity ramp on the incoming clip — the outgoing clip
   // is still mounted underneath because the planner overlaps their time ranges.
-  const dissolveFrames = Math.max(1, Math.round(clip.transitionDuration * 30));
+  const dissolveFrames = Math.max(1, Math.round(clip.transitionDuration * fps));
   const opacity =
     clip.transitionIn === "dissolve"
       ? interpolate(localFrame, [0, dissolveFrames], [0, 1], {

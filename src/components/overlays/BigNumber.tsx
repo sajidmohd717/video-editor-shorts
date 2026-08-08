@@ -26,6 +26,7 @@ export const BigNumber: React.FC<Props> = ({
   accent,
   background,
   countSeconds,
+  scale,
 }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
@@ -51,7 +52,7 @@ export const BigNumber: React.FC<Props> = ({
   const ruleW = interpolate(p, [0, 1], [0, width * 0.26]);
 
   const decimals = value < 10 ? 1 : 0;
-  const size = Math.min(width * 0.155, height * 0.28);
+  const size = Math.min(width * 0.155, height * 0.28) * scale;
 
   return (
     <AbsoluteFill
@@ -67,7 +68,7 @@ export const BigNumber: React.FC<Props> = ({
           style={{
             fontFamily: "Poppins, sans-serif",
             fontWeight: 600,
-            fontSize: Math.min(width * 0.017, 34),
+            fontSize: Math.min(width * 0.017, 34) * scale,
             letterSpacing: "0.18em",
             textTransform: "uppercase",
             color: "rgba(255,255,255,0.42)",
@@ -114,7 +115,7 @@ export const BigNumber: React.FC<Props> = ({
           style={{
             fontFamily: "Poppins, sans-serif",
             fontWeight: 500,
-            fontSize: Math.min(width * 0.019, 38),
+            fontSize: Math.min(width * 0.019, 38) * scale,
             color: "rgba(255,255,255,0.62)",
             marginTop: height * 0.04,
             opacity: interpolate(t, [countSeconds * 0.6, countSeconds * 0.6 + 0.5], [0, 1], {

@@ -1,0 +1,3087 @@
+{
+  "version": 1,
+  "meta": {
+    "title": "Why Dario Amodei Left OpenAI",
+    "slug": "dario-openai-01",
+    "durationInSeconds": 55.771,
+    "fps": 30
+  },
+  "pacing": [
+    {
+      "start": 0.0,
+      "end": 6.211,
+      "energy": 1.0,
+      "label": "hook"
+    },
+    {
+      "start": 6.211,
+      "end": 11.881,
+      "energy": 0.6,
+      "label": "hold"
+    },
+    {
+      "start": 12.001,
+      "end": 21.532,
+      "energy": 1.0,
+      "label": "payoff"
+    },
+    {
+      "start": 21.532,
+      "end": 29.382,
+      "energy": 0.6,
+      "label": "hold"
+    },
+    {
+      "start": 29.502,
+      "end": 35.916,
+      "energy": 1.0,
+      "label": "payoff"
+    },
+    {
+      "start": 35.916,
+      "end": 42.341,
+      "energy": 1.0,
+      "label": "payoff"
+    },
+    {
+      "start": 42.341,
+      "end": 47.311,
+      "energy": 0.6,
+      "label": "hold"
+    },
+    {
+      "start": 47.431,
+      "end": 55.771,
+      "energy": 1.0,
+      "label": "outro"
+    }
+  ],
+  "clips": [
+    {
+      "id": "c0_0_0",
+      "start": 0.0,
+      "end": 1.172,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 4.76,
+          "focusX": 0.4,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.1122,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c0_0_1",
+      "start": 1.172,
+      "end": 2.345,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 5.932,
+          "focusX": 0.4,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.1122,
+        "to": 1.11,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c0_0_2",
+      "start": 2.345,
+      "end": 3.517,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 7.105,
+          "focusX": 0.4,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.1078,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c0_0_3",
+      "start": 3.517,
+      "end": 4.689,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 8.277,
+          "focusX": 0.4,
+          "focusY": 0.4,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.1078,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c0_1_0",
+      "start": 4.689,
+      "end": 5.337,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 9.51,
+          "focusX": 0.4,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c0_2_0",
+      "start": 5.337,
+      "end": 6.211,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 10.696,
+          "focusX": 0.4,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "vo0bg",
+      "start": 6.211,
+      "end": 12.001,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_0_0",
+      "start": 12.001,
+      "end": 13.018,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 33.75,
+          "focusX": 0.64,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.13,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_0_1",
+      "start": 13.018,
+      "end": 14.034,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 34.767,
+          "focusX": 0.64,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.13,
+        "to": 1.09,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_0_2",
+      "start": 14.034,
+      "end": 15.051,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 35.783,
+          "focusX": 0.64,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.09,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_1_0",
+      "start": 15.051,
+      "end": 16.013,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 36.958,
+          "focusX": 0.64,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.13,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_1_1",
+      "start": 16.013,
+      "end": 16.974,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 37.919,
+          "focusX": 0.64,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.13,
+        "to": 1.09,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_1_2",
+      "start": 16.974,
+      "end": 17.936,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 38.88,
+          "focusX": 0.64,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.09,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_2_0",
+      "start": 17.936,
+      "end": 19.134,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 39.954,
+          "focusX": 0.64,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.13,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_2_1",
+      "start": 19.134,
+      "end": 20.333,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 41.153,
+          "focusX": 0.64,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.13,
+        "to": 1.09,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c1_2_2",
+      "start": 20.333,
+      "end": 21.532,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 42.351,
+          "focusX": 0.64,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.09,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "vo1bg",
+      "start": 21.532,
+      "end": 29.502,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_0_0",
+      "start": 29.502,
+      "end": 29.764,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 48.57,
+          "focusX": 0.64,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_1_0",
+      "start": 29.764,
+      "end": 30.825,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 48.942,
+          "focusX": 0.64,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.11,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_1_1",
+      "start": 30.825,
+      "end": 31.886,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 50.003,
+          "focusX": 0.64,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_2_0",
+      "start": 31.886,
+      "end": 32.894,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 51.221,
+          "focusX": 0.64,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.1122,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_2_1",
+      "start": 32.894,
+      "end": 33.901,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 52.228,
+          "focusX": 0.64,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.1122,
+        "to": 1.11,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_2_2",
+      "start": 33.901,
+      "end": 34.908,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 53.235,
+          "focusX": 0.64,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.1078,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c2_2_3",
+      "start": 34.908,
+      "end": 35.916,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 54.243,
+          "focusX": 0.64,
+          "focusY": 0.4,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.1078,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c3_0_0",
+      "start": 35.916,
+      "end": 36.179,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 68.79,
+          "focusX": 0.64,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c3_1_0",
+      "start": 36.179,
+      "end": 37.206,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 69.248,
+          "focusX": 0.64,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.08,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c3_1_1",
+      "start": 37.206,
+      "end": 38.233,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 70.275,
+          "focusX": 0.64,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.08,
+        "to": 1.13,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c3_1_2",
+      "start": 38.233,
+      "end": 39.26,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 71.302,
+          "focusX": 0.64,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.13,
+        "to": 1.11,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c3_1_3",
+      "start": 39.26,
+      "end": 40.287,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 72.329,
+          "focusX": 0.64,
+          "focusY": 0.4,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.09,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c3_1_4",
+      "start": 40.287,
+      "end": 41.314,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 73.356,
+          "focusX": 0.64,
+          "focusY": 0.46,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.09,
+        "to": 1.14,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c3_1_5",
+      "start": 41.314,
+      "end": 42.341,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 74.383,
+          "focusX": 0.64,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.14,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "vo2bg",
+      "start": 42.341,
+      "end": 47.431,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c4_0_0",
+      "start": 47.431,
+      "end": 48.474,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 96.46,
+          "focusX": 0.64,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.03,
+        "to": 1.0629,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c4_0_1",
+      "start": 48.474,
+      "end": 49.516,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 97.502,
+          "focusX": 0.64,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0629,
+        "to": 1.1122,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c4_0_2",
+      "start": 49.516,
+      "end": 50.559,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 98.545,
+          "focusX": 0.64,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.1122,
+        "to": 1.1311,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c4_0_3",
+      "start": 50.559,
+      "end": 51.601,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 99.588,
+          "focusX": 0.64,
+          "focusY": 0.4,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.1311,
+        "to": 1.11,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c4_0_4",
+      "start": 51.601,
+      "end": 52.644,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 100.63,
+          "focusX": 0.64,
+          "focusY": 0.46,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.11,
+        "to": 1.0889,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c4_0_5",
+      "start": 52.644,
+      "end": 53.686,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 101.672,
+          "focusX": 0.64,
+          "focusY": 0.42,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.0889,
+        "to": 1.1078,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c4_0_6",
+      "start": 53.686,
+      "end": 54.729,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 102.715,
+          "focusX": 0.64,
+          "focusY": 0.34,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.1078,
+        "to": 1.1571,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
+      "id": "c4_0_7",
+      "start": 54.729,
+      "end": 55.771,
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "dario-openai-01/aroll-full.mp4",
+          "offset": 103.757,
+          "focusX": 0.64,
+          "focusY": 0.48,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
+      "camera": {
+        "kind": "punch-in",
+        "from": 1.1571,
+        "to": 1.19,
+        "originX": 0.5,
+        "originY": 0.38
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    }
+  ],
+  "overlays": [
+    {
+      "type": "comparison",
+      "id": "vo0_ov0",
+      "start": 6.311,
+      "end": 12.001,
+      "z": 55,
+      "beforeLabel": "EXPECTED",
+      "beforeValue": "SAFETY",
+      "afterLabel": "DARIO'S ANSWER",
+      "afterValue": "NOT ENOUGH",
+      "afterDelay": 1.35,
+      "tone": "light",
+      "accent": "#FF5A3C"
+    },
+    {
+      "type": "word-card",
+      "id": "vo1_ov0",
+      "start": 21.632,
+      "end": 29.502,
+      "z": 55,
+      "text": "TRUST.",
+      "face": "serif-display",
+      "size": 188,
+      "color": "#FF5A3C",
+      "accent": "#FF5A3C",
+      "tone": "light"
+    },
+    {
+      "type": "comparison",
+      "id": "vo2_ov0",
+      "start": 42.441,
+      "end": 47.431,
+      "z": 55,
+      "beforeLabel": "STAY",
+      "beforeValue": "ARGUE",
+      "afterLabel": "LEAVE",
+      "afterValue": "BUILD",
+      "afterDelay": 1.25,
+      "tone": "light",
+      "accent": "#FF5A3C"
+    },
+    {
+      "type": "film-burn",
+      "id": "burn0",
+      "start": 6.057,
+      "end": 6.607,
+      "z": 78,
+      "originX": 1.02,
+      "originY": 0.28,
+      "intensity": 0.85
+    },
+    {
+      "type": "film-burn",
+      "id": "burn1",
+      "start": 11.847,
+      "end": 12.397,
+      "z": 78,
+      "originX": -0.02,
+      "originY": 0.4,
+      "intensity": 0.85
+    },
+    {
+      "type": "film-burn",
+      "id": "burn2",
+      "start": 21.378,
+      "end": 21.928,
+      "z": 78,
+      "originX": 1.02,
+      "originY": 0.52,
+      "intensity": 0.85
+    },
+    {
+      "type": "film-burn",
+      "id": "burn3",
+      "start": 29.348,
+      "end": 29.898,
+      "z": 78,
+      "originX": -0.02,
+      "originY": 0.28,
+      "intensity": 0.85
+    },
+    {
+      "type": "film-burn",
+      "id": "burn4",
+      "start": 42.187,
+      "end": 42.737,
+      "z": 78,
+      "originX": 1.02,
+      "originY": 0.4,
+      "intensity": 0.85
+    },
+    {
+      "type": "film-burn",
+      "id": "burn5",
+      "start": 47.277,
+      "end": 47.827,
+      "z": 78,
+      "originX": -0.02,
+      "originY": 0.52,
+      "intensity": 0.85
+    },
+    {
+      "type": "chrome",
+      "id": "bug",
+      "start": 0,
+      "end": 55.771,
+      "z": 85,
+      "bug": "THE NEXT CURVE",
+      "tone": "light"
+    },
+    {
+      "type": "progress",
+      "id": "prog",
+      "start": 0,
+      "end": 55.771,
+      "z": 95,
+      "style": "bar"
+    }
+  ],
+  "captions": {
+    "style": {
+      "_": "word-pop (heavy sans, thick stroke, no pill) outperformed the pill and broadcast presets across all three reference teardowns. 1-2 words per card; cards break on sentence end, long pause, and speaker change (F5).",
+      "preset": "word-pop",
+      "fontFamily": "Poppins",
+      "fontWeight": 800,
+      "fontSize": 64,
+      "color": "#FFFFFF",
+      "anchorY": 0.7,
+      "pillColor": "rgba(0,0,0,0)",
+      "pillRadius": 0,
+      "strokeWidth": 9
+    },
+    "cues": [
+      {
+        "start": 0.0,
+        "end": 0.62,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Your",
+            "start": 0.0,
+            "end": 0.28
+          },
+          {
+            "text": "decision",
+            "start": 0.28,
+            "end": 0.62
+          }
+        ]
+      },
+      {
+        "start": 0.62,
+        "end": 1.18,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "to",
+            "start": 0.62,
+            "end": 1.02
+          },
+          {
+            "text": "leave",
+            "start": 1.02,
+            "end": 1.18
+          }
+        ]
+      },
+      {
+        "start": 1.18,
+        "end": 1.66,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "open",
+            "start": 1.18,
+            "end": 1.46
+          },
+          {
+            "text": "AI",
+            "start": 1.46,
+            "end": 1.66
+          }
+        ]
+      },
+      {
+        "start": 1.66,
+        "end": 2.32,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "has",
+            "start": 1.66,
+            "end": 2.02
+          },
+          {
+            "text": "become",
+            "start": 2.02,
+            "end": 2.32
+          }
+        ]
+      },
+      {
+        "start": 2.32,
+        "end": 3.06,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "Silicon",
+            "start": 2.32,
+            "end": 2.68
+          },
+          {
+            "text": "Valley",
+            "start": 2.68,
+            "end": 3.06
+          }
+        ]
+      },
+      {
+        "start": 3.06,
+        "end": 4.07,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "lore.",
+            "start": 3.06,
+            "end": 3.62
+          }
+        ]
+      },
+      {
+        "start": 4.62,
+        "end": 5.771,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "What",
+            "start": 4.62,
+            "end": 5.18
+          },
+          {
+            "text": "really",
+            "start": 5.149,
+            "end": 6.309
+          }
+        ]
+      },
+      {
+        "start": 5.771,
+        "end": 6.211,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "happened",
+            "start": 5.771,
+            "end": 6.211
+          }
+        ]
+      },
+      {
+        "start": 6.211,
+        "end": 6.671,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "The",
+            "start": 6.211,
+            "end": 6.391
+          },
+          {
+            "text": "obvious",
+            "start": 6.391,
+            "end": 6.671
+          }
+        ]
+      },
+      {
+        "start": 6.671,
+        "end": 7.411,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "explanation",
+            "start": 6.671,
+            "end": 7.131
+          },
+          {
+            "text": "is",
+            "start": 7.131,
+            "end": 7.411
+          }
+        ]
+      },
+      {
+        "start": 7.411,
+        "end": 7.711,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "a",
+            "start": 7.411,
+            "end": 7.511
+          },
+          {
+            "text": "fight",
+            "start": 7.511,
+            "end": 7.711
+          }
+        ]
+      },
+      {
+        "start": 7.711,
+        "end": 8.151,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "over",
+            "start": 7.711,
+            "end": 7.931
+          },
+          {
+            "text": "AI",
+            "start": 7.931,
+            "end": 8.151
+          }
+        ]
+      },
+      {
+        "start": 8.151,
+        "end": 9.041,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "safety.",
+            "start": 8.151,
+            "end": 8.591
+          }
+        ]
+      },
+      {
+        "start": 9.231,
+        "end": 9.851,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "Dario",
+            "start": 9.231,
+            "end": 9.611
+          },
+          {
+            "text": "says",
+            "start": 9.611,
+            "end": 9.851
+          }
+        ]
+      },
+      {
+        "start": 9.851,
+        "end": 10.531,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "those",
+            "start": 9.851,
+            "end": 10.051
+          },
+          {
+            "text": "disagreements",
+            "start": 10.051,
+            "end": 10.531
+          }
+        ]
+      },
+      {
+        "start": 10.531,
+        "end": 11.011,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "weren't",
+            "start": 10.531,
+            "end": 10.771
+          },
+          {
+            "text": "enough",
+            "start": 10.771,
+            "end": 11.011
+          }
+        ]
+      },
+      {
+        "start": 11.011,
+        "end": 11.291,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "to",
+            "start": 11.011,
+            "end": 11.151
+          },
+          {
+            "text": "make",
+            "start": 11.151,
+            "end": 11.291
+          }
+        ]
+      },
+      {
+        "start": 11.291,
+        "end": 12.001,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "him",
+            "start": 11.291,
+            "end": 11.371
+          },
+          {
+            "text": "leave.",
+            "start": 11.371,
+            "end": 11.631
+          }
+        ]
+      },
+      {
+        "start": 12.001,
+        "end": 12.421,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "there",
+            "start": 12.001,
+            "end": 12.281
+          },
+          {
+            "text": "are",
+            "start": 12.281,
+            "end": 12.421
+          }
+        ]
+      },
+      {
+        "start": 12.421,
+        "end": 13.081,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "many",
+            "start": 12.421,
+            "end": 12.721
+          },
+          {
+            "text": "valid",
+            "start": 12.721,
+            "end": 13.081
+          }
+        ]
+      },
+      {
+        "start": 13.081,
+        "end": 13.961,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "disagreements",
+            "start": 13.081,
+            "end": 13.681
+          },
+          {
+            "text": "to",
+            "start": 13.681,
+            "end": 13.961
+          }
+        ]
+      },
+      {
+        "start": 13.961,
+        "end": 14.341,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "be",
+            "start": 13.961,
+            "end": 14.101
+          },
+          {
+            "text": "had",
+            "start": 14.101,
+            "end": 14.341
+          }
+        ]
+      },
+      {
+        "start": 14.341,
+        "end": 14.781,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "on",
+            "start": 14.341,
+            "end": 14.481
+          },
+          {
+            "text": "safety",
+            "start": 14.481,
+            "end": 14.781
+          }
+        ]
+      },
+      {
+        "start": 14.781,
+        "end": 15.984,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "we",
+            "start": 14.781,
+            "end": 15.521
+          },
+          {
+            "text": "certainly",
+            "start": 15.364,
+            "end": 15.984
+          }
+        ]
+      },
+      {
+        "start": 15.984,
+        "end": 16.424,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "had",
+            "start": 15.984,
+            "end": 16.264
+          },
+          {
+            "text": "some",
+            "start": 16.264,
+            "end": 16.424
+          }
+        ]
+      },
+      {
+        "start": 16.424,
+        "end": 16.664,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "of",
+            "start": 16.424,
+            "end": 16.524
+          },
+          {
+            "text": "those",
+            "start": 16.524,
+            "end": 16.664
+          }
+        ]
+      },
+      {
+        "start": 16.664,
+        "end": 17.344,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "disagreements",
+            "start": 16.664,
+            "end": 17.164
+          },
+          {
+            "text": "with",
+            "start": 17.164,
+            "end": 17.344
+          }
+        ]
+      },
+      {
+        "start": 17.344,
+        "end": 17.744,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "them",
+            "start": 17.344,
+            "end": 17.524
+          },
+          {
+            "text": "but",
+            "start": 17.524,
+            "end": 17.744
+          }
+        ]
+      },
+      {
+        "start": 17.744,
+        "end": 18.292,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "you",
+            "start": 17.744,
+            "end": 18.284
+          },
+          {
+            "text": "know",
+            "start": 18.172,
+            "end": 18.292
+          }
+        ]
+      },
+      {
+        "start": 18.292,
+        "end": 19.172,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "people",
+            "start": 18.292,
+            "end": 18.732
+          },
+          {
+            "text": "that",
+            "start": 18.732,
+            "end": 19.172
+          }
+        ]
+      },
+      {
+        "start": 19.172,
+        "end": 19.752,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "that",
+            "start": 19.172,
+            "end": 19.632
+          },
+          {
+            "text": "that",
+            "start": 19.632,
+            "end": 19.752
+          }
+        ]
+      },
+      {
+        "start": 19.752,
+        "end": 20.472,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "alone",
+            "start": 19.752,
+            "end": 20.192
+          },
+          {
+            "text": "is",
+            "start": 20.192,
+            "end": 20.472
+          }
+        ]
+      },
+      {
+        "start": 20.472,
+        "end": 21.012,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "not",
+            "start": 20.472,
+            "end": 20.612
+          },
+          {
+            "text": "sufficient",
+            "start": 20.612,
+            "end": 21.012
+          }
+        ]
+      },
+      {
+        "start": 21.012,
+        "end": 21.532,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "to",
+            "start": 21.012,
+            "end": 21.272
+          },
+          {
+            "text": "leave",
+            "start": 21.272,
+            "end": 21.532
+          }
+        ]
+      },
+      {
+        "start": 21.532,
+        "end": 21.932,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "His",
+            "start": 21.532,
+            "end": 21.672
+          },
+          {
+            "text": "breaking",
+            "start": 21.672,
+            "end": 21.932
+          }
+        ]
+      },
+      {
+        "start": 21.932,
+        "end": 23.032,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "point",
+            "start": 21.932,
+            "end": 22.412
+          },
+          {
+            "text": "was",
+            "start": 22.412,
+            "end": 23.032
+          }
+        ]
+      },
+      {
+        "start": 23.032,
+        "end": 23.862,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "trust:",
+            "start": 23.032,
+            "end": 23.412
+          }
+        ]
+      },
+      {
+        "start": 24.232,
+        "end": 24.612,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "whether",
+            "start": 24.232,
+            "end": 24.472
+          },
+          {
+            "text": "the",
+            "start": 24.472,
+            "end": 24.612
+          }
+        ]
+      },
+      {
+        "start": 24.612,
+        "end": 25.172,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "people",
+            "start": 24.612,
+            "end": 24.792
+          },
+          {
+            "text": "steering",
+            "start": 24.792,
+            "end": 25.172
+          }
+        ]
+      },
+      {
+        "start": 25.172,
+        "end": 26.052,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "OpenAI",
+            "start": 25.172,
+            "end": 25.672
+          },
+          {
+            "text": "meant",
+            "start": 25.672,
+            "end": 26.052
+          }
+        ]
+      },
+      {
+        "start": 26.052,
+        "end": 26.412,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "what",
+            "start": 26.052,
+            "end": 26.252
+          },
+          {
+            "text": "they",
+            "start": 26.252,
+            "end": 26.412
+          }
+        ]
+      },
+      {
+        "start": 26.412,
+        "end": 26.792,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "said,",
+            "start": 26.412,
+            "end": 26.792
+          }
+        ]
+      },
+      {
+        "start": 26.792,
+        "end": 27.572,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "and",
+            "start": 26.792,
+            "end": 27.372
+          },
+          {
+            "text": "whether",
+            "start": 27.372,
+            "end": 27.572
+          }
+        ]
+      },
+      {
+        "start": 27.572,
+        "end": 27.952,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "their",
+            "start": 27.572,
+            "end": 27.732
+          },
+          {
+            "text": "stated",
+            "start": 27.732,
+            "end": 27.952
+          }
+        ]
+      },
+      {
+        "start": 27.952,
+        "end": 28.852,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "values",
+            "start": 27.952,
+            "end": 28.392
+          },
+          {
+            "text": "were",
+            "start": 28.392,
+            "end": 28.852
+          }
+        ]
+      },
+      {
+        "start": 28.852,
+        "end": 29.502,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "real.",
+            "start": 28.852,
+            "end": 29.132
+          }
+        ]
+      },
+      {
+        "start": 29.502,
+        "end": 30.213,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "when",
+            "start": 29.502,
+            "end": 30.182
+          },
+          {
+            "text": "you",
+            "start": 30.073,
+            "end": 30.213
+          }
+        ]
+      },
+      {
+        "start": 30.213,
+        "end": 30.693,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "feel",
+            "start": 30.213,
+            "end": 30.533
+          },
+          {
+            "text": "that",
+            "start": 30.533,
+            "end": 30.693
+          }
+        ]
+      },
+      {
+        "start": 30.693,
+        "end": 31.133,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "you",
+            "start": 30.693,
+            "end": 30.773
+          },
+          {
+            "text": "can't",
+            "start": 30.773,
+            "end": 31.133
+          }
+        ]
+      },
+      {
+        "start": 31.133,
+        "end": 31.713,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "trust",
+            "start": 31.133,
+            "end": 31.313
+          },
+          {
+            "text": "someone",
+            "start": 31.313,
+            "end": 31.713
+          }
+        ]
+      },
+      {
+        "start": 31.713,
+        "end": 32.316,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "when",
+            "start": 31.713,
+            "end": 32.313
+          },
+          {
+            "text": "you",
+            "start": 32.156,
+            "end": 32.316
+          }
+        ]
+      },
+      {
+        "start": 32.316,
+        "end": 33.036,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "feel",
+            "start": 32.316,
+            "end": 32.716
+          },
+          {
+            "text": "that",
+            "start": 32.716,
+            "end": 33.036
+          }
+        ]
+      },
+      {
+        "start": 33.036,
+        "end": 34.416,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "their",
+            "start": 33.036,
+            "end": 33.456
+          },
+          {
+            "text": "values",
+            "start": 33.456,
+            "end": 34.416
+          }
+        ]
+      },
+      {
+        "start": 34.416,
+        "end": 34.856,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "are",
+            "start": 34.416,
+            "end": 34.656
+          },
+          {
+            "text": "not",
+            "start": 34.656,
+            "end": 34.856
+          }
+        ]
+      },
+      {
+        "start": 34.856,
+        "end": 35.216,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "what",
+            "start": 34.856,
+            "end": 35.036
+          },
+          {
+            "text": "they",
+            "start": 35.036,
+            "end": 35.216
+          }
+        ]
+      },
+      {
+        "start": 35.216,
+        "end": 35.676,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "say",
+            "start": 35.216,
+            "end": 35.496
+          },
+          {
+            "text": "they",
+            "start": 35.496,
+            "end": 35.676
+          }
+        ]
+      },
+      {
+        "start": 35.676,
+        "end": 36.581,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "are",
+            "start": 35.676,
+            "end": 35.916
+          },
+          {
+            "text": "that",
+            "start": 35.916,
+            "end": 36.776
+          }
+        ]
+      },
+      {
+        "start": 36.581,
+        "end": 37.101,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "makes",
+            "start": 36.581,
+            "end": 36.941
+          },
+          {
+            "text": "it",
+            "start": 36.941,
+            "end": 37.101
+          }
+        ]
+      },
+      {
+        "start": 37.101,
+        "end": 37.821,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "very",
+            "start": 37.101,
+            "end": 37.341
+          },
+          {
+            "text": "hard",
+            "start": 37.341,
+            "end": 37.821
+          }
+        ]
+      },
+      {
+        "start": 37.821,
+        "end": 38.721,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "to",
+            "start": 37.821,
+            "end": 38.461
+          },
+          {
+            "text": "you",
+            "start": 38.461,
+            "end": 38.721
+          }
+        ]
+      },
+      {
+        "start": 38.721,
+        "end": 39.061,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "know",
+            "start": 38.721,
+            "end": 38.881
+          },
+          {
+            "text": "to",
+            "start": 38.881,
+            "end": 39.061
+          }
+        ]
+      },
+      {
+        "start": 39.061,
+        "end": 39.921,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "continue",
+            "start": 39.061,
+            "end": 39.621
+          },
+          {
+            "text": "to",
+            "start": 39.621,
+            "end": 39.921
+          }
+        ]
+      },
+      {
+        "start": 39.921,
+        "end": 40.421,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "work",
+            "start": 39.921,
+            "end": 40.201
+          },
+          {
+            "text": "with",
+            "start": 40.201,
+            "end": 40.421
+          }
+        ]
+      },
+      {
+        "start": 40.421,
+        "end": 40.821,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "the",
+            "start": 40.421,
+            "end": 40.541
+          },
+          {
+            "text": "company",
+            "start": 40.541,
+            "end": 40.821
+          }
+        ]
+      },
+      {
+        "start": 40.821,
+        "end": 41.401,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "to",
+            "start": 40.821,
+            "end": 41.041
+          },
+          {
+            "text": "continue",
+            "start": 41.041,
+            "end": 41.401
+          }
+        ]
+      },
+      {
+        "start": 41.401,
+        "end": 41.821,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "to",
+            "start": 41.401,
+            "end": 41.561
+          },
+          {
+            "text": "trust",
+            "start": 41.561,
+            "end": 41.821
+          }
+        ]
+      },
+      {
+        "start": 41.821,
+        "end": 42.341,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "the",
+            "start": 41.821,
+            "end": 42.041
+          },
+          {
+            "text": "company",
+            "start": 42.041,
+            "end": 42.341
+          }
+        ]
+      },
+      {
+        "start": 42.341,
+        "end": 42.581,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "So",
+            "start": 42.341,
+            "end": 42.481
+          },
+          {
+            "text": "he",
+            "start": 42.481,
+            "end": 42.581
+          }
+        ]
+      },
+      {
+        "start": 42.581,
+        "end": 43.181,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "stopped",
+            "start": 42.581,
+            "end": 42.821
+          },
+          {
+            "text": "arguing",
+            "start": 42.821,
+            "end": 43.181
+          }
+        ]
+      },
+      {
+        "start": 43.181,
+        "end": 43.781,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "and",
+            "start": 43.181,
+            "end": 43.561
+          },
+          {
+            "text": "built",
+            "start": 43.561,
+            "end": 43.781
+          }
+        ]
+      },
+      {
+        "start": 43.781,
+        "end": 44.671,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "Anthropic.",
+            "start": 43.781,
+            "end": 44.221
+          }
+        ]
+      },
+      {
+        "start": 44.881,
+        "end": 45.261,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "In",
+            "start": 44.881,
+            "end": 45.081
+          },
+          {
+            "text": "his",
+            "start": 45.081,
+            "end": 45.261
+          }
+        ]
+      },
+      {
+        "start": 45.261,
+        "end": 45.661,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "telling,",
+            "start": 45.261,
+            "end": 45.501
+          }
+        ]
+      },
+      {
+        "start": 45.661,
+        "end": 45.941,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "the",
+            "start": 45.661,
+            "end": 45.681
+          },
+          {
+            "text": "dispute",
+            "start": 45.681,
+            "end": 45.941
+          }
+        ]
+      },
+      {
+        "start": 45.941,
+        "end": 46.321,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "now",
+            "start": 45.941,
+            "end": 46.161
+          },
+          {
+            "text": "gets",
+            "start": 46.161,
+            "end": 46.321
+          }
+        ]
+      },
+      {
+        "start": 46.321,
+        "end": 46.821,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "settled",
+            "start": 46.321,
+            "end": 46.581
+          },
+          {
+            "text": "in",
+            "start": 46.581,
+            "end": 46.821
+          }
+        ]
+      },
+      {
+        "start": 46.821,
+        "end": 47.431,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "public.",
+            "start": 46.821,
+            "end": 47.061
+          }
+        ]
+      },
+      {
+        "start": 47.431,
+        "end": 48.191,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "we'll",
+            "start": 47.431,
+            "end": 48.011
+          },
+          {
+            "text": "see",
+            "start": 48.011,
+            "end": 48.191
+          }
+        ]
+      },
+      {
+        "start": 48.191,
+        "end": 48.691,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "who",
+            "start": 48.191,
+            "end": 48.411
+          },
+          {
+            "text": "wins",
+            "start": 48.411,
+            "end": 48.691
+          }
+        ]
+      },
+      {
+        "start": 48.691,
+        "end": 48.911,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "in",
+            "start": 48.691,
+            "end": 48.831
+          },
+          {
+            "text": "the",
+            "start": 48.831,
+            "end": 48.911
+          }
+        ]
+      },
+      {
+        "start": 48.911,
+        "end": 49.511,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "market",
+            "start": 48.911,
+            "end": 49.191
+          },
+          {
+            "text": "and",
+            "start": 49.191,
+            "end": 49.511
+          }
+        ]
+      },
+      {
+        "start": 49.511,
+        "end": 49.911,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "we'll",
+            "start": 49.511,
+            "end": 49.711
+          },
+          {
+            "text": "see",
+            "start": 49.711,
+            "end": 49.911
+          }
+        ]
+      },
+      {
+        "start": 49.911,
+        "end": 50.371,
+        "emphasis": "color",
+        "words": [
+          {
+            "text": "who",
+            "start": 49.911,
+            "end": 50.111
+          },
+          {
+            "text": "wins",
+            "start": 50.111,
+            "end": 50.371
+          }
+        ]
+      },
+      {
+        "start": 50.371,
+        "end": 50.591,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "in",
+            "start": 50.371,
+            "end": 50.511
+          },
+          {
+            "text": "the",
+            "start": 50.511,
+            "end": 50.591
+          }
+        ]
+      },
+      {
+        "start": 50.591,
+        "end": 50.911,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "court",
+            "start": 50.591,
+            "end": 50.791
+          },
+          {
+            "text": "of",
+            "start": 50.791,
+            "end": 50.911
+          }
+        ]
+      },
+      {
+        "start": 50.911,
+        "end": 51.511,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "public",
+            "start": 50.911,
+            "end": 51.131
+          },
+          {
+            "text": "opinion",
+            "start": 51.131,
+            "end": 51.511
+          }
+        ]
+      },
+      {
+        "start": 51.511,
+        "end": 52.951,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "I",
+            "start": 51.511,
+            "end": 52.711
+          },
+          {
+            "text": "think",
+            "start": 52.711,
+            "end": 52.951
+          }
+        ]
+      },
+      {
+        "start": 52.951,
+        "end": 53.591,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "those",
+            "start": 52.951,
+            "end": 53.211
+          },
+          {
+            "text": "things",
+            "start": 53.211,
+            "end": 53.591
+          }
+        ]
+      },
+      {
+        "start": 53.591,
+        "end": 54.771,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "speak",
+            "start": 53.591,
+            "end": 54.291
+          },
+          {
+            "text": "louder",
+            "start": 54.291,
+            "end": 54.771
+          }
+        ]
+      },
+      {
+        "start": 54.771,
+        "end": 55.431,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "than",
+            "start": 54.771,
+            "end": 55.111
+          },
+          {
+            "text": "any",
+            "start": 55.111,
+            "end": 55.431
+          }
+        ]
+      },
+      {
+        "start": 55.431,
+        "end": 56.121,
+        "emphasis": "none",
+        "words": [
+          {
+            "text": "drama",
+            "start": 55.431,
+            "end": 55.771
+          }
+        ]
+      }
+    ]
+  },
+  "audio": [
+    {
+      "id": "clip4_76",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 0.0,
+      "offset": 4.76,
+      "duration": 4.689,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.05,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip9_51",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 4.689,
+      "offset": 9.51,
+      "duration": 0.648,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip10_70",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 5.337,
+      "offset": 10.696,
+      "duration": 0.874,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "vo0",
+      "src": "dario-openai-01/vo.wav",
+      "role": "vo",
+      "start": 6.211,
+      "offset": 0.0,
+      "duration": 5.67,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.15
+    },
+    {
+      "id": "clip33_75",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 12.001,
+      "offset": 33.75,
+      "duration": 3.05,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.05,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip36_96",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 15.051,
+      "offset": 36.958,
+      "duration": 2.884,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip39_95",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 17.936,
+      "offset": 39.954,
+      "duration": 3.596,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "vo1",
+      "src": "dario-openai-01/vo.wav",
+      "role": "vo",
+      "start": 21.532,
+      "offset": 5.9,
+      "duration": 7.85,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.15
+    },
+    {
+      "id": "clip48_57",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 29.502,
+      "offset": 48.57,
+      "duration": 0.263,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.05,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip48_94",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 29.764,
+      "offset": 48.942,
+      "duration": 2.122,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip51_22",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 31.886,
+      "offset": 51.221,
+      "duration": 4.029,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip68_79",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 35.916,
+      "offset": 68.79,
+      "duration": 0.263,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.05,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "clip69_25",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 36.179,
+      "offset": 69.248,
+      "duration": 6.162,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.02,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "vo2",
+      "src": "dario-openai-01/vo.wav",
+      "role": "vo",
+      "start": 42.341,
+      "offset": 13.94,
+      "duration": 4.97,
+      "gainDb": 2,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.15
+    },
+    {
+      "id": "clip96_46",
+      "src": "dario-openai-01/aroll-full.mp4",
+      "role": "clip-audio",
+      "start": 47.431,
+      "offset": 96.46,
+      "duration": 8.34,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0.05,
+      "fadeOut": 0.02
+    },
+    {
+      "id": "sfx_whoosh_5_99",
+      "src": "dario-openai-01/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 5.991,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_whoosh_11_78",
+      "src": "dario-openai-01/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 11.781,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_whoosh_21_31",
+      "src": "dario-openai-01/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 21.312,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_whoosh_29_28",
+      "src": "dario-openai-01/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 29.282,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_whoosh_42_12",
+      "src": "dario-openai-01/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 42.121,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_whoosh_47_21",
+      "src": "dario-openai-01/sfx/whoosh.wav",
+      "role": "sfx",
+      "start": 47.211,
+      "offset": 0,
+      "duration": 0.58,
+      "gainDb": -4,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    },
+    {
+      "id": "sfx_ding_0_00",
+      "src": "dario-openai-01/sfx/ding.wav",
+      "role": "sfx",
+      "start": 0.0,
+      "offset": 0,
+      "duration": 1.4,
+      "gainDb": 0,
+      "duck": false,
+      "fadeIn": 0,
+      "fadeOut": 0.12
+    }
+  ]
+}

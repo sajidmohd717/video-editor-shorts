@@ -760,6 +760,70 @@ in a still — measure them, every time, before calling a render good.
 
 ---
 
+### F41 — A component that hardcodes fps is a 30fps component
+
+`ClipLayer` converted seconds to frames with a literal `30` in two places — the
+`OffthreadVideo` in-point and the cross-dissolve length — while every other
+conversion in the renderer derived from `meta.fps`. `Short.tsx` builds its
+`toFrames` from it, and `calculateMetadata` reads it off the timeline precisely
+so **one composition can serve 9:16 shorts and 16:9 long-form**.
+
+So the contract said fps was a timeline property and one file disagreed. Nothing
+was visibly broken, because both existing timelines happen to be 30fps. The bug
+was waiting for the first one that isn't: 34 sources in `yc-sam-03` and 67 in
+`lf-001` carry a nonzero `offset`, and every one of them would have started at
+the wrong moment — not with an error, just with each clip entering slightly off
+its word.
+
+This is exactly [L11](MODEL_DEV_LOG_LONGFORM.md) one axis over. There, three
+components silently assumed the canvas was portrait. Here, one assumed the clock
+was 30fps. Same failure shape: **the schema made something configurable, and the
+components were never audited for the assumption it replaced.**
+
+**Rule:** when a value moves into `meta`, grep for its old literal *the same
+day*. `\* 30\b`, `/ 30\b`, `WIDTH`, `HEIGHT` — the fix is thirty seconds and the
+bug is invisible for months. Any seconds→frames conversion outside `Short.tsx`
+uses `useVideoConfig()`, never a number.
+
+**Also fixed in passing:** `startFrom`/`endAt` on `OffthreadVideo` are deprecated
+aliases for `trimBefore`/`trimAfter` in Remotion 4.0.409. `<Audio>` in
+`Short.tsx` already used the new names, so the codebase was inconsistent with
+itself — the kind of drift that turns a major-version bump into a debugging
+session.
+
+**Status:** fixed. Preventative — no current output changes.
+
+---
+
+### F42 — CRF is not the only quality knob; the intermediate frames are JPEG
+
+`remotion.config.ts` set `Config.setCrf(18)` with a comment calling it "visually
+transparent." It also set `setVideoImageFormat("jpeg")` — and Remotion's default
+`jpegQuality` is **80**. Every frame was being JPEG-compressed at 80 *before*
+x264 ever saw it, so CRF 18 was faithfully preserving artifacts that were already
+baked in.
+
+The stated reasoning was sound and the conclusion was still wrong, because the
+setting that actually capped quality wasn't in the file. A default you never
+wrote down is still a decision you made.
+
+Where it shows: flat brand-colour cards, the blurred `fit` backdrop, and any
+gradient — the large smooth areas where 4:2:0 ringing is visible and where a
+talking head's texture isn't there to hide it. Which is to say: on the graphics,
+the part of the frame we author.
+
+**Applied:** `Config.setJpegQuality(95)`. PNG would remove the ceiling entirely
+but costs render time for no visible gain at this bitrate, and render time is
+already the stated replace-when for Remotion.
+
+**The habit:** when a pipeline stage has a quality setting, find *every* lossy
+step in that stage before concluding it's tuned. Ours had two and only one was
+written down.
+
+**Status:** applied.
+
+---
+
 ## Platform data
 
 ### 2026-08-07 — first narrated short (El5XrIpsOCA)

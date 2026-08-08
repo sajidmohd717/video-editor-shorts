@@ -5,7 +5,7 @@ Source: [Inside the Mind of Anthropic CEO Dario Amodei | The Circuit | Extended 
 - Publisher: Bloomberg Originals
 - Source ID: `x2VHFgyawPE`
 - Runtime: 1:10:04
-- Source master selected: 3840×2160, 24 fps, AV1 video (`401`) plus original English Opus audio (`251`)
+- Source master selected and verified: 3840×2160, 23.976 fps, AV1 video (`401`) plus 48 kHz stereo original-English Opus audio (`251`), 4,204.221 seconds
 - Transcript: publisher-provided English captions, read in full before selecting passages (F32)
 - Editorial format: original narration is the spine; Bloomberg/Dario clips are evidence, not a clip repost
 

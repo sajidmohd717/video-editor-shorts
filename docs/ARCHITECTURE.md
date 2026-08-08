@@ -170,6 +170,27 @@ that nothing ever gets quiet, so attention has no gap to escape through.
 We target **−13**, two-pass loudnorm plus a limiter. Past about −11 it just
 sounds crushed.
 
+### The render has two lossy steps, not one
+
+Remotion captures each frame as an image, then hands the sequence to x264. So
+`crf` only governs the *second* compression. `videoImageFormat: "jpeg"` sets the
+first, and its default quality is 80 — which caps output quality no matter how
+low the CRF goes (F42). We set `jpegQuality: 95`.
+
+PNG frames would remove the first step entirely, but render time is already the
+stated replace-when for Remotion, and the difference isn't visible at this
+bitrate. Revisit if graphics-heavy long-form starts showing banding.
+
+### fps and canvas belong to the timeline, not the components
+
+`meta.fps`, `meta.width` and `meta.height` are read in `calculateMetadata`, which
+is what lets **one composition serve both 9:16 shorts and 16:9 long-form**. That
+only holds if no component hardcodes them. Two rounds of this have now been
+found and fixed — components assuming a portrait canvas (L11) and a clip layer
+assuming 30fps (F41) — so treat it as a standing audit, not a solved problem:
+any seconds→frames conversion outside `Short.tsx` goes through
+`useVideoConfig()`.
+
 ---
 
 ## Tool choices — and when to replace them
@@ -197,8 +218,18 @@ monetised channel is fine.
 - **Graphic placement is authored**, not automated. The mechanical parts (shot
   subdivision, caption chunking, framing rotation, strobe placement) are
   automated; choosing *which* graphic fits *which* sentence isn't.
-- **Asset maps are hardcoded per project** in the planner. Fine for one video,
-  wrong for a channel — this is what the profile/job port from `shorts-generator`
-  is meant to fix.
-- **No music bed.** Ref 003's energy is substantially music. Needs a licensed
-  source.
+- **Asset maps are hardcoded in `plan_explainer.py`.** `plan_narrated.py` has
+  been moved onto profiles/jobs; the explainer planner hasn't. Both also
+  duplicate helpers that should live in a shared base.
+- **Unused render dependencies.** `@remotion/three`, `three`,
+  `@react-three/fiber`, `@remotion/transitions`, `@remotion/media-utils` and
+  `@remotion/shapes` are installed and imported nowhere. Two are worth adopting
+  rather than dropping: `getVideoMetadata` would let `calculateMetadata` assert
+  that every clip's `offset + duration` fits inside its source — the same
+  four-line assertion shape as the coverage check (F18), against the class of
+  defect F39 found by hand. `<TransitionSeries>` would move cross-dissolve
+  overlap out of the planner, where it currently leaks across the planner/
+  renderer seam.
+
+Note: **no music bed is not a weak point.** It's a channel constraint (F20, F29)
+and it is not to be relitigated here.

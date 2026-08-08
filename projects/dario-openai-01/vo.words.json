@@ -1,0 +1,298 @@
+{
+  "audio": "vo.wav",
+  "language": "en",
+  "duration": 18.927,
+  "text": "The obvious explanation is a fight over AI safety. Dario says those disagreements weren't enough to make him leave. His breaking point was trust. Whether the people steering open AI meant what they said and whether their stated values were real. So he stopped arguing and built Anthropic. In his telling, the dispute now gets settled in public.",
+  "words": [
+    {
+      "text": "The",
+      "start": 0.0,
+      "end": 0.18
+    },
+    {
+      "text": "obvious",
+      "start": 0.18,
+      "end": 0.46
+    },
+    {
+      "text": "explanation",
+      "start": 0.46,
+      "end": 0.92
+    },
+    {
+      "text": "is",
+      "start": 0.92,
+      "end": 1.2
+    },
+    {
+      "text": "a",
+      "start": 1.2,
+      "end": 1.3
+    },
+    {
+      "text": "fight",
+      "start": 1.3,
+      "end": 1.5
+    },
+    {
+      "text": "over",
+      "start": 1.5,
+      "end": 1.72
+    },
+    {
+      "text": "AI",
+      "start": 1.72,
+      "end": 1.94
+    },
+    {
+      "text": "safety.",
+      "start": 1.94,
+      "end": 2.38
+    },
+    {
+      "text": "Dario",
+      "start": 3.02,
+      "end": 3.4
+    },
+    {
+      "text": "says",
+      "start": 3.4,
+      "end": 3.64
+    },
+    {
+      "text": "those",
+      "start": 3.64,
+      "end": 3.84
+    },
+    {
+      "text": "disagreements",
+      "start": 3.84,
+      "end": 4.32
+    },
+    {
+      "text": "weren't",
+      "start": 4.32,
+      "end": 4.56
+    },
+    {
+      "text": "enough",
+      "start": 4.56,
+      "end": 4.8
+    },
+    {
+      "text": "to",
+      "start": 4.8,
+      "end": 4.94
+    },
+    {
+      "text": "make",
+      "start": 4.94,
+      "end": 5.08
+    },
+    {
+      "text": "him",
+      "start": 5.08,
+      "end": 5.16
+    },
+    {
+      "text": "leave.",
+      "start": 5.16,
+      "end": 5.42
+    },
+    {
+      "text": "His",
+      "start": 5.9,
+      "end": 6.04
+    },
+    {
+      "text": "breaking",
+      "start": 6.04,
+      "end": 6.3
+    },
+    {
+      "text": "point",
+      "start": 6.3,
+      "end": 6.78
+    },
+    {
+      "text": "was",
+      "start": 6.78,
+      "end": 7.4
+    },
+    {
+      "text": "trust.",
+      "start": 7.4,
+      "end": 7.78
+    },
+    {
+      "text": "Whether",
+      "start": 8.6,
+      "end": 8.84
+    },
+    {
+      "text": "the",
+      "start": 8.84,
+      "end": 8.98
+    },
+    {
+      "text": "people",
+      "start": 8.98,
+      "end": 9.16
+    },
+    {
+      "text": "steering",
+      "start": 9.16,
+      "end": 9.54
+    },
+    {
+      "text": "open",
+      "start": 9.54,
+      "end": 9.84
+    },
+    {
+      "text": "AI",
+      "start": 9.84,
+      "end": 10.04
+    },
+    {
+      "text": "meant",
+      "start": 10.04,
+      "end": 10.42
+    },
+    {
+      "text": "what",
+      "start": 10.42,
+      "end": 10.62
+    },
+    {
+      "text": "they",
+      "start": 10.62,
+      "end": 10.78
+    },
+    {
+      "text": "said",
+      "start": 10.78,
+      "end": 11.16
+    },
+    {
+      "text": "and",
+      "start": 11.16,
+      "end": 11.74
+    },
+    {
+      "text": "whether",
+      "start": 11.74,
+      "end": 11.94
+    },
+    {
+      "text": "their",
+      "start": 11.94,
+      "end": 12.1
+    },
+    {
+      "text": "stated",
+      "start": 12.1,
+      "end": 12.32
+    },
+    {
+      "text": "values",
+      "start": 12.32,
+      "end": 12.76
+    },
+    {
+      "text": "were",
+      "start": 12.76,
+      "end": 13.22
+    },
+    {
+      "text": "real.",
+      "start": 13.22,
+      "end": 13.5
+    },
+    {
+      "text": "So",
+      "start": 13.94,
+      "end": 14.08
+    },
+    {
+      "text": "he",
+      "start": 14.08,
+      "end": 14.18
+    },
+    {
+      "text": "stopped",
+      "start": 14.18,
+      "end": 14.42
+    },
+    {
+      "text": "arguing",
+      "start": 14.42,
+      "end": 14.78
+    },
+    {
+      "text": "and",
+      "start": 14.78,
+      "end": 15.16
+    },
+    {
+      "text": "built",
+      "start": 15.16,
+      "end": 15.38
+    },
+    {
+      "text": "Anthropic.",
+      "start": 15.38,
+      "end": 15.82
+    },
+    {
+      "text": "In",
+      "start": 16.48,
+      "end": 16.68
+    },
+    {
+      "text": "his",
+      "start": 16.68,
+      "end": 16.86
+    },
+    {
+      "text": "telling,",
+      "start": 16.86,
+      "end": 17.1
+    },
+    {
+      "text": "the",
+      "start": 17.26,
+      "end": 17.28
+    },
+    {
+      "text": "dispute",
+      "start": 17.28,
+      "end": 17.54
+    },
+    {
+      "text": "now",
+      "start": 17.54,
+      "end": 17.76
+    },
+    {
+      "text": "gets",
+      "start": 17.76,
+      "end": 17.92
+    },
+    {
+      "text": "settled",
+      "start": 17.92,
+      "end": 18.18
+    },
+    {
+      "text": "in",
+      "start": 18.18,
+      "end": 18.42
+    },
+    {
+      "text": "public.",
+      "start": 18.42,
+      "end": 18.66
+    }
+  ]
+}

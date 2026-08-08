@@ -409,6 +409,18 @@ export const overlaySchema = z.discriminatedUnion("type", [
       x: z.number(),
       y: z.number(),
       r: z.number().default(0.075),
+      /**
+       * Optional logo image inside the node, replacing the wordmark. Drop a PNG
+       * into public/<slug>/logos/ and reference it here.
+       *
+       * Left empty by default on purpose: automated logo sourcing is
+       * unreliable (Wikidata has none for several of these companies and
+       * returned Microsoft's 1980 mark), and a WRONG logo is worse than a
+       * wordmark. Supply them deliberately or not at all.
+       */
+      logo: z.string().default(""),
+      /** Brand colour for the node ring — recognition without a trademark file. */
+      color: z.string().default(""),
       /** Seconds after the overlay starts that this node appears. */
       at: z.number().default(0),
       tone: z.enum(["dark", "accent", "muted"]).default("dark"),
@@ -460,6 +472,12 @@ export const overlaySchema = z.discriminatedUnion("type", [
     accent: z.string().default("#FF5A3C"),
     background: z.string().default("#0B0B0F"),
     countSeconds: z.number().default(1.1),
+    /**
+     * Type-size multiplier. 1 is tuned for full-screen video; a THUMBNAIL is
+     * read at roughly 5% of that size in a fraction of a second, so it needs
+     * ~2x and every secondary line dropped (L20).
+     */
+    scale: z.number().default(1),
   }),
 
   /**

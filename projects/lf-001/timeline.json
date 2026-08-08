@@ -3049,7 +3049,8 @@
           "y": 0.26,
           "r": 0.088,
           "at": 0.0,
-          "tone": "dark"
+          "tone": "dark",
+          "color": "#76B900"
         },
         {
           "id": "oai",
@@ -3058,7 +3059,8 @@
           "y": 0.62,
           "r": 0.078,
           "at": 0.9,
-          "tone": "dark"
+          "tone": "dark",
+          "color": "#10A37F"
         },
         {
           "id": "anth",
@@ -3067,7 +3069,8 @@
           "y": 0.755,
           "r": 0.086,
           "at": 3.2,
-          "tone": "dark"
+          "tone": "dark",
+          "color": "#D97757"
         },
         {
           "id": "msft",
@@ -3076,7 +3079,8 @@
           "y": 0.4,
           "r": 0.082,
           "at": 5.4,
-          "tone": "dark"
+          "tone": "dark",
+          "color": "#00A4EF"
         }
       ],
       "edges": [
@@ -3113,7 +3117,8 @@
           "tone": "back",
           "_": "same keyword as the msft->anth edge on purpose: the perpendicular flips with direction, so matching keywords bow the two arcs APART."
         }
-      ]
+      ],
+      "_logos": "Node logos are opt-in: drop dark-on-transparent PNGs into public/lf-001/logos/ and set node.logo. Left empty because automated sourcing returned office buildings and a 1980 Microsoft mark, and a wrong logo is worse than a wordmark."
     },
     {
       "type": "quote-card",

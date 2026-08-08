@@ -1,0 +1,1562 @@
+[
+    {
+        "text":  "on",
+        "startMs":  0,
+        "endMs":  260
+    },
+    {
+        "text":  "that",
+        "startMs":  260,
+        "endMs":  440
+    },
+    {
+        "text":  "stuff",
+        "startMs":  440,
+        "endMs":  720
+    },
+    {
+        "text":  "and",
+        "startMs":  720,
+        "endMs":  980
+    },
+    {
+        "text":  "you",
+        "startMs":  980,
+        "endMs":  1080
+    },
+    {
+        "text":  "know",
+        "startMs":  1080,
+        "endMs":  1160
+    },
+    {
+        "text":  "what",
+        "startMs":  1160,
+        "endMs":  1380
+    },
+    {
+        "text":  "were",
+        "startMs":  1380,
+        "endMs":  1520
+    },
+    {
+        "text":  "the",
+        "startMs":  1520,
+        "endMs":  1640
+    },
+    {
+        "text":  "areas",
+        "startMs":  1640,
+        "endMs":  1940
+    },
+    {
+        "text":  "that",
+        "startMs":  1940,
+        "endMs":  2120
+    },
+    {
+        "text":  "were",
+        "startMs":  2120,
+        "endMs":  2220
+    },
+    {
+        "text":  "promising",
+        "startMs":  2220,
+        "endMs":  2560
+    },
+    {
+        "text":  "what",
+        "startMs":  2560,
+        "endMs":  2920
+    },
+    {
+        "text":  "were",
+        "startMs":  2920,
+        "endMs":  3020
+    },
+    {
+        "text":  "the",
+        "startMs":  3020,
+        "endMs":  3140
+    },
+    {
+        "text":  "areas",
+        "startMs":  3140,
+        "endMs":  3440
+    },
+    {
+        "text":  "that",
+        "startMs":  3440,
+        "endMs":  3660
+    },
+    {
+        "text":  "were",
+        "startMs":  3660,
+        "endMs":  3780
+    },
+    {
+        "text":  "less",
+        "startMs":  3780,
+        "endMs":  3980
+    },
+    {
+        "text":  "promising.",
+        "startMs":  3980,
+        "endMs":  4420
+    },
+    {
+        "text":  "Your",
+        "startMs":  4760,
+        "endMs":  5040
+    },
+    {
+        "text":  "decision",
+        "startMs":  5040,
+        "endMs":  5380
+    },
+    {
+        "text":  "to",
+        "startMs":  5380,
+        "endMs":  5780
+    },
+    {
+        "text":  "leave",
+        "startMs":  5780,
+        "endMs":  5940
+    },
+    {
+        "text":  "open",
+        "startMs":  5940,
+        "endMs":  6220
+    },
+    {
+        "text":  "AI",
+        "startMs":  6220,
+        "endMs":  6420
+    },
+    {
+        "text":  "has",
+        "startMs":  6420,
+        "endMs":  6780
+    },
+    {
+        "text":  "become",
+        "startMs":  6780,
+        "endMs":  7080
+    },
+    {
+        "text":  "Silicon",
+        "startMs":  7080,
+        "endMs":  7440
+    },
+    {
+        "text":  "Valley",
+        "startMs":  7440,
+        "endMs":  7820
+    },
+    {
+        "text":  "lore.",
+        "startMs":  7820,
+        "endMs":  8380
+    },
+    {
+        "text":  "What",
+        "startMs":  9380,
+        "endMs":  9940
+    },
+    {
+        "text":  "really",
+        "startMs":  9970,
+        "endMs":  11130
+    },
+    {
+        "text":  "happened",
+        "startMs":  11130,
+        "endMs":  11570
+    },
+    {
+        "text":  "like",
+        "startMs":  11570,
+        "endMs":  11830
+    },
+    {
+        "text":  "beyond",
+        "startMs":  11830,
+        "endMs":  12270
+    },
+    {
+        "text":  "the",
+        "startMs":  12270,
+        "endMs":  12850
+    },
+    {
+        "text":  "narrative",
+        "startMs":  12850,
+        "endMs":  13270
+    },
+    {
+        "text":  "what",
+        "startMs":  13270,
+        "endMs":  13550
+    },
+    {
+        "text":  "were",
+        "startMs":  13550,
+        "endMs":  13670
+    },
+    {
+        "text":  "the",
+        "startMs":  13670,
+        "endMs":  13790
+    },
+    {
+        "text":  "issues",
+        "startMs":  13790,
+        "endMs":  14190
+    },
+    {
+        "text":  "what",
+        "startMs":  14190,
+        "endMs":  14550
+    },
+    {
+        "text":  "did",
+        "startMs":  14550,
+        "endMs":  14670
+    },
+    {
+        "text":  "you",
+        "startMs":  14670,
+        "endMs":  14750
+    },
+    {
+        "text":  "disagree",
+        "startMs":  14750,
+        "endMs":  15010
+    },
+    {
+        "text":  "on?",
+        "startMs":  15010,
+        "endMs":  15450
+    },
+    {
+        "text":  "Look",
+        "startMs":  15910,
+        "endMs":  16250
+    },
+    {
+        "text":  "I\u0027m",
+        "startMs":  16250,
+        "endMs":  17310
+    },
+    {
+        "text":  "gonna",
+        "startMs":  17310,
+        "endMs":  17450
+    },
+    {
+        "text":  "say",
+        "startMs":  17450,
+        "endMs":  17750
+    },
+    {
+        "text":  "it",
+        "startMs":  17750,
+        "endMs":  17910
+    },
+    {
+        "text":  "I\u0027m",
+        "startMs":  17910,
+        "endMs":  18350
+    },
+    {
+        "text":  "gonna",
+        "startMs":  18350,
+        "endMs":  18430
+    },
+    {
+        "text":  "say",
+        "startMs":  18430,
+        "endMs":  18610
+    },
+    {
+        "text":  "it",
+        "startMs":  18610,
+        "endMs":  18730
+    },
+    {
+        "text":  "very",
+        "startMs":  18730,
+        "endMs":  18910
+    },
+    {
+        "text":  "simply",
+        "startMs":  18910,
+        "endMs":  19290
+    },
+    {
+        "text":  "you",
+        "startMs":  19290,
+        "endMs":  20510
+    },
+    {
+        "text":  "know",
+        "startMs":  20510,
+        "endMs":  20670
+    },
+    {
+        "text":  "there",
+        "startMs":  20670,
+        "endMs":  20910
+    },
+    {
+        "text":  "are",
+        "startMs":  20910,
+        "endMs":  21050
+    },
+    {
+        "text":  "many",
+        "startMs":  21050,
+        "endMs":  21430
+    },
+    {
+        "text":  "difficult",
+        "startMs":  21430,
+        "endMs":  21850
+    },
+    {
+        "text":  "issues",
+        "startMs":  21850,
+        "endMs":  22390
+    },
+    {
+        "text":  "that",
+        "startMs":  22390,
+        "endMs":  23250
+    },
+    {
+        "text":  "you",
+        "startMs":  23250,
+        "endMs":  24650
+    },
+    {
+        "text":  "know",
+        "startMs":  24650,
+        "endMs":  24790
+    },
+    {
+        "text":  "you",
+        "startMs":  24790,
+        "endMs":  25330
+    },
+    {
+        "text":  "face",
+        "startMs":  25330,
+        "endMs":  25570
+    },
+    {
+        "text":  "when",
+        "startMs":  25570,
+        "endMs":  25810
+    },
+    {
+        "text":  "you\u0027re",
+        "startMs":  25810,
+        "endMs":  25910
+    },
+    {
+        "text":  "building",
+        "startMs":  25910,
+        "endMs":  26110
+    },
+    {
+        "text":  "powerful",
+        "startMs":  26110,
+        "endMs":  26470
+    },
+    {
+        "text":  "technology",
+        "startMs":  26470,
+        "endMs":  27110
+    },
+    {
+        "text":  "that",
+        "startMs":  27110,
+        "endMs":  27330
+    },
+    {
+        "text":  "anthropic",
+        "startMs":  27330,
+        "endMs":  27870
+    },
+    {
+        "text":  "faces",
+        "startMs":  27870,
+        "endMs":  28150
+    },
+    {
+        "text":  "every",
+        "startMs":  28150,
+        "endMs":  28470
+    },
+    {
+        "text":  "day",
+        "startMs":  28470,
+        "endMs":  28710
+    },
+    {
+        "text":  "where",
+        "startMs":  28710,
+        "endMs":  28930
+    },
+    {
+        "text":  "we",
+        "startMs":  28930,
+        "endMs":  29110
+    },
+    {
+        "text":  "don\u0027t",
+        "startMs":  29110,
+        "endMs":  29470
+    },
+    {
+        "text":  "know",
+        "startMs":  29470,
+        "endMs":  29670
+    },
+    {
+        "text":  "whether",
+        "startMs":  29670,
+        "endMs":  29950
+    },
+    {
+        "text":  "we\u0027re",
+        "startMs":  29950,
+        "endMs":  30150
+    },
+    {
+        "text":  "making",
+        "startMs":  30150,
+        "endMs":  30350
+    },
+    {
+        "text":  "the",
+        "startMs":  30350,
+        "endMs":  30530
+    },
+    {
+        "text":  "right",
+        "startMs":  30530,
+        "endMs":  30670
+    },
+    {
+        "text":  "decision",
+        "startMs":  30670,
+        "endMs":  31050
+    },
+    {
+        "text":  "or",
+        "startMs":  31050,
+        "endMs":  31210
+    },
+    {
+        "text":  "the",
+        "startMs":  31210,
+        "endMs":  31310
+    },
+    {
+        "text":  "wrong",
+        "startMs":  31310,
+        "endMs":  31530
+    },
+    {
+        "text":  "decision",
+        "startMs":  31530,
+        "endMs":  31930
+    },
+    {
+        "text":  "so",
+        "startMs":  31930,
+        "endMs":  33350
+    },
+    {
+        "text":  "you",
+        "startMs":  33350,
+        "endMs":  33630
+    },
+    {
+        "text":  "know",
+        "startMs":  33630,
+        "endMs":  33750
+    },
+    {
+        "text":  "there",
+        "startMs":  33750,
+        "endMs":  34030
+    },
+    {
+        "text":  "are",
+        "startMs":  34030,
+        "endMs":  34170
+    },
+    {
+        "text":  "many",
+        "startMs":  34170,
+        "endMs":  34470
+    },
+    {
+        "text":  "valid",
+        "startMs":  34470,
+        "endMs":  34830
+    },
+    {
+        "text":  "disagreements",
+        "startMs":  34830,
+        "endMs":  35430
+    },
+    {
+        "text":  "to",
+        "startMs":  35430,
+        "endMs":  35710
+    },
+    {
+        "text":  "be",
+        "startMs":  35710,
+        "endMs":  35850
+    },
+    {
+        "text":  "had",
+        "startMs":  35850,
+        "endMs":  36090
+    },
+    {
+        "text":  "on",
+        "startMs":  36090,
+        "endMs":  36230
+    },
+    {
+        "text":  "safety",
+        "startMs":  36230,
+        "endMs":  36530
+    },
+    {
+        "text":  "we",
+        "startMs":  36530,
+        "endMs":  37270
+    },
+    {
+        "text":  "certainly",
+        "startMs":  37270,
+        "endMs":  37890
+    },
+    {
+        "text":  "had",
+        "startMs":  37890,
+        "endMs":  38170
+    },
+    {
+        "text":  "some",
+        "startMs":  38170,
+        "endMs":  38330
+    },
+    {
+        "text":  "of",
+        "startMs":  38330,
+        "endMs":  38430
+    },
+    {
+        "text":  "those",
+        "startMs":  38430,
+        "endMs":  38570
+    },
+    {
+        "text":  "disagreements",
+        "startMs":  38570,
+        "endMs":  39070
+    },
+    {
+        "text":  "with",
+        "startMs":  39070,
+        "endMs":  39250
+    },
+    {
+        "text":  "them",
+        "startMs":  39250,
+        "endMs":  39430
+    },
+    {
+        "text":  "but",
+        "startMs":  39430,
+        "endMs":  39650
+    },
+    {
+        "text":  "you",
+        "startMs":  39650,
+        "endMs":  40190
+    },
+    {
+        "text":  "know",
+        "startMs":  40190,
+        "endMs":  40310
+    },
+    {
+        "text":  "people",
+        "startMs":  40310,
+        "endMs":  40750
+    },
+    {
+        "text":  "that",
+        "startMs":  40750,
+        "endMs":  41190
+    },
+    {
+        "text":  "that",
+        "startMs":  41190,
+        "endMs":  41650
+    },
+    {
+        "text":  "that",
+        "startMs":  41650,
+        "endMs":  41770
+    },
+    {
+        "text":  "alone",
+        "startMs":  41770,
+        "endMs":  42210
+    },
+    {
+        "text":  "is",
+        "startMs":  42210,
+        "endMs":  42490
+    },
+    {
+        "text":  "not",
+        "startMs":  42490,
+        "endMs":  42630
+    },
+    {
+        "text":  "sufficient",
+        "startMs":  42630,
+        "endMs":  43030
+    },
+    {
+        "text":  "to",
+        "startMs":  43030,
+        "endMs":  43290
+    },
+    {
+        "text":  "leave",
+        "startMs":  43290,
+        "endMs":  43550
+    },
+    {
+        "text":  "people",
+        "startMs":  43550,
+        "endMs":  44590
+    },
+    {
+        "text":  "here",
+        "startMs":  44590,
+        "endMs":  44870
+    },
+    {
+        "text":  "have",
+        "startMs":  44870,
+        "endMs":  45050
+    },
+    {
+        "text":  "had",
+        "startMs":  45050,
+        "endMs":  45190
+    },
+    {
+        "text":  "disagreements",
+        "startMs":  45190,
+        "endMs":  45750
+    },
+    {
+        "text":  "with",
+        "startMs":  45750,
+        "endMs":  45930
+    },
+    {
+        "text":  "me",
+        "startMs":  45930,
+        "endMs":  46090
+    },
+    {
+        "text":  "people",
+        "startMs":  46090,
+        "endMs":  46330
+    },
+    {
+        "text":  "here",
+        "startMs":  46330,
+        "endMs":  46510
+    },
+    {
+        "text":  "have",
+        "startMs":  46510,
+        "endMs":  46670
+    },
+    {
+        "text":  "disagreements",
+        "startMs":  46670,
+        "endMs":  47190
+    },
+    {
+        "text":  "with",
+        "startMs":  47190,
+        "endMs":  47410
+    },
+    {
+        "text":  "each",
+        "startMs":  47410,
+        "endMs":  47590
+    },
+    {
+        "text":  "other",
+        "startMs":  47590,
+        "endMs":  47790
+    },
+    {
+        "text":  "but",
+        "startMs":  47790,
+        "endMs":  48570
+    },
+    {
+        "text":  "when",
+        "startMs":  48570,
+        "endMs":  49250
+    },
+    {
+        "text":  "you",
+        "startMs":  49250,
+        "endMs":  49390
+    },
+    {
+        "text":  "feel",
+        "startMs":  49390,
+        "endMs":  49710
+    },
+    {
+        "text":  "that",
+        "startMs":  49710,
+        "endMs":  49870
+    },
+    {
+        "text":  "you",
+        "startMs":  49870,
+        "endMs":  49950
+    },
+    {
+        "text":  "can\u0027t",
+        "startMs":  49950,
+        "endMs":  50310
+    },
+    {
+        "text":  "trust",
+        "startMs":  50310,
+        "endMs":  50490
+    },
+    {
+        "text":  "someone",
+        "startMs":  50490,
+        "endMs":  50890
+    },
+    {
+        "text":  "when",
+        "startMs":  50890,
+        "endMs":  51490
+    },
+    {
+        "text":  "you",
+        "startMs":  51490,
+        "endMs":  51650
+    },
+    {
+        "text":  "feel",
+        "startMs":  51650,
+        "endMs":  52050
+    },
+    {
+        "text":  "that",
+        "startMs":  52050,
+        "endMs":  52370
+    },
+    {
+        "text":  "their",
+        "startMs":  52370,
+        "endMs":  52790
+    },
+    {
+        "text":  "values",
+        "startMs":  52790,
+        "endMs":  53750
+    },
+    {
+        "text":  "are",
+        "startMs":  53750,
+        "endMs":  53990
+    },
+    {
+        "text":  "not",
+        "startMs":  53990,
+        "endMs":  54190
+    },
+    {
+        "text":  "what",
+        "startMs":  54190,
+        "endMs":  54370
+    },
+    {
+        "text":  "they",
+        "startMs":  54370,
+        "endMs":  54550
+    },
+    {
+        "text":  "say",
+        "startMs":  54550,
+        "endMs":  54830
+    },
+    {
+        "text":  "they",
+        "startMs":  54830,
+        "endMs":  55010
+    },
+    {
+        "text":  "are",
+        "startMs":  55010,
+        "endMs":  55250
+    },
+    {
+        "text":  "when",
+        "startMs":  55250,
+        "endMs":  55710
+    },
+    {
+        "text":  "you",
+        "startMs":  55710,
+        "endMs":  55870
+    },
+    {
+        "text":  "feel",
+        "startMs":  55870,
+        "endMs":  56250
+    },
+    {
+        "text":  "that",
+        "startMs":  56250,
+        "endMs":  56450
+    },
+    {
+        "text":  "they\u0027re",
+        "startMs":  56450,
+        "endMs":  56650
+    },
+    {
+        "text":  "not",
+        "startMs":  56650,
+        "endMs":  56850
+    },
+    {
+        "text":  "honest",
+        "startMs":  56850,
+        "endMs":  57450
+    },
+    {
+        "text":  "when",
+        "startMs":  57450,
+        "endMs":  58210
+    },
+    {
+        "text":  "you",
+        "startMs":  58210,
+        "endMs":  58390
+    },
+    {
+        "text":  "feel",
+        "startMs":  58390,
+        "endMs":  58770
+    },
+    {
+        "text":  "that",
+        "startMs":  58770,
+        "endMs":  59030
+    },
+    {
+        "text":  "they\u0027re",
+        "startMs":  59030,
+        "endMs":  59190
+    },
+    {
+        "text":  "not",
+        "startMs":  59190,
+        "endMs":  59370
+    },
+    {
+        "text":  "in",
+        "startMs":  59370,
+        "endMs":  59690
+    },
+    {
+        "text":  "it",
+        "startMs":  59690,
+        "endMs":  59810
+    },
+    {
+        "text":  "for",
+        "startMs":  59810,
+        "endMs":  59990
+    },
+    {
+        "text":  "the",
+        "startMs":  59990,
+        "endMs":  60130
+    },
+    {
+        "text":  "reasons",
+        "startMs":  60130,
+        "endMs":  60550
+    },
+    {
+        "text":  "that",
+        "startMs":  60550,
+        "endMs":  60790
+    },
+    {
+        "text":  "they",
+        "startMs":  60790,
+        "endMs":  60970
+    },
+    {
+        "text":  "say",
+        "startMs":  60970,
+        "endMs":  61350
+    },
+    {
+        "text":  "when",
+        "startMs":  61350,
+        "endMs":  62950
+    },
+    {
+        "text":  "you",
+        "startMs":  62950,
+        "endMs":  63410
+    },
+    {
+        "text":  "see",
+        "startMs":  63410,
+        "endMs":  63890
+    },
+    {
+        "text":  "disturbing",
+        "startMs":  65750,
+        "endMs":  66270
+    },
+    {
+        "text":  "patterns",
+        "startMs":  66270,
+        "endMs":  66790
+    },
+    {
+        "text":  "of",
+        "startMs":  66790,
+        "endMs":  67330
+    },
+    {
+        "text":  "behavior",
+        "startMs":  67330,
+        "endMs":  67850
+    },
+    {
+        "text":  "dishonesty",
+        "startMs":  67850,
+        "endMs":  68790
+    },
+    {
+        "text":  "that",
+        "startMs":  68790,
+        "endMs":  69650
+    },
+    {
+        "text":  "makes",
+        "startMs":  69650,
+        "endMs":  70010
+    },
+    {
+        "text":  "it",
+        "startMs":  70010,
+        "endMs":  70170
+    },
+    {
+        "text":  "very",
+        "startMs":  70170,
+        "endMs":  70410
+    },
+    {
+        "text":  "hard",
+        "startMs":  70410,
+        "endMs":  70890
+    },
+    {
+        "text":  "to",
+        "startMs":  70890,
+        "endMs":  71530
+    },
+    {
+        "text":  "you",
+        "startMs":  71530,
+        "endMs":  71790
+    },
+    {
+        "text":  "know",
+        "startMs":  71790,
+        "endMs":  71950
+    },
+    {
+        "text":  "to",
+        "startMs":  71950,
+        "endMs":  72130
+    },
+    {
+        "text":  "continue",
+        "startMs":  72130,
+        "endMs":  72690
+    },
+    {
+        "text":  "to",
+        "startMs":  72690,
+        "endMs":  72990
+    },
+    {
+        "text":  "work",
+        "startMs":  72990,
+        "endMs":  73270
+    },
+    {
+        "text":  "with",
+        "startMs":  73270,
+        "endMs":  73490
+    },
+    {
+        "text":  "the",
+        "startMs":  73490,
+        "endMs":  73610
+    },
+    {
+        "text":  "company",
+        "startMs":  73610,
+        "endMs":  73890
+    },
+    {
+        "text":  "to",
+        "startMs":  73890,
+        "endMs":  74110
+    },
+    {
+        "text":  "continue",
+        "startMs":  74110,
+        "endMs":  74470
+    },
+    {
+        "text":  "to",
+        "startMs":  74470,
+        "endMs":  74630
+    },
+    {
+        "text":  "trust",
+        "startMs":  74630,
+        "endMs":  74890
+    },
+    {
+        "text":  "the",
+        "startMs":  74890,
+        "endMs":  75110
+    },
+    {
+        "text":  "company",
+        "startMs":  75110,
+        "endMs":  75410
+    },
+    {
+        "text":  "and",
+        "startMs":  75410,
+        "endMs":  76010
+    },
+    {
+        "text":  "look",
+        "startMs":  76010,
+        "endMs":  76230
+    },
+    {
+        "text":  "at",
+        "startMs":  76230,
+        "endMs":  76470
+    },
+    {
+        "text":  "the",
+        "startMs":  76470,
+        "endMs":  76590
+    },
+    {
+        "text":  "end",
+        "startMs":  76590,
+        "endMs":  76730
+    },
+    {
+        "text":  "of",
+        "startMs":  76730,
+        "endMs":  76850
+    },
+    {
+        "text":  "the",
+        "startMs":  76850,
+        "endMs":  76910
+    },
+    {
+        "text":  "day",
+        "startMs":  76910,
+        "endMs":  77230
+    },
+    {
+        "text":  "why",
+        "startMs":  77230,
+        "endMs":  78650
+    },
+    {
+        "text":  "argue",
+        "startMs":  78940,
+        "endMs":  79540
+    },
+    {
+        "text":  "with",
+        "startMs":  79540,
+        "endMs":  79740
+    },
+    {
+        "text":  "someone",
+        "startMs":  79740,
+        "endMs":  80040
+    },
+    {
+        "text":  "when",
+        "startMs":  80040,
+        "endMs":  80300
+    },
+    {
+        "text":  "you",
+        "startMs":  80300,
+        "endMs":  80400
+    },
+    {
+        "text":  "don\u0027t",
+        "startMs":  80400,
+        "endMs":  80520
+    },
+    {
+        "text":  "have",
+        "startMs":  80520,
+        "endMs":  80700
+    },
+    {
+        "text":  "the",
+        "startMs":  80700,
+        "endMs":  80820
+    },
+    {
+        "text":  "same",
+        "startMs":  80820,
+        "endMs":  81020
+    },
+    {
+        "text":  "vision",
+        "startMs":  81020,
+        "endMs":  81320
+    },
+    {
+        "text":  "and",
+        "startMs":  81320,
+        "endMs":  81540
+    },
+    {
+        "text":  "you",
+        "startMs":  81540,
+        "endMs":  81640
+    },
+    {
+        "text":  "don\u0027t",
+        "startMs":  81640,
+        "endMs":  81760
+    },
+    {
+        "text":  "trust",
+        "startMs":  81760,
+        "endMs":  82060
+    },
+    {
+        "text":  "them",
+        "startMs":  82060,
+        "endMs":  82300
+    },
+    {
+        "text":  "like",
+        "startMs":  82300,
+        "endMs":  82840
+    },
+    {
+        "text":  "the",
+        "startMs":  82840,
+        "endMs":  83340
+    },
+    {
+        "text":  "way",
+        "startMs":  83340,
+        "endMs":  83560
+    },
+    {
+        "text":  "the",
+        "startMs":  83560,
+        "endMs":  83880
+    },
+    {
+        "text":  "the",
+        "startMs":  83880,
+        "endMs":  84140
+    },
+    {
+        "text":  "way",
+        "startMs":  84140,
+        "endMs":  84320
+    },
+    {
+        "text":  "to",
+        "startMs":  84320,
+        "endMs":  84480
+    },
+    {
+        "text":  "resolve",
+        "startMs":  84480,
+        "endMs":  84700
+    },
+    {
+        "text":  "it",
+        "startMs":  84700,
+        "endMs":  84960
+    },
+    {
+        "text":  "is",
+        "startMs":  84960,
+        "endMs":  85160
+    },
+    {
+        "text":  "you",
+        "startMs":  85160,
+        "endMs":  85320
+    },
+    {
+        "text":  "go",
+        "startMs":  85320,
+        "endMs":  85500
+    },
+    {
+        "text":  "off",
+        "startMs":  85500,
+        "endMs":  85760
+    },
+    {
+        "text":  "and",
+        "startMs":  85760,
+        "endMs":  85860
+    },
+    {
+        "text":  "do",
+        "startMs":  85860,
+        "endMs":  86080
+    },
+    {
+        "text":  "your",
+        "startMs":  86080,
+        "endMs":  86460
+    },
+    {
+        "text":  "thing",
+        "startMs":  86460,
+        "endMs":  86700
+    },
+    {
+        "text":  "they",
+        "startMs":  86700,
+        "endMs":  87220
+    },
+    {
+        "text":  "go",
+        "startMs":  87220,
+        "endMs":  87480
+    },
+    {
+        "text":  "off",
+        "startMs":  87480,
+        "endMs":  87760
+    },
+    {
+        "text":  "and",
+        "startMs":  87760,
+        "endMs":  88000
+    },
+    {
+        "text":  "do",
+        "startMs":  88000,
+        "endMs":  88260
+    },
+    {
+        "text":  "their",
+        "startMs":  88260,
+        "endMs":  88660
+    },
+    {
+        "text":  "thing",
+        "startMs":  88660,
+        "endMs":  88960
+    },
+    {
+        "text":  "and",
+        "startMs":  88960,
+        "endMs":  89500
+    },
+    {
+        "text":  "I",
+        "startMs":  89500,
+        "endMs":  89680
+    },
+    {
+        "text":  "am",
+        "startMs":  89680,
+        "endMs":  89840
+    },
+    {
+        "text":  "completely",
+        "startMs":  89840,
+        "endMs":  90380
+    },
+    {
+        "text":  "at",
+        "startMs":  90380,
+        "endMs":  90660
+    },
+    {
+        "text":  "peace",
+        "startMs":  90660,
+        "endMs":  90940
+    },
+    {
+        "text":  "with",
+        "startMs":  90940,
+        "endMs":  91680
+    },
+    {
+        "text":  "the",
+        "startMs":  91680,
+        "endMs":  92520
+    },
+    {
+        "text":  "idea",
+        "startMs":  92520,
+        "endMs":  92880
+    },
+    {
+        "text":  "that",
+        "startMs":  92880,
+        "endMs":  93160
+    },
+    {
+        "text":  "we\u0027re",
+        "startMs":  93160,
+        "endMs":  93400
+    },
+    {
+        "text":  "doing",
+        "startMs":  93400,
+        "endMs":  93580
+    },
+    {
+        "text":  "things",
+        "startMs":  93580,
+        "endMs":  93960
+    },
+    {
+        "text":  "our",
+        "startMs":  93960,
+        "endMs":  94200
+    },
+    {
+        "text":  "way",
+        "startMs":  94200,
+        "endMs":  94500
+    },
+    {
+        "text":  "and",
+        "startMs":  94500,
+        "endMs":  95020
+    },
+    {
+        "text":  "they\u0027re",
+        "startMs":  95020,
+        "endMs":  95320
+    },
+    {
+        "text":  "doing",
+        "startMs":  95320,
+        "endMs":  95500
+    },
+    {
+        "text":  "things",
+        "startMs":  95500,
+        "endMs":  95940
+    },
+    {
+        "text":  "their",
+        "startMs":  95940,
+        "endMs":  96180
+    },
+    {
+        "text":  "way",
+        "startMs":  96180,
+        "endMs":  96460
+    },
+    {
+        "text":  "we\u0027ll",
+        "startMs":  96460,
+        "endMs":  97040
+    },
+    {
+        "text":  "see",
+        "startMs":  97040,
+        "endMs":  97220
+    },
+    {
+        "text":  "who",
+        "startMs":  97220,
+        "endMs":  97440
+    },
+    {
+        "text":  "wins",
+        "startMs":  97440,
+        "endMs":  97720
+    },
+    {
+        "text":  "in",
+        "startMs":  97720,
+        "endMs":  97860
+    },
+    {
+        "text":  "the",
+        "startMs":  97860,
+        "endMs":  97940
+    },
+    {
+        "text":  "market",
+        "startMs":  97940,
+        "endMs":  98220
+    },
+    {
+        "text":  "and",
+        "startMs":  98220,
+        "endMs":  98540
+    },
+    {
+        "text":  "we\u0027ll",
+        "startMs":  98540,
+        "endMs":  98740
+    },
+    {
+        "text":  "see",
+        "startMs":  98740,
+        "endMs":  98940
+    },
+    {
+        "text":  "who",
+        "startMs":  98940,
+        "endMs":  99140
+    },
+    {
+        "text":  "wins",
+        "startMs":  99140,
+        "endMs":  99400
+    },
+    {
+        "text":  "in",
+        "startMs":  99400,
+        "endMs":  99540
+    },
+    {
+        "text":  "the",
+        "startMs":  99540,
+        "endMs":  99620
+    },
+    {
+        "text":  "court",
+        "startMs":  99620,
+        "endMs":  99820
+    },
+    {
+        "text":  "of",
+        "startMs":  99820,
+        "endMs":  99940
+    },
+    {
+        "text":  "public",
+        "startMs":  99940,
+        "endMs":  100160
+    },
+    {
+        "text":  "opinion",
+        "startMs":  100160,
+        "endMs":  100540
+    },
+    {
+        "text":  "I",
+        "startMs":  100540,
+        "endMs":  101740
+    },
+    {
+        "text":  "think",
+        "startMs":  101740,
+        "endMs":  101980
+    },
+    {
+        "text":  "those",
+        "startMs":  101980,
+        "endMs":  102240
+    },
+    {
+        "text":  "things",
+        "startMs":  102240,
+        "endMs":  102620
+    },
+    {
+        "text":  "speak",
+        "startMs":  102620,
+        "endMs":  103320
+    },
+    {
+        "text":  "louder",
+        "startMs":  103320,
+        "endMs":  103800
+    },
+    {
+        "text":  "than",
+        "startMs":  103800,
+        "endMs":  104140
+    },
+    {
+        "text":  "any",
+        "startMs":  104140,
+        "endMs":  104460
+    },
+    {
+        "text":  "drama",
+        "startMs":  104460,
+        "endMs":  104800
+    }
+]
