@@ -488,6 +488,23 @@ def build(job: Job) -> dict:
             "fadeIn": 0.1, "fadeOut": 0.3,
         })
 
+    # --- lip-sync invariant ---------------------------------------------------
+    # If a clip is on screen while its own audio plays, the two must start
+    # together. The source-audio pad opens a beat of air before the clip speaks,
+    # which is right for a document but desyncs a talking head by exactly that
+    # much — visible, and invisible in the job file.
+    speech_starts = [(a["start"], a["src"]) for a in audio if a["role"] == "clip-audio"]
+    for c in clips:
+        if not c["sources"]:
+            continue
+        vsrc = Path(c["sources"][0]["src"]).stem
+        for astart, asrc in speech_starts:
+            if Path(asrc).stem == vsrc and abs(astart - c["start"]) > 0.04:
+                raise SystemExit(
+                    f"lip-sync: {vsrc} video starts at {c['start']:.2f}s but its audio "
+                    f"at {astart:.2f}s ({abs(astart - c['start']):.2f}s out). "
+                    f"Set padSeconds to 0 on that sourceAudio entry.")
+
     # --- one-voice invariant --------------------------------------------------
     # Narration and source audio must never overlap. This is four lines and it
     # makes a whole bug class unshippable (F18's lesson): the `shift()` bug that
@@ -543,6 +560,12 @@ def build(job: Job) -> dict:
                               for w in c["words"]]}
                    if c.get("words") else {})}
                for c in caps.get("cues", [])]
+    # Nothing of OURS may be on screen while someone else is speaking. A cue that
+    # straddles an insertion point gets stretched across the whole gap by shift(),
+    # so it sits there for the entire clip — our words captioned over their voice.
+    # We have no transcript of what they say, so the right answer is no caption.
+    mute = mute + [(a["start"], a["start"] + a["duration"])
+                   for a in audio if a["role"] == "clip-audio"]
     cues = [c for c in shifted
             if not any(c["start"] < e and c["end"] > s for s, e in mute)]
     if mute:

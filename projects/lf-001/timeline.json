@@ -3,7 +3,7 @@
   "meta": {
     "title": "Who Is Actually Paying for the AI Boom?",
     "slug": "lf-001",
-    "durationInSeconds": 368.18,
+    "durationInSeconds": 367.73,
     "fps": 30,
     "width": 1920,
     "height": 1080
@@ -35,7 +35,7 @@
     },
     {
       "start": 248.04,
-      "end": 368.18,
+      "end": 367.73,
       "energy": 0.4,
       "label": "build"
     }
@@ -2200,13 +2200,24 @@
       "id": "v20",
       "start": 275.38,
       "end": 290.98,
-      "layout": "graphic",
-      "background": "#E9E9EC",
-      "sources": [],
+      "layout": "full",
+      "background": "#000000",
+      "sources": [
+        {
+          "src": "lf-001/news/huang-justified.mp4",
+          "offset": 0.0,
+          "focusX": 0.5,
+          "focusY": 0.5,
+          "panX": 0,
+          "panY": 0,
+          "scale": 1,
+          "muted": true
+        }
+      ],
       "camera": {
-        "kind": "none",
-        "from": 1,
-        "to": 1,
+        "kind": "punch-in",
+        "from": 1.0,
+        "to": 1.05,
         "originX": 0.5,
         "originY": 0.5
       },
@@ -2217,7 +2228,7 @@
     {
       "id": "f61",
       "start": 290.98,
-      "end": 294.285,
+      "end": 294.21,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2245,8 +2256,8 @@
     },
     {
       "id": "f62",
-      "start": 294.285,
-      "end": 297.59,
+      "start": 294.21,
+      "end": 297.44,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2274,8 +2285,8 @@
     },
     {
       "id": "f63",
-      "start": 297.59,
-      "end": 300.895,
+      "start": 297.44,
+      "end": 300.67,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2303,8 +2314,8 @@
     },
     {
       "id": "f64",
-      "start": 300.895,
-      "end": 304.2,
+      "start": 300.67,
+      "end": 303.9,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2332,8 +2343,8 @@
     },
     {
       "id": "f65",
-      "start": 304.2,
-      "end": 307.505,
+      "start": 303.9,
+      "end": 307.13,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2361,8 +2372,8 @@
     },
     {
       "id": "f66",
-      "start": 307.505,
-      "end": 310.81,
+      "start": 307.13,
+      "end": 310.36,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2390,8 +2401,8 @@
     },
     {
       "id": "v21",
-      "start": 310.81,
-      "end": 313.81,
+      "start": 310.36,
+      "end": 313.36,
       "layout": "graphic",
       "background": "#E9E9EC",
       "sources": [],
@@ -2408,8 +2419,8 @@
     },
     {
       "id": "f67",
-      "start": 313.81,
-      "end": 316.991,
+      "start": 313.36,
+      "end": 316.541,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2437,8 +2448,8 @@
     },
     {
       "id": "f68",
-      "start": 316.991,
-      "end": 320.172,
+      "start": 316.541,
+      "end": 319.722,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2466,8 +2477,8 @@
     },
     {
       "id": "f69",
-      "start": 320.172,
-      "end": 323.353,
+      "start": 319.722,
+      "end": 322.903,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2495,8 +2506,8 @@
     },
     {
       "id": "f70",
-      "start": 323.353,
-      "end": 326.534,
+      "start": 322.903,
+      "end": 326.084,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2524,8 +2535,8 @@
     },
     {
       "id": "f71",
-      "start": 326.534,
-      "end": 329.716,
+      "start": 326.084,
+      "end": 329.266,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2553,8 +2564,8 @@
     },
     {
       "id": "f72",
-      "start": 329.716,
-      "end": 332.897,
+      "start": 329.266,
+      "end": 332.447,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2582,8 +2593,8 @@
     },
     {
       "id": "f73",
-      "start": 332.897,
-      "end": 336.078,
+      "start": 332.447,
+      "end": 335.628,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2611,8 +2622,8 @@
     },
     {
       "id": "f74",
-      "start": 336.078,
-      "end": 339.259,
+      "start": 335.628,
+      "end": 338.809,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2640,8 +2651,8 @@
     },
     {
       "id": "f75",
-      "start": 339.259,
-      "end": 342.44,
+      "start": 338.809,
+      "end": 341.99,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2669,8 +2680,8 @@
     },
     {
       "id": "v22",
-      "start": 342.44,
-      "end": 356.44,
+      "start": 341.99,
+      "end": 355.99,
       "layout": "graphic",
       "background": "#E9E9EC",
       "sources": [],
@@ -2687,8 +2698,8 @@
     },
     {
       "id": "f76",
-      "start": 356.44,
-      "end": 360.26,
+      "start": 355.99,
+      "end": 359.81,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2716,8 +2727,8 @@
     },
     {
       "id": "f77",
-      "start": 360.26,
-      "end": 364.08,
+      "start": 359.81,
+      "end": 363.63,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2745,8 +2756,8 @@
     },
     {
       "id": "v23",
-      "start": 364.08,
-      "end": 369.08,
+      "start": 363.63,
+      "end": 368.63,
       "layout": "graphic",
       "background": "#E9E9EC",
       "sources": [],
@@ -3054,28 +3065,18 @@
       }
     },
     {
-      "type": "quote-card",
-      "id": "ov20",
-      "start": 275.38,
-      "end": 290.98,
-      "z": 60,
-      "text": "What is left over to fuel that revolutionary agentic AI is not only substantially less than you thought, and all of it justified.",
-      "attribution": "Jensen Huang, NVIDIA \u2014 U.S.\u2013Saudi Investment Forum, November 2025",
-      "size": 54
-    },
-    {
       "type": "date-card",
       "id": "ov21",
-      "start": 310.81,
-      "end": 313.81,
+      "start": 310.36,
+      "end": 313.36,
       "z": 60,
       "text": "Three things to watch"
     },
     {
       "type": "entity-graph",
       "id": "ov22",
-      "start": 342.44,
-      "end": 356.44,
+      "start": 341.99,
+      "end": 355.99,
       "z": 60,
       "title": "Announced flows, 2025-2026",
       "nodes": [
@@ -3155,8 +3156,8 @@
     {
       "type": "quote-card",
       "id": "ov23",
-      "start": 364.08,
-      "end": 369.08,
+      "start": 363.63,
+      "end": 368.63,
       "z": 60,
       "text": "Now you know which numbers to watch.",
       "size": 70,
@@ -7146,23 +7147,6 @@
         ]
       },
       {
-        "start": 203.35,
-        "end": 210.9,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "in",
-            "start": 203.35,
-            "end": 203.83
-          },
-          {
-            "text": "Oracle's",
-            "start": 203.83,
-            "end": 210.9
-          }
-        ]
-      },
-      {
         "start": 210.9,
         "end": 212.28,
         "emphasis": "none",
@@ -8441,1294 +8425,1294 @@
         ]
       },
       {
-        "start": 291.95,
-        "end": 292.35,
+        "start": 291.5,
+        "end": 291.9,
         "emphasis": "none",
         "words": [
           {
             "text": "But",
-            "start": 291.95,
-            "end": 292.09
+            "start": 291.5,
+            "end": 291.64
           },
           {
             "text": "vendor",
-            "start": 292.09,
-            "end": 292.35
+            "start": 291.64,
+            "end": 291.9
           }
         ]
       },
       {
-        "start": 292.35,
-        "end": 293.27,
+        "start": 291.9,
+        "end": 292.82,
         "emphasis": "none",
         "words": [
           {
             "text": "financing",
-            "start": 292.35,
-            "end": 292.81
+            "start": 291.9,
+            "end": 292.36
           },
           {
             "text": "has",
-            "start": 292.81,
-            "end": 293.27
+            "start": 292.36,
+            "end": 292.82
           }
         ]
       },
       {
-        "start": 293.27,
-        "end": 293.71,
+        "start": 292.82,
+        "end": 293.26,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 293.27,
-            "end": 293.37
+            "start": 292.82,
+            "end": 292.92
           },
           {
             "text": "known",
-            "start": 293.37,
-            "end": 293.71
+            "start": 292.92,
+            "end": 293.26
           }
         ]
       },
       {
-        "start": 293.71,
-        "end": 294.95,
+        "start": 293.26,
+        "end": 294.5,
         "emphasis": "none",
         "words": [
           {
             "text": "failure",
-            "start": 293.71,
-            "end": 294.05
+            "start": 293.26,
+            "end": 293.6
           },
           {
             "text": "mode,",
-            "start": 294.05,
-            "end": 294.45
+            "start": 293.6,
+            "end": 294.0
           }
         ]
       },
       {
-        "start": 295.11,
-        "end": 295.49,
+        "start": 294.66,
+        "end": 295.04,
         "emphasis": "none",
         "words": [
           {
             "text": "and",
-            "start": 295.11,
-            "end": 295.39
+            "start": 294.66,
+            "end": 294.94
           },
           {
             "text": "it",
-            "start": 295.39,
-            "end": 295.49
+            "start": 294.94,
+            "end": 295.04
           }
         ]
       },
       {
-        "start": 295.49,
-        "end": 296.51,
+        "start": 295.04,
+        "end": 296.06,
         "emphasis": "none",
         "words": [
           {
             "text": "isn't",
-            "start": 295.49,
-            "end": 295.73
+            "start": 295.04,
+            "end": 295.28
           },
           {
             "text": "subtle.",
-            "start": 295.73,
-            "end": 296.01
+            "start": 295.28,
+            "end": 295.56
           }
         ]
       },
       {
-        "start": 296.69,
-        "end": 297.07,
+        "start": 296.24,
+        "end": 296.62,
         "emphasis": "none",
         "words": [
           {
             "text": "It",
-            "start": 296.69,
-            "end": 296.89
+            "start": 296.24,
+            "end": 296.44
           },
           {
             "text": "works",
-            "start": 296.89,
-            "end": 297.07
+            "start": 296.44,
+            "end": 296.62
           }
         ]
       },
       {
-        "start": 297.07,
-        "end": 297.83,
+        "start": 296.62,
+        "end": 297.38,
         "emphasis": "none",
         "words": [
           {
             "text": "beautifully",
-            "start": 297.07,
-            "end": 297.49
+            "start": 296.62,
+            "end": 297.04
           },
           {
             "text": "while",
-            "start": 297.49,
-            "end": 297.83
+            "start": 297.04,
+            "end": 297.38
           }
         ]
       },
       {
-        "start": 297.83,
-        "end": 298.91,
+        "start": 297.38,
+        "end": 298.46,
         "emphasis": "none",
         "words": [
           {
             "text": "demand",
-            "start": 297.83,
-            "end": 298.05
+            "start": 297.38,
+            "end": 297.6
           },
           {
             "text": "grows.",
-            "start": 298.05,
-            "end": 298.57
+            "start": 297.6,
+            "end": 298.12
           }
         ]
       },
       {
-        "start": 298.91,
-        "end": 299.27,
+        "start": 298.46,
+        "end": 298.82,
         "emphasis": "none",
         "words": [
           {
             "text": "And",
-            "start": 298.91,
-            "end": 299.13
+            "start": 298.46,
+            "end": 298.68
           },
           {
             "text": "when",
-            "start": 299.13,
-            "end": 299.27
+            "start": 298.68,
+            "end": 298.82
           }
         ]
       },
       {
-        "start": 299.27,
-        "end": 300.71,
+        "start": 298.82,
+        "end": 300.26,
         "emphasis": "none",
         "words": [
           {
             "text": "demand",
-            "start": 299.27,
-            "end": 299.55
+            "start": 298.82,
+            "end": 299.1
           },
           {
             "text": "disappoints,",
-            "start": 299.55,
-            "end": 300.71
+            "start": 299.1,
+            "end": 300.26
           }
         ]
       },
       {
-        "start": 300.71,
-        "end": 301.17,
+        "start": 300.26,
+        "end": 300.72,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 300.71,
-            "end": 300.97
+            "start": 300.26,
+            "end": 300.52
           },
           {
             "text": "vendor",
-            "start": 300.97,
-            "end": 301.17
+            "start": 300.52,
+            "end": 300.72
           }
         ]
       },
       {
-        "start": 301.17,
-        "end": 302.35,
+        "start": 300.72,
+        "end": 301.9,
         "emphasis": "none",
         "words": [
           {
             "text": "loses",
-            "start": 301.17,
-            "end": 301.49
+            "start": 300.72,
+            "end": 301.04
           },
           {
             "text": "twice.",
-            "start": 301.49,
-            "end": 301.89
+            "start": 301.04,
+            "end": 301.44
           }
         ]
       },
       {
-        "start": 302.35,
-        "end": 302.95,
+        "start": 301.9,
+        "end": 302.5,
         "emphasis": "none",
         "words": [
           {
             "text": "The",
-            "start": 302.35,
-            "end": 302.63
+            "start": 301.9,
+            "end": 302.18
           },
           {
             "text": "sale,",
-            "start": 302.63,
-            "end": 302.95
+            "start": 302.18,
+            "end": 302.5
           }
         ]
       },
       {
-        "start": 302.95,
-        "end": 303.85,
+        "start": 302.5,
+        "end": 303.4,
         "emphasis": "none",
         "words": [
           {
             "text": "and",
-            "start": 302.95,
-            "end": 303.73
+            "start": 302.5,
+            "end": 303.28
           },
           {
             "text": "the",
-            "start": 303.73,
-            "end": 303.85
+            "start": 303.28,
+            "end": 303.4
           }
         ]
       },
       {
-        "start": 303.85,
-        "end": 304.37,
+        "start": 303.4,
+        "end": 303.92,
         "emphasis": "none",
         "words": [
           {
             "text": "investment",
-            "start": 303.85,
-            "end": 304.19
+            "start": 303.4,
+            "end": 303.74
           },
           {
             "text": "they",
-            "start": 304.19,
-            "end": 304.37
+            "start": 303.74,
+            "end": 303.92
           }
         ]
       },
       {
-        "start": 304.37,
-        "end": 304.69,
+        "start": 303.92,
+        "end": 304.24,
         "emphasis": "none",
         "words": [
           {
             "text": "made",
-            "start": 304.37,
-            "end": 304.55
+            "start": 303.92,
+            "end": 304.1
           },
           {
             "text": "to",
-            "start": 304.55,
-            "end": 304.69
+            "start": 304.1,
+            "end": 304.24
           }
         ]
       },
       {
-        "start": 304.69,
-        "end": 305.65,
+        "start": 304.24,
+        "end": 305.2,
         "emphasis": "none",
         "words": [
           {
             "text": "create",
-            "start": 304.69,
-            "end": 304.99
+            "start": 304.24,
+            "end": 304.54
           },
           {
             "text": "it.",
-            "start": 304.99,
-            "end": 305.15
+            "start": 304.54,
+            "end": 304.7
           }
         ]
       },
       {
-        "start": 305.75,
-        "end": 306.09,
+        "start": 305.3,
+        "end": 305.64,
         "emphasis": "none",
         "words": [
           {
             "text": "So",
-            "start": 305.75,
-            "end": 305.85
+            "start": 305.3,
+            "end": 305.4
           },
           {
             "text": "rather",
-            "start": 305.85,
-            "end": 306.09
+            "start": 305.4,
+            "end": 305.64
           }
         ]
       },
       {
-        "start": 306.09,
-        "end": 306.65,
+        "start": 305.64,
+        "end": 306.2,
         "emphasis": "none",
         "words": [
           {
             "text": "than",
-            "start": 306.09,
-            "end": 306.27
+            "start": 305.64,
+            "end": 305.82
           },
           {
             "text": "predicting",
-            "start": 306.27,
-            "end": 306.65
+            "start": 305.82,
+            "end": 306.2
           }
         ]
       },
       {
-        "start": 306.65,
-        "end": 307.39,
+        "start": 306.2,
+        "end": 306.94,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 306.65,
-            "end": 306.85
+            "start": 306.2,
+            "end": 306.4
           },
           {
             "text": "crash,",
-            "start": 306.85,
-            "end": 307.21
+            "start": 306.4,
+            "end": 306.76
           }
         ]
       },
       {
-        "start": 307.39,
-        "end": 307.93,
+        "start": 306.94,
+        "end": 307.48,
         "emphasis": "none",
         "words": [
           {
             "text": "which",
-            "start": 307.39,
-            "end": 307.51
+            "start": 306.94,
+            "end": 307.06
           },
           {
             "text": "I",
-            "start": 307.51,
-            "end": 307.93
+            "start": 307.06,
+            "end": 307.48
           }
         ]
       },
       {
-        "start": 307.93,
-        "end": 308.35,
+        "start": 307.48,
+        "end": 307.9,
         "emphasis": "none",
         "words": [
           {
             "text": "can't",
-            "start": 307.93,
-            "end": 308.21
+            "start": 307.48,
+            "end": 307.76
           },
           {
             "text": "do",
-            "start": 308.21,
-            "end": 308.35
+            "start": 307.76,
+            "end": 307.9
           }
         ]
       },
       {
-        "start": 308.35,
-        "end": 308.95,
+        "start": 307.9,
+        "end": 308.5,
         "emphasis": "none",
         "words": [
           {
             "text": "and",
-            "start": 308.35,
-            "end": 308.55
+            "start": 307.9,
+            "end": 308.1
           },
           {
             "text": "neither",
-            "start": 308.55,
-            "end": 308.95
+            "start": 308.1,
+            "end": 308.5
           }
         ]
       },
       {
-        "start": 308.95,
-        "end": 309.35,
+        "start": 308.5,
+        "end": 308.9,
         "emphasis": "none",
         "words": [
           {
             "text": "can",
-            "start": 308.95,
-            "end": 309.11
+            "start": 308.5,
+            "end": 308.66
           },
           {
             "text": "anyone",
-            "start": 309.11,
-            "end": 309.35
+            "start": 308.66,
+            "end": 308.9
           }
         ]
       },
       {
-        "start": 309.35,
-        "end": 309.89,
+        "start": 308.9,
+        "end": 309.44,
         "emphasis": "none",
         "words": [
           {
             "text": "selling",
-            "start": 309.35,
-            "end": 309.71
+            "start": 308.9,
+            "end": 309.26
           },
           {
             "text": "you",
-            "start": 309.71,
-            "end": 309.89
+            "start": 309.26,
+            "end": 309.44
           }
         ]
       },
       {
-        "start": 309.89,
-        "end": 310.61,
+        "start": 309.44,
+        "end": 310.16,
         "emphasis": "none",
         "words": [
           {
             "text": "one,",
-            "start": 309.89,
-            "end": 310.11
+            "start": 309.44,
+            "end": 309.66
           }
         ]
       },
       {
-        "start": 314.13,
-        "end": 314.37,
+        "start": 313.68,
+        "end": 313.92,
         "emphasis": "none",
         "words": [
           {
             "text": "up",
-            "start": 314.13,
-            "end": 314.27
+            "start": 313.68,
+            "end": 313.82
           },
           {
             "text": "to",
-            "start": 314.27,
-            "end": 314.37
+            "start": 313.82,
+            "end": 313.92
           }
         ]
       },
       {
-        "start": 314.37,
-        "end": 315.03,
+        "start": 313.92,
+        "end": 314.58,
         "emphasis": "none",
         "words": [
           {
             "text": "numbers",
-            "start": 314.37,
-            "end": 314.69
+            "start": 313.92,
+            "end": 314.24
           },
           {
             "text": "convert",
-            "start": 314.69,
-            "end": 315.03
+            "start": 314.24,
+            "end": 314.58
           }
         ]
       },
       {
-        "start": 315.03,
-        "end": 315.55,
+        "start": 314.58,
+        "end": 315.1,
         "emphasis": "none",
         "words": [
           {
             "text": "into",
-            "start": 315.03,
-            "end": 315.27
+            "start": 314.58,
+            "end": 314.82
           },
           {
             "text": "money",
-            "start": 315.27,
-            "end": 315.55
+            "start": 314.82,
+            "end": 315.1
           }
         ]
       },
       {
-        "start": 315.55,
-        "end": 316.15,
+        "start": 315.1,
+        "end": 315.7,
         "emphasis": "none",
         "words": [
           {
             "text": "that",
-            "start": 315.55,
-            "end": 315.75
+            "start": 315.1,
+            "end": 315.3
           },
           {
             "text": "actually",
-            "start": 315.75,
-            "end": 316.15
+            "start": 315.3,
+            "end": 315.7
           }
         ]
       },
       {
-        "start": 316.15,
-        "end": 316.95,
+        "start": 315.7,
+        "end": 316.5,
         "emphasis": "none",
         "words": [
           {
             "text": "moves.",
-            "start": 316.15,
-            "end": 316.53
+            "start": 315.7,
+            "end": 316.08
           }
         ]
       },
       {
-        "start": 316.95,
-        "end": 317.63,
+        "start": 316.5,
+        "end": 317.18,
         "emphasis": "none",
         "words": [
           {
             "text": "Commitments",
-            "start": 316.95,
-            "end": 317.45
+            "start": 316.5,
+            "end": 317.0
           },
           {
             "text": "can",
-            "start": 317.45,
-            "end": 317.63
+            "start": 317.0,
+            "end": 317.18
           }
         ]
       },
       {
-        "start": 317.63,
-        "end": 318.13,
+        "start": 317.18,
+        "end": 317.68,
         "emphasis": "none",
         "words": [
           {
             "text": "be",
-            "start": 317.63,
-            "end": 317.75
+            "start": 317.18,
+            "end": 317.3
           },
           {
             "text": "quietly",
-            "start": 317.75,
-            "end": 318.13
+            "start": 317.3,
+            "end": 317.68
           }
         ]
       },
       {
-        "start": 318.13,
-        "end": 318.95,
+        "start": 317.68,
+        "end": 318.5,
         "emphasis": "none",
         "words": [
           {
             "text": "restructured,",
-            "start": 318.13,
-            "end": 318.71
+            "start": 317.68,
+            "end": 318.26
           }
         ]
       },
       {
-        "start": 318.95,
-        "end": 319.59,
+        "start": 318.5,
+        "end": 319.14,
         "emphasis": "none",
         "words": [
           {
             "text": "and",
-            "start": 318.95,
-            "end": 319.43
+            "start": 318.5,
+            "end": 318.98
           },
           {
             "text": "they",
-            "start": 319.43,
-            "end": 319.59
+            "start": 318.98,
+            "end": 319.14
           }
         ]
       },
       {
-        "start": 319.59,
-        "end": 319.97,
+        "start": 319.14,
+        "end": 319.52,
         "emphasis": "none",
         "words": [
           {
             "text": "have",
-            "start": 319.59,
-            "end": 319.81
+            "start": 319.14,
+            "end": 319.36
           },
           {
             "text": "been",
-            "start": 319.81,
-            "end": 319.97
+            "start": 319.36,
+            "end": 319.52
           }
         ]
       },
       {
-        "start": 319.97,
-        "end": 320.77,
+        "start": 319.52,
+        "end": 320.32,
         "emphasis": "none",
         "words": [
           {
             "text": "before.",
-            "start": 319.97,
-            "end": 320.27
+            "start": 319.52,
+            "end": 319.82
           }
         ]
       },
       {
-        "start": 321.05,
-        "end": 321.79,
+        "start": 320.6,
+        "end": 321.34,
         "emphasis": "none",
         "words": [
           {
             "text": "Two.",
-            "start": 321.05,
-            "end": 321.29
+            "start": 320.6,
+            "end": 320.84
           }
         ]
       },
       {
-        "start": 322.13,
-        "end": 322.55,
+        "start": 321.68,
+        "end": 322.1,
         "emphasis": "none",
         "words": [
           {
             "text": "Whether",
-            "start": 322.13,
-            "end": 322.23
+            "start": 321.68,
+            "end": 321.78
           },
           {
             "text": "backlog",
-            "start": 322.23,
-            "end": 322.55
+            "start": 321.78,
+            "end": 322.1
           }
         ]
       },
       {
-        "start": 322.55,
-        "end": 323.37,
+        "start": 322.1,
+        "end": 322.92,
         "emphasis": "none",
         "words": [
           {
             "text": "becomes",
-            "start": 322.55,
-            "end": 323.01
+            "start": 322.1,
+            "end": 322.56
           },
           {
             "text": "delivered",
-            "start": 323.01,
-            "end": 323.37
+            "start": 322.56,
+            "end": 322.92
           }
         ]
       },
       {
-        "start": 323.37,
-        "end": 324.25,
+        "start": 322.92,
+        "end": 323.8,
         "emphasis": "none",
         "words": [
           {
             "text": "revenue",
-            "start": 323.37,
-            "end": 323.85
+            "start": 322.92,
+            "end": 323.4
           },
           {
             "text": "on",
-            "start": 323.85,
-            "end": 324.25
+            "start": 323.4,
+            "end": 323.8
           }
         ]
       },
       {
-        "start": 324.25,
-        "end": 325.05,
+        "start": 323.8,
+        "end": 324.6,
         "emphasis": "none",
         "words": [
           {
             "text": "schedule.",
-            "start": 324.25,
-            "end": 324.55
+            "start": 323.8,
+            "end": 324.1
           }
         ]
       },
       {
-        "start": 326.02,
-        "end": 326.42,
+        "start": 325.57,
+        "end": 325.97,
         "emphasis": "none",
         "words": [
           {
             "text": "A",
-            "start": 326.02,
-            "end": 326.16
+            "start": 325.57,
+            "end": 325.71
           },
           {
             "text": "backlog",
-            "start": 326.16,
-            "end": 326.42
+            "start": 325.71,
+            "end": 325.97
           }
         ]
       },
       {
-        "start": 326.42,
-        "end": 326.8,
+        "start": 325.97,
+        "end": 326.35,
         "emphasis": "none",
         "words": [
           {
             "text": "is",
-            "start": 326.42,
-            "end": 326.7
+            "start": 325.97,
+            "end": 326.25
           },
           {
             "text": "a",
-            "start": 326.7,
-            "end": 326.8
+            "start": 326.25,
+            "end": 326.35
           }
         ]
       },
       {
-        "start": 326.8,
-        "end": 327.58,
+        "start": 326.35,
+        "end": 327.13,
         "emphasis": "none",
         "words": [
           {
             "text": "promise.",
-            "start": 326.8,
-            "end": 327.12
+            "start": 326.35,
+            "end": 326.67
           }
         ]
       },
       {
-        "start": 327.58,
-        "end": 328.24,
+        "start": 327.13,
+        "end": 327.79,
         "emphasis": "none",
         "words": [
           {
             "text": "Promises",
-            "start": 327.58,
-            "end": 327.94
+            "start": 327.13,
+            "end": 327.49
           },
           {
             "text": "have",
-            "start": 327.94,
-            "end": 328.24
+            "start": 327.49,
+            "end": 327.79
           }
         ]
       },
       {
-        "start": 328.24,
-        "end": 329.0,
+        "start": 327.79,
+        "end": 328.55,
         "emphasis": "none",
         "words": [
           {
             "text": "dates.",
-            "start": 328.24,
-            "end": 328.5
+            "start": 327.79,
+            "end": 328.05
           }
         ]
       },
       {
-        "start": 329.1,
-        "end": 330.16,
+        "start": 328.65,
+        "end": 329.71,
         "emphasis": "none",
         "words": [
           {
             "text": "Three.",
-            "start": 329.1,
-            "end": 329.66
+            "start": 328.65,
+            "end": 329.21
           }
         ]
       },
       {
-        "start": 330.62,
-        "end": 331.2,
+        "start": 330.17,
+        "end": 330.75,
         "emphasis": "none",
         "words": [
           {
             "text": "Whether",
-            "start": 330.62,
-            "end": 330.86
+            "start": 330.17,
+            "end": 330.41
           },
           {
             "text": "anyone",
-            "start": 330.86,
-            "end": 331.2
+            "start": 330.41,
+            "end": 330.75
           }
         ]
       },
       {
-        "start": 331.2,
-        "end": 331.56,
+        "start": 330.75,
+        "end": 331.11,
         "emphasis": "none",
         "words": [
           {
             "text": "in",
-            "start": 331.2,
-            "end": 331.42
+            "start": 330.75,
+            "end": 330.97
           },
           {
             "text": "this",
-            "start": 331.42,
-            "end": 331.56
+            "start": 330.97,
+            "end": 331.11
           }
         ]
       },
       {
-        "start": 331.56,
-        "end": 332.0,
+        "start": 331.11,
+        "end": 331.55,
         "emphasis": "none",
         "words": [
           {
             "text": "loop",
-            "start": 331.56,
-            "end": 331.74
+            "start": 331.11,
+            "end": 331.29
           },
           {
             "text": "starts",
-            "start": 331.74,
-            "end": 332.0
+            "start": 331.29,
+            "end": 331.55
           }
         ]
       },
       {
-        "start": 332.0,
-        "end": 332.68,
+        "start": 331.55,
+        "end": 332.23,
         "emphasis": "none",
         "words": [
           {
             "text": "buying",
-            "start": 332.0,
-            "end": 332.36
+            "start": 331.55,
+            "end": 331.91
           },
           {
             "text": "compute",
-            "start": 332.36,
-            "end": 332.68
+            "start": 331.91,
+            "end": 332.23
           }
         ]
       },
       {
-        "start": 332.68,
-        "end": 333.34,
+        "start": 332.23,
+        "end": 332.89,
         "emphasis": "none",
         "words": [
           {
             "text": "with",
-            "start": 332.68,
-            "end": 333.0
+            "start": 332.23,
+            "end": 332.55
           },
           {
             "text": "cash",
-            "start": 333.0,
-            "end": 333.34
+            "start": 332.55,
+            "end": 332.89
           }
         ]
       },
       {
-        "start": 333.34,
-        "end": 333.76,
+        "start": 332.89,
+        "end": 333.31,
         "emphasis": "none",
         "words": [
           {
             "text": "they",
-            "start": 333.34,
-            "end": 333.54
+            "start": 332.89,
+            "end": 333.09
           },
           {
             "text": "earned",
-            "start": 333.54,
-            "end": 333.76
+            "start": 333.09,
+            "end": 333.31
           }
         ]
       },
       {
-        "start": 333.76,
-        "end": 334.36,
+        "start": 333.31,
+        "end": 333.91,
         "emphasis": "none",
         "words": [
           {
             "text": "from",
-            "start": 333.76,
-            "end": 333.94
+            "start": 333.31,
+            "end": 333.49
           },
           {
             "text": "customers",
-            "start": 333.94,
-            "end": 334.36
+            "start": 333.49,
+            "end": 333.91
           }
         ]
       },
       {
-        "start": 334.36,
-        "end": 335.1,
+        "start": 333.91,
+        "end": 334.65,
         "emphasis": "none",
         "words": [
           {
             "text": "outside",
-            "start": 334.36,
-            "end": 334.92
+            "start": 333.91,
+            "end": 334.47
           },
           {
             "text": "the",
-            "start": 334.92,
-            "end": 335.1
+            "start": 334.47,
+            "end": 334.65
           }
         ]
       },
       {
-        "start": 335.1,
-        "end": 335.8,
+        "start": 334.65,
+        "end": 335.35,
         "emphasis": "none",
         "words": [
           {
             "text": "loop.",
-            "start": 335.1,
-            "end": 335.3
+            "start": 334.65,
+            "end": 334.85
           }
         ]
       },
       {
-        "start": 335.86,
-        "end": 336.2,
+        "start": 335.41,
+        "end": 335.75,
         "emphasis": "none",
         "words": [
           {
             "text": "That",
-            "start": 335.86,
-            "end": 335.98
+            "start": 335.41,
+            "end": 335.53
           },
           {
             "text": "third",
-            "start": 335.98,
-            "end": 336.2
+            "start": 335.53,
+            "end": 335.75
           }
         ]
       },
       {
-        "start": 336.2,
-        "end": 336.96,
+        "start": 335.75,
+        "end": 336.51,
         "emphasis": "none",
         "words": [
           {
             "text": "one",
-            "start": 336.2,
-            "end": 336.44
+            "start": 335.75,
+            "end": 335.99
           },
           {
             "text": "is",
-            "start": 336.44,
-            "end": 336.96
+            "start": 335.99,
+            "end": 336.51
           }
         ]
       },
       {
-        "start": 336.96,
-        "end": 337.3,
+        "start": 336.51,
+        "end": 336.85,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 336.96,
-            "end": 337.06
+            "start": 336.51,
+            "end": 336.61
           },
           {
             "text": "whole",
-            "start": 337.06,
-            "end": 337.3
+            "start": 336.61,
+            "end": 336.85
           }
         ]
       },
       {
-        "start": 337.3,
-        "end": 337.74,
+        "start": 336.85,
+        "end": 337.29,
         "emphasis": "none",
         "words": [
           {
             "text": "question,",
-            "start": 337.3,
-            "end": 337.74
+            "start": 336.85,
+            "end": 337.29
           }
         ]
       },
       {
-        "start": 337.74,
-        "end": 338.56,
+        "start": 337.29,
+        "end": 338.11,
         "emphasis": "none",
         "words": [
           {
             "text": "really.",
-            "start": 337.74,
-            "end": 338.06
+            "start": 337.29,
+            "end": 337.61
           }
         ]
       },
       {
-        "start": 338.8,
-        "end": 339.18,
+        "start": 338.35,
+        "end": 338.73,
         "emphasis": "none",
         "words": [
           {
             "text": "The",
-            "start": 338.8,
-            "end": 338.94
+            "start": 338.35,
+            "end": 338.49
           },
           {
             "text": "AI",
-            "start": 338.94,
-            "end": 339.18
+            "start": 338.49,
+            "end": 338.73
           }
         ]
       },
       {
-        "start": 339.18,
-        "end": 339.74,
+        "start": 338.73,
+        "end": 339.29,
         "emphasis": "none",
         "words": [
           {
             "text": "boom",
-            "start": 339.18,
-            "end": 339.46
+            "start": 338.73,
+            "end": 339.01
           },
           {
             "text": "is",
-            "start": 339.46,
-            "end": 339.74
+            "start": 339.01,
+            "end": 339.29
           }
         ]
       },
       {
-        "start": 339.74,
-        "end": 340.46,
+        "start": 339.29,
+        "end": 340.01,
         "emphasis": "none",
         "words": [
           {
             "text": "real.",
-            "start": 339.74,
-            "end": 340.04
+            "start": 339.29,
+            "end": 339.59
           }
         ]
       },
       {
-        "start": 340.46,
-        "end": 341.04,
+        "start": 340.01,
+        "end": 340.59,
         "emphasis": "none",
         "words": [
           {
             "text": "The",
-            "start": 340.46,
-            "end": 340.58
+            "start": 340.01,
+            "end": 340.13
           },
           {
             "text": "technology",
-            "start": 340.58,
-            "end": 341.04
+            "start": 340.13,
+            "end": 340.59
           }
         ]
       },
       {
-        "start": 341.04,
-        "end": 341.9,
+        "start": 340.59,
+        "end": 341.45,
         "emphasis": "none",
         "words": [
           {
             "text": "works.",
-            "start": 341.04,
-            "end": 341.4
+            "start": 340.59,
+            "end": 340.95
           }
         ]
       },
       {
-        "start": 356.74,
-        "end": 357.3,
+        "start": 356.29,
+        "end": 356.85,
         "emphasis": "none",
         "words": [
           {
             "text": "Whether",
-            "start": 356.74,
-            "end": 357.02
+            "start": 356.29,
+            "end": 356.57
           },
           {
             "text": "that's",
-            "start": 357.02,
-            "end": 357.3
+            "start": 356.57,
+            "end": 356.85
           }
         ]
       },
       {
-        "start": 357.3,
-        "end": 357.6,
+        "start": 356.85,
+        "end": 357.15,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 357.3,
-            "end": 357.42
+            "start": 356.85,
+            "end": 356.97
           },
           {
             "text": "start",
-            "start": 357.42,
-            "end": 357.6
+            "start": 356.97,
+            "end": 357.15
           }
         ]
       },
       {
-        "start": 357.6,
-        "end": 357.94,
+        "start": 357.15,
+        "end": 357.49,
         "emphasis": "none",
         "words": [
           {
             "text": "of",
-            "start": 357.6,
-            "end": 357.72
+            "start": 357.15,
+            "end": 357.27
           },
           {
             "text": "something",
-            "start": 357.72,
-            "end": 357.94
+            "start": 357.27,
+            "end": 357.49
           }
         ]
       },
       {
-        "start": 357.94,
-        "end": 358.32,
+        "start": 357.49,
+        "end": 357.87,
         "emphasis": "none",
         "words": [
           {
             "text": "enormous,",
-            "start": 357.94,
-            "end": 358.32
+            "start": 357.49,
+            "end": 357.87
           }
         ]
       },
       {
-        "start": 358.32,
-        "end": 359.06,
+        "start": 357.87,
+        "end": 358.61,
         "emphasis": "none",
         "words": [
           {
             "text": "or",
-            "start": 358.32,
-            "end": 358.86
+            "start": 357.87,
+            "end": 358.41
           },
           {
             "text": "the",
-            "start": 358.86,
-            "end": 359.06
+            "start": 358.41,
+            "end": 358.61
           }
         ]
       },
       {
-        "start": 359.06,
-        "end": 359.44,
+        "start": 358.61,
+        "end": 358.99,
         "emphasis": "none",
         "words": [
           {
             "text": "sound",
-            "start": 359.06,
-            "end": 359.34
+            "start": 358.61,
+            "end": 358.89
           },
           {
             "text": "of",
-            "start": 359.34,
-            "end": 359.44
+            "start": 358.89,
+            "end": 358.99
           }
         ]
       },
       {
-        "start": 359.44,
-        "end": 359.78,
+        "start": 358.99,
+        "end": 359.33,
         "emphasis": "none",
         "words": [
           {
             "text": "a",
-            "start": 359.44,
-            "end": 359.54
+            "start": 358.99,
+            "end": 359.09
           },
           {
             "text": "circle",
-            "start": 359.54,
-            "end": 359.78
+            "start": 359.09,
+            "end": 359.33
           }
         ]
       },
       {
-        "start": 359.78,
-        "end": 360.28,
+        "start": 359.33,
+        "end": 359.83,
         "emphasis": "none",
         "words": [
           {
             "text": "closing,",
-            "start": 359.78,
-            "end": 360.28
+            "start": 359.33,
+            "end": 359.83
           }
         ]
       },
       {
-        "start": 360.28,
-        "end": 361.3,
+        "start": 359.83,
+        "end": 360.85,
         "emphasis": "none",
         "words": [
           {
             "text": "the",
-            "start": 360.28,
-            "end": 360.78
+            "start": 359.83,
+            "end": 360.33
           },
           {
             "text": "honest",
-            "start": 360.78,
-            "end": 361.3
+            "start": 360.33,
+            "end": 360.85
           }
         ]
       },
       {
-        "start": 361.3,
-        "end": 361.9,
+        "start": 360.85,
+        "end": 361.45,
         "emphasis": "none",
         "words": [
           {
             "text": "answer",
-            "start": 361.3,
-            "end": 361.68
+            "start": 360.85,
+            "end": 361.23
           },
           {
             "text": "is",
-            "start": 361.68,
-            "end": 361.9
+            "start": 361.23,
+            "end": 361.45
           }
         ]
       },
       {
-        "start": 361.9,
-        "end": 362.58,
+        "start": 361.45,
+        "end": 362.13,
         "emphasis": "none",
         "words": [
           {
             "text": "that",
-            "start": 361.9,
-            "end": 362.1
+            "start": 361.45,
+            "end": 361.65
           },
           {
             "text": "we",
-            "start": 362.1,
-            "end": 362.58
+            "start": 361.65,
+            "end": 362.13
           }
         ]
       },
       {
-        "start": 362.58,
-        "end": 362.86,
+        "start": 362.13,
+        "end": 362.41,
         "emphasis": "none",
         "words": [
           {
             "text": "don't",
-            "start": 362.58,
-            "end": 362.76
+            "start": 362.13,
+            "end": 362.31
           },
           {
             "text": "know",
-            "start": 362.76,
-            "end": 362.86
+            "start": 362.31,
+            "end": 362.41
           }
         ]
       },
       {
-        "start": 362.86,
-        "end": 363.6,
+        "start": 362.41,
+        "end": 363.15,
         "emphasis": "none",
         "words": [
           {
             "text": "yet.",
-            "start": 362.86,
-            "end": 363.1
+            "start": 362.41,
+            "end": 362.65
           }
         ]
       }
@@ -9775,7 +9759,7 @@
       "id": "vo3",
       "src": "lf-001/vo.wav",
       "role": "vo",
-      "start": 291.43,
+      "start": 290.98,
       "offset": 256.48,
       "duration": 75.15,
       "gainDb": 2,
@@ -10015,7 +9999,7 @@
       "id": "sfx_v21",
       "src": "lf-001/sfx/whoosh.wav",
       "role": "sfx",
-      "start": 310.76,
+      "start": 310.31,
       "offset": 0,
       "duration": 0.58,
       "gainDb": 2,
@@ -10039,7 +10023,7 @@
       "id": "src1",
       "src": "lf-001/news/huang-justified.wav",
       "role": "clip-audio",
-      "start": 275.65,
+      "start": 275.38,
       "offset": 0.0,
       "duration": 15.6,
       "gainDb": 15.07,

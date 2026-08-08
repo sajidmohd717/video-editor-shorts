@@ -58,7 +58,8 @@
     "ms-nvda-split": "lf-001/news/ms-nvda-split.mp4",
     "sam-altman": "lf-001/news/sam-altman.mp4",
     "dario-amodei": "lf-001/news/dario-amodei.mp4",
-    "oracle-cloudworld": "lf-001/news/oracle-cloudworld.mp4"
+    "oracle-cloudworld": "lf-001/news/oracle-cloudworld.mp4",
+    "huang-justified": "lf-001/news/huang-justified.mp4"
   },
   "_coldOpenDropped": "A 3-clip broadcaster montage ($10B/$90B/a trillion) was built and cut. Dropped on the channel owner's call: the CNA chyron read 'CHINA'S AI IPO WAVE' which is off-thesis (L13), and the BBC ident is roughly a fifth of frame on a monetised video. Rebuilding it from primary sources stalls because the only primary voice available is Oracle's $638B line, which is Ch4's payoff and would be spent in the first ten seconds. The retention question it was meant to test is still open.",
   "_broll": "Reviewed on a contact sheet at 1s AND 4s before selection (F6, F29). 7 of 28 rejected: search drift (a ski gondola from 'fiber optic cable', a quarry from 'data center construction'), an unusable blurred frame, a stock-photo man celebrating at a laptop (wrong register for this argument), a near-duplicate of racks-blue, wind turbines (reads as a renewables story), and an office block with the Citi logo legible — see F38.",
@@ -124,7 +125,9 @@
       "src": "lf-001/news/huang-justified.wav",
       "sourceOffset": 0.0,
       "seconds": 15.6,
-      "why": "L5, and the one source-audio moment in Ch5. The narration concedes the argument, then the person most invested in it says it himself: '...not only substantially less than you thought, and all of it justified.' Cut deliberately to INCLUDE 'justified' — an earlier cut ended on 'and all of it', which drops the word carrying the whole claim."
+      "why": "L5, and the one source-audio moment in Ch5. The narration concedes the argument, then the person most invested in it says it himself: '...not only substantially less than you thought, and all of it justified.' Cut deliberately to INCLUDE 'justified' — an earlier cut ended on 'and all of it', which drops the word carrying the whole claim.",
+      "padSeconds": 0,
+      "_": "pad 0 because a talking-head clip plays UNDER this audio; any pad desyncs his lips by exactly that much."
     },
     {
       "cue": "Then there's this line",
@@ -234,13 +237,10 @@
     {
       "cue": "That argument is not stupid",
       "offset": 2.6,
-      "type": "quote-card",
+      "type": "news",
+      "asset": "huang-justified",
       "seconds": 15.6,
-      "text": "What is left over to fuel that revolutionary agentic AI is not only substantially less than you thought, and all of it justified.",
-      "attribution": "Jensen Huang, NVIDIA — U.S.–Saudi Investment Forum, November 2025",
-      "size": 54,
-      "z": 60,
-      "why": "The forum WIDE is the only angle held through this quote and Elon Musk is in it throughout — the script never mentions him, so putting him on screen asserts he is part of this story (L13). The clean Huang single is 80s earlier, so using it here would put visibly mismatched lips under his voice. A pull quote carries his words and his attribution with no sync to get wrong."
+      "why": "The real footage of him saying it. Was a quote card because the only angle held through the quote is a wide with Elon Musk in frame, and the clean single is 80s earlier so its lips would not match. Channel owner watched it and called the dead visual worse: a voice with no speaker reads as a mistake. Musk is simply present at the event; the narration never claims he is involved."
     },
     {
       "cue": "In June twenty twenty-six",
