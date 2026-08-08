@@ -55,7 +55,10 @@
   },
   "newsClips": {
     "huang-face": "lf-001/news/huang-face.mp4",
-    "ms-nvda-split": "lf-001/news/ms-nvda-split.mp4"
+    "ms-nvda-split": "lf-001/news/ms-nvda-split.mp4",
+    "sam-altman": "lf-001/news/sam-altman.mp4",
+    "dario-amodei": "lf-001/news/dario-amodei.mp4",
+    "oracle-cloudworld": "lf-001/news/oracle-cloudworld.mp4"
   },
   "_coldOpenDropped": "A 3-clip broadcaster montage ($10B/$90B/a trillion) was built and cut. Dropped on the channel owner's call: the CNA chyron read 'CHINA'S AI IPO WAVE' which is off-thesis (L13), and the BBC ident is roughly a fifth of frame on a monetised video. Rebuilding it from primary sources stalls because the only primary voice available is Oracle's $638B line, which is Ch4's payoff and would be spent in the first ten seconds. The retention question it was meant to test is still open.",
   "_broll": "Reviewed on a contact sheet at 1s AND 4s before selection (F6, F29). 7 of 28 rejected: search drift (a ski gondola from 'fiber optic cable', a quarry from 'data center construction'), an unusable blurred frame, a stock-photo man celebrating at a laptop (wrong register for this argument), a near-duplicate of racks-blue, wind turbines (reads as a renewables story), and an office block with the Citi logo legible — see F38.",
@@ -380,6 +383,30 @@
       "size": 70,
       "typeOn": false,
       "z": 60
+    },
+    {
+      "cue": "OpenAI",
+      "occurrence": 2,
+      "type": "news",
+      "asset": "sam-altman",
+      "seconds": 4.2,
+      "why": "L17 — narration names OpenAI; screen shows Altman, with the stage's own 'Sam Altman, CEO OpenAI' lower third doing the attribution."
+    },
+    {
+      "cue": "Anthropic",
+      "occurrence": 2,
+      "type": "news",
+      "asset": "dario-amodei",
+      "seconds": 4.5,
+      "why": "L17 — narration names Anthropic; Amodei at the NYT DealBook Summit, name on screen. Same interview the reference video uses, sourced independently."
+    },
+    {
+      "cue": "Oracle",
+      "occurrence": 3,
+      "type": "news",
+      "asset": "oracle-cloudworld",
+      "seconds": 3.2,
+      "why": "L17 — narration names Oracle; Oracle's own CloudWorld title card. Clean brand, no partner logos, unlike the highlights reel."
     }
   ]
 }
