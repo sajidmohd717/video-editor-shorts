@@ -209,7 +209,7 @@ switch. Update the doc when you do.
 ## Current state
 
 Working end-to-end: ingest → TTS → transcribe → captions → stock/screenshots →
-plan → render → master → upload. Three videos built, 42 findings logged.
+plan → render → master → upload. Four shorts built, 45 findings logged.
 
 **One data point so far.** `yc-sam-01` held **32%** stayed-to-watch against ~63%
 for the channel's earlier clip-only cuts. Average view duration was 53%, so the

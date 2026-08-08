@@ -824,6 +824,61 @@ written down.
 
 ---
 
+### F43 — Dialogue framing belongs to the passage, not the source
+
+The Dario interview alternates between two tight singles in one 16:9 master.
+One `subjectFocusX` could center Dario or Emily Chang, but not both. The first
+test centered Dario and visibly cut into Emily's face during the hook — exactly
+where an awkward crop costs the swipe.
+
+**Applied:** narrated jobs can now provide `source.passageFocusX`, parallel to
+`passageLayouts`. The planner falls back to the source-level focus, so existing
+jobs are unchanged.
+
+**Rule:** framing is a property of the shot being used. If passages can change
+speaker or composition, their focus must be authorable independently.
+
+**Status:** applied and visually verified in `dario-openai-01`.
+
+---
+
+### F44 — Finish on the last authored span, not the placement cursor
+
+`plan_narrated` once calculated total duration from a cursor whose meaning
+depended on segment type: VO advanced it past an inter-segment gap, while a clip
+stopped on its final frame. A structure ending on a clip therefore inherited
+most of the VO-only 0.9s hold and the coverage assertion correctly rejected a
+black tail.
+
+**Applied:** total duration now comes from the final item's recorded span. The
+extra hold is added only when that item is narration.
+
+**Rule:** when different placement functions advance a cursor differently,
+derive the artifact boundary from the shared authored spans, not incidental
+cursor state.
+
+**Status:** applied; coverage and black-frame checks pass.
+
+---
+
+### F45 — Proper-name caption repair sometimes needs token merging
+
+Whisper rendered `OpenAI` as adjacent tokens `open` and `AI`. A substitution
+map can correct spelling or casing but cannot join the pair without leaving a
+duplicate token and bad timing.
+
+**Applied:** narrated jobs can now declare exact `captionMerges`. The merged word
+keeps the first token's start and the last token's end, so timing remains audio
+derived while the displayed brand name is correct.
+
+**Rule:** caption correction needs two levels: one-token substitutions and
+adjacent-token merges. Keep both job-specific because the repair belongs to the
+actual ASR output, not to a global dictionary.
+
+**Status:** applied and verified as one emphasized `OpenAI` cue.
+
+---
+
 ## Platform data
 
 ### 2026-08-07 — first narrated short (El5XrIpsOCA)

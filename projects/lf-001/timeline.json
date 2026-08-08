@@ -3050,7 +3050,8 @@
           "r": 0.088,
           "at": 0.0,
           "tone": "dark",
-          "color": "#76B900"
+          "color": "#76B900",
+          "logo": "lf-001/logos/nvidia.png"
         },
         {
           "id": "oai",
@@ -3060,7 +3061,8 @@
           "r": 0.078,
           "at": 0.9,
           "tone": "dark",
-          "color": "#10A37F"
+          "color": "#10A37F",
+          "logo": "lf-001/logos/openai.png"
         },
         {
           "id": "anth",
@@ -3070,7 +3072,8 @@
           "r": 0.086,
           "at": 3.2,
           "tone": "dark",
-          "color": "#D97757"
+          "color": "#D97757",
+          "logo": "lf-001/logos/anthropic.png"
         },
         {
           "id": "msft",
@@ -3080,7 +3083,8 @@
           "r": 0.082,
           "at": 5.4,
           "tone": "dark",
-          "color": "#00A4EF"
+          "color": "#00A4EF",
+          "logo": "lf-001/logos/microsoft.png"
         }
       ],
       "edges": [

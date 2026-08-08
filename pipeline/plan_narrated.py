@@ -88,6 +88,29 @@ def build(job: Job) -> dict:
                 fixed += 1
         print(f"   {fixed} clip caption(s) corrected")
 
+    # ASR often splits branded compounds ("OpenAI" -> "open" + "AI") (F45). A
+    # one-word substitution cannot repair that without leaving a duplicate
+    # token, so jobs may author exact adjacent-token merges while retaining the
+    # first word's start and the last word's end.
+    for merge in job.raw.get("captionMerges", []):
+        source = merge.get("from", [])
+        target = merge.get("to", "")
+        if not source or not target:
+            continue
+        i = 0
+        while i <= len(clip_words) - len(source):
+            window = clip_words[i:i + len(source)]
+            if [w["text"] for w in window] == source:
+                clip_words[i:i + len(source)] = [{
+                    "text": target,
+                    "start": window[0]["start"],
+                    "end": window[-1]["end"],
+                }]
+                print(f"   merged clip caption {' '.join(source)!r} -> {target!r}")
+                i += 1
+            else:
+                i += 1
+
     # --- profile-derived settings -------------------------------------------
     brand = job.get("brand", {})
     accent = brand.get("accent", "#FF5A3C")
@@ -106,7 +129,7 @@ def build(job: Job) -> dict:
 
     # Framings come from the profile but are re-centred on this source's subject.
     # A dialogue source can override that centre per passage: one global crop
-    # cannot frame speakers who occupy opposite sides of a landscape master.
+    # cannot frame speakers who occupy opposite sides of a landscape master (F43).
     framings = [
         {**f, "focusX": focus_x} for f in job.get("camera.framings", [])
     ] or [{"focusX": focus_x, "focusY": 0.42, "from": 1.0, "to": 1.08}]
@@ -526,7 +549,7 @@ def build(job: Job) -> dict:
     # `place_vo()` advances `t` by the inter-segment gap, while `place_clip()`
     # stops exactly at its last source frame. Deriving the duration from `t`
     # therefore made a clip-ended structure inherit most of the VO-only tail,
-    # leaving an uncovered strip of black frames. The authored span is the one
+    # leaving an uncovered strip of black frames (F44). The authored span is the one
     # clock shared by both segment types; only narration gets the deliberate
     # final visual hold.
     last_item = structure[-1]

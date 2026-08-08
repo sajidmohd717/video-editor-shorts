@@ -1355,60 +1355,48 @@
       },
       {
         "start": 1.18,
-        "end": 1.66,
-        "emphasis": "none",
+        "end": 2.02,
+        "emphasis": "color",
         "words": [
           {
-            "text": "open",
+            "text": "OpenAI",
             "start": 1.18,
-            "end": 1.46
-          },
-          {
-            "text": "AI",
-            "start": 1.46,
             "end": 1.66
-          }
-        ]
-      },
-      {
-        "start": 1.66,
-        "end": 2.32,
-        "emphasis": "none",
-        "words": [
+          },
           {
             "text": "has",
             "start": 1.66,
             "end": 2.02
-          },
+          }
+        ]
+      },
+      {
+        "start": 2.02,
+        "end": 2.68,
+        "emphasis": "none",
+        "words": [
           {
             "text": "become",
             "start": 2.02,
             "end": 2.32
-          }
-        ]
-      },
-      {
-        "start": 2.32,
-        "end": 3.06,
-        "emphasis": "none",
-        "words": [
+          },
           {
             "text": "Silicon",
             "start": 2.32,
             "end": 2.68
-          },
-          {
-            "text": "Valley",
-            "start": 2.68,
-            "end": 3.06
           }
         ]
       },
       {
-        "start": 3.06,
+        "start": 2.68,
         "end": 4.07,
         "emphasis": "none",
         "words": [
+          {
+            "text": "Valley",
+            "start": 2.68,
+            "end": 3.06
+          },
           {
             "text": "lore.",
             "start": 3.06,

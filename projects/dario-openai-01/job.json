@@ -81,6 +81,19 @@
     "sourceUrl": "https://www.youtube.com/watch?v=x2VHFgyawPE",
     "note": "Short excerpts are evidence for an original, attributed commentary. Narration supplies the editorial spine; source is credited in the description."
   },
+  "captionCorrections": {
+    "anthropic": "Anthropic"
+  },
+  "captionMerges": [
+    {
+      "from": [
+        "open",
+        "AI"
+      ],
+      "to": "OpenAI"
+    }
+  ],
+  "captionCorrectionsWhy": "The source ASR lowercased Anthropic and split OpenAI into two words. Proper-name corrections are authored here because clip captions have no script authority.",
   "sfx": {
     "ding": "dario-openai-01/sfx/ding.wav",
     "pop": "dario-openai-01/sfx/pop.wav",
