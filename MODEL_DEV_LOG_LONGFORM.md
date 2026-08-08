@@ -343,6 +343,82 @@ carry it.
 
 ---
 
+### L16 — Stock is connective tissue, not a vocabulary
+
+lf-001's first cut: **90 clips from 22 stock assets, mean reuse 4.1×**, repeats
+70–85s apart. It rendered, mastered, passed every automated check, and was
+boring. The channel owner's verdict: *"all that it has is just b-roll stock
+video… having it once in a while is fine, but the entire video being that is
+just not it."*
+
+Teardown L002 shows why. A comparable video runs **six** visual registers —
+named-entity footage, purpose-built motion graphics, attributed interviews,
+sourced charts, product surfaces, and generic stock. Generic stock is the
+*connective tissue between* the others. We had made it the whole body.
+
+**Diagnosis worth keeping:** the pipeline optimised what it could measure.
+Uniqueness, coverage, and cadence all had checks; *variety of register* had none,
+so a video could satisfy every invariant and still be monotonous. Assertions
+catch defects, not dullness.
+
+**The order to fix it in, by value per unit of work:**
+
+1. Proper-noun visuals (L17) — mechanical, and we already have the machinery
+2. The diagram the argument needs (L18)
+3. Attributed source-audio blocks — now possible via L14
+4. Product surfaces: logos, filings, UI, shot close
+5. Generic stock, back to what it should have been: the gaps
+
+---
+
+### L17 — A proper noun is a visual cue
+
+The most repeatable thing in L002: when the narration says a company's name, the
+screen shows **that company** — its CEO on stage, its headquarters sign, its
+product — never an anonymous server rack.
+
+Naming a company while showing generic stock wastes the one moment when the
+viewer is thinking about a specific company. Over lf-001's script, "NVIDIA",
+"OpenAI", "Microsoft", "Anthropic" and "Oracle" occur dozens of times — that is
+dozens of free, obvious visual cues that were being spent on circuit boards.
+
+Fits our machinery exactly: visuals are already placed by phrase, so "when the
+narration says NVIDIA, show NVIDIA" is a job entry rather than a feature.
+
+Sourcing rules that follow from L13/L15: company HQ signage is on stock; CEO
+footage must come from a **primary** stream (company channel, event host), never
+a broadcaster re-upload; and check the frame for people the script never mentions.
+
+---
+
+### L18 — Build the diagram the argument needs
+
+L002 spends **47 seconds — 8% of runtime** — on a single animated node graph, and
+earns it. *"The money moves in a circle"* is a **structural** claim, and no
+sequence of photographs can state a structure. F3 says match the visual to the
+shape of the claim; this is the same rule at the scale of a whole thesis.
+
+Our shot list asked for this ("two boxes, arrows both ways") and it was never
+built, so the thesis was carried by stock footage of circuit boards.
+
+Now `entity-graph`: authored node positions, directed labelled edges, progressive
+assembly. Three decisions worth keeping:
+
+- **Directed, not a network.** Theirs shows companies are connected — which
+  everyone assumes. Ours shows money leaving and coming back, which is the claim.
+- **The return arrow is not muted.** It was grey in the first draft; grey said
+  "footnote" about the single most important edge. It is now white and as strong
+  as the outbound flows.
+- **Four nodes, not eighteen.** Theirs is impressive and borderline unreadable.
+  A diagram that can't be followed at speed is decoration.
+
+**Gotcha:** for arcs between the same pair, the perpendicular flips with
+direction, so the *same* curve keyword bows them apart and opposite keywords
+stack them — the reverse of how it reads. Two edges silently drew on top of each
+other until a still showed one missing.
+
+---
+
 ## Open questions
 
 1. **What carries pacing without music?** The channel doesn't use music (F20).

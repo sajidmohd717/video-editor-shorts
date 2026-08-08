@@ -19,6 +19,7 @@ import { LogoPop } from "./LogoPop";
 import { FilmBurn } from "./FilmBurn";
 import { DateCard } from "./DateCard";
 import { QuoteCard } from "./QuoteCard";
+import { EntityGraph } from "./EntityGraph";
 
 export const OverlayLayer: React.FC<{ overlay: Overlay; durationInFrames: number }> = ({
   overlay,
@@ -49,6 +50,8 @@ export const OverlayLayer: React.FC<{ overlay: Overlay; durationInFrames: number
       return <StatChart {...overlay} />;
     case "comparison":
       return <Comparison {...overlay} />;
+    case "entity-graph":
+      return <EntityGraph {...overlay} />;
     case "word-card":
       return <WordCard {...overlay} />;
     case "cta":

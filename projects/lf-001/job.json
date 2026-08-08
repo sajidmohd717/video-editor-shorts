@@ -3,9 +3,7 @@
   "profile": "the-next-curve-longform",
   "format": "longform",
   "title": "Who Is Actually Paying for the AI Boom?",
-
   "_": "Visuals are cued by PHRASE, not timestamp. The narration is 5,400 characters and will be regenerated more than once; phrases survive that, timestamps don't.",
-
   "rights": {
     "clearance": "commentary",
     "speaker": "various",
@@ -13,15 +11,28 @@
     "sourceUrl": "see projects/lf-001/sources.md",
     "note": "Short excerpts as evidence for claims the narration makes. Primary sources preferred. Bloomberg Originals and Hank Green are RESEARCH ONLY, never footage."
   },
-
   "chapters": [
-    { "cue": "Every few weeks", "title": "The question" },
-    { "cue": "Start with the biggest one", "title": "One deal, read carefully" },
-    { "cue": "Microsoft and NVIDIA both announced", "title": "The same shape, three times" },
-    { "cue": "Which brings us to the number", "title": "What the filings say" },
-    { "cue": "Here's the strongest version", "title": "The other side" }
+    {
+      "cue": "Every few weeks",
+      "title": "The question"
+    },
+    {
+      "cue": "Start with the biggest one",
+      "title": "One deal, read carefully"
+    },
+    {
+      "cue": "Microsoft and NVIDIA both announced",
+      "title": "The same shape, three times"
+    },
+    {
+      "cue": "Which brings us to the number",
+      "title": "What the filings say"
+    },
+    {
+      "cue": "Here's the strongest version",
+      "title": "The other side"
+    }
   ],
-
   "sfx": {
     "ding": "lf-001/sfx/ding.wav",
     "whoosh": "lf-001/sfx/whoosh.wav",
@@ -33,18 +44,20 @@
     "click": "lf-001/sfx/click.wav"
   },
   "sfxDurations": {
-    "ding": 1.4, "whoosh": 0.58, "impact": 2.4, "pageturn": 0.55,
-    "highlight": 0.55, "highlight2": 0.55, "swipe": 0.72, "click": 0.53
+    "ding": 1.4,
+    "whoosh": 0.58,
+    "impact": 2.4,
+    "pageturn": 0.55,
+    "highlight": 0.55,
+    "highlight2": 0.55,
+    "swipe": 0.72,
+    "click": 0.53
   },
-
   "newsClips": {
     "huang-face": "lf-001/news/huang-face.mp4"
   },
-
   "_coldOpenDropped": "A 3-clip broadcaster montage ($10B/$90B/a trillion) was built and cut. Dropped on the channel owner's call: the CNA chyron read 'CHINA'S AI IPO WAVE' which is off-thesis (L13), and the BBC ident is roughly a fifth of frame on a monetised video. Rebuilding it from primary sources stalls because the only primary voice available is Oracle's $638B line, which is Ch4's payoff and would be spent in the first ten seconds. The retention question it was meant to test is still open.",
-
   "_broll": "Reviewed on a contact sheet at 1s AND 4s before selection (F6, F29). 7 of 28 rejected: search drift (a ski gondola from 'fiber optic cable', a quarry from 'data center construction'), an unusable blurred frame, a stock-photo man celebrating at a laptop (wrong register for this argument), a near-duplicate of racks-blue, wind turbines (reads as a renewables story), and an office block with the Citi logo legible — see F38.",
-
   "broll": {
     "racks-blue": "lf-001/stock/pixabay-video-14900.mp4",
     "racks-dark": "lf-001/stock/pexels-video-7140928.mp4",
@@ -68,16 +81,30 @@
     "trading-candles": "lf-001/stock/pexels-video-38557069.mp4",
     "trading-terminals": "lf-001/stock/pexels-video-38440687.mp4"
   },
-
   "_fillerOrder": "Ordered so neighbours differ in texture and scale — two circuit-board macros back to back read as one long shot, which wastes a cut.",
   "fillerBroll": [
-    "dc-construction", "racks-blue", "pylon-sunset", "circuit-gold",
-    "substation-aerial", "fiber-burst", "glass-towers", "pipes-bw",
-    "racks-dark", "pylon-clouds", "circuit-blue", "cooling-towers",
-    "industrial-aerial", "fiber-sparks", "substation-towers", "trading-candles",
-    "racks-lit", "pylon-a", "circuit-green", "office-tower", "trading-terminals"
+    "dc-construction",
+    "racks-blue",
+    "pylon-sunset",
+    "circuit-gold",
+    "substation-aerial",
+    "fiber-burst",
+    "glass-towers",
+    "pipes-bw",
+    "racks-dark",
+    "pylon-clouds",
+    "circuit-blue",
+    "cooling-towers",
+    "industrial-aerial",
+    "fiber-sparks",
+    "substation-towers",
+    "trading-candles",
+    "racks-lit",
+    "pylon-a",
+    "circuit-green",
+    "office-tower",
+    "trading-terminals"
   ],
-
   "sourceAudio": [
     {
       "cue": "In June twenty twenty-six",
@@ -104,7 +131,6 @@
       "why": "the prepaid / bring-your-own-hardware figure, said aloud under the quote card"
     }
   ],
-
   "visuals": [
     {
       "cue": "Every few weeks",
@@ -219,7 +245,17 @@
       "type": "stat-chart",
       "seconds": 9.0,
       "title": "Oracle remaining performance obligations",
-      "series": [0.08, 0.1, 0.13, 0.18, 0.26, 0.4, 0.62, 0.86, 1.0],
+      "series": [
+        0.08,
+        0.1,
+        0.13,
+        0.18,
+        0.26,
+        0.4,
+        0.62,
+        0.86,
+        1.0
+      ],
       "valueFrom": 0,
       "valueTo": 638,
       "valuePrefix": "$",
@@ -246,6 +282,87 @@
       "text": "Three things to watch",
       "sfx": "whoosh",
       "z": 60
+    },
+    {
+      "cue": "a meaningful share of the money",
+      "type": "entity-graph",
+      "seconds": 14.0,
+      "title": "Announced flows, 2025-2026",
+      "z": 60,
+      "why": "L16 — the thesis is STRUCTURAL ('the money moves in a loop') and no amount of stock footage can show a structure. Builds in step with the sentence. Every figure here is one we verified against a primary source and highlighted earlier in the video, so the graph summarises evidence already shown rather than asserting anything new.",
+      "nodes": [
+        {
+          "id": "nvda",
+          "label": "NVIDIA",
+          "x": 0.5,
+          "y": 0.26,
+          "r": 0.088,
+          "at": 0.0,
+          "tone": "dark"
+        },
+        {
+          "id": "oai",
+          "label": "OpenAI",
+          "x": 0.185,
+          "y": 0.62,
+          "r": 0.078,
+          "at": 0.9,
+          "tone": "dark"
+        },
+        {
+          "id": "anth",
+          "label": "Anthropic",
+          "x": 0.5,
+          "y": 0.755,
+          "r": 0.086,
+          "at": 3.2,
+          "tone": "dark"
+        },
+        {
+          "id": "msft",
+          "label": "Microsoft",
+          "x": 0.825,
+          "y": 0.4,
+          "r": 0.082,
+          "at": 5.4,
+          "tone": "dark"
+        }
+      ],
+      "edges": [
+        {
+          "from": "nvda",
+          "to": "oai",
+          "label": "up to $100B",
+          "at": 1.4,
+          "curve": "left",
+          "tone": "out"
+        },
+        {
+          "from": "nvda",
+          "to": "anth",
+          "label": "up to $10B",
+          "at": 3.7,
+          "curve": "left",
+          "tone": "out"
+        },
+        {
+          "from": "msft",
+          "to": "anth",
+          "label": "up to $5B",
+          "at": 5.9,
+          "curve": "right",
+          "tone": "out"
+        },
+        {
+          "from": "anth",
+          "to": "msft",
+          "label": "$30B back",
+          "at": 8.2,
+          "curve": "right",
+          "tone": "back",
+          "_": "same keyword as the msft->anth edge on purpose: the perpendicular flips with direction, so matching keywords bow the two arcs APART."
+        }
+      ]
     },
     {
       "cue": "But now you know which numbers to watch",

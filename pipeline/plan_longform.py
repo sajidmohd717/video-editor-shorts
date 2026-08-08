@@ -527,7 +527,8 @@ def build(job: Job) -> dict:
     # A quote card holds the words on screen while the narrator reads them; the
     # caption track then prints the same sentence a second time, in a different
     # font, lower down. Two renderings of one sentence is worse than either.
-    TEXT_CARDS = {"quote-card", "date-card", "comparison", "word-card", "kinetic-title"}
+    TEXT_CARDS = {"quote-card", "date-card", "comparison", "word-card", "kinetic-title",
+                  "entity-graph"}
     mute = [(o["start"], o["end"]) for o in overlays if o["type"] in TEXT_CARDS]
     # Caption cues are in NARRATION time; everything else on the timeline is in
     # video time. Shift before comparing, or the mute test silently uses two

@@ -2424,7 +2424,7 @@
     {
       "id": "f74",
       "start": 313.81,
-      "end": 316.952,
+      "end": 316.991,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2452,8 +2452,8 @@
     },
     {
       "id": "f75",
-      "start": 316.952,
-      "end": 320.094,
+      "start": 316.991,
+      "end": 320.172,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2481,8 +2481,8 @@
     },
     {
       "id": "f76",
-      "start": 320.094,
-      "end": 323.236,
+      "start": 320.172,
+      "end": 323.353,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2510,8 +2510,8 @@
     },
     {
       "id": "f77",
-      "start": 323.236,
-      "end": 326.377,
+      "start": 323.353,
+      "end": 326.534,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2539,8 +2539,8 @@
     },
     {
       "id": "f78",
-      "start": 326.377,
-      "end": 329.519,
+      "start": 326.534,
+      "end": 329.716,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2568,8 +2568,8 @@
     },
     {
       "id": "f79",
-      "start": 329.519,
-      "end": 332.661,
+      "start": 329.716,
+      "end": 332.897,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2597,8 +2597,8 @@
     },
     {
       "id": "f80",
-      "start": 332.661,
-      "end": 335.803,
+      "start": 332.897,
+      "end": 336.078,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2626,8 +2626,8 @@
     },
     {
       "id": "f81",
-      "start": 335.803,
-      "end": 338.945,
+      "start": 336.078,
+      "end": 339.259,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2655,8 +2655,8 @@
     },
     {
       "id": "f82",
-      "start": 338.945,
-      "end": 342.087,
+      "start": 339.259,
+      "end": 342.44,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2683,9 +2683,27 @@
       "transitionDuration": 0
     },
     {
+      "id": "v14",
+      "start": 342.44,
+      "end": 356.44,
+      "layout": "graphic",
+      "background": "#E9E9EC",
+      "sources": [],
+      "camera": {
+        "kind": "none",
+        "from": 1,
+        "to": 1,
+        "originX": 0.5,
+        "originY": 0.5
+      },
+      "filters": [],
+      "transitionIn": "cut",
+      "transitionDuration": 0
+    },
+    {
       "id": "f83",
-      "start": 342.087,
-      "end": 345.229,
+      "start": 356.44,
+      "end": 360.26,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2713,8 +2731,8 @@
     },
     {
       "id": "f84",
-      "start": 345.229,
-      "end": 348.371,
+      "start": 360.26,
+      "end": 364.08,
       "layout": "full",
       "background": "#000000",
       "sources": [
@@ -2741,152 +2759,7 @@
       "transitionDuration": 0
     },
     {
-      "id": "f85",
-      "start": 348.371,
-      "end": 351.512,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-33893602.mp4",
-          "offset": 5.7,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f86",
-      "start": 351.512,
-      "end": 354.654,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pixabay-video-14900.mp4",
-          "offset": 5.7,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f87",
-      "start": 354.654,
-      "end": 357.796,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-7796797.mp4",
-          "offset": 5.7,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f88",
-      "start": 357.796,
-      "end": 360.938,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-6755170.mp4",
-          "offset": 5.7,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "f89",
-      "start": 360.938,
-      "end": 364.08,
-      "layout": "full",
-      "background": "#000000",
-      "sources": [
-        {
-          "src": "lf-001/stock/pexels-video-30915329.mp4",
-          "offset": 5.7,
-          "focusX": 0.5,
-          "focusY": 0.5,
-          "panX": 0,
-          "panY": 0,
-          "scale": 1,
-          "muted": true
-        }
-      ],
-      "camera": {
-        "kind": "punch-in",
-        "from": 1.0,
-        "to": 1.06,
-        "originX": 0.5,
-        "originY": 0.5
-      },
-      "filters": [],
-      "transitionIn": "cut",
-      "transitionDuration": 0
-    },
-    {
-      "id": "v14",
+      "id": "v15",
       "start": 364.08,
       "end": 369.08,
       "layout": "graphic",
@@ -3128,8 +3001,89 @@
       "text": "Three things to watch"
     },
     {
-      "type": "quote-card",
+      "type": "entity-graph",
       "id": "ov14",
+      "start": 342.44,
+      "end": 356.44,
+      "z": 60,
+      "title": "Announced flows, 2025-2026",
+      "nodes": [
+        {
+          "id": "nvda",
+          "label": "NVIDIA",
+          "x": 0.5,
+          "y": 0.26,
+          "r": 0.088,
+          "at": 0.0,
+          "tone": "dark"
+        },
+        {
+          "id": "oai",
+          "label": "OpenAI",
+          "x": 0.185,
+          "y": 0.62,
+          "r": 0.078,
+          "at": 0.9,
+          "tone": "dark"
+        },
+        {
+          "id": "anth",
+          "label": "Anthropic",
+          "x": 0.5,
+          "y": 0.755,
+          "r": 0.086,
+          "at": 3.2,
+          "tone": "dark"
+        },
+        {
+          "id": "msft",
+          "label": "Microsoft",
+          "x": 0.825,
+          "y": 0.4,
+          "r": 0.082,
+          "at": 5.4,
+          "tone": "dark"
+        }
+      ],
+      "edges": [
+        {
+          "from": "nvda",
+          "to": "oai",
+          "label": "up to $100B",
+          "at": 1.4,
+          "curve": "left",
+          "tone": "out"
+        },
+        {
+          "from": "nvda",
+          "to": "anth",
+          "label": "up to $10B",
+          "at": 3.7,
+          "curve": "left",
+          "tone": "out"
+        },
+        {
+          "from": "msft",
+          "to": "anth",
+          "label": "up to $5B",
+          "at": 5.9,
+          "curve": "right",
+          "tone": "out"
+        },
+        {
+          "from": "anth",
+          "to": "msft",
+          "label": "$30B back",
+          "at": 8.2,
+          "curve": "right",
+          "tone": "back",
+          "_": "same keyword as the msft->anth edge on purpose: the perpendicular flips with direction, so matching keywords bow the two arcs APART."
+        }
+      ]
+    },
+    {
+      "type": "quote-card",
+      "id": "ov15",
       "start": 364.08,
       "end": 369.08,
       "z": 60,
@@ -9498,377 +9452,6 @@
             "text": "works.",
             "start": 341.04,
             "end": 341.4
-          }
-        ]
-      },
-      {
-        "start": 342.22,
-        "end": 342.54,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "But",
-            "start": 342.22,
-            "end": 342.44
-          },
-          {
-            "text": "a",
-            "start": 342.44,
-            "end": 342.54
-          }
-        ]
-      },
-      {
-        "start": 342.54,
-        "end": 343.2,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "meaningful",
-            "start": 342.54,
-            "end": 342.8
-          },
-          {
-            "text": "share",
-            "start": 342.8,
-            "end": 343.2
-          }
-        ]
-      },
-      {
-        "start": 343.2,
-        "end": 343.42,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "of",
-            "start": 343.2,
-            "end": 343.32
-          },
-          {
-            "text": "the",
-            "start": 343.32,
-            "end": 343.42
-          }
-        ]
-      },
-      {
-        "start": 343.42,
-        "end": 343.88,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "money",
-            "start": 343.42,
-            "end": 343.58
-          },
-          {
-            "text": "announced",
-            "start": 343.58,
-            "end": 343.88
-          }
-        ]
-      },
-      {
-        "start": 343.88,
-        "end": 344.46,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "so",
-            "start": 343.88,
-            "end": 344.14
-          },
-          {
-            "text": "far",
-            "start": 344.14,
-            "end": 344.46
-          }
-        ]
-      },
-      {
-        "start": 344.46,
-        "end": 344.82,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "has",
-            "start": 344.46,
-            "end": 344.66
-          },
-          {
-            "text": "been",
-            "start": 344.66,
-            "end": 344.82
-          }
-        ]
-      },
-      {
-        "start": 344.82,
-        "end": 345.32,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "moving",
-            "start": 344.82,
-            "end": 345.02
-          },
-          {
-            "text": "between",
-            "start": 345.02,
-            "end": 345.32
-          }
-        ]
-      },
-      {
-        "start": 345.32,
-        "end": 345.9,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "a",
-            "start": 345.32,
-            "end": 345.6
-          },
-          {
-            "text": "small",
-            "start": 345.6,
-            "end": 345.9
-          }
-        ]
-      },
-      {
-        "start": 345.9,
-        "end": 346.28,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "number",
-            "start": 345.9,
-            "end": 346.16
-          },
-          {
-            "text": "of",
-            "start": 346.16,
-            "end": 346.28
-          }
-        ]
-      },
-      {
-        "start": 346.28,
-        "end": 347.1,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "companies",
-            "start": 346.28,
-            "end": 346.64
-          }
-        ]
-      },
-      {
-        "start": 347.1,
-        "end": 347.54,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "who",
-            "start": 347.1,
-            "end": 347.38
-          },
-          {
-            "text": "are",
-            "start": 347.38,
-            "end": 347.54
-          }
-        ]
-      },
-      {
-        "start": 347.54,
-        "end": 348.14,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "each",
-            "start": 347.54,
-            "end": 347.84
-          },
-          {
-            "text": "other's",
-            "start": 347.84,
-            "end": 348.14
-          }
-        ]
-      },
-      {
-        "start": 348.14,
-        "end": 349.0,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "investors,",
-            "start": 348.14,
-            "end": 348.54
-          }
-        ]
-      },
-      {
-        "start": 349.0,
-        "end": 349.94,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "customers",
-            "start": 349.0,
-            "end": 349.36
-          },
-          {
-            "text": "and",
-            "start": 349.8,
-            "end": 349.94
-          }
-        ]
-      },
-      {
-        "start": 349.94,
-        "end": 350.86,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "suppliers.",
-            "start": 349.94,
-            "end": 350.36
-          }
-        ]
-      },
-      {
-        "start": 351.36,
-        "end": 351.58,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "And",
-            "start": 351.36,
-            "end": 351.5
-          },
-          {
-            "text": "the",
-            "start": 351.5,
-            "end": 351.58
-          }
-        ]
-      },
-      {
-        "start": 351.58,
-        "end": 352.16,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "headline",
-            "start": 351.58,
-            "end": 351.78
-          },
-          {
-            "text": "figures",
-            "start": 351.78,
-            "end": 352.16
-          }
-        ]
-      },
-      {
-        "start": 352.16,
-        "end": 353.04,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "are",
-            "start": 352.16,
-            "end": 352.46
-          },
-          {
-            "text": "consistently",
-            "start": 352.46,
-            "end": 353.04
-          }
-        ]
-      },
-      {
-        "start": 353.04,
-        "end": 354.28,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "larger",
-            "start": 353.04,
-            "end": 353.6
-          },
-          {
-            "text": "than",
-            "start": 354.0,
-            "end": 354.28
-          }
-        ]
-      },
-      {
-        "start": 354.28,
-        "end": 354.58,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "the",
-            "start": 354.28,
-            "end": 354.38
-          },
-          {
-            "text": "money",
-            "start": 354.38,
-            "end": 354.58
-          }
-        ]
-      },
-      {
-        "start": 354.58,
-        "end": 354.86,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "that",
-            "start": 354.58,
-            "end": 354.74
-          },
-          {
-            "text": "has",
-            "start": 354.74,
-            "end": 354.86
-          }
-        ]
-      },
-      {
-        "start": 354.86,
-        "end": 355.68,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "actually",
-            "start": 354.86,
-            "end": 355.26
-          },
-          {
-            "text": "changed",
-            "start": 355.26,
-            "end": 355.68
-          }
-        ]
-      },
-      {
-        "start": 355.68,
-        "end": 356.54,
-        "emphasis": "none",
-        "words": [
-          {
-            "text": "hands.",
-            "start": 355.68,
-            "end": 356.04
           }
         ]
       },

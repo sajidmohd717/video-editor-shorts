@@ -373,6 +373,50 @@ export const overlaySchema = z.discriminatedUnion("type", [
   }),
 
   /**
+   * Named entities as nodes, money as directed edges, built one step at a time.
+   *
+   * The reason this exists: a montage of generic stock cannot show a STRUCTURE,
+   * and "the money moves in a loop" is a structural claim (L16). Ref L002 spends
+   * 47 seconds on a node graph for exactly this reason — it's the only device
+   * that can hold a whole relationship on screen at once.
+   *
+   * Ours is directed and labelled where theirs is an undirected network, because
+   * our argument isn't "these companies are connected" — everyone knows that —
+   * it's "the money goes out and comes back". An arrow carrying "$30B back" makes
+   * that claim; a line between two circles doesn't.
+   *
+   * Positions are AUTHORED, not solved. A force-directed layout would settle
+   * differently across Remotion's out-of-order frame workers, which is the
+   * determinism rule (see Grain.tsx).
+   */
+  baseOverlay.extend({
+    type: z.literal("entity-graph"),
+    title: z.string().default(""),
+    nodes: z.array(z.object({
+      id: z.string(),
+      label: z.string(),
+      /** Fractions of the canvas, so the same graph works at either aspect. */
+      x: z.number(),
+      y: z.number(),
+      r: z.number().default(0.075),
+      /** Seconds after the overlay starts that this node appears. */
+      at: z.number().default(0),
+      tone: z.enum(["dark", "accent", "muted"]).default("dark"),
+    })),
+    edges: z.array(z.object({
+      from: z.string(),
+      to: z.string(),
+      label: z.string().default(""),
+      at: z.number().default(0),
+      /** Which side the arc bows toward, so two edges between the same pair don't overlap. */
+      curve: z.enum(["left", "right"]).default("right"),
+      tone: z.enum(["out", "back"]).default("out"),
+    })),
+    accent: z.string().default("#FF5A3C"),
+    background: z.string().default("#0B0B0F"),
+  }),
+
+  /**
    * Full-screen typographic word card. Ref 003's cold open fires four of these in
    * five seconds, each in a deliberately different typeface.
    */
