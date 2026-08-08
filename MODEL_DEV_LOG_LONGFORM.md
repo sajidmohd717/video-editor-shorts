@@ -394,6 +394,21 @@ lf-001, whose narration carries 22 proper-noun mentions in 5.5 minutes
   returned generic office blocks and — search drift again — a beach. Trademarked
   footage isn't licensable this way, which is why the reference channel shoots
   its own. *Checked by looking, not assumed.*
+
+  > **Channel owner's standing decision (2026-08-08): don't route around this.**
+  > *"Small clips is completely fine, it doesn't need royalty free — find a
+  > YouTube video and clip it."* Short excerpts as evidence for a claim the
+  > narration makes is the channel's established posture; it is what every
+  > shorts video already does. Do not treat stock licensing as a blocker for
+  > named-entity cutaways, and do not re-raise it.
+  >
+  > The constraints that **do** still apply are about what's in the frame, not
+  > about licensing:
+  > 1. no heavy broadcaster ident (L13) — that's a monetisation question
+  > 2. no chyron asserting a story the script doesn't tell (L13)
+  > 3. nobody on screen the script never names (L15 — Musk)
+  > 4. keep them short, and prefer a primary stream when one is equally easy
+  >    (L15) — better framing, no ident, usually higher quality
 - **Official highlight reels are contaminated with partner branding.** Oracle's
   own CloudWorld highlights carry Fujitsu, Uber and MGM lower thirds throughout.
   Using it would put Uber on screen in a video that never mentions Uber — L13,
