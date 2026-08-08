@@ -387,6 +387,13 @@ cold and ask whether someone arriving at second zero knows what they're watching
 person's name, an org mark on the org's. `shape: circle` for people (a photo must
 keep its own colours), plain for logos.
 
+**Owner feedback, 2026-08-08:** requested a small Anthropic logo-pop exactly on
+“built Anthropic,” citing the ChatGPT pop in the first narrated short as a useful
+engagement detail. This promotes the device from reference-derived reasoning to
+an owner-approved editorial pattern, but not yet to an audience-proven retention
+claim. Keep it semantically timed and rare — one meaningful mark, not a sound on
+every proper noun.
+
 ### F25 — Only tint marks that are already monochrome
 
 `brightness(0) invert(1)` whitens any logo, which is right for a single-colour
@@ -839,6 +846,9 @@ source-level focus, so existing jobs are unchanged.
 
 **Rule:** framing is a property of the shot being used. If passages can change
 speaker or composition, their focus must be authorable independently.
+
+**QA:** sample the opening 1.2s at 5fps. The ordinary 1fps whole-video contact
+sheet missed a 0.54s bad crop; the opening strip made it unmistakable.
 
 **Status:** applied and visually verified in `dario-openai-01`.
 

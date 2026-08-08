@@ -126,6 +126,14 @@ Contact sheet of a finished render:
 ffmpeg -i out.mp4 -vf "fps=1,scale=170:-1,tile=10x5" grid.png
 ```
 
+Also inspect the first second at a higher sampling rate. The full-video sheet can
+hide a bad reaction-shot crop that exists for only half a second — exactly the
+window that decides the swipe (F43):
+
+```bash
+ffmpeg -t 1.2 -i out.mp4 -vf "fps=5,scale=270:-1,tile=6x1" -frames:v 1 opening.png
+```
+
 Always `npx tsc --noEmit` before rendering — it's seconds versus minutes.
 
 ---

@@ -63,7 +63,7 @@
     "bbg-market": "lf-001/news/bbg-market.mp4"
   },
   "_coldOpenDropped": "A 3-clip broadcaster montage ($10B/$90B/a trillion) was built and cut. Dropped on the channel owner's call: the CNA chyron read 'CHINA'S AI IPO WAVE' which is off-thesis (L13), and the BBC ident is roughly a fifth of frame on a monetised video. Rebuilding it from primary sources stalls because the only primary voice available is Oracle's $638B line, which is Ch4's payoff and would be spent in the first ten seconds. The retention question it was meant to test is still open.",
-  "_broll": "Reviewed on a contact sheet at 1s AND 4s before selection (F6, F29). 7 of 28 rejected: search drift (a ski gondola from 'fiber optic cable', a quarry from 'data center construction'), an unusable blurred frame, a stock-photo man celebrating at a laptop (wrong register for this argument), a near-duplicate of racks-blue, wind turbines (reads as a renewables story), and an office block with the Citi logo legible — see F38.",
+  "_broll": "Reviewed on a contact sheet at 1s AND 4s before selection (F6, F29). 7 of 28 rejected: search drift (a ski gondola from 'fiber optic cable', a quarry from 'data center construction'), an unusable blurred frame, a stock-photo man celebrating at a laptop (wrong register for this argument), a near-duplicate of racks-blue, wind turbines (reads as a renewables story), and an office block with the Citi logo legible \u2014 see F38.",
   "broll": {
     "racks-blue": "lf-001/stock/pixabay-video-14900.mp4",
     "racks-dark": "lf-001/stock/pexels-video-7140928.mp4",
@@ -87,7 +87,7 @@
     "trading-candles": "lf-001/stock/pexels-video-38557069.mp4",
     "trading-terminals": "lf-001/stock/pexels-video-38440687.mp4"
   },
-  "_fillerOrder": "Ordered so neighbours differ in texture and scale — two circuit-board macros back to back read as one long shot, which wastes a cut.",
+  "_fillerOrder": "Ordered so neighbours differ in texture and scale \u2014 two circuit-board macros back to back read as one long shot, which wastes a cut.",
   "fillerBroll": [
     "dc-construction",
     "racks-blue",
@@ -118,7 +118,7 @@
       "src": "lf-001/news/orcl-rpo-638.wav",
       "sourceOffset": 0.0,
       "seconds": 12,
-      "why": "L5 — an Oracle executive states the 638 billion figure in their own voice, under our document highlight. Hearing them say it IS the evidence."
+      "why": "L5 \u2014 an Oracle executive states the 638 billion figure in their own voice, under our document highlight. Hearing them say it IS the evidence."
     },
     {
       "cue": "That argument is not stupid",
@@ -126,7 +126,7 @@
       "src": "lf-001/news/huang-justified.wav",
       "sourceOffset": 0.0,
       "seconds": 15.6,
-      "why": "L5, and the one source-audio moment in Ch5. The narration concedes the argument, then the person most invested in it says it himself: '...not only substantially less than you thought, and all of it justified.' Cut deliberately to INCLUDE 'justified' — an earlier cut ended on 'and all of it', which drops the word carrying the whole claim.",
+      "why": "L5, and the one source-audio moment in Ch5. The narration concedes the argument, then the person most invested in it says it himself: '...not only substantially less than you thought, and all of it justified.' Cut deliberately to INCLUDE 'justified' \u2014 an earlier cut ended on 'and all of it', which drops the word carrying the whole claim.",
       "padSeconds": 0,
       "_": "pad 0 because a talking-head clip plays UNDER this audio; any pad desyncs his lips by exactly that much."
     },
@@ -213,7 +213,7 @@
       "type": "news",
       "asset": "ms-nvda-split",
       "seconds": 5.0,
-      "why": "L17 — the narration names both companies in one sentence, so the screen shows both: Nadella and Huang in a sustained split from Microsoft's own keynote channel. Primary source, no broadcaster ident, nobody on screen the script doesn't name."
+      "why": "L17 \u2014 the narration names both companies in one sentence, so the screen shows both: Nadella and Huang in a sustained split from Microsoft's own keynote channel. Primary source, no broadcaster ident, nobody on screen the script doesn't name."
     },
     {
       "cue": "So Microsoft commits up to five billion",
@@ -233,7 +233,7 @@
       "type": "news",
       "asset": "huang-face",
       "seconds": 5.5,
-      "why": "L7 / shot list — being fair to the other side needs a human face, not another document. Silent here; he speaks in Ch5."
+      "why": "L7 / shot list \u2014 being fair to the other side needs a human face, not another document. Silent here; he speaks in Ch5."
     },
     {
       "cue": "That argument is not stupid",
@@ -293,7 +293,7 @@
       "seconds": 14.0,
       "title": "Announced flows, 2025-2026",
       "z": 60,
-      "why": "L16 — the thesis is STRUCTURAL ('the money moves in a loop') and no amount of stock footage can show a structure. Builds in step with the sentence. Every figure here is one we verified against a primary source and highlighted earlier in the video, so the graph summarises evidence already shown rather than asserting anything new.",
+      "why": "L16 \u2014 the thesis is STRUCTURAL ('the money moves in a loop') and no amount of stock footage can show a structure. Builds in step with the sentence. Every figure here is one we verified against a primary source and highlighted earlier in the video, so the graph summarises evidence already shown rather than asserting anything new.",
       "nodes": [
         {
           "id": "nvda",
@@ -392,7 +392,7 @@
       "type": "news",
       "asset": "sam-altman",
       "seconds": 4.2,
-      "why": "L17 — narration names OpenAI; screen shows Altman, with the stage's own 'Sam Altman, CEO OpenAI' lower third doing the attribution."
+      "why": "L17 \u2014 narration names OpenAI; screen shows Altman, with the stage's own 'Sam Altman, CEO OpenAI' lower third doing the attribution."
     },
     {
       "cue": "Anthropic",
@@ -400,7 +400,7 @@
       "type": "news",
       "asset": "dario-amodei",
       "seconds": 4.5,
-      "why": "L17 — narration names Anthropic; Amodei at the NYT DealBook Summit, name on screen. Same interview the reference video uses, sourced independently."
+      "why": "L17 \u2014 narration names Anthropic; Amodei at the NYT DealBook Summit, name on screen. Same interview the reference video uses, sourced independently."
     },
     {
       "cue": "Oracle",
@@ -408,7 +408,7 @@
       "type": "news",
       "asset": "oracle-cloudworld",
       "seconds": 3.2,
-      "why": "L17 — narration names Oracle; Oracle's own CloudWorld title card. Clean brand, no partner logos, unlike the highlights reel."
+      "why": "L17 \u2014 narration names Oracle; Oracle's own CloudWorld title card. Clean brand, no partner logos, unlike the highlights reel."
     },
     {
       "cue": "committing up to ten billion",
@@ -419,7 +419,7 @@
       "highlightMode": "marker",
       "sfx": "highlight",
       "z": 55,
-      "why": "shot list, Ch3 — Anthropic's own announcement, highlighted as the narration reads the qualifier"
+      "why": "shot list, Ch3 \u2014 Anthropic's own announcement, highlighted as the narration reads the qualifier"
     },
     {
       "cue": "and Microsoft up to five billion",
@@ -440,7 +440,7 @@
       "highlightMode": "marker",
       "sfx": "highlight",
       "z": 55,
-      "why": "same page — the money going BACK, on the document that announced it"
+      "why": "same page \u2014 the money going BACK, on the document that announced it"
     },
     {
       "cue": "sitting in a public document",
@@ -451,7 +451,7 @@
       "highlightMode": "marker",
       "sfx": "highlight2",
       "z": 55,
-      "why": "shot list, Ch4 — 'return to the document'. The narration says almost nobody read it; showing it is the point."
+      "why": "shot list, Ch4 \u2014 'return to the document'. The narration says almost nobody read it; showing it is the point."
     },
     {
       "cue": "A hundred billion dollars",
@@ -461,7 +461,7 @@
       "label": "NVIDIA into OpenAI",
       "countSeconds": 0.75,
       "z": 60,
-      "why": "L19 — three figures land in four seconds; each gets its own card rather than one held b-roll shot."
+      "why": "L19 \u2014 three figures land in four seconds; each gets its own card rather than one held b-roll shot."
     },
     {
       "cue": "Three hundred billion",
@@ -478,7 +478,7 @@
       "seconds": 2.9,
       "value": 638,
       "label": "Oracle remaining performance obligations",
-      "sub": "announced — not transferred",
+      "sub": "announced \u2014 not transferred",
       "countSeconds": 1.0,
       "sfx": "impact",
       "z": 60,
@@ -493,7 +493,7 @@
       "highlightMode": "marker",
       "sfx": "pageturn",
       "z": 55,
-      "why": "the narration says the numbers are in filings — so show the filing, drifting, rather than describing it"
+      "why": "the narration says the numbers are in filings \u2014 so show the filing, drifting, rather than describing it"
     },
     {
       "cue": "here's what I'd actually watch",
@@ -502,10 +502,10 @@
       "z": 60,
       "title": "What to watch",
       "sfx": "whoosh",
-      "why": "L19 — measured, 180-300s was 10% graphics against 62% in the working opening, and this 26-second stretch is the part telling the viewer what to actually look for. Three parallel items are a structure; spoken alone they arrive and vanish. Item text is condensed, not verbatim — a card the viewer reads while the narrator elaborates.",
+      "why": "L19 \u2014 measured, 180-300s was 10% graphics against 62% in the working opening, and this 26-second stretch is the part telling the viewer what to actually look for. Three parallel items are a structure; spoken alone they arrive and vanish. Item text is condensed, not verbatim \u2014 a card the viewer reads while the narrator elaborates.",
       "items": [
         {
-          "text": "Do the “up to” numbers become real money?",
+          "text": "Do the \u201cup to\u201d numbers become real money?",
           "at": 1.92
         },
         {
@@ -528,7 +528,7 @@
       "label": "the deployment",
       "countSeconds": 0.7,
       "z": 60,
-      "why": "L19 — a figure with no visual in the 20-60s stretch, which measured 7% graphics"
+      "why": "L19 \u2014 a figure with no visual in the 20-60s stretch, which measured 7% graphics"
     },
     {
       "cue": "seventy-five billion",
@@ -548,5 +548,36 @@
       "asset": "bbg-market",
       "seconds": 4.5
     }
-  ]
+  ],
+  "publish": {
+    "title": "Who Is Actually Paying for the AI Boom?",
+    "description": "Every few weeks there's another enormous number attached to AI. A hundred billion. Three hundred billion. Six hundred and thirty-eight billion.\n\nThe numbers are real \u2014 they're in press releases and regulatory filings. But almost nobody asks the simpler question: where did the money come from, and whose hands has it passed through on the way?\n\nThis is what the primary documents actually say. It turns out the headline figures are consistently larger than the money that has changed hands.\n\n0:00  The question\n0:43  One deal, read carefully\n1:44  The same shape, three times\n2:45  What the filings say\n4:12  The other side, and what to watch\n\nSources \u2014 every figure in this video comes from a primary document:\n\u2022 NVIDIA newsroom, \"OpenAI and NVIDIA Announce Strategic Partnership\" (22 Sep 2025)\n\u2022 Anthropic, \"Microsoft, NVIDIA, and Anthropic announce strategic partnerships\"\n\u2022 Oracle Q4 FY2026 results, investor.oracle.com\n\u2022 Jensen Huang, U.S.\u2013Saudi Investment Forum 2025\n\u2022 Oracle Q4 FY2026 earnings call\n\nCorrections go in the pinned comment.",
+    "tags": [
+      "ai",
+      "artificial intelligence",
+      "nvidia",
+      "openai",
+      "anthropic",
+      "oracle",
+      "microsoft",
+      "ai bubble",
+      "circular financing",
+      "vendor financing",
+      "ai investment",
+      "tech news",
+      "ai spending",
+      "remaining performance obligations"
+    ],
+    "madeForKids": false,
+    "thumbnail": "art/thumbnail.png",
+    "uploads": [
+      {
+        "videoId": "gh0xMw4CS_I",
+        "file": "render/lf-001-master.mp4",
+        "privacy": "private",
+        "uploadedAt": "2026-08-08T09:35:13.220838+00:00"
+      }
+    ],
+    "videoId": "gh0xMw4CS_I"
+  }
 }

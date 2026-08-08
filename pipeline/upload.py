@@ -211,6 +211,28 @@ def main() -> None:
     print()
 
     video_id = upload(service, path, body)
+
+    # Thumbnail is a separate API call — a video uploaded without one gets an
+    # auto-generated frame, and for long-form the thumbnail is most of the
+    # click decision (L4).
+    thumb = job.raw.get("publish", {}).get("thumbnail")
+    if thumb:
+        tp = Project(args.slug).dir / thumb
+        if not tp.exists():
+            print(f"\n! thumbnail not found at {tp} — set it by hand in Studio")
+        else:
+            try:
+                # Imported here for the same reason as in upload(): the google
+                # client is a heavy import and the CLI should start fast.
+                from googleapiclient.http import MediaFileUpload
+                service.thumbnails().set(
+                    videoId=video_id,
+                    media_body=MediaFileUpload(str(tp), mimetype="image/png"),
+                ).execute()
+                print(f"thumbnail: {tp.name}")
+            except Exception as exc:  # noqa: BLE001
+                print(f"\n! thumbnail upload failed ({type(exc).__name__}) — "
+                      f"set it by hand in Studio")
     print(f"\nhttps://youtu.be/{video_id}")
     print(f"edit: https://studio.youtube.com/video/{video_id}/edit")
 
